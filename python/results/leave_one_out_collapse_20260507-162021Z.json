@@ -1,0 +1,48 @@
+{
+  "timestamp": "20260507-162021Z",
+  "overall_verdict": "conforme strict",
+  "control": "ManualLOOP",
+  "folds": [
+    {
+      "held_out": "pysspfm_off",
+      "train_family": [
+        "pysspfm_on",
+        "pysspfm_third"
+      ],
+      "train_rmse": 0.36709690965751185,
+      "held_out_rmse": 0.2067476668540025,
+      "control_rmse": 0.9083746206840192,
+      "margin_vs_control": 0.7016269538300167,
+      "generalization_ok": true
+    },
+    {
+      "held_out": "pysspfm_on",
+      "train_family": [
+        "pysspfm_off",
+        "pysspfm_third"
+      ],
+      "train_rmse": 0.18778525561721648,
+      "held_out_rmse": 0.5841533311624525,
+      "control_rmse": 1.3648136373869777,
+      "margin_vs_control": 0.7806603062245252,
+      "generalization_ok": true
+    },
+    {
+      "held_out": "pysspfm_third",
+      "train_family": [
+        "pysspfm_off",
+        "pysspfm_on"
+      ],
+      "train_rmse": 0.23127703558202914,
+      "held_out_rmse": 0.5353109558257017,
+      "control_rmse": 0.7130666851855914,
+      "margin_vs_control": 0.1777557293598897,
+      "generalization_ok": true
+    }
+  ],
+  "summary": {
+    "mean_held_out_rmse": 0.4420706512807189,
+    "mean_control_rmse": 0.9954183144188627,
+    "mean_margin": 0.5533476631381439
+  }
+}

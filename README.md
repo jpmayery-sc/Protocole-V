@@ -1,4 +1,5 @@
-# Protocole V
+# Protocole-V
+Analyse scientifique de la theorie des tubes
 
 Ce dépôt rassemble le manuscrit V70, les protocoles associés, les scripts de calcul et les résultats consolidés utilisés pour la préparation de la version publiable.
 

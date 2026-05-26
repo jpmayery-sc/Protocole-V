@@ -1,0 +1,19 @@
+Regime lanthanide check
+timestamp: 20260517-212911Z
+verdict: supported
+regime: lanthanide
+hypothesis: Lanthanides require D3 and do not collapse to D1-only reading
+case_control: Ce, Nd, and Yb lanthanide references
+observable: launcher grid choice and the D3-required branch
+
+Checks:
+- D3 is mandatory
+- no D1-only collapse
+- launcher routes lanthanides to D1 + D3
+
+Cases:
+- Ce: supported
+- Sm: supported
+- Nd: supported
+- Gd: supported
+- Yb: supported

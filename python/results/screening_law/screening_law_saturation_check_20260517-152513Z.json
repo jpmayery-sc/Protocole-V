@@ -1,0 +1,860 @@
+{
+  "timestamp": "20260517-152513Z",
+  "hypothesis": "screening S(Z,n,l) can be stabilized by either an exponential saturation in reduced Z or a block power law, without importing alkali families",
+  "case_control": "non-alkali families only: halogens, 3d, 4d, 5d, lanthanides",
+  "observable": "screening S = Z - Z_eff reconstructed from first-ionization proxies",
+  "families": [
+    {
+      "family": "p_halogen",
+      "l": 1,
+      "observations": [
+        {
+          "symbol": "F",
+          "Z": 9,
+          "n": 2,
+          "ionization_ev": 17.4228,
+          "family": "p_halogen",
+          "z0": 9.0,
+          "delta_z": 0.0,
+          "reduced_z": 0.0,
+          "zeff_proxy": 2.2637033686365515,
+          "screening": 6.736296631363448
+        },
+        {
+          "symbol": "Cl",
+          "Z": 17,
+          "n": 3,
+          "ionization_ev": 12.9676,
+          "family": "p_halogen",
+          "z0": 9.0,
+          "delta_z": 8.0,
+          "reduced_z": 2.6666666666666665,
+          "zeff_proxy": 2.929419737763778,
+          "screening": 14.070580262236222
+        },
+        {
+          "symbol": "Br",
+          "Z": 35,
+          "n": 4,
+          "ionization_ev": 11.8138,
+          "family": "p_halogen",
+          "z0": 9.0,
+          "delta_z": 26.0,
+          "reduced_z": 6.5,
+          "zeff_proxy": 3.728081039260563,
+          "screening": 31.271918960739438
+        },
+        {
+          "symbol": "I",
+          "Z": 53,
+          "n": 5,
+          "ionization_ev": 10.4513,
+          "family": "p_halogen",
+          "z0": 9.0,
+          "delta_z": 44.0,
+          "reduced_z": 8.8,
+          "zeff_proxy": 4.383143681127938,
+          "screening": 48.61685631887206
+        }
+      ],
+      "train_indices": [
+        0,
+        2
+      ],
+      "test_indices": [
+        1,
+        3
+      ],
+      "baseline": {
+        "train_coefficients": [
+          -31.192013826235286,
+          16.754982557826587
+        ],
+        "train_rmse": 2.1316282072803006e-14,
+        "train_nrmse": 8.687891338823497e-16,
+        "test_rmse": 5.251650524550901,
+        "test_nrmse": 0.15201784747916802
+      },
+      "exp": {
+        "parameter": 0.05,
+        "train_coefficients": [
+          6.73629663136345,
+          88.42537328067318
+        ],
+        "train_rmse": 2.808666774861361e-15,
+        "train_nrmse": 1.1447301956138292e-16,
+        "test_rmse": 7.809187438662868,
+        "test_nrmse": 0.22605005025318312
+      },
+      "power": {
+        "parameter": 1.0,
+        "train_coefficients": [
+          6.736296631363448,
+          0.9436777818990765
+        ],
+        "train_rmse": 0.0,
+        "train_nrmse": 0.0,
+        "test_rmse": 0.29578460623358543,
+        "test_nrmse": 0.008561982360954633
+      },
+      "best_model": "power",
+      "best_candidate": {
+        "model": "power",
+        "parameter": 1.0,
+        "test_rmse": 0.29578460623358543,
+        "test_nrmse": 0.008561982360954633
+      },
+      "baseline_better": false,
+      "improved": true
+    },
+    {
+      "family": "d_3d",
+      "l": 2,
+      "observations": [
+        {
+          "symbol": "Sc",
+          "Z": 21,
+          "n": 4,
+          "ionization_ev": 6.5615,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 0.0,
+          "reduced_z": 0.0,
+          "zeff_proxy": 2.778382940615977,
+          "screening": 18.221617059384023
+        },
+        {
+          "symbol": "Ti",
+          "Z": 22,
+          "n": 4,
+          "ionization_ev": 6.8281,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 1.0,
+          "reduced_z": 0.25,
+          "zeff_proxy": 2.83426512936412,
+          "screening": 19.16573487063588
+        },
+        {
+          "symbol": "V",
+          "Z": 23,
+          "n": 4,
+          "ionization_ev": 6.7462,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 2.0,
+          "reduced_z": 0.5,
+          "zeff_proxy": 2.8172159807783537,
+          "screening": 20.182784019221646
+        },
+        {
+          "symbol": "Cr",
+          "Z": 24,
+          "n": 4,
+          "ionization_ev": 6.7665,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 3.0,
+          "reduced_z": 0.75,
+          "zeff_proxy": 2.8214514412433394,
+          "screening": 21.17854855875666
+        },
+        {
+          "symbol": "Mn",
+          "Z": 25,
+          "n": 4,
+          "ionization_ev": 7.434,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 4.0,
+          "reduced_z": 1.0,
+          "zeff_proxy": 2.9573438002608317,
+          "screening": 22.04265619973917
+        },
+        {
+          "symbol": "Fe",
+          "Z": 26,
+          "n": 4,
+          "ionization_ev": 7.9024,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 5.0,
+          "reduced_z": 1.25,
+          "zeff_proxy": 3.049088581276475,
+          "screening": 22.950911418723525
+        },
+        {
+          "symbol": "Co",
+          "Z": 27,
+          "n": 4,
+          "ionization_ev": 7.881,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 6.0,
+          "reduced_z": 1.5,
+          "zeff_proxy": 3.0449572584656015,
+          "screening": 23.9550427415344
+        },
+        {
+          "symbol": "Ni",
+          "Z": 28,
+          "n": 4,
+          "ionization_ev": 7.6398,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 7.0,
+          "reduced_z": 1.75,
+          "zeff_proxy": 2.997999332888518,
+          "screening": 25.00200066711148
+        },
+        {
+          "symbol": "Cu",
+          "Z": 29,
+          "n": 4,
+          "ionization_ev": 7.7264,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 8.0,
+          "reduced_z": 2.0,
+          "zeff_proxy": 3.0149431757399965,
+          "screening": 25.985056824260003
+        },
+        {
+          "symbol": "Zn",
+          "Z": 30,
+          "n": 4,
+          "ionization_ev": 9.3942,
+          "family": "d_3d",
+          "z0": 21.0,
+          "delta_z": 9.0,
+          "reduced_z": 2.25,
+          "zeff_proxy": 3.3244548425268166,
+          "screening": 26.675545157473184
+        }
+      ],
+      "train_indices": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "test_indices": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "baseline": {
+        "train_coefficients": [
+          -47.365841319135676,
+          23.761040869076865
+        ],
+        "train_rmse": 1.0287727865372192,
+        "train_nrmse": 0.13251507291802292,
+        "test_rmse": 2.5794345503735028,
+        "test_nrmse": 0.3434753278514324
+      },
+      "exp": {
+        "parameter": 0.1,
+        "train_coefficients": [
+          18.124596439528958,
+          42.54986380199214
+        ],
+        "train_rmse": 0.10764071619877563,
+        "train_nrmse": 0.013865080358550986,
+        "test_rmse": 0.08151620297201408,
+        "test_nrmse": 0.010854628793338528
+      },
+      "power": {
+        "parameter": 0.95,
+        "train_coefficients": [
+          18.137183232241945,
+          1.0730607827033196
+        ],
+        "train_rmse": 0.08345384161108549,
+        "train_nrmse": 0.01074959607320643,
+        "test_rmse": 0.0851786695417563,
+        "test_nrmse": 0.011342319750879968
+      },
+      "best_model": "exp",
+      "best_candidate": {
+        "model": "exp",
+        "parameter": 0.1,
+        "test_rmse": 0.08151620297201408,
+        "test_nrmse": 0.010854628793338528
+      },
+      "baseline_better": false,
+      "improved": true
+    },
+    {
+      "family": "d_4d",
+      "l": 2,
+      "observations": [
+        {
+          "symbol": "Y",
+          "Z": 39,
+          "n": 5,
+          "ionization_ev": 6.2173,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 0.0,
+          "reduced_z": 0.0,
+          "zeff_proxy": 3.3806597424345513,
+          "screening": 35.61934025756545
+        },
+        {
+          "symbol": "Zr",
+          "Z": 40,
+          "n": 5,
+          "ionization_ev": 6.6339,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 1.0,
+          "reduced_z": 0.2,
+          "zeff_proxy": 3.492086642345384,
+          "screening": 36.507913357654616
+        },
+        {
+          "symbol": "Nb",
+          "Z": 41,
+          "n": 5,
+          "ionization_ev": 6.7589,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 2.0,
+          "reduced_z": 0.4,
+          "zeff_proxy": 3.5248331207890913,
+          "screening": 37.47516687921091
+        },
+        {
+          "symbol": "Mo",
+          "Z": 42,
+          "n": 5,
+          "ionization_ev": 7.0924,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 3.0,
+          "reduced_z": 0.6,
+          "zeff_proxy": 3.610747844976162,
+          "screening": 38.38925215502384
+        },
+        {
+          "symbol": "Tc",
+          "Z": 43,
+          "n": 5,
+          "ionization_ev": 7.28,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 4.0,
+          "reduced_z": 0.8,
+          "zeff_proxy": 3.658189844879086,
+          "screening": 39.34181015512091
+        },
+        {
+          "symbol": "Ru",
+          "Z": 44,
+          "n": 5,
+          "ionization_ev": 7.3605,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 5.0,
+          "reduced_z": 1.0,
+          "zeff_proxy": 3.6783598087127016,
+          "screening": 40.3216401912873
+        },
+        {
+          "symbol": "Rh",
+          "Z": 45,
+          "n": 5,
+          "ionization_ev": 7.4589,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 6.0,
+          "reduced_z": 1.2,
+          "zeff_proxy": 3.7028655437774294,
+          "screening": 41.29713445622257
+        },
+        {
+          "symbol": "Pd",
+          "Z": 46,
+          "n": 5,
+          "ionization_ev": 8.3369,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 7.0,
+          "reduced_z": 1.4,
+          "zeff_proxy": 3.9147393046701606,
+          "screening": 42.085260695329836
+        },
+        {
+          "symbol": "Ag",
+          "Z": 47,
+          "n": 5,
+          "ionization_ev": 7.5762,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 8.0,
+          "reduced_z": 1.6,
+          "zeff_proxy": 3.731867928436659,
+          "screening": 43.26813207156334
+        },
+        {
+          "symbol": "Cd",
+          "Z": 48,
+          "n": 5,
+          "ionization_ev": 8.9938,
+          "family": "d_4d",
+          "z0": 39.0,
+          "delta_z": 9.0,
+          "reduced_z": 1.8,
+          "zeff_proxy": 4.066044833524994,
+          "screening": 43.93395516647501
+        }
+      ],
+      "train_indices": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "test_indices": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "baseline": {
+        "train_coefficients": [
+          -31.470792928684602,
+          19.6881517191847
+        ],
+        "train_rmse": 0.8450187567666632,
+        "train_nrmse": 0.11047741621365767,
+        "test_rmse": 2.7012775277237533,
+        "test_nrmse": 0.36375738209758934
+      },
+      "exp": {
+        "parameter": 0.1,
+        "train_coefficients": [
+          35.50282189688575,
+          51.68680188658905
+        ],
+        "train_rmse": 0.10238575201899681,
+        "train_nrmse": 0.013385872502324193,
+        "test_rmse": 0.11082074598959485,
+        "test_nrmse": 0.014923259098536966
+      },
+      "power": {
+        "parameter": 0.95,
+        "train_coefficients": [
+          35.49746276899292,
+          1.0628771126632286
+        ],
+        "train_rmse": 0.09803585691466842,
+        "train_nrmse": 0.012817168946245213,
+        "test_rmse": 0.11784481934921526,
+        "test_nrmse": 0.015869129528633046
+      },
+      "best_model": "exp",
+      "best_candidate": {
+        "model": "exp",
+        "parameter": 0.1,
+        "test_rmse": 0.11082074598959485,
+        "test_nrmse": 0.014923259098536966
+      },
+      "baseline_better": false,
+      "improved": true
+    },
+    {
+      "family": "d_5d",
+      "l": 2,
+      "observations": [
+        {
+          "symbol": "Hf",
+          "Z": 72,
+          "n": 6,
+          "ionization_ev": 6.8251,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 0.0,
+          "reduced_z": 0.0,
+          "zeff_proxy": 4.25046364253014,
+          "screening": 67.74953635746986
+        },
+        {
+          "symbol": "Ta",
+          "Z": 73,
+          "n": 6,
+          "ionization_ev": 7.5496,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 1.0,
+          "reduced_z": 0.16666666666666666,
+          "zeff_proxy": 4.470373059837137,
+          "screening": 68.52962694016286
+        },
+        {
+          "symbol": "W",
+          "Z": 74,
+          "n": 6,
+          "ionization_ev": 7.864,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 2.0,
+          "reduced_z": 0.3333333333333333,
+          "zeff_proxy": 4.562507050760064,
+          "screening": 69.43749294923994
+        },
+        {
+          "symbol": "Re",
+          "Z": 75,
+          "n": 6,
+          "ionization_ev": 7.8335,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 3.0,
+          "reduced_z": 0.5,
+          "zeff_proxy": 4.553650765497684,
+          "screening": 70.44634923450232
+        },
+        {
+          "symbol": "Os",
+          "Z": 76,
+          "n": 6,
+          "ionization_ev": 8.4382,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 4.0,
+          "reduced_z": 0.6666666666666666,
+          "zeff_proxy": 4.726141318740467,
+          "screening": 71.27385868125953
+        },
+        {
+          "symbol": "Ir",
+          "Z": 77,
+          "n": 6,
+          "ionization_ev": 8.967,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 5.0,
+          "reduced_z": 0.8333333333333334,
+          "zeff_proxy": 4.871978701779005,
+          "screening": 72.128021298221
+        },
+        {
+          "symbol": "Pt",
+          "Z": 78,
+          "n": 6,
+          "ionization_ev": 8.9588,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 6.0,
+          "reduced_z": 1.0,
+          "zeff_proxy": 4.869750567353044,
+          "screening": 73.13024943264696
+        },
+        {
+          "symbol": "Au",
+          "Z": 79,
+          "n": 6,
+          "ionization_ev": 9.2255,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 7.0,
+          "reduced_z": 1.1666666666666667,
+          "zeff_proxy": 4.941704278532923,
+          "screening": 74.05829572146708
+        },
+        {
+          "symbol": "Hg",
+          "Z": 80,
+          "n": 6,
+          "ionization_ev": 10.4375,
+          "family": "d_5d",
+          "z0": 72.0,
+          "delta_z": 8.0,
+          "reduced_z": 1.3333333333333333,
+          "zeff_proxy": 5.256298742517232,
+          "screening": 74.74370125748277
+        }
+      ],
+      "train_indices": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "test_indices": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "baseline": {
+        "train_coefficients": [
+          36.41290195535703,
+          7.364003419661259
+        ],
+        "train_rmse": 0.4917713878349251,
+        "train_nrmse": 0.07031166620535609,
+        "test_rmse": 0.7899091149239129,
+        "test_nrmse": 0.14287510179576582
+      },
+      "exp": {
+        "parameter": 0.05,
+        "train_coefficients": [
+          67.7013195388283,
+          109.66094022595213
+        ],
+        "train_rmse": 0.05670553940130349,
+        "train_nrmse": 0.008107549680620036,
+        "test_rmse": 0.08792715324507969,
+        "test_nrmse": 0.015903856194535416
+      },
+      "power": {
+        "parameter": 1.0,
+        "train_coefficients": [
+          67.73075047893326,
+          0.8840543141716409
+        ],
+        "train_rmse": 0.0579006518575473,
+        "train_nrmse": 0.008278422468626737,
+        "test_rmse": 0.08828266090822992,
+        "test_nrmse": 0.01596815877391084
+      },
+      "best_model": "exp",
+      "best_candidate": {
+        "model": "exp",
+        "parameter": 0.05,
+        "test_rmse": 0.08792715324507969,
+        "test_nrmse": 0.015903856194535416
+      },
+      "baseline_better": false,
+      "improved": true
+    },
+    {
+      "family": "f_lanthanide_core",
+      "l": 3,
+      "observations": [
+        {
+          "symbol": "La",
+          "Z": 57,
+          "n": 6,
+          "ionization_ev": 5.577,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 0.0,
+          "reduced_z": 0.0,
+          "zeff_proxy": 3.8422190279607347,
+          "screening": 53.15778097203926
+        },
+        {
+          "symbol": "Ce",
+          "Z": 58,
+          "n": 6,
+          "ionization_ev": 5.5387,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 1.0,
+          "reduced_z": 0.16666666666666666,
+          "zeff_proxy": 3.8290030955697016,
+          "screening": 54.1709969044303
+        },
+        {
+          "symbol": "Pr",
+          "Z": 59,
+          "n": 6,
+          "ionization_ev": 5.473,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 2.0,
+          "reduced_z": 0.3333333333333333,
+          "zeff_proxy": 3.806225550486528,
+          "screening": 55.19377444951347
+        },
+        {
+          "symbol": "Nd",
+          "Z": 60,
+          "n": 6,
+          "ionization_ev": 5.525,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 3.0,
+          "reduced_z": 0.5,
+          "zeff_proxy": 3.8242646351945893,
+          "screening": 56.17573536480541
+        },
+        {
+          "symbol": "Sm",
+          "Z": 62,
+          "n": 6,
+          "ionization_ev": 5.644,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 5.0,
+          "reduced_z": 0.8333333333333334,
+          "zeff_proxy": 3.865229618017538,
+          "screening": 58.13477038198246
+        },
+        {
+          "symbol": "Gd",
+          "Z": 64,
+          "n": 6,
+          "ionization_ev": 6.15,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 7.0,
+          "reduced_z": 1.1666666666666667,
+          "zeff_proxy": 4.034775305355415,
+          "screening": 59.96522469464458
+        },
+        {
+          "symbol": "Tb",
+          "Z": 65,
+          "n": 6,
+          "ionization_ev": 5.863,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 8.0,
+          "reduced_z": 1.3333333333333333,
+          "zeff_proxy": 3.939505791638457,
+          "screening": 61.06049420836154
+        },
+        {
+          "symbol": "Dy",
+          "Z": 66,
+          "n": 6,
+          "ionization_ev": 5.939,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 9.0,
+          "reduced_z": 1.5,
+          "zeff_proxy": 3.964956790803801,
+          "screening": 62.035043209196196
+        },
+        {
+          "symbol": "Ho",
+          "Z": 67,
+          "n": 6,
+          "ionization_ev": 6.022,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 10.0,
+          "reduced_z": 1.6666666666666667,
+          "zeff_proxy": 3.9925666225241776,
+          "screening": 63.00743337747582
+        },
+        {
+          "symbol": "Er",
+          "Z": 68,
+          "n": 6,
+          "ionization_ev": 6.108,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 11.0,
+          "reduced_z": 1.8333333333333333,
+          "zeff_proxy": 4.020974420972813,
+          "screening": 63.97902557902719
+        },
+        {
+          "symbol": "Tm",
+          "Z": 69,
+          "n": 6,
+          "ionization_ev": 6.184,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 12.0,
+          "reduced_z": 2.0,
+          "zeff_proxy": 4.045912970480938,
+          "screening": 64.95408702951906
+        },
+        {
+          "symbol": "Lu",
+          "Z": 71,
+          "n": 6,
+          "ionization_ev": 5.428,
+          "family": "f_lanthanide_core",
+          "z0": 57.0,
+          "delta_z": 14.0,
+          "reduced_z": 2.3333333333333335,
+          "zeff_proxy": 3.790545514054362,
+          "screening": 67.20945448594564
+        }
+      ],
+      "train_indices": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "test_indices": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "baseline": {
+        "train_coefficients": [
+          -123.38599412217798,
+          46.64737718373905
+        ],
+        "train_rmse": 1.3160714809325562,
+        "train_nrmse": 0.11156640684971565,
+        "test_rmse": 6.0021735904882725,
+        "test_nrmse": 0.4603438369119342
+      },
+      "exp": {
+        "parameter": 0.05,
+        "train_coefficients": [
+          53.13172962243098,
+          123.65020754018892
+        ],
+        "train_rmse": 0.03690696303634204,
+        "train_nrmse": 0.0031286881551314187,
+        "test_rmse": 0.20187595673400513,
+        "test_nrmse": 0.015483116424768309
+      },
+      "power": {
+        "parameter": 1.05,
+        "train_coefficients": [
+          53.32632450329792,
+          0.863422997830543
+        ],
+        "train_rmse": 0.10591149085943756,
+        "train_nrmse": 0.008978360712528414,
+        "test_rmse": 0.06582066800067025,
+        "test_nrmse": 0.0050481943580492515
+      },
+      "best_model": "power",
+      "best_candidate": {
+        "model": "power",
+        "parameter": 1.05,
+        "test_rmse": 0.06582066800067025,
+        "test_nrmse": 0.0050481943580492515
+      },
+      "baseline_better": false,
+      "improved": true
+    }
+  ],
+  "baseline_mean_test_nrmse": 0.29249389922717794,
+  "exp_mean_test_nrmse": 0.056642982152872466,
+  "power_mean_test_nrmse": 0.011357956954485549,
+  "best_model": "power",
+  "best_mean_test_nrmse": 0.011357956954485549,
+  "best_parameter_cv": 0.03779451905832267,
+  "improved_families": 5,
+  "relative_improvement": 0.9611685680128873,
+  "supported": true,
+  "verdict": "supported",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260517-152513Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260517-152513Z.txt"
+}

@@ -1,0 +1,38 @@
+Lanthanide internal residual check
+Timestamp: 20260517-145822Z
+
+Hypothese: removing Eu and Yb repairs most of the internal f-block residual, and Z_eff remains more regular than mass in the repaired core
+Cas de controle: full lanthanide family La -> Lu versus repaired core excluding Eu and Yb
+Observable: trend repair and regularity change after removing the two internal anomalies
+Verdict: supported
+
+Famille complete:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+- radius_rmse: 7.194451027611285
+- ionization_rmse: 0.22869341050720976
+- zeff_rmse: 0.07722476307074867
+- mass_rmse: 1.2889377036664489
+
+Noyau repare (sans Eu et Yb):
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+- radius_rmse: 2.506673300095375
+- ionization_rmse: 0.2344601508981188
+- zeff_rmse: 0.07930352116645824
+- mass_rmse: 1.8635251211945418
+
+Criteres:
+- full_broken: True
+- repaired_cleaner: True
+- zeff_better: True
+- structural_ok: True
+
+Falsificateurs:
+- the full family is already regular
+- removing Eu and Yb does not improve radius regularity
+- Z_eff is not more regular than mass in the repaired core

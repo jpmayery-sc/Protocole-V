@@ -1,0 +1,112 @@
+{
+  "timestamp": "20260510-215054Z",
+  "familyname": "halogen_d1d2_test",
+  "family_name": "halogen_d1d2_test",
+  "family": [
+    {
+      "symbol": "F",
+      "name": "Fluorine",
+      "I": 17.4228,
+      "r": 64.0,
+      "n": 2.0,
+      "D1": 2.263703,
+      "D2": 0.272231,
+      "D1overD2": 8.315369,
+      "regime": "covalent"
+    },
+    {
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "I": 12.9676,
+      "r": 99.0,
+      "n": 3.0,
+      "D1": 2.92942,
+      "D2": 0.130986,
+      "D1overD2": 22.364397,
+      "regime": "covalent"
+    },
+    {
+      "symbol": "Br",
+      "name": "Bromine",
+      "I": 11.8138,
+      "r": 114.0,
+      "n": 4.0,
+      "D1": 3.728081,
+      "D2": 0.10363,
+      "D1overD2": 35.974982,
+      "regime": "transition"
+    },
+    {
+      "symbol": "I",
+      "name": "Iodine",
+      "I": 10.4513,
+      "r": 133.0,
+      "n": 5.0,
+      "D1": 4.383144,
+      "D2": 0.078581,
+      "D1overD2": 55.778526,
+      "regime": "semi-metal"
+    },
+    {
+      "symbol": "At",
+      "name": "Astatine",
+      "I": 9.5,
+      "r": 150.0,
+      "n": 6.0,
+      "D1": 5.014684,
+      "D2": 0.063333,
+      "D1overD2": 79.179226,
+      "regime": "semi-metal"
+    }
+  ],
+  "observables": {
+    "D1_values": [
+      2.2637033686365515,
+      2.929419737763778,
+      3.728081039260563,
+      4.383143681127938,
+      5.014684319429231
+    ],
+    "D2_values": [
+      0.27223125,
+      0.13098585858585857,
+      0.10362982456140352,
+      0.0785812030075188,
+      0.06333333333333334
+    ],
+    "D1overD2_values": [
+      8.315369262847494,
+      22.36439696155141,
+      35.97498167191794,
+      55.778526077140235,
+      79.17922609625101
+    ],
+    "D1_trend": "increasing",
+    "D2_trend": "decreasing",
+    "D1overD2_trend": "increasing",
+    "D1overD2_superlinear": false,
+    "family_regime": "semi-metal",
+    "family_regime_thresholds": {
+      "covalent": 30,
+      "transition": 50,
+      "semi_metal": 100
+    }
+  },
+  "hypothesis": "D1/D2 should separate the halogen family from higher-regime families",
+  "case_control": "F -> At",
+  "expected": {
+    "D1": "monotonic increase",
+    "D2": "monotonic decrease",
+    "D1overD2": "monotonic increase",
+    "family_regime": "semi-metal"
+  },
+  "verdict": "supported",
+  "checks": {
+    "D1": true,
+    "D2": true,
+    "D1overD2": true,
+    "family_regime": true
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\halogen_d1d2_test_D1D2_results_20260510-215054Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\halogen_d1d2_test_D1D2_results_20260510-215054Z.txt"
+}

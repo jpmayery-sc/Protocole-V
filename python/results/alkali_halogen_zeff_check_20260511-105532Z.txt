@@ -1,0 +1,57 @@
+Alkali, halogen, and pnictogen Z_eff check
+timestamp: 20260511-105532Z
+verdict: supported
+
+alkali:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - Li: Z=3 n=2 I=5.3917 Zeff=1.259283 S=1.740717
+  - Na: Z=11 n=3 I=5.1391 Zeff=1.844146 S=9.155854
+  - K: Z=19 n=4 I=4.3407 Zeff=2.259802 S=16.740198
+  - Rb: Z=37 n=5 I=4.1771 Zeff=2.771009 S=34.228991
+  - Cs: Z=55 n=6 I=3.8939 Zeff=3.210511 S=51.789489
+
+halogen:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - F: Z=9 n=2 I=17.4228 Zeff=2.263703 S=6.736297
+  - Cl: Z=17 n=3 I=12.9676 Zeff=2.929420 S=14.070580
+  - Br: Z=35 n=4 I=11.8138 Zeff=3.728081 S=31.271919
+  - I: Z=53 n=5 I=10.4513 Zeff=4.383144 S=48.616856
+
+pnictogen:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - N: Z=7 n=2 I=14.5341 Zeff=2.067543 S=4.932457
+  - P: Z=15 n=3 I=10.4867 Zeff=2.634336 S=12.365664
+  - As: Z=33 n=4 I=9.8152 Zeff=3.398131 S=29.601869
+  - Sb: Z=51 n=5 I=8.6084 Zeff=3.977972 S=47.022028
+  - Bi: Z=83 n=6 I=7.2856 Zeff=4.391516 S=78.608484
+
+chalcogen:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - O: Z=8 n=2 I=13.6181 Zeff=2.001330 S=5.998670
+  - S: Z=16 n=3 I=10.3600 Zeff=2.618374 S=13.381626
+  - Se: Z=34 n=4 I=9.7524 Zeff=3.387243 S=30.612757
+  - Te: Z=52 n=5 I=9.0096 Zeff=4.069615 S=47.930385
+  - Po: Z=84 n=6 I=8.4167 Zeff=4.720117 S=79.279883
+
+noble_gas:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - He: Z=2 n=1 I=24.5900 Zeff=1.344652 S=0.655348
+  - Ne: Z=10 n=2 I=21.5600 Zeff=2.518169 S=7.481831
+  - Ar: Z=18 n=3 I=15.7600 Zeff=3.229460 S=14.770540
+  - Kr: Z=36 n=4 I=14.0000 Zeff=4.058397 S=31.941603
+  - Xe: Z=54 n=5 I=12.1300 Zeff=4.722054 S=49.277946
+
+alkaline_earth:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - Be: Z=4 n=2 I=9.3200 Zeff=1.655650 S=2.344350
+  - Mg: Z=12 n=3 I=7.6500 Zeff=2.250000 S=9.750000
+  - Ca: Z=20 n=4 I=6.1132 Zeff=2.681790 S=17.318210
+  - Sr: Z=38 n=5 I=5.6949 Zeff=3.235516 S=34.764484
+  - Ba: Z=56 n=6 I=5.2117 Zeff=3.714253 S=52.285747
+

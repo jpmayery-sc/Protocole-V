@@ -1,0 +1,16 @@
+Period trend check
+timestamp: 20260509-224545Z
+verdict: supported
+
+period2:
+- radius_global_ok: True
+- ie_global_ok: True
+- local_breaks_ok: True
+- dips: B, O
+
+period3:
+- radius_global_ok: True
+- ie_global_ok: True
+- local_breaks_ok: True
+- dips: Al, S
+

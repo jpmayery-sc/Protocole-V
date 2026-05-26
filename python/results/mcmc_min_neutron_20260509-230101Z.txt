@@ -1,0 +1,21 @@
+MCMC MIN_NEUTRON
+Timestamp: 20260509-230101Z
+Input: D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\sweep_summary_20260509-230003Z.csv
+Points: 48
+Iterations: 20000
+Burn-in: 5000
+Thin: 10
+Acceptance rate: 0.380
+Posterior mass in [32, 35]: 0.334
+Posterior mass in [33, 35]: 0.261
+
+Posterior predictive RMSE: 0.012167
+Null RMSE: 0.018162
+RMSE margin: 0.005996
+
+mu: mean=36.028053, median=35.809661, p05=32.292196, p95=39.651205
+log_a: mean=-8.686309, median=-8.686651, p05=-9.096770, p95=-8.227137
+log_sigma: mean=-4.340310, median=-4.347185, p05=-4.500751, p95=-4.155492
+offset_60: mean=0.023908, median=0.024172, p05=0.015361, p95=0.032181
+offset_100: mean=0.070484, median=0.070418, p05=0.062700, p95=0.078246
+offset_200: mean=0.087474, median=0.087449, p05=0.079507, p95=0.095766

@@ -1,0 +1,26 @@
+Tetrel k/L correction check
+Timestamp: 20260509-122547Z
+
+Hypothese: for the tetrel family, adding the local L regime to Z_eff reduces radius residuals
+Cas de controle: baseline Z_eff fit versus augmented Z_eff_star = Z_eff + a*k + b*L
+Observable: radius residuals on the tetrel family
+Verdict: supported
+
+Famille:
+- C: radius=67.0 pm, ie=11.2603 eV, zeff=1.81985, k=0.0, L=0.0
+- Si: radius=111.0 pm, ie=8.1517 eV, zeff=2.322608, k=0.0, L=1.0
+- Ge: radius=125.0 pm, ie=7.8994 eV, zeff=3.04851, k=0.0, L=2.0
+- Sn: radius=145.0 pm, ie=7.3439 eV, zeff=3.67421, k=0.0, L=3.0
+- Pb: radius=154.0 pm, ie=7.4167 eV, zeff=4.430851, k=0.0, L=3.0
+
+Baseline:
+- fit_slope: 30.950310
+- fit_intercept: 25.716638
+- rmse: 10.386674
+
+Augmented:
+- fit_slope: 15.160589
+- fit_intercept: 49.460487
+- rmse: 7.482501
+- augmented_better: True
+- monotone_augmented: True

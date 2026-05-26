@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260511-100123Z",
+  "overall_verdict": "supported",
+  "family": [
+    "B",
+    "Al",
+    "Ga",
+    "In",
+    "Tl"
+  ],
+  "folds": [
+    {
+      "held_out": "B",
+      "mass_error": 2224.6295196179053,
+      "zeff_error": 1792.3697204343905,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Al",
+      "mass_error": 1303.1355513472683,
+      "zeff_error": 1328.2566873846438,
+      "best_model": "mass"
+    },
+    {
+      "held_out": "Ga",
+      "mass_error": 5.707270949183543,
+      "zeff_error": 6.547997339000383,
+      "best_model": "mass"
+    },
+    {
+      "held_out": "In",
+      "mass_error": 115.1511350874623,
+      "zeff_error": 9.348060022260112,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Tl",
+      "mass_error": 1045.6802175354844,
+      "zeff_error": 196.21514898761566,
+      "best_model": "zeff"
+    }
+  ],
+  "summary": {
+    "mass_rmse": 30.640834500833375,
+    "zeff_rmse": 25.81758166121649,
+    "best_model": "zeff"
+  },
+  "hypothesis": "leave-one-out on the boron family is best explained by raw Z_eff rather than mass",
+  "case_control": "full B -> Tl family with each element held out once",
+  "observable": "held-out radius prediction error across mass and raw Z_eff",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_boron_loo_check_20260511-100123Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_boron_loo_check_20260511-100123Z.txt"
+}

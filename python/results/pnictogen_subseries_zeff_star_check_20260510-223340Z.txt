@@ -1,0 +1,29 @@
+Pnictogen subseries Zeff* check
+Timestamp: 20260510-223340Z
+
+Hypothese: using Zeff* as the fine pnictogen variable keeps the light branch D1-like and the heavy branch D1/D2-structured
+Cas de controle: N -> P versus As -> Sb -> Bi, with radius compared against mass, raw Zeff, Zeff*, D1/D2 and [1, Zeff*, k, L]
+Observable: subseries fit quality, monotonicity, and pivot consistency at As
+Verdict: supported
+
+Sous-serie legere N -> P:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- zeff_star_trend: increasing
+- d1d2_trend: increasing
+- mass_rmse: 0.000000
+- zeff_rmse: 0.000000
+- zeff_star_rmse: 0.000000
+- corrected_rmse: 0.000026
+
+Sous-serie lourde As -> Sb -> Bi:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- zeff_star_trend: increasing
+- d1d2_trend: increasing
+- mass_rmse: 3.307156
+- zeff_rmse: 0.396908
+- zeff_star_rmse: 1.702786
+- corrected_rmse: 0.000014

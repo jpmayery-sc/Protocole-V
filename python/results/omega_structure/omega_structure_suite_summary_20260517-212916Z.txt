@@ -1,0 +1,7 @@
+Omega structure suite summary
+timestamp: 20260517-212916Z
+overall_verdict: supported
+supported_count: 1/1
+
+Items:
+- omega_z_structure: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\omega_structure\omega_z_structure_check_20260517-212916Z.json

@@ -1,0 +1,26 @@
+Fine variation equivalence check
+timestamp: 20260517-153908Z
+verdict: supported
+equivalent: True
+tolerance: 0.15
+
+alkali:
+- baseline_nrmse: 0.054667
+- geometric_nrmse: 0.040643
+- energetic_nrmse: 0.025457
+- geometric_gain: 0.014023
+- energetic_gain: 0.029210
+- gain_gap: 0.015186
+- equivalent: True
+- series: Li, Na, K, Rb, Cs
+
+halogens:
+- baseline_nrmse: 0.039688
+- geometric_nrmse: 0.032564
+- energetic_nrmse: 0.023763
+- geometric_gain: 0.007124
+- energetic_gain: 0.015925
+- gain_gap: 0.008801
+- equivalent: True
+- series: F, Cl, Br, I, At
+

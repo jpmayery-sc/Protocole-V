@@ -1,0 +1,8 @@
+Opening protocol suite summary
+timestamp: 20260511-001635Z
+overall_verdict: supported
+supported_count: 2/2
+
+Items:
+- opening_protocol: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\opening_protocol_check_20260511-001633Z.json
+- leave_one_out_collapse: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\leave_one_out_collapse_20260511-001634Z.json

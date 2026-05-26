@@ -1,0 +1,14 @@
+Three-phase current check
+timestamp: 20260507-173619Z
+verdict: supported
+balanced_sum_ok: True
+balanced_power_ok: True
+unbalanced_neutral_ok: True
+unbalanced_power_ok: True
+cut_symmetry_ok: True
+phase_offsets_ok: True
+
+Cases:
+- balanced: sum_rms=3.598559e-16 neutral_rms=3.598559e-16 power_cv=2.698414e-16 phase_rms=[0.7071067811865476, 0.7071067811865476, 0.7071067811865476]
+- unbalanced: sum_rms=1.837117e-01 neutral_rms=1.837117e-01 power_cv=1.207776e-01 phase_rms=[0.7071067811865476, 0.6010407640085653, 0.8131727983645296]
+- phase_cut: sum_rms=7.071068e-01 neutral_rms=7.071068e-01 power_cv=3.535534e-01 phase_rms=[0.7071067811865476, 0.7071067811865476, 0.0]

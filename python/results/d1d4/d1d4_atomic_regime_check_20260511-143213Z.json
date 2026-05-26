@@ -1,0 +1,59 @@
+{
+  "timestamp": "20260511-143213Z",
+  "verdict": "supported",
+  "pressure_scaling_ok": true,
+  "d1_dominates_ok": true,
+  "negligible_ok": true,
+  "cases": [
+    {
+      "symbol": "H",
+      "name": "Hydrogen-like atom",
+      "ionization_ev": 13.6,
+      "principal_n": 1.0,
+      "electron_density_m3": 1e+20,
+      "D1": 1.0,
+      "D4_pressure_pa": 5.034704530593942e-05,
+      "D4_balance_ev": 3.1424154014930647e-06,
+      "D4_over_D1": 3.1424154014930647e-06,
+      "ok": true
+    },
+    {
+      "symbol": "He",
+      "name": "Helium-like atom",
+      "ionization_ev": 24.587,
+      "principal_n": 1.0,
+      "electron_density_m3": 5e+20,
+      "D1": 1.3445696884352345,
+      "D4_pressure_pa": 0.0007360782677058685,
+      "D4_balance_ev": 9.188478374799025e-06,
+      "D4_over_D1": 6.833768791480247e-06,
+      "ok": true
+    },
+    {
+      "symbol": "Ne",
+      "name": "Neon-like atom",
+      "ionization_ev": 21.564,
+      "principal_n": 2.0,
+      "electron_density_m3": 1e+21,
+      "D1": 2.51840285521925,
+      "D4_pressure_pa": 0.0023369028329744516,
+      "D4_balance_ev": 1.4585800238143025e-05,
+      "D4_over_D1": 5.791686666775637e-06,
+      "ok": true
+    }
+  ],
+  "pressure_ratios": [
+    14.620088691064332,
+    3.1748021039363996
+  ],
+  "expected_pressure_ratios": [
+    14.620088691064332,
+    3.174802103936399
+  ],
+  "regime": "atomic",
+  "hypothesis": "D4 remains negligible in the atomic regime while D1 still dominates",
+  "case_control": "low-density atomic ladder from H-like to Ne-like cases",
+  "observable": "D1 versus D4_balance and the n_e^(5/3) scaling of the raw D4 pressure",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_atomic_regime_check_20260511-143213Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_atomic_regime_check_20260511-143213Z.txt"
+}

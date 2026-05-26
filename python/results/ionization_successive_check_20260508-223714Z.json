@@ -1,0 +1,52 @@
+{
+  "timestamp": "20260508-223714Z",
+  "verdict": "supported",
+  "monotonic_ok": true,
+  "shell_jump_ok": true,
+  "nucleus_fixed_ok": true,
+  "cases": [
+    {
+      "name": "Na",
+      "atomic_number": 11,
+      "ionization_energies_ev": [
+        5.1391,
+        47.286
+      ],
+      "monotonic": true,
+      "ratios": [
+        9.201222003852815
+      ],
+      "largest_jump": 9.201222003852815
+    },
+    {
+      "name": "Mg",
+      "atomic_number": 12,
+      "ionization_energies_ev": [
+        7.6462,
+        15.035,
+        80.143
+      ],
+      "monotonic": true,
+      "ratios": [
+        1.966336219298475,
+        5.3304289990023275
+      ],
+      "largest_jump": 5.3304289990023275
+    },
+    {
+      "name": "Al",
+      "atomic_number": 13,
+      "ionization_energies_ev": [
+        5.9858,
+        18.828,
+        28.447
+      ],
+      "monotonic": true,
+      "ratios": [
+        3.1454442179825586,
+        1.510888039090716
+      ],
+      "largest_jump": 3.1454442179825586
+    }
+  ]
+}

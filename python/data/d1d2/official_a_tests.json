@@ -1,0 +1,50 @@
+{
+  "suite": "A",
+  "title": "Tests intra-famille D1/D2",
+  "tests": [
+    {
+      "id": "A1",
+      "name": "Tetrels",
+      "family": "tetrel",
+      "expect": {
+        "D1": "increasing",
+        "D2": "decreasing",
+        "D1overD2": "increasing",
+        "family_regime": "semi-metal"
+      }
+    },
+    {
+      "id": "A2",
+      "name": "Pnictogens",
+      "family": "pnictogen",
+      "expect": {
+        "D1": "increasing",
+        "D2": "decreasing",
+        "D1overD2": "increasing",
+        "family_regime": "semi-metal"
+      }
+    },
+    {
+      "id": "A3",
+      "name": "Halogens",
+      "family": "halogen",
+      "expect": {
+        "D1": "increasing",
+        "D2": "decreasing",
+        "D1overD2": "increasing",
+        "family_regime": "semi-metal"
+      }
+    },
+    {
+      "id": "A4",
+      "name": "Lanthanides",
+      "family": "lanthanide",
+      "expect": {
+        "D1": "mixed",
+        "D2": "mixed",
+        "D1overD2": "mixed",
+        "family_regime": "D3 / topological"
+      }
+    }
+  ]
+}

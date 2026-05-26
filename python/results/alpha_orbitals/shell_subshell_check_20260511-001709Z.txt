@@ -1,0 +1,20 @@
+Shell / sub-shell check
+timestamp: 20260511-001709Z
+verdict: supported
+radius_global_ok: True
+ie_global_ok: True
+local_breaks_ok: True
+increasing_steps: 5
+decreasing_steps: 2
+b_dip_ok: True
+o_dip_ok: True
+
+Cases:
+- Li: radius_pm=152 first_ie_ev=5.39
+- Be: radius_pm=112 first_ie_ev=9.32
+- B: radius_pm=85 first_ie_ev=8.3
+- C: radius_pm=70 first_ie_ev=11.26
+- N: radius_pm=65 first_ie_ev=14.53
+- O: radius_pm=60 first_ie_ev=13.62
+- F: radius_pm=50 first_ie_ev=17.42
+- Ne: radius_pm=38 first_ie_ev=21.56

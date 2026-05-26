@@ -1,0 +1,9 @@
+Official D1/D2 suite B summary
+timestamp: 20260511-002411Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- test: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d2_official\official_d1d2_b_tests_20260511-002411Z.json
+- test: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d2_official\official_d1d2_b_tests_20260511-002411Z.json
+- test: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d2_official\official_d1d2_b_tests_20260511-002411Z.json

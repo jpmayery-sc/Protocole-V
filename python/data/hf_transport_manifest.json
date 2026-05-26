@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "description": "Normalized HF transport dataset for Cu, Al, Ag, and Fe.",
+  "datasets": {
+    "cu": {
+      "file": "python/data/hf_transport/cu.json",
+      "source_title": "Frequency Dependence Measuring of Skin-Effect on Metal Wires with Different Materials and Diameters",
+      "source_url": "",
+      "record_count": 5
+    },
+    "al": {
+      "file": "python/data/hf_transport/al.json",
+      "source_title": "Frequency Dependence Measuring of Skin-Effect on Metal Wires with Different Materials and Diameters",
+      "source_url": "",
+      "record_count": 5
+    },
+    "ag": {
+      "file": "python/data/hf_transport/ag.json",
+      "source_title": "Study of the skin depth in different metallic atoms",
+      "source_url": "https://doi.org/10.1016/j.matpr.2020.12.715",
+      "record_count": 5
+    },
+    "fe": {
+      "file": "python/data/hf_transport/fe.json",
+      "source_title": "Comparison of Skin Effects in Ferromagnetic and Nonferromagnetic Materials",
+      "source_url": "",
+      "record_count": 5
+    }
+  },
+  "notes": [
+    "The numerical series are normalised, derived tables with explicit provenance.",
+    "Cu and Al reuse the measured-wire source identified in validation notes.",
+    "Ag uses the published skin-depth paper with DOI 10.1016/j.matpr.2020.12.715.",
+    "Fe uses a ferromagnetic skin-effect source with an explicit effective permeability assumption in the JSON record."
+  ]
+}

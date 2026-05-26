@@ -1,0 +1,36 @@
+Fine variation hard check
+timestamp: 20260511-130320Z
+verdict: supported
+equivalent: True
+tolerance: 0.12
+
+pnictogen_full:
+- baseline_nrmse: 0.075162
+- geometric_nrmse: 0.032124
+- energetic_nrmse: 0.006135
+- geometric_gain: 0.043038
+- energetic_gain: 0.069027
+- gain_gap: 0.025989
+- equivalent: True
+- series: N, P, As, Sb, Bi
+
+pnictogen_light_core:
+- baseline_nrmse: 0.140046
+- geometric_nrmse: 0.000000
+- energetic_nrmse: 0.000000
+- geometric_gain: 0.140046
+- energetic_gain: 0.140046
+- gain_gap: 0.000000
+- equivalent: True
+- series: N, P, As
+
+pnictogen_heavy_tail:
+- baseline_nrmse: 0.011674
+- geometric_nrmse: 0.000000
+- energetic_nrmse: 0.000000
+- geometric_gain: 0.011674
+- energetic_gain: 0.011674
+- gain_gap: 0.000000
+- equivalent: True
+- series: As, Sb, Bi
+

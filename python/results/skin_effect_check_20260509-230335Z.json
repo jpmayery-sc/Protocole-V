@@ -1,0 +1,54 @@
+{
+  "timestamp": "20260509-230335Z",
+  "verdict": "supported",
+  "cu_monotone": true,
+  "fe_monotone": true,
+  "material_contrast_ok": true,
+  "cases": [
+    {
+      "name": "Cu low",
+      "resistivity_ohm_m": 1.68e-08,
+      "relative_mu": 1.0,
+      "frequency_hz": 1000.0,
+      "angular_frequency_rad_s": 6283.185307179586,
+      "skin_depth_m": 0.0020628838340968664,
+      "skin_depth_mm": 2.0628838340968665
+    },
+    {
+      "name": "Cu mid",
+      "resistivity_ohm_m": 1.68e-08,
+      "relative_mu": 1.0,
+      "frequency_hz": 100000.0,
+      "angular_frequency_rad_s": 628318.5307179586,
+      "skin_depth_m": 0.00020628838340968662,
+      "skin_depth_mm": 0.2062883834096866
+    },
+    {
+      "name": "Cu high",
+      "resistivity_ohm_m": 1.68e-08,
+      "relative_mu": 1.0,
+      "frequency_hz": 10000000.0,
+      "angular_frequency_rad_s": 62831853.071795866,
+      "skin_depth_m": 2.0628838340968663e-05,
+      "skin_depth_mm": 0.020628838340968663
+    },
+    {
+      "name": "Fe low",
+      "resistivity_ohm_m": 9.71e-08,
+      "relative_mu": 200.0,
+      "frequency_hz": 1000.0,
+      "angular_frequency_rad_s": 6283.185307179586,
+      "skin_depth_m": 0.0003506830287394693,
+      "skin_depth_mm": 0.3506830287394693
+    },
+    {
+      "name": "Fe high",
+      "resistivity_ohm_m": 9.71e-08,
+      "relative_mu": 200.0,
+      "frequency_hz": 10000000.0,
+      "angular_frequency_rad_s": 62831853.071795866,
+      "skin_depth_m": 3.506830287394693e-06,
+      "skin_depth_mm": 0.003506830287394693
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "20260511-100422Z",
+  "verdict": "supported",
+  "ordering_ok": true,
+  "noble_gas_ok": true,
+  "group_sign_ok": true,
+  "cases": [
+    {
+      "name": "Cl",
+      "group": "halogen",
+      "electron_affinity_ev": 3.61,
+      "favorable": true
+    },
+    {
+      "name": "F",
+      "group": "halogen",
+      "electron_affinity_ev": 3.4,
+      "favorable": true
+    },
+    {
+      "name": "O",
+      "group": "chalcogen",
+      "electron_affinity_ev": 1.46,
+      "favorable": true
+    },
+    {
+      "name": "Na",
+      "group": "alkali",
+      "electron_affinity_ev": 0.55,
+      "favorable": true
+    },
+    {
+      "name": "Ne",
+      "group": "noble_gas",
+      "electron_affinity_ev": -1.2,
+      "favorable": false
+    }
+  ]
+}

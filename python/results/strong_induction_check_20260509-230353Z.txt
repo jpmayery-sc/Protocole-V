@@ -1,0 +1,12 @@
+Strong induction check
+timestamp: 20260509-230353Z
+verdict: supported
+monotone_ok: True
+curvature_ok: True
+sign_ok: True
+
+Cases:
+- weak: rate=1.00 linear=1.000000 induced=0.248706 rel_dev=0.751294
+- intermediate: rate=4.00 linear=4.000000 induced=0.924234 rel_dev=0.768941
+- strong: rate=10.00 linear=10.000000 induced=1.696567 rel_dev=0.830343
+- very_strong: rate=18.00 linear=18.000000 induced=1.956052 rel_dev=0.891330

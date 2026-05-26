@@ -1,0 +1,29 @@
+{
+  "suite": "fine_variation_hard",
+  "timestamp": "20260511-001426Z",
+  "overall_verdict": "partiel",
+  "supported_count": 2,
+  "total": 3,
+  "items": [
+    {
+      "label": "pnictogen_hard",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_hard_check_20260511-001425Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_hard_check_20260511-001425Z.txt"
+    },
+    {
+      "label": "lanthanide_hard",
+      "verdict": "contradicted",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_lanthanide_hard_check_20260511-001426Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_lanthanide_hard_check_20260511-001426Z.txt"
+    },
+    {
+      "label": "boron_hard",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_boron_hard_check_20260511-001426Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_boron_hard_check_20260511-001426Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_hard_suite_summary_20260511-001426Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_hard\\fine_variation_hard_suite_summary_20260511-001426Z.txt"
+}

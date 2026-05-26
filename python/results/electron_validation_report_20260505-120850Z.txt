@@ -1,0 +1,13 @@
+Electron validation report
+timestamp: 20260505-120850Z
+
+Summary verdicts:
+T1_presence_electron: supported
+T2_MIN_GLOBAL_effect: supported
+
+Detailed test paths:
+T1: results\T1_presence_Ce_N60_20260505-120850Z.json
+T2: results\T2_sensitivity_MIN_GLOBAL_20260505-120850Z.json
+T3: results\T3_annihilation_relation_N100_20260505-120850Z.json
+T4: results\T4_Ce_vs_N_20260505-120850Z.json
+T5: results\T5_corr_Ce_Cint_20260505-120850Z.json

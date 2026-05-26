@@ -1,0 +1,12 @@
+V10 suite summary
+timestamp: 20260513-152450Z
+overall_verdict: supported
+supported_count: 4/4
+manifest_status: partial
+bridge_ready_count: 4
+
+Sources:
+- zenodo-7313581: supported | status=partial | bridge=None | D:\Privé\Tout ne fait qu'un\experience\experience 4\python\data\v10\zenodo_7313581\ingest_index.json
+- zenodo-7631438: supported | status=partial | bridge=None | D:\Privé\Tout ne fait qu'un\experience\experience 4\python\data\v10\zenodo_7631438\ingest_index.json
+- zenodo-10605186: supported | status=metadata_only | bridge=robustness and control-logic validation | D:\Privé\Tout ne fait qu'un\experience\experience 4\python\data\v10\zenodo_10605186\ingest_index.json
+- zenodo-5001776: supported | status=metadata_only | bridge=loss resilience and measurement imperfection modeling | D:\Privé\Tout ne fait qu'un\experience\experience 4\python\data\v10\zenodo_5001776\ingest_index.json

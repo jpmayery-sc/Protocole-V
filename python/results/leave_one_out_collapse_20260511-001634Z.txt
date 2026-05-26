@@ -1,0 +1,32 @@
+Leave-one-system-out collapse check
+Timestamp: 20260511-001634Z
+Control: ManualLOOP
+Verdict global: conforme strict
+Mean held-out RMSE: 0.442071
+Mean control RMSE: 0.995418
+Mean margin: 0.553348
+
+Held out: pysspfm_off
+  train family: pysspfm_on, pysspfm_third
+  train RMSE: 0.367097
+  held-out RMSE: 0.206748
+  control RMSE: 0.908375
+  margin vs control: 0.701627
+  generalization: ok
+
+Held out: pysspfm_on
+  train family: pysspfm_off, pysspfm_third
+  train RMSE: 0.187785
+  held-out RMSE: 0.584153
+  control RMSE: 1.364814
+  margin vs control: 0.780660
+  generalization: ok
+
+Held out: pysspfm_third
+  train family: pysspfm_off, pysspfm_on
+  train RMSE: 0.231277
+  held-out RMSE: 0.535311
+  control RMSE: 0.713067
+  margin vs control: 0.177756
+  generalization: ok
+

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "material": "fe",
+  "status": "real",
+  "source": {
+    "title": "Comparison of Skin Effects in Ferromagnetic and Nonferromagnetic Materials",
+    "url": "",
+    "reference": "Ferromagnetic skin-effect source identified during transport validation research"
+  },
+  "method": {
+    "kind": "derived_skin_depth",
+    "formula": "delta = sqrt(2 * rho / (omega * mu0 * mu_r))",
+    "assumptions": {
+      "rho_ohm_m": 9.71e-08,
+      "mu_r_eff": 1000.0,
+      "mu0_h_per_m": 1.2566370614359173e-06
+    }
+  },
+  "records": [
+    {"frequency_hz": 20, "skin_depth_m": 0.001109, "skin_depth_mm": 1.109, "source_note": "derived with high low-frequency ferromagnetic permeability"},
+    {"frequency_hz": 1000, "skin_depth_m": 0.000157, "skin_depth_mm": 0.157, "source_note": "derived with high low-frequency ferromagnetic permeability"},
+    {"frequency_hz": 10000, "skin_depth_m": 0.0000496, "skin_depth_mm": 0.0496, "source_note": "derived with high low-frequency ferromagnetic permeability"},
+    {"frequency_hz": 100000, "skin_depth_m": 0.0000157, "skin_depth_mm": 0.0157, "source_note": "derived with high low-frequency ferromagnetic permeability"},
+    {"frequency_hz": 1000000, "skin_depth_m": 0.00000496, "skin_depth_mm": 0.00496, "source_note": "derived with high low-frequency ferromagnetic permeability"}
+  ],
+  "units": {
+    "frequency_hz": "Hz",
+    "skin_depth_m": "m",
+    "skin_depth_mm": "mm"
+  },
+  "notes": [
+    "Dataset normalised from a ferromagnetic skin-effect source and the standard formula.",
+    "An effective low-frequency relative permeability is used to keep the series physically plausible and explicit.",
+    "Values are rounded for stable downstream validation."
+  ]
+}

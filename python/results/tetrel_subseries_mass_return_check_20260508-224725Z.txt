@@ -1,0 +1,45 @@
+Tetrel subseries mass-return check
+Timestamp: 20260508-224725Z
+
+Hypothese: when the tetrel family is split at Ge, Z_eff stays better in the light core while mass regains usefulness in the heavy tail
+Cas de controle: C -> Si -> Ge versus Ge -> Sn -> Pb
+Observable: relative regularity of radius, ionization, Z_eff proxy and mass in the two subseries
+Verdict: falsifie
+
+Sous-serie legere C -> Ge:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 7.0710678118654755
+- ionization_rmse: 0.6732363663677121
+- zeff_rmse: 0.052595476620050846
+- mass_rmse: 6.71067905572073
+- radius_step_cv: 0.5172413793103449
+- ionization_step_cv: 0.8498616442024458
+- zeff_step_cv: 0.18161549856179104
+- mass_step_cv: 0.4696712251934211
+
+Sous-serie lourde Ge -> Pb:
+- radius_trend: increasing
+- ionization_trend: mixed
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 2.592724864350674
+- ionization_rmse: 0.14809173020650246
+- zeff_rmse: 0.030863238259839366
+- mass_rmse: 9.996132863373827
+- radius_step_cv: 0.3793103448275862
+- ionization_step_cv: 1.3016366273047437
+- zeff_step_cv: 0.09472452993528044
+- mass_step_cv: 0.3151519655198038
+
+Criteres:
+- light_zeff_better: True
+- heavy_mass_better: False
+- structural_ok: False
+
+Falsificateurs:
+- the light core is not monotone in radius and ionization
+- Z_eff is not smoother than mass in the light core
+- mass is not as good as or better than Z_eff in the heavy tail

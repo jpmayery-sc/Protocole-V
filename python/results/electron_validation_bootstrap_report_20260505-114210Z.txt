@@ -1,0 +1,115 @@
+Bootstrap T5 report
+generated: 20260505-114210Z UTC
+
+MIN_NEUTRON = 20
+  n = 3
+  r_obs = 0.769581
+  p_value = 8.881112e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 21
+  n = 3
+  r_obs = 0.737439
+  p_value = 8.536146e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 22
+  n = 3
+  r_obs = 0.759853
+  p_value = 8.895110e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 23
+  n = 3
+  r_obs = 0.857350
+  p_value = 7.425257e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 24
+  n = 3
+  r_obs = 0.854101
+  p_value = 8.874113e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 25
+  n = 3
+  r_obs = 0.859358
+  p_value = 8.869113e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 26
+  n = 3
+  r_obs = 0.923269
+  p_value = 8.921108e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 27
+  n = 3
+  r_obs = 0.869737
+  p_value = 8.173183e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 28
+  n = 3
+  r_obs = 0.864663
+  p_value = 8.910109e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 29
+  n = 3
+  r_obs = 0.889628
+  p_value = 7.393261e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 30
+  n = 3
+  r_obs = 0.879684
+  p_value = 8.858114e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 31
+  n = 3
+  r_obs = 0.871079
+  p_value = 7.788221e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 32
+  n = 3
+  r_obs = 0.865125
+  p_value = 7.495250e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 33
+  n = 3
+  r_obs = 0.863680
+  p_value = 8.539146e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 34
+  n = 3
+  r_obs = 0.877457
+  p_value = 7.003300e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+
+MIN_NEUTRON = 35
+  n = 3
+  r_obs = 0.851138
+  p_value = 8.051195e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 10000
+

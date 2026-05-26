@@ -1,0 +1,81 @@
+{
+  "timestamp": "20260517-153906Z",
+  "suite": "regime_physics",
+  "regime": "atomique",
+  "verdict": "supported",
+  "hypothesis": "D1 dominates in the atomic regime while D4 stays negligible",
+  "case_control": "H, He, and Ne atomic ladder with low electron density",
+  "observable": "D1_proxy versus D4_balance and the n_e^(5/3) pressure scaling",
+  "checks": [
+    "D1 dominates",
+    "D4 remains negligible",
+    "raw pressure follows n_e^(5/3)",
+    "launcher routes the atomic branch to D1"
+  ],
+  "pressure_scaling_ok": true,
+  "launcher_ok": true,
+  "d1_dominates_ok": true,
+  "negligible_ok": true,
+  "cases": [
+    {
+      "symbol": "Li",
+      "ionization_ev": 5.3917,
+      "principal_n": 2.0,
+      "electron_density_m3": 2e+20,
+      "launcher_grid": "D1",
+      "D1_proxy": 1.2592831761153085,
+      "D4_pressure_pa": 0.0001598419053642777,
+      "D4_balance_ev": 4.988273514051162e-06,
+      "D4_over_D1": 3.961200791579861e-06,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "H",
+      "ionization_ev": 13.6,
+      "principal_n": 1.0,
+      "electron_density_m3": 1e+20,
+      "launcher_grid": "D1",
+      "D1_proxy": 1.0,
+      "D4_pressure_pa": 5.034704530593942e-05,
+      "D4_balance_ev": 3.1424154014930647e-06,
+      "D4_over_D1": 3.1424154014930647e-06,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "He",
+      "ionization_ev": 24.587,
+      "principal_n": 1.0,
+      "electron_density_m3": 5e+20,
+      "launcher_grid": "D1",
+      "D1_proxy": 1.3445696884352345,
+      "D4_pressure_pa": 0.0007360782677058685,
+      "D4_balance_ev": 9.188478374799025e-06,
+      "D4_over_D1": 6.833768791480247e-06,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Ne",
+      "ionization_ev": 21.564,
+      "principal_n": 2.0,
+      "electron_density_m3": 1e+21,
+      "launcher_grid": "D1",
+      "D1_proxy": 2.51840285521925,
+      "D4_pressure_pa": 0.0023369028329744516,
+      "D4_balance_ev": 1.4585800238143025e-05,
+      "D4_over_D1": 5.791686666775637e-06,
+      "verdict": "supported"
+    }
+  ],
+  "pressure_ratios": [
+    0.31498026247371824,
+    14.620088691064332,
+    3.1748021039363996
+  ],
+  "expected_pressure_ratios": [
+    0.3149802624737183,
+    14.620088691064332,
+    3.174802103936399
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260517-153906Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260517-153906Z.txt"
+}

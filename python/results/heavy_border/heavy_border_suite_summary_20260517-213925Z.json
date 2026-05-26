@@ -1,0 +1,18 @@
+{
+  "suite": "heavy_border",
+  "timestamp": "20260517-213925Z",
+  "overall_verdict": "supported",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "heavy_border_control",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-213925Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-213925Z.txt",
+      "hypothesis": "Fr / Ra / Lr must remain separated at the heavy border and not collapse into one class"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_suite_summary_20260517-213925Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_suite_summary_20260517-213925Z.txt"
+}

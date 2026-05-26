@@ -1,0 +1,29 @@
+{
+  "suite": "alpha_orbitals",
+  "timestamp": "20260511-001709Z",
+  "overall_verdict": "partiel",
+  "supported_count": 2,
+  "total": 3,
+  "items": [
+    {
+      "label": "alpha_constant",
+      "verdict": "falsifie",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\alpha_constant_check_20260511-001709Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\alpha_constant_check_20260511-001709Z.txt"
+    },
+    {
+      "label": "alpha_phase_observable",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\alpha_phase_observable_check_20260511-001709Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\alpha_phase_observable_check_20260511-001709Z.txt"
+    },
+    {
+      "label": "shell_subshell",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\shell_subshell_check_20260511-001709Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\shell_subshell_check_20260511-001709Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\alpha_orbitals_suite_summary_20260511-001709Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\alpha_orbitals\\alpha_orbitals_suite_summary_20260511-001709Z.txt"
+}

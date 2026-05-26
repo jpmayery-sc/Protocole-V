@@ -1,0 +1,28 @@
+{
+  "suite": "D",
+  "title": "Carte globale D1/D2/D3",
+  "expected_topological_targets": ["Ce", "Dy", "Er", "Eu", "Gd", "Ho", "La", "Lu", "Nd", "Pr", "Sm", "Tb", "Tm", "Yb"],
+  "expected_metal_targets": ["Ca", "Na"],
+  "tests": [
+    {
+      "id": "D1",
+      "name": "Map_2D",
+      "panel": "global"
+    },
+    {
+      "id": "D2",
+      "name": "Map_1D",
+      "panel": "global"
+    },
+    {
+      "id": "D3",
+      "name": "Topological_detection",
+      "expected_zone": "D3 / topological"
+    },
+    {
+      "id": "D4",
+      "name": "Metal_detection",
+      "expected_zone": "semi-metal"
+    }
+  ]
+}

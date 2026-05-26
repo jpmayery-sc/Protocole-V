@@ -1,0 +1,19 @@
+Regime atomique check
+timestamp: 20260519-171544Z
+verdict: supported
+regime: atomique
+hypothesis: D1 dominates in the atomic regime while D4 stays negligible
+case_control: H, He, and Ne atomic ladder with low electron density
+observable: D1_proxy versus D4_balance and the n_e^(5/3) pressure scaling
+
+Checks:
+- D1 dominates
+- D4 remains negligible
+- raw pressure follows n_e^(5/3)
+- launcher routes the atomic branch to D1
+
+Cases:
+- Li: supported
+- H: supported
+- He: supported
+- Ne: supported

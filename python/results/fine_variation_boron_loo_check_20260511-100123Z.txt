@@ -1,0 +1,35 @@
+Fine variation boron leave-one-out check
+Timestamp: 20260511-100123Z
+Hypothesis: leave-one-out on the boron family is best explained by raw Z_eff rather than mass
+Case control: full B -> Tl family with each element held out once
+Observable: held-out radius prediction error across mass and raw Z_eff
+Verdict: supported
+Mass RMSE: 30.640835
+Zeff RMSE: 25.817582
+Best model: zeff
+
+Held out: B
+  mass error: 2224.629520
+  zeff error: 1792.369720
+  best model: zeff
+
+Held out: Al
+  mass error: 1303.135551
+  zeff error: 1328.256687
+  best model: mass
+
+Held out: Ga
+  mass error: 5.707271
+  zeff error: 6.547997
+  best model: mass
+
+Held out: In
+  mass error: 115.151135
+  zeff error: 9.348060
+  best model: zeff
+
+Held out: Tl
+  mass error: 1045.680218
+  zeff error: 196.215149
+  best model: zeff
+

@@ -1,0 +1,346 @@
+{
+  "timestamp": "20260510-220614Z",
+  "suite": "D",
+  "title": "Carte globale D1/D2/D3",
+  "verdict": "supported",
+  "panel": [
+    {
+      "symbol": "Bi",
+      "family": "topological",
+      "I": 7.2856,
+      "r": 148.0,
+      "n": 6,
+      "D1overD2": 89.209448,
+      "zone": "semi-metal"
+    },
+    {
+      "symbol": "Sb",
+      "family": "topological",
+      "I": 8.6084,
+      "r": 133.0,
+      "n": 5,
+      "D1overD2": 61.459776,
+      "zone": "semi-metal"
+    },
+    {
+      "symbol": "Te",
+      "family": "topological",
+      "I": 9.0096,
+      "r": 138.0,
+      "n": 5,
+      "D1overD2": 62.334271,
+      "zone": "semi-metal"
+    },
+    {
+      "symbol": "Se",
+      "family": "topological",
+      "I": 9.7524,
+      "r": 120.0,
+      "n": 4,
+      "D1overD2": 41.678879,
+      "zone": "transition"
+    },
+    {
+      "symbol": "La",
+      "family": "f_block",
+      "I": 5.577,
+      "r": 195.0,
+      "n": 6,
+      "D1overD2": 134.343323,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Ce",
+      "family": "f_block",
+      "I": 5.5387,
+      "r": 185.0,
+      "n": 6,
+      "D1overD2": 127.893833,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Pr",
+      "family": "f_block",
+      "I": 5.473,
+      "r": 182.0,
+      "n": 6,
+      "D1overD2": 126.572821,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Nd",
+      "family": "f_block",
+      "I": 5.525,
+      "r": 181.0,
+      "n": 6,
+      "D1overD2": 125.283602,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Sm",
+      "family": "f_block",
+      "I": 5.644,
+      "r": 180.0,
+      "n": 6,
+      "D1overD2": 123.270966,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Eu",
+      "family": "f_block",
+      "I": 5.67,
+      "r": 199.0,
+      "n": 6,
+      "D1overD2": 135.970077,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Gd",
+      "family": "f_block",
+      "I": 6.15,
+      "r": 180.0,
+      "n": 6,
+      "D1overD2": 118.090985,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Tb",
+      "family": "f_block",
+      "I": 5.863,
+      "r": 178.0,
+      "n": 6,
+      "D1overD2": 119.602939,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Dy",
+      "family": "f_block",
+      "I": 5.939,
+      "r": 177.0,
+      "n": 6,
+      "D1overD2": 118.167596,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Ho",
+      "family": "f_block",
+      "I": 6.022,
+      "r": 176.0,
+      "n": 6,
+      "D1overD2": 116.687434,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Er",
+      "family": "f_block",
+      "I": 6.108,
+      "r": 175.0,
+      "n": 6,
+      "D1overD2": 115.204735,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Tm",
+      "family": "f_block",
+      "I": 6.184,
+      "r": 174.0,
+      "n": 6,
+      "D1overD2": 113.840371,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Yb",
+      "family": "f_block",
+      "I": 6.254,
+      "r": 194.0,
+      "n": 6,
+      "D1overD2": 126.213145,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Lu",
+      "family": "f_block",
+      "I": 5.428,
+      "r": 173.0,
+      "n": 6,
+      "D1overD2": 120.811417,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Na",
+      "family": "alkali_metal",
+      "I": 5.1391,
+      "r": 186.0,
+      "n": 3,
+      "D1overD2": 66.74538,
+      "zone": "semi-metal"
+    },
+    {
+      "symbol": "K",
+      "family": "alkali_metal",
+      "I": 4.3407,
+      "r": 227.0,
+      "n": 4,
+      "D1overD2": 118.177965,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Rb",
+      "family": "alkali_metal",
+      "I": 4.1771,
+      "r": 248.0,
+      "n": 5,
+      "D1overD2": 164.51852,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Cs",
+      "family": "alkali_metal",
+      "I": 3.8939,
+      "r": 267.0,
+      "n": 6,
+      "D1overD2": 220.140861,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Ca",
+      "family": "alkaline_earth_metal",
+      "I": 6.1132,
+      "r": 176.0,
+      "n": 4,
+      "D1overD2": 77.209173,
+      "zone": "semi-metal"
+    },
+    {
+      "symbol": "Sr",
+      "family": "alkaline_earth_metal",
+      "I": 5.6949,
+      "r": 195.0,
+      "n": 5,
+      "D1overD2": 110.787844,
+      "zone": "D3 / topological"
+    },
+    {
+      "symbol": "Ba",
+      "family": "alkaline_earth_metal",
+      "I": 5.2117,
+      "r": 217.0,
+      "n": 6,
+      "D1overD2": 154.650677,
+      "zone": "D3 / topological"
+    }
+  ],
+  "zones": {
+    "covalent": [],
+    "transition": [
+      "Se"
+    ],
+    "semi-metal": [
+      "Bi",
+      "Sb",
+      "Te",
+      "Na",
+      "Ca"
+    ],
+    "D3 / topological": [
+      "La",
+      "Ce",
+      "Pr",
+      "Nd",
+      "Sm",
+      "Eu",
+      "Gd",
+      "Tb",
+      "Dy",
+      "Ho",
+      "Er",
+      "Tm",
+      "Yb",
+      "Lu",
+      "K",
+      "Rb",
+      "Cs",
+      "Sr",
+      "Ba"
+    ]
+  },
+  "topological_targets": [
+    "Bi",
+    "Ce",
+    "Dy",
+    "Er",
+    "Eu",
+    "Gd",
+    "Ho",
+    "La",
+    "Lu",
+    "Nd",
+    "Pr",
+    "Sb",
+    "Se",
+    "Sm",
+    "Tb",
+    "Te",
+    "Tm",
+    "Yb"
+  ],
+  "topological_detected": [
+    "Ce",
+    "Dy",
+    "Er",
+    "Eu",
+    "Gd",
+    "Ho",
+    "La",
+    "Lu",
+    "Nd",
+    "Pr",
+    "Sm",
+    "Tb",
+    "Tm",
+    "Yb"
+  ],
+  "metal_targets": [
+    "Ba",
+    "Ca",
+    "Cs",
+    "K",
+    "Na",
+    "Rb",
+    "Sr"
+  ],
+  "metal_detected": [
+    "Ca",
+    "Na"
+  ],
+  "topological_ok": true,
+  "metal_ok": true,
+  "zone_counts": {
+    "covalent": 0,
+    "transition": 1,
+    "semi-metal": 5,
+    "D3 / topological": 19
+  },
+  "expected_topological_targets": [
+    "Ce",
+    "Dy",
+    "Er",
+    "Eu",
+    "Gd",
+    "Ho",
+    "La",
+    "Lu",
+    "Nd",
+    "Pr",
+    "Sm",
+    "Tb",
+    "Tm",
+    "Yb"
+  ],
+  "expected_metal_targets": [
+    "Ca",
+    "Na"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_d_tests_20260510-220614Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_d_tests_20260510-220614Z.txt"
+}

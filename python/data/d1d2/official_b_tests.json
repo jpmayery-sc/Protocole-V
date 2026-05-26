@@ -1,0 +1,35 @@
+{
+  "suite": "B",
+  "title": "Tests inter-familles D1/D2",
+  "tests": [
+    {
+      "id": "B1",
+      "name": "Tetrels_vs_Pnictogens",
+      "left": "tetrel",
+      "right": "pnictogen",
+      "expect": {
+        "transition_band_overlap": true
+      }
+    },
+    {
+      "id": "B2",
+      "name": "Halogens_vs_Tetrels",
+      "left": "halogen",
+      "right": "tetrel",
+      "expect": {
+        "halogen_transition": false,
+        "tetrel_transition": true
+      }
+    },
+    {
+      "id": "B3",
+      "name": "Lanthanides_vs_sp",
+      "lanthanide": "lanthanide",
+      "sp_families": ["tetrel", "pnictogen", "halogen"],
+      "expect": {
+        "lanthanide_requires_D3": true,
+        "sp_regular": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "source_id": "zenodo-7313581",
+  "title": "Telecom Quantum Photonic Interface for a 40Ca+ Single-Ion Quantum Memory",
+  "record_url": "https://zenodo.org/records/7313581",
+  "doi": "10.5281/zenodo.7313581",
+  "license": "CC BY 4.0",
+  "ingested_at": "2026-05-13",
+  "status": "partial",
+  "fit_for_v10": "control_and_bridge",
+  "raw_files": [
+    {
+      "name": "raw/Conversion_Efficiency.csv",
+      "rows": 34,
+      "role": "conversion_efficiency"
+    },
+    {
+      "name": "raw/NoiseRate.csv",
+      "rows": 10,
+      "role": "noise_and_counts"
+    }
+  ],
+  "derived_summary": {
+    "conversion_rows": 34,
+    "noise_rows": 10,
+    "conversion_h_minmax": [3.59222686711927, 60.3967813922251],
+    "conversion_v_minmax": [5.23032902136684, 57.2515674335045],
+    "noise_total_minmax": [0.0, 30.0534575631249],
+    "noise_total_error_minmax": [2.04498977505113, 4.94373101025231],
+    "first_conversion": {
+      "pump_power_h": 17.3,
+      "conversion_efficiency_h": 3.59222686711927,
+      "pump_power_v": 25.0,
+      "conversion_efficiency_v": 5.23032902136684
+    },
+    "last_conversion": {
+      "pump_power_h": 672.0,
+      "conversion_efficiency_h": 60.3967813922251,
+      "pump_power_v": 696.0,
+      "conversion_efficiency_v": 56.6577741671242
+    },
+    "first_noise": {
+      "pump_w": 1.36,
+      "ch1_dc": 65.31,
+      "ch2_dc": 57.18,
+      "total_noise": 27.7590133686936,
+      "total_error": 4.24564256918263
+    },
+    "last_noise": {
+      "pump_w": 0.0,
+      "ch1_dc": 59.29,
+      "ch2_dc": 51.04,
+      "total_noise": 0.0,
+      "total_error": 2.04498977505113
+    }
+  },
+  "notes": [
+    "The record supports fidelity and noise/loss analysis around a telecom quantum photonic interface.",
+    "It is a good bridge source for V10 control logic, but not a direct material-frequency transport dataset.",
+    "Raw files were downloaded from Zenodo and should remain immutable."
+  ]
+}

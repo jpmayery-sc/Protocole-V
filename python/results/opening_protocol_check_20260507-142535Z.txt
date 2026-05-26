@@ -1,0 +1,17 @@
+Contrôle de protocole d’ouverture
+Timestamp: 20260507-142535Z
+
+Tests:
+- Hystérésis: conforme strict
+- Mémoire / séparation de branches: conforme strict
+- Dépendance température / fréquence: conforme strict
+- Effondrement réduit inter-systèmes: falsifie
+- Contrôle négatif séparé: conforme strict
+
+Verdict global: falsifie
+
+Falsificateurs:
+- les boucles réelles ne ferment pas ou perdent leur séparation de branches
+- la fréquence de résonance ne décroît pas assez nettement avec la température
+- les deux boucles PySSPFM ne se superposent pas après réduction
+- le contrôle ManualLOOP ne reste pas séparé du couple PySSPFM après réduction

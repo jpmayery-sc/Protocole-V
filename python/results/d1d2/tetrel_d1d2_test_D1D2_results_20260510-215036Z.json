@@ -1,0 +1,112 @@
+{
+  "timestamp": "20260510-215036Z",
+  "familyname": "tetrel_d1d2_test",
+  "family_name": "tetrel_d1d2_test",
+  "family": [
+    {
+      "symbol": "C",
+      "name": "Carbon",
+      "I": 11.2603,
+      "r": 67.0,
+      "n": 2.0,
+      "D1": 1.81985,
+      "D2": 0.168064,
+      "D1overD2": 10.828302,
+      "regime": "covalent"
+    },
+    {
+      "symbol": "Si",
+      "name": "Silicon",
+      "I": 8.1517,
+      "r": 111.0,
+      "n": 3.0,
+      "D1": 2.322608,
+      "D2": 0.073439,
+      "D1overD2": 31.626467,
+      "regime": "transition"
+    },
+    {
+      "symbol": "Ge",
+      "name": "Germanium",
+      "I": 7.8994,
+      "r": 125.0,
+      "n": 4.0,
+      "D1": 3.04851,
+      "D2": 0.063195,
+      "D1overD2": 48.239578,
+      "regime": "transition"
+    },
+    {
+      "symbol": "Sn",
+      "name": "Tin",
+      "I": 7.3439,
+      "r": 145.0,
+      "n": 5.0,
+      "D1": 3.67421,
+      "D2": 0.050648,
+      "D1overD2": 72.544614,
+      "regime": "semi-metal"
+    },
+    {
+      "symbol": "Pb",
+      "name": "Lead",
+      "I": 7.4167,
+      "r": 154.0,
+      "n": 6.0,
+      "D1": 4.430851,
+      "D2": 0.04816,
+      "D1overD2": 92.001977,
+      "regime": "semi-metal"
+    }
+  ],
+  "observables": {
+    "D1_values": [
+      1.8198497029085867,
+      2.322607877568053,
+      3.0485097612941776,
+      3.6742095988757346,
+      4.430851066834744
+    ],
+    "D2_values": [
+      0.16806417910447763,
+      0.07343873873873874,
+      0.06319519999999999,
+      0.05064758620689655,
+      0.048160389610389605
+    ],
+    "D1overD2_values": [
+      10.828302096291866,
+      31.62646741293888,
+      48.23957770992382,
+      72.54461414738512,
+      92.00197719909806
+    ],
+    "D1_trend": "increasing",
+    "D2_trend": "decreasing",
+    "D1overD2_trend": "increasing",
+    "D1overD2_superlinear": false,
+    "family_regime": "semi-metal",
+    "family_regime_thresholds": {
+      "covalent": 30,
+      "transition": 50,
+      "semi_metal": 100
+    }
+  },
+  "hypothesis": "D1/D2 reveals the covalent to semi-metal transition",
+  "case_control": "C -> Pb",
+  "expected": {
+    "D1": "monotonic increase",
+    "D2": "monotonic decrease",
+    "D1overD2": "monotonic increase",
+    "family_regime": "semi-metal"
+  },
+  "verdict": "supported",
+  "checks": {
+    "D1": true,
+    "D2": true,
+    "D1overD2": true,
+    "family_regime": true
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\tetrel_d1d2_test_D1D2_results_20260510-215036Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\tetrel_d1d2_test_D1D2_results_20260510-215036Z.txt"
+}

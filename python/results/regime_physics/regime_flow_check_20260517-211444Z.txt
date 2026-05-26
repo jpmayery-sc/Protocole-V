@@ -1,0 +1,21 @@
+Regime flow check
+timestamp: 20260517-211444Z
+verdict: supported
+regime: flow
+hypothesis: The D1 / D2 / D3 / D4 grid stays ordered across atomic, metallic, lanthanide, and dense regimes
+case_control: Na atomic, Al metallic, Ce lanthanide, and Pb dense reference
+observable: Relative D1, D2, D3, and D4 shares plus the pressure n_e^(5/3) scaling
+
+Checks:
+- atomic D1 dominance
+- metal D1 + D2 visibility
+- lanthanide D3 necessity
+- dense D4 dominance
+- pressure scaling
+- launcher routes each branch correctly
+
+Cases:
+- A: None
+- B: None
+- C: None
+- D: None

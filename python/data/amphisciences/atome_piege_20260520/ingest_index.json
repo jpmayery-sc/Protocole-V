@@ -1,0 +1,180 @@
+{
+  "dataset_id": "amphisciences-atome-piege-20260520",
+  "source_type": "popular_science_article",
+  "source_site": "Amphisciences / Ouest-France",
+  "source_title": "Un simple atome piégé permet de démontrer l’existence physique d’une interaction ultra-complexe",
+  "source_url": "https://amphisciences.ouest-france.fr/2026/05/un-simple-atome-piege-permet-de-demontrer-lexistence-physique-dune-interaction-ultra-complexe/",
+  "captured_at": "2026-05-20",
+  "language": "fr",
+  "article_date": "2026-05-19",
+  "article_author": "Dr. Antonin Singer",
+  "article_category": ["Actualités", "Physique"],
+  "primary_study": {
+    "journal": "Nature Physics",
+    "title": "Squeezing, trisqueezing and quadsqueezing in a hybrid oscillator-spin system",
+    "doi": "10.1038/s41567-026-03222-6",
+    "publication_date": "2026-05-01",
+    "authors": [
+      "O. Băzăvan",
+      "S. Saner",
+      "D. J. Webb",
+      "E. M. Ainley",
+      "P. Drmota",
+      "D. P. Nadlinger",
+      "G. Araneda",
+      "D. M. Lucas",
+      "C. J. Ballance",
+      "R. Srinivas"
+    ],
+    "access_path": "EurekAlert news release + ResearchGate abstract snippet",
+    "method_summary": [
+      "single trapped ion",
+      "two carefully controlled spin-dependent linear bosonic interactions",
+      "engineering generalized squeezing up to fourth order",
+      "reconstruction of the Wigner functions of the resulting motional states"
+    ]
+  },
+  "page_context": {
+    "published_on_page": "19 mai 2026",
+    "related_items_seen_on_page": [
+      {
+        "date": "2026-05-20",
+        "title": "Les singes mangabeys utilisent des règles de grammaire complexes pour structurer leurs multiples appels vocaux"
+      },
+      {
+        "date": "2026-05-19",
+        "title": "Une nouvelle étude révèle comment les algorithmes d’intelligence artificielle commencent à s’auto-améliorer par sélection naturelle"
+      },
+      {
+        "date": "2026-05-18",
+        "title": "Pourquoi marcher en ville ne détend pas notre esprit contrairement au contact direct avec les espaces verts"
+      }
+    ]
+  },
+  "numeric_facts": [
+    {
+      "claim": "Date de publication affichée sur la page",
+      "value": "2026-05-19",
+      "unit": "date",
+      "value_text": "19 mai, 2026",
+      "evidence": "page header",
+      "confidence": "high"
+    },
+    {
+      "claim": "Ordre de l'interaction la plus élevée démontrée",
+      "value": 4,
+      "unit": "order",
+      "value_text": "quadsqueezing",
+      "evidence": "Nature Physics abstract / EurekAlert release",
+      "confidence": "high"
+    },
+    {
+      "claim": "Paramètre de squeezing mesuré pour l'état de second ordre",
+      "value": 1.09,
+      "uncertainty": 0.04,
+      "unit": "dimensionless",
+      "value_text": "r = 1.09(4)",
+      "evidence": "ResearchGate figure snippet",
+      "confidence": "high"
+    },
+    {
+      "claim": "Vitesse relative du quadsqueezing par rapport aux méthodes conventionnelles",
+      "value": 100,
+      "unit": "times faster",
+      "value_text": "over 100 times faster",
+      "evidence": "EurekAlert press release",
+      "confidence": "high"
+    },
+    {
+      "claim": "Temps de squeezing examiné dans la figure de caractérisation",
+      "value": 400,
+      "unit": "us",
+      "value_text": "t_sqz = 400 us",
+      "evidence": "ResearchGate figure snippet",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Temps de trisqueezing / quadsqueezing examiné dans la figure de caractérisation",
+      "value": 600,
+      "unit": "us",
+      "value_text": "t_sqz = 600 us",
+      "evidence": "ResearchGate figure snippet",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Détuning d'exemple pour la caractérisation du squeezing",
+      "value": 50,
+      "unit": "kHz",
+      "value_text": "Δ/2π = 50 kHz",
+      "evidence": "ResearchGate figure snippet",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Détuning d'exemple pour la caractérisation du squeezing",
+      "value": 100,
+      "unit": "kHz",
+      "value_text": "Δ/2π = 100 kHz",
+      "evidence": "ResearchGate figure snippet",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Atome unique piégé et manipulé",
+      "value": 1,
+      "unit": "atom",
+      "value_text": "un simple atome piégé",
+      "evidence": "title and lead",
+      "confidence": "high"
+    }
+  ],
+  "scientific_links": [
+    {
+      "label": "Nature paper",
+      "url": "https://www.nature.com/articles/s41567-026-03222-6",
+      "status": "paywalled_or_redirected"
+    },
+    {
+      "label": "EurekAlert press release",
+      "url": "https://www.eurekalert.org/news-releases/1126499"
+    },
+    {
+      "label": "OQI publication page",
+      "url": "https://www.oqi.ox.ac.uk/publication/2417833/dimensions",
+      "status": "login_or_cookie_gate"
+    },
+    {
+      "label": "Temperature reference",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091"
+    },
+    {
+      "label": "Qubit reference",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.75.4714"
+    },
+    {
+      "label": "Phonons reference",
+      "url": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.85.1103"
+    },
+    {
+      "label": "Related article link",
+      "url": "https://amphisciences.ouest-france.fr/2026/05/des-physiciens-europeens-reussissent-a-teleporter-letat-dune-particule-de-lumiere-sur-pres-de-trois-cents-metres-en-pleine-ville/"
+    }
+  ],
+  "integration_profile": {
+    "study_relevance": "primary_scientific_source",
+    "primary_theme": ["ion_trap", "laser_cooling", "phonon_coupling", "entanglement", "quantum_computing"],
+    "numeric_signal_strength": "medium",
+    "recommended_use": [
+      "scientific anchor for trapped-ion generalized squeezing",
+      "method and benchmark extraction",
+      "context for quadsqueezing / higher-order interaction sections"
+    ],
+    "not_recommended_for": [
+      "precision fitting without the PDF or full text",
+      "claims that require unsupported numerical detail beyond the extracted snippets"
+    ]
+  },
+  "extraction_notes": [
+    "The popular article is narrative, but the primary study is identifiable from the DOI and press release.",
+    "The extracted numerical anchors are r = 1.09(4), t_sqz = 400 us, t_sqz = 600 us, Δ/2π = 50 kHz, Δ/2π = 100 kHz, and quadsqueezing over 100 times faster than conventional approaches.",
+    "The Nature page itself is access-restricted in the current context, so the ingest relies on the EurekAlert release and the readable abstract snippets."
+  ]
+}

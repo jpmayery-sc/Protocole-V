@@ -1,0 +1,323 @@
+{
+  "timestamp": "20260520-074614Z",
+  "hypothesis": "Omega(Z) improves the reading of heavy series by adding torsion, curvature and a normalized internal radius",
+  "case_control": "lanthanides as primary heavy series with Fr / Ra / Lr as heavy probes",
+  "observable": "baseline versus Omega fit, torsion residuals, curvature and normalized internal radius",
+  "expected": {
+    "primary_series": "local gain over the compact baseline",
+    "probe_series": "distinct heavy-case structure without universal collapse"
+  },
+  "measured": {
+    "lanthanides": {
+      "series": [
+        {
+          "symbol": "La",
+          "period": 6,
+          "mass_u": 138.90547,
+          "radius_pm": 195.0,
+          "ionization_ev": 5.577,
+          "index": 0,
+          "zeff_proxy": 3.842219,
+          "torsion": 0.0,
+          "curvature": 0.0,
+          "radius_internal_normalized": 1.039287,
+          "omega_residual": 0.111274
+        },
+        {
+          "symbol": "Ce",
+          "period": 6,
+          "mass_u": 140.116,
+          "radius_pm": 185.0,
+          "ionization_ev": 5.5387,
+          "index": 1,
+          "zeff_proxy": 3.829003,
+          "torsion": 7.0,
+          "curvature": 0.009562,
+          "radius_internal_normalized": 0.990504,
+          "omega_residual": -0.104793
+        },
+        {
+          "symbol": "Pr",
+          "period": 6,
+          "mass_u": 140.90766,
+          "radius_pm": 182.0,
+          "ionization_ev": 5.473,
+          "index": 2,
+          "zeff_proxy": 3.806226,
+          "torsion": 2.0,
+          "curvature": 0.040817,
+          "radius_internal_normalized": 0.978923,
+          "omega_residual": -0.114343
+        },
+        {
+          "symbol": "Nd",
+          "period": 6,
+          "mass_u": 144.242,
+          "radius_pm": 181.0,
+          "ionization_ev": 5.525,
+          "index": 3,
+          "zeff_proxy": 3.824265,
+          "torsion": 0.0,
+          "curvature": 0.022926,
+          "radius_internal_normalized": 0.978041,
+          "omega_residual": -0.115509
+        },
+        {
+          "symbol": "Sm",
+          "period": 6,
+          "mass_u": 150.36,
+          "radius_pm": 180.0,
+          "ionization_ev": 5.644,
+          "index": 4,
+          "zeff_proxy": 3.86523,
+          "torsion": 20.0,
+          "curvature": 0.032072,
+          "radius_internal_normalized": 0.977152,
+          "omega_residual": -0.056102
+        },
+        {
+          "symbol": "Eu",
+          "period": 6,
+          "mass_u": 151.964,
+          "radius_pm": 199.0,
+          "ionization_ev": 5.67,
+          "index": 5,
+          "zeff_proxy": 3.874122,
+          "torsion": 38.0,
+          "curvature": 0.15176,
+          "radius_internal_normalized": 1.085333,
+          "omega_residual": 0.180455
+        },
+        {
+          "symbol": "Gd",
+          "period": 6,
+          "mass_u": 157.25,
+          "radius_pm": 180.0,
+          "ionization_ev": 6.15,
+          "index": 6,
+          "zeff_proxy": 4.034775,
+          "torsion": 17.0,
+          "curvature": 0.255923,
+          "radius_internal_normalized": 0.986307,
+          "omega_residual": 0.17524
+        },
+        {
+          "symbol": "Tb",
+          "period": 6,
+          "mass_u": 158.92535,
+          "radius_pm": 178.0,
+          "ionization_ev": 5.863,
+          "index": 7,
+          "zeff_proxy": 3.939506,
+          "torsion": 1.0,
+          "curvature": 0.120721,
+          "radius_internal_normalized": 0.979939,
+          "omega_residual": 0.051428
+        },
+        {
+          "symbol": "Dy",
+          "period": 6,
+          "mass_u": 162.5,
+          "radius_pm": 177.0,
+          "ionization_ev": 5.939,
+          "index": 8,
+          "zeff_proxy": 3.964957,
+          "torsion": 0.0,
+          "curvature": 0.002159,
+          "radius_internal_normalized": 0.979042,
+          "omega_residual": -0.03265
+        },
+        {
+          "symbol": "Ho",
+          "period": 6,
+          "mass_u": 164.93033,
+          "radius_pm": 176.0,
+          "ionization_ev": 6.022,
+          "index": 9,
+          "zeff_proxy": 3.992567,
+          "torsion": 0.0,
+          "curvature": 0.000798,
+          "radius_internal_normalized": 0.978136,
+          "omega_residual": -0.011736
+        },
+        {
+          "symbol": "Er",
+          "period": 6,
+          "mass_u": 167.259,
+          "radius_pm": 175.0,
+          "ionization_ev": 6.108,
+          "index": 10,
+          "zeff_proxy": 4.020974,
+          "torsion": 0.0,
+          "curvature": 0.003469,
+          "radius_internal_normalized": 0.977222,
+          "omega_residual": 0.014259
+        },
+        {
+          "symbol": "Tm",
+          "period": 6,
+          "mass_u": 168.93422,
+          "radius_pm": 174.0,
+          "ionization_ev": 6.184,
+          "index": 11,
+          "zeff_proxy": 4.045913,
+          "torsion": 21.0,
+          "curvature": 0.002104,
+          "radius_internal_normalized": 0.976299,
+          "omega_residual": 0.072322
+        },
+        {
+          "symbol": "Yb",
+          "period": 6,
+          "mass_u": 173.045,
+          "radius_pm": 194.0,
+          "ionization_ev": 6.254,
+          "index": 12,
+          "zeff_proxy": 4.068747,
+          "torsion": 41.0,
+          "curvature": 0.301036,
+          "radius_internal_normalized": 1.093764,
+          "omega_residual": -0.227372
+        },
+        {
+          "symbol": "Lu",
+          "period": 6,
+          "mass_u": 174.9668,
+          "radius_pm": 173.0,
+          "ionization_ev": 5.428,
+          "index": 13,
+          "zeff_proxy": 3.790546,
+          "torsion": 0.0,
+          "curvature": 0.0,
+          "radius_internal_normalized": 0.980091,
+          "omega_residual": 0.057528
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "torsion_trend": "mixed",
+      "curvature_trend": "mixed",
+      "baseline": {
+        "coefficients": [
+          187.62857142857146,
+          -0.8549450549450609
+        ],
+        "rmse": 7.194451027611281
+      },
+      "omega": {
+        "coefficients": [
+          5.120685718399358,
+          -0.8567129270663312,
+          -0.0016177530856149036,
+          -0.8687344361152896,
+          182.59439124977936
+        ],
+        "rmse": 0.11354367546973314,
+        "gain": 7.080907352141548,
+        "gain_ratio": 0.9842178819434633
+      },
+      "signals": {
+        "max_torsion": 41.0,
+        "max_curvature": 0.30103643278488157,
+        "internal_ratio_band_ok": false
+      },
+      "criteria": {
+        "omega_local_useful": true,
+        "omega_structurel_net": true,
+        "omega_distinct": false,
+        "structure_ok": true
+      }
+    },
+    "heavy_probes": {
+      "series": [
+        {
+          "symbol": "Fr",
+          "period": 7,
+          "mass_u": 223.0,
+          "radius_pm": 270.0,
+          "ionization_ev": 4.0727,
+          "index": 0,
+          "zeff_proxy": 3.830626,
+          "torsion": 0.0,
+          "curvature": 0.0,
+          "radius_internal_normalized": 0.999383,
+          "omega_residual": 0.0
+        },
+        {
+          "symbol": "Ra",
+          "period": 7,
+          "mass_u": 226.0,
+          "radius_pm": 221.0,
+          "ionization_ev": 5.2784,
+          "index": 1,
+          "zeff_proxy": 4.360936,
+          "torsion": 1.0,
+          "curvature": 0.663884,
+          "radius_internal_normalized": 1.001511,
+          "omega_residual": 0.0
+        },
+        {
+          "symbol": "Lr",
+          "period": 7,
+          "mass_u": 266.0,
+          "radius_pm": 171.0,
+          "ionization_ev": 4.96,
+          "index": 2,
+          "zeff_proxy": 4.227362,
+          "torsion": 0.0,
+          "curvature": 0.0,
+          "radius_internal_normalized": 0.999026,
+          "omega_residual": 0.0
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "torsion_trend": "mixed",
+      "curvature_trend": "mixed",
+      "baseline": {
+        "coefficients": [
+          270.16666666666663,
+          -49.5
+        ],
+        "rmse": 0.23570226039551584
+      },
+      "omega": {
+        "coefficients": [
+          270.00269544214336,
+          -49.50000048117273,
+          0.4424185268420442,
+          0.08674358069580201,
+          -0.002697105996614713
+        ],
+        "rmse": 6.765720123802386e-14,
+        "gain": 0.23570226039544817,
+        "gain_ratio": 0.9999999999997129
+      },
+      "signals": {
+        "max_torsion": 1.0,
+        "max_curvature": 0.6638841963887678,
+        "internal_ratio_band_ok": false
+      },
+      "criteria": {
+        "omega_local_useful": true,
+        "omega_structurel_net": true,
+        "omega_distinct": false,
+        "structure_ok": true
+      }
+    }
+  },
+  "criteria": {
+    "primary_ok": true,
+    "probe_ok": true
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "Omega(Z) does not improve the baseline fit",
+    "torsion and curvature remain invisible",
+    "the normalized internal radius stays in a trivial band for every case"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260520-074614Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260520-074614Z.txt"
+}

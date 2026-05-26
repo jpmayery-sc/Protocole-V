@@ -1,0 +1,15 @@
+Radius predictivity check
+timestamp: 20260517-142642Z
+verdict: supported
+baseline_mean_test_nrmse: 0.998156
+corrected_mean_test_nrmse: 0.730156
+relative_improvement: 0.268496
+improved_families: 3/6
+
+Families:
+- alkali: baseline=0.838621, corrected=1.508253, improved=False
+- halogen: baseline=1.276072, corrected=0.303110, improved=True
+- transition_3d: baseline=0.879489, corrected=0.436470, improved=True
+- transition_4d: baseline=0.380324, corrected=0.389947, improved=False
+- transition_5d: baseline=1.060018, corrected=1.205857, improved=False
+- lanthanide: baseline=1.554412, corrected=0.537296, improved=True

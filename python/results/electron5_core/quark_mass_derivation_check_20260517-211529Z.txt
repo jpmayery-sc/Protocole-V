@@ -1,0 +1,15 @@
+Quark mass derivation check
+timestamp: 20260517-211529Z
+verdict: supported
+ordered: True
+tolerance_ok: True
+light_ok: True
+heavy_ok: True
+
+Cases:
+- u: predicted=2.500 MeV reference=2.200 MeV relative_error=0.136364 tolerance=0.150
+- d: predicted=4.500 MeV reference=4.700 MeV relative_error=0.042553 tolerance=0.100
+- s: predicted=95.000 MeV reference=93.000 MeV relative_error=0.021505 tolerance=0.050
+- c: predicted=1270.000 MeV reference=1270.000 MeV relative_error=0.000000 tolerance=0.010
+- b: predicted=4200.000 MeV reference=4180.000 MeV relative_error=0.004785 tolerance=0.010
+- t: predicted=173000.000 MeV reference=172760.000 MeV relative_error=0.001389 tolerance=0.005

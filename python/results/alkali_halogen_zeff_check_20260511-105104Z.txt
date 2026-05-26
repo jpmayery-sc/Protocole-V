@@ -1,0 +1,30 @@
+Alkali, halogen, and pnictogen Z_eff check
+timestamp: 20260511-105104Z
+verdict: supported
+
+alkali:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - Li: Z=3 n=2 I=5.3917 Zeff=1.259283 S=1.740717
+  - Na: Z=11 n=3 I=5.1391 Zeff=1.844146 S=9.155854
+  - K: Z=19 n=4 I=4.3407 Zeff=2.259802 S=16.740198
+  - Rb: Z=37 n=5 I=4.1771 Zeff=2.771009 S=34.228991
+  - Cs: Z=55 n=6 I=3.8939 Zeff=3.210511 S=51.789489
+
+halogen:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - F: Z=9 n=2 I=17.4228 Zeff=2.263703 S=6.736297
+  - Cl: Z=17 n=3 I=12.9676 Zeff=2.929420 S=14.070580
+  - Br: Z=35 n=4 I=11.8138 Zeff=3.728081 S=31.271919
+  - I: Z=53 n=5 I=10.4513 Zeff=4.383144 S=48.616856
+
+pnictogen:
+- zeff_monotonic: True
+- screening_monotonic: True
+  - N: Z=7 n=2 I=14.5341 Zeff=2.067543 S=4.932457
+  - P: Z=15 n=3 I=10.4867 Zeff=2.634336 S=12.365664
+  - As: Z=33 n=4 I=9.8152 Zeff=3.398131 S=29.601869
+  - Sb: Z=51 n=5 I=8.6084 Zeff=3.977972 S=47.022028
+  - Bi: Z=83 n=6 I=7.2856 Zeff=4.391516 S=78.608484
+

@@ -1,0 +1,32 @@
+{
+  "timestamp": "20260507-162158Z",
+  "source": "TempDep CSV",
+  "response": {
+    "label": "TempDep CSV",
+    "n_points": 20,
+    "temperature_range": [
+      77.0,
+      300.0
+    ],
+    "frequency_range": [
+      33.29,
+      34.116
+    ],
+    "temperature_slope": -0.003746095218815475,
+    "fit_intercept": 34.43915582492177,
+    "fit_rmse": 0.015639530858051223,
+    "loo_rmse": 0.01806070485010591,
+    "loo_rmse_ratio": 0.021865260109087042,
+    "non_increasing_fraction": 1.0,
+    "frequency_span": 0.8260000000000005,
+    "midpoint_frequency": 33.703,
+    "midpoint_temperature": 201.7231075697197
+  },
+  "threshold_status": "conforme strict",
+  "criteria": {
+    "monotonic_ok": true,
+    "span_ok": true,
+    "fit_ok": true
+  },
+  "overall_verdict": "conforme strict"
+}

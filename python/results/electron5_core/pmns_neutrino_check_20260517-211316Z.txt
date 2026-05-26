@@ -1,0 +1,22 @@
+PMNS neutrino check
+timestamp: 20260517-211316Z
+verdict: supported
+all_angles_ok: True
+large_mixing_ok: True
+hierarchy_ok: True
+light_ok: True
+splitting_ok: True
+
+Angles:
+- theta12: predicted=33.40 deg reference=33.44 deg relative_error=0.001196 tolerance=0.030
+- theta23: predicted=49.00 deg reference=49.20 deg relative_error=0.004065 tolerance=0.050
+- theta13: predicted=8.60 deg reference=8.57 deg relative_error=0.003501 tolerance=0.050
+
+Spectrum:
+- m1: 0.001000 eV
+- m2: 0.008700 eV
+- m3: 0.050000 eV
+
+Splittings:
+- delta_m21_sq_ev2: 7.46900000e-05
+- delta_m31_sq_ev2: 2.49900000e-03

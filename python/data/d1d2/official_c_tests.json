@@ -1,0 +1,30 @@
+{
+  "suite": "C",
+  "title": "Tests de seuils D1/D2",
+  "tests": [
+    {
+      "id": "C1",
+      "name": "Threshold_classifier",
+      "thresholds": {
+        "covalent": 30,
+        "transition": 50,
+        "semi_metal": 100
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Threshold_families",
+      "families": ["tetrel", "pnictogen", "halogen", "lanthanide"]
+    },
+    {
+      "id": "C3",
+      "name": "Verdict_coherence",
+      "expected_coherence": {
+        "tetrel": "semi-metal",
+        "pnictogen": "D3 / topological",
+        "halogen": "semi-metal",
+        "lanthanide": "D3 / topological"
+      }
+    }
+  ]
+}

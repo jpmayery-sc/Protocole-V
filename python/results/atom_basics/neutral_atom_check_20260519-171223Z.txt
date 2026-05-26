@@ -1,0 +1,15 @@
+Neutral atom check
+timestamp: 20260519-171223Z
+verdict: supported
+neutral_ok: True
+ion_ok: True
+
+Cases:
+- H: p=1 e=1 charge=0 ok=True
+- O: p=8 e=8 charge=0 ok=True
+- Fe: p=26 e=26 charge=0 ok=True
+- U: p=92 e=92 charge=0 ok=True
+- Fe2+: p=26 e=24 charge=2 ok=True
+- Fe3+: p=26 e=23 charge=3 ok=True
+- O2-: p=8 e=10 charge=-2 ok=True
+- Na+: p=11 e=10 charge=1 ok=True

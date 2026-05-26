@@ -1,0 +1,37 @@
+Lanthanide subseries Zeff* check
+Timestamp: 20260509-220526Z
+
+Hypothese: using Zeff* with an H anomaly term keeps both lanthanide subseries regular and improves over mass and raw Zeff
+Cas de controle: La -> Nd -> Eu versus Gd -> Yb -> Lu, with radius compared against mass, raw Zeff, Zeff*, and [1, Zeff*, k, L, H]
+Observable: subseries fit quality, monotonicity, and anomaly handling at Eu and Yb
+Verdict: falsifie
+
+Sous-serie legere La -> Eu:
+- mass_rmse: 7.249137
+- zeff_rmse: 6.263198
+- zeff_star_rmse: 4.967553
+- corrected_rmse: 1.508667
+- zeff_star_trend: mixed
+- ionization_trend: mixed
+
+Sous-serie lourde Gd -> Lu:
+- mass_rmse: 6.204817
+- zeff_rmse: 5.424420
+- zeff_star_rmse: 2.154016
+- corrected_rmse: 0.373394
+- zeff_star_trend: mixed
+- ionization_trend: mixed
+
+Criteres:
+- zeff_star_better_light: True
+- zeff_star_better_heavy: True
+- corrected_better_light: True
+- corrected_better_heavy: True
+- radius_ok: False
+- ionization_flag: False
+
+Falsificateurs:
+- one of the subseries is not monotone in radius or Zeff*
+- Zeff* does not improve on both mass and raw Zeff in the light core
+- Zeff* does not improve on both mass and raw Zeff in the heavy tail
+- the corrected fit [1, Zeff*, k, L, H] does not match or improve the Zeff* baseline

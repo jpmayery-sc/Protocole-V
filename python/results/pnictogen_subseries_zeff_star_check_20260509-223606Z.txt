@@ -1,0 +1,27 @@
+Pnictogen subseries Zeff* check
+Timestamp: 20260509-223606Z
+
+Hypothese: using Zeff* as the fine pnictogen subseries variable keeps both repaired subseries regular and improves over mass and raw Zeff
+Cas de controle: N -> P -> As versus As -> Sb -> Bi, with radius compared against mass, raw Zeff, Zeff*, and [1, Zeff*, k, L]
+Observable: subseries fit quality, monotonicity, and pivot consistency at As
+Verdict: falsifie
+
+Sous-serie legere N -> P -> As:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- zeff_star_trend: increasing
+- mass_rmse: 11.803628
+- zeff_rmse: 8.122672
+- zeff_star_rmse: 8.122916
+- corrected_rmse: 0.006295
+
+Sous-serie lourde As -> Sb -> Bi:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- zeff_star_trend: increasing
+- mass_rmse: 3.307156
+- zeff_rmse: 0.396908
+- zeff_star_rmse: 1.702786
+- corrected_rmse: 0.000014

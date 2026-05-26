@@ -1,0 +1,21 @@
+Regime dense check
+timestamp: 20260518-142340Z
+verdict: supported
+regime: dense
+hypothesis: Dense matter admits a local D1 ~= D4 balance that moves continuously with density
+case_control: Pb-like dense reference probed below, at, and above the balance density
+observable: D1_proxy versus D4_balance and the density-driven crossover
+
+Checks:
+- D1 and D4 cross locally
+- pressure scales as n_e^(5/3)
+- launcher routes dense cases to D1 + D4
+
+Cases:
+- ultra_dense_low: None
+- deep_dense_low: None
+- dense_low: None
+- balance: None
+- dense_high: None
+- deep_dense_high: None
+- ultra_dense_high: None

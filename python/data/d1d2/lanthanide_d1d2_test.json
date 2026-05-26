@@ -1,0 +1,30 @@
+{
+  "timestamp": "20260510-204500Z",
+  "familyname": "lanthanide_d1d2_test",
+  "family_name": "lanthanide_d1d2_test",
+  "family": [
+    {"symbol": "La", "name": "Lanthanum", "I": 5.5770, "r": 195.0, "n": 6},
+    {"symbol": "Ce", "name": "Cerium", "I": 5.5387, "r": 185.0, "n": 6},
+    {"symbol": "Pr", "name": "Praseodymium", "I": 5.4730, "r": 182.0, "n": 6},
+    {"symbol": "Nd", "name": "Neodymium", "I": 5.5250, "r": 181.0, "n": 6},
+    {"symbol": "Sm", "name": "Samarium", "I": 5.6440, "r": 180.0, "n": 6},
+    {"symbol": "Eu", "name": "Europium", "I": 5.6700, "r": 199.0, "n": 6},
+    {"symbol": "Gd", "name": "Gadolinium", "I": 6.1500, "r": 180.0, "n": 6},
+    {"symbol": "Tb", "name": "Terbium", "I": 5.8630, "r": 178.0, "n": 6},
+    {"symbol": "Dy", "name": "Dysprosium", "I": 5.9390, "r": 177.0, "n": 6},
+    {"symbol": "Ho", "name": "Holmium", "I": 6.0220, "r": 176.0, "n": 6},
+    {"symbol": "Er", "name": "Erbium", "I": 6.1080, "r": 175.0, "n": 6},
+    {"symbol": "Tm", "name": "Thulium", "I": 6.1840, "r": 174.0, "n": 6},
+    {"symbol": "Yb", "name": "Ytterbium", "I": 6.2540, "r": 194.0, "n": 6},
+    {"symbol": "Lu", "name": "Lutetium", "I": 5.4280, "r": 173.0, "n": 6}
+  ],
+  "observables": {"computed": "D1, D2, D1/D2"},
+  "hypothesis": "D1/D2 should expose the f-block irregularities and the D3 regime",
+  "case_control": "La -> Lu",
+  "expected": {
+    "D1": "mixed",
+    "D2": "mixed",
+    "D1overD2": "mixed",
+    "family_regime": "D3 / topological"
+  }
+}

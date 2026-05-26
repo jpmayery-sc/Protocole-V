@@ -1,0 +1,100 @@
+{
+  "timestamp": "20260517-145753Z",
+  "suite": "regime_physics",
+  "regime": "metal",
+  "verdict": "supported",
+  "hypothesis": "Metals keep D4 moderate, below D1, while the Fermi scale stays in the few-eV window",
+  "case_control": "Na, Al, and Cu density windows",
+  "observable": "D1_proxy versus D4_balance and the few-eV Fermi window",
+  "checks": [
+    "D4 is moderate",
+    "D1 still dominates",
+    "launcher routes the metallic branch to D1 + D2 + D4"
+  ],
+  "pressure_scaling_ok": true,
+  "launcher_ok": true,
+  "d1_dominates_ok": true,
+  "window_ok": true,
+  "nonzero_ok": true,
+  "cases": [
+    {
+      "symbol": "Mg",
+      "ionization_ev": 7.6462,
+      "principal_n": 3.0,
+      "electron_density_m3": 1.8e+28,
+      "launcher_grid": "D1 + D2 + D4",
+      "D1_proxy": 2.249441107056961,
+      "D4_pressure_pa": 2889092832.8786144,
+      "D4_balance_ev": 1.0017943962984053,
+      "D4_over_D1": 0.445352578093985,
+      "window_ok": false,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Na",
+      "ionization_ev": 5.1391,
+      "principal_n": 3.0,
+      "electron_density_m3": 2.5e+28,
+      "launcher_grid": "D1 + D2 + D4",
+      "D1_proxy": 1.8441461438833964,
+      "D4_pressure_pa": 4995059542.633683,
+      "D4_balance_ev": 1.2470683785127896,
+      "D4_over_D1": 0.6762307763129431,
+      "window_ok": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Al",
+      "ionization_ev": 5.9858,
+      "principal_n": 3.0,
+      "electron_density_m3": 3e+28,
+      "launcher_grid": "D1 + D2 + D4",
+      "D1_proxy": 1.9902741460589264,
+      "D4_pressure_pa": 6768764634.274976,
+      "D4_balance_ev": 1.4082435295905347,
+      "D4_over_D1": 0.7075625899975091,
+      "window_ok": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Cu",
+      "ionization_ev": 7.7264,
+      "principal_n": 4.0,
+      "electron_density_m3": 7e+28,
+      "launcher_grid": "D1 + D2 + D4",
+      "D1_proxy": 3.0149431757399965,
+      "D4_pressure_pa": 27784594000.582157,
+      "D4_balance_ev": 2.477397079783433,
+      "D4_over_D1": 0.8217060605712323,
+      "window_ok": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Ag",
+      "ionization_ev": 7.5762,
+      "principal_n": 5.0,
+      "electron_density_m3": 5.5e+28,
+      "launcher_grid": "D1 + D2 + D4",
+      "D1_proxy": 3.731867928436659,
+      "D4_pressure_pa": 18588533889.62009,
+      "D4_balance_ev": 2.109463690054261,
+      "D4_over_D1": 0.5652567911045958,
+      "window_ok": true,
+      "verdict": "supported"
+    }
+  ],
+  "pressure_ratios": [
+    1.728937016418659,
+    1.3550918815886814,
+    4.104824957258726,
+    0.6690230524595974
+  ],
+  "expected_pressure_ratios": [
+    1.7289370164186593,
+    1.3550918815886814,
+    4.104824957258725,
+    0.6690230524595975
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260517-145753Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260517-145753Z.txt"
+}

@@ -1,0 +1,56 @@
+{
+  "timestamp": "20260517-150900Z",
+  "hypothesis": "Fr / Ra / Lr must remain separated at the heavy border and not collapse into one class",
+  "case_control": "Fr -> Ra -> Lr",
+  "observable": "border index, coarse border class and monotone separation",
+  "expected": {
+    "Fr": "alkali_like",
+    "Ra": "alkaline_earth_like",
+    "Lr": "d3_like"
+  },
+  "cases": [
+    {
+      "symbol": "Fr",
+      "family": "alkali_border",
+      "period": 7,
+      "radius_pm": 270.0,
+      "ionization_ev": 4.0727,
+      "zeff_proxy": 3.830626,
+      "border_index": 70.484556,
+      "border_class": "alkali_like"
+    },
+    {
+      "symbol": "Ra",
+      "family": "alkaline_earth_border",
+      "period": 7,
+      "radius_pm": 221.0,
+      "ionization_ev": 5.2784,
+      "zeff_proxy": 4.360936,
+      "border_index": 50.677192,
+      "border_class": "alkaline_earth_like"
+    },
+    {
+      "symbol": "Lr",
+      "family": "d3_border",
+      "period": 7,
+      "radius_pm": 171.0,
+      "ionization_ev": 4.96,
+      "zeff_proxy": 4.227362,
+      "border_index": 40.45076,
+      "border_class": "d3_like"
+    }
+  ],
+  "criteria": {
+    "order_ok": true,
+    "separation_ok": true,
+    "border_gradient_ok": true
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "Fr, Ra and Lr collapse into a single border class",
+    "the border index does not decrease from Fr to Lr",
+    "the heavy border cannot distinguish alkaline-earth-like and D3-like readings"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-150900Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-150900Z.txt"
+}

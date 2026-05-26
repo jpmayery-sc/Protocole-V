@@ -1,0 +1,32 @@
+{
+  "suite": "D1/D4",
+  "timestamp": "20260517-152808Z",
+  "supported_count": 3,
+  "total": 3,
+  "overall_verdict": "supported",
+  "regimes": [
+    {
+      "regime": "atomic",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_atomic_regime_check_20260511-143213Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_atomic_regime_check_20260511-143213Z.txt",
+      "hypothesis": "D4 remains negligible in the atomic regime while D1 still dominates"
+    },
+    {
+      "regime": "metallic",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_metallic_regime_check_20260511-143213Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_metallic_regime_check_20260511-143213Z.txt",
+      "hypothesis": "D4 is small but nonzero in metals and stays below D1 in the reference metallic window"
+    },
+    {
+      "regime": "dense",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_dense_regime_check_20260511-143213Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_dense_regime_check_20260511-143213Z.txt",
+      "hypothesis": "D4 grows with density, crosses D1 near the balance density, and remains continuous across the crossover"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260517-152808Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260517-152808Z.txt"
+}

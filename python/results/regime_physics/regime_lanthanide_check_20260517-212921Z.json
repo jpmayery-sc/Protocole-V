@@ -1,0 +1,82 @@
+{
+  "timestamp": "20260517-212921Z",
+  "suite": "regime_physics",
+  "regime": "lanthanide",
+  "verdict": "supported",
+  "hypothesis": "Lanthanides require D3 and do not collapse to D1-only reading",
+  "case_control": "Ce, Nd, and Yb lanthanide references",
+  "observable": "launcher grid choice and the D3-required branch",
+  "checks": [
+    "D3 is mandatory",
+    "no D1-only collapse",
+    "launcher routes lanthanides to D1 + D3"
+  ],
+  "launcher_ok": true,
+  "d3_required_ok": true,
+  "non_collapse_ok": true,
+  "balance_band_ok": true,
+  "cases": [
+    {
+      "symbol": "Ce",
+      "ionization_ev": 5.5387,
+      "principal_n": 4.0,
+      "electron_density_m3": 4e+28,
+      "launcher_grid": "D1 + D3",
+      "D1_proxy": 2.552668730379801,
+      "D4_pressure_pa": 10933032537.755524,
+      "D4_balance_ev": 1.705965544894385,
+      "D3_required": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Sm",
+      "ionization_ev": 5.6437,
+      "principal_n": 4.0,
+      "electron_density_m3": 4.5e+28,
+      "launcher_grid": "D1 + D3",
+      "D1_proxy": 2.5767512605650413,
+      "D4_pressure_pa": 13304386248.526253,
+      "D4_balance_ev": 1.8453210555623778,
+      "D3_required": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Nd",
+      "ionization_ev": 5.525,
+      "principal_n": 4.0,
+      "electron_density_m3": 5e+28,
+      "launcher_grid": "D1 + D3",
+      "D1_proxy": 2.5495097567963927,
+      "D4_pressure_pa": 15858325545.241005,
+      "D4_balance_ev": 1.979597655927479,
+      "D3_required": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Gd",
+      "ionization_ev": 6.1501,
+      "principal_n": 4.0,
+      "electron_density_m3": 5.5e+28,
+      "launcher_grid": "D1 + D3",
+      "D1_proxy": 2.6898720721822222,
+      "D4_pressure_pa": 18588533889.62009,
+      "D4_balance_ev": 2.109463690054261,
+      "D3_required": true,
+      "verdict": "supported"
+    },
+    {
+      "symbol": "Yb",
+      "ionization_ev": 6.2542,
+      "principal_n": 6.0,
+      "electron_density_m3": 6e+28,
+      "launcher_grid": "D1 + D3",
+      "D1_proxy": 4.0688125164619775,
+      "D4_pressure_pa": 21489488201.946484,
+      "D4_balance_ev": 2.2354472602994253,
+      "D3_required": true,
+      "verdict": "supported"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260517-212921Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260517-212921Z.txt"
+}

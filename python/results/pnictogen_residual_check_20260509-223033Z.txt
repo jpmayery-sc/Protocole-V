@@ -1,0 +1,28 @@
+Pnictogen residual check
+Timestamp: 20260509-223033Z
+
+Hypothese: the heavy pnictogen endpoint Bi leaves a residual after Z_eff correction that is reduced in the refined core
+Cas de controle: full N -> Bi pnictogen family versus core N -> Sb
+Observable: mean and endpoint residuals after fitting radius against the Z_eff proxy
+Verdict: contradicted
+
+Famille complete N -> Bi:
+- radius_trend: increasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- zeff_mean_abs_residual: 5.054040
+- mass_mean_abs_residual: 13.175963
+- endpoint_symbol: Bi
+- endpoint_zeff_residual: -1.794744
+- endpoint_mass_residual: -10.029948
+
+Noyau repare N -> Sb:
+- zeff_mean_abs_residual: 6.116230
+- mass_mean_abs_residual: 10.371504
+- zeff_max_abs_residual: 12.232460
+- mass_max_abs_residual: 15.970025
+
+Falsificateurs:
+- Bi ne laisse pas de residu plus fort que le noyau repare
+- le noyau N -> Sb n est pas plus propre que la famille complete
+- Z_eff n ameliore pas la regularite par rapport a la masse

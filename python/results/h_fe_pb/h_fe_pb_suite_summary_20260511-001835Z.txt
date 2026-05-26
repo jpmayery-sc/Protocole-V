@@ -1,0 +1,9 @@
+H / Fe / Pb suite summary
+timestamp: 20260511-001835Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- h_fe_pb: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\h_fe_pb_check_20260509-225233Z.json
+- electron_validation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron_validation_results_with_bootstrap_20260509-210118Z.json
+- sweep_min_neutron: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\sweep_all_dense_20260509-230137Z.json

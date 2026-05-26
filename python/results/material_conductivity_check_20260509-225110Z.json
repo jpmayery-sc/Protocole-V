@@ -1,0 +1,69 @@
+{
+  "timestamp": "20260509-225110Z",
+  "verdict": "supported",
+  "ordering_ok": true,
+  "copper_ok": true,
+  "iron_ok": true,
+  "aluminum_ok": true,
+  "silicon_ok": true,
+  "cases": {
+    "copper": {
+      "name": "Cuivre",
+      "rho_pure": 1.68e-08,
+      "rho_hot": 1.95e-08,
+      "rho_impure": 3.25e-08,
+      "rhos_expected": [
+        "low",
+        "hotter",
+        "impure"
+      ],
+      "low_ok": true,
+      "hot_ok": true,
+      "impure_ok": true,
+      "ok": true
+    },
+    "iron": {
+      "name": "Fer",
+      "rho_pure": 9.71e-08,
+      "rho_hot": 1.1e-07,
+      "rho_impure": 1.34e-07,
+      "rhos_expected": [
+        "above_copper",
+        "hotter",
+        "impure"
+      ],
+      "above_copper_ok": true,
+      "hot_ok": true,
+      "impurity_ok": true,
+      "ok": true
+    },
+    "aluminum": {
+      "name": "Aluminium",
+      "rho_pure": 2.82e-08,
+      "rho_hot": 3.15e-08,
+      "rho_oxide": 4.2e-08,
+      "rhos_expected": [
+        "between_copper_and_iron",
+        "hotter",
+        "oxide"
+      ],
+      "between_ok": true,
+      "hot_ok": true,
+      "oxide_ok": true,
+      "ok": true
+    },
+    "silicon": {
+      "name": "Silicium",
+      "sigma_intrinsic": 0.0001,
+      "sigma_hot": 0.002,
+      "sigma_doped_n": 100.0,
+      "sigma_doped_p": 80.0,
+      "band_gap_ev": 1.12,
+      "intrinsic_ok": true,
+      "hot_ok": true,
+      "doped_ok": true,
+      "gap_ok": true,
+      "ok": true
+    }
+  }
+}

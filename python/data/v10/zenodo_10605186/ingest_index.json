@@ -1,0 +1,40 @@
+{
+  "source_id": "zenodo-10605186",
+  "title": "Data underpinning \"Engineering unsteerable quantum states with active feedback\"",
+  "record_url": "https://zenodo.org/records/10605186",
+  "doi": "10.5281/zenodo.10605186",
+  "license": "CC BY 4.0",
+  "ingested_at": "2026-05-13",
+  "status": "metadata_only",
+  "fit_for_v10": "bridge_only",
+  "archive_size_bytes": 2145927427,
+  "archive_checksum": "md5:4b5d167b0948a26fc9fd4fe78bfeaa6f",
+  "platform": "simulation dataset for active feedback steering of quantum states",
+  "archive_file": {
+    "name": "data.zip",
+    "role": "parameterized_simulation_archive",
+    "remote_url": "https://zenodo.org/api/records/10605186/files/data.zip/content",
+    "notes": [
+      "The archive is structured by entangled state, number of qubits, and target fidelity F*.",
+      "Each parameter configuration was simulated in 10 runs according to the record description."
+    ]
+  },
+  "schema_coverage": {
+    "target_fidelity": true,
+    "qubit_count": true,
+    "repeated_runs": true,
+    "cost_output_traces": true,
+    "direct_material": false,
+    "direct_transport": false
+  },
+  "derived_summary": {
+    "source_type": "simulation",
+    "experimental_status": "not_direct_experiment",
+    "bridge_value": "robustness and control-logic validation",
+    "recommended_use": "keep as an adjacent/control source unless V10 is widened to simulation datasets"
+  },
+  "notes": [
+    "This is a strong robustness source, but it is simulation-heavy rather than a direct transport experiment.",
+    "The archive is too large for a quick full ingest in this pass, so this local index captures provenance and intended schema bridges only."
+  ]
+}

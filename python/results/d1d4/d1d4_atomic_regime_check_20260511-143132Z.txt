@@ -1,0 +1,11 @@
+D1/D4 atomic regime check
+timestamp: 20260511-143132Z
+verdict: supported
+pressure_scaling_ok: True
+d1_dominates_ok: True
+negligible_ok: True
+
+Cases:
+- H: n_e=1.000e+20 D1=1.000000 D4_balance=3.142415e-06 D4_pressure=5.034705e-05
+- He: n_e=5.000e+20 D1=1.344570 D4_balance=9.188478e-06 D4_pressure=7.360783e-04
+- Ne: n_e=1.000e+21 D1=2.518403 D4_balance=1.458580e-05 D4_pressure=2.336903e-03

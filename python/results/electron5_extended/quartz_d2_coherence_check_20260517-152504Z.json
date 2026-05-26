@@ -1,0 +1,112 @@
+{
+  "timestamp": "20260517-152504Z",
+  "verdict": "supported",
+  "quartz_ok": true,
+  "control_ok": true,
+  "separation_ok": true,
+  "quartz_results": [
+    {
+      "name": "q1",
+      "m": 30,
+      "n": 42,
+      "k": 54,
+      "q": 0,
+      "torsion": 0,
+      "aspect": 1.8,
+      "mass_geo": 626.8420853771705,
+      "coherent": true,
+      "in_band": true
+    },
+    {
+      "name": "q2",
+      "m": 36,
+      "n": 48,
+      "k": 60,
+      "q": 0,
+      "torsion": 0,
+      "aspect": 1.6666666666666667,
+      "mass_geo": 864.0,
+      "coherent": true,
+      "in_band": true
+    },
+    {
+      "name": "q3",
+      "m": 42,
+      "n": 56,
+      "k": 70,
+      "q": 0,
+      "torsion": 0,
+      "aspect": 1.6666666666666667,
+      "mass_geo": 1176.0,
+      "coherent": true,
+      "in_band": true
+    },
+    {
+      "name": "q4",
+      "m": 45,
+      "n": 60,
+      "k": 75,
+      "q": 0,
+      "torsion": 0,
+      "aspect": 1.6666666666666667,
+      "mass_geo": 1350.0,
+      "coherent": true,
+      "in_band": true
+    }
+  ],
+  "control_results": [
+    {
+      "name": "c1",
+      "m": 31,
+      "n": 44,
+      "k": 58,
+      "q": 1,
+      "torsion": 1,
+      "aspect": 1.8709677419354838,
+      "mass_geo": 335.96630690442754,
+      "coherent": false,
+      "in_band": false
+    },
+    {
+      "name": "c2",
+      "m": 33,
+      "n": 47,
+      "k": 69,
+      "q": 1,
+      "torsion": 8,
+      "aspect": 2.090909090909091,
+      "mass_geo": 10.520503368387862,
+      "coherent": false,
+      "in_band": false
+    },
+    {
+      "name": "c3",
+      "m": 35,
+      "n": 51,
+      "k": 82,
+      "q": 1,
+      "torsion": 15,
+      "aspect": 2.342857142857143,
+      "mass_geo": 2.3062225359806017,
+      "coherent": true,
+      "in_band": false
+    },
+    {
+      "name": "c4",
+      "m": 29,
+      "n": 46,
+      "k": 93,
+      "q": 1,
+      "torsion": 30,
+      "aspect": 3.206896551724138,
+      "mass_geo": 0.0,
+      "coherent": true,
+      "in_band": false
+    }
+  ],
+  "thresholds": {
+    "max_torsion": 1,
+    "min_aspect": 1.2,
+    "max_aspect": 2.1
+  }
+}

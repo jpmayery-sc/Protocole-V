@@ -1,0 +1,32 @@
+Tetrel extension famille/periode check
+Timestamp: 20260511-103459Z
+
+Hypothese: the current tetrel branch does not need an extra family or period split beyond the Ge pivot
+Cas de controle: C -> Ge versus Ge -> Pb, with the existing Zeff* correction and the shared Ge pivot
+Observable: subseries coherence, corrected-fit residuals, and pivot consistency
+Verdict: supported
+
+Sous-serie legere C -> Ge:
+- radius_trend: increasing
+- zeff_star_trend: increasing
+- zeff_star_rmse: 9.238054
+- corrected_rmse: 0.003144
+
+Sous-serie lourde Ge -> Pb:
+- radius_trend: increasing
+- zeff_star_trend: increasing
+- zeff_star_rmse: 3.143596
+- corrected_rmse: 0.000134
+
+Pivot Ge:
+- pivot_gap: 0.002411
+
+Criteres:
+- light_ok: True
+- heavy_ok: True
+- pivot_ok: True
+
+Falsificateurs:
+- one of the subseries is not monotone in radius or Zeff*
+- the corrected fit is not at least as good as the Zeff* baseline
+- the shared Ge pivot becomes inconsistent between the two subseries

@@ -1,0 +1,48 @@
+{
+  "source_id": "zenodo-5001776",
+  "title": "Data from Photonic hybrid state entanglement swapping using cat state superpositions",
+  "record_url": "https://zenodo.org/records/5001776",
+  "doi": "10.5061/dryad.05qfttf0c",
+  "license": "CC0 1.0",
+  "ingested_at": "2026-05-13",
+  "status": "metadata_only",
+  "fit_for_v10": "bridge_only",
+  "platform": "photonic hybrid state entanglement swapping with cat-state superpositions",
+  "raw_files": [
+    {
+      "name": "raw/Cat_State_ES_Averaged_Unequal_Loss_Imperfect_and_Non-Ideal_Homodyne_01102018.nb",
+      "size_bytes": 193648,
+      "role": "mathematica_notebook"
+    }
+  ],
+  "schema_coverage": {
+    "fidelity": true,
+    "photonic_loss": true,
+    "success_probability": true,
+    "measurement_imperfection": true,
+    "direct_material": false,
+    "direct_transport": false
+  },
+  "extracted_points": {
+    "alpha_fidelity_sample": [
+      [1.24, 0.7972329534498205]
+    ],
+    "supported_claims": [
+      "fidelity improves with lower loss and with the protocol sweep",
+      "the notebook models equal and unequal photonic losses",
+      "the notebook explicitly references homodyne imperfection handling and the need to set epsilon to 0 to reproduce the published data"
+    ]
+  },
+  "derived_summary": {
+    "source_type": "code_driven_dataset",
+    "experimental_status": "not_direct_experiment",
+    "bridge_value": "loss resilience and measurement imperfection modeling",
+    "required_tools": ["Mathematica", "QDensity package"],
+    "recommended_use": "keep as an adjacent/control source unless V10 is widened to code-driven photonic simulations"
+  },
+  "notes": [
+    "The archive is a Mathematica notebook rather than a simple tabular dataset.",
+    "It is useful for loss-correction logic, but material remains null in downstream normalization.",
+    "The notebook contains explicit guidance that epsilon should be set to 0 to reproduce the published plots."
+  ]
+}

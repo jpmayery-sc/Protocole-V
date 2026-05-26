@@ -1,0 +1,117 @@
+{
+  "timestamp": "20260508-224725Z",
+  "hypothesis": "when the tetrel family is split at Ge, Z_eff stays better in the light core while mass regains usefulness in the heavy tail",
+  "case_control": "C -> Si -> Ge versus Ge -> Sn -> Pb",
+  "observable": "relative regularity of radius, ionization, Z_eff proxy and mass in the two subseries",
+  "expected": {
+    "light_core": "Z_eff smoother than mass",
+    "heavy_tail": "mass competitive with or smoother than Z_eff"
+  },
+  "measured": {
+    "light_core": {
+      "series": [
+        {
+          "symbol": "C",
+          "name": "Carbon",
+          "period": 2,
+          "mass_u": 12.011,
+          "radius_pm": 67.0,
+          "ionization_ev": 11.2603,
+          "principal_n": 2,
+          "zeff_proxy": 1.81985
+        },
+        {
+          "symbol": "Si",
+          "name": "Silicon",
+          "period": 3,
+          "mass_u": 28.085,
+          "radius_pm": 111.0,
+          "ionization_ev": 8.1517,
+          "principal_n": 3,
+          "zeff_proxy": 2.322608
+        },
+        {
+          "symbol": "Ge",
+          "name": "Germanium",
+          "period": 4,
+          "mass_u": 72.63,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.8994,
+          "principal_n": 4,
+          "zeff_proxy": 3.04851
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "decreasing",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "radius_rmse": 7.0710678118654755,
+      "ionization_rmse": 0.6732363663677121,
+      "zeff_rmse": 0.052595476620050846,
+      "mass_rmse": 6.71067905572073,
+      "radius_step_cv": 0.5172413793103449,
+      "ionization_step_cv": 0.8498616442024458,
+      "zeff_step_cv": 0.18161549856179104,
+      "mass_step_cv": 0.4696712251934211
+    },
+    "heavy_tail": {
+      "series": [
+        {
+          "symbol": "Ge",
+          "name": "Germanium",
+          "period": 4,
+          "mass_u": 72.63,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.8994,
+          "principal_n": 4,
+          "zeff_proxy": 3.04851
+        },
+        {
+          "symbol": "Sn",
+          "name": "Tin",
+          "period": 5,
+          "mass_u": 118.71,
+          "radius_pm": 145.0,
+          "ionization_ev": 7.3439,
+          "principal_n": 5,
+          "zeff_proxy": 3.67421
+        },
+        {
+          "symbol": "Pb",
+          "name": "Lead",
+          "period": 6,
+          "mass_u": 207.2,
+          "radius_pm": 154.0,
+          "ionization_ev": 7.4167,
+          "principal_n": 6,
+          "zeff_proxy": 4.430851
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "radius_rmse": 2.592724864350674,
+      "ionization_rmse": 0.14809173020650246,
+      "zeff_rmse": 0.030863238259839366,
+      "mass_rmse": 9.996132863373827,
+      "radius_step_cv": 0.3793103448275862,
+      "ionization_step_cv": 1.3016366273047437,
+      "zeff_step_cv": 0.09472452993528044,
+      "mass_step_cv": 0.3151519655198038
+    }
+  },
+  "criteria": {
+    "light_zeff_better": true,
+    "heavy_mass_better": false,
+    "structural_ok": false
+  },
+  "verdict": "falsifie",
+  "falsifiers": [
+    "the light core is not monotone in radius and ionization",
+    "Z_eff is not smoother than mass in the light core",
+    "mass is not as good as or better than Z_eff in the heavy tail"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_subseries_mass_return_check_20260508-224725Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_subseries_mass_return_check_20260508-224725Z.txt"
+}

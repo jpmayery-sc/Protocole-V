@@ -1,0 +1,71 @@
+{
+  "timestamp": "20260510-220046Z",
+  "suite": "C",
+  "title": "Tests de seuils D1/D2",
+  "verdict": "supported",
+  "threshold_payload": {
+    "thresholds": {
+      "covalent": 30,
+      "transition": 50,
+      "semi_metal": 100
+    },
+    "band_by_family": {
+      "tetrel": "semi-metal",
+      "pnictogen": "semi-metal",
+      "halogen": "semi-metal",
+      "lanthanide": "D3 / topological"
+    },
+    "coherence": {
+      "tetrel": "semi-metal",
+      "pnictogen": "semi-metal",
+      "halogen": "semi-metal",
+      "lanthanide": "D3 / topological"
+    },
+    "verdict": "supported"
+  },
+  "family_checks": [
+    {
+      "family": "tetrel",
+      "family_regime": "semi-metal",
+      "max_ratio": 92.00197719909806,
+      "classified_zone": "semi-metal"
+    },
+    {
+      "family": "pnictogen",
+      "family_regime": "semi-metal",
+      "max_ratio": 89.20944752951003,
+      "classified_zone": "semi-metal"
+    },
+    {
+      "family": "halogen",
+      "family_regime": "semi-metal",
+      "max_ratio": 79.17922609625101,
+      "classified_zone": "semi-metal"
+    },
+    {
+      "family": "lanthanide",
+      "family_regime": "D3 / topological",
+      "max_ratio": 135.97007689705563,
+      "classified_zone": "D3 / topological"
+    }
+  ],
+  "thresholds": {
+    "covalent": 30,
+    "transition": 50,
+    "semi_metal": 100
+  },
+  "band_by_family": {
+    "tetrel": "semi-metal",
+    "pnictogen": "semi-metal",
+    "halogen": "semi-metal",
+    "lanthanide": "D3 / topological"
+  },
+  "coherence": {
+    "tetrel": "semi-metal",
+    "pnictogen": "semi-metal",
+    "halogen": "semi-metal",
+    "lanthanide": "D3 / topological"
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_c_tests_20260510-220046Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_c_tests_20260510-220046Z.txt"
+}

@@ -1,0 +1,29 @@
+{
+  "suite": "electron5_extended",
+  "timestamp": "20260519-213201Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "quartz_d2_coherence",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\quartz_d2_coherence_check_20260519-213201Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\quartz_d2_coherence_check_20260519-213201Z.txt"
+    },
+    {
+      "label": "quartz_gluon_zeff_separation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\quartz_gluon_zeff_separation_check_20260519-213201Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\quartz_gluon_zeff_separation_check_20260519-213201Z.txt"
+    },
+    {
+      "label": "fine_variation_equivalence",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\fine_variation_equivalence_check_20260519-213201Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\fine_variation_equivalence_check_20260519-213201Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260519-213201Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260519-213201Z.txt"
+}

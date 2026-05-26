@@ -1,0 +1,76 @@
+{
+  "timestamp": "20260511-095712Z",
+  "verdict": "contradicted",
+  "equivalent": false,
+  "tolerance": 0.1,
+  "families": {
+    "lanthanide_full": {
+      "series": [
+        "La",
+        "Ce",
+        "Pr",
+        "Nd",
+        "Sm",
+        "Eu",
+        "Gd",
+        "Tb",
+        "Dy",
+        "Ho",
+        "Er",
+        "Tm",
+        "Yb",
+        "Lu"
+      ],
+      "baseline_nrmse": 0.30337265883695835,
+      "geometric_nrmse": 7.009465584253805,
+      "energetic_nrmse": 0.3033279193708643,
+      "geometric_gain": -6.706092925416846,
+      "energetic_gain": 4.473946609406809e-05,
+      "gain_gap": 6.70613766488294,
+      "equivalent": false
+    },
+    "lanthanide_repaired_core": {
+      "series": [
+        "La",
+        "Ce",
+        "Pr",
+        "Nd",
+        "Sm",
+        "Gd",
+        "Tb",
+        "Dy",
+        "Ho",
+        "Er",
+        "Tm",
+        "Lu"
+      ],
+      "baseline_nrmse": 0.23349787363553148,
+      "geometric_nrmse": 8.170804877219735,
+      "energetic_nrmse": 0.22305383052097458,
+      "geometric_gain": -7.937307003584204,
+      "energetic_gain": 0.010444043114556906,
+      "gain_gap": 7.947751046698761,
+      "equivalent": false
+    },
+    "lanthanide_heavy_tail": {
+      "series": [
+        "Eu",
+        "Gd",
+        "Tb",
+        "Dy",
+        "Ho",
+        "Er",
+        "Tm",
+        "Yb",
+        "Lu"
+      ],
+      "baseline_nrmse": 0.3372240256831995,
+      "geometric_nrmse": 6.956897447190793,
+      "energetic_nrmse": 0.3372207813023988,
+      "geometric_gain": -6.619673421507594,
+      "energetic_gain": 3.244380800682123e-06,
+      "gain_gap": 6.619676665888394,
+      "equivalent": false
+    }
+  }
+}

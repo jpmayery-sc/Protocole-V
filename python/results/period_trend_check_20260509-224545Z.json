@@ -1,0 +1,108 @@
+{
+  "timestamp": "20260509-224545Z",
+  "verdict": "supported",
+  "period_results": {
+    "period2": {
+      "cases": [
+        {
+          "name": "Li",
+          "radius_pm": 152,
+          "ie_ev": 5.39
+        },
+        {
+          "name": "Be",
+          "radius_pm": 112,
+          "ie_ev": 9.32
+        },
+        {
+          "name": "B",
+          "radius_pm": 85,
+          "ie_ev": 8.3
+        },
+        {
+          "name": "C",
+          "radius_pm": 70,
+          "ie_ev": 11.26
+        },
+        {
+          "name": "N",
+          "radius_pm": 65,
+          "ie_ev": 14.53
+        },
+        {
+          "name": "O",
+          "radius_pm": 60,
+          "ie_ev": 13.62
+        },
+        {
+          "name": "F",
+          "radius_pm": 50,
+          "ie_ev": 17.42
+        },
+        {
+          "name": "Ne",
+          "radius_pm": 38,
+          "ie_ev": 21.56
+        }
+      ],
+      "radius_global_ok": true,
+      "ie_global_ok": true,
+      "local_breaks_ok": true,
+      "dips": [
+        "B",
+        "O"
+      ]
+    },
+    "period3": {
+      "cases": [
+        {
+          "name": "Na",
+          "radius_pm": 186,
+          "ie_ev": 5.14
+        },
+        {
+          "name": "Mg",
+          "radius_pm": 160,
+          "ie_ev": 7.65
+        },
+        {
+          "name": "Al",
+          "radius_pm": 143,
+          "ie_ev": 5.99
+        },
+        {
+          "name": "Si",
+          "radius_pm": 118,
+          "ie_ev": 8.15
+        },
+        {
+          "name": "P",
+          "radius_pm": 110,
+          "ie_ev": 10.49
+        },
+        {
+          "name": "S",
+          "radius_pm": 104,
+          "ie_ev": 10.36
+        },
+        {
+          "name": "Cl",
+          "radius_pm": 99,
+          "ie_ev": 12.97
+        },
+        {
+          "name": "Ar",
+          "radius_pm": 71,
+          "ie_ev": 15.76
+        }
+      ],
+      "radius_global_ok": true,
+      "ie_global_ok": true,
+      "local_breaks_ok": true,
+      "dips": [
+        "Al",
+        "S"
+      ]
+    }
+  }
+}

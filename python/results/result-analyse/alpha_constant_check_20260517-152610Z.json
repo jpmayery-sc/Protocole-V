@@ -1,0 +1,11 @@
+{
+  "timestamp": "20260517-152610Z",
+  "exact_inverse": 137.0,
+  "reference_inverse": 137.035999084,
+  "absolute_error": 0.03599908399999663,
+  "relative_error": 0.0002626980081192388,
+  "exact_claim_ok": false,
+  "mnemonic_claim_ok": true,
+  "strict_mnemonic_ok": false,
+  "verdict": "falsifie"
+}

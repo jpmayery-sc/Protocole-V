@@ -1,0 +1,9 @@
+D1/D4 suite summary
+timestamp: 20260518-170840Z
+overall_verdict: supported
+supported_count: 3/3
+
+Regimes:
+- atomic: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d4\d1d4_atomic_regime_check_20260511-143213Z.json
+- metallic: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d4\d1d4_metallic_regime_check_20260511-143213Z.json
+- dense: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d4\d1d4_dense_regime_check_20260511-143213Z.json

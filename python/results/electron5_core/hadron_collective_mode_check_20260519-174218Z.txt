@@ -1,0 +1,15 @@
+Hadron collective mode check
+timestamp: 20260519-174218Z
+verdict: supported
+ordered: True
+all_match: True
+meson_ok: True
+baryon_ok: True
+
+Cases:
+- pion_plus: type=meson content=u dbar predicted=140.00 MeV reference=139.57 MeV relative_error=0.003081 tolerance=0.020
+- kaon_plus: type=meson content=u sbar predicted=494.00 MeV reference=493.68 MeV relative_error=0.000648 tolerance=0.020
+- proton: type=baryon content=u u d predicted=938.50 MeV reference=938.27 MeV relative_error=0.000245 tolerance=0.010
+- neutron: type=baryon content=u d d predicted=939.60 MeV reference=939.57 MeV relative_error=0.000032 tolerance=0.010
+- lambda0: type=baryon content=u d s predicted=1115.70 MeV reference=1115.68 MeV relative_error=0.000018 tolerance=0.010
+- delta_plus_plus: type=baryon content=u u u predicted=1232.00 MeV reference=1232.00 MeV relative_error=0.000000 tolerance=0.010

@@ -1,0 +1,18 @@
+{
+  "suite": "triphase",
+  "timestamp": "20260511-000741Z",
+  "overall_verdict": "supported",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "three_phase_current",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\triphase\\three_phase_current_check_20260511-000741Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\triphase\\three_phase_current_check_20260511-000741Z.txt",
+      "hypothesis": "the balanced three-phase system cancels the neutral current and loses symmetry when perturbed"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\triphase\\triphase_suite_summary_20260511-000741Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\triphase\\triphase_suite_summary_20260511-000741Z.txt"
+}

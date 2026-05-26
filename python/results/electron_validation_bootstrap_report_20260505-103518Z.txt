@@ -1,0 +1,115 @@
+Bootstrap T5 report
+generated: 20260505-103518Z UTC
+
+MIN_NEUTRON = 20
+  n = 3
+  r_obs = 0.769581
+  p_value = 8.840387e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 21
+  n = 3
+  r_obs = 0.737439
+  p_value = 8.343885e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 22
+  n = 3
+  r_obs = 0.759853
+  p_value = 8.867044e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 23
+  n = 3
+  r_obs = 0.857350
+  p_value = 7.347551e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 24
+  n = 3
+  r_obs = 0.854101
+  p_value = 8.917028e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 25
+  n = 3
+  r_obs = 0.859358
+  p_value = 8.983672e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 26
+  n = 3
+  r_obs = 0.923269
+  p_value = 8.870377e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 27
+  n = 3
+  r_obs = 0.869737
+  p_value = 8.090636e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 28
+  n = 3
+  r_obs = 0.864663
+  p_value = 8.903699e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 29
+  n = 3
+  r_obs = 0.889628
+  p_value = 7.534155e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 30
+  n = 3
+  r_obs = 0.879684
+  p_value = 8.973675e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 31
+  n = 3
+  r_obs = 0.871079
+  p_value = 7.780740e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 32
+  n = 3
+  r_obs = 0.865125
+  p_value = 7.314229e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 33
+  n = 3
+  r_obs = 0.863680
+  p_value = 8.650450e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 34
+  n = 3
+  r_obs = 0.877457
+  p_value = 7.130956e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 35
+  n = 3
+  r_obs = 0.851138
+  p_value = 8.033989e-01
+  95% CI = [nan, nan]
+  bootstrap samples = 3000
+

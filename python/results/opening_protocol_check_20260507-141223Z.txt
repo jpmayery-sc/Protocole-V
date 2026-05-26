@@ -1,0 +1,19 @@
+Contrôle de protocole d’ouverture
+Timestamp: 20260507-141223Z
+
+Tests:
+- Hystérésis: conforme strict
+- Mémoire / séparation de branches: conforme strict
+- Seuil sous fréquence: conforme strict
+- Seuil sous température: conforme strict
+- Amplitude du déplacement de seuil: conforme strict
+- Effondrement réduit inter-systèmes: conforme strict
+- Contrôle négatif séparé: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- aucune boucle d’hystérésis stable ne se distingue du bruit
+- le seuil ne bouge pas de façon monotone quand la fréquence ou la température change
+- des systèmes réduits différents ne se superposent pas après normalisation
+- un contrôle négatif artificiellement différent se confond avec les systèmes réduits compatibles

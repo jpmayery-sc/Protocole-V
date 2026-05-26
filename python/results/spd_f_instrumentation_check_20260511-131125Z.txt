@@ -1,0 +1,17 @@
+s/p/d/f unified instrumentation check
+timestamp: 20260511-131125Z
+verdict: supported
+corrected_better: True
+improved_groups: 4/4
+
+Global fits:
+- baseline rmse: 36.963852
+- corrected rmse: 15.979445
+- baseline max_abs_residual: 112.202231
+- corrected max_abs_residual: 51.094104
+
+Per-family summary:
+- d: baseline_rmse=18.735894 corrected_rmse=14.235663 improved=True
+- f: baseline_rmse=28.589399 corrected_rmse=8.431120 improved=True
+- p: baseline_rmse=74.212360 corrected_rmse=14.958995 improved=True
+- s: baseline_rmse=74.021814 corrected_rmse=33.198161 improved=True

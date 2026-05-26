@@ -1,0 +1,94 @@
+{
+  "timestamp": "20260511-104933Z",
+  "verdict": "supported",
+  "family_results": {
+    "alkali": {
+      "family": "alkali",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "Li",
+          "Z": 3,
+          "n": 2,
+          "ionization_ev": 5.3917,
+          "zeff": 1.259283,
+          "screening": 1.740717
+        },
+        {
+          "symbol": "Na",
+          "Z": 11,
+          "n": 3,
+          "ionization_ev": 5.1391,
+          "zeff": 1.844146,
+          "screening": 9.155854
+        },
+        {
+          "symbol": "K",
+          "Z": 19,
+          "n": 4,
+          "ionization_ev": 4.3407,
+          "zeff": 2.259802,
+          "screening": 16.740198
+        },
+        {
+          "symbol": "Rb",
+          "Z": 37,
+          "n": 5,
+          "ionization_ev": 4.1771,
+          "zeff": 2.771009,
+          "screening": 34.228991
+        },
+        {
+          "symbol": "Cs",
+          "Z": 55,
+          "n": 6,
+          "ionization_ev": 3.8939,
+          "zeff": 3.210511,
+          "screening": 51.789489
+        }
+      ]
+    },
+    "halogen": {
+      "family": "halogen",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "F",
+          "Z": 9,
+          "n": 2,
+          "ionization_ev": 17.4228,
+          "zeff": 2.263703,
+          "screening": 6.736297
+        },
+        {
+          "symbol": "Cl",
+          "Z": 17,
+          "n": 3,
+          "ionization_ev": 12.9676,
+          "zeff": 2.92942,
+          "screening": 14.07058
+        },
+        {
+          "symbol": "Br",
+          "Z": 35,
+          "n": 4,
+          "ionization_ev": 11.8138,
+          "zeff": 3.728081,
+          "screening": 31.271919
+        },
+        {
+          "symbol": "I",
+          "Z": 53,
+          "n": 5,
+          "ionization_ev": 10.4513,
+          "zeff": 4.383144,
+          "screening": 48.616856
+        }
+      ]
+    }
+  }
+}

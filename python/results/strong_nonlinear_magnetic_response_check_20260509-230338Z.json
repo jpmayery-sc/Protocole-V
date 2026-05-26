@@ -1,0 +1,49 @@
+{
+  "timestamp": "20260509-230338Z",
+  "verdict": "supported",
+  "monotone_ok": true,
+  "saturation_ok": true,
+  "plateau_ok": true,
+  "cases": [
+    {
+      "name": "weak",
+      "field": 0.1,
+      "saturation": 1.6,
+      "scale": 0.6,
+      "magnetization": 0.264224660679407,
+      "linear_baseline": 0.2666666666666667,
+      "plateau_gap": 1.3357753393205931,
+      "relative_gap": 0.8348595870753707
+    },
+    {
+      "name": "medium",
+      "field": 0.8,
+      "saturation": 1.6,
+      "scale": 0.6,
+      "magnetization": 1.3920986587882753,
+      "linear_baseline": 2.1333333333333337,
+      "plateau_gap": 0.20790134121172477,
+      "relative_gap": 0.12993833825732798
+    },
+    {
+      "name": "strong",
+      "field": 2.5,
+      "saturation": 1.6,
+      "scale": 0.6,
+      "magnetization": 1.5992310025189795,
+      "linear_baseline": 6.666666666666668,
+      "plateau_gap": 0.0007689974810205502,
+      "relative_gap": 0.0004806234256378439
+    },
+    {
+      "name": "very_strong",
+      "field": 6.0,
+      "saturation": 1.6,
+      "scale": 0.6,
+      "magnetization": 1.5999999934043085,
+      "linear_baseline": 16.0,
+      "plateau_gap": 6.5956915484832734e-09,
+      "relative_gap": 4.122307217802046e-09
+    }
+  ]
+}

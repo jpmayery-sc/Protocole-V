@@ -1,0 +1,59 @@
+{
+  "timestamp": "20260508-223835Z",
+  "verdict": "supported",
+  "closed_shell_ok": true,
+  "higher_ie_ok": true,
+  "period_boundary_ok": true,
+  "cases": [
+    {
+      "name": "He",
+      "period": 1,
+      "first_ie_ev": 24.59,
+      "previous_element": "H",
+      "previous_ie_ev": 13.6,
+      "closed_shell": true,
+      "higher_than_previous": true,
+      "ie_gap_ev": 10.99
+    },
+    {
+      "name": "Ne",
+      "period": 2,
+      "first_ie_ev": 21.56,
+      "previous_element": "F",
+      "previous_ie_ev": 17.42,
+      "closed_shell": true,
+      "higher_than_previous": true,
+      "ie_gap_ev": 4.139999999999997
+    },
+    {
+      "name": "Ar",
+      "period": 3,
+      "first_ie_ev": 15.76,
+      "previous_element": "Cl",
+      "previous_ie_ev": 12.97,
+      "closed_shell": true,
+      "higher_than_previous": true,
+      "ie_gap_ev": 2.789999999999999
+    },
+    {
+      "name": "Kr",
+      "period": 4,
+      "first_ie_ev": 14.0,
+      "previous_element": "Br",
+      "previous_ie_ev": 11.81,
+      "closed_shell": true,
+      "higher_than_previous": true,
+      "ie_gap_ev": 2.1899999999999995
+    },
+    {
+      "name": "Xe",
+      "period": 5,
+      "first_ie_ev": 12.13,
+      "previous_element": "I",
+      "previous_ie_ev": 10.45,
+      "closed_shell": true,
+      "higher_than_previous": true,
+      "ie_gap_ev": 1.6800000000000015
+    }
+  ]
+}

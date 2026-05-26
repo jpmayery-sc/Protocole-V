@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "demo_control",
+  "description": "Synthetic control bench for ECGP runner validation.",
+  "trials": [
+    {
+      "trial_id": "cu-1",
+      "material": "cu",
+      "frequency_hz": 1000000,
+      "measured_fidelity": 0.971,
+      "control_fidelity": 0.968,
+      "loss_db": 1.2,
+      "temperature_k": 295.0,
+      "geometry": "straight"
+    },
+    {
+      "trial_id": "cu-2",
+      "material": "cu",
+      "frequency_hz": 5000000,
+      "measured_fidelity": 0.970,
+      "control_fidelity": 0.967,
+      "loss_db": 1.2,
+      "temperature_k": 295.0,
+      "geometry": "straight"
+    },
+    {
+      "trial_id": "al-1",
+      "material": "al",
+      "frequency_hz": 1000000,
+      "measured_fidelity": 0.963,
+      "control_fidelity": 0.961,
+      "loss_db": 1.2,
+      "temperature_k": 295.0,
+      "geometry": "straight"
+    },
+    {
+      "trial_id": "al-2",
+      "material": "al",
+      "frequency_hz": 5000000,
+      "measured_fidelity": 0.962,
+      "control_fidelity": 0.961,
+      "loss_db": 1.2,
+      "temperature_k": 295.0,
+      "geometry": "straight"
+    },
+    {
+      "trial_id": "fe-1",
+      "material": "fe",
+      "frequency_hz": 1000000,
+      "measured_fidelity": 0.956,
+      "control_fidelity": 0.952,
+      "loss_db": 1.2,
+      "temperature_k": 295.0,
+      "geometry": "spiral"
+    },
+    {
+      "trial_id": "fe-2",
+      "material": "fe",
+      "frequency_hz": 5000000,
+      "measured_fidelity": 0.957,
+      "control_fidelity": 0.952,
+      "loss_db": 1.2,
+      "temperature_k": 295.0,
+      "geometry": "spiral"
+    }
+  ]
+}

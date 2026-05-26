@@ -1,0 +1,18 @@
+Screening law saturation check
+timestamp: 20260517-212927Z
+verdict: supported
+best_model: power
+baseline_mean_test_nrmse: 0.292494
+exp_mean_test_nrmse: 0.056643
+power_mean_test_nrmse: 0.011358
+best_mean_test_nrmse: 0.011358
+best_parameter_cv: 0.037795
+relative_improvement: 0.961169
+improved_families: 5/5
+
+Families: 
+- p_halogen: baseline=0.152018, exp=0.226050 (p=0.05), power=0.008562 (alpha=1.00), best=power
+- d_3d: baseline=0.343475, exp=0.010855 (p=0.10), power=0.011342 (alpha=0.95), best=exp
+- d_4d: baseline=0.363757, exp=0.014923 (p=0.10), power=0.015869 (alpha=0.95), best=exp
+- d_5d: baseline=0.142875, exp=0.015904 (p=0.05), power=0.015968 (alpha=1.00), best=exp
+- f_lanthanide_core: baseline=0.460344, exp=0.015483 (p=0.05), power=0.005048 (alpha=1.05), best=power

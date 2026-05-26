@@ -1,0 +1,52 @@
+{
+  "timestamp": "20260511-130320Z",
+  "verdict": "supported",
+  "equivalent": true,
+  "tolerance": 0.12,
+  "families": {
+    "pnictogen_full": {
+      "series": [
+        "N",
+        "P",
+        "As",
+        "Sb",
+        "Bi"
+      ],
+      "baseline_nrmse": 0.07516196138928331,
+      "geometric_nrmse": 0.03212389067694016,
+      "energetic_nrmse": 0.006134656350733008,
+      "geometric_gain": 0.043038070712343154,
+      "energetic_gain": 0.0690273050385503,
+      "gain_gap": 0.025989234326207145,
+      "equivalent": true
+    },
+    "pnictogen_light_core": {
+      "series": [
+        "N",
+        "P",
+        "As"
+      ],
+      "baseline_nrmse": 0.14004606928881347,
+      "geometric_nrmse": 2.088873371666116e-14,
+      "energetic_nrmse": 1.718905419547021e-14,
+      "geometric_gain": 0.14004606928879257,
+      "energetic_gain": 0.1400460692887963,
+      "gain_gap": 3.7192471324942744e-15,
+      "equivalent": true
+    },
+    "pnictogen_heavy_tail": {
+      "series": [
+        "As",
+        "Sb",
+        "Bi"
+      ],
+      "baseline_nrmse": 0.011673758685570088,
+      "geometric_nrmse": 5.814328593850672e-13,
+      "energetic_nrmse": 1.0260767999350068e-14,
+      "geometric_gain": 0.011673758684988655,
+      "energetic_gain": 0.011673758685559827,
+      "gain_gap": 5.711715822531716e-13,
+      "equivalent": true
+    }
+  }
+}

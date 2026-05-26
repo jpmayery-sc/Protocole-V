@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260517-212530Z",
+  "exact_alpha": 0.0072992700729927005,
+  "reference_alpha": 0.0072973525692838015,
+  "exact_delta_theta_rad": 0.045862666475763404,
+  "reference_delta_theta_rad": 0.04585061844463319,
+  "exact_delta_theta_deg": 2.6277372262773726,
+  "reference_delta_theta_deg": 2.6270469249421686,
+  "absolute_alpha_error": 1.9175037088989613e-06,
+  "relative_alpha_error": 0.0002627670364962446,
+  "absolute_delta_error_rad": 1.2048031130217074e-05,
+  "relative_delta_error": 0.00026276703649626116,
+  "exact_claim_ok": false,
+  "phase_observable_ok": true,
+  "strict_phase_observable_ok": false,
+  "verdict": "supported"
+}

@@ -1,0 +1,23 @@
+H / Fe / Pb check
+timestamp: 20260520-084158Z
+verdict: supported
+minimal_ok: True
+balance_ok: True
+heavy_ok: True
+order_ok: True
+curve_ok: True
+shape: cloche
+peak_case: Fe-56
+
+Cases:
+- H-1: p=1 n=0 e=1 N/Z=0.000000 B/A=0.0000 MeV balance_distance=1.000000
+- He-4: p=2 n=2 e=2 N/Z=1.000000 B/A=7.0739 MeV balance_distance=0.000000
+- C-12: p=6 n=6 e=6 N/Z=1.000000 B/A=7.6801 MeV balance_distance=0.000000
+- O-16: p=8 n=8 e=8 N/Z=1.000000 B/A=7.9762 MeV balance_distance=0.000000
+- Fe-56: p=26 n=30 e=26 N/Z=1.153846 B/A=8.7904 MeV balance_distance=0.153846
+- Pb-208: p=82 n=126 e=82 N/Z=1.536585 B/A=7.8675 MeV balance_distance=0.536585
+- U-238: p=92 n=146 e=92 N/Z=1.586957 B/A=7.5701 MeV balance_distance=0.586957
+
+Curve order:
+- H-1 -> He-4 -> C-12 -> O-16 -> Fe-56 -> Pb-208 -> U-238
+- peak_energy: 8.7904 MeV at Fe-56

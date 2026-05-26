@@ -1,0 +1,12 @@
+H / Fe / Pb check
+timestamp: 20260507-172551Z
+verdict: supported
+minimal_ok: True
+balance_ok: True
+heavy_ok: True
+order_ok: True
+
+Cases:
+- H-1: p=1 n=0 e=1 ratio=0.000000 balance_distance=1.000000
+- Fe-56: p=26 n=30 e=26 ratio=1.153846 balance_distance=0.153846
+- Pb-208: p=82 n=126 e=82 ratio=1.536585 balance_distance=0.536585

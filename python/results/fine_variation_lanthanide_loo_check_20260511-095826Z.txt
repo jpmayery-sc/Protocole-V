@@ -1,0 +1,124 @@
+Fine variation lanthanide leave-one-out check
+Timestamp: 20260511-095826Z
+Hypothesis: leave-one-out on lanthanides is best explained by Zeff*+H rather than mass or raw Zeff
+Case control: full La -> Lu family with each element held out once
+Observable: held-out radius prediction error across four model classes
+Verdict: contradicted
+Mass RMSE: 8.596482
+Zeff RMSE: 9.375072
+Zeff* RMSE: 5.224805
+Zeff*+H RMSE: 5.224806
+Best model: zeff_star
+
+Held out: La
+  radius: 195.000
+  mass error: 106.400052
+  zeff error: 184.339054
+  zeff* error: 113.744682
+  zeff*+H error: 113.744689
+  best model: mass
+
+Held out: Ce
+  radius: 185.000
+  mass error: 4.613996
+  zeff error: 4.240590
+  zeff* error: 1.088395
+  zeff*+H error: 1.088395
+  best model: zeff_star_h
+
+Held out: Pr
+  radius: 182.000
+  mass error: 30.990557
+  zeff error: 3.356682
+  zeff* error: 9.819264
+  zeff*+H error: 9.819263
+  best model: zeff
+
+Held out: Nd
+  radius: 181.000
+  mass error: 28.577909
+  zeff error: 7.150494
+  zeff* error: 7.656142
+  zeff*+H error: 7.656140
+  best model: zeff
+
+Held out: Sm
+  radius: 180.000
+  mass error: 17.937876
+  zeff error: 9.413072
+  zeff* error: 6.177970
+  zeff*+H error: 6.177967
+  best model: zeff_star_h
+
+Held out: Eu
+  radius: 199.000
+  mass error: 289.157591
+  zeff error: 321.608366
+  zeff* error: 14.251030
+  zeff*+H error: 14.251140
+  best model: zeff_star
+
+Held out: Gd
+  radius: 180.000
+  mass error: 4.313351
+  zeff error: 0.624260
+  zeff* error: 0.086648
+  zeff*+H error: 0.086647
+  best model: zeff_star_h
+
+Held out: Tb
+  radius: 178.000
+  mass error: 13.967073
+  zeff error: 17.238428
+  zeff* error: 0.607146
+  zeff*+H error: 0.607144
+  best model: zeff_star_h
+
+Held out: Dy
+  radius: 177.000
+  mass error: 14.433615
+  zeff error: 24.545570
+  zeff* error: 0.370784
+  zeff*+H error: 0.370782
+  best model: zeff_star_h
+
+Held out: Ho
+  radius: 176.000
+  mass error: 17.899053
+  zeff error: 33.989196
+  zeff* error: 0.198868
+  zeff*+H error: 0.198867
+  best model: zeff_star_h
+
+Held out: Er
+  radius: 175.000
+  mass error: 22.435867
+  zeff error: 46.914943
+  zeff* error: 0.077083
+  zeff*+H error: 0.077082
+  best model: zeff_star_h
+
+Held out: Tm
+  radius: 174.000
+  mass error: 29.857459
+  zeff error: 65.213406
+  zeff* error: 0.005777
+  zeff*+H error: 0.005777
+  best model: zeff_star_h
+
+Held out: Yb
+  radius: 194.000
+  mass error: 426.750809
+  zeff error: 330.100344
+  zeff* error: 14.251395
+  zeff*+H error: 14.251322
+  best model: zeff_star_h
+
+Held out: Lu
+  radius: 173.000
+  mass error: 27.257830
+  zeff error: 181.753188
+  zeff* error: 213.845020
+  zeff*+H error: 213.845199
+  best model: mass
+

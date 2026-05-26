@@ -1,0 +1,59 @@
+{
+  "timestamp": "20260511-095355Z",
+  "overall_verdict": "contradicted",
+  "family": [
+    "B",
+    "Al",
+    "Ga",
+    "In",
+    "Tl"
+  ],
+  "folds": [
+    {
+      "held_out": "B",
+      "mass_error": 2224.6295196179053,
+      "zeff_error": 1792.3697204343905,
+      "zeff_star_error": 9684.71486488795,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Al",
+      "mass_error": 1303.1355513472683,
+      "zeff_error": 1328.2566873846438,
+      "zeff_star_error": 698.5566677793147,
+      "best_model": "zeff_star"
+    },
+    {
+      "held_out": "Ga",
+      "mass_error": 5.707270949183543,
+      "zeff_error": 6.547997339000383,
+      "zeff_star_error": 1955.1195771406246,
+      "best_model": "mass"
+    },
+    {
+      "held_out": "In",
+      "mass_error": 115.1511350874623,
+      "zeff_error": 9.348060022260112,
+      "zeff_star_error": 1304.598840611045,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Tl",
+      "mass_error": 1045.6802175354844,
+      "zeff_error": 196.21514898761566,
+      "zeff_star_error": 1955.138182542173,
+      "best_model": "zeff"
+    }
+  ],
+  "summary": {
+    "mass_rmse": 30.640834500833375,
+    "zeff_rmse": 25.81758166121649,
+    "zeff_star_rmse": 55.85360889496955,
+    "best_model": "zeff"
+  },
+  "hypothesis": "leave-one-out on the boron family is best explained by a local Zeff* built from family index k and rupture flag L",
+  "case_control": "full B -> Tl family with each element held out once",
+  "observable": "held-out radius prediction error across mass, raw Z_eff, and local Zeff*",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_boron_loo_check_20260511-095355Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_boron_loo_check_20260511-095355Z.txt"
+}

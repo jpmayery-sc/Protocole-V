@@ -1,0 +1,46 @@
+{
+  "suite": "regime_physics",
+  "timestamp": "20260517-212751Z",
+  "overall_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "atomique",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260517-212749Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260517-212749Z.txt",
+      "hypothesis": "D1 dominates in the atomic regime while D4 stays negligible"
+    },
+    {
+      "label": "metal",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260517-212750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260517-212750Z.txt",
+      "hypothesis": "Metals keep D4 moderate, below D1, while the Fermi scale stays in the few-eV window"
+    },
+    {
+      "label": "lanthanide",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260517-212750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260517-212750Z.txt",
+      "hypothesis": "Lanthanides require D3 and do not collapse to D1-only reading"
+    },
+    {
+      "label": "dense",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260517-212750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260517-212750Z.txt",
+      "hypothesis": "Dense matter admits a local D1 ~= D4 balance that moves continuously with density"
+    },
+    {
+      "label": "flow",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_flow_check_20260517-212750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_flow_check_20260517-212750Z.txt",
+      "hypothesis": "The D1 / D2 / D3 / D4 grid stays ordered across atomic, metallic, lanthanide, and dense regimes"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260517-212751Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260517-212751Z.txt"
+}

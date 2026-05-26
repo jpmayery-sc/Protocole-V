@@ -1,0 +1,37 @@
+Omega(Z) structure check
+Timestamp: 20260517-211309Z
+
+Hypothese: Omega(Z) improves the reading of heavy series by adding torsion, curvature and a normalized internal radius
+Cas de controle: lanthanides as primary heavy series with Fr / Ra / Lr as heavy probes
+Observable: baseline versus Omega fit, torsion residuals, curvature and normalized internal radius
+Verdict: supported
+
+Lanthanides:
+- La: radius=195.0 zeff=3.842219 torsion=0.000000 curvature=0.000000 ratio=1.039287
+- Ce: radius=185.0 zeff=3.829003 torsion=7.000000 curvature=0.009562 ratio=0.990504
+- Pr: radius=182.0 zeff=3.806226 torsion=2.000000 curvature=0.040817 ratio=0.978923
+- Nd: radius=181.0 zeff=3.824265 torsion=0.000000 curvature=0.022926 ratio=0.978041
+- Sm: radius=180.0 zeff=3.865230 torsion=20.000000 curvature=0.032072 ratio=0.977152
+- Eu: radius=199.0 zeff=3.874122 torsion=38.000000 curvature=0.151760 ratio=1.085333
+- Gd: radius=180.0 zeff=4.034775 torsion=17.000000 curvature=0.255923 ratio=0.986307
+- Tb: radius=178.0 zeff=3.939506 torsion=1.000000 curvature=0.120721 ratio=0.979939
+- Dy: radius=177.0 zeff=3.964957 torsion=0.000000 curvature=0.002159 ratio=0.979042
+- Ho: radius=176.0 zeff=3.992567 torsion=0.000000 curvature=0.000798 ratio=0.978136
+- Er: radius=175.0 zeff=4.020974 torsion=0.000000 curvature=0.003469 ratio=0.977222
+- Tm: radius=174.0 zeff=4.045913 torsion=21.000000 curvature=0.002104 ratio=0.976299
+- Yb: radius=194.0 zeff=4.068747 torsion=41.000000 curvature=0.301036 ratio=1.093764
+- Lu: radius=173.0 zeff=3.790546 torsion=0.000000 curvature=0.000000 ratio=0.980091
+
+Baseline RMSE: 7.194451
+Omega RMSE: 0.113544
+Omega gain ratio: 0.984218
+Max torsion: 41.000000
+Max curvature: 0.301036
+
+Heavy probes:
+- Fr: radius=270.0 zeff=3.830626 torsion=0.000000 curvature=0.000000 ratio=0.999383
+- Ra: radius=221.0 zeff=4.360936 torsion=1.000000 curvature=0.663884 ratio=1.001511
+- Lr: radius=171.0 zeff=4.227362 torsion=0.000000 curvature=0.000000 ratio=0.999026
+
+Primary criteria: {'omega_local_useful': True, 'omega_structurel_net': True, 'omega_distinct': False, 'structure_ok': True}
+Probe criteria: {'omega_local_useful': True, 'omega_structurel_net': True, 'omega_distinct': False, 'structure_ok': True}

@@ -1,0 +1,4 @@
+Official D1/D2 suite C
+timestamp: 20260510-220046Z
+verdict: supported
+bands: {'tetrel': 'semi-metal', 'pnictogen': 'semi-metal', 'halogen': 'semi-metal', 'lanthanide': 'D3 / topological'}

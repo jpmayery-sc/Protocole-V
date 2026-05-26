@@ -1,0 +1,35 @@
+{
+  "suite": "atom_basics",
+  "timestamp": "20260517-142918Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "neutral_atom",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260517-142917Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260517-142917Z.txt"
+    },
+    {
+      "label": "iron_rust",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260517-142917Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260517-142917Z.txt"
+    },
+    {
+      "label": "h_fe_pb",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260517-142918Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260517-142918Z.txt"
+    },
+    {
+      "label": "nzstability",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260517-142918Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260517-142918Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260517-142918Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260517-142918Z.txt"
+}

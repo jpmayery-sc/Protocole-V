@@ -1,0 +1,31 @@
+{
+  "suite": "official_d1d2_b",
+  "timestamp": "20260511-002411Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "test",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.txt"
+    },
+    {
+      "label": "test",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.txt"
+    },
+    {
+      "label": "test",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.txt"
+    }
+  ],
+  "hypothesis": "inter-family D1/D2 comparisons should reveal regime separation rather than a universal collapse",
+  "negative_control": true,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_suite_summary_20260511-002411Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_suite_summary_20260511-002411Z.txt"
+}

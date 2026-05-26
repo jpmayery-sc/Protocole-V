@@ -1,0 +1,39 @@
+{
+  "suite": "regime_physics",
+  "timestamp": "20260511-090407Z",
+  "overall_verdict": "partiel",
+  "supported_count": 2,
+  "total": 4,
+  "items": [
+    {
+      "label": "atomique",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260511-090406Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260511-090406Z.txt",
+      "hypothesis": "D1 dominates in the atomic regime while D4 stays negligible"
+    },
+    {
+      "label": "metal",
+      "verdict": "contradicted",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260511-090406Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260511-090406Z.txt",
+      "hypothesis": "Metals keep D4 moderate, below D1, while the Fermi scale stays in the few-eV window"
+    },
+    {
+      "label": "lanthanide",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260511-090407Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260511-090407Z.txt",
+      "hypothesis": "Lanthanides require D3 and do not collapse to D1-only reading"
+    },
+    {
+      "label": "dense",
+      "verdict": "contradicted",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260511-090407Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260511-090407Z.txt",
+      "hypothesis": "Dense matter admits a local D1 ~= D4 balance that moves continuously with density"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260511-090407Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260511-090407Z.txt"
+}

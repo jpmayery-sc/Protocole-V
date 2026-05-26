@@ -1,0 +1,196 @@
+{
+  "timestamp": "20260511-095150Z",
+  "hypothesis": "the fine tetrel subseries becomes more regular when the k/L correction is used instead of the mass-return reading",
+  "case_control": "C -> Si -> Ge versus Ge -> Sn -> Pb, baseline Z_eff fit versus corrected [1, Z_eff, k, L] fit",
+  "observable": "radius residuals and fit regularity in the two tetrel subseries",
+  "expected": {
+    "light_core": "corrected fit smoother than baseline",
+    "heavy_tail": "corrected fit smoother than baseline",
+    "ionization": "may remain mixed on the heavy tail"
+  },
+  "measured": {
+    "light_core": {
+      "series": [
+        {
+          "symbol": "C",
+          "name": "Carbon",
+          "period": 2,
+          "mass_u": 12.011,
+          "radius_pm": 67.0,
+          "ionization_ev": 11.2603,
+          "k": 0.0,
+          "L": 0.0,
+          "zeff_proxy": 1.81985
+        },
+        {
+          "symbol": "Si",
+          "name": "Silicon",
+          "period": 3,
+          "mass_u": 28.085,
+          "radius_pm": 111.0,
+          "ionization_ev": 8.1517,
+          "k": 0.0,
+          "L": 1.0,
+          "zeff_proxy": 2.322608
+        },
+        {
+          "symbol": "Ge",
+          "name": "Germanium",
+          "period": 4,
+          "mass_u": 72.63,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.8994,
+          "k": 0.0,
+          "L": 2.0,
+          "zeff_proxy": 3.04851
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "decreasing",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "baseline": {
+        "fit": {
+          "slope": 45.23044133563965,
+          "intercept": -7.416875499488512
+        },
+        "predicted": [
+          74.89572972759956,
+          97.63570385254782,
+          130.4685664198526
+        ],
+        "residuals": [
+          -7.895729727599559,
+          13.36429614745218,
+          -5.468566419852607
+        ],
+        "rmse": 9.501792429790008,
+        "max_abs_residual": 13.36429614745218
+      },
+      "corrected": {
+        "fit": {
+          "intercept": 311.5020937323703,
+          "alpha": -134.35114969590023,
+          "beta": 0.0,
+          "gamma": 111.53604569779209
+        },
+        "coefficients": [
+          311.5020937323703,
+          -134.35114969590023,
+          0.0,
+          111.53604569779209
+        ],
+        "predicted": [
+          67.00319387285921,
+          110.9931007861398,
+          125.00339383890739
+        ],
+        "residuals": [
+          -0.0031938728592137977,
+          0.006899213860194209,
+          -0.003393838907385316
+        ],
+        "rmse": 0.004806874183874615,
+        "max_abs_residual": 0.006899213860194209
+      }
+    },
+    "heavy_tail": {
+      "series": [
+        {
+          "symbol": "Ge",
+          "name": "Germanium",
+          "period": 4,
+          "mass_u": 72.63,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.8994,
+          "k": 0.0,
+          "L": 2.0,
+          "zeff_proxy": 3.04851
+        },
+        {
+          "symbol": "Sn",
+          "name": "Tin",
+          "period": 5,
+          "mass_u": 118.71,
+          "radius_pm": 145.0,
+          "ionization_ev": 7.3439,
+          "k": 0.0,
+          "L": 3.0,
+          "zeff_proxy": 3.67421
+        },
+        {
+          "symbol": "Pb",
+          "name": "Lead",
+          "period": 6,
+          "mass_u": 207.2,
+          "radius_pm": 154.0,
+          "ionization_ev": 7.4167,
+          "k": 0.0,
+          "L": 3.0,
+          "zeff_proxy": 4.430851
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "baseline": {
+        "fit": {
+          "slope": 20.66583304626515,
+          "intercept": 64.50072522858717
+        },
+        "predicted": [
+          127.50071899540227,
+          140.43132737593794,
+          156.0679536286598
+        ],
+        "residuals": [
+          -2.5007189954022664,
+          4.56867262406206,
+          -2.067953628659808
+        ],
+        "rmse": 3.235366916343343,
+        "max_abs_residual": 4.56867262406206
+      },
+      "corrected": {
+        "fit": {
+          "intercept": 63.62307709430408,
+          "alpha": 11.894902994407309,
+          "beta": 0.0,
+          "gamma": 12.557508352937527
+        },
+        "coefficients": [
+          63.62307709430408,
+          11.894902994407309,
+          0.0,
+          12.557508352937527
+        ],
+        "predicted": [
+          124.99982168827715,
+          144.99996891286372,
+          154.00014577578207
+        ],
+        "residuals": [
+          0.00017831172284843433,
+          3.1087136278529215e-05,
+          -0.0001457757820730876
+        ],
+        "rmse": 0.00013417905845821226,
+        "max_abs_residual": 0.00017831172284843433
+      }
+    }
+  },
+  "criteria": {
+    "light_corrected_better": true,
+    "heavy_corrected_better": true,
+    "structural_ok": true
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "one of the subseries is not monotone in radius and ionization",
+    "the corrected fit does not improve the light core",
+    "the corrected fit does not improve the heavy tail"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_subseries_k_l_correction_check_20260511-095150Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_subseries_k_l_correction_check_20260511-095150Z.txt"
+}

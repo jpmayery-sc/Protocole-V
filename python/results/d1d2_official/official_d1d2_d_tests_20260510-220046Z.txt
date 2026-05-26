@@ -1,0 +1,4 @@
+Official D1/D2 suite D
+timestamp: 20260510-220046Z
+verdict: contradicted
+zone_counts: {'covalent': 0, 'transition': 1, 'semi-metal': 5, 'D3 / topological': 19}

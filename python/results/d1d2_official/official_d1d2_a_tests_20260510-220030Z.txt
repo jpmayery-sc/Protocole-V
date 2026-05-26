@@ -1,0 +1,4 @@
+Official D1/D2 suite A
+timestamp: 20260510-220030Z
+verdict: contradicted
+summary: {'supported': 1, 'total': 4}

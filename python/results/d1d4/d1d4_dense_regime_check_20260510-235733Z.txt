@@ -1,0 +1,17 @@
+D1/D4 dense regime check
+timestamp: 20260510-235733Z
+verdict: supported
+scaling_ok: True
+balance_ok: True
+regime_switch_ok: True
+continuity_ok: True
+
+Reference D1: 4.430851
+Balance density: 1.674308e+29
+
+Points:
+- deep_dense_low: n_e=2.092885e+28 D1=4.430851 D4_balance=1.107713 gap=3.323138e+00
+- dense_low: n_e=8.371540e+28 D1=4.430851 D4_balance=2.791261 gap=1.639590e+00
+- balance: n_e=1.674308e+29 D1=4.430851 D4_balance=4.430851 gap=1.154632e-14
+- dense_high: n_e=3.348616e+29 D1=4.430851 D4_balance=7.033538 gap=2.602687e+00
+- deep_dense_high: n_e=1.339446e+30 D1=4.430851 D4_balance=17.723404 gap=1.329255e+01

@@ -1,0 +1,286 @@
+{
+  "timestamp": "20260511-130025Z",
+  "verdict": "supported",
+  "family_results": {
+    "alkali": {
+      "family": "alkali",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "Li",
+          "Z": 3,
+          "n": 2,
+          "ionization_ev": 5.3917,
+          "zeff": 1.259283,
+          "screening": 1.740717
+        },
+        {
+          "symbol": "Na",
+          "Z": 11,
+          "n": 3,
+          "ionization_ev": 5.1391,
+          "zeff": 1.844146,
+          "screening": 9.155854
+        },
+        {
+          "symbol": "K",
+          "Z": 19,
+          "n": 4,
+          "ionization_ev": 4.3407,
+          "zeff": 2.259802,
+          "screening": 16.740198
+        },
+        {
+          "symbol": "Rb",
+          "Z": 37,
+          "n": 5,
+          "ionization_ev": 4.1771,
+          "zeff": 2.771009,
+          "screening": 34.228991
+        },
+        {
+          "symbol": "Cs",
+          "Z": 55,
+          "n": 6,
+          "ionization_ev": 3.8939,
+          "zeff": 3.210511,
+          "screening": 51.789489
+        }
+      ]
+    },
+    "halogen": {
+      "family": "halogen",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "F",
+          "Z": 9,
+          "n": 2,
+          "ionization_ev": 17.4228,
+          "zeff": 2.263703,
+          "screening": 6.736297
+        },
+        {
+          "symbol": "Cl",
+          "Z": 17,
+          "n": 3,
+          "ionization_ev": 12.9676,
+          "zeff": 2.92942,
+          "screening": 14.07058
+        },
+        {
+          "symbol": "Br",
+          "Z": 35,
+          "n": 4,
+          "ionization_ev": 11.8138,
+          "zeff": 3.728081,
+          "screening": 31.271919
+        },
+        {
+          "symbol": "I",
+          "Z": 53,
+          "n": 5,
+          "ionization_ev": 10.4513,
+          "zeff": 4.383144,
+          "screening": 48.616856
+        }
+      ]
+    },
+    "pnictogen": {
+      "family": "pnictogen",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "N",
+          "Z": 7,
+          "n": 2,
+          "ionization_ev": 14.5341,
+          "zeff": 2.067543,
+          "screening": 4.932457
+        },
+        {
+          "symbol": "P",
+          "Z": 15,
+          "n": 3,
+          "ionization_ev": 10.4867,
+          "zeff": 2.634336,
+          "screening": 12.365664
+        },
+        {
+          "symbol": "As",
+          "Z": 33,
+          "n": 4,
+          "ionization_ev": 9.8152,
+          "zeff": 3.398131,
+          "screening": 29.601869
+        },
+        {
+          "symbol": "Sb",
+          "Z": 51,
+          "n": 5,
+          "ionization_ev": 8.6084,
+          "zeff": 3.977972,
+          "screening": 47.022028
+        },
+        {
+          "symbol": "Bi",
+          "Z": 83,
+          "n": 6,
+          "ionization_ev": 7.2856,
+          "zeff": 4.391516,
+          "screening": 78.608484
+        }
+      ]
+    },
+    "chalcogen": {
+      "family": "chalcogen",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "O",
+          "Z": 8,
+          "n": 2,
+          "ionization_ev": 13.6181,
+          "zeff": 2.00133,
+          "screening": 5.99867
+        },
+        {
+          "symbol": "S",
+          "Z": 16,
+          "n": 3,
+          "ionization_ev": 10.36,
+          "zeff": 2.618374,
+          "screening": 13.381626
+        },
+        {
+          "symbol": "Se",
+          "Z": 34,
+          "n": 4,
+          "ionization_ev": 9.7524,
+          "zeff": 3.387243,
+          "screening": 30.612757
+        },
+        {
+          "symbol": "Te",
+          "Z": 52,
+          "n": 5,
+          "ionization_ev": 9.0096,
+          "zeff": 4.069615,
+          "screening": 47.930385
+        },
+        {
+          "symbol": "Po",
+          "Z": 84,
+          "n": 6,
+          "ionization_ev": 8.4167,
+          "zeff": 4.720117,
+          "screening": 79.279883
+        }
+      ]
+    },
+    "noble_gas": {
+      "family": "noble_gas",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "He",
+          "Z": 2,
+          "n": 1,
+          "ionization_ev": 24.59,
+          "zeff": 1.344652,
+          "screening": 0.655348
+        },
+        {
+          "symbol": "Ne",
+          "Z": 10,
+          "n": 2,
+          "ionization_ev": 21.56,
+          "zeff": 2.518169,
+          "screening": 7.481831
+        },
+        {
+          "symbol": "Ar",
+          "Z": 18,
+          "n": 3,
+          "ionization_ev": 15.76,
+          "zeff": 3.22946,
+          "screening": 14.77054
+        },
+        {
+          "symbol": "Kr",
+          "Z": 36,
+          "n": 4,
+          "ionization_ev": 14.0,
+          "zeff": 4.058397,
+          "screening": 31.941603
+        },
+        {
+          "symbol": "Xe",
+          "Z": 54,
+          "n": 5,
+          "ionization_ev": 12.13,
+          "zeff": 4.722054,
+          "screening": 49.277946
+        }
+      ]
+    },
+    "alkaline_earth": {
+      "family": "alkaline_earth",
+      "supported": true,
+      "zeff_monotonic": true,
+      "screening_monotonic": true,
+      "cases": [
+        {
+          "symbol": "Be",
+          "Z": 4,
+          "n": 2,
+          "ionization_ev": 9.32,
+          "zeff": 1.65565,
+          "screening": 2.34435
+        },
+        {
+          "symbol": "Mg",
+          "Z": 12,
+          "n": 3,
+          "ionization_ev": 7.65,
+          "zeff": 2.25,
+          "screening": 9.75
+        },
+        {
+          "symbol": "Ca",
+          "Z": 20,
+          "n": 4,
+          "ionization_ev": 6.1132,
+          "zeff": 2.68179,
+          "screening": 17.31821
+        },
+        {
+          "symbol": "Sr",
+          "Z": 38,
+          "n": 5,
+          "ionization_ev": 5.6949,
+          "zeff": 3.235516,
+          "screening": 34.764484
+        },
+        {
+          "symbol": "Ba",
+          "Z": 56,
+          "n": 6,
+          "ionization_ev": 5.2117,
+          "zeff": 3.714253,
+          "screening": 52.285747
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "20260519-171317Z",
+  "verdict": "supported",
+  "all_angles_ok": true,
+  "large_mixing_ok": true,
+  "hierarchy_ok": true,
+  "light_ok": true,
+  "splitting_ok": true,
+  "angles": [
+    {
+      "name": "theta12",
+      "predicted_deg": 33.4,
+      "reference_deg": 33.44,
+      "max_relative_error": 0.03,
+      "relative_error": 0.0011961722488038023,
+      "within_tolerance": true
+    },
+    {
+      "name": "theta23",
+      "predicted_deg": 49.0,
+      "reference_deg": 49.2,
+      "max_relative_error": 0.05,
+      "relative_error": 0.004065040650406562,
+      "within_tolerance": true
+    },
+    {
+      "name": "theta13",
+      "predicted_deg": 8.6,
+      "reference_deg": 8.57,
+      "max_relative_error": 0.05,
+      "relative_error": 0.003500583430571687,
+      "within_tolerance": true
+    }
+  ],
+  "spectrum": [
+    {
+      "name": "m1",
+      "predicted_ev": 0.001
+    },
+    {
+      "name": "m2",
+      "predicted_ev": 0.0087
+    },
+    {
+      "name": "m3",
+      "predicted_ev": 0.05
+    }
+  ],
+  "splittings": {
+    "delta_m21_sq_ev2": 7.468999999999999e-05,
+    "delta_m31_sq_ev2": 0.0024990000000000004
+  },
+  "expected_splittings": {
+    "delta_m21_sq_ev2": 7.42e-05,
+    "delta_m31_sq_ev2": 0.002517
+  }
+}

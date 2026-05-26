@@ -1,0 +1,26 @@
+Quartz / gluon / Z_eff separation check
+timestamp: 20260518-104658Z
+verdict: supported
+separation_ok: True
+
+quartz: own_ok=True
+- q1: q=0 torsion=0 aspect=1.800 own_ok=True
+- q2: q=0 torsion=0 aspect=1.667 own_ok=True
+- q3: q=0 torsion=0 aspect=1.667 own_ok=True
+- q4: q=0 torsion=0 aspect=1.667 own_ok=True
+
+hadron_gluon: own_ok=True
+- pion_plus: type=meson rel_error=0.003081 own_ok=True
+- kaon_plus: type=meson rel_error=0.000648 own_ok=True
+- proton: type=baryon rel_error=0.000245 own_ok=True
+- neutron: type=baryon rel_error=0.000032 own_ok=True
+- lambda0: type=baryon rel_error=0.000018 own_ok=True
+- delta_plus_plus: type=baryon rel_error=0.000000 own_ok=True
+
+zeff: own_ok=True
+- Li: zeff_proxy=1.259085 radius=152 ie=5.39
+- Na: zeff_proxy=1.844308 radius=186 ie=5.14
+- K: zeff_proxy=2.259620 radius=227 ie=4.34
+- Rb: zeff_proxy=2.771971 radius=248 ie=4.18
+- Cs: zeff_proxy=3.208903 radius=267 ie=3.89
+

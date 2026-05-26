@@ -1,0 +1,38 @@
+Lanthanide k/L correction check
+Timestamp: 20260509-122755Z
+
+Hypothese: for the lanthanide family, adding local k and L terms to Z_eff reduces radius residuals
+Cas de controle: baseline radius fit against Z_eff versus corrected fit against [1, Z_eff, k, L]
+Observable: radius residuals on the lanthanide family
+Verdict: supported
+
+Famille:
+- La: radius=195.0 pm, ie=5.5770 eV, zeff=3.842219, k=0.0, L=0.0
+- Ce: radius=185.0 pm, ie=5.5387 eV, zeff=3.829003, k=1.0, L=0.0
+- Pr: radius=182.0 pm, ie=5.4730 eV, zeff=3.806226, k=2.0, L=0.0
+- Nd: radius=181.0 pm, ie=5.5250 eV, zeff=3.824265, k=3.0, L=0.0
+- Sm: radius=180.0 pm, ie=5.6440 eV, zeff=3.86523, k=4.0, L=0.0
+- Eu: radius=199.0 pm, ie=5.6700 eV, zeff=3.874122, k=5.0, L=1.0
+- Gd: radius=180.0 pm, ie=6.1500 eV, zeff=4.034775, k=6.0, L=0.0
+- Tb: radius=178.0 pm, ie=5.8630 eV, zeff=3.939506, k=7.0, L=0.0
+- Dy: radius=177.0 pm, ie=5.9390 eV, zeff=3.964957, k=8.0, L=0.0
+- Ho: radius=176.0 pm, ie=6.0220 eV, zeff=3.992567, k=9.0, L=0.0
+- Er: radius=175.0 pm, ie=6.1080 eV, zeff=4.020974, k=10.0, L=0.0
+- Tm: radius=174.0 pm, ie=6.1840 eV, zeff=4.045913, k=11.0, L=0.0
+- Yb: radius=194.0 pm, ie=6.2540 eV, zeff=4.068747, k=12.0, L=1.0
+- Lu: radius=173.0 pm, ie=5.4280 eV, zeff=3.790546, k=13.0, L=0.0
+
+Baseline:
+- slope: -12.506265
+- intercept: 231.113005
+- rmse: 7.887689
+- max_abs_residual: 16.337796
+
+Corrected:
+- intercept: 176.344811
+- alpha: 2.799400
+- beta: -1.237660
+- gamma: 19.557666
+- rmse: 2.539430
+- max_abs_residual: 7.899282
+- corrected_better: True

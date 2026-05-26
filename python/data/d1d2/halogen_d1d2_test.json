@@ -1,0 +1,21 @@
+{
+  "timestamp": "20260510-204500Z",
+  "familyname": "halogen_d1d2_test",
+  "family_name": "halogen_d1d2_test",
+  "family": [
+    {"symbol": "F", "name": "Fluorine", "I": 17.4228, "r": 64.0, "n": 2},
+    {"symbol": "Cl", "name": "Chlorine", "I": 12.9676, "r": 99.0, "n": 3},
+    {"symbol": "Br", "name": "Bromine", "I": 11.8138, "r": 114.0, "n": 4},
+    {"symbol": "I", "name": "Iodine", "I": 10.4513, "r": 133.0, "n": 5},
+    {"symbol": "At", "name": "Astatine", "I": 9.5, "r": 150.0, "n": 6}
+  ],
+  "observables": {"computed": "D1, D2, D1/D2"},
+  "hypothesis": "D1/D2 should separate the halogen family from higher-regime families",
+  "case_control": "F -> At",
+  "expected": {
+    "D1": "monotonic increase",
+    "D2": "monotonic decrease",
+    "D1overD2": "monotonic increase",
+    "family_regime": "semi-metal"
+  }
+}

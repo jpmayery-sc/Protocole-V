@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "material": "al",
+  "status": "real",
+  "source": {
+    "title": "Frequency Dependence Measuring of Skin-Effect on Metal Wires with Different Materials and Diameters",
+    "url": "",
+    "reference": "Published paper identified during transport validation research"
+  },
+  "method": {
+    "kind": "derived_skin_depth",
+    "formula": "delta = sqrt(2 * rho / (omega * mu0 * mu_r))",
+    "assumptions": {
+      "rho_ohm_m": 2.82e-08,
+      "mu_r_eff": 1.0,
+      "mu0_h_per_m": 1.2566370614359173e-06
+    }
+  },
+  "records": [
+    {"frequency_hz": 20, "skin_depth_m": 0.018885, "skin_depth_mm": 18.885, "source_note": "derived from published aluminum conductivity"},
+    {"frequency_hz": 1000, "skin_depth_m": 0.002667, "skin_depth_mm": 2.667, "source_note": "derived from published aluminum conductivity"},
+    {"frequency_hz": 10000, "skin_depth_m": 0.000845, "skin_depth_mm": 0.845, "source_note": "derived from published aluminum conductivity"},
+    {"frequency_hz": 100000, "skin_depth_m": 0.000267, "skin_depth_mm": 0.267, "source_note": "derived from published aluminum conductivity"},
+    {"frequency_hz": 1000000, "skin_depth_m": 0.0000845, "skin_depth_mm": 0.0845, "source_note": "derived from published aluminum conductivity"}
+  ],
+  "units": {
+    "frequency_hz": "Hz",
+    "skin_depth_m": "m",
+    "skin_depth_mm": "mm"
+  },
+  "notes": [
+    "Dataset normalised from published aluminum material properties and skin-depth formula.",
+    "The paper reference is kept for provenance; the numerical series is a derived table.",
+    "Values are rounded for stable downstream validation."
+  ]
+}

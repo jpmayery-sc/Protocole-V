@@ -1,0 +1,29 @@
+{
+  "suite": "electron5_core",
+  "timestamp": "20260517-214938Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "quark_mass_derivation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\quark_mass_derivation_check_20260517-214938Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\quark_mass_derivation_check_20260517-214938Z.txt"
+    },
+    {
+      "label": "hadron_collective_mode",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\hadron_collective_mode_check_20260517-214938Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\hadron_collective_mode_check_20260517-214938Z.txt"
+    },
+    {
+      "label": "pmns_neutrino",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\pmns_neutrino_check_20260517-214938Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\pmns_neutrino_check_20260517-214938Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260517-214938Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260517-214938Z.txt"
+}

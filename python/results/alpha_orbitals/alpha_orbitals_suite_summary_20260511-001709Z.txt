@@ -1,0 +1,9 @@
+Alpha / orbitals suite summary
+timestamp: 20260511-001709Z
+overall_verdict: partiel
+supported_count: 2/3
+
+Items:
+- alpha_constant: falsifie -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\alpha_orbitals\alpha_constant_check_20260511-001709Z.json
+- alpha_phase_observable: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\alpha_orbitals\alpha_phase_observable_check_20260511-001709Z.json
+- shell_subshell: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\alpha_orbitals\shell_subshell_check_20260511-001709Z.json

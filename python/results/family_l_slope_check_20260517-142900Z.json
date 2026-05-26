@@ -1,0 +1,1146 @@
+{
+  "timestamp": "20260517-142900Z",
+  "verdict": "falsifie",
+  "tolerance": 0.25,
+  "monotonic": false,
+  "normalized_cv": 0.7284924188052817,
+  "max_relative_error": 0.8327329499393054,
+  "d_block_spread_ratio": 0.35560849184250215,
+  "fit": {
+    "slope": -0.004936203901736515,
+    "intercept": 0.050773933934594055,
+    "rmse": 0.02061774365165807
+  },
+  "representatives": [
+    {
+      "name": "s_alkali",
+      "l": 0,
+      "l_plus_half": 0.5,
+      "slope": 0.03550361349532403,
+      "intercept": 1.3813600718398706,
+      "rmse": 0.1549700855506869,
+      "normalized_slope": 0.07100722699064806,
+      "case_count": 5,
+      "cases": [
+        {
+          "symbol": "Li",
+          "Z": 3,
+          "n": 2,
+          "ionization_ev": 5.3917,
+          "zeff_proxy": 1.259283
+        },
+        {
+          "symbol": "Na",
+          "Z": 11,
+          "n": 3,
+          "ionization_ev": 5.1391,
+          "zeff_proxy": 1.844146
+        },
+        {
+          "symbol": "K",
+          "Z": 19,
+          "n": 4,
+          "ionization_ev": 4.3407,
+          "zeff_proxy": 2.259802
+        },
+        {
+          "symbol": "Rb",
+          "Z": 37,
+          "n": 5,
+          "ionization_ev": 4.1771,
+          "zeff_proxy": 2.771009
+        },
+        {
+          "symbol": "Cs",
+          "Z": 55,
+          "n": 6,
+          "ionization_ev": 3.8939,
+          "zeff_proxy": 3.210511
+        }
+      ]
+    },
+    {
+      "name": "p_halogen",
+      "l": 1,
+      "l_plus_half": 1.5,
+      "slope": 0.046570566467646686,
+      "intercept": 1.9988258123692768,
+      "rmse": 0.12246176265112549,
+      "normalized_slope": 0.031047044311764457,
+      "case_count": 4,
+      "cases": [
+        {
+          "symbol": "F",
+          "Z": 9,
+          "n": 2,
+          "ionization_ev": 17.4228,
+          "zeff_proxy": 2.263703
+        },
+        {
+          "symbol": "Cl",
+          "Z": 17,
+          "n": 3,
+          "ionization_ev": 12.9676,
+          "zeff_proxy": 2.92942
+        },
+        {
+          "symbol": "Br",
+          "Z": 35,
+          "n": 4,
+          "ionization_ev": 11.8138,
+          "zeff_proxy": 3.728081
+        },
+        {
+          "symbol": "I",
+          "Z": 53,
+          "n": 5,
+          "ionization_ev": 10.4513,
+          "zeff_proxy": 4.383144
+        }
+      ]
+    },
+    {
+      "name": "d_block_mean",
+      "l": 2,
+      "l_plus_half": 2.5,
+      "slope": 0.07043820287414328,
+      "intercept": -0.0844861347244853,
+      "rmse": 0.07142196340284467,
+      "normalized_slope": 0.02817528114965731,
+      "case_count": 29,
+      "spread": 0.025048423092170292,
+      "components": [
+        {
+          "name": "d_3d",
+          "l": 2,
+          "l_plus_half": 2.5,
+          "slope": 0.04754892384886027,
+          "intercept": 1.7515126901700662,
+          "rmse": 0.07358227351881247,
+          "normalized_slope": 0.019019569539544107,
+          "case_count": 10,
+          "cases": [
+            {
+              "symbol": "Sc",
+              "Z": 21,
+              "n": 4,
+              "ionization_ev": 6.5615,
+              "zeff_proxy": 2.778383
+            },
+            {
+              "symbol": "Ti",
+              "Z": 22,
+              "n": 4,
+              "ionization_ev": 6.8281,
+              "zeff_proxy": 2.834265
+            },
+            {
+              "symbol": "V",
+              "Z": 23,
+              "n": 4,
+              "ionization_ev": 6.7462,
+              "zeff_proxy": 2.817216
+            },
+            {
+              "symbol": "Cr",
+              "Z": 24,
+              "n": 4,
+              "ionization_ev": 6.7665,
+              "zeff_proxy": 2.821451
+            },
+            {
+              "symbol": "Mn",
+              "Z": 25,
+              "n": 4,
+              "ionization_ev": 7.434,
+              "zeff_proxy": 2.957344
+            },
+            {
+              "symbol": "Fe",
+              "Z": 26,
+              "n": 4,
+              "ionization_ev": 7.9024,
+              "zeff_proxy": 3.049089
+            },
+            {
+              "symbol": "Co",
+              "Z": 27,
+              "n": 4,
+              "ionization_ev": 7.881,
+              "zeff_proxy": 3.044957
+            },
+            {
+              "symbol": "Ni",
+              "Z": 28,
+              "n": 4,
+              "ionization_ev": 7.6398,
+              "zeff_proxy": 2.997999
+            },
+            {
+              "symbol": "Cu",
+              "Z": 29,
+              "n": 4,
+              "ionization_ev": 7.7264,
+              "zeff_proxy": 3.014943
+            },
+            {
+              "symbol": "Zn",
+              "Z": 30,
+              "n": 4,
+              "ionization_ev": 9.3942,
+              "zeff_proxy": 3.324455
+            }
+          ]
+        },
+        {
+          "name": "d_4d",
+          "l": 2,
+          "l_plus_half": 2.5,
+          "slope": 0.06116962910361013,
+          "intercept": 1.0151605954475817,
+          "rmse": 0.07263899404412172,
+          "normalized_slope": 0.024467851641444053,
+          "case_count": 10,
+          "cases": [
+            {
+              "symbol": "Y",
+              "Z": 39,
+              "n": 5,
+              "ionization_ev": 6.2173,
+              "zeff_proxy": 3.38066
+            },
+            {
+              "symbol": "Zr",
+              "Z": 40,
+              "n": 5,
+              "ionization_ev": 6.6339,
+              "zeff_proxy": 3.492087
+            },
+            {
+              "symbol": "Nb",
+              "Z": 41,
+              "n": 5,
+              "ionization_ev": 6.7589,
+              "zeff_proxy": 3.524833
+            },
+            {
+              "symbol": "Mo",
+              "Z": 42,
+              "n": 5,
+              "ionization_ev": 7.0924,
+              "zeff_proxy": 3.610748
+            },
+            {
+              "symbol": "Tc",
+              "Z": 43,
+              "n": 5,
+              "ionization_ev": 7.28,
+              "zeff_proxy": 3.65819
+            },
+            {
+              "symbol": "Ru",
+              "Z": 44,
+              "n": 5,
+              "ionization_ev": 7.3605,
+              "zeff_proxy": 3.67836
+            },
+            {
+              "symbol": "Rh",
+              "Z": 45,
+              "n": 5,
+              "ionization_ev": 7.4589,
+              "zeff_proxy": 3.702866
+            },
+            {
+              "symbol": "Pd",
+              "Z": 46,
+              "n": 5,
+              "ionization_ev": 8.3369,
+              "zeff_proxy": 3.914739
+            },
+            {
+              "symbol": "Ag",
+              "Z": 47,
+              "n": 5,
+              "ionization_ev": 7.5762,
+              "zeff_proxy": 3.731868
+            },
+            {
+              "symbol": "Cd",
+              "Z": 48,
+              "n": 5,
+              "ionization_ev": 8.9938,
+              "zeff_proxy": 4.066045
+            }
+          ]
+        },
+        {
+          "name": "d_5d",
+          "l": 2,
+          "l_plus_half": 2.5,
+          "slope": 0.10616915042505008,
+          "intercept": -3.3463145292429504,
+          "rmse": 0.06766936256146149,
+          "normalized_slope": 0.04246766017002003,
+          "case_count": 9,
+          "cases": [
+            {
+              "symbol": "Hf",
+              "Z": 72,
+              "n": 6,
+              "ionization_ev": 6.8251,
+              "zeff_proxy": 4.250464
+            },
+            {
+              "symbol": "Ta",
+              "Z": 73,
+              "n": 6,
+              "ionization_ev": 7.5496,
+              "zeff_proxy": 4.470373
+            },
+            {
+              "symbol": "W",
+              "Z": 74,
+              "n": 6,
+              "ionization_ev": 7.864,
+              "zeff_proxy": 4.562507
+            },
+            {
+              "symbol": "Re",
+              "Z": 75,
+              "n": 6,
+              "ionization_ev": 7.8335,
+              "zeff_proxy": 4.553651
+            },
+            {
+              "symbol": "Os",
+              "Z": 76,
+              "n": 6,
+              "ionization_ev": 8.4382,
+              "zeff_proxy": 4.726141
+            },
+            {
+              "symbol": "Ir",
+              "Z": 77,
+              "n": 6,
+              "ionization_ev": 8.967,
+              "zeff_proxy": 4.871979
+            },
+            {
+              "symbol": "Pt",
+              "Z": 78,
+              "n": 6,
+              "ionization_ev": 8.9588,
+              "zeff_proxy": 4.869751
+            },
+            {
+              "symbol": "Au",
+              "Z": 79,
+              "n": 6,
+              "ionization_ev": 9.2255,
+              "zeff_proxy": 4.941704
+            },
+            {
+              "symbol": "Hg",
+              "Z": 80,
+              "n": 6,
+              "ionization_ev": 10.4375,
+              "zeff_proxy": 5.256299
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "f_lanthanide_core",
+      "l": 3,
+      "l_plus_half": 3.5,
+      "slope": 0.011093721687370117,
+      "intercept": 3.2048657108777956,
+      "rmse": 0.0783933678984992,
+      "normalized_slope": 0.0031696347678200334,
+      "case_count": 12,
+      "cases": [
+        {
+          "symbol": "La",
+          "Z": 57,
+          "n": 6,
+          "ionization_ev": 5.577,
+          "zeff_proxy": 3.842219
+        },
+        {
+          "symbol": "Ce",
+          "Z": 58,
+          "n": 6,
+          "ionization_ev": 5.5387,
+          "zeff_proxy": 3.829003
+        },
+        {
+          "symbol": "Pr",
+          "Z": 59,
+          "n": 6,
+          "ionization_ev": 5.473,
+          "zeff_proxy": 3.806226
+        },
+        {
+          "symbol": "Nd",
+          "Z": 60,
+          "n": 6,
+          "ionization_ev": 5.525,
+          "zeff_proxy": 3.824265
+        },
+        {
+          "symbol": "Sm",
+          "Z": 62,
+          "n": 6,
+          "ionization_ev": 5.644,
+          "zeff_proxy": 3.86523
+        },
+        {
+          "symbol": "Gd",
+          "Z": 64,
+          "n": 6,
+          "ionization_ev": 6.15,
+          "zeff_proxy": 4.034775
+        },
+        {
+          "symbol": "Tb",
+          "Z": 65,
+          "n": 6,
+          "ionization_ev": 5.863,
+          "zeff_proxy": 3.939506
+        },
+        {
+          "symbol": "Dy",
+          "Z": 66,
+          "n": 6,
+          "ionization_ev": 5.939,
+          "zeff_proxy": 3.964957
+        },
+        {
+          "symbol": "Ho",
+          "Z": 67,
+          "n": 6,
+          "ionization_ev": 6.022,
+          "zeff_proxy": 3.992567
+        },
+        {
+          "symbol": "Er",
+          "Z": 68,
+          "n": 6,
+          "ionization_ev": 6.108,
+          "zeff_proxy": 4.020974
+        },
+        {
+          "symbol": "Tm",
+          "Z": 69,
+          "n": 6,
+          "ionization_ev": 6.184,
+          "zeff_proxy": 4.045913
+        },
+        {
+          "symbol": "Lu",
+          "Z": 71,
+          "n": 6,
+          "ionization_ev": 5.428,
+          "zeff_proxy": 3.790546
+        }
+      ]
+    }
+  ],
+  "series_results": {
+    "s_alkali": {
+      "name": "s_alkali",
+      "l": 0,
+      "l_plus_half": 0.5,
+      "slope": 0.03550361349532403,
+      "intercept": 1.3813600718398706,
+      "rmse": 0.1549700855506869,
+      "normalized_slope": 0.07100722699064806,
+      "case_count": 5,
+      "cases": [
+        {
+          "symbol": "Li",
+          "Z": 3,
+          "n": 2,
+          "ionization_ev": 5.3917,
+          "zeff_proxy": 1.259283
+        },
+        {
+          "symbol": "Na",
+          "Z": 11,
+          "n": 3,
+          "ionization_ev": 5.1391,
+          "zeff_proxy": 1.844146
+        },
+        {
+          "symbol": "K",
+          "Z": 19,
+          "n": 4,
+          "ionization_ev": 4.3407,
+          "zeff_proxy": 2.259802
+        },
+        {
+          "symbol": "Rb",
+          "Z": 37,
+          "n": 5,
+          "ionization_ev": 4.1771,
+          "zeff_proxy": 2.771009
+        },
+        {
+          "symbol": "Cs",
+          "Z": 55,
+          "n": 6,
+          "ionization_ev": 3.8939,
+          "zeff_proxy": 3.210511
+        }
+      ]
+    },
+    "p_halogen": {
+      "name": "p_halogen",
+      "l": 1,
+      "l_plus_half": 1.5,
+      "slope": 0.046570566467646686,
+      "intercept": 1.9988258123692768,
+      "rmse": 0.12246176265112549,
+      "normalized_slope": 0.031047044311764457,
+      "case_count": 4,
+      "cases": [
+        {
+          "symbol": "F",
+          "Z": 9,
+          "n": 2,
+          "ionization_ev": 17.4228,
+          "zeff_proxy": 2.263703
+        },
+        {
+          "symbol": "Cl",
+          "Z": 17,
+          "n": 3,
+          "ionization_ev": 12.9676,
+          "zeff_proxy": 2.92942
+        },
+        {
+          "symbol": "Br",
+          "Z": 35,
+          "n": 4,
+          "ionization_ev": 11.8138,
+          "zeff_proxy": 3.728081
+        },
+        {
+          "symbol": "I",
+          "Z": 53,
+          "n": 5,
+          "ionization_ev": 10.4513,
+          "zeff_proxy": 4.383144
+        }
+      ]
+    },
+    "d_3d": {
+      "name": "d_3d",
+      "l": 2,
+      "l_plus_half": 2.5,
+      "slope": 0.04754892384886027,
+      "intercept": 1.7515126901700662,
+      "rmse": 0.07358227351881247,
+      "normalized_slope": 0.019019569539544107,
+      "case_count": 10,
+      "cases": [
+        {
+          "symbol": "Sc",
+          "Z": 21,
+          "n": 4,
+          "ionization_ev": 6.5615,
+          "zeff_proxy": 2.778383
+        },
+        {
+          "symbol": "Ti",
+          "Z": 22,
+          "n": 4,
+          "ionization_ev": 6.8281,
+          "zeff_proxy": 2.834265
+        },
+        {
+          "symbol": "V",
+          "Z": 23,
+          "n": 4,
+          "ionization_ev": 6.7462,
+          "zeff_proxy": 2.817216
+        },
+        {
+          "symbol": "Cr",
+          "Z": 24,
+          "n": 4,
+          "ionization_ev": 6.7665,
+          "zeff_proxy": 2.821451
+        },
+        {
+          "symbol": "Mn",
+          "Z": 25,
+          "n": 4,
+          "ionization_ev": 7.434,
+          "zeff_proxy": 2.957344
+        },
+        {
+          "symbol": "Fe",
+          "Z": 26,
+          "n": 4,
+          "ionization_ev": 7.9024,
+          "zeff_proxy": 3.049089
+        },
+        {
+          "symbol": "Co",
+          "Z": 27,
+          "n": 4,
+          "ionization_ev": 7.881,
+          "zeff_proxy": 3.044957
+        },
+        {
+          "symbol": "Ni",
+          "Z": 28,
+          "n": 4,
+          "ionization_ev": 7.6398,
+          "zeff_proxy": 2.997999
+        },
+        {
+          "symbol": "Cu",
+          "Z": 29,
+          "n": 4,
+          "ionization_ev": 7.7264,
+          "zeff_proxy": 3.014943
+        },
+        {
+          "symbol": "Zn",
+          "Z": 30,
+          "n": 4,
+          "ionization_ev": 9.3942,
+          "zeff_proxy": 3.324455
+        }
+      ]
+    },
+    "d_4d": {
+      "name": "d_4d",
+      "l": 2,
+      "l_plus_half": 2.5,
+      "slope": 0.06116962910361013,
+      "intercept": 1.0151605954475817,
+      "rmse": 0.07263899404412172,
+      "normalized_slope": 0.024467851641444053,
+      "case_count": 10,
+      "cases": [
+        {
+          "symbol": "Y",
+          "Z": 39,
+          "n": 5,
+          "ionization_ev": 6.2173,
+          "zeff_proxy": 3.38066
+        },
+        {
+          "symbol": "Zr",
+          "Z": 40,
+          "n": 5,
+          "ionization_ev": 6.6339,
+          "zeff_proxy": 3.492087
+        },
+        {
+          "symbol": "Nb",
+          "Z": 41,
+          "n": 5,
+          "ionization_ev": 6.7589,
+          "zeff_proxy": 3.524833
+        },
+        {
+          "symbol": "Mo",
+          "Z": 42,
+          "n": 5,
+          "ionization_ev": 7.0924,
+          "zeff_proxy": 3.610748
+        },
+        {
+          "symbol": "Tc",
+          "Z": 43,
+          "n": 5,
+          "ionization_ev": 7.28,
+          "zeff_proxy": 3.65819
+        },
+        {
+          "symbol": "Ru",
+          "Z": 44,
+          "n": 5,
+          "ionization_ev": 7.3605,
+          "zeff_proxy": 3.67836
+        },
+        {
+          "symbol": "Rh",
+          "Z": 45,
+          "n": 5,
+          "ionization_ev": 7.4589,
+          "zeff_proxy": 3.702866
+        },
+        {
+          "symbol": "Pd",
+          "Z": 46,
+          "n": 5,
+          "ionization_ev": 8.3369,
+          "zeff_proxy": 3.914739
+        },
+        {
+          "symbol": "Ag",
+          "Z": 47,
+          "n": 5,
+          "ionization_ev": 7.5762,
+          "zeff_proxy": 3.731868
+        },
+        {
+          "symbol": "Cd",
+          "Z": 48,
+          "n": 5,
+          "ionization_ev": 8.9938,
+          "zeff_proxy": 4.066045
+        }
+      ]
+    },
+    "d_5d": {
+      "name": "d_5d",
+      "l": 2,
+      "l_plus_half": 2.5,
+      "slope": 0.10616915042505008,
+      "intercept": -3.3463145292429504,
+      "rmse": 0.06766936256146149,
+      "normalized_slope": 0.04246766017002003,
+      "case_count": 9,
+      "cases": [
+        {
+          "symbol": "Hf",
+          "Z": 72,
+          "n": 6,
+          "ionization_ev": 6.8251,
+          "zeff_proxy": 4.250464
+        },
+        {
+          "symbol": "Ta",
+          "Z": 73,
+          "n": 6,
+          "ionization_ev": 7.5496,
+          "zeff_proxy": 4.470373
+        },
+        {
+          "symbol": "W",
+          "Z": 74,
+          "n": 6,
+          "ionization_ev": 7.864,
+          "zeff_proxy": 4.562507
+        },
+        {
+          "symbol": "Re",
+          "Z": 75,
+          "n": 6,
+          "ionization_ev": 7.8335,
+          "zeff_proxy": 4.553651
+        },
+        {
+          "symbol": "Os",
+          "Z": 76,
+          "n": 6,
+          "ionization_ev": 8.4382,
+          "zeff_proxy": 4.726141
+        },
+        {
+          "symbol": "Ir",
+          "Z": 77,
+          "n": 6,
+          "ionization_ev": 8.967,
+          "zeff_proxy": 4.871979
+        },
+        {
+          "symbol": "Pt",
+          "Z": 78,
+          "n": 6,
+          "ionization_ev": 8.9588,
+          "zeff_proxy": 4.869751
+        },
+        {
+          "symbol": "Au",
+          "Z": 79,
+          "n": 6,
+          "ionization_ev": 9.2255,
+          "zeff_proxy": 4.941704
+        },
+        {
+          "symbol": "Hg",
+          "Z": 80,
+          "n": 6,
+          "ionization_ev": 10.4375,
+          "zeff_proxy": 5.256299
+        }
+      ]
+    },
+    "f_lanthanide_core": {
+      "name": "f_lanthanide_core",
+      "l": 3,
+      "l_plus_half": 3.5,
+      "slope": 0.011093721687370117,
+      "intercept": 3.2048657108777956,
+      "rmse": 0.0783933678984992,
+      "normalized_slope": 0.0031696347678200334,
+      "case_count": 12,
+      "cases": [
+        {
+          "symbol": "La",
+          "Z": 57,
+          "n": 6,
+          "ionization_ev": 5.577,
+          "zeff_proxy": 3.842219
+        },
+        {
+          "symbol": "Ce",
+          "Z": 58,
+          "n": 6,
+          "ionization_ev": 5.5387,
+          "zeff_proxy": 3.829003
+        },
+        {
+          "symbol": "Pr",
+          "Z": 59,
+          "n": 6,
+          "ionization_ev": 5.473,
+          "zeff_proxy": 3.806226
+        },
+        {
+          "symbol": "Nd",
+          "Z": 60,
+          "n": 6,
+          "ionization_ev": 5.525,
+          "zeff_proxy": 3.824265
+        },
+        {
+          "symbol": "Sm",
+          "Z": 62,
+          "n": 6,
+          "ionization_ev": 5.644,
+          "zeff_proxy": 3.86523
+        },
+        {
+          "symbol": "Gd",
+          "Z": 64,
+          "n": 6,
+          "ionization_ev": 6.15,
+          "zeff_proxy": 4.034775
+        },
+        {
+          "symbol": "Tb",
+          "Z": 65,
+          "n": 6,
+          "ionization_ev": 5.863,
+          "zeff_proxy": 3.939506
+        },
+        {
+          "symbol": "Dy",
+          "Z": 66,
+          "n": 6,
+          "ionization_ev": 5.939,
+          "zeff_proxy": 3.964957
+        },
+        {
+          "symbol": "Ho",
+          "Z": 67,
+          "n": 6,
+          "ionization_ev": 6.022,
+          "zeff_proxy": 3.992567
+        },
+        {
+          "symbol": "Er",
+          "Z": 68,
+          "n": 6,
+          "ionization_ev": 6.108,
+          "zeff_proxy": 4.020974
+        },
+        {
+          "symbol": "Tm",
+          "Z": 69,
+          "n": 6,
+          "ionization_ev": 6.184,
+          "zeff_proxy": 4.045913
+        },
+        {
+          "symbol": "Lu",
+          "Z": 71,
+          "n": 6,
+          "ionization_ev": 5.428,
+          "zeff_proxy": 3.790546
+        }
+      ]
+    }
+  },
+  "d_block": {
+    "name": "d_block_mean",
+    "l": 2,
+    "l_plus_half": 2.5,
+    "slope": 0.07043820287414328,
+    "intercept": -0.0844861347244853,
+    "rmse": 0.07142196340284467,
+    "normalized_slope": 0.02817528114965731,
+    "case_count": 29,
+    "spread": 0.025048423092170292,
+    "components": [
+      {
+        "name": "d_3d",
+        "l": 2,
+        "l_plus_half": 2.5,
+        "slope": 0.04754892384886027,
+        "intercept": 1.7515126901700662,
+        "rmse": 0.07358227351881247,
+        "normalized_slope": 0.019019569539544107,
+        "case_count": 10,
+        "cases": [
+          {
+            "symbol": "Sc",
+            "Z": 21,
+            "n": 4,
+            "ionization_ev": 6.5615,
+            "zeff_proxy": 2.778383
+          },
+          {
+            "symbol": "Ti",
+            "Z": 22,
+            "n": 4,
+            "ionization_ev": 6.8281,
+            "zeff_proxy": 2.834265
+          },
+          {
+            "symbol": "V",
+            "Z": 23,
+            "n": 4,
+            "ionization_ev": 6.7462,
+            "zeff_proxy": 2.817216
+          },
+          {
+            "symbol": "Cr",
+            "Z": 24,
+            "n": 4,
+            "ionization_ev": 6.7665,
+            "zeff_proxy": 2.821451
+          },
+          {
+            "symbol": "Mn",
+            "Z": 25,
+            "n": 4,
+            "ionization_ev": 7.434,
+            "zeff_proxy": 2.957344
+          },
+          {
+            "symbol": "Fe",
+            "Z": 26,
+            "n": 4,
+            "ionization_ev": 7.9024,
+            "zeff_proxy": 3.049089
+          },
+          {
+            "symbol": "Co",
+            "Z": 27,
+            "n": 4,
+            "ionization_ev": 7.881,
+            "zeff_proxy": 3.044957
+          },
+          {
+            "symbol": "Ni",
+            "Z": 28,
+            "n": 4,
+            "ionization_ev": 7.6398,
+            "zeff_proxy": 2.997999
+          },
+          {
+            "symbol": "Cu",
+            "Z": 29,
+            "n": 4,
+            "ionization_ev": 7.7264,
+            "zeff_proxy": 3.014943
+          },
+          {
+            "symbol": "Zn",
+            "Z": 30,
+            "n": 4,
+            "ionization_ev": 9.3942,
+            "zeff_proxy": 3.324455
+          }
+        ]
+      },
+      {
+        "name": "d_4d",
+        "l": 2,
+        "l_plus_half": 2.5,
+        "slope": 0.06116962910361013,
+        "intercept": 1.0151605954475817,
+        "rmse": 0.07263899404412172,
+        "normalized_slope": 0.024467851641444053,
+        "case_count": 10,
+        "cases": [
+          {
+            "symbol": "Y",
+            "Z": 39,
+            "n": 5,
+            "ionization_ev": 6.2173,
+            "zeff_proxy": 3.38066
+          },
+          {
+            "symbol": "Zr",
+            "Z": 40,
+            "n": 5,
+            "ionization_ev": 6.6339,
+            "zeff_proxy": 3.492087
+          },
+          {
+            "symbol": "Nb",
+            "Z": 41,
+            "n": 5,
+            "ionization_ev": 6.7589,
+            "zeff_proxy": 3.524833
+          },
+          {
+            "symbol": "Mo",
+            "Z": 42,
+            "n": 5,
+            "ionization_ev": 7.0924,
+            "zeff_proxy": 3.610748
+          },
+          {
+            "symbol": "Tc",
+            "Z": 43,
+            "n": 5,
+            "ionization_ev": 7.28,
+            "zeff_proxy": 3.65819
+          },
+          {
+            "symbol": "Ru",
+            "Z": 44,
+            "n": 5,
+            "ionization_ev": 7.3605,
+            "zeff_proxy": 3.67836
+          },
+          {
+            "symbol": "Rh",
+            "Z": 45,
+            "n": 5,
+            "ionization_ev": 7.4589,
+            "zeff_proxy": 3.702866
+          },
+          {
+            "symbol": "Pd",
+            "Z": 46,
+            "n": 5,
+            "ionization_ev": 8.3369,
+            "zeff_proxy": 3.914739
+          },
+          {
+            "symbol": "Ag",
+            "Z": 47,
+            "n": 5,
+            "ionization_ev": 7.5762,
+            "zeff_proxy": 3.731868
+          },
+          {
+            "symbol": "Cd",
+            "Z": 48,
+            "n": 5,
+            "ionization_ev": 8.9938,
+            "zeff_proxy": 4.066045
+          }
+        ]
+      },
+      {
+        "name": "d_5d",
+        "l": 2,
+        "l_plus_half": 2.5,
+        "slope": 0.10616915042505008,
+        "intercept": -3.3463145292429504,
+        "rmse": 0.06766936256146149,
+        "normalized_slope": 0.04246766017002003,
+        "case_count": 9,
+        "cases": [
+          {
+            "symbol": "Hf",
+            "Z": 72,
+            "n": 6,
+            "ionization_ev": 6.8251,
+            "zeff_proxy": 4.250464
+          },
+          {
+            "symbol": "Ta",
+            "Z": 73,
+            "n": 6,
+            "ionization_ev": 7.5496,
+            "zeff_proxy": 4.470373
+          },
+          {
+            "symbol": "W",
+            "Z": 74,
+            "n": 6,
+            "ionization_ev": 7.864,
+            "zeff_proxy": 4.562507
+          },
+          {
+            "symbol": "Re",
+            "Z": 75,
+            "n": 6,
+            "ionization_ev": 7.8335,
+            "zeff_proxy": 4.553651
+          },
+          {
+            "symbol": "Os",
+            "Z": 76,
+            "n": 6,
+            "ionization_ev": 8.4382,
+            "zeff_proxy": 4.726141
+          },
+          {
+            "symbol": "Ir",
+            "Z": 77,
+            "n": 6,
+            "ionization_ev": 8.967,
+            "zeff_proxy": 4.871979
+          },
+          {
+            "symbol": "Pt",
+            "Z": 78,
+            "n": 6,
+            "ionization_ev": 8.9588,
+            "zeff_proxy": 4.869751
+          },
+          {
+            "symbol": "Au",
+            "Z": 79,
+            "n": 6,
+            "ionization_ev": 9.2255,
+            "zeff_proxy": 4.941704
+          },
+          {
+            "symbol": "Hg",
+            "Z": 80,
+            "n": 6,
+            "ionization_ev": 10.4375,
+            "zeff_proxy": 5.256299
+          }
+        ]
+      }
+    ]
+  },
+  "expected_slopes": [
+    0.048305831983725796,
+    0.043369628081989284,
+    0.038433424180252765,
+    0.03349722027851625
+  ],
+  "relative_errors": [
+    0.26502428304546805,
+    0.07380599113292145,
+    0.8327329499393054,
+    0.6688166482134884
+  ],
+  "falsifiers": [
+    "the fitted Zeff slopes do not increase with l",
+    "the normalized slopes are not approximately constant",
+    "the d-block components are too spread out to define a stable representative slope"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260517-142900Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260517-142900Z.txt"
+}

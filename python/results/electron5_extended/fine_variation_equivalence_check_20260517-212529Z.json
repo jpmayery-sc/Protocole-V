@@ -1,0 +1,104 @@
+{
+  "timestamp": "20260517-212529Z",
+  "verdict": "supported",
+  "equivalent": true,
+  "tolerance": 0.15,
+  "families": {
+    "alkali": {
+      "series": [
+        "Li",
+        "Na",
+        "K",
+        "Rb",
+        "Cs"
+      ],
+      "baseline_nrmse": 0.054666649701057654,
+      "geometric_nrmse": 0.04064327276614302,
+      "energetic_nrmse": 0.02545682504161796,
+      "geometric_gain": 0.014023376934914636,
+      "energetic_gain": 0.029209824659439693,
+      "gain_gap": 0.015186447724525057,
+      "equivalent": true,
+      "items": [
+        {
+          "name": "Li",
+          "period": 2,
+          "radius_pm": 152,
+          "ie_ev": 5.39
+        },
+        {
+          "name": "Na",
+          "period": 3,
+          "radius_pm": 186,
+          "ie_ev": 5.14
+        },
+        {
+          "name": "K",
+          "period": 4,
+          "radius_pm": 227,
+          "ie_ev": 4.34
+        },
+        {
+          "name": "Rb",
+          "period": 5,
+          "radius_pm": 248,
+          "ie_ev": 4.18
+        },
+        {
+          "name": "Cs",
+          "period": 6,
+          "radius_pm": 267,
+          "ie_ev": 3.89
+        }
+      ]
+    },
+    "halogens": {
+      "series": [
+        "F",
+        "Cl",
+        "Br",
+        "I",
+        "At"
+      ],
+      "baseline_nrmse": 0.03968827071005142,
+      "geometric_nrmse": 0.03256405972357983,
+      "energetic_nrmse": 0.023763214609647743,
+      "geometric_gain": 0.007124210986471591,
+      "energetic_gain": 0.015925056100403675,
+      "gain_gap": 0.008800845113932084,
+      "equivalent": true,
+      "items": [
+        {
+          "name": "F",
+          "period": 2,
+          "radius_pm": 50,
+          "ie_ev": 17.42
+        },
+        {
+          "name": "Cl",
+          "period": 3,
+          "radius_pm": 79,
+          "ie_ev": 12.97
+        },
+        {
+          "name": "Br",
+          "period": 4,
+          "radius_pm": 94,
+          "ie_ev": 11.81
+        },
+        {
+          "name": "I",
+          "period": 5,
+          "radius_pm": 115,
+          "ie_ev": 10.45
+        },
+        {
+          "name": "At",
+          "period": 6,
+          "radius_pm": 133,
+          "ie_ev": 9.3
+        }
+      ]
+    }
+  }
+}

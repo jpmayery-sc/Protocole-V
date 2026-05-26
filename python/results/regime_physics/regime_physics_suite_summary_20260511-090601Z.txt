@@ -1,0 +1,3 @@
+Regime physics suite summary
+timestamp: 20260511-090601Z
+verdict: unknown

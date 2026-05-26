@@ -1,0 +1,61 @@
+{
+  "timestamp": "20260518-085626Z",
+  "verdict": "supported",
+  "nucleus_ok": true,
+  "oxidation_ok": true,
+  "oxygen_ok": true,
+  "cases": [
+    {
+      "name": "Fe metal",
+      "kind": "reference",
+      "formula": "Fe",
+      "z": 26,
+      "electrons": 26,
+      "oxidation_state": 0,
+      "oxygen_atoms": 0,
+      "neutral_protons": true,
+      "electron_loss_from_Fe": 0,
+      "chemical_change": false,
+      "ok": true
+    },
+    {
+      "name": "Fe2+",
+      "kind": "oxidation",
+      "formula": "Fe2+",
+      "z": 26,
+      "electrons": 24,
+      "oxidation_state": 2,
+      "oxygen_atoms": 0,
+      "neutral_protons": true,
+      "electron_loss_from_Fe": 2,
+      "chemical_change": true,
+      "ok": true
+    },
+    {
+      "name": "Fe3+",
+      "kind": "oxidation",
+      "formula": "Fe3+",
+      "z": 26,
+      "electrons": 23,
+      "oxidation_state": 3,
+      "oxygen_atoms": 0,
+      "neutral_protons": true,
+      "electron_loss_from_Fe": 3,
+      "chemical_change": true,
+      "ok": true
+    },
+    {
+      "name": "rust proxy Fe2O3",
+      "kind": "rust",
+      "formula": "Fe2O3",
+      "z": 26,
+      "electrons": 23,
+      "oxidation_state": 3,
+      "oxygen_atoms": 3,
+      "neutral_protons": true,
+      "electron_loss_from_Fe": 3,
+      "chemical_change": true,
+      "ok": true
+    }
+  ]
+}

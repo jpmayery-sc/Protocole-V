@@ -1,0 +1,36 @@
+Fine variation lanthanide hard check
+timestamp: 20260511-001426Z
+verdict: contradicted
+equivalent: False
+tolerance: 0.1
+
+lanthanide_full:
+- baseline_nrmse: 0.303373
+- geometric_nrmse: 7.009466
+- energetic_nrmse: 0.303328
+- geometric_gain: -6.706093
+- energetic_gain: 0.000045
+- gain_gap: 6.706138
+- equivalent: False
+- series: La, Ce, Pr, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu
+
+lanthanide_repaired_core:
+- baseline_nrmse: 0.233498
+- geometric_nrmse: 8.170805
+- energetic_nrmse: 0.223054
+- geometric_gain: -7.937307
+- energetic_gain: 0.010444
+- gain_gap: 7.947751
+- equivalent: False
+- series: La, Ce, Pr, Nd, Sm, Gd, Tb, Dy, Ho, Er, Tm, Lu
+
+lanthanide_heavy_tail:
+- baseline_nrmse: 0.337224
+- geometric_nrmse: 6.956897
+- energetic_nrmse: 0.337221
+- geometric_gain: -6.619673
+- energetic_gain: 0.000003
+- gain_gap: 6.619677
+- equivalent: False
+- series: Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu
+

@@ -1,0 +1,115 @@
+Bootstrap T5 report
+generated: 20260509-210118Z UTC
+
+MIN_NEUTRON = 20
+  n = 27
+  r_obs = 0.601388
+  p_value = 6.984339e-01
+  95% CI = [0.500377, 0.782404]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 21
+  n = 27
+  r_obs = 0.596951
+  p_value = 7.344219e-01
+  95% CI = [0.508584, 0.798793]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 22
+  n = 27
+  r_obs = 0.616525
+  p_value = 7.077641e-01
+  95% CI = [0.523190, 0.822701]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 23
+  n = 27
+  r_obs = 0.650593
+  p_value = 7.504165e-01
+  95% CI = [0.570441, 0.840353]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 24
+  n = 27
+  r_obs = 0.602644
+  p_value = 7.390870e-01
+  95% CI = [0.522337, 0.831051]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 25
+  n = 27
+  r_obs = 0.616944
+  p_value = 7.584139e-01
+  95% CI = [0.536590, 0.833932]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 26
+  n = 80
+  r_obs = 0.654726
+  p_value = 5.841386e-01
+  95% CI = [0.594408, 0.727405]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 27
+  n = 27
+  r_obs = 0.649980
+  p_value = 7.394202e-01
+  95% CI = [0.565979, 0.830111]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 28
+  n = 27
+  r_obs = 0.666069
+  p_value = 7.430856e-01
+  95% CI = [0.584142, 0.827789]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 29
+  n = 80
+  r_obs = 0.650007
+  p_value = 6.111296e-01
+  95% CI = [0.587732, 0.738863]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 30
+  n = 27
+  r_obs = 0.679022
+  p_value = 7.227591e-01
+  95% CI = [0.594260, 0.828453]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 31
+  n = 27
+  r_obs = 0.776545
+  p_value = 5.428191e-01
+  95% CI = [0.680997, 0.861844]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 32
+  n = 27
+  r_obs = 0.374835
+  p_value = 5.388204e-01
+  95% CI = [-0.190935, 0.827500]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 33
+  n = 80
+  r_obs = 0.668464
+  p_value = 5.801400e-01
+  95% CI = [0.604376, 0.741602]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 34
+  n = 27
+  r_obs = 0.746341
+  p_value = 6.177941e-01
+  95% CI = [0.663350, 0.843642]
+  bootstrap samples = 3000
+
+MIN_NEUTRON = 35
+  n = 27
+  r_obs = 0.674581
+  p_value = 6.744419e-01
+  95% CI = [0.583999, 0.809392]
+  bootstrap samples = 3000
+

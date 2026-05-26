@@ -1,0 +1,25 @@
+D1/D2 family check
+timestamp: 20260510-215001Z
+familyname: lanthanide_d1d2_test
+verdict: contradicted
+family_regime: D3 / topological
+D1_trend: mixed
+D2_trend: mixed
+D1overD2_trend: mixed
+D1overD2_superlinear: False
+
+Per element:
+- La: I=5.5770 r=195.0 n=6 D1=3.842219 D2=0.028600 D1/D2=134.343323 regime=D3 / topological
+- Ce: I=5.5387 r=185.0 n=6 D1=3.829003 D2=0.029939 D1/D2=127.893833 regime=D3 / topological
+- Pr: I=5.4730 r=182.0 n=6 D1=3.806226 D2=0.030071 D1/D2=126.572821 regime=D3 / topological
+- Nd: I=5.5250 r=181.0 n=6 D1=3.824265 D2=0.030525 D1/D2=125.283602 regime=D3 / topological
+- Sm: I=5.6440 r=180.0 n=6 D1=3.865230 D2=0.031356 D1/D2=123.270966 regime=D3 / topological
+- Eu: I=5.6700 r=199.0 n=6 D1=3.874122 D2=0.028492 D1/D2=135.970077 regime=D3 / topological
+- Gd: I=6.1500 r=180.0 n=6 D1=4.034775 D2=0.034167 D1/D2=118.090985 regime=D3 / topological
+- Tb: I=5.8630 r=178.0 n=6 D1=3.939506 D2=0.032938 D1/D2=119.602939 regime=D3 / topological
+- Dy: I=5.9390 r=177.0 n=6 D1=3.964957 D2=0.033554 D1/D2=118.167596 regime=D3 / topological
+- Ho: I=6.0220 r=176.0 n=6 D1=3.992567 D2=0.034216 D1/D2=116.687434 regime=D3 / topological
+- Er: I=6.1080 r=175.0 n=6 D1=4.020974 D2=0.034903 D1/D2=115.204735 regime=D3 / topological
+- Tm: I=6.1840 r=174.0 n=6 D1=4.045913 D2=0.035540 D1/D2=113.840371 regime=D3 / topological
+- Yb: I=6.2540 r=194.0 n=6 D1=4.068747 D2=0.032237 D1/D2=126.213145 regime=D3 / topological
+- Lu: I=5.4280 r=173.0 n=6 D1=3.790546 D2=0.031376 D1/D2=120.811417 regime=D3 / topological

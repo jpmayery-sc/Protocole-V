@@ -1,0 +1,49 @@
+{
+  "suite": "v10",
+  "timestamp": "20260513-150303Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "manifest_status": "partial",
+  "bridge_ready_count": 4,
+  "items": [
+    {
+      "label": "zenodo-7313581",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_7313581\\ingest_index.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_7313581\\README.md",
+      "status": "partial",
+      "bridge_value": null,
+      "source_type": null
+    },
+    {
+      "label": "zenodo-7631438",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_7631438\\ingest_index.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_7631438\\README.md",
+      "status": "partial",
+      "bridge_value": null,
+      "source_type": null
+    },
+    {
+      "label": "zenodo-10605186",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_10605186\\ingest_index.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_10605186\\README.md",
+      "status": "metadata_only",
+      "bridge_value": "robustness and control-logic validation",
+      "source_type": "simulation"
+    },
+    {
+      "label": "zenodo-5001776",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_5001776\\ingest_index.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\v10\\zenodo_5001776\\README.md",
+      "status": "metadata_only",
+      "bridge_value": "loss resilience and measurement imperfection modeling",
+      "source_type": "code_driven_dataset"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\v10\\v10_suite_summary_20260513-150303Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\v10\\v10_suite_summary_20260513-150303Z.txt"
+}

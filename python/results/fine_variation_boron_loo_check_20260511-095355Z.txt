@@ -1,0 +1,41 @@
+Fine variation boron leave-one-out check
+Timestamp: 20260511-095355Z
+Hypothesis: leave-one-out on the boron family is best explained by a local Zeff* built from family index k and rupture flag L
+Case control: full B -> Tl family with each element held out once
+Observable: held-out radius prediction error across mass, raw Z_eff, and local Zeff*
+Verdict: contradicted
+Mass RMSE: 30.640835
+Zeff RMSE: 25.817582
+Zeff* RMSE: 55.853609
+Best model: zeff
+
+Held out: B
+  mass error: 2224.629520
+  zeff error: 1792.369720
+  zeff* error: 9684.714865
+  best model: zeff
+
+Held out: Al
+  mass error: 1303.135551
+  zeff error: 1328.256687
+  zeff* error: 698.556668
+  best model: zeff_star
+
+Held out: Ga
+  mass error: 5.707271
+  zeff error: 6.547997
+  zeff* error: 1955.119577
+  best model: mass
+
+Held out: In
+  mass error: 115.151135
+  zeff error: 9.348060
+  zeff* error: 1304.598841
+  best model: zeff
+
+Held out: Tl
+  mass error: 1045.680218
+  zeff error: 196.215149
+  zeff* error: 1955.138183
+  best model: zeff
+

@@ -1,0 +1,13 @@
+Electron affinity check
+timestamp: 20260511-100422Z
+verdict: supported
+ordering_ok: True
+noble_gas_ok: True
+group_sign_ok: True
+
+Cases:
+- Cl: group=halogen affinity_ev=3.61 favorable=True
+- F: group=halogen affinity_ev=3.4 favorable=True
+- O: group=chalcogen affinity_ev=1.46 favorable=True
+- Na: group=alkali affinity_ev=0.55 favorable=True
+- Ne: group=noble_gas affinity_ev=-1.2 favorable=False

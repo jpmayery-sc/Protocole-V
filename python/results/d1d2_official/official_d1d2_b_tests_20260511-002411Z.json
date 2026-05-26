@@ -1,0 +1,43 @@
+{
+  "timestamp": "20260511-002411Z",
+  "suite": "B",
+  "title": "Tests inter-familles D1/D2",
+  "verdict": "supported",
+  "tests": [
+    {
+      "left_family": "tetrel",
+      "right_family": "pnictogen",
+      "left_regime": "semi-metal",
+      "right_regime": "semi-metal",
+      "left_max_ratio": 92.00197719909806,
+      "right_max_ratio": 89.20944752951003,
+      "threshold_gap": 2.792529669588035,
+      "both_transition_like": true,
+      "regime_separated": false,
+      "transition_band_overlap": true,
+      "verdict": "supported"
+    },
+    {
+      "left_family": "halogen",
+      "right_family": "tetrel",
+      "left_regime": "semi-metal",
+      "right_regime": "semi-metal",
+      "halogen_transition": false,
+      "tetrel_transition": true,
+      "verdict": "supported"
+    },
+    {
+      "lanthanide_regime": "D3 / topological",
+      "sp_regimes": [
+        "semi-metal",
+        "semi-metal",
+        "semi-metal"
+      ],
+      "lanthanide_requires_D3": true,
+      "sp_regular": true,
+      "verdict": "supported"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_b_tests_20260511-002411Z.txt"
+}

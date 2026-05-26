@@ -1,0 +1,155 @@
+{
+  "timestamp": "20260508-224523Z",
+  "verdict": "contradicted",
+  "heavy_residual_ok": false,
+  "core_cleaner_ok": true,
+  "zeff_better_than_mass": true,
+  "full_family": {
+    "series": [
+      {
+        "symbol": "C",
+        "name": "Carbon",
+        "period": 2,
+        "mass_u": 12.011,
+        "radius_pm": 67.0,
+        "ionization_ev": 11.2603,
+        "zeff_proxy": 1.81985,
+        "zeff_residual": -15.041550685661178,
+        "mass_residual": -24.917733141078998
+      },
+      {
+        "symbol": "Si",
+        "name": "Silicon",
+        "period": 3,
+        "mass_u": 28.085,
+        "radius_pm": 111.0,
+        "ionization_ev": 8.1517,
+        "zeff_proxy": 2.322608,
+        "zeff_residual": 13.397927932207025,
+        "mass_residual": 13.035688220660006
+      },
+      {
+        "symbol": "Ge",
+        "name": "Germanium",
+        "period": 4,
+        "mass_u": 72.63,
+        "radius_pm": 125.0,
+        "ionization_ev": 7.8994,
+        "zeff_proxy": 3.04851,
+        "zeff_residual": 4.93103957041987,
+        "mass_residual": 10.279134441803762
+      },
+      {
+        "symbol": "Sn",
+        "name": "Tin",
+        "period": 5,
+        "mass_u": 118.71,
+        "radius_pm": 145.0,
+        "ionization_ev": 7.3439,
+        "zeff_proxy": 3.67421,
+        "zeff_residual": 5.565435603703975,
+        "mass_residual": 12.945157606475533
+      },
+      {
+        "symbol": "Pb",
+        "name": "Lead",
+        "period": 6,
+        "mass_u": 207.2,
+        "radius_pm": 154.0,
+        "ionization_ev": 7.4167,
+        "zeff_proxy": 4.430851,
+        "zeff_residual": -8.852852420669706,
+        "mass_residual": -11.342247127860304
+      }
+    ],
+    "zeff_fit": {
+      "slope": 30.950310042539684,
+      "intercept": 25.71663814981669
+    },
+    "mass_fit": {
+      "slope": 0.3761713722944495,
+      "intercept": 87.39953878845037
+    },
+    "zeff_max_abs_residual": 15.041550685661178,
+    "mass_max_abs_residual": 24.917733141078998,
+    "zeff_mean_abs_residual": 9.55776124253235,
+    "mass_mean_abs_residual": 14.503992107575721,
+    "endpoint_symbol": "Pb",
+    "endpoint_zeff_residual": -8.852852420669706,
+    "endpoint_mass_residual": -11.342247127860304,
+    "radius_trend": "increasing",
+    "zeff_trend": "increasing",
+    "mass_trend": "increasing"
+  },
+  "core_family": {
+    "series": [
+      {
+        "symbol": "C",
+        "name": "Carbon",
+        "period": 2,
+        "mass_u": 12.011,
+        "radius_pm": 67.0,
+        "ionization_ev": 11.2603,
+        "zeff_proxy": 1.81985,
+        "zeff_residual": -10.405332774465393,
+        "mass_residual": -16.51375942183401
+      },
+      {
+        "symbol": "Si",
+        "name": "Silicon",
+        "period": 3,
+        "mass_u": 28.085,
+        "radius_pm": 111.0,
+        "ionization_ev": 8.1517,
+        "zeff_proxy": 2.322608,
+        "zeff_residual": 14.192739809514904,
+        "mass_residual": 17.49915649481578
+      },
+      {
+        "symbol": "Ge",
+        "name": "Germanium",
+        "period": 4,
+        "mass_u": 72.63,
+        "radius_pm": 125.0,
+        "ionization_ev": 7.8994,
+        "zeff_proxy": 3.04851,
+        "zeff_residual": 0.1794794209678372,
+        "mass_residual": 3.822494774470215
+      },
+      {
+        "symbol": "Sn",
+        "name": "Tin",
+        "period": 5,
+        "mass_u": 118.71,
+        "radius_pm": 145.0,
+        "ionization_ev": 7.3439,
+        "zeff_proxy": 3.67421,
+        "zeff_residual": -3.9668864560173347,
+        "mass_residual": -4.80789184745197
+      }
+    ],
+    "zeff_fit": {
+      "slope": 38.59097354142723,
+      "intercept": 7.175561040145908
+    },
+    "mass_fit": {
+      "slope": 0.6213191541215753,
+      "intercept": 76.05109506167977
+    },
+    "zeff_max_abs_residual": 14.192739809514904,
+    "mass_max_abs_residual": 17.49915649481578,
+    "zeff_mean_abs_residual": 7.186109615241367,
+    "mass_mean_abs_residual": 10.660825634642993,
+    "endpoint_symbol": "Sn",
+    "endpoint_zeff_residual": -3.9668864560173347,
+    "endpoint_mass_residual": -4.80789184745197,
+    "radius_trend": "increasing",
+    "zeff_trend": "increasing",
+    "mass_trend": "increasing"
+  },
+  "hypothesis": "the heavy tetrel endpoint Pb leaves a residual after Z_eff correction that is reduced in the refined core",
+  "case_control": "full C -> Pb tetrel family versus core C -> Sn",
+  "observable": "mean and endpoint residuals after fitting radius against Z_eff proxy",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_zeff_residual_check_20260508-224523Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_zeff_residual_check_20260508-224523Z.txt"
+}

@@ -1,0 +1,29 @@
+{
+  "suite": "h_fe_pb",
+  "timestamp": "20260511-001835Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "h_fe_pb",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\h_fe_pb_check_20260509-225233Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\h_fe_pb_check_20260509-225233Z.txt"
+    },
+    {
+      "label": "electron_validation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron_validation_results_with_bootstrap_20260509-210118Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron_validation_results_with_bootstrap_20260509-210118Z.txt"
+    },
+    {
+      "label": "sweep_min_neutron",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\sweep_all_dense_20260509-230137Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\sweep_all_dense_20260509-230137Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\h_fe_pb\\h_fe_pb_suite_summary_20260511-001835Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\h_fe_pb\\h_fe_pb_suite_summary_20260511-001835Z.txt"
+}

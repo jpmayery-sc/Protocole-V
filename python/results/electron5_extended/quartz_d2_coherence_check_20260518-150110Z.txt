@@ -1,0 +1,18 @@
+Quartz D2 coherence check
+timestamp: 20260518-150110Z
+verdict: supported
+quartz_ok: True
+control_ok: True
+separation_ok: True
+
+Quartz motifs:
+- q1: m=30 n=42 k=54 q=0 torsion=0 aspect=1.800 in_band=True
+- q2: m=36 n=48 k=60 q=0 torsion=0 aspect=1.667 in_band=True
+- q3: m=42 n=56 k=70 q=0 torsion=0 aspect=1.667 in_band=True
+- q4: m=45 n=60 k=75 q=0 torsion=0 aspect=1.667 in_band=True
+
+Control motifs:
+- c1: m=31 n=44 k=58 q=1 torsion=1 aspect=1.871 in_band=False
+- c2: m=33 n=47 k=69 q=1 torsion=8 aspect=2.091 in_band=False
+- c3: m=35 n=51 k=82 q=1 torsion=15 aspect=2.343 in_band=False
+- c4: m=29 n=46 k=93 q=1 torsion=30 aspect=3.207 in_band=False

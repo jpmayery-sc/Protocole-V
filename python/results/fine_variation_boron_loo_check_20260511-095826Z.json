@@ -1,0 +1,59 @@
+{
+  "timestamp": "20260511-095826Z",
+  "overall_verdict": "contradicted",
+  "family": [
+    "B",
+    "Al",
+    "Ga",
+    "In",
+    "Tl"
+  ],
+  "folds": [
+    {
+      "held_out": "B",
+      "mass_error": 2224.6295196179053,
+      "zeff_error": 1792.3697204343905,
+      "zeff_star_error": 2062.136923861913,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Al",
+      "mass_error": 1303.1355513472683,
+      "zeff_error": 1328.2566873846438,
+      "zeff_star_error": 696.9860305143545,
+      "best_model": "zeff_star"
+    },
+    {
+      "held_out": "Ga",
+      "mass_error": 5.707270949183543,
+      "zeff_error": 6.547997339000383,
+      "zeff_star_error": 127.84495563782885,
+      "best_model": "mass"
+    },
+    {
+      "held_out": "In",
+      "mass_error": 115.1511350874623,
+      "zeff_error": 9.348060022260112,
+      "zeff_star_error": 139.94734978127343,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Tl",
+      "mass_error": 1045.6802175354844,
+      "zeff_error": 196.21514898761566,
+      "zeff_star_error": 1660.5537629136861,
+      "best_model": "zeff"
+    }
+  ],
+  "summary": {
+    "mass_rmse": 30.640834500833375,
+    "zeff_rmse": 25.81758166121649,
+    "zeff_star_rmse": 30.61852061321401,
+    "best_model": "zeff"
+  },
+  "hypothesis": "leave-one-out on the boron family is best explained by a reduced local Zeff* built from family index k only",
+  "case_control": "full B -> Tl family with each element held out once",
+  "observable": "held-out radius prediction error across mass, raw Z_eff, and reduced local Zeff*",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_boron_loo_check_20260511-095826Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_boron_loo_check_20260511-095826Z.txt"
+}

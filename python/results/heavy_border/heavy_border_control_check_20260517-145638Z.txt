@@ -1,0 +1,11 @@
+Heavy border control check
+timestamp: 20260517-145638Z
+verdict: supported
+order_ok: True
+separation_ok: True
+border_gradient_ok: True
+
+Cases:
+- Fr: zeff=3.830626 border_index=70.484556 class=alkali_like
+- Ra: zeff=4.360936 border_index=50.677192 class=alkaline_earth_like
+- Lr: zeff=4.227362 border_index=40.450760 class=d3_like

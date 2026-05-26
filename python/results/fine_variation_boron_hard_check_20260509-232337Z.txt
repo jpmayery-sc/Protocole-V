@@ -1,0 +1,36 @@
+Fine variation boron hard check
+timestamp: 20260509-232337Z
+verdict: supported
+equivalent: True
+tolerance: 0.1
+
+boron_full:
+- baseline_nrmse: 0.171892
+- geometric_nrmse: 0.107203
+- energetic_nrmse: 0.076667
+- geometric_gain: 0.064689
+- energetic_gain: 0.095225
+- gain_gap: 0.030536
+- equivalent: True
+- series: B, Al, Ga, In, Tl
+
+boron_repaired_core:
+- baseline_nrmse: 0.253636
+- geometric_nrmse: 0.000000
+- energetic_nrmse: 0.000000
+- geometric_gain: 0.253636
+- energetic_gain: 0.253636
+- gain_gap: 0.000000
+- equivalent: True
+- series: B, Al, In
+
+boron_edge_trimmed:
+- baseline_nrmse: 0.223313
+- geometric_nrmse: 0.116129
+- energetic_nrmse: 0.072551
+- geometric_gain: 0.107183
+- energetic_gain: 0.150761
+- gain_gap: 0.043578
+- equivalent: True
+- series: B, Al, Ga, In
+

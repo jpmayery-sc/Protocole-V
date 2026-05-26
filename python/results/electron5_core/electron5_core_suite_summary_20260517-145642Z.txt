@@ -1,0 +1,9 @@
+Electron-5 core suite summary
+timestamp: 20260517-145642Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- quark_mass_derivation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_core\quark_mass_derivation_check_20260517-145641Z.json
+- hadron_collective_mode: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_core\hadron_collective_mode_check_20260517-145642Z.json
+- pmns_neutrino: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_core\pmns_neutrino_check_20260517-145642Z.json

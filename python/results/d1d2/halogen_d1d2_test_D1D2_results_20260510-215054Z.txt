@@ -1,0 +1,16 @@
+D1/D2 family check
+timestamp: 20260510-215054Z
+familyname: halogen_d1d2_test
+verdict: supported
+family_regime: semi-metal
+D1_trend: increasing
+D2_trend: decreasing
+D1overD2_trend: increasing
+D1overD2_superlinear: False
+
+Per element:
+- F: I=17.4228 r=64.0 n=2 D1=2.263703 D2=0.272231 D1/D2=8.315369 regime=covalent
+- Cl: I=12.9676 r=99.0 n=3 D1=2.929420 D2=0.130986 D1/D2=22.364397 regime=covalent
+- Br: I=11.8138 r=114.0 n=4 D1=3.728081 D2=0.103630 D1/D2=35.974982 regime=transition
+- I: I=10.4513 r=133.0 n=5 D1=4.383144 D2=0.078581 D1/D2=55.778526 regime=semi-metal
+- At: I=9.5000 r=150.0 n=6 D1=5.014684 D2=0.063333 D1/D2=79.179226 regime=semi-metal

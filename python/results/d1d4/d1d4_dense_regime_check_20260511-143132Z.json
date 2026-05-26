@@ -1,0 +1,91 @@
+{
+  "timestamp": "20260511-143132Z",
+  "verdict": "supported",
+  "scaling_ok": true,
+  "balance_ok": true,
+  "regime_switch_ok": true,
+  "continuity_ok": true,
+  "reference_case": {
+    "symbol": "Pb",
+    "name": "Lead-like dense reference",
+    "ionization_ev": 7.4167,
+    "principal_n": 6.0,
+    "D1": 4.430851066834744,
+    "balance_density_m3": 1.6743079395683674e+29
+  },
+  "points": [
+    {
+      "label": "deep_dense_low",
+      "electron_density_m3": 2.092884924460459e+28,
+      "D1": 4.430851066834744,
+      "D4_pressure_pa": 3714350684.136908,
+      "D4_balance_ev": 1.1077127667086832,
+      "balance_gap": 3.32313830012606,
+      "ok_low": true,
+      "ok_mid": false,
+      "ok_high": false
+    },
+    {
+      "label": "dense_low",
+      "electron_density_m3": 8.371539697841837e+28,
+      "D1": 4.430851066834744,
+      "D4_pressure_pa": 37438308909.084114,
+      "D4_balance_ev": 2.7912612640271175,
+      "balance_gap": 1.6395898028076261,
+      "ok_low": true,
+      "ok_mid": false,
+      "ok_high": false
+    },
+    {
+      "label": "balance",
+      "electron_density_m3": 1.6743079395683674e+29,
+      "D1": 4.430851066834744,
+      "D4_pressure_pa": 118859221892.38107,
+      "D4_balance_ev": 4.430851066834732,
+      "balance_gap": 1.1546319456101628e-14,
+      "ok_low": true,
+      "ok_mid": true,
+      "ok_high": false
+    },
+    {
+      "label": "dense_high",
+      "electron_density_m3": 3.348615879136735e+29,
+      "D1": 4.430851066834744,
+      "D4_pressure_pa": 377354507736.17474,
+      "D4_balance_ev": 7.033537644607873,
+      "balance_gap": 2.602686577773129,
+      "ok_low": false,
+      "ok_mid": false,
+      "ok_high": true
+    },
+    {
+      "label": "deep_dense_high",
+      "electron_density_m3": 1.339446351654694e+30,
+      "D1": 4.430851066834744,
+      "D4_pressure_pa": 3803495100556.195,
+      "D4_balance_ev": 17.72340426733893,
+      "balance_gap": 13.292553200504184,
+      "ok_low": false,
+      "ok_mid": false,
+      "ok_high": true
+    }
+  ],
+  "pressure_ratios": [
+    10.079368399158987,
+    3.1748021039363987,
+    3.174802103936399,
+    10.079368399158986
+  ],
+  "expected_pressure_ratios": [
+    10.079368399158986,
+    3.174802103936399,
+    3.174802103936399,
+    10.079368399158986
+  ],
+  "regime": "dense",
+  "hypothesis": "D4 grows with density, crosses D1 near the balance density, and remains continuous across the crossover",
+  "case_control": "a lead-like dense reference probed below, at, and above the D1 = D4 balance density",
+  "observable": "D1 versus D4_balance, the balance gap, and the pressure n_e^(5/3) scaling",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_dense_regime_check_20260511-143132Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_dense_regime_check_20260511-143132Z.txt"
+}

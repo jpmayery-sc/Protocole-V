@@ -1,0 +1,19 @@
+Family l-slope check
+timestamp: 20260517-145701Z
+verdict: falsifie
+tolerance: 0.25
+monotonic: False
+normalized_cv: 0.7284924188052817
+max_relative_error: 0.8327329499393054
+d_block_spread_ratio: 0.35560849184250215
+
+Representatives:
+- s_alkali: l=0 slope=0.035504 expected=0.048306 rel_err=0.2650 normalized=0.071007
+- p_halogen: l=1 slope=0.046571 expected=0.043370 rel_err=0.0738 normalized=0.031047
+- d_block_mean: l=2 slope=0.070438 expected=0.038433 rel_err=0.8327 normalized=0.028175
+- f_lanthanide_core: l=3 slope=0.011094 expected=0.033497 rel_err=0.6688 normalized=0.003170
+
+d-block components:
+- d_3d: slope=0.047549 normalized=0.019020 rmse=0.073582
+- d_4d: slope=0.061170 normalized=0.024468 rmse=0.072639
+- d_5d: slope=0.106169 normalized=0.042468 rmse=0.067669

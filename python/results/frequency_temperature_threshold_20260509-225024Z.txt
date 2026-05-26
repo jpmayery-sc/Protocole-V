@@ -1,0 +1,14 @@
+Frequency-temperature threshold check
+Timestamp: 20260509-225024Z
+Source: TempDep CSV
+Verdict global: conforme strict
+Threshold status: conforme strict
+Points: 20
+Temperature range: 77.0 -> 300.0
+Frequency range: 33.290000 -> 34.116000
+Frequency span: 0.826000
+Slope: -0.003746095
+Fit RMSE: 0.015640
+LOO RMSE: 0.018061
+LOO RMSE ratio: 0.021865
+Midpoint temperature: 201.723108

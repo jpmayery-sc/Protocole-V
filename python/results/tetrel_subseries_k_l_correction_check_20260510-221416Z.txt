@@ -1,0 +1,29 @@
+Tetrel subseries k/L correction check
+Timestamp: 20260510-221416Z
+
+Hypothese: the fine tetrel subseries becomes more regular when the k/L correction is used instead of the mass-return reading
+Cas de controle: C -> Si -> Ge versus Ge -> Sn -> Pb, baseline Z_eff fit versus corrected [1, Z_eff, k, L] fit
+Observable: radius residuals and fit regularity in the two tetrel subseries
+Verdict: supported
+
+Sous-serie legere C -> Ge:
+- baseline_rmse: 9.501792
+- corrected_rmse: 0.004807
+- baseline_max_abs_residual: 13.364296
+- corrected_max_abs_residual: 0.006899
+
+Sous-serie lourde Ge -> Pb:
+- baseline_rmse: 3.235367
+- corrected_rmse: 0.000134
+- baseline_max_abs_residual: 4.568673
+- corrected_max_abs_residual: 0.000178
+
+Criteres:
+- light_corrected_better: True
+- heavy_corrected_better: True
+- structural_ok: True
+
+Falsificateurs:
+- one of the subseries is not monotone in radius and ionization
+- the corrected fit does not improve the light core
+- the corrected fit does not improve the heavy tail

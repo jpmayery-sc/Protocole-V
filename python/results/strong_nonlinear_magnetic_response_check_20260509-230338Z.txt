@@ -1,0 +1,12 @@
+Strong nonlinear magnetic response check
+timestamp: 20260509-230338Z
+verdict: supported
+monotone_ok: True
+saturation_ok: True
+plateau_ok: True
+
+Cases:
+- weak: field=0.10 M=0.264225 baseline=0.266667 gap=1.335775
+- medium: field=0.80 M=1.392099 baseline=2.133333 gap=0.207901
+- strong: field=2.50 M=1.599231 baseline=6.666667 gap=0.000769
+- very_strong: field=6.00 M=1.600000 baseline=16.000000 gap=0.000000

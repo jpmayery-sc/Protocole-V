@@ -1,0 +1,576 @@
+{
+  "timestamp": "20260509-220701Z",
+  "hypothesis": "using Zeff* with an H anomaly term keeps both lanthanide subseries regular and improves over mass and raw Zeff",
+  "case_control": "La -> Nd -> Eu versus Gd -> Yb -> Lu, with radius compared against mass, raw Zeff, Zeff*, and [1, Zeff*, k, L, H]",
+  "observable": "subseries fit quality, monotonicity, and anomaly handling at Eu and Yb",
+  "expected": {
+    "light_core": "Zeff* beats mass and raw Zeff, corrected fit does not worsen it",
+    "heavy_tail": "Zeff* beats mass and raw Zeff, corrected fit does not worsen it"
+  },
+  "measured": {
+    "light_core": {
+      "series": [
+        {
+          "symbol": "La",
+          "period": 6,
+          "mass_u": 138.90547,
+          "radius_pm": 195.0,
+          "ionization_ev": 5.577,
+          "k": 0.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.842219,
+          "zeff_star": 3.846179
+        },
+        {
+          "symbol": "Ce",
+          "period": 6,
+          "mass_u": 140.116,
+          "radius_pm": 185.0,
+          "ionization_ev": 5.5387,
+          "k": 1.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.829003,
+          "zeff_star": 3.832963
+        },
+        {
+          "symbol": "Pr",
+          "period": 6,
+          "mass_u": 140.90766,
+          "radius_pm": 182.0,
+          "ionization_ev": 5.473,
+          "k": 2.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.806226,
+          "zeff_star": 3.810186
+        },
+        {
+          "symbol": "Nd",
+          "period": 6,
+          "mass_u": 144.242,
+          "radius_pm": 181.0,
+          "ionization_ev": 5.525,
+          "k": 3.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.824265,
+          "zeff_star": 3.828225
+        },
+        {
+          "symbol": "Sm",
+          "period": 6,
+          "mass_u": 150.36,
+          "radius_pm": 180.0,
+          "ionization_ev": 5.644,
+          "k": 4.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.86523,
+          "zeff_star": 3.86919
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "zeff_star_trend": "mixed",
+      "mass_trend": "increasing",
+      "mass": {
+        "fit": {
+          "slope": -0.9000937955778187,
+          "intercept": 313.22900737204156
+        },
+        "predicted": [
+          188.20105565322075,
+          187.1114651108599,
+          186.3988968566528,
+          183.39767811030586,
+          177.89090426896075
+        ],
+        "rmse": 4.00578001951625,
+        "max_abs_residual": 6.798944346779251
+      },
+      "zeff": {
+        "fit": {
+          "slope": 24.36874575121554,
+          "intercept": 91.18513306940824
+        },
+        "predicted": [
+          184.8151916822659,
+          184.49313598596353,
+          183.93807578099484,
+          184.37766564983022,
+          185.37593090094558
+        ],
+        "rmse": 5.441555432491234,
+        "max_abs_residual": 10.18480831773411
+      },
+      "zeff_star": {
+        "fit": {
+          "slope": 24.368745751215545,
+          "intercept": 91.08863283623336
+        },
+        "predicted": [
+          184.81519168226583,
+          184.49313598596353,
+          183.9380757809948,
+          184.3776656498302,
+          185.37593090094555
+        ],
+        "rmse": 5.441555432491245,
+        "max_abs_residual": 10.184808317734166
+      },
+      "corrected": {
+        "fit": {
+          "intercept": -214.00174593734255,
+          "alpha": 105.87415772517852,
+          "beta": -3.8371197347289114,
+          "gamma": 0.0,
+          "delta": 0.0
+        },
+        "coefficients": [
+          -214.00174593734255,
+          105.87415772517852,
+          -3.8371197347289114,
+          0.0,
+          0.0
+        ],
+        "predicted": [
+          193.2092191082461,
+          187.9728736630637,
+          181.72420052760643,
+          179.7969536924767,
+          180.29696701035388
+        ],
+        "residuals": [
+          1.7907808917539114,
+          -2.9728736630636945,
+          0.2757994723935724,
+          1.2030463075232944,
+          -0.29696701035388173
+        ],
+        "rmse": 1.6526614408925506,
+        "max_abs_residual": 2.9728736630636945
+      }
+    },
+    "heavy_tail": {
+      "series": [
+        {
+          "symbol": "Gd",
+          "period": 6,
+          "mass_u": 157.25,
+          "radius_pm": 180.0,
+          "ionization_ev": 6.15,
+          "k": 6.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 4.034775,
+          "zeff_star": 4.038735
+        },
+        {
+          "symbol": "Tb",
+          "period": 6,
+          "mass_u": 158.92535,
+          "radius_pm": 178.0,
+          "ionization_ev": 5.863,
+          "k": 7.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.939506,
+          "zeff_star": 3.943466
+        },
+        {
+          "symbol": "Dy",
+          "period": 6,
+          "mass_u": 162.5,
+          "radius_pm": 177.0,
+          "ionization_ev": 5.939,
+          "k": 8.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.964957,
+          "zeff_star": 3.968917
+        },
+        {
+          "symbol": "Ho",
+          "period": 6,
+          "mass_u": 164.93033,
+          "radius_pm": 176.0,
+          "ionization_ev": 6.022,
+          "k": 9.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.992567,
+          "zeff_star": 3.996527
+        },
+        {
+          "symbol": "Er",
+          "period": 6,
+          "mass_u": 167.259,
+          "radius_pm": 175.0,
+          "ionization_ev": 6.108,
+          "k": 10.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 4.020974,
+          "zeff_star": 4.024934
+        },
+        {
+          "symbol": "Tm",
+          "period": 6,
+          "mass_u": 168.93422,
+          "radius_pm": 174.0,
+          "ionization_ev": 6.184,
+          "k": 11.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 4.045913,
+          "zeff_star": 4.049873
+        },
+        {
+          "symbol": "Lu",
+          "period": 6,
+          "mass_u": 174.9668,
+          "radius_pm": 173.0,
+          "ionization_ev": 5.428,
+          "k": 13.0,
+          "L": 0.0,
+          "H": 0.0,
+          "zeff_proxy": 3.790546,
+          "zeff_star": 3.794506
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "zeff_star_trend": "mixed",
+      "mass_trend": "increasing",
+      "mass": {
+        "fit": {
+          "slope": -0.3838300234341037,
+          "intercept": 239.4619636702713
+        },
+        "predicted": [
+          179.10469248525848,
+          178.46164285549816,
+          177.08958486222946,
+          176.15675124137684,
+          175.26293778070655,
+          174.61993804884926,
+          172.30445272608117
+        ],
+        "rmse": 0.5324514119199468,
+        "max_abs_residual": 0.8953075147415177
+      },
+      "zeff": {
+        "fit": {
+          "slope": 11.438329653262173,
+          "intercept": 130.7339345178528
+        },
+        "predicted": [
+          176.88502453734958,
+          175.79530043354902,
+          176.08641735200712,
+          176.40222770889588,
+          176.7271654722748,
+          177.01242082262294,
+          174.09144367330072
+        ],
+        "rmse": 2.028694927741878,
+        "max_abs_residual": 3.1149754626504205
+      },
+      "zeff_star": {
+        "fit": {
+          "slope": 11.438329653262173,
+          "intercept": 130.68863873242586
+        },
+        "predicted": [
+          176.88502453734958,
+          175.79530043354902,
+          176.08641735200712,
+          176.40222770889588,
+          176.7271654722748,
+          177.01242082262291,
+          174.0914436733007
+        ],
+        "rmse": 2.02869492774187,
+        "max_abs_residual": 3.1149754626504205
+      },
+      "corrected": {
+        "fit": {
+          "intercept": 197.21095050898955,
+          "alpha": -2.924059316208222,
+          "beta": -1.0334127702117553,
+          "gamma": 0.0,
+          "delta": 0.0
+        },
+        "coefficients": [
+          197.21095050898955,
+          -2.924059316208222,
+          -1.0334127702117553,
+          0.0,
+          0.0
+        ],
+        "predicted": [
+          179.20097229239545,
+          178.4461332313184,
+          177.33830022989042,
+          176.22415467401777,
+          175.1076758160993,
+          174.00134124786558,
+          172.68122529746262
+        ],
+        "residuals": [
+          0.7990277076045516,
+          -0.446133231318413,
+          -0.33830022989042163,
+          -0.22415467401776823,
+          -0.10767581609928811,
+          -0.001341247865582318,
+          0.3187747025373824
+        ],
+        "rmse": 0.3991751660487981,
+        "max_abs_residual": 0.7990277076045516
+      }
+    }
+  },
+  "criteria": {
+    "corrected_better_light": true,
+    "corrected_better_heavy": true,
+    "h_probe_ok": true,
+    "radius_ok": true
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "one of the subseries is not monotone in radius or Zeff*",
+    "Zeff* does not improve on both mass and raw Zeff in the light core",
+    "Zeff* does not improve on both mass and raw Zeff in the heavy tail",
+    "the corrected fit [1, Zeff*, k, L, H] does not match or improve the Zeff* baseline"
+  ],
+  "anomaly_probe": {
+    "series": [
+      {
+        "symbol": "La",
+        "period": 6,
+        "mass_u": 138.90547,
+        "radius_pm": 195.0,
+        "ionization_ev": 5.577,
+        "k": 0.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.842219,
+        "zeff_star_wo_h": 3.846179,
+        "zeff_star_h": 3.846179
+      },
+      {
+        "symbol": "Ce",
+        "period": 6,
+        "mass_u": 140.116,
+        "radius_pm": 185.0,
+        "ionization_ev": 5.5387,
+        "k": 1.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.829003,
+        "zeff_star_wo_h": 3.832963,
+        "zeff_star_h": 3.832963
+      },
+      {
+        "symbol": "Pr",
+        "period": 6,
+        "mass_u": 140.90766,
+        "radius_pm": 182.0,
+        "ionization_ev": 5.473,
+        "k": 2.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.806226,
+        "zeff_star_wo_h": 3.810186,
+        "zeff_star_h": 3.810186
+      },
+      {
+        "symbol": "Nd",
+        "period": 6,
+        "mass_u": 144.242,
+        "radius_pm": 181.0,
+        "ionization_ev": 5.525,
+        "k": 3.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.824265,
+        "zeff_star_wo_h": 3.828225,
+        "zeff_star_h": 3.828225
+      },
+      {
+        "symbol": "Sm",
+        "period": 6,
+        "mass_u": 150.36,
+        "radius_pm": 180.0,
+        "ionization_ev": 5.644,
+        "k": 4.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.86523,
+        "zeff_star_wo_h": 3.86919,
+        "zeff_star_h": 3.86919
+      },
+      {
+        "symbol": "Eu",
+        "period": 6,
+        "mass_u": 151.964,
+        "radius_pm": 199.0,
+        "ionization_ev": 5.67,
+        "k": 5.0,
+        "L": 1.0,
+        "H": 1.0,
+        "zeff_proxy": 3.874122,
+        "zeff_star_wo_h": 4.128082,
+        "zeff_star_h": 4.478082
+      },
+      {
+        "symbol": "Gd",
+        "period": 6,
+        "mass_u": 157.25,
+        "radius_pm": 180.0,
+        "ionization_ev": 6.15,
+        "k": 6.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 4.034775,
+        "zeff_star_wo_h": 4.038735,
+        "zeff_star_h": 4.038735
+      },
+      {
+        "symbol": "Tb",
+        "period": 6,
+        "mass_u": 158.92535,
+        "radius_pm": 178.0,
+        "ionization_ev": 5.863,
+        "k": 7.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.939506,
+        "zeff_star_wo_h": 3.943466,
+        "zeff_star_h": 3.943466
+      },
+      {
+        "symbol": "Dy",
+        "period": 6,
+        "mass_u": 162.5,
+        "radius_pm": 177.0,
+        "ionization_ev": 5.939,
+        "k": 8.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.964957,
+        "zeff_star_wo_h": 3.968917,
+        "zeff_star_h": 3.968917
+      },
+      {
+        "symbol": "Ho",
+        "period": 6,
+        "mass_u": 164.93033,
+        "radius_pm": 176.0,
+        "ionization_ev": 6.022,
+        "k": 9.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.992567,
+        "zeff_star_wo_h": 3.996527,
+        "zeff_star_h": 3.996527
+      },
+      {
+        "symbol": "Er",
+        "period": 6,
+        "mass_u": 167.259,
+        "radius_pm": 175.0,
+        "ionization_ev": 6.108,
+        "k": 10.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 4.020974,
+        "zeff_star_wo_h": 4.024934,
+        "zeff_star_h": 4.024934
+      },
+      {
+        "symbol": "Tm",
+        "period": 6,
+        "mass_u": 168.93422,
+        "radius_pm": 174.0,
+        "ionization_ev": 6.184,
+        "k": 11.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 4.045913,
+        "zeff_star_wo_h": 4.049873,
+        "zeff_star_h": 4.049873
+      },
+      {
+        "symbol": "Yb",
+        "period": 6,
+        "mass_u": 173.045,
+        "radius_pm": 194.0,
+        "ionization_ev": 6.254,
+        "k": 12.0,
+        "L": 1.0,
+        "H": 1.0,
+        "zeff_proxy": 4.068747,
+        "zeff_star_wo_h": 4.322707,
+        "zeff_star_h": 4.672707
+      },
+      {
+        "symbol": "Lu",
+        "period": 6,
+        "mass_u": 174.9668,
+        "radius_pm": 173.0,
+        "ionization_ev": 5.428,
+        "k": 13.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 3.790546,
+        "zeff_star_wo_h": 3.794506,
+        "zeff_star_h": 3.794506
+      }
+    ],
+    "mass": {
+      "fit": {
+        "slope": -0.27862757388591797,
+        "intercept": 225.74243641261614
+      },
+      "rmse": 7.2384174702409165,
+      "max_abs_residual": 16.47267211047253
+    },
+    "zeff": {
+      "fit": {
+        "slope": -12.506265147200008,
+        "intercept": 231.11300459205793
+      },
+      "rmse": 7.8876891297609175,
+      "max_abs_residual": 16.33779599798123
+    },
+    "zeff_star_without_h": {
+      "fit": {
+        "slope": 19.76132705040003,
+        "intercept": 103.79612175830522
+      },
+      "rmse": 7.463358951886005,
+      "max_abs_residual": 15.198276575773036
+    },
+    "zeff_star_with_h": {
+      "fit": {
+        "slope": 18.18418188238815,
+        "intercept": 109.13403977260873
+      },
+      "rmse": 6.573926555282099,
+      "max_abs_residual": 15.926341230726393
+    },
+    "mass_trend": "increasing",
+    "radius_trend": "mixed",
+    "zeff_trend": "mixed",
+    "zeff_star_without_h_trend": "mixed",
+    "zeff_star_with_h_trend": "mixed"
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_subseries_zeff_star_check_20260509-220701Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_subseries_zeff_star_check_20260509-220701Z.txt"
+}

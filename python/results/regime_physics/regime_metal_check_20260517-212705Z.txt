@@ -1,0 +1,19 @@
+Regime metal check
+timestamp: 20260517-212705Z
+verdict: supported
+regime: metal
+hypothesis: Metals keep D4 moderate, below D1, while the Fermi scale stays in the few-eV window
+case_control: Na, Al, and Cu density windows
+observable: D1_proxy versus D4_balance and the few-eV Fermi window
+
+Checks:
+- D4 is moderate
+- D1 still dominates
+- launcher routes the metallic branch to D1 + D2 + D4
+
+Cases:
+- Mg: supported
+- Na: supported
+- Al: supported
+- Cu: supported
+- Ag: supported

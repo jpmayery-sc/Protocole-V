@@ -1,0 +1,18 @@
+{
+  "suite": "omega_structure",
+  "timestamp": "20260517-212728Z",
+  "overall_verdict": "supported",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "omega_z_structure",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260517-212728Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260517-212728Z.txt",
+      "hypothesis": "Omega(Z) improves the reading of heavy series by adding torsion, curvature and a normalized internal radius"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_structure_suite_summary_20260517-212728Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_structure_suite_summary_20260517-212728Z.txt"
+}

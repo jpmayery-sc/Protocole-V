@@ -1,0 +1,13 @@
+Skin effect check
+timestamp: 20260509-230335Z
+verdict: supported
+cu_monotone: True
+fe_monotone: True
+material_contrast_ok: True
+
+Cases:
+- Cu low: f=1.000e+03 Hz rho=1.680e-08 mu_r=1.0 depth_mm=2.062884
+- Cu mid: f=1.000e+05 Hz rho=1.680e-08 mu_r=1.0 depth_mm=0.206288
+- Cu high: f=1.000e+07 Hz rho=1.680e-08 mu_r=1.0 depth_mm=0.020629
+- Fe low: f=1.000e+03 Hz rho=9.710e-08 mu_r=200.0 depth_mm=0.350683
+- Fe high: f=1.000e+07 Hz rho=9.710e-08 mu_r=200.0 depth_mm=0.003507

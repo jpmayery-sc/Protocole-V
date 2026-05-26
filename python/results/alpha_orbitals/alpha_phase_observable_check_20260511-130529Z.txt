@@ -1,0 +1,14 @@
+Alpha phase observable check
+timestamp: 20260511-130529Z
+verdict: supported
+exact_alpha: 0.007299270072993
+reference_alpha: 0.007297352569284
+exact_delta_theta_rad: 0.045862666475763
+reference_delta_theta_rad: 0.045850618444633
+exact_delta_theta_deg: 2.627737226277
+reference_delta_theta_deg: 2.627046924942
+absolute_delta_error_rad: 0.000012048031130
+relative_delta_error: 2.627670e-04
+exact_claim_ok: False
+phase_observable_ok: True
+strict_phase_observable_ok: False

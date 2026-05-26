@@ -1,0 +1,31 @@
+Pnictogen residual check
+Timestamp: 20260510-223233Z
+
+Hypothese: the pnictogen family should be assigned to the expected D1/D2 regimes
+Cas de controle: full N -> Bi pnictogen family versus the expected covalent / transition / semi-metal bands
+Observable: D1/D2 ratio and regime assignment across the column
+Verdict: supported
+
+Famille complete N -> Bi:
+- radius_trend: increasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- regimes: ['covalent', 'covalent', 'transition', 'semi-metal', 'semi-metal']
+- ratios: [7.96626, 24.618322, 39.468063, 61.459776, 89.209448]
+- zeff_mean_abs_residual: 5.054040
+- mass_mean_abs_residual: 13.175963
+- endpoint_symbol: Bi
+- endpoint_zeff_residual: -1.794744
+- endpoint_mass_residual: -10.029948
+
+Noyau repare N -> Sb:
+- regimes: ['covalent', 'covalent', 'transition', 'semi-metal']
+- ratios: [7.96626, 24.618322, 39.468063, 61.459776]
+- zeff_mean_abs_residual: 6.116230
+- mass_mean_abs_residual: 10.371504
+- zeff_max_abs_residual: 12.232460
+- mass_max_abs_residual: 15.970025
+
+Falsificateurs:
+- la colonne pnictogene ne respecte pas les bandes covalent / transition / semi-metal
+- les ratios D1/D2 ne sont pas monotones

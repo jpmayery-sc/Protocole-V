@@ -1,0 +1,12 @@
+Tetrel Zeff* check
+Timestamp: 20260509-215002Z
+Hypothese: the user-provided Zeff* correction makes the tetrel family C -> Pb monotone
+Cas de controle: standard Zeff proxy versus corrected Zeff* on the tetrel family
+Observable: monotonicity of Zeff* and comparison with the raw radius and ionization trends
+Attendu: Zeff* becomes increasing across C -> Pb
+Mesuree: increasing
+Verdict: supported
+Critere de rejet: Zeff* non monotone sur C -> Pb
+Reference: a=0.0, b=0.25, c=0.00011, d=0.0
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\tetrel_zeff_star_check_20260509-215002Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\tetrel_zeff_star_check_20260509-215002Z.txt

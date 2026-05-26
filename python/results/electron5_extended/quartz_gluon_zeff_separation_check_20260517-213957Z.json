@@ -1,0 +1,160 @@
+{
+  "timestamp": "20260517-213957Z",
+  "verdict": "supported",
+  "separation_ok": true,
+  "domains": [
+    {
+      "domain": "quartz",
+      "items": [
+        {
+          "name": "q1",
+          "m": 30,
+          "n": 42,
+          "k": 54,
+          "q": 0,
+          "torsion": 0,
+          "aspect": 1.8,
+          "own_ok": true
+        },
+        {
+          "name": "q2",
+          "m": 36,
+          "n": 48,
+          "k": 60,
+          "q": 0,
+          "torsion": 0,
+          "aspect": 1.6666666666666667,
+          "own_ok": true
+        },
+        {
+          "name": "q3",
+          "m": 42,
+          "n": 56,
+          "k": 70,
+          "q": 0,
+          "torsion": 0,
+          "aspect": 1.6666666666666667,
+          "own_ok": true
+        },
+        {
+          "name": "q4",
+          "m": 45,
+          "n": 60,
+          "k": 75,
+          "q": 0,
+          "torsion": 0,
+          "aspect": 1.6666666666666667,
+          "own_ok": true
+        }
+      ],
+      "own_ok": true,
+      "cross_hadron_ok": false,
+      "cross_zeff_ok": false
+    },
+    {
+      "domain": "hadron_gluon",
+      "items": [
+        {
+          "name": "pion_plus",
+          "type": "meson",
+          "quark_content": "u dbar",
+          "predicted_mass_mev": 140.0,
+          "reference_mass_mev": 139.57,
+          "relative_error": 0.003080891309020612,
+          "own_ok": true
+        },
+        {
+          "name": "kaon_plus",
+          "type": "meson",
+          "quark_content": "u sbar",
+          "predicted_mass_mev": 494.0,
+          "reference_mass_mev": 493.68,
+          "relative_error": 0.0006481931615621317,
+          "own_ok": true
+        },
+        {
+          "name": "proton",
+          "type": "baryon",
+          "quark_content": "u u d",
+          "predicted_mass_mev": 938.5,
+          "reference_mass_mev": 938.27,
+          "relative_error": 0.00024513199825212164,
+          "own_ok": true
+        },
+        {
+          "name": "neutron",
+          "type": "baryon",
+          "quark_content": "u d d",
+          "predicted_mass_mev": 939.6,
+          "reference_mass_mev": 939.57,
+          "relative_error": 3.192949966471121e-05,
+          "own_ok": true
+        },
+        {
+          "name": "lambda0",
+          "type": "baryon",
+          "quark_content": "u d s",
+          "predicted_mass_mev": 1115.7,
+          "reference_mass_mev": 1115.68,
+          "relative_error": 1.7926287107398007e-05,
+          "own_ok": true
+        },
+        {
+          "name": "delta_plus_plus",
+          "type": "baryon",
+          "quark_content": "u u u",
+          "predicted_mass_mev": 1232.0,
+          "reference_mass_mev": 1232.0,
+          "relative_error": 0.0,
+          "own_ok": true
+        }
+      ],
+      "own_ok": true,
+      "cross_quartz_ok": false,
+      "cross_zeff_ok": false
+    },
+    {
+      "domain": "zeff",
+      "items": [
+        {
+          "name": "Li",
+          "period": 2,
+          "radius_pm": 152,
+          "ie_ev": 5.39,
+          "zeff_proxy": 1.2590846348228775
+        },
+        {
+          "name": "Na",
+          "period": 3,
+          "radius_pm": 186,
+          "ie_ev": 5.14,
+          "zeff_proxy": 1.8443076175723219
+        },
+        {
+          "name": "K",
+          "period": 4,
+          "radius_pm": 227,
+          "ie_ev": 4.34,
+          "zeff_proxy": 2.2596199576347296
+        },
+        {
+          "name": "Rb",
+          "period": 5,
+          "radius_pm": 248,
+          "ie_ev": 4.18,
+          "zeff_proxy": 2.771971054937581
+        },
+        {
+          "name": "Cs",
+          "period": 6,
+          "radius_pm": 267,
+          "ie_ev": 3.89,
+          "zeff_proxy": 3.208903056112698
+        }
+      ],
+      "own_ok": true,
+      "cross_quartz_ok": false,
+      "cross_hadron_ok": false
+    }
+  ]
+}

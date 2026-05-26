@@ -1,0 +1,16 @@
+D1/D2 family check
+timestamp: 20260510-215054Z
+familyname: tetrel_d1d2_test
+verdict: supported
+family_regime: semi-metal
+D1_trend: increasing
+D2_trend: decreasing
+D1overD2_trend: increasing
+D1overD2_superlinear: False
+
+Per element:
+- C: I=11.2603 r=67.0 n=2 D1=1.819850 D2=0.168064 D1/D2=10.828302 regime=covalent
+- Si: I=8.1517 r=111.0 n=3 D1=2.322608 D2=0.073439 D1/D2=31.626467 regime=transition
+- Ge: I=7.8994 r=125.0 n=4 D1=3.048510 D2=0.063195 D1/D2=48.239578 regime=transition
+- Sn: I=7.3439 r=145.0 n=5 D1=3.674210 D2=0.050648 D1/D2=72.544614 regime=semi-metal
+- Pb: I=7.4167 r=154.0 n=6 D1=4.430851 D2=0.048160 D1/D2=92.001977 regime=semi-metal

@@ -1,0 +1,7 @@
+Triphase suite summary
+timestamp: 20260511-000741Z
+overall_verdict: supported
+supported_count: 1/1
+
+Items:
+- three_phase_current: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\triphase\three_phase_current_check_20260511-000741Z.json

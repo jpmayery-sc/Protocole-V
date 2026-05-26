@@ -1,0 +1,28 @@
+Tetrel Z_eff residual check
+Timestamp: 20260509-225849Z
+
+Hypothese: the heavy tetrel endpoint Pb leaves a residual after Z_eff correction that is reduced in the refined core
+Cas de controle: full C -> Pb tetrel family versus core C -> Sn
+Observable: mean and endpoint residuals after fitting radius against Z_eff proxy
+Verdict: supported
+
+Bloc complet C -> Pb:
+- radius_trend: increasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- zeff_mean_abs_residual: 9.557761
+- mass_mean_abs_residual: 14.503992
+- endpoint_symbol: Pb
+- endpoint_zeff_residual: -8.852852
+- endpoint_mass_residual: -11.342247
+
+Noyau repare C -> Sn:
+- zeff_mean_abs_residual: 7.186110
+- mass_mean_abs_residual: 10.660826
+- zeff_max_abs_residual: 14.192740
+- mass_max_abs_residual: 17.499156
+
+Falsificateurs:
+- Pb ne laisse pas de residu plus fort que la moyenne du bloc complet
+- le noyau C -> Sn n est pas plus propre que le bloc complet
+- Z_eff n ameliore pas la regularite par rapport a la masse

@@ -1,0 +1,88 @@
+{
+  "timestamp": "20260517-185818Z",
+  "verdict": "supported",
+  "neutral_ok": true,
+  "ion_ok": true,
+  "cases": [
+    {
+      "name": "H",
+      "kind": "neutral",
+      "protons": 1,
+      "electrons": 1,
+      "charge": 0,
+      "is_neutral": true,
+      "expected_neutral": true,
+      "ok": true
+    },
+    {
+      "name": "O",
+      "kind": "neutral",
+      "protons": 8,
+      "electrons": 8,
+      "charge": 0,
+      "is_neutral": true,
+      "expected_neutral": true,
+      "ok": true
+    },
+    {
+      "name": "Fe",
+      "kind": "neutral",
+      "protons": 26,
+      "electrons": 26,
+      "charge": 0,
+      "is_neutral": true,
+      "expected_neutral": true,
+      "ok": true
+    },
+    {
+      "name": "U",
+      "kind": "neutral",
+      "protons": 92,
+      "electrons": 92,
+      "charge": 0,
+      "is_neutral": true,
+      "expected_neutral": true,
+      "ok": true
+    },
+    {
+      "name": "Fe2+",
+      "kind": "ion",
+      "protons": 26,
+      "electrons": 24,
+      "charge": 2,
+      "is_neutral": false,
+      "expected_neutral": false,
+      "ok": true
+    },
+    {
+      "name": "Fe3+",
+      "kind": "ion",
+      "protons": 26,
+      "electrons": 23,
+      "charge": 3,
+      "is_neutral": false,
+      "expected_neutral": false,
+      "ok": true
+    },
+    {
+      "name": "O2-",
+      "kind": "ion",
+      "protons": 8,
+      "electrons": 10,
+      "charge": -2,
+      "is_neutral": false,
+      "expected_neutral": false,
+      "ok": true
+    },
+    {
+      "name": "Na+",
+      "kind": "ion",
+      "protons": 11,
+      "electrons": 10,
+      "charge": 1,
+      "is_neutral": false,
+      "expected_neutral": false,
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260509-232337Z",
+  "verdict": "supported",
+  "equivalent": true,
+  "tolerance": 0.1,
+  "families": {
+    "boron_full": {
+      "series": [
+        "B",
+        "Al",
+        "Ga",
+        "In",
+        "Tl"
+      ],
+      "baseline_nrmse": 0.171891992523221,
+      "geometric_nrmse": 0.10720285660734648,
+      "energetic_nrmse": 0.07666670044068224,
+      "geometric_gain": 0.06468913591587451,
+      "energetic_gain": 0.09522529208253874,
+      "gain_gap": 0.030536156166664233,
+      "equivalent": true
+    },
+    "boron_repaired_core": {
+      "series": [
+        "B",
+        "Al",
+        "In"
+      ],
+      "baseline_nrmse": 0.2536358388939589,
+      "geometric_nrmse": 1.0814731566281723e-14,
+      "energetic_nrmse": 1.3079862137333614e-15,
+      "geometric_gain": 0.2536358388939481,
+      "energetic_gain": 0.2536358388939576,
+      "gain_gap": 9.492406860545088e-15,
+      "equivalent": true
+    },
+    "boron_edge_trimmed": {
+      "series": [
+        "B",
+        "Al",
+        "Ga",
+        "In"
+      ],
+      "baseline_nrmse": 0.22331264704155948,
+      "geometric_nrmse": 0.11612926784711741,
+      "energetic_nrmse": 0.07255132391382763,
+      "geometric_gain": 0.10718337919444207,
+      "energetic_gain": 0.15076132312773186,
+      "gain_gap": 0.04357794393328979,
+      "equivalent": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "20260510-204500Z",
+  "familyname": "tetrel_d1d2_test",
+  "family_name": "tetrel_d1d2_test",
+  "family": [
+    {"symbol": "C", "name": "Carbon", "I": 11.2603, "r": 67.0, "n": 2},
+    {"symbol": "Si", "name": "Silicon", "I": 8.1517, "r": 111.0, "n": 3},
+    {"symbol": "Ge", "name": "Germanium", "I": 7.8994, "r": 125.0, "n": 4},
+    {"symbol": "Sn", "name": "Tin", "I": 7.3439, "r": 145.0, "n": 5},
+    {"symbol": "Pb", "name": "Lead", "I": 7.4167, "r": 154.0, "n": 6}
+  ],
+  "observables": {"computed": "D1, D2, D1/D2"},
+  "hypothesis": "D1/D2 reveals the covalent to semi-metal transition",
+  "case_control": "C -> Pb",
+  "expected": {
+    "D1": "monotonic increase",
+    "D2": "monotonic decrease",
+    "D1overD2": "monotonic increase",
+    "family_regime": "semi-metal"
+  }
+}

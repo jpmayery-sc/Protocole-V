@@ -1,0 +1,15 @@
+Isotope check
+timestamp: 20260509-220842Z
+verdict: supported
+identity_ok: True
+mass_varies: True
+stability_differs: True
+same_element_ok: True
+
+Cases:
+- C-12: Z=6 A=12 N=6 stable=True identity_ok=True
+- C-13: Z=6 A=13 N=7 stable=True identity_ok=True
+- C-14: Z=6 A=14 N=8 stable=False identity_ok=True
+- Cl-35: Z=17 A=35 N=18 stable=True identity_ok=True
+- Cl-37: Z=17 A=37 N=20 stable=True identity_ok=True
+- U-238: Z=92 A=238 N=146 stable=False identity_ok=True

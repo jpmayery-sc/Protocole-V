@@ -1,0 +1,76 @@
+Core / valence correction check
+Timestamp: 20260511-130954Z
+
+Hypothese: an explicit core/valence correction reduces radius residuals across representative families
+Cas de controle: baseline radius fit against Z_eff versus corrected fit against [1, Z_eff, l_valence, l_core]
+Observable: radius residuals across representative s, p, d and f families
+Verdict: contradicted
+
+Famille:
+- Li (alkali): radius=152.0 pm, ie=5.3917 eV, zeff=1.259283, l_valence=0.0, l_core=0.0, ratio=1.0
+- Na (alkali): radius=186.0 pm, ie=5.1391 eV, zeff=1.844146, l_valence=0.0, l_core=0.0, ratio=1.0
+- K (alkali): radius=227.0 pm, ie=4.3407 eV, zeff=2.259802, l_valence=0.0, l_core=0.0, ratio=1.0
+- Rb (alkali): radius=248.0 pm, ie=4.1771 eV, zeff=2.771009, l_valence=0.0, l_core=0.0, ratio=1.0
+- Cs (alkali): radius=267.0 pm, ie=3.8939 eV, zeff=3.210511, l_valence=0.0, l_core=0.0, ratio=1.0
+- F (halogen): radius=50.0 pm, ie=17.4228 eV, zeff=2.263703, l_valence=1.0, l_core=0.0, ratio=3.0
+- Cl (halogen): radius=79.0 pm, ie=12.9676 eV, zeff=2.92942, l_valence=1.0, l_core=0.0, ratio=3.0
+- Br (halogen): radius=94.0 pm, ie=11.8138 eV, zeff=3.728081, l_valence=1.0, l_core=0.0, ratio=3.0
+- I (halogen): radius=115.0 pm, ie=10.4513 eV, zeff=4.383144, l_valence=1.0, l_core=0.0, ratio=3.0
+- Sc (transition_3d): radius=162.0 pm, ie=6.5615 eV, zeff=2.778383, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Ti (transition_3d): radius=147.0 pm, ie=6.8281 eV, zeff=2.834265, l_valence=2.0, l_core=1.0, ratio=1.666667
+- V (transition_3d): radius=134.0 pm, ie=6.7462 eV, zeff=2.817216, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Cr (transition_3d): radius=128.0 pm, ie=6.7665 eV, zeff=2.821451, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Mn (transition_3d): radius=127.0 pm, ie=7.4340 eV, zeff=2.957344, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Fe (transition_3d): radius=126.0 pm, ie=7.9024 eV, zeff=3.049089, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Co (transition_3d): radius=125.0 pm, ie=7.8810 eV, zeff=3.044957, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Ni (transition_3d): radius=124.0 pm, ie=7.6398 eV, zeff=2.997999, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Cu (transition_3d): radius=128.0 pm, ie=7.7264 eV, zeff=3.014943, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Zn (transition_3d): radius=134.0 pm, ie=9.3942 eV, zeff=3.324455, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Y (transition_4d): radius=180.0 pm, ie=6.2173 eV, zeff=3.38066, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Zr (transition_4d): radius=155.0 pm, ie=6.6339 eV, zeff=3.492087, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Nb (transition_4d): radius=146.0 pm, ie=6.7589 eV, zeff=3.524833, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Mo (transition_4d): radius=139.0 pm, ie=7.0924 eV, zeff=3.610748, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Tc (transition_4d): radius=136.0 pm, ie=7.2800 eV, zeff=3.65819, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Ru (transition_4d): radius=134.0 pm, ie=7.3605 eV, zeff=3.67836, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Rh (transition_4d): radius=134.0 pm, ie=7.4589 eV, zeff=3.702866, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Pd (transition_4d): radius=137.0 pm, ie=8.3369 eV, zeff=3.914739, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Ag (transition_4d): radius=144.0 pm, ie=7.5762 eV, zeff=3.731868, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Cd (transition_4d): radius=151.0 pm, ie=8.9938 eV, zeff=4.066045, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Hf (transition_5d): radius=159.0 pm, ie=6.8251 eV, zeff=4.250464, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Ta (transition_5d): radius=146.0 pm, ie=7.5496 eV, zeff=4.470373, l_valence=2.0, l_core=1.0, ratio=1.666667
+- W (transition_5d): radius=139.0 pm, ie=7.8640 eV, zeff=4.562507, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Re (transition_5d): radius=137.0 pm, ie=7.8335 eV, zeff=4.553651, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Os (transition_5d): radius=135.0 pm, ie=8.4382 eV, zeff=4.726141, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Ir (transition_5d): radius=136.0 pm, ie=8.9670 eV, zeff=4.871979, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Pt (transition_5d): radius=139.0 pm, ie=8.9588 eV, zeff=4.869751, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Au (transition_5d): radius=144.0 pm, ie=9.2255 eV, zeff=4.941704, l_valence=2.0, l_core=1.0, ratio=1.666667
+- Hg (transition_5d): radius=151.0 pm, ie=10.4375 eV, zeff=5.256299, l_valence=2.0, l_core=1.0, ratio=1.666667
+- La (lanthanide): radius=195.0 pm, ie=5.5770 eV, zeff=3.842219, l_valence=3.0, l_core=2.0, ratio=1.4
+- Ce (lanthanide): radius=185.0 pm, ie=5.5387 eV, zeff=3.829003, l_valence=3.0, l_core=2.0, ratio=1.4
+- Pr (lanthanide): radius=182.0 pm, ie=5.4730 eV, zeff=3.806226, l_valence=3.0, l_core=2.0, ratio=1.4
+- Nd (lanthanide): radius=181.0 pm, ie=5.5250 eV, zeff=3.824265, l_valence=3.0, l_core=2.0, ratio=1.4
+- Sm (lanthanide): radius=180.0 pm, ie=5.6440 eV, zeff=3.86523, l_valence=3.0, l_core=2.0, ratio=1.4
+- Eu (lanthanide): radius=199.0 pm, ie=5.6700 eV, zeff=3.874122, l_valence=3.0, l_core=2.0, ratio=1.4
+- Gd (lanthanide): radius=180.0 pm, ie=6.1500 eV, zeff=4.034775, l_valence=3.0, l_core=2.0, ratio=1.4
+- Tb (lanthanide): radius=178.0 pm, ie=5.8630 eV, zeff=3.939506, l_valence=3.0, l_core=2.0, ratio=1.4
+- Dy (lanthanide): radius=177.0 pm, ie=5.9390 eV, zeff=3.964957, l_valence=3.0, l_core=2.0, ratio=1.4
+- Ho (lanthanide): radius=176.0 pm, ie=6.0220 eV, zeff=3.992567, l_valence=3.0, l_core=2.0, ratio=1.4
+- Er (lanthanide): radius=175.0 pm, ie=6.1080 eV, zeff=4.020974, l_valence=3.0, l_core=2.0, ratio=1.4
+- Tm (lanthanide): radius=174.0 pm, ie=6.1840 eV, zeff=4.045913, l_valence=3.0, l_core=2.0, ratio=1.4
+- Yb (lanthanide): radius=194.0 pm, ie=6.2540 eV, zeff=4.068747, l_valence=3.0, l_core=2.0, ratio=1.4
+- Lu (lanthanide): radius=173.0 pm, ie=5.4280 eV, zeff=3.790546, l_valence=3.0, l_core=2.0, ratio=1.4
+
+Baseline:
+- intercept: 155.616478
+- alpha: -0.255009
+- rmse: 36.963852
+- max_abs_residual: 112.202232
+
+Corrected:
+- intercept: 186.997533
+- alpha: 12.782327
+- beta: -138.896771
+- gamma: 181.693745
+- rmse: 15.979445
+- max_abs_residual: 51.094103
+- corrected_better: True

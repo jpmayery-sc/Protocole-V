@@ -1,0 +1,160 @@
+{
+  "timestamp": "20260509-232619Z",
+  "overall_verdict": "contradicted",
+  "family": [
+    "La",
+    "Ce",
+    "Pr",
+    "Nd",
+    "Sm",
+    "Eu",
+    "Gd",
+    "Tb",
+    "Dy",
+    "Ho",
+    "Er",
+    "Tm",
+    "Yb",
+    "Lu"
+  ],
+  "folds": [
+    {
+      "held_out": "La",
+      "radius": 195.0,
+      "mass_error": 106.40005155832908,
+      "zeff_error": 184.3390543788946,
+      "zeff_star_error": 113.74468247753309,
+      "zeff_star_h_error": 113.74468854073619,
+      "best_model": "mass"
+    },
+    {
+      "held_out": "Ce",
+      "radius": 185.0,
+      "mass_error": 4.613995940667174,
+      "zeff_error": 4.240590359740382,
+      "zeff_star_error": 1.088395371117944,
+      "zeff_star_h_error": 1.088394774034047,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Pr",
+      "radius": 182.0,
+      "mass_error": 30.990557362710266,
+      "zeff_error": 3.3566822933398788,
+      "zeff_star_error": 9.819264213089749,
+      "zeff_star_h_error": 9.819262548817564,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Nd",
+      "radius": 181.0,
+      "mass_error": 28.57790914540378,
+      "zeff_error": 7.15049439353869,
+      "zeff_star_error": 7.656141768920825,
+      "zeff_star_h_error": 7.65613958967471,
+      "best_model": "zeff"
+    },
+    {
+      "held_out": "Sm",
+      "radius": 180.0,
+      "mass_error": 17.937875846630632,
+      "zeff_error": 9.413071531868946,
+      "zeff_star_error": 6.1779699951275795,
+      "zeff_star_h_error": 6.177967070359704,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Eu",
+      "radius": 199.0,
+      "mass_error": 289.15759107096045,
+      "zeff_error": 321.6083658130348,
+      "zeff_star_error": 14.251030134315897,
+      "zeff_star_h_error": 14.251139786933043,
+      "best_model": "zeff_star"
+    },
+    {
+      "held_out": "Gd",
+      "radius": 180.0,
+      "mass_error": 4.3133514454514765,
+      "zeff_error": 0.6242603577662132,
+      "zeff_star_error": 0.08664789852206278,
+      "zeff_star_h_error": 0.08664693411827475,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Tb",
+      "radius": 178.0,
+      "mass_error": 13.967072752537806,
+      "zeff_error": 17.238427665175102,
+      "zeff_star_error": 0.6071455529815165,
+      "zeff_star_h_error": 0.6071439309558622,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Dy",
+      "radius": 177.0,
+      "mass_error": 14.433615435352701,
+      "zeff_error": 24.545569607660752,
+      "zeff_star_error": 0.3707839115405872,
+      "zeff_star_h_error": 0.3707824220384431,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Ho",
+      "radius": 176.0,
+      "mass_error": 17.899052527774533,
+      "zeff_error": 33.98919611405265,
+      "zeff_star_error": 0.1988681548760778,
+      "zeff_star_h_error": 0.19886686529476216,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Er",
+      "radius": 175.0,
+      "mass_error": 22.43586726642828,
+      "zeff_error": 46.91494262364115,
+      "zeff_star_error": 0.07708321936503461,
+      "zeff_star_h_error": 0.07708226309630863,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Tm",
+      "radius": 174.0,
+      "mass_error": 29.85745875194301,
+      "zeff_error": 65.21340621997409,
+      "zeff_star_error": 0.005777216269792585,
+      "zeff_star_h_error": 0.005776905583333613,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Yb",
+      "radius": 194.0,
+      "mass_error": 426.75080890316366,
+      "zeff_error": 330.1003441986525,
+      "zeff_star_error": 14.251395165625901,
+      "zeff_star_h_error": 14.251322302821718,
+      "best_model": "zeff_star_h"
+    },
+    {
+      "held_out": "Lu",
+      "radius": 173.0,
+      "mass_error": 27.257829700726663,
+      "zeff_error": 181.75318776051319,
+      "zeff_star_error": 213.84501989765894,
+      "zeff_star_h_error": 213.8451987088982,
+      "best_model": "mass"
+    }
+  ],
+  "summary": {
+    "mass_rmse": 8.596481995178856,
+    "zeff_rmse": 9.375071783793189,
+    "zeff_star_rmse": 5.22480488341735,
+    "zeff_star_h_rmse": 5.224806302926195,
+    "best_model": "zeff_star"
+  },
+  "hypothesis": "leave-one-out on lanthanides is best explained by Zeff*+H rather than mass or raw Zeff",
+  "case_control": "full La -> Lu family with each element held out once",
+  "observable": "held-out radius prediction error across four model classes",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_lanthanide_loo_check_20260509-232619Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_lanthanide_loo_check_20260509-232619Z.txt"
+}

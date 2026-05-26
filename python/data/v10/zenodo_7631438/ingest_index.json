@@ -1,0 +1,148 @@
+{
+  "source_id": "zenodo-7631438",
+  "title": "A photonic entanglement filter with Rydberg atoms",
+  "record_url": "https://zenodo.org/records/7631438",
+  "doi": "10.5281/zenodo.7631438",
+  "license": "CC BY 4.0",
+  "ingested_at": "2026-05-13",
+  "status": "partial",
+  "fit_for_v10": "bridge_and_control",
+  "platform": "photonic entanglement filter with Rydberg atoms",
+  "raw_files": [
+    {
+      "name": "raw/Figure2_data.xlsx",
+      "sheet_count": 4,
+      "role": "population_and_density_matrices"
+    },
+    {
+      "name": "raw/Figure3_data.xlsx",
+      "sheet_count": 1,
+      "role": "arbitrary_input_fidelity"
+    },
+    {
+      "name": "raw/Figure4_data.xlsx",
+      "sheet_count": 2,
+      "role": "time_resolved_output_fidelity"
+    },
+    {
+      "name": "raw/Figure5_data.xlsx",
+      "sheet_count": 3,
+      "role": "fidelity_and_dissipative_evolution"
+    }
+  ],
+  "extracted_tables": {
+    "figure2_population_input": [
+      ["P_HH", 0.2499, 0.003],
+      ["P_HV", 0.2525, 0.003],
+      ["P_VH", 0.2456, 0.003],
+      ["P_VV", 0.252, 0.003]
+    ],
+    "figure2_population_output": [
+      ["P_HH", 0.0015, 0.00084],
+      ["P_HV", 0.5027, 0.0078],
+      ["P_VH", 0.493, 0.0078],
+      ["P_VV", 0.0029, 0.0012]
+    ],
+    "figure2_density_matrix_input_real": [
+      [0.25895713, 0.23744934, 0.26415599, 0.24337455],
+      [0.23744934, 0.2238068, 0.24576393, 0.23146355],
+      [0.26415599, 0.24576393, 0.27282289, 0.25538019],
+      [0.24337455, 0.23146355, 0.25538019, 0.24441318]
+    ],
+    "figure2_density_matrix_output_real": [
+      [0.00461265, 0.024742, 0.02102309, 0.00564558],
+      [0.024742, 0.49131395, 0.49057228, 0.02045673],
+      [0.02102309, 0.49057228, 0.49650006, 0.01467177],
+      [0.00564558, 0.02045673, 0.01467177, 0.00757334]
+    ],
+    "figure3_arbitrary_input_fidelity": {
+      "input": [
+        [0.1853, 0.07, 0.012],
+        [0.3908, 0.236, 0.015],
+        [0.586, 0.394, 0.006],
+        [0.7685, 0.482, 0.01],
+        [1.0023, 0.493, 0.007]
+      ],
+      "output": [
+        [0.1853, 0.955, 0.022],
+        [0.3908, 0.978, 0.014],
+        [0.586, 0.976, 0.011],
+        [0.7685, 0.982, 0.01],
+        [1.0023, 0.988, 0.005]
+      ]
+    },
+    "figure4_fidelity_vs_time": {
+      "n47": [
+        [0.2, 0.44, 0.045],
+        [0.5, 0.332, 0.04],
+        [1.0, 0.243, 0.034],
+        [2.0, 0.111, 0.018],
+        [3.0, 0.075, 0.02],
+        [4.0, 0.037, 0.017]
+      ],
+      "n55": [
+        [0.2, 0.26, 0.081],
+        [0.5, 0.177, 0.064],
+        [1.0, 0.085, 0.044],
+        [2.0, 0.048, 0.035],
+        [2.8, 0.028, 0.02]
+      ]
+    },
+    "figure5_fidelity_vs_time": {
+      "n47": [
+        [0.2, 0.681, 0.017],
+        [0.5, 0.772, 0.02],
+        [1.0, 0.81, 0.024],
+        [2.0, 0.88, 0.024],
+        [3.0, 0.93, 0.022],
+        [4.0, 0.951, 0.017]
+      ],
+      "n55": [
+        [0.2, 0.811, 0.034],
+        [0.5, 0.859, 0.032],
+        [1.0, 0.891, 0.03],
+        [2.0, 0.967, 0.022],
+        [2.8, 0.978, 0.015]
+      ]
+    },
+    "figure5_dissipative_evolution_real": {
+      "input": [
+        [0.26462126, 0.24911751, 0.24624201, 0.24395996],
+        [0.24911751, 0.24277738, 0.24441444, 0.23378716],
+        [0.24624201, 0.24441444, 0.25736731, 0.24187857],
+        [0.24395996, 0.23378716, 0.24187857, 0.23523405]
+      ],
+      "t_0_2_us": [
+        [0.15424051, 0.22138474, 0.21277438, 0.12345637],
+        [0.22138474, 0.36810839, 0.33354837, 0.1956649],
+        [0.21277438, 0.33354837, 0.32619693, 0.16062758],
+        [0.12345637, 0.1956649, 0.16062758, 0.15145416]
+      ],
+      "t_1_0_us": [
+        [0.07155087, 0.12222589, 0.12078446, 0.03480564],
+        [0.12222589, 0.37130125, 0.39457231, 0.09826362],
+        [0.12078446, 0.39457231, 0.44104011, 0.13551937],
+        [0.03480564, 0.09826362, 0.13551937, 0.11610777]
+      ],
+      "t_4_0_us": [
+        [0.00881768, 0.04558643, 0.05402763, 0.01020627],
+        [0.04558643, 0.41471723, 0.46198574, 0.02798813],
+        [0.05402763, 0.46198574, 0.54090969, 0.03806011],
+        [0.01020627, 0.02798813, 0.03806011, 0.0355554]
+      ]
+    }
+  },
+  "derived_summary": {
+    "figure2_input_population_span": [0.2456, 0.2525],
+    "figure2_output_population_span": [0.0015, 0.5027],
+    "figure3_output_fidelity_span": [0.955, 0.988],
+    "figure4_fidelity_trend": "decreasing with time for n=47 and n=55",
+    "figure5_fidelity_trend": "increasing with time for n=47 and n=55",
+    "figure5b_coherence_focus": "population and coherence move from a diffuse input matrix toward a high-fidelity filtered output over time"
+  },
+  "notes": [
+    "This source is useful as a photonic/atomic bridge for V10 control logic.",
+    "It is not a direct material-frequency transport source, so material remains null in any normalized trial rows.",
+    "Raw files were downloaded from Zenodo and should remain immutable."
+  ]
+}

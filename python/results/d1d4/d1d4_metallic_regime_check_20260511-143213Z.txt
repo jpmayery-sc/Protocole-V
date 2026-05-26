@@ -1,0 +1,12 @@
+D1/D4 metallic regime check
+timestamp: 20260511-143213Z
+verdict: supported
+pressure_scaling_ok: True
+d1_dominates_ok: True
+fermi_window_ok: True
+nonzero_ok: True
+
+Cases:
+- Al: n_e=3.000e+28 D1=1.990274 D4_balance=1.408244 D4_pressure=6.768765e+09 domination_ok=True window_ok=False
+- Fe: n_e=5.000e+28 D1=3.049089 D4_balance=1.979598 D4_pressure=1.585833e+10 domination_ok=True window_ok=False
+- Cu: n_e=7.000e+28 D1=3.014943 D4_balance=2.477397 D4_pressure=2.778459e+10 domination_ok=True window_ok=True

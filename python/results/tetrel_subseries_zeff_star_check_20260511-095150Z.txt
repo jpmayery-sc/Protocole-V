@@ -1,0 +1,37 @@
+Tetrel subseries Zeff* check
+Timestamp: 20260511-095150Z
+
+Hypothese: using Zeff* as the fine subseries variable keeps both tetrel subseries regular and improves over mass and raw Zeff
+Cas de controle: C -> Si -> Ge versus Ge -> Sn -> Pb, with radius compared against mass, raw Zeff, Zeff*, and [1, Zeff*, k, L]
+Observable: subseries fit quality, monotonicity, and pivot consistency at Ge
+Verdict: supported
+
+Sous-serie legere C -> Ge:
+- mass_rmse: 13.021568
+- zeff_rmse: 9.501792
+- zeff_star_rmse: 9.238054
+- corrected_rmse: 0.003144
+- zeff_star_trend: increasing
+- ionization_trend: decreasing
+
+Sous-serie lourde Ge -> Pb:
+- mass_rmse: 4.670225
+- zeff_rmse: 3.235367
+- zeff_star_rmse: 3.143596
+- corrected_rmse: 0.000134
+- zeff_star_trend: increasing
+- ionization_trend: mixed
+
+Criteres:
+- zeff_star_better_light: True
+- zeff_star_better_heavy: True
+- corrected_better_light: True
+- corrected_better_heavy: True
+- radius_ok: True
+- ionization_ok: True
+
+Falsificateurs:
+- one of the subseries is not monotone in radius or Zeff*
+- Zeff* does not improve on both mass and raw Zeff in the light core
+- Zeff* does not improve on both mass and raw Zeff in the heavy tail
+- the corrected fit [1, Zeff*, k, L] does not match or improve the Zeff* baseline

@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260509-224857Z",
+  "verdict": "supported",
+  "radius_global_ok": true,
+  "ie_global_ok": true,
+  "local_breaks_ok": true,
+  "increasing_steps": 5,
+  "decreasing_steps": 2,
+  "b_dip_ok": true,
+  "o_dip_ok": true,
+  "cases": [
+    {
+      "name": "Li",
+      "atomic_radius_pm": 152,
+      "first_ie_ev": 5.39
+    },
+    {
+      "name": "Be",
+      "atomic_radius_pm": 112,
+      "first_ie_ev": 9.32
+    },
+    {
+      "name": "B",
+      "atomic_radius_pm": 85,
+      "first_ie_ev": 8.3
+    },
+    {
+      "name": "C",
+      "atomic_radius_pm": 70,
+      "first_ie_ev": 11.26
+    },
+    {
+      "name": "N",
+      "atomic_radius_pm": 65,
+      "first_ie_ev": 14.53
+    },
+    {
+      "name": "O",
+      "atomic_radius_pm": 60,
+      "first_ie_ev": 13.62
+    },
+    {
+      "name": "F",
+      "atomic_radius_pm": 50,
+      "first_ie_ev": 17.42
+    },
+    {
+      "name": "Ne",
+      "atomic_radius_pm": 38,
+      "first_ie_ev": 21.56
+    }
+  ]
+}

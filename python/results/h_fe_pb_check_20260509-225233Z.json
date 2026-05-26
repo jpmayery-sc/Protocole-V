@@ -1,0 +1,43 @@
+{
+  "timestamp": "20260509-225233Z",
+  "verdict": "supported",
+  "minimal_ok": true,
+  "balance_ok": true,
+  "heavy_ok": true,
+  "order_ok": true,
+  "cases": [
+    {
+      "name": "H-1",
+      "label": "H",
+      "protons": 1,
+      "neutrons": 0,
+      "electrons": 1,
+      "charge": 0,
+      "neutron_to_proton": 0.0,
+      "balance_distance": 1.0,
+      "neutral": true
+    },
+    {
+      "name": "Fe-56",
+      "label": "Fe",
+      "protons": 26,
+      "neutrons": 30,
+      "electrons": 26,
+      "charge": 0,
+      "neutron_to_proton": 1.1538461538461537,
+      "balance_distance": 0.15384615384615374,
+      "neutral": true
+    },
+    {
+      "name": "Pb-208",
+      "label": "Pb",
+      "protons": 82,
+      "neutrons": 126,
+      "electrons": 82,
+      "charge": 0,
+      "neutron_to_proton": 1.5365853658536586,
+      "balance_distance": 0.5365853658536586,
+      "neutral": true
+    }
+  ]
+}

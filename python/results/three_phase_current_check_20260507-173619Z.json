@@ -1,0 +1,82 @@
+{
+  "timestamp": "20260507-173619Z",
+  "verdict": "supported",
+  "balanced_sum_ok": true,
+  "balanced_power_ok": true,
+  "unbalanced_neutral_ok": true,
+  "unbalanced_power_ok": true,
+  "cut_symmetry_ok": true,
+  "phase_offsets_ok": true,
+  "cases": {
+    "balanced": {
+      "name": "balanced",
+      "amplitudes": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phase_offsets_deg": [
+        0.0,
+        -119.99999999999999,
+        119.99999999999999
+      ],
+      "phase_rms": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "sum_rms": 3.5985593482803797e-16,
+      "neutral_rms": 3.5985593482803797e-16,
+      "power_mean": 1.5,
+      "power_stdev": 4.047620850510696e-16,
+      "power_cv": 2.698413900340464e-16
+    },
+    "unbalanced": {
+      "name": "unbalanced",
+      "amplitudes": [
+        1.0,
+        0.85,
+        1.15
+      ],
+      "phase_offsets_deg": [
+        0.0,
+        -119.99999999999999,
+        119.99999999999999
+      ],
+      "phase_rms": [
+        0.7071067811865476,
+        0.6010407640085653,
+        0.8131727983645296
+      ],
+      "sum_rms": 0.18371173070873834,
+      "neutral_rms": 0.18371173070873834,
+      "power_mean": 1.5225,
+      "power_stdev": 0.1838838797991819,
+      "power_cv": 0.12077758935906857
+    },
+    "phase_cut": {
+      "name": "phase_cut",
+      "amplitudes": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "phase_offsets_deg": [
+        0.0,
+        -119.99999999999999,
+        119.99999999999999
+      ],
+      "phase_rms": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "sum_rms": 0.7071067811865476,
+      "neutral_rms": 0.7071067811865476,
+      "power_mean": 1.0,
+      "power_stdev": 0.3535533905932736,
+      "power_cv": 0.3535533905932736
+    }
+  },
+  "samples": 720
+}

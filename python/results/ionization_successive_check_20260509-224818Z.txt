@@ -1,0 +1,11 @@
+Ionization successive check
+timestamp: 20260509-224818Z
+verdict: supported
+monotonic_ok: True
+shell_jump_ok: True
+nucleus_fixed_ok: True
+
+Cases:
+- Na: Z=11 energies=[5.1391, 47.2860] monotonic=True largest_jump=9.201 ratios=[9.201]
+- Mg: Z=12 energies=[7.6462, 15.0350, 80.1430] monotonic=True largest_jump=5.330 ratios=[1.966, 5.330]
+- Al: Z=13 energies=[5.9858, 18.8280, 28.4470] monotonic=True largest_jump=3.145 ratios=[3.145, 1.511]

@@ -1,0 +1,23 @@
+{
+  "suite": "opening_protocol",
+  "timestamp": "20260511-001635Z",
+  "overall_verdict": "supported",
+  "supported_count": 2,
+  "total": 2,
+  "items": [
+    {
+      "label": "opening_protocol",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\opening_protocol_check_20260511-001633Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\opening_protocol_check_20260511-001633Z.txt"
+    },
+    {
+      "label": "leave_one_out_collapse",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\leave_one_out_collapse_20260511-001634Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\leave_one_out_collapse_20260511-001634Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\opening_protocol\\opening_protocol_suite_summary_20260511-001635Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\opening_protocol\\opening_protocol_suite_summary_20260511-001635Z.txt"
+}

@@ -1,0 +1,105 @@
+{
+  "timestamp": "20260509-122547Z",
+  "verdict": "supported",
+  "augmented_better": true,
+  "monotone_radius": true,
+  "monotone_zeff": true,
+  "monotone_augmented": true,
+  "baseline": {
+    "fit": {
+      "slope": 30.950310042539684,
+      "intercept": 25.71663814981669
+    },
+    "predicted": [
+      82.04155068566118,
+      97.60207206779297,
+      120.06896042958013,
+      139.43456439629603,
+      162.8528524206697
+    ],
+    "rmse": 10.386673582934117
+  },
+  "augmented": {
+    "fit": {
+      "slope": 15.160589052119429,
+      "intercept": 49.460486785339924
+    },
+    "predicted": [
+      77.05048026775864,
+      98.31712049327197,
+      122.96675079151062,
+      146.09725904596996,
+      157.5683894014889
+    ],
+    "rmse": 7.4825005028163085,
+    "augmented_axis": [
+      1.8198497029085867,
+      3.222607877568053,
+      4.848509761294178,
+      6.374209598875735,
+      7.130851066834744
+    ]
+  },
+  "hypothesis": "for the tetrel family, adding the local L regime to Z_eff reduces radius residuals",
+  "case_control": "baseline Z_eff fit versus augmented Z_eff_star = Z_eff + a*k + b*L",
+  "observable": "radius residuals on the tetrel family",
+  "family": [
+    {
+      "symbol": "C",
+      "name": "Carbon",
+      "period": 2,
+      "mass_u": 12.011,
+      "radius_pm": 67.0,
+      "ionization_ev": 11.2603,
+      "k": 0.0,
+      "L": 0.0,
+      "zeff_proxy": 1.81985
+    },
+    {
+      "symbol": "Si",
+      "name": "Silicon",
+      "period": 3,
+      "mass_u": 28.085,
+      "radius_pm": 111.0,
+      "ionization_ev": 8.1517,
+      "k": 0.0,
+      "L": 1.0,
+      "zeff_proxy": 2.322608
+    },
+    {
+      "symbol": "Ge",
+      "name": "Germanium",
+      "period": 4,
+      "mass_u": 72.63,
+      "radius_pm": 125.0,
+      "ionization_ev": 7.8994,
+      "k": 0.0,
+      "L": 2.0,
+      "zeff_proxy": 3.04851
+    },
+    {
+      "symbol": "Sn",
+      "name": "Tin",
+      "period": 5,
+      "mass_u": 118.71,
+      "radius_pm": 145.0,
+      "ionization_ev": 7.3439,
+      "k": 0.0,
+      "L": 3.0,
+      "zeff_proxy": 3.67421
+    },
+    {
+      "symbol": "Pb",
+      "name": "Lead",
+      "period": 6,
+      "mass_u": 207.2,
+      "radius_pm": 154.0,
+      "ionization_ev": 7.4167,
+      "k": 0.0,
+      "L": 3.0,
+      "zeff_proxy": 4.430851
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_k_l_correction_check_20260509-122547Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_k_l_correction_check_20260509-122547Z.txt"
+}

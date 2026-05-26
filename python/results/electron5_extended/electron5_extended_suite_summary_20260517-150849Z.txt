@@ -1,0 +1,9 @@
+Electron-5 extended suite summary
+timestamp: 20260517-150849Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- quartz_d2_coherence: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_extended\quartz_d2_coherence_check_20260517-150849Z.json
+- quartz_gluon_zeff_separation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_extended\quartz_gluon_zeff_separation_check_20260517-150849Z.json
+- fine_variation_equivalence: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_extended\fine_variation_equivalence_check_20260517-150849Z.json

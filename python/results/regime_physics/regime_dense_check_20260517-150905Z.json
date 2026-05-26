@@ -1,0 +1,130 @@
+{
+  "timestamp": "20260517-150905Z",
+  "suite": "regime_physics",
+  "regime": "dense",
+  "verdict": "supported",
+  "hypothesis": "Dense matter admits a local D1 ~= D4 balance that moves continuously with density",
+  "case_control": "Pb-like dense reference probed below, at, and above the balance density",
+  "observable": "D1_proxy versus D4_balance and the density-driven crossover",
+  "checks": [
+    "D1 and D4 cross locally",
+    "pressure scales as n_e^(5/3)",
+    "launcher routes dense cases to D1 + D4"
+  ],
+  "launcher_ok": true,
+  "scaling_ok": true,
+  "balance_ok": true,
+  "regime_switch_ok": true,
+  "continuity_ok": true,
+  "reference_case": {
+    "symbol": "Pb",
+    "ionization_ev": 7.4167,
+    "principal_n": 6.0,
+    "D1_proxy": 4.430851066834744,
+    "balance_density_m3": 1.6743079395683674e+29
+  },
+  "cases": [
+    {
+      "label": "ultra_dense_low",
+      "electron_density_m3": 1.0464424622302296e+28,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 1169947153.4088783,
+      "D4_balance_ev": 0.6978153160067794,
+      "balance_gap": 3.7330357508279643,
+      "launcher_grid": "D1 + D4",
+      "ok_low": true,
+      "ok_mid": false,
+      "ok_high": false
+    },
+    {
+      "label": "deep_dense_low",
+      "electron_density_m3": 2.092884924460459e+28,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 3714350684.136908,
+      "D4_balance_ev": 1.1077127667086832,
+      "balance_gap": 3.32313830012606,
+      "launcher_grid": "D1 + D4",
+      "ok_low": true,
+      "ok_mid": false,
+      "ok_high": false
+    },
+    {
+      "label": "dense_low",
+      "electron_density_m3": 8.371539697841837e+28,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 37438308909.084114,
+      "D4_balance_ev": 2.7912612640271175,
+      "balance_gap": 1.6395898028076261,
+      "launcher_grid": "D1 + D4",
+      "ok_low": true,
+      "ok_mid": false,
+      "ok_high": false
+    },
+    {
+      "label": "balance",
+      "electron_density_m3": 1.6743079395683674e+29,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 118859221892.38107,
+      "D4_balance_ev": 4.430851066834732,
+      "balance_gap": 1.1546319456101628e-14,
+      "launcher_grid": "D1 + D4",
+      "ok_low": true,
+      "ok_mid": true,
+      "ok_high": false
+    },
+    {
+      "label": "dense_high",
+      "electron_density_m3": 3.348615879136735e+29,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 377354507736.17474,
+      "D4_balance_ev": 7.033537644607873,
+      "balance_gap": 2.602686577773129,
+      "launcher_grid": "D1 + D4",
+      "ok_low": false,
+      "ok_mid": false,
+      "ok_high": true
+    },
+    {
+      "label": "deep_dense_high",
+      "electron_density_m3": 1.339446351654694e+30,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 3803495100556.195,
+      "D4_balance_ev": 17.72340426733893,
+      "balance_gap": 13.292553200504184,
+      "launcher_grid": "D1 + D4",
+      "ok_low": false,
+      "ok_mid": false,
+      "ok_high": true
+    },
+    {
+      "label": "ultra_dense_high",
+      "electron_density_m3": 2.678892703309388e+30,
+      "D1_proxy": 4.430851066834744,
+      "D4_pressure_pa": 12075344247557.594,
+      "D4_balance_ev": 28.134150578431488,
+      "balance_gap": 23.703299511596743,
+      "launcher_grid": "D1 + D4",
+      "ok_low": false,
+      "ok_mid": false,
+      "ok_high": true
+    }
+  ],
+  "pressure_ratios": [
+    3.174802103936399,
+    10.079368399158987,
+    3.1748021039363987,
+    3.174802103936399,
+    10.079368399158986,
+    3.174802103936399
+  ],
+  "expected_pressure_ratios": [
+    3.174802103936399,
+    10.079368399158986,
+    3.174802103936399,
+    3.174802103936399,
+    10.079368399158986,
+    3.174802103936399
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260517-150905Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260517-150905Z.txt"
+}

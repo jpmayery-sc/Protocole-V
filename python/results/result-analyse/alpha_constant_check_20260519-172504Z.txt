@@ -1,0 +1,10 @@
+Alpha constant check
+timestamp: 20260519-172504Z
+verdict: falsifie
+exact_inverse: 137.000000000000
+reference_inverse: 137.035999084000
+absolute_error: 0.035999084000
+relative_error: 2.626980e-04
+exact_claim_ok: False
+mnemonic_claim_ok: True
+strict_mnemonic_ok: False

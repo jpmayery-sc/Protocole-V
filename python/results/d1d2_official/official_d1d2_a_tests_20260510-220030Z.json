@@ -1,0 +1,560 @@
+{
+  "timestamp": "20260510-220030Z",
+  "suite": "A",
+  "title": "Tests intra-famille D1/D2",
+  "verdict": "contradicted",
+  "tests": [
+    {
+      "family": [
+        {
+          "symbol": "C",
+          "name": "Carbon",
+          "I": 11.2603,
+          "r": 67.0,
+          "n": 2.0,
+          "D1": 1.81985,
+          "D2": 0.168064,
+          "D1overD2": 10.828302,
+          "regime": "covalent"
+        },
+        {
+          "symbol": "Si",
+          "name": "Silicon",
+          "I": 8.1517,
+          "r": 111.0,
+          "n": 3.0,
+          "D1": 2.322608,
+          "D2": 0.073439,
+          "D1overD2": 31.626467,
+          "regime": "transition"
+        },
+        {
+          "symbol": "Ge",
+          "name": "Germanium",
+          "I": 7.8994,
+          "r": 125.0,
+          "n": 4.0,
+          "D1": 3.04851,
+          "D2": 0.063195,
+          "D1overD2": 48.239578,
+          "regime": "transition"
+        },
+        {
+          "symbol": "Sn",
+          "name": "Tin",
+          "I": 7.3439,
+          "r": 145.0,
+          "n": 5.0,
+          "D1": 3.67421,
+          "D2": 0.050648,
+          "D1overD2": 72.544614,
+          "regime": "semi-metal"
+        },
+        {
+          "symbol": "Pb",
+          "name": "Lead",
+          "I": 7.4167,
+          "r": 154.0,
+          "n": 6.0,
+          "D1": 4.430851,
+          "D2": 0.04816,
+          "D1overD2": 92.001977,
+          "regime": "semi-metal"
+        }
+      ],
+      "observables": {
+        "D1_values": [
+          1.8198497029085867,
+          2.322607877568053,
+          3.0485097612941776,
+          3.6742095988757346,
+          4.430851066834744
+        ],
+        "D2_values": [
+          0.16806417910447763,
+          0.07343873873873874,
+          0.06319519999999999,
+          0.05064758620689655,
+          0.048160389610389605
+        ],
+        "D1overD2_values": [
+          10.828302096291866,
+          31.62646741293888,
+          48.23957770992382,
+          72.54461414738512,
+          92.00197719909806
+        ],
+        "D1_trend": "increasing",
+        "D2_trend": "decreasing",
+        "D1overD2_trend": "increasing",
+        "D1overD2_superlinear": false,
+        "family_regime": "semi-metal",
+        "family_regime_thresholds": {
+          "covalent": 30,
+          "transition": 50,
+          "semi_metal": 100
+        }
+      },
+      "expected": {
+        "D1": "increasing",
+        "D2": "decreasing",
+        "D1overD2": "super-linear increase",
+        "family_regime": "semi-metal"
+      },
+      "checks": {
+        "D1": true,
+        "D2": true,
+        "D1overD2": false,
+        "family_regime": true
+      },
+      "verdict": "contradicted"
+    },
+    {
+      "family": [
+        {
+          "symbol": "N",
+          "name": "Nitrogen",
+          "I": 14.5341,
+          "r": 56.0,
+          "n": 2.0,
+          "D1": 2.067543,
+          "D2": 0.259538,
+          "D1overD2": 7.96626,
+          "regime": "covalent"
+        },
+        {
+          "symbol": "P",
+          "name": "Phosphorus",
+          "I": 10.4867,
+          "r": 98.0,
+          "n": 3.0,
+          "D1": 2.634336,
+          "D2": 0.107007,
+          "D1overD2": 24.618322,
+          "regime": "covalent"
+        },
+        {
+          "symbol": "As",
+          "name": "Arsenic",
+          "I": 9.8152,
+          "r": 114.0,
+          "n": 4.0,
+          "D1": 3.398131,
+          "D2": 0.086098,
+          "D1overD2": 39.468063,
+          "regime": "transition"
+        },
+        {
+          "symbol": "Sb",
+          "name": "Antimony",
+          "I": 8.6084,
+          "r": 133.0,
+          "n": 5.0,
+          "D1": 3.977972,
+          "D2": 0.064725,
+          "D1overD2": 61.459776,
+          "regime": "semi-metal"
+        },
+        {
+          "symbol": "Bi",
+          "name": "Bismuth",
+          "I": 7.2856,
+          "r": 148.0,
+          "n": 6.0,
+          "D1": 4.391516,
+          "D2": 0.049227,
+          "D1overD2": 89.209448,
+          "regime": "semi-metal"
+        }
+      ],
+      "observables": {
+        "D1_values": [
+          2.0675432992122915,
+          2.6343363378992577,
+          3.39813097417493,
+          3.9779724365413034,
+          4.39151588460134
+        ],
+        "D2_values": [
+          0.25953750000000003,
+          0.10700714285714287,
+          0.08609824561403509,
+          0.06472481203007519,
+          0.049227027027027026
+        ],
+        "D1overD2_values": [
+          7.966260363963941,
+          24.618322362051668,
+          39.46806290813657,
+          61.45977580735019,
+          89.20944752951003
+        ],
+        "D1_trend": "increasing",
+        "D2_trend": "decreasing",
+        "D1overD2_trend": "increasing",
+        "D1overD2_superlinear": false,
+        "family_regime": "semi-metal",
+        "family_regime_thresholds": {
+          "covalent": 30,
+          "transition": 50,
+          "semi_metal": 100
+        }
+      },
+      "expected": {
+        "D1": "increasing",
+        "D2": "decreasing",
+        "D1overD2": "super-linear increase",
+        "family_regime": "D3 / topological"
+      },
+      "checks": {
+        "D1": true,
+        "D2": true,
+        "D1overD2": false,
+        "family_regime": false
+      },
+      "verdict": "contradicted"
+    },
+    {
+      "family": [
+        {
+          "symbol": "F",
+          "name": "Fluorine",
+          "I": 17.4228,
+          "r": 64.0,
+          "n": 2.0,
+          "D1": 2.263703,
+          "D2": 0.272231,
+          "D1overD2": 8.315369,
+          "regime": "covalent"
+        },
+        {
+          "symbol": "Cl",
+          "name": "Chlorine",
+          "I": 12.9676,
+          "r": 99.0,
+          "n": 3.0,
+          "D1": 2.92942,
+          "D2": 0.130986,
+          "D1overD2": 22.364397,
+          "regime": "covalent"
+        },
+        {
+          "symbol": "Br",
+          "name": "Bromine",
+          "I": 11.8138,
+          "r": 114.0,
+          "n": 4.0,
+          "D1": 3.728081,
+          "D2": 0.10363,
+          "D1overD2": 35.974982,
+          "regime": "transition"
+        },
+        {
+          "symbol": "I",
+          "name": "Iodine",
+          "I": 10.4513,
+          "r": 133.0,
+          "n": 5.0,
+          "D1": 4.383144,
+          "D2": 0.078581,
+          "D1overD2": 55.778526,
+          "regime": "semi-metal"
+        },
+        {
+          "symbol": "At",
+          "name": "Astatine",
+          "I": 9.5,
+          "r": 150.0,
+          "n": 6.0,
+          "D1": 5.014684,
+          "D2": 0.063333,
+          "D1overD2": 79.179226,
+          "regime": "semi-metal"
+        }
+      ],
+      "observables": {
+        "D1_values": [
+          2.2637033686365515,
+          2.929419737763778,
+          3.728081039260563,
+          4.383143681127938,
+          5.014684319429231
+        ],
+        "D2_values": [
+          0.27223125,
+          0.13098585858585857,
+          0.10362982456140352,
+          0.0785812030075188,
+          0.06333333333333334
+        ],
+        "D1overD2_values": [
+          8.315369262847494,
+          22.36439696155141,
+          35.97498167191794,
+          55.778526077140235,
+          79.17922609625101
+        ],
+        "D1_trend": "increasing",
+        "D2_trend": "decreasing",
+        "D1overD2_trend": "increasing",
+        "D1overD2_superlinear": false,
+        "family_regime": "semi-metal",
+        "family_regime_thresholds": {
+          "covalent": 30,
+          "transition": 50,
+          "semi_metal": 100
+        }
+      },
+      "expected": {
+        "D1": "increasing",
+        "D2": "decreasing",
+        "D1overD2": "increasing",
+        "family_regime": "covalent"
+      },
+      "checks": {
+        "D1": true,
+        "D2": true,
+        "D1overD2": true,
+        "family_regime": false
+      },
+      "verdict": "contradicted"
+    },
+    {
+      "family": [
+        {
+          "symbol": "La",
+          "name": "Lanthanum",
+          "I": 5.577,
+          "r": 195.0,
+          "n": 6.0,
+          "D1": 3.842219,
+          "D2": 0.0286,
+          "D1overD2": 134.343323,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Ce",
+          "name": "Cerium",
+          "I": 5.5387,
+          "r": 185.0,
+          "n": 6.0,
+          "D1": 3.829003,
+          "D2": 0.029939,
+          "D1overD2": 127.893833,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Pr",
+          "name": "Praseodymium",
+          "I": 5.473,
+          "r": 182.0,
+          "n": 6.0,
+          "D1": 3.806226,
+          "D2": 0.030071,
+          "D1overD2": 126.572821,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Nd",
+          "name": "Neodymium",
+          "I": 5.525,
+          "r": 181.0,
+          "n": 6.0,
+          "D1": 3.824265,
+          "D2": 0.030525,
+          "D1overD2": 125.283602,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Sm",
+          "name": "Samarium",
+          "I": 5.644,
+          "r": 180.0,
+          "n": 6.0,
+          "D1": 3.86523,
+          "D2": 0.031356,
+          "D1overD2": 123.270966,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Eu",
+          "name": "Europium",
+          "I": 5.67,
+          "r": 199.0,
+          "n": 6.0,
+          "D1": 3.874122,
+          "D2": 0.028492,
+          "D1overD2": 135.970077,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Gd",
+          "name": "Gadolinium",
+          "I": 6.15,
+          "r": 180.0,
+          "n": 6.0,
+          "D1": 4.034775,
+          "D2": 0.034167,
+          "D1overD2": 118.090985,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Tb",
+          "name": "Terbium",
+          "I": 5.863,
+          "r": 178.0,
+          "n": 6.0,
+          "D1": 3.939506,
+          "D2": 0.032938,
+          "D1overD2": 119.602939,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Dy",
+          "name": "Dysprosium",
+          "I": 5.939,
+          "r": 177.0,
+          "n": 6.0,
+          "D1": 3.964957,
+          "D2": 0.033554,
+          "D1overD2": 118.167596,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Ho",
+          "name": "Holmium",
+          "I": 6.022,
+          "r": 176.0,
+          "n": 6.0,
+          "D1": 3.992567,
+          "D2": 0.034216,
+          "D1overD2": 116.687434,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Er",
+          "name": "Erbium",
+          "I": 6.108,
+          "r": 175.0,
+          "n": 6.0,
+          "D1": 4.020974,
+          "D2": 0.034903,
+          "D1overD2": 115.204735,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Tm",
+          "name": "Thulium",
+          "I": 6.184,
+          "r": 174.0,
+          "n": 6.0,
+          "D1": 4.045913,
+          "D2": 0.03554,
+          "D1overD2": 113.840371,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Yb",
+          "name": "Ytterbium",
+          "I": 6.254,
+          "r": 194.0,
+          "n": 6.0,
+          "D1": 4.068747,
+          "D2": 0.032237,
+          "D1overD2": 126.213145,
+          "regime": "D3 / topological"
+        },
+        {
+          "symbol": "Lu",
+          "name": "Lutetium",
+          "I": 5.428,
+          "r": 173.0,
+          "n": 6.0,
+          "D1": 3.790546,
+          "D2": 0.031376,
+          "D1overD2": 120.811417,
+          "regime": "D3 / topological"
+        }
+      ],
+      "observables": {
+        "D1_values": [
+          3.8422190279607347,
+          3.8290030955697016,
+          3.806225550486528,
+          3.8242646351945893,
+          3.865229618017538,
+          3.874122291488972,
+          4.034775305355415,
+          3.939505791638457,
+          3.964956790803801,
+          3.9925666225241776,
+          4.020974420972813,
+          4.045912970480938,
+          4.0687474586600905,
+          3.790545514054362
+        ],
+        "D2_values": [
+          0.0286,
+          0.029938918918918922,
+          0.030071428571428572,
+          0.03052486187845304,
+          0.03135555555555555,
+          0.02849246231155779,
+          0.03416666666666667,
+          0.03293820224719101,
+          0.03355367231638418,
+          0.034215909090909095,
+          0.03490285714285714,
+          0.03554022988505747,
+          0.032237113402061854,
+          0.0313757225433526
+        ],
+        "D1overD2_values": [
+          134.34332265596973,
+          127.89383297170721,
+          126.5728211563216,
+          125.28360162356934,
+          123.2709658474764,
+          135.97007689705563,
+          118.09098454698776,
+          119.6029389240398,
+          118.16759588689557,
+          116.68743367058372,
+          115.20473537495782,
+          113.8403714203886,
+          126.21314470419853,
+          120.811417452359
+        ],
+        "D1_trend": "mixed",
+        "D2_trend": "mixed",
+        "D1overD2_trend": "mixed",
+        "D1overD2_superlinear": false,
+        "family_regime": "D3 / topological",
+        "family_regime_thresholds": {
+          "covalent": 30,
+          "transition": 50,
+          "semi_metal": 100
+        }
+      },
+      "expected": {
+        "D1": "mixed",
+        "D2": "mixed",
+        "D1overD2": "mixed",
+        "family_regime": "D3 / topological"
+      },
+      "checks": {
+        "D1": true,
+        "D2": true,
+        "D1overD2": true,
+        "family_regime": true
+      },
+      "verdict": "supported"
+    }
+  ],
+  "summary": {
+    "supported": 1,
+    "total": 4
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_a_tests_20260510-220030Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2_official\\official_d1d2_a_tests_20260510-220030Z.txt"
+}

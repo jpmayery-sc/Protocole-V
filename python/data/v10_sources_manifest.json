@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "status": "partial",
+  "last_updated": "2026-05-13",
+  "purpose": "Curated source base for V10 / ECGP exploration, combining local anchors and web-discovered datasets.",
+  "schema_targets": [
+    "trial_id",
+    "material",
+    "frequency_hz",
+    "measured_fidelity",
+    "control_fidelity",
+    "loss_db",
+    "temperature_k",
+    "geometry",
+    "detector_counts",
+    "provenance"
+  ],
+  "direct_local_sources": [
+    {
+      "id": "hf_transport_manifest",
+      "title": "Normalized HF transport dataset for Cu, Al, Ag, and Fe",
+      "path": "python/data/hf_transport_manifest.json",
+      "status": "ready",
+      "fit_for_v10": "direct",
+      "why": "Provides the material/frequency side of the V10 schema with explicit provenance and normalized real tables.",
+      "usable_fields": ["material", "frequency_hz", "observed transport observable", "uncertainty", "source metadata"],
+      "notes": [
+        "This is the current in-repo transport anchor for V10-style normalization.",
+        "The manifest already references Cu, Al, Ag, and Fe series."
+      ]
+    },
+    {
+      "id": "ecgp_demo_control",
+      "title": "ECGP demo control trials",
+      "path": "python/data/ecgp_trials_demo_control.json",
+      "status": "synthetic",
+      "fit_for_v10": "control_only",
+      "why": "Useful as a structural validator for the bench, but not as evidence for V10 because it is a synthetic control set.",
+      "usable_fields": ["trial_id", "material", "frequency_hz", "measured_fidelity", "control_fidelity", "loss_db", "temperature_k", "geometry"],
+      "notes": [
+        "The latest bench run on this file was rejected, which is expected for a flat demo control.",
+        "Keep this file as a regression control, not as a discovery dataset."
+      ]
+    },
+    {
+      "id": "friction_points_workbook",
+      "title": "ListeDesObservationInexpliquer workbook",
+      "path": "ListeDesObservationInexpliquer.xlsx",
+      "status": "reference",
+      "fit_for_v10": "adjacent",
+      "why": "Contains a curated list of unexplained observational points that can seed discriminant tests, but it is not in the ECGP trial schema.",
+      "usable_fields": ["domain", "observable", "standard explanations", "minimal discriminant test", "systematic risk"],
+      "notes": [
+        "Best used as a hypothesis and test-planning layer above the bench data.",
+        "Not directly ingestible by ecgp_bench without a mapping step."
+      ]
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "zenodo-7313581",
+      "title": "Telecom Quantum Photonic Interface for a 40Ca+ Single-Ion Quantum Memory",
+      "record_url": "https://zenodo.org/records/7313581",
+      "doi": "10.5281/zenodo.7313581",
+      "resource_type": "Journal article",
+      "license": "CC BY 4.0",
+      "fit_for_v10": "ingested_partial",
+      "local_ingest_path": "python/data/v10/zenodo_7313581/ingest_index.json",
+      "local_readme_path": "python/data/v10/zenodo_7313581/README.md",
+      "why": "Contains high-fidelity entanglement under controlled conversion and fiber-loss conditions, with downloadable CSV and measurement files.",
+      "usable_fields": ["entanglement fidelity", "loss / transmission distance", "conversion efficiency", "wavelength / telecom interface"],
+      "files": [
+        "Conversion Efficiency.csv",
+        "converter_entanglement_power_tau_BG.csv",
+        "counts_converter.zip",
+        "counts_converter_20km.zip",
+        "counts_converter_backref.zip",
+        "counts_source.rar",
+        "NoiseRate.csv",
+        "NoiseRateFit.csv"
+      ],
+      "notes": [
+        "Reported entanglement fidelity remains above 95% (98% with background correction).",
+        "This is strong for loss/correction studies but does not expose a material symbol in the same sense as HF transport."
+      ]
+    },
+    {
+      "id": "zenodo-7631438",
+      "title": "A photonic entanglement filter with Rydberg atoms",
+      "record_url": "https://zenodo.org/records/7631438",
+      "doi": "10.5281/zenodo.7631438",
+      "resource_type": "Dataset",
+      "license": "CC BY 4.0",
+      "fit_for_v10": "ingested_partial",
+      "local_ingest_path": "python/data/v10/zenodo_7631438/ingest_index.json",
+      "local_readme_path": "python/data/v10/zenodo_7631438/README.md",
+      "why": "Provides figure data in Excel form and directly targets entanglement filtering with near-unity fidelity.",
+      "usable_fields": ["entanglement fidelity", "input state fidelity", "atomic platform", "noise regime"],
+      "files": [
+        "Figure2_data.xlsx",
+        "Figure3_data.xlsx",
+        "Figure4_data.xlsx",
+        "Figure5_data.xlsx"
+      ],
+      "notes": [
+        "The platform is Rydberg-atom photonics, which is useful as a control-rich entanglement source.",
+        "Raw Excel files were downloaded and locally indexed.",
+        "Best used if V10 is extended to photonic/atomic transfer rather than metal-wire transport alone."
+      ]
+    },
+    {
+      "id": "zenodo-10605186",
+      "title": "Data underpinning Engineering unsteerable quantum states with active feedback",
+      "record_url": "https://zenodo.org/records/10605186",
+      "doi": "10.5281/zenodo.10605186",
+      "resource_type": "Dataset",
+      "license": "CC BY 4.0",
+      "fit_for_v10": "metadata_only",
+      "local_ingest_path": "python/data/v10/zenodo_10605186/ingest_index.json",
+      "local_readme_path": "python/data/v10/zenodo_10605186/README.md",
+      "why": "Large parameterized simulation dataset with target fidelity and repeated runs; useful for testing robustness of fidelity summaries and control logic.",
+      "usable_fields": ["target fidelity F*", "qubit count", "repeated runs", "cost/output traces"],
+      "files": ["data.zip"],
+      "notes": [
+        "The preview exposes structured folders by entangled state, N, and target fidelity.",
+        "This is a strong robustness source, but it is simulation-heavy rather than a direct transport experiment.",
+        "The archive is large enough that this pass records metadata only; the remote archive pointer is preserved in the local index."
+      ]
+    },
+    {
+      "id": "zenodo-5001776",
+      "title": "Data from Photonic hybrid state entanglement swapping using cat state superpositions",
+      "record_url": "https://zenodo.org/records/5001776",
+      "doi": "10.5061/dryad.05qfttf0c",
+      "resource_type": "Dataset",
+      "license": "CC0 1.0",
+      "fit_for_v10": "metadata_only",
+      "local_ingest_path": "python/data/v10/zenodo_5001776/ingest_index.json",
+      "local_readme_path": "python/data/v10/zenodo_5001776/README.md",
+      "why": "Models entanglement fidelity under unequal photonic losses and homodyne imperfections, which is directly relevant to V10 loss-correction logic.",
+      "usable_fields": ["fidelity", "photonic loss", "success probability", "measurement imperfection"],
+      "files": ["Cat_State_ES_Averaged_Unequal_Loss_Imperfect_and_Non-Ideal_Homodyne_01102018.nb"],
+      "notes": [
+        "The dataset is code-driven rather than a simple CSV table.",
+        "Useful if a Mathematica or exported numeric pipeline is added later.",
+        "The notebook has been downloaded locally and indexed as metadata only."
+      ]
+    }
+  ],
+  "normalization_rules": [
+    "Keep raw provenance alongside every normalized row.",
+    "Separate direct experimental values from control or fitted values.",
+    "Use material as the primary platform descriptor only when the source explicitly provides a material or substrate; otherwise store the platform in provenance and keep material null.",
+    "Do not promote simulation-only data to direct experimental status.",
+    "When a source lacks a V10 field, keep it as an adjacent source and map it later."
+  ],
+  "recommended_next_ingest": [
+    "python/data/hf_transport/*.json",
+    "python/data/ecgp_trials_demo_control.json",
+    "external Zenodo records 7631438, 10605186, and 5001776"
+  ]
+}

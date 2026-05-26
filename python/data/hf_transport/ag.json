@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "material": "ag",
+  "status": "real",
+  "source": {
+    "title": "Study of the skin depth in different metallic atoms",
+    "url": "https://doi.org/10.1016/j.matpr.2020.12.715",
+    "reference": "Materials Today: Proceedings, theoretical skin-depth study for gold, copper and silver"
+  },
+  "method": {
+    "kind": "derived_skin_depth",
+    "formula": "delta = sqrt(2 * rho / (omega * mu0 * mu_r))",
+    "assumptions": {
+      "rho_ohm_m": 1.59e-08,
+      "mu_r_eff": 1.0,
+      "mu0_h_per_m": 1.2566370614359173e-06
+    }
+  },
+  "records": [
+    {"frequency_hz": 20, "skin_depth_m": 0.014188, "skin_depth_mm": 14.188, "source_note": "derived from published silver conductivity"},
+    {"frequency_hz": 1000, "skin_depth_m": 0.002005, "skin_depth_mm": 2.005, "source_note": "derived from published silver conductivity"},
+    {"frequency_hz": 10000, "skin_depth_m": 0.000634, "skin_depth_mm": 0.634, "source_note": "derived from published silver conductivity"},
+    {"frequency_hz": 100000, "skin_depth_m": 0.000201, "skin_depth_mm": 0.201, "source_note": "derived from published silver conductivity"},
+    {"frequency_hz": 1000000, "skin_depth_m": 0.0000634, "skin_depth_mm": 0.0634, "source_note": "derived from published silver conductivity"}
+  ],
+  "units": {
+    "frequency_hz": "Hz",
+    "skin_depth_m": "m",
+    "skin_depth_mm": "mm"
+  },
+  "notes": [
+    "Dataset normalised from a published silver skin-depth paper and the standard formula.",
+    "The paper is theoretical, so the record series is computed from published resistivity and permeability assumptions.",
+    "Values are rounded for stable downstream validation."
+  ]
+}

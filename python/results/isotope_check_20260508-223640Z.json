@@ -1,0 +1,64 @@
+{
+  "timestamp": "20260508-223640Z",
+  "verdict": "supported",
+  "identity_ok": true,
+  "mass_varies": true,
+  "stability_differs": true,
+  "same_element_ok": true,
+  "cases": [
+    {
+      "name": "C-12",
+      "element": "C",
+      "atomic_number": 6,
+      "mass_number": 12,
+      "stable": true,
+      "neutron_number": 6,
+      "identity_ok": true
+    },
+    {
+      "name": "C-13",
+      "element": "C",
+      "atomic_number": 6,
+      "mass_number": 13,
+      "stable": true,
+      "neutron_number": 7,
+      "identity_ok": true
+    },
+    {
+      "name": "C-14",
+      "element": "C",
+      "atomic_number": 6,
+      "mass_number": 14,
+      "stable": false,
+      "neutron_number": 8,
+      "identity_ok": true
+    },
+    {
+      "name": "Cl-35",
+      "element": "Cl",
+      "atomic_number": 17,
+      "mass_number": 35,
+      "stable": true,
+      "neutron_number": 18,
+      "identity_ok": true
+    },
+    {
+      "name": "Cl-37",
+      "element": "Cl",
+      "atomic_number": 17,
+      "mass_number": 37,
+      "stable": true,
+      "neutron_number": 20,
+      "identity_ok": true
+    },
+    {
+      "name": "U-238",
+      "element": "U",
+      "atomic_number": 92,
+      "mass_number": 238,
+      "stable": false,
+      "neutron_number": 146,
+      "identity_ok": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Noble gas check
+timestamp: 20260508-223835Z
+verdict: supported
+closed_shell_ok: True
+higher_ie_ok: True
+period_boundary_ok: True
+
+Cases:
+- He: period=1 ie=24.59 previous=H prev_ie=13.6 gap=10.99 closed_shell=True
+- Ne: period=2 ie=21.56 previous=F prev_ie=17.42 gap=4.14 closed_shell=True
+- Ar: period=3 ie=15.76 previous=Cl prev_ie=12.97 gap=2.79 closed_shell=True
+- Kr: period=4 ie=14.0 previous=Br prev_ie=11.81 gap=2.19 closed_shell=True
+- Xe: period=5 ie=12.13 previous=I prev_ie=10.45 gap=1.68 closed_shell=True

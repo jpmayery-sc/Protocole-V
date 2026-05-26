@@ -1,0 +1,242 @@
+{
+  "timestamp": "20260509-222933Z",
+  "verdict": "supported",
+  "corrected_better": true,
+  "monotone_radius": true,
+  "monotone_zeff": true,
+  "baseline": {
+    "fit": {
+      "slope": -12.506265147200008,
+      "intercept": 231.11300459205793
+    },
+    "predicted": [
+      183.0611946747639,
+      183.22647662941364,
+      183.5113386476261,
+      183.2857370712543,
+      182.77341813432,
+      182.66220400201877,
+      180.65303481390822,
+      181.84450061289732,
+      181.52620366907436,
+      181.18090779290975,
+      180.82563233326292,
+      180.51374422072774,
+      180.22817005705863,
+      183.70743734076453
+    ],
+    "residuals": [
+      11.938805325236103,
+      1.7735233705863607,
+      -1.5113386476261041,
+      -2.285737071254289,
+      -2.7734181343199964,
+      16.33779599798123,
+      -0.6530348139082207,
+      -3.8445006128973205,
+      -4.526203669074363,
+      -5.18090779290975,
+      -5.8256323332629165,
+      -6.5137442207277445,
+      13.771829942941366,
+      -10.707437340764528
+    ],
+    "rmse": 7.8876891297609175,
+    "max_abs_residual": 16.33779599798123
+  },
+  "corrected": {
+    "fit": {
+      "intercept": 176.34481105148916,
+      "alpha": 2.799399754474166,
+      "beta": -1.2376601289443876,
+      "gamma": 19.557666230343475
+    },
+    "coefficients": [
+      176.34481105148916,
+      2.799399754474166,
+      -1.2376601289443876,
+      19.557666230343475
+    ],
+    "predicted": [
+      187.1007180549984,
+      185.82606124816343,
+      184.52463766510567,
+      183.33747614546397,
+      182.21449337937617,
+      200.55939362870782,
+      180.2137992769932,
+      178.7094416947407,
+      177.5430290866109,
+      176.3826599138056,
+      175.22452456886347,
+      174.05667740928908,
+      192.44060637129041,
+      170.86648155657906
+    ],
+    "residuals": [
+      7.899281945001604,
+      -0.8260612481634269,
+      -2.524637665105672,
+      -2.3374761454639668,
+      -2.214493379376165,
+      -1.5593936287078236,
+      -0.21379927699319978,
+      -0.7094416947406899,
+      -0.5430290866108862,
+      -0.38265991380561104,
+      -0.2245245688634725,
+      -0.056677409289079606,
+      1.5593936287095858,
+      2.1335184434209395
+    ],
+    "rmse": 2.5394300797004954,
+    "max_abs_residual": 7.899281945001604
+  },
+  "hypothesis": "for the lanthanide family, adding local k and L terms to Z_eff reduces radius residuals",
+  "case_control": "baseline radius fit against Z_eff versus corrected fit against [1, Z_eff, k, L]",
+  "observable": "radius residuals on the lanthanide family",
+  "family": [
+    {
+      "symbol": "La",
+      "period": 6,
+      "mass_u": 138.90547,
+      "radius_pm": 195.0,
+      "ionization_ev": 5.577,
+      "k": 0.0,
+      "L": 0.0,
+      "zeff_proxy": 3.842219
+    },
+    {
+      "symbol": "Ce",
+      "period": 6,
+      "mass_u": 140.116,
+      "radius_pm": 185.0,
+      "ionization_ev": 5.5387,
+      "k": 1.0,
+      "L": 0.0,
+      "zeff_proxy": 3.829003
+    },
+    {
+      "symbol": "Pr",
+      "period": 6,
+      "mass_u": 140.90766,
+      "radius_pm": 182.0,
+      "ionization_ev": 5.473,
+      "k": 2.0,
+      "L": 0.0,
+      "zeff_proxy": 3.806226
+    },
+    {
+      "symbol": "Nd",
+      "period": 6,
+      "mass_u": 144.242,
+      "radius_pm": 181.0,
+      "ionization_ev": 5.525,
+      "k": 3.0,
+      "L": 0.0,
+      "zeff_proxy": 3.824265
+    },
+    {
+      "symbol": "Sm",
+      "period": 6,
+      "mass_u": 150.36,
+      "radius_pm": 180.0,
+      "ionization_ev": 5.644,
+      "k": 4.0,
+      "L": 0.0,
+      "zeff_proxy": 3.86523
+    },
+    {
+      "symbol": "Eu",
+      "period": 6,
+      "mass_u": 151.964,
+      "radius_pm": 199.0,
+      "ionization_ev": 5.67,
+      "k": 5.0,
+      "L": 1.0,
+      "zeff_proxy": 3.874122
+    },
+    {
+      "symbol": "Gd",
+      "period": 6,
+      "mass_u": 157.25,
+      "radius_pm": 180.0,
+      "ionization_ev": 6.15,
+      "k": 6.0,
+      "L": 0.0,
+      "zeff_proxy": 4.034775
+    },
+    {
+      "symbol": "Tb",
+      "period": 6,
+      "mass_u": 158.92535,
+      "radius_pm": 178.0,
+      "ionization_ev": 5.863,
+      "k": 7.0,
+      "L": 0.0,
+      "zeff_proxy": 3.939506
+    },
+    {
+      "symbol": "Dy",
+      "period": 6,
+      "mass_u": 162.5,
+      "radius_pm": 177.0,
+      "ionization_ev": 5.939,
+      "k": 8.0,
+      "L": 0.0,
+      "zeff_proxy": 3.964957
+    },
+    {
+      "symbol": "Ho",
+      "period": 6,
+      "mass_u": 164.93033,
+      "radius_pm": 176.0,
+      "ionization_ev": 6.022,
+      "k": 9.0,
+      "L": 0.0,
+      "zeff_proxy": 3.992567
+    },
+    {
+      "symbol": "Er",
+      "period": 6,
+      "mass_u": 167.259,
+      "radius_pm": 175.0,
+      "ionization_ev": 6.108,
+      "k": 10.0,
+      "L": 0.0,
+      "zeff_proxy": 4.020974
+    },
+    {
+      "symbol": "Tm",
+      "period": 6,
+      "mass_u": 168.93422,
+      "radius_pm": 174.0,
+      "ionization_ev": 6.184,
+      "k": 11.0,
+      "L": 0.0,
+      "zeff_proxy": 4.045913
+    },
+    {
+      "symbol": "Yb",
+      "period": 6,
+      "mass_u": 173.045,
+      "radius_pm": 194.0,
+      "ionization_ev": 6.254,
+      "k": 12.0,
+      "L": 1.0,
+      "zeff_proxy": 4.068747
+    },
+    {
+      "symbol": "Lu",
+      "period": 6,
+      "mass_u": 174.9668,
+      "radius_pm": 173.0,
+      "ionization_ev": 5.428,
+      "k": 13.0,
+      "L": 0.0,
+      "zeff_proxy": 3.790546
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_k_l_correction_check_20260509-222933Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_k_l_correction_check_20260509-222933Z.txt"
+}

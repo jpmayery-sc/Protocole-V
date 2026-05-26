@@ -1,0 +1,7 @@
+Heavy border suite summary
+timestamp: 20260518-170458Z
+overall_verdict: supported
+supported_count: 1/1
+
+Items:
+- heavy_border_control: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\heavy_border\heavy_border_control_check_20260518-170458Z.json

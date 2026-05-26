@@ -1,0 +1,29 @@
+Pnictogen k/L correction check
+Timestamp: 20260509-122752Z
+
+Hypothese: for the pnictogen family, adding local k and L terms to Z_eff reduces radius residuals
+Cas de controle: baseline radius fit against Z_eff versus corrected fit against [1, Z_eff, k, L]
+Observable: radius residuals on the pnictogen family
+Verdict: supported
+
+Famille:
+- N: radius=56.0 pm, ie=14.5341 eV, zeff=2.067543, k=0.0, L=0.0
+- P: radius=98.0 pm, ie=10.4867 eV, zeff=2.634336, k=1.0, L=0.0
+- As: radius=114.0 pm, ie=9.8152 eV, zeff=3.398131, k=2.0, L=0.0
+- Sb: radius=133.0 pm, ie=8.6084 eV, zeff=3.977972, k=3.0, L=1.0
+- Bi: radius=148.0 pm, ie=7.2856 eV, zeff=4.391516, k=4.0, L=1.0
+
+Baseline:
+- slope: 36.437825
+- intercept: -10.222545
+- rmse: 6.914900
+- max_abs_residual: 12.233058
+
+Corrected:
+- intercept: 26.691572
+- alpha: 17.477562
+- beta: 15.452282
+- gamma: -13.413685
+- rmse: 6.022406
+- max_abs_residual: 9.814369
+- corrected_better: True

@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260510-215054Z",
+  "series": [
+    {
+      "familyname": "tetrel_d1d2_test",
+      "verdict": "supported",
+      "family_regime": "semi-metal",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\tetrel_d1d2_test_D1D2_results_20260510-215054Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\tetrel_d1d2_test_D1D2_results_20260510-215054Z.txt"
+    },
+    {
+      "familyname": "halogen_d1d2_test",
+      "verdict": "supported",
+      "family_regime": "semi-metal",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\halogen_d1d2_test_D1D2_results_20260510-215054Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\halogen_d1d2_test_D1D2_results_20260510-215054Z.txt"
+    },
+    {
+      "familyname": "lanthanide_d1d2_test",
+      "verdict": "supported",
+      "family_regime": "D3 / topological",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\lanthanide_d1d2_test_D1D2_results_20260510-215054Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d2\\lanthanide_d1d2_test_D1D2_results_20260510-215054Z.txt"
+    }
+  ]
+}

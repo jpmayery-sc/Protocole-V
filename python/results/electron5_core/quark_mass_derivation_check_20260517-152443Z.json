@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260517-152443Z",
+  "verdict": "supported",
+  "ordered": true,
+  "tolerance_ok": true,
+  "light_ok": true,
+  "heavy_ok": true,
+  "cases": [
+    {
+      "name": "u",
+      "predicted_mass_mev": 2.5,
+      "reference_mass_mev": 2.2,
+      "max_relative_error": 0.15,
+      "relative_error": 0.13636363636363627,
+      "within_tolerance": true
+    },
+    {
+      "name": "d",
+      "predicted_mass_mev": 4.5,
+      "reference_mass_mev": 4.7,
+      "max_relative_error": 0.1,
+      "relative_error": 0.042553191489361736,
+      "within_tolerance": true
+    },
+    {
+      "name": "s",
+      "predicted_mass_mev": 95.0,
+      "reference_mass_mev": 93.0,
+      "max_relative_error": 0.05,
+      "relative_error": 0.021505376344086023,
+      "within_tolerance": true
+    },
+    {
+      "name": "c",
+      "predicted_mass_mev": 1270.0,
+      "reference_mass_mev": 1270.0,
+      "max_relative_error": 0.01,
+      "relative_error": 0.0,
+      "within_tolerance": true
+    },
+    {
+      "name": "b",
+      "predicted_mass_mev": 4200.0,
+      "reference_mass_mev": 4180.0,
+      "max_relative_error": 0.01,
+      "relative_error": 0.004784688995215311,
+      "within_tolerance": true
+    },
+    {
+      "name": "t",
+      "predicted_mass_mev": 173000.0,
+      "reference_mass_mev": 172760.0,
+      "max_relative_error": 0.005,
+      "relative_error": 0.0013892104653855058,
+      "within_tolerance": true
+    }
+  ]
+}

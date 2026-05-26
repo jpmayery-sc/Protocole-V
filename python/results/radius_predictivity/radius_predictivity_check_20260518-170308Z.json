@@ -1,0 +1,130 @@
+{
+  "timestamp": "20260518-170308Z",
+  "hypothesis": "a held-out radius model with explicit core/valence terms should improve over Zeff-only prediction without retrofitting the test family",
+  "case_control": "leave-one-family-out over alkali, halogen, 3d, 4d, 5d and lanthanide families",
+  "observable": "atomic radius prediction error",
+  "families": [
+    {
+      "family": "alkali",
+      "l_valence": 0.0,
+      "l_core": 0.0,
+      "baseline": {
+        "train_rmse": 27.93647055231297,
+        "train_nrmse": 0.1874930909551206,
+        "test_rmse": 96.4414720241449,
+        "test_nrmse": 0.8386214958621295
+      },
+      "corrected": {
+        "train_rmse": 12.29963085546659,
+        "train_nrmse": 0.0825478580903798,
+        "test_rmse": 173.44914817877645,
+        "test_nrmse": 1.508253462424143
+      },
+      "improved": false,
+      "relative_improvement": -0.7984912977619427
+    },
+    {
+      "family": "halogen",
+      "l_valence": 1.0,
+      "l_core": 0.0,
+      "baseline": {
+        "train_rmse": 31.102429869062032,
+        "train_nrmse": 0.21749950957386036,
+        "test_rmse": 82.9446673052715,
+        "test_nrmse": 1.2760718046964845
+      },
+      "corrected": {
+        "train_rmse": 15.89697471405122,
+        "train_nrmse": 0.11116765534301552,
+        "test_rmse": 19.702162042509332,
+        "test_nrmse": 0.30311018526937433
+      },
+      "improved": true,
+      "relative_improvement": 0.7624661996654103
+    },
+    {
+      "family": "transition_3d",
+      "l_valence": 2.0,
+      "l_core": 1.0,
+      "baseline": {
+        "train_rmse": 38.745001794517556,
+        "train_nrmse": 0.17854839536644035,
+        "test_rmse": 33.42058709025714,
+        "test_nrmse": 0.8794891339541353
+      },
+      "corrected": {
+        "train_rmse": 16.312962126219436,
+        "train_nrmse": 0.07517494067382229,
+        "test_rmse": 16.58586140697237,
+        "test_nrmse": 0.4364700370255887
+      },
+      "improved": true,
+      "relative_improvement": 0.5037232182014084
+    },
+    {
+      "family": "transition_4d",
+      "l_valence": 2.0,
+      "l_core": 1.0,
+      "baseline": {
+        "train_rmse": 40.30905213980773,
+        "train_nrmse": 0.18575600064427528,
+        "test_rmse": 17.494921115888083,
+        "test_nrmse": 0.3803243720845235
+      },
+      "corrected": {
+        "train_rmse": 15.684748940155645,
+        "train_nrmse": 0.07227994903297533,
+        "test_rmse": 17.93755232929551,
+        "test_nrmse": 0.3899467897672937
+      },
+      "improved": false,
+      "relative_improvement": -0.025300554971091033
+    },
+    {
+      "family": "transition_5d",
+      "l_valence": 2.0,
+      "l_core": 1.0,
+      "baseline": {
+        "train_rmse": 39.771105960978886,
+        "train_nrmse": 0.1832769859952944,
+        "test_rmse": 25.44042242728427,
+        "test_nrmse": 1.0600176011368445
+      },
+      "corrected": {
+        "train_rmse": 15.540014757069752,
+        "train_nrmse": 0.07161297123073618,
+        "test_rmse": 28.94056248376147,
+        "test_nrmse": 1.205856770156728
+      },
+      "improved": false,
+      "relative_improvement": -0.13758183719164127
+    },
+    {
+      "family": "lanthanide",
+      "l_valence": 3.0,
+      "l_core": 2.0,
+      "baseline": {
+        "train_rmse": 38.021319096170785,
+        "train_nrmse": 0.17521345205608657,
+        "test_rmse": 40.414713438217184,
+        "test_nrmse": 1.5544120553160456
+      },
+      "corrected": {
+        "train_rmse": 17.807440582006734,
+        "train_nrmse": 0.08206193816592965,
+        "test_rmse": 13.969698396578798,
+        "test_nrmse": 0.5372960921761076
+      },
+      "improved": true,
+      "relative_improvement": 0.6543412730629757
+    }
+  ],
+  "baseline_mean_test_nrmse": 0.9981560771750272,
+  "corrected_mean_test_nrmse": 0.7301555561365393,
+  "improved_families": 3,
+  "relative_improvement": 0.26849560621519303,
+  "supported": true,
+  "verdict": "supported",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260518-170308Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260518-170308Z.txt"
+}

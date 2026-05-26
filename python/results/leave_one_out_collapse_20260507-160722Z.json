@@ -1,0 +1,34 @@
+{
+  "timestamp": "20260507-160722Z",
+  "overall_verdict": "conforme strict",
+  "control": "ManualLOOP",
+  "folds": [
+    {
+      "held_out": "pysspfm_off",
+      "train_family": [
+        "pysspfm_on"
+      ],
+      "train_rmse": 0.0,
+      "held_out_rmse": 0.4625540711640583,
+      "control_rmse": 0.9083746206840192,
+      "margin_vs_control": 0.4458205495199609,
+      "generalization_ok": true
+    },
+    {
+      "held_out": "pysspfm_on",
+      "train_family": [
+        "pysspfm_off"
+      ],
+      "train_rmse": 0.0,
+      "held_out_rmse": 0.4625540711640583,
+      "control_rmse": 1.3648136373869777,
+      "margin_vs_control": 0.9022595662229194,
+      "generalization_ok": true
+    }
+  ],
+  "summary": {
+    "mean_held_out_rmse": 0.4625540711640583,
+    "mean_control_rmse": 1.1365941290354984,
+    "mean_margin": 0.6740400578714402
+  }
+}

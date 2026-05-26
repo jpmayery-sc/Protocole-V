@@ -1,0 +1,250 @@
+{
+  "hypothesis": "using Zeff* as the fine pnictogen variable keeps the light branch D1-like and the heavy branch D1/D2-structured",
+  "case_control": "N -> P versus As -> Sb -> Bi, with radius compared against mass, raw Zeff, Zeff*, D1/D2 and [1, Zeff*, k, L]",
+  "observable": "subseries fit quality, monotonicity, and pivot consistency at As",
+  "expected": {
+    "light_core": "D1-like and Zeff*-ordered",
+    "heavy_tail": "D1/D2 monotone and regime-structured"
+  },
+  "measured": {
+    "light_core": {
+      "series": [
+        {
+          "symbol": "N",
+          "period": 2,
+          "mass_u": 14.007,
+          "radius_pm": 56.0,
+          "ionization_ev": 14.5341,
+          "k": 0.0,
+          "L": 0.0,
+          "zeff_proxy": 2.067543,
+          "zeff_star": 2.067983
+        },
+        {
+          "symbol": "P",
+          "period": 3,
+          "mass_u": 30.973761998,
+          "radius_pm": 98.0,
+          "ionization_ev": 10.4867,
+          "k": 1.0,
+          "L": 0.0,
+          "zeff_proxy": 2.634336,
+          "zeff_star": 2.635326
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "decreasing",
+      "zeff_trend": "increasing",
+      "zeff_star_trend": "increasing",
+      "d1d2_trend": "increasing",
+      "mass_trend": "increasing",
+      "mass": {
+        "fit": {
+          "slope": 2.475428134428411,
+          "intercept": 21.32667812106125
+        },
+        "predicted": [
+          56.0,
+          98.0
+        ],
+        "rmse": 0.0,
+        "max_abs_residual": 0.0
+      },
+      "zeff": {
+        "fit": {
+          "slope": 74.1011218085834,
+          "intercept": -97.20727785945041
+        },
+        "predicted": [
+          56.0,
+          98.0
+        ],
+        "rmse": 0.0,
+        "max_abs_residual": 0.0
+      },
+      "zeff_star": {
+        "fit": {
+          "slope": 74.02928587473812,
+          "intercept": -97.09132684157086
+        },
+        "predicted": [
+          56.0,
+          97.99999999999997
+        ],
+        "rmse": 2.0097183471152322e-14,
+        "max_abs_residual": 2.842170943040401e-14
+      },
+      "d1d2": {
+        "values": [
+          7.966260363963941,
+          24.618322362051668
+        ],
+        "trend": "increasing",
+        "regimes": [
+          "covalent",
+          "covalent"
+        ]
+      },
+      "corrected": {
+        "fit": {
+          "intercept": 4.420614955191354,
+          "alpha": 24.941888308857536,
+          "beta": 27.849342018192797,
+          "gamma": 0.0
+        },
+        "coefficients": [
+          4.420614955191354,
+          24.941888308857536,
+          27.849342018192797,
+          0.0
+        ],
+        "predicted": [
+          56.00002342872705,
+          97.999972150658
+        ],
+        "residuals": [
+          -2.3428727047303255e-05,
+          2.7849342004060418e-05
+        ],
+        "rmse": 2.5734132014856872e-05,
+        "max_abs_residual": 2.7849342004060418e-05
+      }
+    },
+    "heavy_tail": {
+      "series": [
+        {
+          "symbol": "As",
+          "period": 4,
+          "mass_u": 74.921595,
+          "radius_pm": 114.0,
+          "ionization_ev": 9.8152,
+          "k": 2.0,
+          "L": 0.0,
+          "zeff_proxy": 3.398131,
+          "zeff_star": 3.399891
+        },
+        {
+          "symbol": "Sb",
+          "period": 5,
+          "mass_u": 121.76,
+          "radius_pm": 133.0,
+          "ionization_ev": 8.6084,
+          "k": 3.0,
+          "L": 1.0,
+          "zeff_proxy": 3.977972,
+          "zeff_star": 4.230722
+        },
+        {
+          "symbol": "Bi",
+          "period": 6,
+          "mass_u": 208.9804,
+          "radius_pm": 148.0,
+          "ionization_ev": 7.2856,
+          "k": 4.0,
+          "L": 1.0,
+          "zeff_proxy": 4.391516,
+          "zeff_star": 4.645476
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "decreasing",
+      "zeff_trend": "increasing",
+      "zeff_star_trend": "increasing",
+      "d1d2_trend": "increasing",
+      "mass_trend": "increasing",
+      "mass": {
+        "fit": {
+          "slope": 0.2432663255416235,
+          "intercept": 98.77203235482185
+        },
+        "predicted": [
+          116.99793347418952,
+          128.3921401527699,
+          149.60992637304054
+        ],
+        "rmse": 3.3071558986533436,
+        "max_abs_residual": 4.607859847230088
+      },
+      "zeff": {
+        "fit": {
+          "slope": 34.13225704902441,
+          "intercept": -2.2184688809463182
+        },
+        "predicted": [
+          113.76741101584413,
+          133.5587088570154,
+          147.67388012714042
+        ],
+        "rmse": 0.39690779530938297,
+        "max_abs_residual": 0.5587088570154037
+      },
+      "zeff_star": {
+        "fit": {
+          "slope": 26.66229048387679,
+          "intercept": 22.563780400744164
+        },
+        "predicted": [
+          113.212661167707,
+          135.3645309604634,
+          146.4228078718296
+        ],
+        "rmse": 1.7027863546737347,
+        "max_abs_residual": 2.364530960463412
+      },
+      "d1d2": {
+        "values": [
+          39.46806290813657,
+          61.45977580735019,
+          89.20944752951003
+        ],
+        "trend": "increasing",
+        "regimes": [
+          "transition",
+          "semi-metal",
+          "semi-metal"
+        ]
+      },
+      "corrected": {
+        "fit": {
+          "intercept": 11.660279920072874,
+          "alpha": 28.143524391593033,
+          "beta": 3.327393074647132,
+          "gamma": -7.709903804233491
+        },
+        "coefficients": [
+          11.660279920072874,
+          28.143524391593033,
+          3.327393074647132,
+          -7.709903804233491
+        ],
+        "predicted": [
+          113.99998062981628,
+          132.99999542664088,
+          148.00001228326295
+        ],
+        "residuals": [
+          1.937018372188959e-05,
+          4.573359120740861e-06,
+          -1.2283262947221374e-05
+        ],
+        "rmse": 1.3503063599267655e-05,
+        "max_abs_residual": 1.937018372188959e-05
+      }
+    }
+  },
+  "criteria": {
+    "light_ok": true,
+    "heavy_ok": true,
+    "ionization_ok": true
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "the light core is not D1-like or Zeff*-ordered",
+    "the heavy tail is not D1/D2 monotone",
+    "the heavy-tail regime bands are not transition/semi-metal as expected",
+    "the corrected fit does not preserve the structural reading"
+  ],
+  "timestamp": "20260510-223340Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\pnictogen_subseries_zeff_star_check_20260510-223340Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\pnictogen_subseries_zeff_star_check_20260510-223340Z.txt"
+}

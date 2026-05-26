@@ -1,0 +1,12 @@
+Iron rust check
+timestamp: 20260509-225322Z
+verdict: supported
+nucleus_ok: True
+oxidation_ok: True
+oxygen_ok: True
+
+Cases:
+- Fe metal: Z=26 e=26 ox=0 O=0 ok=True
+- Fe2+: Z=26 e=24 ox=2 O=0 ok=True
+- Fe3+: Z=26 e=23 ox=3 O=0 ok=True
+- rust proxy Fe2O3: Z=26 e=23 ox=3 O=3 ok=True

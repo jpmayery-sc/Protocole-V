@@ -1,0 +1,103 @@
+{
+  "timestamp": "20260509-215002Z",
+  "verdict": "supported",
+  "hypothesis": "the user-provided Zeff* correction makes the tetrel family C -> Pb monotone",
+  "case_control": "standard Zeff proxy versus corrected Zeff* on the tetrel family",
+  "observable": "monotonicity of Zeff* and comparison with the raw radius and ionization trends",
+  "expected": "Zeff* becomes increasing across C -> Pb",
+  "measured": {
+    "radius_trend": "increasing",
+    "ionization_trend": "mixed",
+    "zeff_trend": "increasing",
+    "zeff_star_trend": "increasing",
+    "zeff_values": [
+      1.81985,
+      2.322608,
+      3.04851,
+      3.67421,
+      4.430851
+    ],
+    "zeff_star_values": [
+      1.82381,
+      2.594168,
+      3.66115,
+      4.69921,
+      5.920491
+    ],
+    "series": [
+      {
+        "symbol": "C",
+        "Z": 6,
+        "period": 2,
+        "mass_u": 12.011,
+        "radius_pm": 67.0,
+        "ionization_ev": 11.2603,
+        "k": 0.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 1.81985,
+        "zeff_star": 1.82381
+      },
+      {
+        "symbol": "Si",
+        "Z": 14,
+        "period": 3,
+        "mass_u": 28.085,
+        "radius_pm": 111.0,
+        "ionization_ev": 8.1517,
+        "k": 0.0,
+        "L": 1.0,
+        "H": 0.0,
+        "zeff_proxy": 2.322608,
+        "zeff_star": 2.594168
+      },
+      {
+        "symbol": "Ge",
+        "Z": 32,
+        "period": 4,
+        "mass_u": 72.63,
+        "radius_pm": 125.0,
+        "ionization_ev": 7.8994,
+        "k": 0.0,
+        "L": 2.0,
+        "H": 0.0,
+        "zeff_proxy": 3.04851,
+        "zeff_star": 3.66115
+      },
+      {
+        "symbol": "Sn",
+        "Z": 50,
+        "period": 5,
+        "mass_u": 118.71,
+        "radius_pm": 145.0,
+        "ionization_ev": 7.3439,
+        "k": 0.0,
+        "L": 3.0,
+        "H": 0.0,
+        "zeff_proxy": 3.67421,
+        "zeff_star": 4.69921
+      },
+      {
+        "symbol": "Pb",
+        "Z": 82,
+        "period": 6,
+        "mass_u": 207.2,
+        "radius_pm": 154.0,
+        "ionization_ev": 7.4167,
+        "k": 0.0,
+        "L": 3.0,
+        "H": 0.0,
+        "zeff_proxy": 4.430851,
+        "zeff_star": 5.920491
+      }
+    ]
+  },
+  "reference": {
+    "a_k": 0.0,
+    "b_L": 0.25,
+    "c_z2": 0.00011,
+    "d_H": 0.0
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_zeff_star_check_20260509-215002Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\tetrel_zeff_star_check_20260509-215002Z.txt"
+}

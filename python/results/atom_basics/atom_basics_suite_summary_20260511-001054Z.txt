@@ -1,0 +1,9 @@
+Atom basics suite summary
+timestamp: 20260511-001054Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- neutral_atom: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\neutral_atom_check_20260511-001054Z.json
+- iron_rust: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\iron_rust_check_20260511-001054Z.json
+- h_fe_pb: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\h_fe_pb_check_20260511-001054Z.json

@@ -1,0 +1,18 @@
+{
+  "suite": "nzstability",
+  "timestamp": "20260517-214940Z",
+  "overall_verdict": "supported",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "nzstability",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260517-214940Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260517-214940Z.txt",
+      "hypothesis": "nuclear stability follows a curve with an optimum in N/Z and a peak near Fe-56"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_suite_summary_20260517-214940Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_suite_summary_20260517-214940Z.txt"
+}

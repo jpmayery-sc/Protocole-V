@@ -1,0 +1,60 @@
+{
+  "timestamp": "20260510-235733Z",
+  "verdict": "supported",
+  "pressure_scaling_ok": true,
+  "d1_dominates_ok": true,
+  "fermi_window_ok": true,
+  "nonzero_ok": true,
+  "cases": [
+    {
+      "symbol": "Al",
+      "name": "Aluminum-like metal",
+      "ionization_ev": 5.9858,
+      "principal_n": 3.0,
+      "electron_density_m3": 3e+28,
+      "D1": 1.9902741460589264,
+      "D4_pressure_pa": 6768764634.274976,
+      "D4_balance_ev": 1.4082435295905347,
+      "D4_over_D1": 0.7075625899975091,
+      "ok": false
+    },
+    {
+      "symbol": "Fe",
+      "name": "Iron-like metal",
+      "ionization_ev": 7.9024,
+      "principal_n": 4.0,
+      "electron_density_m3": 5e+28,
+      "D1": 3.049088581276475,
+      "D4_pressure_pa": 15858325545.241005,
+      "D4_balance_ev": 1.979597655927479,
+      "D4_over_D1": 0.6492424221728373,
+      "ok": false
+    },
+    {
+      "symbol": "Cu",
+      "name": "Copper-like metal",
+      "ionization_ev": 7.7264,
+      "principal_n": 4.0,
+      "electron_density_m3": 7e+28,
+      "D1": 3.0149431757399965,
+      "D4_pressure_pa": 27784594000.582157,
+      "D4_balance_ev": 2.477397079783433,
+      "D4_over_D1": 0.8217060605712323,
+      "ok": true
+    }
+  ],
+  "pressure_ratios": [
+    2.3428685147270807,
+    1.752050928789273
+  ],
+  "expected_pressure_ratios": [
+    2.342868514727081,
+    1.752050928789273
+  ],
+  "regime": "metallic",
+  "hypothesis": "D4 is small but nonzero in metals and stays below D1 in the reference metallic window",
+  "case_control": "aluminum-like, iron-like, and copper-like density windows",
+  "observable": "D1 versus D4_balance, plus the few-eV Fermi window and pressure scaling",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_metallic_regime_check_20260510-235733Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_metallic_regime_check_20260510-235733Z.txt"
+}
