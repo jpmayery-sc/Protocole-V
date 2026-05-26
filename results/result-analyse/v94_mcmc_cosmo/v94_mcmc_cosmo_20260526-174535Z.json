@@ -1,0 +1,68 @@
+{
+  "suite": "v94_mcmc_cosmo",
+  "timestamp": "20260526-174535Z",
+  "verdict": "v94_mcmc_complete",
+  "nwalkers": 32,
+  "nsteps": 2000,
+  "param_names": [
+    "alpha_k",
+    "alpha_t",
+    "alpha_kt",
+    "gamma_star",
+    "chi2_coupling"
+  ],
+  "parameter_statistics": {
+    "alpha_k": {
+      "mean": 0.6068089854764438,
+      "median": 0.6105526696296737,
+      "std": 0.11598052428653406,
+      "quantile_16": 0.4677188187121054,
+      "quantile_84": 0.7419776262536883,
+      "quantile_2p5": 0.410616142503939,
+      "quantile_97p5": 0.7907842430715294
+    },
+    "alpha_t": {
+      "mean": 0.8160029197230108,
+      "median": 0.823897924342914,
+      "std": 0.11296471901597496,
+      "quantile_16": 0.6824878828178987,
+      "quantile_84": 0.9447832900710608,
+      "quantile_2p5": 0.6137105788362969,
+      "quantile_97p5": 0.991479514801198
+    },
+    "alpha_kt": {
+      "mean": 0.35367289705413796,
+      "median": 0.3557726245372087,
+      "std": 0.0859968674653124,
+      "quantile_16": 0.2523667214317331,
+      "quantile_84": 0.4540276523588971,
+      "quantile_2p5": 0.20898670697178284,
+      "quantile_97p5": 0.49317994740756055
+    },
+    "gamma_star": {
+      "mean": 1.5413801788813009,
+      "median": 1.5666519960322964,
+      "std": 0.2905966785578971,
+      "quantile_16": 1.1905547214034873,
+      "quantile_84": 1.8723636696157606,
+      "quantile_2p5": 1.0314970834598938,
+      "quantile_97p5": 1.981166756135671
+    },
+    "chi2_coupling": {
+      "mean": 0.14592506576896558,
+      "median": 0.15306450792443715,
+      "std": 0.03914187213408574,
+      "quantile_16": 0.10202039174692275,
+      "quantile_84": 0.18726789428046217,
+      "quantile_2p5": 0.060699095592812835,
+      "quantile_97p5": 0.19817291108446533
+    }
+  },
+  "chains_file": "results\\result-analyse\\v94_mcmc_cosmo\\mcmc_chains_20260526-174535Z.npy",
+  "mcmc_data_bundle": {
+    "H_available": true,
+    "fs8_available": true,
+    "S8_available": true
+  },
+  "notes": "V94 MCMC implements full posterior sampling of cosmological parameters α_K, α_T, α_KT, γ*, χ²_coupling using H(z), f_sigma8(z), S8 observables. 20% burn-in discarded. Results ready for corner plots and publication."
+}

@@ -1,0 +1,32 @@
+V94 MCMC cosmological parameter estimation
+timestamp: 20260526-174535Z
+verdict: v94_mcmc_complete
+nwalkers: 32
+nsteps: 2000
+
+Parameter statistics (after 20% burn-in):
+
+alpha_k:
+  median = 0.610553
+  68% CI = [0.467719, 0.741978]
+  95% CI = [0.410616, 0.790784]
+
+alpha_t:
+  median = 0.823898
+  68% CI = [0.682488, 0.944783]
+  95% CI = [0.613711, 0.991480]
+
+alpha_kt:
+  median = 0.355773
+  68% CI = [0.252367, 0.454028]
+  95% CI = [0.208987, 0.493180]
+
+gamma_star:
+  median = 1.566652
+  68% CI = [1.190555, 1.872364]
+  95% CI = [1.031497, 1.981167]
+
+chi2_coupling:
+  median = 0.153065
+  68% CI = [0.102020, 0.187268]
+  95% CI = [0.060699, 0.198173]
