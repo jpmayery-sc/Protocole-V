@@ -1,0 +1,30 @@
+Recherche refinee sur la sous-famille du bore B -> Al -> In
+Timestamp: 20260511-130104Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 10.13519719700718
+- ionization_rmse: 0.49799173576364586
+- zeff_rmse: 0.1987194557004811
+- mass_rmse: 16.891584342170596
+- radius_step_cv: 0.6231884057971014
+- ionization_step_cv: 0.8412167542602327
+- zeff_step_cv: 0.4961814770276735
+- mass_step_cv: 0.6890327955541882
+
+Family summary:
+- B: period=2, mass_u=10.81, radius_pm=87.0, ionization_ev=8.298, zeff_proxy=1.562238
+- Al: period=3, mass_u=26.9815385, radius_pm=143.0, ionization_ev=5.9858, zeff_proxy=1.990274
+- In: period=5, mass_u=114.818, radius_pm=156.0, ionization_ev=5.7864, zeff_proxy=3.261405
+
+Hypothese: for the boron subfamily B -> Al -> In, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across B -> In
+- first ionization energy is not monotonic across B -> In
+- Z_eff proxy is not smoother than mass across the subfamily
+- mass alone explains the subfamily trend as well as or better than Z_eff proxy

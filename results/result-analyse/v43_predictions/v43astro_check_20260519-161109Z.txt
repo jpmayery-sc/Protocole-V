@@ -1,0 +1,8 @@
+V43 astrophysics check
+timestamp: 20260519-161109Z
+verdict: supported
+astro_predictions: [{'observable': 'rotation_curves', 'prediction_percent': [3.0, 5.0], 'tests': ['SKA', 'Gaia DR4']}, {'observable': 'weak_lensing_shear', 'prediction_percent': [1.0, 2.0], 'tests': ['Euclid WL', 'LSST WL']}]
+DM_signature: {'rotation_curve_modulation_percent': [3.0, 5.0]}
+lensing_signature: {'shear_correction_percent': [1.0, 2.0]}
+astro_summary: Geometric DM-like behaviour maps to small but measurable changes in rotation curves and weak lensing shear.
+astro_verdict: supported

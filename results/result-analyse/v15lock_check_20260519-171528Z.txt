@@ -1,0 +1,6 @@
+V15 lock check
+timestamp: 20260519-171528Z
+verdict: supported
+locked_names: alpha0, s_geo, s_atom, A_kappa, p
+frozen_names: aE, aR, s_canal
+supported: True

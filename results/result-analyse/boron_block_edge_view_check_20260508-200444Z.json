@@ -1,0 +1,118 @@
+{
+  "timestamp": "20260508-200444Z",
+  "hypothesis": "the boron family needs a block-and-edge view to isolate the monotone core",
+  "case_control": "full family B -> Tl versus subfamily B -> Al -> In",
+  "observable": "trend repair and regularity change after removing the heavy edge and one internal rupture",
+  "expected": {
+    "full_family": "mixed or broken trend",
+    "subfamily": "monotone trend",
+    "zeff": "better regularity than mass in the subfamily"
+  },
+  "measured": {
+    "full_family": {
+      "series": [
+        {
+          "symbol": "B",
+          "period": 2,
+          "mass_u": 10.81,
+          "radius_pm": 87.0,
+          "ionization_ev": 8.298,
+          "zeff_proxy": 1.562238
+        },
+        {
+          "symbol": "Al",
+          "period": 3,
+          "mass_u": 26.9815385,
+          "radius_pm": 143.0,
+          "ionization_ev": 5.9858,
+          "zeff_proxy": 1.990274
+        },
+        {
+          "symbol": "Ga",
+          "period": 4,
+          "mass_u": 69.723,
+          "radius_pm": 135.0,
+          "ionization_ev": 5.9993,
+          "zeff_proxy": 2.65669
+        },
+        {
+          "symbol": "In",
+          "period": 5,
+          "mass_u": 114.818,
+          "radius_pm": 156.0,
+          "ionization_ev": 5.7864,
+          "zeff_proxy": 3.261405
+        },
+        {
+          "symbol": "Tl",
+          "period": 6,
+          "mass_u": 204.38,
+          "radius_pm": 170.0,
+          "ionization_ev": 6.1082,
+          "zeff_proxy": 4.02104
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "radius_rmse": 12.479583326377531,
+      "ionization_rmse": 0.677220609845861,
+      "zeff_rmse": 0.07791454556408306,
+      "mass_rmse": 18.34956006174583,
+      "radius_step_cv": 1.1081062900314473,
+      "ionization_step_cv": 1.8931468502923237,
+      "zeff_step_cv": 0.19694428064362446,
+      "mass_step_cv": 0.544372120118808
+    },
+    "subfamily": {
+      "series": [
+        {
+          "symbol": "B",
+          "period": 2,
+          "mass_u": 10.81,
+          "radius_pm": 87.0,
+          "ionization_ev": 8.298,
+          "zeff_proxy": 1.562238
+        },
+        {
+          "symbol": "Al",
+          "period": 3,
+          "mass_u": 26.9815385,
+          "radius_pm": 143.0,
+          "ionization_ev": 5.9858,
+          "zeff_proxy": 1.990274
+        },
+        {
+          "symbol": "In",
+          "period": 5,
+          "mass_u": 114.818,
+          "radius_pm": 156.0,
+          "ionization_ev": 5.7864,
+          "zeff_proxy": 3.261405
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "decreasing",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "radius_rmse": 10.13519719700718,
+      "ionization_rmse": 0.49799173576364586,
+      "zeff_rmse": 0.1987194557004811,
+      "mass_rmse": 16.891584342170596,
+      "radius_step_cv": 0.6231884057971014,
+      "ionization_step_cv": 0.8412167542602327,
+      "zeff_step_cv": 0.4961814770276735,
+      "mass_step_cv": 0.6890327955541882
+    }
+  },
+  "verdict": "supported",
+  "reference": "boron family split at the irregular edge",
+  "falsifiers": [
+    "the full family is already monotone",
+    "the subfamily does not repair the broken trend",
+    "Z_eff is not more regular than mass in the repaired subfamily"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\boron_block_edge_view_check_20260508-200444Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\boron_block_edge_view_check_20260508-200444Z.txt"
+}

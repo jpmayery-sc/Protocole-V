@@ -1,0 +1,6 @@
+metric,value
+verdict,part02_flavor_neutral
+chi2_model,0.0
+chi2_baseline,0.0
+delta_chi2,0.0
+max_abs_local_shift,0.0

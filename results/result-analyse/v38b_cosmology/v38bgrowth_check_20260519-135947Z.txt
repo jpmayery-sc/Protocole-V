@@ -1,0 +1,6 @@
+V38b growth check
+timestamp: 20260519-135947Z
+verdict: supported
+eta_0: 0.18
+eta_1: -0.045
+growth_match_ok: True

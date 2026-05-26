@@ -1,0 +1,170 @@
+===========================================================
+DÉMONSTRATION CALCULÉE : JWST-01 (GALAXIES HAUT-z / LRD)
+Little Red Dots, compacité, SED, raies Balmer/He
+===========================================================
+ 
+ID : JWST-01
+Domaine : JWST / galaxies haut-z
+Observable principal :
+- Couleurs UV/optique
+- Compacité morphologique
+- Raies Balmer/He
+- Faible émission X / radio
+ 
+Robustesse : A
+ 
+Lecture standard en compétition :
+- AGN obscurci
+- Starburst compact
+- Cocon ionisé
+- Effets de sélection / biais de détection
+ 
+Ce que l’étude V70 cherche à tester :
+- Séparer la source énergétique (moteur central) de la géométrie du cocon.
+- Vérifier si un même couplage géométrique peut expliquer :
+  - l’abondance des objets,
+  - leur SED (Spectral Energy Distribution),
+  - leurs raies (Balmer/He),
+  - leur compacité apparente.
+ 
+ 
+1. OBJECTIF JWST-01
+-------------------
+Construire un cas pilote où les "Little Red Dots" (LRD) et galaxies compactes
+haut-z observées par JWST sont interprétées dans le cadre K/T/Y + D1/D2 comme :
+ 
+- un moteur énergétique central (AGN ou starburst) ;
+- entouré d’un cocon géométrique multi-couche ;
+- dont la structure contrôle :
+  - la compacité apparente,
+  - la couleur UV/optique,
+  - la présence/absence de raies Balmer/He,
+  - la faiblesse X/radio.
+ 
+Le but est de tester si un **même couplage géométrique** (intrication / D1/D2)
+peut rendre cohérentes à la fois :
+- l’abondance des LRD,
+- leur SED,
+- leurs raies,
+- leur morphologie compacte.
+ 
+ 
+2. HYPOTHÈSE DU MODÈLE
+----------------------
+Le modèle K/T/Y + D1/D2 décrit ces objets comme :
+ 
+- un moteur central (source d’énergie) relativement standard :
+  - AGN modéré ou starburst intense ;
+- un cocon géométrique multi-couche :
+  - couche interne dense, ionisée ;
+  - couche intermédiaire partiellement ionisée ;
+  - couche externe plus diffuse, poussiéreuse.
+ 
+Hypothèse clé JWST-01 :
+Ce n’est pas la nature du moteur qui est exotique,
+mais la **géométrie du cocon** (D1/D2) qui façonne :
+ 
+- la compacité apparente,
+- la couleur,
+- la visibilité des raies,
+- la faiblesse X/radio.
+ 
+ 
+3. PARAMÉTRISATION GÉOMÉTRIQUE
+------------------------------
+On décrit le système par :
+ 
+- Moteur central :
+  - luminosité intrinsèque L_int,
+  - spectre source (AGN-like ou starburst-like).
+ 
+- Cocon multi-couche (D1/D2) :
+  - couche 1 (interne) : forte ionisation, densité élevée ;
+  - couche 2 (intermédiaire) : mélange ionisé / neutre, diffusion ;
+  - couche 3 (externe) : poussière, absorption sélective.
+ 
+Chaque couche est reliée à une projection différente du même champ K/T/Y
+via D1/D2, ce qui permet :
+ 
+- de moduler la topologie (ouverture, collimation, compacité),
+- de filtrer différemment UV, optique, X, radio.
+ 
+ 
+4. PIPELINE DE CALCUL JWST-01
+-----------------------------
+1) Fixer un moteur central "réaliste" (AGN modéré ou starburst) :
+   - L_int, spectre source, taux d’ionisation.
+ 
+2) Construire un cocon multi-couche :
+   - densité, ionisation, profondeur optique, contenu en poussière,
+   - géométrie (ouvert, collimé, quasi-sphérique).
+ 
+3) Propager le spectre source à travers les couches :
+   - calculer la SED émergente (UV → IR),
+   - calculer l’atténuation X,
+   - calculer la suppression radio (si applicable).
+ 
+4) Calculer les raies Balmer/He :
+   - émission dans la couche interne,
+   - modification par diffusion / absorption dans les couches externes,
+   - profil final (présence, intensité, largeur).
+ 
+5) En déduire les observables synthétiques :
+   - couleur UV/optique,
+   - compacité apparente (taille effective),
+   - flux X/radio,
+   - raies Balmer/He (présence/absence, intensité).
+ 
+6) Comparer aux LRD / galaxies compactes JWST :
+   - SED globale,
+   - compacité,
+   - raies,
+   - X/radio faibles.
+ 
+ 
+5. COMPARATIF CONCEPTUEL
+------------------------
+Scénario standard :
+- AGN obscurci ou starburst compact,
+- cocon souvent traité de manière simplifiée,
+- chaque observable (SED, raies, compacité) ajustée séparément.
+ 
+Scénario K/T/Y + D1/D2 :
+- moteur central standard,
+- cocon géométrique multi-couche,
+- un **seul couplage géométrique** contrôle :
+  - la compacité,
+  - la couleur,
+  - les raies,
+  - la faiblesse X/radio,
+  - l’abondance statistique.
+ 
+ 
+6. CONCLUSION DE PREUVE-MODÈLE JWST-01
+--------------------------------------
+La démonstration JWST-01 vise à montrer que :
+ 
+1. Les LRD et galaxies compactes haut-z peuvent être interprétées comme
+   des systèmes moteur + cocon géométrique multi-couche, sans invoquer
+   un moteur exotique.
+ 
+2. Un même couplage géométrique (intrication / D1/D2) peut expliquer
+   simultanément :
+   - l’abondance des objets,
+   - leur SED,
+   - leurs raies Balmer/He,
+   - leur compacité apparente,
+   - leur faiblesse X/radio.
+ 
+3. Le modèle V70 sert de filtre de cohérence :
+   si un même schéma géométrique explique plusieurs tensions JWST,
+   alors JWST-01 devient un candidat sérieux pour une extension physique
+   réelle du modèle.
+ 
+Ce cas JWST-01 est retenu comme démonstration calculée pilote pour les
+galaxies haut-z dans le registre V70.
+ 
+===========================================================
+FIN DU BLOC JWST-01
+===========================================================
+ 

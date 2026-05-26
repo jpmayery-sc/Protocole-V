@@ -1,0 +1,7 @@
+PART-01 muon g-2 coherence pipeline summary
+timestamp: 20260522-170035Z
+verdict: part01_g2_partial
+chi2_model: 0.01562499999999976
+chi2_baseline: 33.200624999999995
+delta_chi2: 33.184999999999995
+max_abs_local_shift: 0.0

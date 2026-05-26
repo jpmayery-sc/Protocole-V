@@ -1,0 +1,42 @@
+{
+  "section": "V42-SYNTHESIS",
+  "fields_summary": {
+    "section": "V42-FIELDS",
+    "source_v41_available": true,
+    "source_v41_supported": true,
+    "source_v41_timestamp": "20260519-155358Z",
+    "source_v41_supported_count": 6,
+    "source_v41_total": 6,
+    "field_list": [
+      "K",
+      "T",
+      "Y"
+    ],
+    "mass_dimensions": {
+      "K": 1,
+      "T": 1,
+      "Y": 1
+    },
+    "canonical_normalization_ok": true,
+    "field_summary": "K, T and Y are treated as canonically normalized real scalar modes on top of the V40-V41 effective geometry.",
+    "v42_fields_verdict": "supported",
+    "verdict": "supported"
+  },
+  "propagator_summary": "All effective masses are positive, so the scalar propagators are well-defined in the EFT window.",
+  "vertex_summary": "Vertices remain weak and EFT-like, with no coupling exceeding natural order-one strength.",
+  "loop_summary": "One-loop corrections stay below the EFT naturality threshold and remain absorbable into existing parameters.",
+  "renormality_summary": "The model behaves as an EFT: divergences are absorbed by existing operators and no dominant higher-dimensional terms are required.",
+  "source_v41_summary": {
+    "source_v41_available": true,
+    "source_v41_supported": true,
+    "source_v41_timestamp": "20260519-155358Z",
+    "source_v41_supported_count": 6,
+    "source_v41_total": 6
+  },
+  "quantum_structure_ok": true,
+  "v42_global_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-160612Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v42_quantum_structure\\v42synthesis_check_20260519-160612Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v42_quantum_structure\\v42synthesis_check_20260519-160612Z.txt"
+}

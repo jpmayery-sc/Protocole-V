@@ -1,0 +1,48 @@
+SPARC batch summary
+Total galaxies fitted: 175
+Fits with vh_best>0: 136
+vh_best mean/median/std: 63.799276 / 57.730000 / 44.088740 km/s
+rho0 mean/median/std: 1.112769e+08 / 6.166417e+07 / 1.756145e+08 Msun/kpc^3
+Median chi2_min: 208.862067
+Quality Q=1 subset: N=99, vh_best>0=80, vh_median=64.020000 km/s, rho_median=7.583742e+07 Msun/kpc^3
+Zero-vh cases by Q: Q1=19, Q2=13, Q3=7
+Zero-vh galaxies:
+- CamB (Q=2, chi2_min=85.260235, chi2_vh0=85.260235)
+- F561-1 (Q=3, chi2_min=3.727397, chi2_vh0=3.727397)
+- F574-2 (Q=3, chi2_min=3.356988, chi2_vh0=3.356988)
+- IC4202 (Q=1, chi2_min=1850.473955, chi2_vh0=1850.473955)
+- NGC0801 (Q=1, chi2_min=686.640188, chi2_vh0=686.640188)
+- NGC0891 (Q=1, chi2_min=3702.459400, chi2_vh0=3702.459400)
+- NGC2955 (Q=1, chi2_min=1386.138213, chi2_vh0=1386.138213)
+- NGC2976 (Q=2, chi2_min=28.270374, chi2_vh0=28.270374)
+- NGC3521 (Q=1, chi2_min=1205.635362, chi2_vh0=1205.635362)
+- NGC3726 (Q=2, chi2_min=257.326649, chi2_vh0=257.326649)
+- NGC3877 (Q=2, chi2_min=278.213784, chi2_vh0=278.213784)
+- NGC3893 (Q=1, chi2_min=167.361855, chi2_vh0=167.361855)
+- NGC3949 (Q=2, chi2_min=196.613706, chi2_vh0=196.613706)
+- NGC3953 (Q=1, chi2_min=69.072931, chi2_vh0=69.072931)
+- NGC4051 (Q=2, chi2_min=104.705444, chi2_vh0=104.705444)
+- NGC4085 (Q=2, chi2_min=219.178227, chi2_vh0=219.178227)
+- NGC4088 (Q=1, chi2_min=619.006762, chi2_vh0=619.006762)
+- NGC4157 (Q=1, chi2_min=360.663633, chi2_vh0=360.663633)
+- NGC4217 (Q=1, chi2_min=1595.294584, chi2_vh0=1595.294584)
+- NGC4389 (Q=3, chi2_min=479.214688, chi2_vh0=479.214688)
+- NGC5005 (Q=1, chi2_min=251.416459, chi2_vh0=251.416459)
+- NGC5055 (Q=1, chi2_min=95924.399580, chi2_vh0=95924.399580)
+- NGC5371 (Q=1, chi2_min=2412.544625, chi2_vh0=2412.544625)
+- NGC6195 (Q=1, chi2_min=1354.457592, chi2_vh0=1354.457592)
+- NGC6946 (Q=1, chi2_min=5002.157013, chi2_vh0=5002.157013)
+- NGC7331 (Q=1, chi2_min=5836.340004, chi2_vh0=5836.340004)
+- NGC7793 (Q=1, chi2_min=116.892547, chi2_vh0=116.892547)
+- PGC51017 (Q=3, chi2_min=19.466893, chi2_vh0=19.466893)
+- UGC02455 (Q=3, chi2_min=755.711079, chi2_vh0=755.711079)
+- UGC02916 (Q=2, chi2_min=10405.883490, chi2_vh0=10405.883490)
+- UGC04305 (Q=3, chi2_min=51.495041, chi2_vh0=51.495041)
+- UGC05253 (Q=2, chi2_min=12202.060380, chi2_vh0=12202.060380)
+- UGC06628 (Q=2, chi2_min=6.670312, chi2_vh0=6.670312)
+- UGC06973 (Q=3, chi2_min=3515.092124, chi2_vh0=3515.092124)
+- UGC07577 (Q=2, chi2_min=2.790641, chi2_vh0=2.790641)
+- UGC09037 (Q=2, chi2_min=813.186560, chi2_vh0=813.186560)
+- UGC11455 (Q=1, chi2_min=1415.486233, chi2_vh0=1415.486233)
+- UGC11557 (Q=2, chi2_min=79.379759, chi2_vh0=79.379759)
+- UGC11914 (Q=1, chi2_min=961.618057, chi2_vh0=961.618057)

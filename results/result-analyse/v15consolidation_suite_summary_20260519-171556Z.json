@@ -1,0 +1,29 @@
+{
+  "suite": "v15consolidation_suite",
+  "timestamp": "20260519-171556Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "v15_stability",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15stability_check_20260519-171555Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15stability_check_20260519-171555Z.txt"
+    },
+    {
+      "label": "v15_robustness",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15robustness_check_20260519-171555Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15robustness_check_20260519-171555Z.txt"
+    },
+    {
+      "label": "v15_lock",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15lock_check_20260519-171556Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15lock_check_20260519-171556Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15consolidation_suite_summary_20260519-171556Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15consolidation_suite_summary_20260519-171556Z.txt"
+}

@@ -1,0 +1,8 @@
+V44 stability check
+timestamp: 20260519-163733Z
+verdict: supported
+hessian_matrix: [[0.14, 0.0, 0.0], [0.0, 0.11, 0.0], [0.0, 0.0, 0.45]]
+eigenvalues: [0.14, 0.11, 0.45]
+global_minimum: {'K': 0.0, 'T': 0.0, 'Y': 0.7}
+no_secondary_minima: True
+stability_ok: True

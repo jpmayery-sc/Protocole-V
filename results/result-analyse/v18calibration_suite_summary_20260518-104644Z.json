@@ -1,0 +1,35 @@
+{
+  "suite": "v18calibration_suite",
+  "timestamp": "20260518-104644Z",
+  "overall_verdict": "partiel",
+  "supported_count": 3,
+  "total": 4,
+  "items": [
+    {
+      "label": "v18_delta",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18delta_check_20260518-104643Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18delta_check_20260518-104643Z.txt"
+    },
+    {
+      "label": "v18_calibrate",
+      "verdict": "degraded",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibrate_check_20260518-104644Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibrate_check_20260518-104644Z.txt"
+    },
+    {
+      "label": "v18_recheck",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18recheck_check_20260518-104644Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18recheck_check_20260518-104644Z.txt"
+    },
+    {
+      "label": "v18_verdict",
+      "verdict": "supported-neutral",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18verdict_check_20260518-104644Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18verdict_check_20260518-104644Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibration_suite_summary_20260518-104644Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibration_suite_summary_20260518-104644Z.txt"
+}

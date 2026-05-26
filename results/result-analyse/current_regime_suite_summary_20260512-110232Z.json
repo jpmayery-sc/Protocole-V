@@ -1,0 +1,35 @@
+{
+  "suite": "current_regime",
+  "timestamp": "20260512-110232Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "copper_current",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\copper_current_check_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\copper_current_check_20260512-110232Z.txt"
+    },
+    {
+      "label": "iron_current",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\iron_current_check_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\iron_current_check_20260512-110232Z.txt"
+    },
+    {
+      "label": "aluminum_current",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\aluminum_current_check_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\aluminum_current_check_20260512-110232Z.txt"
+    },
+    {
+      "label": "three_phase_current",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\three_phase_current_check_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\three_phase_current_check_20260512-110232Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\current_regime_suite_summary_20260512-110232Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\current_regime_suite_summary_20260512-110232Z.txt"
+}

@@ -1,0 +1,7 @@
+TRANS-01 FRB coherence pipeline summary
+timestamp: 20260522-165852Z
+verdict: trans01_frb_partial
+chi2_model: 0.5594135802469146
+chi2_baseline: 24.49768518518519
+delta_chi2: 23.938271604938276
+max_abs_local_shift: 8.0

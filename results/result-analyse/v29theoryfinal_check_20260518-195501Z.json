@@ -1,0 +1,21 @@
+{
+  "section": "V29-THEORY-FINAL",
+  "finaltheorymap": [
+    "Y -> Sent(Y) -> g_mu_nu -> (K,T) -> tubes -> modes -> cosmology"
+  ],
+  "finalequationset": [
+    "i hbar d/dtau |Y> = (H_geom + H_K + H_T + H_int + H_ent)|Y>"
+  ],
+  "final_invariants": [
+    "alpha0",
+    "metricpair(sgeo, s_atom)",
+    "torsion_eff",
+    "hierarchy",
+    "intricationoperatorset"
+  ],
+  "final_consistency": true,
+  "verdict": "supported",
+  "timestamp": "20260518-195501Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29theoryfinal_check_20260518-195501Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29theoryfinal_check_20260518-195501Z.txt"
+}

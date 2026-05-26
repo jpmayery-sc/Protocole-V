@@ -1,0 +1,13 @@
+V19 sensitivity check
+timestamp: 20260518-120932Z
+verdict: supported
+top2_stable: True
+dominant_gap: 102595.5485826901
+median_abs_derivative: 0.0019170000003301824
+
+Ranking:
+- A_kappa: derivative=196.67566666689217
+- p: derivative=-0.04229513333335322
+- s_atom: derivative=-0.0019170000003301824
+- s_geo: derivative=-0.0019170000003301824
+- alpha0: derivative=0.0

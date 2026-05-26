@@ -1,0 +1,42 @@
+{
+  "section": "V33-PREDICTIONS",
+  "prediction_count": 5,
+  "predictions": [
+    {
+      "anomaly": "Muon g-2",
+      "prediction": "non-zero correction of stable sign",
+      "test": "spin precession"
+    },
+    {
+      "anomaly": "Muon g-2",
+      "prediction": "magnitude near 10^-9",
+      "test": "global fit"
+    },
+    {
+      "anomaly": "Neutrinos",
+      "prediction": "background geometric mass term",
+      "test": "oscillations"
+    },
+    {
+      "anomaly": "Neutrinos",
+      "prediction": "Delta m^2_sol and Delta m^2_atm reproduced",
+      "test": "spectrum fits"
+    },
+    {
+      "anomaly": "Neutrinos",
+      "prediction": "environmental shifts remain tiny",
+      "test": "long baseline comparison"
+    }
+  ],
+  "kty_ansatz_set": {
+    "muon_linear": "Delta a_mu ~ A_mu K_tilde + B_mu T_tilde",
+    "muon_quadratic": "Delta a_mu ~ A_mu K_tilde + B_mu T_tilde + C_mu K_tilde*T_tilde",
+    "neutrino_linear": "m_nu_eff ~ m0 + gamma K_bg",
+    "neutrino_quadratic": "m_nu_eff^2 ~ m0^2 + lambda K_bg",
+    "shared_background": "K_bg and K_loc come from the same internal geometry"
+  },
+  "verdict": "supported",
+  "timestamp": "20260519-102256Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33predictions_check_20260519-102256Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33predictions_check_20260519-102256Z.txt"
+}

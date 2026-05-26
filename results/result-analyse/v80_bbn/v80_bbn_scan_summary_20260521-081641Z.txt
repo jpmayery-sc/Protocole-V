@@ -1,0 +1,20 @@
+V80 BBN delta_EM scan summary
+timestamp: 20260521-081641Z
+verdict: band_confirmed
+accepted_count: 22/191
+delta_em_min_acceptable: -0.008
+delta_em_max_acceptable: -0.0059
+delta_em_central_value: -0.00695
+best_fit_delta_em: -0.0068
+csv_path: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v80_bbn\v80_bbn_scan_table.csv
+plot_paths:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v80_bbn\plots\D_over_H_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v80_bbn\plots\Y_p_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v80_bbn\plots\Li7_over_H_vs_delta_em.png
+
+Best fit:
+- delta_em=-0.006800, D/H=2.528707e-05, Y_p=0.246750, Li/H=1.594119e-10
+
+Notes:
+- V80 = BBN only, mécanisme paramétré par delta_EM, sans Lagrangien.
+- pi_n_BBN, eta_b et N_eff sont tenus fixes dans le proxy.

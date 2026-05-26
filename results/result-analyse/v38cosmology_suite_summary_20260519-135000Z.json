@@ -1,0 +1,35 @@
+{
+  "suite": "v38cosmology_suite",
+  "timestamp": "20260519-135000Z",
+  "v38_global_verdict": "partially_supported",
+  "supported_count": 2,
+  "total": 4,
+  "items": [
+    {
+      "label": "v38_hubble",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38hubble_check_20260519-134959Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38hubble_check_20260519-134959Z.txt"
+    },
+    {
+      "label": "v38_lambda",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38lambda_check_20260519-134959Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38lambda_check_20260519-134959Z.txt"
+    },
+    {
+      "label": "v38_growth",
+      "verdict": "inconclusive",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38growth_check_20260519-135000Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38growth_check_20260519-135000Z.txt"
+    },
+    {
+      "label": "v38_tester_summary",
+      "verdict": "partially_supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38tester_summary_check_20260519-135000Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38tester_summary_check_20260519-135000Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38cosmology_suite_summary_20260519-135000Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38cosmology_suite_summary_20260519-135000Z.txt"
+}

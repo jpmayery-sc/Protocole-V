@@ -1,0 +1,55 @@
+{
+  "suite": "v78h_realdata_validation",
+  "timestamp": "20260521-144344Z",
+  "verdict": "no_accepted_band",
+  "input_csv": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\data\\v78h_real_bbn_reference.csv",
+  "total": 9,
+  "accepted_count": 0,
+  "best_fit_beta_e_phys": 1.1,
+  "best_fit_gamma_exch_phys": 0.5,
+  "best_fit_gamma_drain_phys": 0.5,
+  "curve_reading": "pente nette, monotone et convexe",
+  "surface_reading": "surface sans zone de passage claire",
+  "comparison_with_v77g": "aucune zone compatible, géométrie plus rigide que V77G",
+  "csv_full_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\v78h_results_full.csv",
+  "csv_accepted_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\v78h_results_accepted.csv",
+  "plot_litot_beta_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\plots\\v78h_Litot_vs_beta_e.png",
+  "plot_surface_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\plots\\v78h_Litot_surface_gamma.png",
+  "plot_observables_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\plots\\v78h_DH_vs_param.png",
+  "observations": {
+    "D_over_H": {
+      "obs": 2.527e-05,
+      "sigma": 3e-07
+    },
+    "Y_p": {
+      "obs": 0.2436,
+      "sigma": 0.004
+    },
+    "Li7_over_H": {
+      "obs": 1.3e-10,
+      "sigma": 2e-11
+    }
+  },
+  "observations_source": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\data\\v78h_observations.json",
+  "best_fit": {
+    "beta_e_phys": 1.1,
+    "gamma_exch_phys": 0.5,
+    "gamma_drain_phys": 0.5,
+    "D_over_H": 2.473e-05,
+    "Y_p": 0.244,
+    "Li7_over_H": 3.1e-10,
+    "Be7_over_H": 1.9e-10,
+    "Li_total_over_H": 5e-10,
+    "chi_D": 1.8000000000000054,
+    "chi_Y": 0.09999999999999593,
+    "chi_Li7": 9.000000000000002,
+    "passes_D": false,
+    "passes_Y": true,
+    "passes_Li7": false,
+    "passes_all": false,
+    "chi_sum": 10.900000000000002
+  },
+  "accepted_rows": [],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\v78h_realdata_validation_summary_20260521-144344Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\V78H_REALDATA_SUMMARY.txt"
+}

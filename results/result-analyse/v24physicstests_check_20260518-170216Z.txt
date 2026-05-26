@@ -1,0 +1,5 @@
+V24 physics tests check
+timestamp: 20260518-170216Z
+verdict: supported
+physicstestspassed: True
+failed_tests: 0

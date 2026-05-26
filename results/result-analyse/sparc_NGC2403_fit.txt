@@ -1,0 +1,8 @@
+Galaxy: NGC2403
+Rotmod source: data/SPARC/Rotmod\NGC2403_rotmod.dat
+Best V_halo (flat): 83.520000 km/s
+Chi2_min: 31577.787914
+V_halo 1-sigma lower bound: 0.141887 km/s
+V_halo 1-sigma upper bound: 167.182503 km/s
+V_halo -1sigma/+1sigma: -0.141887 / +0.142503 km/s
+Inferred rho0 (r0=1.0 kpc): 1.290657e+08 Msun/kpc^3

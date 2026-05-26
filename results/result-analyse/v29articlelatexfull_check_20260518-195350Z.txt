@@ -1,0 +1,27 @@
+V29 article latex full check
+{
+  "section": "V29-ARTICLE-LATEX-FULL",
+  "latexfullstructure": [
+    "Resume",
+    "Introduction",
+    "Axiomes fondamentaux",
+    "Geometrie emergente",
+    "Tubes quantiques",
+    "Spin & torsion",
+    "QGR interne complete",
+    "Renormalisation multi-echelle",
+    "Cosmologie geometrique complete",
+    "Simulation HPC",
+    "Observables ultimes",
+    "Tests observationnels",
+    "Discussion",
+    "Conclusion",
+    "Annexes",
+    "Bibliographie"
+  ],
+  "readyforsubmission_final": true,
+  "verdict": "supported",
+  "timestamp": "20260518-195350Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29articlelatexfull_check_20260518-195350Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29articlelatexfull_check_20260518-195350Z.txt"
+}

@@ -1,0 +1,15 @@
+{
+  "section": "V37-DARK",
+  "Sent_Y_halo": 0.9,
+  "epsilon": 0.1,
+  "density_ratio": 5.0,
+  "halo_match_ok": true,
+  "epsilon_ok": true,
+  "multi_scale_ok": true,
+  "rejected_reasons": [],
+  "v37_DM_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-134150Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v37_extensions\\v37dark_check_20260519-134150Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v37_extensions\\v37dark_check_20260519-134150Z.txt"
+}

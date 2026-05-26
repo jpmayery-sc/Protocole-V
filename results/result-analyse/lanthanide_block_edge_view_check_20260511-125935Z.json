@@ -1,0 +1,270 @@
+{
+  "timestamp": "20260511-125935Z",
+  "hypothesis": "the lanthanide family needs a block-and-edge view to isolate the usable core",
+  "case_control": "full lanthanide family La -> Lu versus a shortened core excluding the edge anomalies",
+  "observable": "trend repair and regularity change after removing edge anomalies",
+  "expected": {
+    "full_family": "mixed or broken trend",
+    "core": "more regular than the full series",
+    "z_eff": "more regular than mass in the core"
+  },
+  "measured": {
+    "full_family": {
+      "series": [
+        {
+          "symbol": "La",
+          "period": 6,
+          "mass_u": 138.90547,
+          "radius_pm": 195.0,
+          "ionization_ev": 5.577,
+          "zeff_proxy": 3.842219
+        },
+        {
+          "symbol": "Ce",
+          "period": 6,
+          "mass_u": 140.116,
+          "radius_pm": 185.0,
+          "ionization_ev": 5.5387,
+          "zeff_proxy": 3.829003
+        },
+        {
+          "symbol": "Pr",
+          "period": 6,
+          "mass_u": 140.90766,
+          "radius_pm": 182.0,
+          "ionization_ev": 5.473,
+          "zeff_proxy": 3.806226
+        },
+        {
+          "symbol": "Nd",
+          "period": 6,
+          "mass_u": 144.242,
+          "radius_pm": 181.0,
+          "ionization_ev": 5.525,
+          "zeff_proxy": 3.824265
+        },
+        {
+          "symbol": "Sm",
+          "period": 6,
+          "mass_u": 150.36,
+          "radius_pm": 180.0,
+          "ionization_ev": 5.644,
+          "zeff_proxy": 3.86523
+        },
+        {
+          "symbol": "Eu",
+          "period": 6,
+          "mass_u": 151.964,
+          "radius_pm": 199.0,
+          "ionization_ev": 5.67,
+          "zeff_proxy": 3.874122
+        },
+        {
+          "symbol": "Gd",
+          "period": 6,
+          "mass_u": 157.25,
+          "radius_pm": 180.0,
+          "ionization_ev": 6.15,
+          "zeff_proxy": 4.034775
+        },
+        {
+          "symbol": "Tb",
+          "period": 6,
+          "mass_u": 158.92535,
+          "radius_pm": 178.0,
+          "ionization_ev": 5.863,
+          "zeff_proxy": 3.939506
+        },
+        {
+          "symbol": "Dy",
+          "period": 6,
+          "mass_u": 162.5,
+          "radius_pm": 177.0,
+          "ionization_ev": 5.939,
+          "zeff_proxy": 3.964957
+        },
+        {
+          "symbol": "Ho",
+          "period": 6,
+          "mass_u": 164.93033,
+          "radius_pm": 176.0,
+          "ionization_ev": 6.022,
+          "zeff_proxy": 3.992567
+        },
+        {
+          "symbol": "Er",
+          "period": 6,
+          "mass_u": 167.259,
+          "radius_pm": 175.0,
+          "ionization_ev": 6.108,
+          "zeff_proxy": 4.020974
+        },
+        {
+          "symbol": "Tm",
+          "period": 6,
+          "mass_u": 168.93422,
+          "radius_pm": 174.0,
+          "ionization_ev": 6.184,
+          "zeff_proxy": 4.045913
+        },
+        {
+          "symbol": "Yb",
+          "period": 6,
+          "mass_u": 173.045,
+          "radius_pm": 194.0,
+          "ionization_ev": 6.254,
+          "zeff_proxy": 4.068747
+        },
+        {
+          "symbol": "Lu",
+          "period": 6,
+          "mass_u": 174.9668,
+          "radius_pm": 173.0,
+          "ionization_ev": 5.428,
+          "zeff_proxy": 3.790546
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "increasing",
+      "radius_rmse": 7.194451027611285,
+      "ionization_rmse": 0.22869341050720976,
+      "zeff_rmse": 0.07722476307074867,
+      "mass_rmse": 1.2889377036664489,
+      "radius_step_cv": 6.646629668517212,
+      "ionization_step_cv": 24.76517518768003,
+      "zeff_step_cv": 23.990344113902356,
+      "mass_step_cv": 0.5605744687106792
+    },
+    "core": {
+      "series": [
+        {
+          "symbol": "La",
+          "period": 6,
+          "mass_u": 138.90547,
+          "radius_pm": 195.0,
+          "ionization_ev": 5.577,
+          "zeff_proxy": 3.842219
+        },
+        {
+          "symbol": "Ce",
+          "period": 6,
+          "mass_u": 140.116,
+          "radius_pm": 185.0,
+          "ionization_ev": 5.5387,
+          "zeff_proxy": 3.829003
+        },
+        {
+          "symbol": "Pr",
+          "period": 6,
+          "mass_u": 140.90766,
+          "radius_pm": 182.0,
+          "ionization_ev": 5.473,
+          "zeff_proxy": 3.806226
+        },
+        {
+          "symbol": "Nd",
+          "period": 6,
+          "mass_u": 144.242,
+          "radius_pm": 181.0,
+          "ionization_ev": 5.525,
+          "zeff_proxy": 3.824265
+        },
+        {
+          "symbol": "Sm",
+          "period": 6,
+          "mass_u": 150.36,
+          "radius_pm": 180.0,
+          "ionization_ev": 5.644,
+          "zeff_proxy": 3.86523
+        },
+        {
+          "symbol": "Eu",
+          "period": 6,
+          "mass_u": 151.964,
+          "radius_pm": 199.0,
+          "ionization_ev": 5.67,
+          "zeff_proxy": 3.874122
+        },
+        {
+          "symbol": "Gd",
+          "period": 6,
+          "mass_u": 157.25,
+          "radius_pm": 180.0,
+          "ionization_ev": 6.15,
+          "zeff_proxy": 4.034775
+        },
+        {
+          "symbol": "Tb",
+          "period": 6,
+          "mass_u": 158.92535,
+          "radius_pm": 178.0,
+          "ionization_ev": 5.863,
+          "zeff_proxy": 3.939506
+        },
+        {
+          "symbol": "Dy",
+          "period": 6,
+          "mass_u": 162.5,
+          "radius_pm": 177.0,
+          "ionization_ev": 5.939,
+          "zeff_proxy": 3.964957
+        },
+        {
+          "symbol": "Ho",
+          "period": 6,
+          "mass_u": 164.93033,
+          "radius_pm": 176.0,
+          "ionization_ev": 6.022,
+          "zeff_proxy": 3.992567
+        },
+        {
+          "symbol": "Er",
+          "period": 6,
+          "mass_u": 167.259,
+          "radius_pm": 175.0,
+          "ionization_ev": 6.108,
+          "zeff_proxy": 4.020974
+        },
+        {
+          "symbol": "Tm",
+          "period": 6,
+          "mass_u": 168.93422,
+          "radius_pm": 174.0,
+          "ionization_ev": 6.184,
+          "zeff_proxy": 4.045913
+        },
+        {
+          "symbol": "Lu",
+          "period": 6,
+          "mass_u": 174.9668,
+          "radius_pm": 173.0,
+          "ionization_ev": 5.428,
+          "zeff_proxy": 3.790546
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "increasing",
+      "radius_rmse": 5.369326804141309,
+      "ionization_rmse": 0.22031428683381798,
+      "zeff_rmse": 0.07450656877881578,
+      "mass_rmse": 1.3330363367748632,
+      "radius_step_cv": 4.458254485541538,
+      "ionization_step_cv": 22.44000209397827,
+      "zeff_step_cv": 21.773582122292616,
+      "mass_step_cv": 0.5991234902049053
+    }
+  },
+  "verdict": "partiel",
+  "reference": "lanthanide contraction as a block-level edge effect",
+  "falsifiers": [
+    "the full family is already regular",
+    "the core does not improve the regularity",
+    "Z_eff is not more regular than mass in the repaired core"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\lanthanide_block_edge_view_check_20260511-125935Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\lanthanide_block_edge_view_check_20260511-125935Z.txt"
+}

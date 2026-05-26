@@ -1,0 +1,41 @@
+{
+  "timestamp": "20260512-110844Z",
+  "reference": {
+    "rho_20_c_ohm_m": 2.82e-08,
+    "temp_coeff_per_c": 0.00429,
+    "copper_reference_rho_20_c_ohm_m": 1.68e-08,
+    "iron_reference_rho_20_c_ohm_m": 9.71e-08
+  },
+  "ohmic_test": {
+    "length_m": 1.0,
+    "area_m2": 1e-06,
+    "resistance_ohm": 0.028200000000000003,
+    "v_test_v": 1.0,
+    "i_test_a": 35.46099290780141,
+    "status": "conforme strict"
+  },
+  "temperature_test": {
+    "rho_20_c": 2.82e-08,
+    "rho_100_c": 3.787824e-08,
+    "status": "conforme strict"
+  },
+  "contrast_test": {
+    "rho_aluminum": 2.82e-08,
+    "rho_copper": 1.68e-08,
+    "rho_iron": 9.71e-08,
+    "status": "conforme strict"
+  },
+  "surface_test": {
+    "rho_pure": 2.82e-08,
+    "rho_impure": 3.3276e-08,
+    "rho_oxidized": 3.6096e-08,
+    "status": "conforme strict"
+  },
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "l’aluminium n’est pas intermédiaire entre cuivre et fer",
+    "la loi d’Ohm ne tient pas au régime faible",
+    "la résistivité ne monte pas avec la température",
+    "les impuretés ou l’oxyde n’augmentent pas la résistivité"
+  ]
+}

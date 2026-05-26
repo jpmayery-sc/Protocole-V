@@ -1,0 +1,47 @@
+{
+  "suite": "v44potential_suite",
+  "timestamp": "20260519-163546Z",
+  "v44_global_verdict": "supported",
+  "supported_count": 6,
+  "total": 6,
+  "items": [
+    {
+      "label": "v44_decomposition",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44decomposition_check_20260519-163545Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44decomposition_check_20260519-163545Z.txt"
+    },
+    {
+      "label": "v44_kt_potential",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44kt_potential_check_20260519-163545Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44kt_potential_check_20260519-163545Z.txt"
+    },
+    {
+      "label": "v44_y_potential",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44y_potential_check_20260519-163545Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44y_potential_check_20260519-163545Z.txt"
+    },
+    {
+      "label": "v44_couplings",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44couplings_check_20260519-163545Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44couplings_check_20260519-163545Z.txt"
+    },
+    {
+      "label": "v44_stability",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44stability_check_20260519-163546Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44stability_check_20260519-163546Z.txt"
+    },
+    {
+      "label": "v44_synthesis",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44synthesis_check_20260519-163546Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44synthesis_check_20260519-163546Z.txt"
+    }
+  ],
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44potential_suite_summary_20260519-163546Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44potential_suite_summary_20260519-163546Z.txt"
+}

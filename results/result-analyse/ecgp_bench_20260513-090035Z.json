@@ -1,0 +1,98 @@
+{
+  "suite": "ecgp_bench",
+  "timestamp": "20260513-090035Z",
+  "input_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\data\\ecgp_trials_demo_control.json",
+  "input_status": "demo_control",
+  "overall_verdict": "rejected",
+  "trial_count": 6,
+  "materials": [
+    "al",
+    "cu",
+    "fe"
+  ],
+  "frequencies_hz": [
+    1000000.0,
+    5000000.0
+  ],
+  "geometries": [
+    "spiral",
+    "straight"
+  ],
+  "mean_delta": 0.0030000000000000027,
+  "median_delta": 0.0030000000000000027,
+  "delta_spread": 0.0040000000000000036,
+  "material_spread": 0.0030000000000000027,
+  "frequency_spread": 0.0,
+  "geometry_spread": 0.002250000000000002,
+  "frequency_delta_r": 0.0,
+  "checks": [
+    "delta_fidelity = measured_fidelity - control_fidelity",
+    "losses and other matched controls are already absorbed by the control channel",
+    "material and frequency summaries are computed only after normalization"
+  ],
+  "issues": [],
+  "material_summary": [
+    {
+      "label": "al",
+      "count": 2,
+      "mean_delta": 0.0015000000000000013,
+      "min_delta": 0.0010000000000000009,
+      "max_delta": 0.0020000000000000018,
+      "spread": 0.0010000000000000009
+    },
+    {
+      "label": "cu",
+      "count": 2,
+      "mean_delta": 0.0030000000000000027,
+      "min_delta": 0.0030000000000000027,
+      "max_delta": 0.0030000000000000027,
+      "spread": 0.0
+    },
+    {
+      "label": "fe",
+      "count": 2,
+      "mean_delta": 0.004500000000000004,
+      "min_delta": 0.0040000000000000036,
+      "max_delta": 0.0050000000000000044,
+      "spread": 0.0010000000000000009
+    }
+  ],
+  "frequency_summary": [
+    {
+      "label": "1000000.0",
+      "count": 3,
+      "mean_delta": 0.0030000000000000027,
+      "min_delta": 0.0020000000000000018,
+      "max_delta": 0.0040000000000000036,
+      "spread": 0.0020000000000000018
+    },
+    {
+      "label": "5000000.0",
+      "count": 3,
+      "mean_delta": 0.0030000000000000027,
+      "min_delta": 0.0010000000000000009,
+      "max_delta": 0.0050000000000000044,
+      "spread": 0.0040000000000000036
+    }
+  ],
+  "geometry_summary": [
+    {
+      "label": "spiral",
+      "count": 2,
+      "mean_delta": 0.004500000000000004,
+      "min_delta": 0.0040000000000000036,
+      "max_delta": 0.0050000000000000044,
+      "spread": 0.0010000000000000009
+    },
+    {
+      "label": "straight",
+      "count": 4,
+      "mean_delta": 0.002250000000000002,
+      "min_delta": 0.0010000000000000009,
+      "max_delta": 0.0030000000000000027,
+      "spread": 0.0020000000000000018
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\ecgp_bench_20260513-090035Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\ecgp_bench_20260513-090035Z.txt"
+}

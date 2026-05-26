@@ -1,0 +1,8 @@
+V21 verdict check
+timestamp: 20260518-170347Z
+verdict_global: supported
+classification: resolu
+niveau_de_confiance: haute
+zone_critique_principale: none
+borderline_verdict: supported
+resolution_verdict: supported

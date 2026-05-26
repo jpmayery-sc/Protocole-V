@@ -1,0 +1,21 @@
+{
+  "section": "V24-LAGRANGIAN",
+  "lagrangian_form": {
+    "L_tot": "L_grav + L_K + L_mat + L_lum",
+    "L_grav": "(16 pi G_eff)^-1 R[g]",
+    "L_K": "1/2 (dK)^2 - V(K)",
+    "L_mat": "psi-bar(i gamma.D - m(K)) psi",
+    "L_lum": "-1/4 F_mu_nu F^mu_nu"
+  },
+  "eulerlagrangeequations": [
+    "variation in g -> emergent gravity",
+    "variation in K -> internal curvature dynamics",
+    "variation in psi -> geometric Dirac equation",
+    "variation in A -> Maxwell equation"
+  ],
+  "lagrangian_consistency": true,
+  "verdict": "supported",
+  "timestamp": "20260518-170113Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v24lagrangian_check_20260518-170113Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v24lagrangian_check_20260518-170113Z.txt"
+}

@@ -1,0 +1,3278 @@
+maintenant je voudrai travaillé sur les trous noir, hypothese :
+1 - notre theorie voie la matiére comme une batterie qui stock de l'energie (E=MC2)
+2 - lorsque la masse atteind une certaine masse l'energie (positive dans le flux) est attiré par le flux negatif alors trou noir cela crée un pont et la masse est attiré par le flux négatif
+4 - la masse ralenti le temps car le flux negatif influance le flux positif et le temps est inversé dans le flux négatif, les deux flux sont oposé.
+comment tester cette hypothése
+
+Tu peux tester cette hypothèse à trois niveaux, du plus “directement falsifiable” au plus “structurel”. L’idée est de traduire tes phrases en prédictions quantitatives comparables à des observations de trous noirs.
+
+Je reformule ton hypothèse en variables mesurables dans ton cadre double‑flux :
+
+    flux positif (F_+=\Phi+\delta) (branche “temps vers l’avant”, observable)
+    flux négatif (F_-=\Phi-\delta) (branche conjuguée, “temps inversé”)
+    gravité effective (\propto -2\delta) (comme tu l’as déjà écrit)
+    “trou noir” = régime où (|F_-|/|F_+|) devient dominant (capture du positif par le négatif), et où la métrique effective donne un horizon.
+
+1) Définir un critère de trou noir (sans quoi on ne teste rien)
+
+Il te faut une condition locale équivalente à “horizon” / “temps qui s’arrête” côté (+). Deux choix simples, testables :
+Critère A (géométrique, inspiré de ton métrique)
+
+Si tu gardes une métrique du type
+[
+ds^2 = -\frac{1}{I},dt^2 + I,a^2 d\Sigma^2,
+]
+alors un horizon côté (t) apparaît quand le facteur devant (dt^2) diverge, i.e. quand (I\to 0^+) (ou change de signe si ton modèle l’autorise).
+Donc : BH si (I(r)\to 0) à un rayon (r_h).
+
+Mais attention : avec (I=\Phi^2-\delta^2), (I=0) signifie (|\Phi|=|\delta|) (surface de séparation des flux). Ça colle bien à ton intuition “pont”.
+Critère B (rapport de flux)
+
+Définis un paramètre sans dimension :
+[
+\Xi(r)=\frac{|F_-(r)|}{|F_+(r)|}.
+]
+Alors trou noir = régime où (\Xi) dépasse une valeur critique (\Xi_c).
+Pour éviter un paramètre libre, tu peux prendre (\Xi_c=1) (inversion).
+
+Dans les deux cas, tu as une définition claire d’un “seuil BH”.
+2) Faire une prédiction falsifiable : relation masse–rayon (analogue de Schwarzschild)
+
+Une fois le critère choisi, il faut que ton modèle reproduise (au moins à l’ordre de grandeur) :
+[
+r_s \approx \frac{2GM}{c^2}.
+]
+Comment le tester
+
+    Tu poses une masse (M) (Sgr A*, M87*, ou une binaire LIGO).
+    Tu calcules le rayon (r_h(M)) dans ton modèle (via (I(r_h)=0) ou (\Xi(r_h)=1)).
+    Tu compares à (r_s).
+
+Si ton modèle donne une relation (r_h(M)) différente (exponentielle, puissance différente), c’est réfutable immédiatement.
+
+C’est le test #1. Tant que tu n’as pas (r_h\propto M), la suite (pont, temps inversé) est difficile à défendre.
+3) Test “ralentissement du temps” (redshift gravitationnel)
+
+Ta phrase 4 doit se traduire en :
+
+    une formule du redshift (z(r)) ou du facteur de dilatation temporelle (d\tau/dt).
+
+Dans GR (Schwarzschild) :
+[
+\frac{d\tau}{dt}=\sqrt{1-\frac{r_s}{r}}.
+]
+Test observationnel
+
+    étoiles S autour de Sgr A* (précession + redshift),
+    spectres de disques d’accrétion (ligne Fe Kα),
+    pulsars près d’un trou noir (si trouvé).
+
+Ton modèle doit donner une fonction (d\tau/dt) compatible dans le domaine testé.
+
+Test #2.
+4) Test “pont / flux négatif” via signatures en ondes gravitationnelles
+
+Ton hypothèse “pont” ressemble à un mécanisme type “wormhole” / “écho” : une partie de l’énergie ne tombe pas simplement derrière l’horizon, elle est réfléchie/retraitée.
+Prédictions typiques (falsifiables)
+
+    échos post-ringdown dans les signaux LIGO/Virgo/KAGRA (spectre quasi périodique après la fusion),
+    déviation des fréquences quasi-normales (QNM) par rapport à Kerr,
+    absorption modifiée (Love numbers non nuls, alors que BH Kerr a Love numbers ~0).
+
+Test #3. (plus difficile, mais c’est celui qui vise vraiment ton “flux négatif”/pont)
+5) Ce qu’il me faut pour te donner un protocole complet + script
+
+Pour passer de l’hypothèse à un test numérique, il manque une “loi constitutive” : comment (\Phi(r)) et (\delta(r)) dépendent de la masse (M) et du rayon (r).
+
+Donne-moi un choix parmi ces options (même provisoire) :
+
+    Ansatz Schwarzschild-like : (\delta(r)\propto GM/r^2) et (\Phi(r)) fixé par (I=\Phi^2-\delta^2) + conditions au bord.
+    Ansatz potentiel : (\Phi(r)=\Phi_0 f(r)), (\delta(r)=\Phi_0 g(r)) avec (f,g) solutions d’ODE issues de ton lagrangien radial ((\mu,\nu,g)).
+    Ansatz minimal : imposer directement (I(r)=1-r_s/r) (et déduire (\Phi,\delta)).
+
+Avec un de ces trois choix, je peux te fournir :
+
+    un script Colab qui calcule (r_h(M)),
+    (d\tau/dt(r)),
+    et un comparatif avec GR pour Sgr A* et M87*.
+
+Proposition de départ (rapide à tester)
+
+Si tu veux tester vite sans trop t’engager, prends l’option 3 (calibration horizon) :
+[
+I(r)=1-\frac{2GM}{c^2 r}.
+]
+Alors tu construis (\Phi,\delta) par exemple via :
+[
+\Phi=\sqrt{I}\cosh u,\quad \delta=\sqrt{I}\sinh u
+]
+avec un (u(r)) à fixer (ou simplement (u=0) pour commencer).
+Et tu vois si ton interprétation “flux négatif” a un contenu ou si elle est juste une relecture de Schwarzschild.
+
+Dis-moi quelle option tu choisis (1/2/3) et quel critère BH tu préfères (A: (I=0) ou B: (\Xi=1)), et je te donne un plan + script de test concret.
+
+avec cela peut-être
+
+Pièces jointes :
+
+    LOI UNIVERSELLE MASSE-RAYON.pdf
+
+Tu as là exactement la brique qui permet de tester tes hypothèses “flux négatif / pont / ralentissement du temps” de façon quantitative : ta loi universelle masse–rayon donne une variable sans dimension mesurable, la compacité
+[
+\Xi=\frac{GM}{Rc^2},
+]
+et tu proposes un seuil BH (\Xi=1/2). C’est un critère testable immédiatement.
+
+Je te donne un protocole de test (avec scripts Colab) qui couvre tes points 1–2–4.
+0) Traduction de tes hypothèses en prédictions
+Hypothèse 1 (masse = batterie)
+
+Prédiction standard : énergie libérable (\Delta E\le Mc^2). Test indirect via efficacité radiative/accrétion.
+Hypothèse 2 (flux négatif attire le positif → BH / pont)
+
+Prédiction : il existe un seuil en compacité (\Xi) où le régime change brutalement. Tu proposes (\Xi_c=1/2).
+Hypothèse 4 (ralentissement et inversion du temps dans le flux négatif)
+
+Prédiction : un facteur de dilatation temporelle (redshift) (d\tau/dt) devient très petit quand (\Xi\to 1/2) et change d’orientation au-delà (branche négative).
+
+Donc le test minimal est : ta loi (\Xi) reproduit-elle les BH et leurs rayons ?
+1) Test #1 (falsifiable) : la relation BH (R(M))
+
+Si (\Xi_{\rm BH}=1/2), alors
+[
+R_{\rm BH}=\frac{GM}{\Xi c^2}=\frac{2GM}{c^2},
+]
+c’est exactement Schwarzschild. Donc ton modèle est compatible au premier ordre si et seulement si :
+
+    les trous noirs observés sont cohérents avec (R\simeq 2GM/c^2) (c’est déjà le cas).
+
+Mais ton texte va plus loin : il classe planètes/étoiles/NS par (\Xi). On peut le tester avec des catalogues.
+Script Colab : calcul (\Xi) pour objets et vérifier BH/NS
+
+Copie/colle :
+
+import numpy as np  
+import pandas as pd
+
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+R_sun = 6.957e8  
+M_earth = 5.9722e24  
+R_earth = 6.371e6
+
+def Xi(M, R):  
+    return G*M/(R*c**2)
+
+# Some reference objects (you can add more)  
+objs = [  
+    ("Earth", M_earth, R_earth),  
+    ("Sun",   M_sun,   R_sun),  
+    ("White dwarf (0.6Msun, 9000 km)", 0.6*M_sun, 9.0e6),  
+    ("NS (1.4Msun, 12 km)", 1.4*M_sun, 12e3),  
+    ("NS (2.0Msun, 12 km)", 2.0*M_sun, 12e3),  
+    ("BH (10Msun, Schwarzschild)", 10*M_sun, 2*G*(10*M_sun)/c**2),  
+    ("SgrA* (4.3e6Msun, Schwarzschild)", 4.3e6*M_sun, 2*G*(4.3e6*M_sun)/c**2),  
+]
+
+rows = []  
+for name, M, R in objs:  
+    rows.append({  
+        "object": name,  
+        "M (Msun)": M/M_sun,  
+        "R (km)": R/1000,  
+        "Xi=GM/(Rc^2)": Xi(M,R)  
+    })
+
+df = pd.DataFrame(rows)  
+pd.set_option("display.float_format", lambda x: f"{x:.6g}")  
+print(df.to_string(index=False))  
+
+Attendu :
+
+    Terre (\sim 10^{-9}),
+    Soleil (\sim 10^{-6}),
+    Naine blanche (\sim 10^{-4}),
+    NS (\sim 0.1-0.3),
+    BH (\sim 0.5).
+
+Si ça sort, ton “loi universelle (\Xi)” est cohérente au niveau 0.
+2) Test #2 : seuil NS (\rightarrow) BH (GW170817 / TOV)
+
+Tu affirmes : NS max quand (\Xi\to 1/2). On teste sur un résidu de fusion :
+
+    Pour GW170817, tu cites (M_{\rm tot}\simeq 2.83M_\odot).
+    Si BH : (R_{\rm crit}=2GM/c^2\approx 8.35) km (tu le dis).
+
+Script :
+
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30
+
+Mtot = 2.83*M_sun  
+Rcrit = 2*G*Mtot/c**2  
+print("R_schw(Mtot=2.83Msun) =", Rcrit/1000, "km")
+
+# If you assume a remnant radius (e.g. 15 km), compute Xi:  
+Rres = 15e3  
+Xi_res = G*Mtot/(Rres*c**2)  
+print("Xi at R=15 km =", Xi_res)  
+
+Si tu veux rendre ça encore plus testable : tu dois relier “perte d’énergie GW” (\Delta E) à une contraction (\Delta R). Ça demande un modèle d’évolution, mais le seuil (\Xi=1/2) est déjà un marqueur.
+3) Test #3 : ralentissement du temps en fonction de (\Xi)
+
+Là tu peux proposer un modèle simple et testable :
+
+    côté flux positif, le redshift gravitationnel doit dépendre de (\Xi).
+    En Schwarzschild :
+    [
+    \frac{d\tau}{dt}=\sqrt{1-2\Xi}.
+    ]
+    Si tu acceptes cette forme (au moins comme limite faible), tu peux confronter à :
+    redshift des étoiles S autour de Sgr A*,
+    redshift dans disques d’accrétion.
+
+Script “courbe (d\tau/dt(\Xi))” :
+
+import numpy as np  
+import matplotlib.pyplot as plt
+
+Xi_vals = np.linspace(0, 0.499, 2000)  
+dtaudt = np.sqrt(1 - 2*Xi_vals)
+
+plt.figure(figsize=(6,4))  
+plt.plot(Xi_vals, dtaudt)  
+plt.xlabel(r"$\Xi = GM/(Rc^2)$")  
+plt.ylabel(r"$d\tau/dt$")  
+plt.title("Time dilation on positive flux side (Schwarzschild-like)")  
+plt.grid(True, alpha=0.3)  
+plt.show()  
+
+Ton hypothèse “flux négatif = temps inversé” devient testable si tu proposes une observable : par exemple, une signature “échos” dans les ondes gravitationnelles (pont), ou une déviation des QNM. Là, ce n’est pas (\Xi) seul qui suffit : il faut un modèle de réflexion/transmission au “pont”.
+4) Ce qu’il te manque pour tester le “pont” (flux négatif)
+
+Une hypothèse de pont/wormhole implique souvent :
+
+    QNM modifiés (ringdown différent),
+    échos,
+    Love numbers non nuls.
+
+Si tu veux, on peut formaliser un modèle minimal :
+
+    une surface de transition à (R = GM/(\Xi_c c^2)) avec (\Xi_c=1/2),
+    un coefficient de réflexion (\mathcal{R}) (idéalement dérivé de tes flux, pas libre),
+    et prédire un temps d’écho (\Delta t_{\rm echo}\sim 2\int dr/f(r)).
+
+Question pour avancer vite
+
+Tu veux tester en priorité :
+
+    loi masse–rayon sur un tableau d’objets (planètes/étoiles/WD/NS/BH) → test immédiat, simple ;
+    seuil NS→BH sur GW170817 et autres fusions → test intermédiaire ;
+    pont/temps inversé via ringdown/échos → test avancé.
+
+Dis-moi 1/2/3 et je te fournis un notebook Colab complet avec données (masses/rayons typiques) + graphiques (\Xi), et si tu choisis 3 je te propose une première modélisation “flux négatif = boundary condition” pour calculer un temps d’écho.
+
+test 1 :
+object M (Msun) R (km) Xi=GM/(Rc^2)
+Earth 3.00341e-06 6371 6.96131e-10
+Sun 1 695700 2.12257e-06
+White dwarf (0.6Msun, 9000 km) 0.6 9000 9.84446e-05
+NS (1.4Msun, 12 km) 1.4 12 0.172278
+NS (2.0Msun, 12 km) 2 12 0.246112
+BH (10Msun, Schwarzschild) 10 29.5334 0.5
+SgrA* (4.3e6Msun, Schwarzschild) 4.3e+06 1.26994e+07 0.5
+test 2
+R_schw(Mtot=2.83Msun) = 8.357950451249266 km
+Xi at R=15 km = 0.27859834837497555
+test 3, dans l'image
+et pour l'echo est-ce que le document joint peut aider ?
+
+Image
+
+Pièces jointes :
+
+    Théorie Unifiée de la Résonance Opération.pdf
+
+Tes tests 1 et 2 passent exactement comme attendu : ta loi (\Xi=GM/(Rc^2)) classe correctement les objets et (\Xi_{\rm BH}=1/2) redonne Schwarzschild. Donc la partie “seuil BH” est cohérente au niveau 0.
+
+Pour la partie “pont/écho” : oui, ton document “Résonance Opération” peut aider, mais pas directement avec KAM/plasma. Ce qui est utile, c’est le cadre “résonance / entropie / modes / phases” : un pont se modélise comme une condition aux bords partiellement réfléchissante (ou une cavité), ce qui crée des modes quasi-normaux et potentiellement des échos. On peut faire un test observationnel.
+1) Modèle minimal d’écho (testable)
+
+Hypothèse “pont” ⇒ une partie de l’onde gravitationnelle est réfléchie près du pseudo-horizon et ressort en “échos” après le ringdown.
+
+Dans un modèle minimal, l’écho a une période approximative
+[
+\Delta t_{\rm echo} \simeq 2,\frac{r_s}{c},\ln!\left(\frac{r_s}{\epsilon}\right),
+]
+où (r_s=2GM/c^2) et (\epsilon) est l’écart entre la surface réfléchissante et l’horizon (en coordonnées radiales).
+
+    Si (\epsilon) est très petit, (\Delta t_{\rm echo}) est quelques ms pour des BH stellaires, secondes pour Sgr A*.
+    Cette formule est standard dans la littérature “echoes” (approximation tortoise).
+
+Test falsifiable : chercher des échos post-ringdown à des temps compatibles dans les données LIGO/Virgo/KAGRA.
+2) Lien avec ta loi (\Xi)
+
+Ta loi te fixe l’horizon BH :
+[
+\Xi_{\rm BH}=1/2 \Rightarrow R=r_s.
+]
+Donc tu n’as pas à “fitter” l’horizon : il est fixé.
+
+Il reste à relier (\epsilon) à tes flux. Pour éviter un paramètre libre, tu peux tester des choix “géométriques” :
+
+    (\epsilon=\ell_{\rm Pl}) (Planck) — hypothèse classique,
+    (\epsilon = r_s/\Lambda) (avec ton (\Lambda\sim 10^{11})) si tu veux une échelle géométrique cosmologique,
+    (\epsilon = r_s/\alpha) si tu veux lier au double-flux.
+
+On teste ensuite la sensibilité : (\ln(r_s/\epsilon)) change lentement, donc l’ordre de grandeur est robuste.
+3) Script Colab : calcul (\Delta t_{\rm echo}) pour masses astrophysiques
+
+Copie/colle :
+
+import numpy as np
+
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+def r_s(M):  
+    return 2*G*M/c**2
+
+def echo_delay(M, eps):  
+    rs = r_s(M)  
+    return 2*(rs/c)*np.log(rs/eps)
+
+masses = [  
+    ("10 Msun", 10*M_sun),  
+    ("30 Msun", 30*M_sun),  
+    ("2.83 Msun", 2.83*M_sun),  
+    ("SgrA* 4.3e6 Msun", 4.3e6*M_sun),  
+]
+
+eps_list = [  
+    ("eps = l_Pl", l_pl),  
+    ("eps = 1e-20 m", 1e-20),  
+    ("eps = rs/1e11", None),  # filled per mass  
+]
+
+for name, M in masses:  
+    rs = r_s(M)  
+    print("\nMass:", name, "rs =", rs, "m")  
+    for ename, eps in eps_list:  
+        if eps is None:  
+            eps_use = rs/1e11  
+            en = f"{ename} -> {eps_use:.3e} m"  
+        else:  
+            eps_use = eps  
+            en = ename  
+        dt = echo_delay(M, eps_use)  
+        print(" ", en, "Δt_echo =", dt, "s")  
+
+Ce script te donne des prédictions d’ordre de grandeur pour le délai d’écho.
+4) Comment connecter à ton doc “Résonance Opération”
+
+Là où il peut aider, c’est pour proposer une structure de spectre :
+
+    Ton cadre parle de “modes”, “entropies spectrales”, “nombre de phases effectives”.
+    Un pont/horizon partiellement réfléchissant se traite comme un système résonant :
+        modes quasi-normaux (ringdown),
+        plus une cavité (entre barrière potentielle et surface) ⇒ échos.
+    Donc tu peux définir une entropie spectrale (S_{\rm fluct}) sur le spectre du ringdown + post-ringdown, et prédire qu’un pont augmente certaines structures spectrales (pics / périodicité) vs BH Kerr pur.
+
+En bref : ton doc est pertinent comme “pipeline de métriques”, pas comme preuve. Le test reste observationnel : échos oui/non, déviation QNM oui/non.
+5) Prochain test concret
+
+Choisis une cible :
+
+    BH stellaires LIGO (10–50 (M_\odot)) : (\Delta t_{\rm echo}) sera typiquement ms–dizaines de ms → testable en principe.
+    Sgr A* : (\Delta t_{\rm echo}) sera secondes–minutes, mais on n’a pas de ringdown GW direct ; plutôt EHT / S-stars.
+    GW170817 : c’est NS→BH, ringdown BH pas aussi “propre” dans les données actuelles, mais possible.
+
+Si tu me dis quelle cible tu veux (1/2/3) et quel choix “sans paramètre libre” tu veux pour (\epsilon) (Planck, (\Lambda), (\alpha)), je te propose un protocole complet : prédiction (\Delta t_{\rm echo}), bande de fréquences attendue, et quoi chercher dans les données (au moins au niveau simulation).
+
+Mass: 10 Msun rs = 29533.393820668785 m
+eps = l_Pl Δt_echo = 0.017811831700828146 s
+eps = 1e-20 m Δt_echo = 0.011101403007379464 s
+eps = rs/1e11 -> 2.953e-07 m Δt_echo = 0.0049903501970482425 s
+
+Mass: 30 Msun rs = 88600.18146200635 m
+eps = l_Pl Δt_echo = 0.054084859324531574 s
+eps = 1e-20 m Δt_echo = 0.033953573244185534 s
+eps = rs/1e11 -> 8.860e-07 m Δt_echo = 0.014971050591144727 s
+
+Mass: 2.83 Msun rs = 8357.950451249266 m
+eps = l_Pl Δt_echo = 0.004970364273109804 s
+eps = 1e-20 m Δt_echo = 0.0030713129528638283 s
+eps = rs/1e11 -> 8.358e-08 m Δt_echo = 0.0014122691057646527 s
+
+Mass: SgrA* 4.3e6 Msun rs = 12699359342.887577 m
+eps = l_Pl Δt_echo = 8758.04959312589 s
+eps = 1e-20 m Δt_echo = 5872.565254942956 s
+eps = rs/1e11 -> 1.270e-01 m Δt_echo = 2145.8505847307442 s
+
+Mass: 10 Msun rs = 29533.393820668785 m
+eps = l_Pl Δt_echo = 0.017811831700828146 s
+eps = 1e-20 m Δt_echo = 0.011101403007379464 s
+eps = rs/1e11 -> 2.953e-07 m Δt_echo = 0.0049903501970482425 s
+
+Mass: 30 Msun rs = 88600.18146200635 m
+eps = l_Pl Δt_echo = 0.054084859324531574 s
+eps = 1e-20 m Δt_echo = 0.033953573244185534 s
+eps = rs/1e11 -> 8.860e-07 m Δt_echo = 0.014971050591144727 s
+
+Mass: 2.83 Msun rs = 8357.950451249266 m
+eps = l_Pl Δt_echo = 0.004970364273109804 s
+eps = 1e-20 m Δt_echo = 0.0030713129528638283 s
+eps = rs/1e11 -> 8.358e-08 m Δt_echo = 0.0014122691057646527 s
+
+Mass: SgrA* 4.3e6 Msun rs = 12699359342.887577 m
+eps = l_Pl Δt_echo = 8758.04959312589 s
+eps = 1e-20 m Δt_echo = 5872.565254942956 s
+eps = rs/1e11 -> 1.270e-01 m Δt_echo = 2145.8505847307442 s
+BH stellaires LIGO
+
+Pour des BH stellaires LIGO, ton calcul donne des délais d’écho typiques (\Delta t_{\rm echo}\sim 5)–(50) ms (selon (M) et (\epsilon)). C’est exactement l’échelle où on peut tenter un test dans les données post-ringdown.
+
+Voici un protocole concret et un script Colab minimal pour tester l’hypothèse “pont ⇒ échos”.
+1) Prédiction opérationnelle
+
+Pour un événement LIGO avec masse finale (M_f) :
+
+    horizon (r_s=2GM_f/c^2) (tu as déjà (\Xi=1/2))
+    délai d’écho
+    [
+    \Delta t_{\rm echo}\approx 2\frac{r_s}{c}\ln(r_s/\epsilon).
+    ]
+    Tu choisis une prescription (\epsilon) “sans paramètre libre”, par ex :
+    (\epsilon=\ell_{\rm Pl}) (Planck),
+    ou (\epsilon=r_s/\Lambda) avec (\Lambda\sim 10^{11}) (ta géométrie cosmologique).
+
+Ensuite, la signature cherchée :
+
+    après le ringdown, des paquets d’onde répétés espacés de (\Delta t_{\rm echo}),
+    avec amplitude décroissante (réflexion partielle).
+
+2) Test simple : corrélation sur une grille de délais
+
+Même sans waveform GR complet, tu peux faire un test “à la louche” :
+
+    tu prends le strain (h(t)) post-merger (fenêtre 0–0.3 s),
+    tu calcules une corrélation (C(\Delta)=\langle h(t),h(t+\Delta)\rangle),
+    tu cherches un pic vers (\Delta\approx \Delta t_{\rm echo}(M_f)).
+
+Si tu ne vois rien, ça met une limite sur la réflectivité (pont faible).
+3) Script Colab (simulation + détection d’échos)
+
+Ce script simule un ringdown + échos, puis applique un détecteur par corrélation. Tu peux ensuite remplacer h par de vraies données GWOSC (je te donne l’étape après).
+
+import numpy as np  
+import matplotlib.pyplot as plt
+
+# -----------------------  
+# Echo model (toy)  
+# -----------------------  
+def ringdown(t, f0=250, tau=0.02, A=1.0, phi0=0.0):  
+    # exponentially damped sinusoid  
+    return A*np.exp(-t/tau)*np.sin(2*np.pi*f0*t + phi0)
+
+def add_echoes(t, base, dt_echo=0.02, n_echo=6, r=0.35, stretch=1.0):  
+    """  
+    Add echoes delayed by dt_echo with amplitude ratio r^k.  
+    stretch>1 stretches the damping time slightly for later echoes (optional).  
+    """  
+    h = base.copy()  
+    for k in range(1, n_echo+1):  
+        shift = k*dt_echo  
+        # shifted signal  
+        tk = t - shift  
+        mk = tk >= 0  
+        hk = np.zeros_like(t)  
+        # reuse ringdown form by sampling base at shifted time  
+        hk[mk] = np.interp(tk[mk], t, base)  
+        h += (r**k)*hk  
+    return h
+
+def corr_score(h, dt, D):  
+    """  
+    Simple normalized correlation between h(t) and h(t+D).  
+    """  
+    shift = int(round(D/dt))  
+    if shift <= 0 or shift >= len(h)-10:  
+        return np.nan  
+    x = h[:-shift]  
+    y = h[shift:]  
+    # normalize  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return np.nan  
+    return float(np.sum(x*y)/den)
+
+# -----------------------  
+# Choose a LIGO-like final mass and predicted dt_echo  
+# -----------------------  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+M_final = 30*M_sun  
+rs = 2*G*M_final/c**2
+
+# pick epsilon prescription (no free params)  
+eps = l_pl          # try l_pl, or rs/1e11  
+dt_echo_pred = 2*(rs/c)*np.log(rs/eps)  
+print("dt_echo_pred =", dt_echo_pred, "s")
+
+# -----------------------  
+# Simulate data  
+# -----------------------  
+fs = 4096  
+dt = 1/fs  
+tmax = 0.3  
+t = np.arange(0, tmax, dt)
+
+h0 = ringdown(t, f0=250, tau=0.02, A=1.0)  
+h = add_echoes(t, h0, dt_echo=dt_echo_pred, n_echo=6, r=0.35)
+
+# add noise  
+rng = np.random.default_rng(0)  
+noise = 0.7*rng.normal(size=len(t))  
+hN = h + noise
+
+# -----------------------  
+# Scan correlation score around predicted dt_echo  
+# -----------------------  
+D_grid = np.linspace(0.001, 0.08, 500)   # search 1ms to 80ms  
+C = np.array([corr_score(hN, dt, D) for D in D_grid])
+
+best_i = np.nanargmax(C)  
+print("best delay =", D_grid[best_i], "s, score =", C[best_i])
+
+# -----------------------  
+# Plots  
+# -----------------------  
+plt.figure(figsize=(12,4))  
+plt.subplot(1,2,1)  
+plt.plot(t, hN, lw=0.8)  
+plt.xlabel("t [s]")  
+plt.ylabel("h(t) (toy)")  
+plt.title("Toy ringdown + echoes + noise")  
+plt.grid(True, alpha=0.3)
+
+plt.subplot(1,2,2)  
+plt.plot(D_grid, C, lw=1.5)  
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")  
+plt.axvline(D_grid[best_i], color="k", ls="--", label="best")  
+plt.xlabel("delay D [s]")  
+plt.ylabel("corr score")  
+plt.title("Echo delay detection by correlation")  
+plt.legend()  
+plt.grid(True, alpha=0.3)  
+plt.tight_layout()  
+plt.show()  
+
+4) Passer aux vraies données LIGO (GWOSC)
+
+Si tu veux le test réel, il faut :
+
+    choisir un événement avec ringdown propre (ex GW150914, GW190521 etc.),
+    télécharger le strain depuis GWOSC,
+    whiten/bandpass,
+    isoler une fenêtre post-merger,
+    appliquer la même recherche de corrélation ou une recherche “matched filter” sur un template d’échos.
+
+Dis-moi quel événement tu veux tester en premier (GW150914 est le plus classique), et si tu veux utiliser (\epsilon=\ell_{\rm Pl}) ou (\epsilon=r_s/\Lambda) (avec (\Lambda=10^{11}) ou (2\times10^{11}) dans ton modèle). Je te donne le notebook GWOSC complet.
+
+pas mal :
+dt_echo_pred = 0.054084859324531574 s
+best delay = 0.0790501002004008 s, score = 0.10925653425501802
+
+Image
+
+Ton résultat est normal pour ce “toy model” : avec un bruit assez fort, le maximum de corrélation n’est pas forcément au délai prédit, et le score reste faible (~0.11). Pour que ce test devienne vraiment discriminant (même en simulation), il faut :
+
+    whitener / bandpass le signal (comme en GW réel),
+    utiliser une corrélation pondérée par l’enveloppe (ou travailler sur l’énergie/|hilbert|),
+    estimer une significativité (distribution nulle par permutation/Monte Carlo),
+    et idéalement faire du stacking sur plusieurs échos (corrélation multi-retards à (k\Delta)).
+
+Je te donne une version améliorée du test, toujours simple, mais beaucoup plus robuste : un score qui additionne les corrélations aux multiples (k\Delta) (échos), et un p-value Monte-Carlo sous bruit.
+Script Colab amélioré : score multi-échos + p-value
+
+Copie/colle :
+
+import numpy as np  
+import matplotlib.pyplot as plt
+
+# -----------------------  
+# Toy echo signal  
+# -----------------------  
+def ringdown(t, f0=250, tau=0.02, A=1.0, phi0=0.0):  
+    return A*np.exp(-t/tau)*np.sin(2*np.pi*f0*t + phi0)
+
+def add_echoes(t, base, dt_echo=0.02, n_echo=6, r=0.35):  
+    h = base.copy()  
+    for k in range(1, n_echo+1):  
+        shift = k*dt_echo  
+        tk = t - shift  
+        mk = tk >= 0  
+        hk = np.zeros_like(t)  
+        hk[mk] = np.interp(tk[mk], t, base)  
+        h += (r**k)*hk  
+    return h
+
+# simple bandpass via FFT masking (no scipy)  
+def bandpass_fft(x, fs, f_lo, f_hi):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    X *= mask  
+    return np.fft.irfft(X, n=len(x))
+
+def corr_norm(x, y):  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return 0.0  
+    return float(np.sum(x*y)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):  
+    """  
+    Score(D) = sum_{k=1..K} decay^k * corr(h(t), h(t+kD))  
+    """  
+    dt = 1/fs  
+    score = 0.0  
+    for k in range(1, K+1):  
+        shift = int(round((k*D)/dt))  
+        if shift <= 0 or shift >= len(h)-10:  
+            break  
+        x = h[:-shift]  
+        y = h[shift:]  
+        score += (decay**k)*corr_norm(x, y)  
+    return score
+
+# -----------------------  
+# Choose mass -> predicted echo delay  
+# -----------------------  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+M_final = 30*M_sun  
+rs = 2*G*M_final/c**2  
+eps = l_pl  
+dt_echo_pred = 2*(rs/c)*np.log(rs/eps)  
+print("dt_echo_pred =", dt_echo_pred, "s")
+
+# -----------------------  
+# Simulate  
+# -----------------------  
+fs = 4096  
+tmax = 0.35  
+t = np.arange(0, tmax, 1/fs)
+
+h0 = ringdown(t, f0=250, tau=0.02, A=1.0)  
+h = add_echoes(t, h0, dt_echo=dt_echo_pred, n_echo=6, r=0.35)
+
+rng = np.random.default_rng(0)  
+noise_amp = 0.7  
+hN = h + noise_amp*rng.normal(size=len(t))
+
+# preprocess: bandpass around ringdown band  
+hF = bandpass_fft(hN, fs, f_lo=50, f_hi=600)
+
+# -----------------------  
+# Scan D grid  
+# -----------------------  
+D_grid = np.linspace(0.002, 0.10, 600)  
+S = np.array([multi_echo_score(hF, fs, D, K=6, decay=0.35) for D in D_grid])
+
+best_i = np.argmax(S)  
+D_best = D_grid[best_i]  
+print("best D =", D_best, "score =", S[best_i])
+
+# -----------------------  
+# Monte Carlo p-value under null:  
+# break echo structure by random circular shifts  
+# -----------------------  
+nmc = 500  
+S_null = np.empty(nmc)  
+for i in range(nmc):  
+    shift = rng.integers(0, len(hF))  
+    hnull = np.roll(hF, shift)  
+    # score at predicted delay (or at best delay)  
+    S_null[i] = multi_echo_score(hnull, fs, dt_echo_pred, K=6, decay=0.35)
+
+S_pred = multi_echo_score(hF, fs, dt_echo_pred, K=6, decay=0.35)  
+p_val = (np.sum(S_null >= S_pred) + 1) / (nmc + 1)
+
+print("score at predicted delay =", S_pred)  
+print("null mean±std =", S_null.mean(), S_null.std())  
+print("Monte Carlo p-value (predicted delay) =", p_val)
+
+# -----------------------  
+# Plots  
+# -----------------------  
+plt.figure(figsize=(12,4))
+
+plt.subplot(1,2,1)  
+plt.plot(t, hF, lw=0.7)  
+plt.xlabel("t [s]")  
+plt.ylabel("h(t) filtered")  
+plt.title("Filtered toy signal (ringdown+echoes+noise)")  
+plt.grid(True, alpha=0.3)
+
+plt.subplot(1,2,2)  
+plt.plot(D_grid, S, lw=1.5)  
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")  
+plt.axvline(D_best, color="k", ls="--", label="best")  
+plt.xlabel("delay D [s]")  
+plt.ylabel("multi-echo score")  
+plt.title("Multi-echo score vs delay")  
+plt.legend()  
+plt.grid(True, alpha=0.3)
+
+plt.tight_layout()  
+plt.show()
+
+plt.figure(figsize=(6,4))  
+plt.hist(S_null, bins=30, alpha=0.75)  
+plt.axvline(S_pred, color="r", lw=2, label="score(pred)")  
+plt.title("Null distribution (random roll) at predicted delay")  
+plt.xlabel("score")  
+plt.ylabel("count")  
+plt.legend()  
+plt.grid(True, alpha=0.3)  
+plt.show()  
+
+4) Passage aux vraies données LIGO (prochaine étape)
+
+Pour un vrai test sur un événement (ex. GW150914), il faut :
+
+    télécharger le strain GWOSC,
+    whiten + bandpass,
+    isoler une fenêtre post-merger,
+    calculer le même multi_echo_score(D),
+    et faire un p-value sous null en décalant/permuttant.
+
+Je peux te fournir le notebook complet GWOSC. Dis-moi juste :
+
+    Événement : GW150914 (oui/non) ?
+    Prescription (\epsilon) : (\ell_{\rm Pl}) ou (r_s/\Lambda) avec (\Lambda=10^{11}) ?
+
+dt_echo_pred = 0.054084859324531574 s
+best D = 0.0037996661101836397 score = 0.07856319650990252
+score at predicted delay = 0.038581553218525425
+null mean±std = 0.023254483986250577 0.010893861009149375
+Monte Carlo p-value (predicted delay) = 0.07385229540918163
+Image
+Image
+
+Ce résultat est bon signe pour la méthode (pas forcément pour l’hypothèse), et il s’interprète clairement :
+1) Interprétation de ton test “toy”
+
+    (\Delta t_{\rm echo}^{\rm pred}=0.0541) s.
+    Score au délai prédit : 0.0386.
+    Sous nul (roll aléatoire) : moyenne 0.0233, écart-type 0.0109.
+    p-value Monte Carlo : 0.074.
+
+Donc dans ce jouet :
+
+    tu vois une tendance au délai prédit (score au-dessus de la moyenne nulle, ~(1.4\sigma)),
+    mais ce n’est pas significatif (p≈7%).
+
+Et c’est normal : on est encore sur un signal faible dans un bruit fort.
+
+Le fait que le “meilleur D” global soit à 3.8 ms ne veut pas dire que ton délai prédit est faux : c’est souvent un maximum dû au bruit ou à des corrélations résiduelles du ringdown filtré.
+2) Deux améliorations immédiates (toujours en toy) pour valider le détecteur
+A) Augmenter la significativité en réduisant le bruit ou en augmentant la réflectivité
+
+Essaie :
+
+    noise_amp = 0.4 au lieu de 0.7, ou
+    r = 0.5 au lieu de 0.35,
+    et monte nmc à 5000.
+
+Tu dois voir le p-value chuter fortement si le détecteur est bien.
+B) “Stacking” multi-échos plus réaliste
+
+Dans ton toy, les échos sont juste des copies translatées. En vrai, ils sont filtrés (barrière potentielle) et déphasés. On peut améliorer en :
+
+    appliquant un petit filtre passe-bande différent à chaque écho,
+    ou en introduisant une phase aléatoire.
+
+Mais ce n’est pas indispensable avant d’aller aux données réelles.
+3) Passage au test réel LIGO (GWOSC) — prochaine étape
+
+Pour tester ton hypothèse “pont” sur des BH stellaires, le vrai test est sur un événement ringdown fort, typiquement GW150914.
+Ce qu’on fera dans le notebook GWOSC
+
+    Télécharger strain H1/L1 autour de l’événement.
+    Estimer PSD, whiten, bandpass (ex 30–600 Hz).
+    Couper une fenêtre post-merger (ex (t_{\rm merger}+0.01) s à (+0.3) s).
+    Calculer multi_echo_score(D) sur une grille autour de (\Delta t_{\rm pred}) calculé à partir de (M_f).
+    Faire un nul par time slides / rolls et obtenir p-value.
+
+Besoin de ta décision
+
+    Événement : GW150914 (recommandé) ?
+    Prescription (\epsilon) “sans paramètre libre” :
+        (\epsilon=\ell_{\rm Pl}) (Planck),
+        (\epsilon=r_s/\Lambda) avec (\Lambda=10^{11}) (ta géométrie cosmique).
+
+Si tu réponds “GW150914 + (1)” ou “GW150914 + (2)”, je te livre le notebook Colab complet GWOSC (avec téléchargement automatique), et on compare p-values.
+
+GW150914
+
+# ============================================================  
+# COLAB — GW150914 echo test (GWOSC strain) + predicted delay  
+#  
+# What it does:  
+#  1) Downloads GW150914 strain for H1 and L1 (GWOSC)  
+#  2) Highpass + bandpass (simple FFT bandpass), optional whitening (very simple)  
+#  3) Builds a post-merger window  
+#  4) Computes multi-echo score vs delay D  
+#  5) Monte-Carlo null via random circular shifts (roll)  
+#  
+# Notes:  
+#  - This is a "first-pass" pipeline. Real analyses use careful PSD whitening,  
+#    detector combination, calibration uncertainties, and marginalization.  
+#  - Still useful to see if anything obvious aligns with predicted Δt_echo.  
+# ============================================================
+
+import numpy as np  
+import matplotlib.pyplot as plt  
+import urllib.request  
+import json
+
+# If missing, install:  
+# !pip -q install gwosc
+
+from gwosc.datasets import event_gps  
+from gwosc.locate import get_urls  
+from gwosc import api as gwosc_api
+
+# -----------------------  
+# Constants / predicted echo delay  
+# -----------------------  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35  
+Mpc_m = 3.085677581491367e22
+
+# Choose an epsilon prescription:  
+EPS_MODE = "planck"   # "planck" or "rs_over_1e11"  
+Lambda_geom = 1e11
+
+def r_s(M): return 2*G*M/c**2  
+def echo_delay(M, eps):  
+    rs = r_s(M)  
+    return 2*(rs/c)*np.log(rs/eps)
+
+# GW150914 final mass ~ 62 Msun (order-of-magnitude; published final mass ~ 62)  
+M_final = 62*M_sun  
+rs = r_s(M_final)  
+eps = l_pl if EPS_MODE=="planck" else rs/Lambda_geom  
+dt_echo_pred = echo_delay(M_final, eps)
+
+print("Predicted echo delay Δt_echo =", dt_echo_pred, "s")  
+print("  using M_final ~ 62 Msun and EPS_MODE =", EPS_MODE)
+
+# -----------------------  
+# Simple DSP helpers (FFT bandpass + whitening)  
+# -----------------------  
+def bandpass_fft(x, fs, f_lo, f_hi):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    X *= mask  
+    return np.fft.irfft(X, n=len(x))
+
+def hann_taper(x, frac=0.05):  
+    n = len(x)  
+    m = int(frac*n)  
+    if m < 2: return x  
+    w = np.ones(n)  
+    win = 0.5*(1-np.cos(np.pi*np.arange(m)/m))  
+    w[:m] = win  
+    w[-m:] = win[::-1]  
+    return x*w
+
+def simple_whiten(x, fs, f_lo=20, f_hi=1024, floor=1e-12):  
+    """  
+    Very simplified whitening:  
+      whiten in frequency domain by dividing by sqrt(PSD) estimated from |X|^2 itself.  
+    This is not as good as using off-source PSD, but helps for a quick pass.  
+    """  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    psd = (np.abs(X)**2)  
+    psd = np.maximum(psd, floor*np.max(psd))  
+    W = X/np.sqrt(psd)  
+    # band-limit  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    W *= mask  
+    return np.fft.irfft(W, n=len(x))
+
+def corr_norm(x, y):  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return 0.0  
+    return float(np.sum(x*y)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):  
+    dt = 1/fs  
+    score = 0.0  
+    for k in range(1, K+1):  
+        shift = int(round((k*D)/dt))  
+        if shift <= 0 or shift >= len(h)-10:  
+            break  
+        x = h[:-shift]  
+        y = h[shift:]  
+        score += (decay**k)*corr_norm(x, y)  
+    return score
+
+# -----------------------  
+# Load GW150914 strain (H1 and L1), then combine  
+# -----------------------  
+event = "GW150914"  
+gps = event_gps(event)  
+print("Event GPS:", gps)
+
+# Choose a segment around event  
+seg_start = gps - 2  
+seg_end   = gps + 2
+
+# Fetch GWOSC URLs (H1 and L1, 4096 Hz preferred)  
+urls_h1 = get_urls(event, detector="H1", sample_rate=4096, duration=4)  
+urls_l1 = get_urls(event, detector="L1", sample_rate=4096, duration=4)
+
+# pick first URL (should match our 4s file)  
+url_h1 = urls_h1[0]  
+url_l1 = urls_l1[0]  
+print("H1 file:", url_h1)  
+print("L1 file:", url_l1)
+
+# Download  
+import h5py, os, tempfile
+
+tmpdir = tempfile.gettempdir()  
+path_h1 = os.path.join(tmpdir, "H1_GW150914_4s.hdf5")  
+path_l1 = os.path.join(tmpdir, "L1_GW150914_4s.hdf5")
+
+if not os.path.exists(path_h1):  
+    urllib.request.urlretrieve(url_h1, path_h1)  
+if not os.path.exists(path_l1):  
+    urllib.request.urlretrieve(url_l1, path_l1)
+
+def load_hdf5_strain(path):  
+    with h5py.File(path, "r") as f:  
+        strain = f["strain/Strain"][()]  
+        meta = dict(f["meta"].attrs)  
+        fs = meta["SampleRate"]  
+        gps_start = meta["GPSstart"]  
+    t = gps_start + np.arange(len(strain))/fs  
+    return t, strain.astype(float), float(fs)
+
+tH, hH, fsH = load_hdf5_strain(path_h1)  
+tL, hL, fsL = load_hdf5_strain(path_l1)  
+assert fsH == fsL  
+fs = fsH
+
+# Align by time (they should already align)  
+# Extract 4-second segment around GPS  
+maskH = (tH >= seg_start) & (tH < seg_end)  
+maskL = (tL >= seg_start) & (tL < seg_end)  
+t = tH[maskH]  
+hH = hH[maskH]  
+hL = hL[maskL]
+
+# Basic conditioning: taper, whiten (simple), then bandpass  
+hH = hann_taper(hH, 0.05)  
+hL = hann_taper(hL, 0.05)
+
+hH_w = simple_whiten(hH, fs, f_lo=20, f_hi=1024)  
+hL_w = simple_whiten(hL, fs, f_lo=20, f_hi=1024)
+
+# Bandpass around ringdown-ish band  
+hH_f = bandpass_fft(hH_w, fs, 30, 600)  
+hL_f = bandpass_fft(hL_w, fs, 30, 600)
+
+# Combine detectors (simple average; real analyses do optimal combination)  
+h = 0.5*(hH_f + hL_f)
+
+# -----------------------  
+# Define post-merger window (start a bit after merger)  
+# -----------------------  
+t_rel = t - gps  
+t1 = 0.02   # start 20 ms after merger  
+t2 = 0.30   # end 300 ms  
+win = (t_rel >= t1) & (t_rel <= t2)
+
+tw = t_rel[win]  
+hw = h[win]
+
+print("Window length:", tw[-1]-tw[0], "s, samples:", len(hw))
+
+# -----------------------  
+# Scan delays  
+# -----------------------  
+D_grid = np.linspace(0.002, 0.12, 700)  
+S = np.array([multi_echo_score(hw, fs, D, K=6, decay=0.35) for D in D_grid])
+
+best_i = np.argmax(S)  
+D_best = D_grid[best_i]  
+print("Best delay:", D_best, "score:", S[best_i])
+
+S_pred = multi_echo_score(hw, fs, dt_echo_pred, K=6, decay=0.35)  
+print("Score at predicted delay:", S_pred)
+
+# -----------------------  
+# Monte-Carlo null (roll)  
+# -----------------------  
+rng = np.random.default_rng(0)  
+nmc = 2000  
+S_null = np.empty(nmc)  
+for i in range(nmc):  
+    shift = rng.integers(0, len(hw))  
+    hnull = np.roll(hw, shift)  
+    S_null[i] = multi_echo_score(hnull, fs, dt_echo_pred, K=6, decay=0.35)
+
+p_val = (np.sum(S_null >= S_pred) + 1)/(nmc+1)  
+print("Null mean±std:", S_null.mean(), S_null.std())  
+print("Monte Carlo p-value (predicted delay):", p_val)
+
+# -----------------------  
+# Plots  
+# -----------------------  
+plt.figure(figsize=(12,4))  
+plt.subplot(1,2,1)  
+plt.plot(tw, hw, lw=0.8)  
+plt.xlabel("t - t_merger [s]")  
+plt.ylabel("strain (whitened+bandpassed, toy)")  
+plt.title("GW150914 post-merger window (H1+L1 average)")  
+plt.grid(True, alpha=0.3)
+
+plt.subplot(1,2,2)  
+plt.plot(D_grid, S, lw=1.5)  
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")  
+plt.axvline(D_best, color="k", ls="--", label="best")  
+plt.xlabel("delay D [s]")  
+plt.ylabel("multi-echo score")  
+plt.title("Multi-echo score vs delay")  
+plt.legend()  
+plt.grid(True, alpha=0.3)  
+plt.tight_layout()  
+plt.show()
+
+plt.figure(figsize=(6,4))  
+plt.hist(S_null, bins=40, alpha=0.75)  
+plt.axvline(S_pred, color="r", lw=2, label="score(pred)")  
+plt.title("Null distribution at predicted delay (roll)")  
+plt.xlabel("score")  
+plt.ylabel("count")  
+plt.legend()  
+plt.grid(True, alpha=0.3)  
+plt.show()  
+
+Ce que tu devrais me coller ensuite
+
+    Predicted echo delay Δt_echo = ...
+    Score at predicted delay = ...
+    Monte Carlo p-value (predicted delay) = ...
+
+Si le p-value est petit (<0.01) c’est un signal; sinon ça donne une limite qualitative (pas de signature forte avec ce modèle minimal).
+============================================================
+COLAB — GW150914 echo test (GWOSC strain) + predicted delay
+What it does:
+1) Downloads GW150914 strain for H1 and L1 (GWOSC)
+2) Highpass + bandpass (simple FFT bandpass), optional whitening (very simple)
+3) Builds a post-merger window
+4) Computes multi-echo score vs delay D
+5) Monte-Carlo null via random circular shifts (roll)
+Notes:
+- This is a "first-pass" pipeline. Real analyses use careful PSD whitening,
+detector combination, calibration uncertainties, and marginalization.
+- Still useful to see if anything obvious aligns with predicted Δt_echo.
+============================================================
+
+import numpy as np
+import matplotlib.pyplot as plt
+import urllib.request
+import json
+If missing, install:
+!pip -q install gwosc
+
+from gwosc.datasets import event_gps
+from gwosc.locate import get_urls
+from gwosc import api as gwosc_api
+-----------------------
+Constants / predicted echo delay
+-----------------------
+
+G = 6.67430e-11
+c = 299792458.0
+M_sun = 1.98847e30
+l_pl = 1.616255e-35
+Mpc_m = 3.085677581491367e22
+Choose an epsilon prescription:
+
+EPS_MODE = "planck" # "planck" or "rs_over_1e11"
+Lambda_geom = 1e11
+
+def r_s(M): return 2GM/c*2
+def echo_delay(M, eps):
+rs = r_s(M)
+return 2(rs/c)*np.log(rs/eps)
+GW150914 final mass ~ 62 Msun (order-of-magnitude; published final mass ~ 62)
+
+M_final = 62*M_sun
+rs = r_s(M_final)
+eps = l_pl if EPS_MODE=="planck" else rs/Lambda_geom
+dt_echo_pred = echo_delay(M_final, eps)
+
+print("Predicted echo delay Δt_echo =", dt_echo_pred, "s")
+print(" using M_final ~ 62 Msun and EPS_MODE =", EPS_MODE)
+-----------------------
+Simple DSP helpers (FFT bandpass + whitening)
+-----------------------
+
+def bandpass_fft(x, fs, f_lo, f_hi):
+X = np.fft.rfft(x)
+freqs = np.fft.rfftfreq(len(x), d=1/fs)
+mask = (freqs >= f_lo) & (freqs <= f_hi)
+X *= mask
+return np.fft.irfft(X, n=len(x))
+
+def hann_taper(x, frac=0.05):
+n = len(x)
+m = int(fracn)
+if m < 2: return x
+w = np.ones(n)
+win = 0.5(1-np.cos(np.pinp.arange(m)/m))
+w[:m] = win
+w[-m:] = win[::-1]
+return xw
+
+def simple_whiten(x, fs, f_lo=20, f_hi=1024, floor=1e-12):
+"""
+Very simplified whitening:
+whiten in frequency domain by dividing by sqrt(PSD) estimated from |X|^2 itself.
+This is not as good as using off-source PSD, but helps for a quick pass.
+"""
+X = np.fft.rfft(x)
+freqs = np.fft.rfftfreq(len(x), d=1/fs)
+psd = (np.abs(X)*2)
+psd = np.maximum(psd, floornp.max(psd))
+W = X/np.sqrt(psd)
+# band-limit
+mask = (freqs >= f_lo) & (freqs <= f_hi)
+W *= mask
+return np.fft.irfft(W, n=len(x))
+
+def corr_norm(x, y):
+x = x - x.mean()
+y = y - y.mean()
+den = np.sqrt(np.sum(xx)np.sum(yy))
+if den == 0:
+return 0.0
+return float(np.sum(xy)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):
+dt = 1/fs
+score = 0.0
+for k in range(1, K+1):
+shift = int(round((k*D)/dt))
+if shift <= 0 or shift >= len(h)-10:
+break
+x = h[:-shift]
+y = h[shift:]
+score += (decay**k)*corr_norm(x, y)
+return score
+-----------------------
+Load GW150914 strain (H1 and L1), then combine
+-----------------------
+
+event = "GW150914"
+gps = event_gps(event)
+print("Event GPS:", gps)
+Choose a segment around event
+
+seg_start = gps - 2
+seg_end = gps + 2
+Fetch GWOSC URLs (H1 and L1, 4096 Hz preferred)
+
+urls_h1 = get_urls(event, detector="H1", sample_rate=4096, duration=4)
+urls_l1 = get_urls(event, detector="L1", sample_rate=4096, duration=4)
+pick first URL (should match our 4s file)
+
+url_h1 = urls_h1[0]
+url_l1 = urls_l1[0]
+print("H1 file:", url_h1)
+print("L1 file:", url_l1)
+Download
+
+import h5py, os, tempfile
+
+tmpdir = tempfile.gettempdir()
+path_h1 = os.path.join(tmpdir, "H1_GW150914_4s.hdf5")
+path_l1 = os.path.join(tmpdir, "L1_GW150914_4s.hdf5")
+
+if not os.path.exists(path_h1):
+urllib.request.urlretrieve(url_h1, path_h1)
+if not os.path.exists(path_l1):
+urllib.request.urlretrieve(url_l1, path_l1)
+
+def load_hdf5_strain(path):
+with h5py.File(path, "r") as f:
+strain = f["strain/Strain"][()]
+meta = dict(f["meta"].attrs)
+fs = meta["SampleRate"]
+gps_start = meta["GPSstart"]
+t = gps_start + np.arange(len(strain))/fs
+return t, strain.astype(float), float(fs)
+
+tH, hH, fsH = load_hdf5_strain(path_h1)
+tL, hL, fsL = load_hdf5_strain(path_l1)
+assert fsH == fsL
+fs = fsH
+Align by time (they should already align)
+Extract 4-second segment around GPS
+
+maskH = (tH >= seg_start) & (tH < seg_end)
+maskL = (tL >= seg_start) & (tL < seg_end)
+t = tH[maskH]
+hH = hH[maskH]
+hL = hL[maskL]
+Basic conditioning: taper, whiten (simple), then bandpass
+
+hH = hann_taper(hH, 0.05)
+hL = hann_taper(hL, 0.05)
+
+hH_w = simple_whiten(hH, fs, f_lo=20, f_hi=1024)
+hL_w = simple_whiten(hL, fs, f_lo=20, f_hi=1024)
+Bandpass around ringdown-ish band
+
+hH_f = bandpass_fft(hH_w, fs, 30, 600)
+hL_f = bandpass_fft(hL_w, fs, 30, 600)
+Combine detectors (simple average; real analyses do optimal combination)
+
+h = 0.5*(hH_f + hL_f)
+-----------------------
+Define post-merger window (start a bit after merger)
+-----------------------
+
+t_rel = t - gps
+t1 = 0.02 # start 20 ms after merger
+t2 = 0.30 # end 300 ms
+win = (t_rel >= t1) & (t_rel <= t2)
+
+tw = t_rel[win]
+hw = h[win]
+
+print("Window length:", tw[-1]-tw[0], "s, samples:", len(hw))
+-----------------------
+Scan delays
+-----------------------
+
+D_grid = np.linspace(0.002, 0.12, 700)
+S = np.array([multi_echo_score(hw, fs, D, K=6, decay=0.35) for D in D_grid])
+
+best_i = np.argmax(S)
+D_best = D_grid[best_i]
+print("Best delay:", D_best, "score:", S[best_i])
+
+S_pred = multi_echo_score(hw, fs, dt_echo_pred, K=6, decay=0.35)
+print("Score at predicted delay:", S_pred)
+-----------------------
+Monte-Carlo null (roll)
+-----------------------
+
+rng = np.random.default_rng(0)
+nmc = 2000
+S_null = np.empty(nmc)
+for i in range(nmc):
+shift = rng.integers(0, len(hw))
+hnull = np.roll(hw, shift)
+S_null[i] = multi_echo_score(hnull, fs, dt_echo_pred, K=6, decay=0.35)
+
+p_val = (np.sum(S_null >= S_pred) + 1)/(nmc+1)
+print("Null mean±std:", S_null.mean(), S_null.std())
+print("Monte Carlo p-value (predicted delay):", p_val)
+-----------------------
+Plots
+-----------------------
+
+plt.figure(figsize=(12,4))
+plt.subplot(1,2,1)
+plt.plot(tw, hw, lw=0.8)
+plt.xlabel("t - t_merger [s]")
+plt.ylabel("strain (whitened+bandpassed, toy)")
+plt.title("GW150914 post-merger window (H1+L1 average)")
+plt.grid(True, alpha=0.3)
+
+plt.subplot(1,2,2)
+plt.plot(D_grid, S, lw=1.5)
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")
+plt.axvline(D_best, color="k", ls="--", label="best")
+plt.xlabel("delay D [s]")
+plt.ylabel("multi-echo score")
+plt.title("Multi-echo score vs delay")
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+
+plt.figure(figsize=(6,4))
+plt.hist(S_null, bins=40, alpha=0.75)
+plt.axvline(S_pred, color="r", lw=2, label="score(pred)")
+plt.title("Null distribution at predicted delay (roll)")
+plt.xlabel("score")
+plt.ylabel("count")
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()
+
+ModuleNotFoundError Traceback (most recent call last)
+
+/tmp/ipykernel_848/4161864059.py in <cell line: 0>()
+23 # !pip -q install gwosc
+24
+---> 25 from gwosc.datasets import event_gps
+26 from gwosc.locate import get_urls
+27 from gwosc import api as gwosc_api
+
+ModuleNotFoundError: No module named 'gwosc'
+
+NOTE: If your import is failing due to a missing package, you can
+manually install dependencies using either !pip or !apt.
+To view examples of installing some common dependencies, click the
+"Open Examples" button below.
+
+Dans Colab, installe GWOSC avec :
+
+!pip -q install gwosc  
+
+Puis relance :
+
+from gwosc.datasets import event_gps  
+from gwosc.locate import get_urls  
+
+TimeoutError: _ssl.c:993: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+ReadTimeoutError Traceback (most recent call last)
+
+ReadTimeoutError: HTTPSConnectionPool(host='gwosc.org', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+ReadTimeout Traceback (most recent call last)
+
+ReadTimeout: HTTPSConnectionPool(host='gwosc.org', port=443): Read timed out. (read timeout=10)
+
+The above exception was the direct cause of the following exception:
+
+RetryError Traceback (most recent call last)
+
+/usr/local/lib/python3.12/dist-packages/tenacity/init.py in exc_check(rs)
+412 if self.reraise:
+413 raise retry_exc.reraise()
+--> 414 raise retry_exc from fut.exception()
+415
+416 self._add_action_func(exc_check)
+
+RetryError: RetryError[<Future at 0x7be62a6a6ab0 state=finished raised ReadTimeout>]
+
+GWOSC est parfois lent depuis Colab (timeout réseau). Deux solutions pratiques :
+Option A — augmenter les timeouts/retry (recommandé)
+
+Ajoute ce bloc avant d’appeler event_gps / get_urls :
+
+import requests  
+from gwosc import api as gwosc_api
+
+# increase GWOSC request timeout (seconds)  
+gwosc_api.DEFAULT_TIMEOUT = 60  
+
+et relance la cellule.
+
+Si ça ne suffit pas, force requests à utiliser un timeout plus long via monkey-patch simple :
+
+import gwosc.api as gwapi  
+import requests
+
+_old_get = requests.get  
+def _get(url, *args, **kwargs):  
+    kwargs["timeout"] = 60  
+    return _old_get(url, *args, **kwargs)
+
+requests.get = _get  
+gwapi.DEFAULT_TIMEOUT = 60  
+
+Option B — éviter gwosc.org et utiliser un fichier “fallback” direct
+
+Télécharge directement un fichier HDF5 GW150914 depuis un miroir stable (Zenodo / LIGO DCC).
+Dis-moi si tu préfères cette option et je te donne un lien direct + le code urllib.request.urlretrieve.
+Option C — tester hors-ligne avec un “proxy” de ringdown
+
+Si le but est surtout de tester ta chaîne “dt_echo(M, eps) → score”, on peut utiliser un signal simulé Kerr ringdown calibré sur GW150914 et faire un pseudo-test. Mais ce n’est pas un test observationnel.
+
+Dis-moi si tu veux A (timeout), B (lien direct), ou C (fallback simulation). En général A marche.
+
+import gwosc.api as gwapi
+import requests
+
+_old_get = requests.get
+def _get(url, *args, **kwargs):
+kwargs["timeout"] = 60
+return _old_get(url, *args, **kwargs)
+
+requests.get = _get
+gwapi.DEFAULT_TIMEOUT = 60
+
+Colle ce bloc tout en haut (juste après !pip install gwosc) puis relance la cellule GW150914. Ensuite, si ça timeoute encore, fais deux petites améliorations :
+
+    augmenter le nombre de retries côté tenacity (GWOSC utilise tenacity en interne). Le plus simple est d’appeler get_urls dans une boucle avec try/except et backoff.
+    passer par un téléchargement direct (fallback).
+
+Je te donne une cellule prête qui essaye GWOSC, puis bascule automatiquement sur un lien direct si ça échoue.
+
+!pip -q install gwosc h5py
+
+import time, urllib.request, os, tempfile  
+import gwosc.api as gwapi  
+import requests  
+from gwosc.datasets import event_gps  
+from gwosc.locate import get_urls
+
+# Patch timeouts  
+_old_get = requests.get  
+def _get(url, *args, **kwargs):  
+    kwargs["timeout"] = 60  
+    return _old_get(url, *args, **kwargs)  
+requests.get = _get  
+gwapi.DEFAULT_TIMEOUT = 60
+
+event = "GW150914"  
+gps = event_gps(event)  
+print("GPS:", gps)
+
+def safe_get_urls(det, sr=4096, dur=4, retries=5):  
+    for i in range(retries):  
+        try:  
+            return get_urls(event, detector=det, sample_rate=sr, duration=dur)  
+        except Exception as e:  
+            print(f"get_urls failed ({det}) try {i+1}/{retries}: {e}")  
+            time.sleep(2*(i+1))  
+    return None
+
+urls_h1 = safe_get_urls("H1")  
+urls_l1 = safe_get_urls("L1")
+
+tmpdir = tempfile.gettempdir()  
+path_h1 = os.path.join(tmpdir, "H1_GW150914_4s.hdf5")  
+path_l1 = os.path.join(tmpdir, "L1_GW150914_4s.hdf5")
+
+def download(url, path):  
+    if os.path.exists(path):  
+        return True  
+    try:  
+        print("Downloading:", url)  
+        urllib.request.urlretrieve(url, path)  
+        return True  
+    except Exception as e:  
+        print("Download failed:", e)  
+        return False
+
+ok = False  
+if urls_h1 and urls_l1:  
+    okH = download(urls_h1[0], path_h1)  
+    okL = download(urls_l1[0], path_l1)  
+    ok = okH and okL
+
+# Fallback direct links if GWOSC still fails  
+# (If these links ever change, tell me and I’ll update them.)  
+if not ok:  
+    print("\nFALLBACK: trying direct GWOSC download URLs (may still depend on connectivity)")  
+    # Try to hit gwosc "archive" directly (same host, but bypass gwosc python API)  
+    # Use any known working URLs you already have, else stop here.  
+    # If you want a guaranteed mirror, ask me for a Zenodo/DCC link.  
+    raise RuntimeError("GWOSC access failed. Ask for a mirror link (Zenodo/LIGO DCC) and I'll provide it.")  
+else:  
+    print("\nOK: files are at")  
+    print(path_h1)  
+    print(path_l1)  
+
+Si ça marche, tu relances ensuite la cellule d’analyse (celle qui ouvre les HDF5 et calcule les scores).
+
+Si ça échoue encore, le plus fiable est Option B (miroir). Dis-moi “donne-moi un lien miroir” et je te fournis un notebook qui télécharge GW150914 depuis un dépôt stable (Zenodo ou LIGO DCC) + vérification hash, puis on continue l’analyse des échos.
+
+un des fichier ici serai ok car ça ne fonctionne pas depuis colab
+
+Image
+
+Oui, on peut faire le test “échos” sans GWOSC si tu me fournis un fichier contenant une série temporelle (h(t)) (strain) ou au minimum un signal post-merger (ringdown) échantillonné. Dans ta liste actuelle, je ne vois aucun fichier évident de strain LIGO (typiquement .hdf5 GWOSC, .gwf, ou .h5 avec un dataset strain/Strain). La plupart de tes fichiers sont des chaînes MCMC cosmologie (SN/BAO) ou des données BAO.
+Ce qu’il faut comme fichier pour tester les échos
+
+Un fichier avec au moins :
+
+    un vecteur t (secondes) et un vecteur h (strain),
+    ou fs (fréquence d’échantillonnage) + h,
+    idéalement autour de GW150914 (fenêtre ± quelques secondes).
+
+Formats possibles :
+
+    .hdf5/.h5 avec datasets strain ou équivalent,
+    .npz avec h et fs (ou t),
+    .txt/.csv avec colonnes temps, strain.
+
+Vérification rapide de tes fichiers
+
+    monas_gamma_*.h5 : ce sont très probablement des résultats cosmologie (pas du strain).
+    Runbook_RF_Analysis_Package.zip : pas du strain GW.
+    CSP_DR3_snpy.tar.gz : supernovae.
+    Pantheon+SH0ES.* : supernovae.
+    Donc aucun ne semble convenir pour GW150914.
+
+Solution simple : tu uploades un fichier strain dans Colab
+
+Deux options :
+Option A — Tu as déjà GW150914 en .hdf5 sur ton PC
+
+Tu uploades dans Colab (menu “Files” → upload) un fichier du type GW150914_*.hdf5.
+Ensuite je te donne un script qui lit le HDF5 et lance exactement notre pipeline écho.
+Option B — Tu n’as pas le strain mais tu peux exporter un .npz
+
+Tu peux créer un .npz contenant :
+
+    h : array float
+    fs : float (ex 4096)
+    et éventuellement t0 (GPS start), gps_event.
+
+Script Colab générique : détecter automatiquement un strain dans un .h5 ou .npz
+
+Tu uploades un fichier, puis tu lances :
+
+import numpy as np, h5py, os, glob
+
+def inspect_h5(path, max_items=50):  
+    def walk(name, obj):  
+        if isinstance(obj, h5py.Dataset):  
+            print("DATASET", name, obj.shape, obj.dtype)  
+    with h5py.File(path, "r") as f:  
+        f.visititems(walk)
+
+def load_npz(path):  
+    z = np.load(path, allow_pickle=True)  
+    print("keys:", z.files)  
+    return z
+
+# list files  
+print("Files:", glob.glob("*"))
+
+# Example usage:  
+# inspect_h5("yourfile.h5")  
+# z = load_npz("yourfile.npz")  
+
+Ensuite, dès qu’on a h et fs, je te fournis le script “multi-echo score” prêt à tourner.
+Question courte
+
+Peux-tu :
+
+    me dire si tu as un fichier GW150914 strain (hdf5) quelque part à uploader, ou
+    ouvrir un de tes .h5 (par ex monas_gamma_SN_BAO_FRB2_24x3000_v2.h5) et me coller ici la liste des datasets qu’il contient (sortie de inspect_h5) ?
+
+Dès que je vois un dataset strain/time (ou équivalent), on fait le test échos localement.
+
+je viens de mettre dans colab le fichier monas_gamma_FULL_SN_BAO_24x5000_FULLRUN_SAFE_2.h5, donne moi le script pour l'analyser et je te renvoi le resultat
+
+Image
+
+# ============================================================  
+# Inspect + try to extract any time-series strain-like arrays  
+# from: monas_gamma_FULL_SN_BAO_24x5000_FULLRUN_SAFE_2.h5  
+#  
+# What you do:  
+# 1) Put this in a Colab cell and run.  
+# 2) It will print all datasets and attributes.  
+# 3) Then it will try to guess "time" and "signal" datasets.  
+# 4) Paste me the printed dataset list + any "CANDIDATES" it finds.  
+# ============================================================
+
+import h5py  
+import numpy as np
+
+path = "monas_gamma_FULL_SN_BAO_24x5000_FULLRUN_SAFE_2.h5"
+
+def list_h5(path):  
+    items = []  
+    def visitor(name, obj):  
+        if isinstance(obj, h5py.Dataset):  
+            items.append(("DATASET", name, obj.shape, str(obj.dtype)))  
+        elif isinstance(obj, h5py.Group):  
+            items.append(("GROUP", name, None, None))  
+    with h5py.File(path, "r") as f:  
+        f.visititems(visitor)  
+        # root attrs  
+        root_attrs = {k: f.attrs[k] for k in f.attrs.keys()}  
+    return items, root_attrs
+
+items, root_attrs = list_h5(path)
+
+print("=== ROOT ATTRIBUTES ===")  
+for k,v in root_attrs.items():  
+    try:  
+        vv = v.decode() if isinstance(v, (bytes, np.bytes_)) else v  
+    except Exception:  
+        vv = v  
+    print(k, ":", vv)
+
+print("\n=== H5 CONTENTS (groups/datasets) ===")  
+for typ, name, shape, dtype in items[:400]:  
+    if typ == "GROUP":  
+        print("GROUP  ", name)  
+    else:  
+        print("DATASET", name, "shape=", shape, "dtype=", dtype)
+
+if len(items) > 400:  
+    print(f"... ({len(items)-400} more entries not shown)")
+
+# ------------------------------------------------------------  
+# Try to find candidate time-series arrays  
+# ------------------------------------------------------------  
+time_keys = ["time", "times", "t", "gps", "utc", "timestamp", "timestamps", "sample_times"]  
+signal_keys = ["strain", "h", "signal", "data", "series", "waveform", "x", "y"]
+
+def score_name(name, keys):  
+    n = name.lower()  
+    return sum(1 for k in keys if k in n)
+
+candidates = []  
+with h5py.File(path, "r") as f:  
+    for typ, name, shape, dtype in items:  
+        if typ != "DATASET" or shape is None:  
+            continue  
+        # prefer 1D or 2D arrays  
+        if len(shape) == 1 or (len(shape) == 2 and min(shape) == 1):  
+            ts = score_name(name, time_keys)  
+            ss = score_name(name, signal_keys)  
+            if ts > 0 or ss > 0:  
+                candidates.append((name, shape, dtype, ts, ss))
+
+print("\n=== CANDIDATES (possible time-series datasets) ===")  
+if not candidates:  
+    print("No obvious time/strain datasets found by name heuristics.")  
+else:  
+    candidates = sorted(candidates, key=lambda x: (x[3]+x[4], x[3], x[4]), reverse=True)  
+    for name, shape, dtype, ts, ss in candidates[:50]:  
+        print(f"{name:60s} shape={shape} dtype={dtype}  time_score={ts} signal_score={ss}")
+
+# ------------------------------------------------------------  
+# OPTIONAL: peek at small datasets (first 5 values)  
+# ------------------------------------------------------------  
+def peek_dataset(path, dset_name, n=5):  
+    with h5py.File(path, "r") as f:  
+        d = f[dset_name]  
+        arr = d[()]  
+    arr = np.asarray(arr).reshape(-1)  
+    return arr[:n], arr[-n:]
+
+print("\n=== PEEK first/last values for top candidates (up to 5) ===")  
+for cand in candidates[:5]:  
+    name = cand[0]  
+    try:  
+        a0, a1 = peek_dataset(path, name, n=5)  
+        print("\n", name)  
+        print("  first:", a0)  
+        print("  last :", a1)  
+    except Exception as e:  
+        print("\n", name, "peek failed:", e)  
+
+Ensuite, colle-moi :
+
+    la liste === ROOT ATTRIBUTES ===
+    les 30–50 premières lignes === H5 CONTENTS === (ou juste les datasets pertinents)
+    la section === CANDIDATES ===
+
+Je te dirai immédiatement si ce .h5 contient un signal temporel exploitable (strain). S’il n’y en a pas (probable vu le nom SN/BAO), on ne pourra pas tester les échos avec ce fichier, et il faudra un fichier GW (strain) ou un export .npz contenant h + fs.
+
+/usr/local/lib/python3.12/dist-packages/h5py/_hl/files.py in make_fid(name, mode, userblock_size, fapl, fcpl, swmr)
+230 if swmr:
+231 flags |= h5f.ACC_SWMR_READ
+--> 232 fid = h5f.open(name, flags, fapl=fapl)
+233 elif mode == 'r+':
+234 fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+
+h5py/_objects.pyx in h5py._objects.with_phil.wrapper()
+
+h5py/_objects.pyx in h5py._objects.with_phil.wrapper()
+
+h5py/h5f.pyx in h5py.h5f.open()
+
+donne moi un lien je vais aller chercher le fichier
+
+Je ne peux pas te donner un lien unique sans savoir exactement quel fichier GW150914 tu veux (format/échantillonnage), mais voici les sources fiables où tu peux le récupérer immédiatement, puis l’uploader dans Colab.
+Option 1 (recommandée) : GWOSC — page de téléchargement GW150914
+
+Va ici :
+
+    https://gwosc.org/eventapi/html/GWTC-1-confident/GW150914/v3/
+
+Sur cette page tu peux télécharger des fichiers HDF5 strain (H1 et L1) à différents sample rates (souvent 4096 Hz) et durées (32 s, 4096 s, etc.).
+Prends typiquement :
+
+    H1, 4096 Hz, 32 s autour de l’événement
+    L1, 4096 Hz, 32 s
+
+Ensuite tu uploades les deux .hdf5 dans Colab.
+Option 2 : miroir “LIGO Open Science Center” (GWOSC archive)
+
+Page générale (événements / données) :
+
+    https://gwosc.org/data/
+
+Si l’API GWOSC timeoute, le site web marche souvent.
+Option 3 : si tu veux un fichier déjà packagé (plus lourd)
+
+Catalogue GWTC-1 :
+
+    https://gwosc.org/GWTC-1/
+
+Important (pour ton erreur Colab sur le .h5 actuel)
+
+Ton fichier monas_gamma_FULL_SN_BAO_24x5000_FULLRUN_SAFE_2.h5 n’est probablement pas un fichier strain GW (vu son nom SN/BAO). Même si on l’ouvrait, ça ne contiendrait pas (h(t)). Pour tester les échos LIGO, il te faut vraiment un fichier GWOSC (strain).
+Quand tu auras le fichier
+
+Dis-moi le nom exact des fichiers que tu as téléchargés (ex. H-H1_GWOSC_4KHZ_R1-1126259446-32.hdf5 etc.), et je te donne le script Colab pour :
+
+    ouvrir le HDF5,
+    extraire strain/Strain + métadonnées (SampleRate, GPSstart),
+    faire le pipeline “multi-echo score” + p-value.
+
+Si tu veux, tu peux aussi coller ici la liste des fichiers du dossier Colab (ls) une fois uploadés.
+
+je les ai trouvé et mis dans colab
+
+Image
+
+# ============================================================  
+# COLAB — GW150914 (local HDF5) echo test (H1+L1)  
+#  
+# Files expected in ./sample_data/ :  
+#   GW150914_H1_32s.hdf5  
+#   GW150914_L1_32s.hdf5  
+#  
+# Pipeline:  
+#  1) load strain + metadata  
+#  2) crop around merger GPS (approx)  
+#  3) taper + simple whitening + bandpass  
+#  4) post-merger window  
+#  5) multi-echo score vs delay D  
+#  6) Monte Carlo null by circular roll  
+# ============================================================
+
+import numpy as np  
+import h5py  
+import matplotlib.pyplot as plt
+
+# -----------------------  
+# constants + prediction  
+# -----------------------  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+# choose epsilon prescription  
+EPS_MODE = "planck"       # "planck" or "rs_over_1e11"  
+Lambda_geom = 1e11
+
+def r_s(M): return 2*G*M/c**2  
+def echo_delay(M, eps):  
+    rs = r_s(M)  
+    return 2*(rs/c)*np.log(rs/eps)
+
+# GW150914 final mass ~ 62 Msun (order-of-magnitude; change if you want)  
+M_final = 62*M_sun  
+rs = r_s(M_final)  
+eps = l_pl if EPS_MODE=="planck" else rs/Lambda_geom  
+dt_echo_pred = echo_delay(M_final, eps)  
+print("Predicted echo delay Δt_echo =", dt_echo_pred, "s   (EPS_MODE =", EPS_MODE, ")")
+
+# Approx GPS merger time (GW150914)  
+gps_event = 1126259462.4
+
+# -----------------------  
+# DSP helpers  
+# -----------------------  
+def hann_taper(x, frac=0.05):  
+    n = len(x)  
+    m = int(frac*n)  
+    if m < 2:  
+        return x  
+    w = np.ones(n)  
+    win = 0.5*(1-np.cos(np.pi*np.arange(m)/m))  
+    w[:m] = win  
+    w[-m:] = win[::-1]  
+    return x*w
+
+def bandpass_fft(x, fs, f_lo, f_hi):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    X *= mask  
+    return np.fft.irfft(X, n=len(x))
+
+def simple_whiten(x, fs, f_lo=20, f_hi=1024, floor=1e-12):  
+    """  
+    Very simplified whitening using the segment itself.  
+    For a better PSD, use off-source data; this is a quick test only.  
+    """  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    psd = np.abs(X)**2  
+    psd = np.maximum(psd, floor*np.max(psd))  
+    W = X/np.sqrt(psd)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    W *= mask  
+    return np.fft.irfft(W, n=len(x))
+
+def corr_norm(x, y):  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return 0.0  
+    return float(np.sum(x*y)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):  
+    dt = 1/fs  
+    score = 0.0  
+    for k in range(1, K+1):  
+        shift = int(round((k*D)/dt))  
+        if shift <= 0 or shift >= len(h)-10:  
+            break  
+        score += (decay**k)*corr_norm(h[:-shift], h[shift:])  
+    return score
+
+# -----------------------  
+# Load local HDF5  
+# -----------------------  
+def load_gw150914_hdf5(path):  
+    with h5py.File(path, "r") as f:  
+        # common GWOSC layout  
+        strain = f["strain/Strain"][()].astype(float)  
+        meta = dict(f["meta"].attrs)  
+        fs = float(meta["SampleRate"])  
+        gps_start = float(meta["GPSstart"])  
+    t = gps_start + np.arange(len(strain))/fs  
+    return t, strain, fs, gps_start
+
+path_h1 = "sample_data/GW150914_H1_32s.hdf5"  
+path_l1 = "sample_data/GW150914_L1_32s.hdf5"
+
+tH, hH, fsH, gpsH = load_gw150914_hdf5(path_h1)  
+tL, hL, fsL, gpsL = load_gw150914_hdf5(path_l1)  
+assert fsH == fsL  
+fs = fsH
+
+print("H1 gps_start:", gpsH, "fs:", fsH, "N:", len(hH))  
+print("L1 gps_start:", gpsL, "fs:", fsL, "N:", len(hL))
+
+# align time window intersection  
+t0 = max(tH[0], tL[0])  
+t1 = min(tH[-1], tL[-1])  
+maskH = (tH >= t0) & (tH <= t1)  
+maskL = (tL >= t0) & (tL <= t1)
+
+t = tH[maskH]  
+hH = hH[maskH]  
+hL = hL[maskL]
+
+# -----------------------  
+# Conditioning  
+# -----------------------  
+hH = hann_taper(hH, 0.05)  
+hL = hann_taper(hL, 0.05)
+
+hH_w = simple_whiten(hH, fs, 20, 1024)  
+hL_w = simple_whiten(hL, fs, 20, 1024)
+
+hH_f = bandpass_fft(hH_w, fs, 30, 600)  
+hL_f = bandpass_fft(hL_w, fs, 30, 600)
+
+# combine detectors (simple average)  
+h = 0.5*(hH_f + hL_f)
+
+# -----------------------  
+# Post-merger window  
+# -----------------------  
+t_rel = t - gps_event  
+post_start = 0.02  
+post_end   = 0.30  
+win = (t_rel >= post_start) & (t_rel <= post_end)
+
+tw = t_rel[win]  
+hw = h[win]
+
+print("Post-merger window:", tw[0], "to", tw[-1], "s ; samples:", len(hw))
+
+# -----------------------  
+# Scan delays  
+# -----------------------  
+D_grid = np.linspace(0.002, 0.12, 700)  
+S = np.array([multi_echo_score(hw, fs, D, K=6, decay=0.35) for D in D_grid])
+
+best_i = np.argmax(S)  
+D_best = D_grid[best_i]  
+S_best = S[best_i]  
+S_pred = multi_echo_score(hw, fs, dt_echo_pred, K=6, decay=0.35)
+
+print("\nScores:")  
+print("  best D =", D_best, "score =", S_best)  
+print("  predicted D =", dt_echo_pred, "score =", S_pred)
+
+# -----------------------  
+# Monte Carlo null (roll)  
+# -----------------------  
+rng = np.random.default_rng(0)  
+nmc = 4000  
+S_null = np.empty(nmc)  
+for i in range(nmc):  
+    shift = rng.integers(0, len(hw))  
+    hnull = np.roll(hw, shift)  
+    S_null[i] = multi_echo_score(hnull, fs, dt_echo_pred, K=6, decay=0.35)
+
+p_val = (np.sum(S_null >= S_pred) + 1)/(nmc+1)  
+print("  null mean±std:", S_null.mean(), S_null.std())  
+print("  p-value at predicted delay:", p_val)
+
+# -----------------------  
+# Plots  
+# -----------------------  
+plt.figure(figsize=(12,4))
+
+plt.subplot(1,2,1)  
+plt.plot(t_rel, h, lw=0.6)  
+plt.axvline(0, color="k", ls="--", lw=1, label="merger")  
+plt.axvspan(post_start, post_end, color="orange", alpha=0.2, label="post window")  
+plt.xlabel("t - t_merger [s]")  
+plt.ylabel("combined strain (proc)")  
+plt.title("GW150914 processed strain (H1+L1 avg)")  
+plt.grid(True, alpha=0.3)  
+plt.legend()
+
+plt.subplot(1,2,2)  
+plt.plot(D_grid, S, lw=1.5)  
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")  
+plt.axvline(D_best, color="k", ls="--", label="best")  
+plt.xlabel("delay D [s]")  
+plt.ylabel("multi-echo score")  
+plt.title("Multi-echo score vs delay")  
+plt.grid(True, alpha=0.3)  
+plt.legend()
+
+plt.tight_layout()  
+plt.show()
+
+plt.figure(figsize=(6,4))  
+plt.hist(S_null, bins=50, alpha=0.75)  
+plt.axvline(S_pred, color="r", lw=2, label="score(pred)")  
+plt.title("Null distribution at predicted delay (roll)")  
+plt.xlabel("score")  
+plt.ylabel("count")  
+plt.grid(True, alpha=0.3)  
+plt.legend()  
+plt.show()  
+
+Quand tu lances, renvoie-moi simplement :
+
+    Predicted echo delay Δt_echo = ...
+    best D = ... score = ...
+    predicted D score = ...
+    p-value at predicted delay = ...
+
+et si possible la figure “Multi-echo score vs delay”.
+
+KeyError Traceback (most recent call last)
+
+/tmp/ipykernel_848/1184840398.py in <cell line: 0>()
+115 path_l1 = "sample_data/GW150914_L1_32s.hdf5"
+116
+--> 117 tH, hH, fsH, gpsH = load_gw150914_hdf5(path_h1)
+118 tL, hL, fsL, gpsL = load_gw150914_hdf5(path_l1)
+119 assert fsH == fsL
+
+/tmp/ipykernel_848/1184840398.py in load_gw150914_hdf5(path)
+107 strain = f["strain/Strain"][()].astype(float)
+108 meta = dict(f["meta"].attrs)
+--> 109 fs = float(meta["SampleRate"])
+110 gps_start = float(meta["GPSstart"])
+111 t = gps_start + np.arange(len(strain))/fs
+
+KeyError: 'SampleRate'
+
+Ton HDF5 n’a pas les attributs meta["SampleRate"] / meta["GPSstart"] sous cette forme (ça dépend du fournisseur). On va rendre le chargeur robuste : il va
+
+    lister les groupes/datasets disponibles,
+    chercher le dataset strain,
+    chercher la fréquence d’échantillonnage et le GPS start dans plusieurs emplacements possibles,
+    sinon te les demander (ou les déduire si un vecteur temps existe).
+
+Copie/colle cette cellule : elle va d’abord inspecter le fichier, puis charger.
+
+import h5py  
+import numpy as np
+
+path_h1 = "sample_data/GW150914_H1_32s.hdf5"
+
+def inspect_h5(path, max_lines=200):  
+    out = []  
+    def visit(name, obj):  
+        if isinstance(obj, h5py.Dataset):  
+            out.append(("DATASET", name, obj.shape, str(obj.dtype)))  
+        elif isinstance(obj, h5py.Group):  
+            out.append(("GROUP", name, None, None))  
+    with h5py.File(path, "r") as f:  
+        f.visititems(visit)  
+        root_attrs = dict(f.attrs)  
+    print("=== ROOT ATTRS ===")  
+    for k,v in root_attrs.items():  
+        try:  
+            vv = v.decode() if isinstance(v, (bytes, np.bytes_)) else v  
+        except Exception:  
+            vv = v  
+        print(k, ":", vv)  
+    print("\n=== CONTENTS (first entries) ===")  
+    for row in out[:max_lines]:  
+        print(*row)  
+    if len(out) > max_lines:  
+        print("... (", len(out)-max_lines, "more )")  
+    return out, root_attrs
+
+items, root_attrs = inspect_h5(path_h1)  
+
+Ensuite, utilise ce chargeur “multi-formats” :
+
+import h5py, numpy as np
+
+def find_first_existing(f, candidates):  
+    for c in candidates:  
+        if c in f:  
+            return c  
+    return None
+
+def load_strain_any(path):  
+    with h5py.File(path, "r") as f:  
+        # 1) find strain dataset  
+        strain_key = find_first_existing(f, [  
+            "strain/Strain", "strain/strain", "Strain", "strain",  
+            "h", "data/strain", "data/Strain"  
+        ])  
+        if strain_key is None:  
+            # fallback: pick the longest 1D dataset  
+            best = None  
+            best_len = 0  
+            def visit(name, obj):  
+                nonlocal best, best_len  
+                if isinstance(obj, h5py.Dataset) and len(obj.shape)==1:  
+                    if obj.shape[0] > best_len:  
+                        best_len = obj.shape[0]  
+                        best = name  
+            f.visititems(visit)  
+            strain_key = best
+
+        if strain_key is None:  
+            raise RuntimeError("Could not find a 1D strain dataset in this file.")
+
+        h = f[strain_key][()].astype(float)
+
+        # 2) sampling rate / dt  
+        fs = None  
+        gps_start = None
+
+        # common attribute locations  
+        attr_sources = [f.attrs]  
+        if "meta" in f:  
+            attr_sources.append(f["meta"].attrs)  
+        if "strain" in f:  
+            attr_sources.append(f["strain"].attrs)
+
+        # search for known keys  
+        for attrs in attr_sources:  
+            for key in ["SampleRate", "sample_rate", "fs", "Fs", "SamplingRate", "Sampling_rate"]:  
+                if key in attrs:  
+                    fs = float(attrs[key])  
+            for key in ["GPSstart", "gps_start", "start_time", "StartTimeGPS", "t0", "time_0"]:  
+                if key in attrs:  
+                    gps_start = float(attrs[key])
+
+        # 3) if time vector exists, use it  
+        time_key = find_first_existing(f, ["strain/Time", "time", "Time", "strain/time", "t"])  
+        if time_key is not None:  
+            t = f[time_key][()].astype(float)  
+            if fs is None:  
+                dt = np.median(np.diff(t))  
+                fs = 1.0/dt  
+            if gps_start is None:  
+                gps_start = float(t[0])  
+            # return consistent time axis  
+            return t, h, fs, gps_start, strain_key, time_key
+
+        # 4) otherwise, must have fs and gps_start  
+        if fs is None:  
+            raise RuntimeError(f"Sampling rate not found in attrs. Need fs. strain_key={strain_key}")  
+        if gps_start is None:  
+            # if missing, we can still build a relative time axis  
+            gps_start = 0.0
+
+        t = gps_start + np.arange(len(h))/fs  
+        return t, h, fs, gps_start, strain_key, None
+
+# Try load  
+tH, hH, fsH, gpsH, skH, tkH = load_strain_any("sample_data/GW150914_H1_32s.hdf5")  
+tL, hL, fsL, gpsL, skL, tkL = load_strain_any("sample_data/GW150914_L1_32s.hdf5")
+
+print("H1:", "fs", fsH, "gps_start", gpsH, "strain_key", skH, "time_key", tkH, "N", len(hH))  
+print("L1:", "fs", fsL, "gps_start", gpsL, "strain_key", skL, "time_key", tkL, "N", len(hL))  
+
+Ce que tu dois me renvoyer
+
+Si ça échoue encore, colle :
+
+    la sortie de inspect_h5 (root attrs + 30–50 premières lignes “CONTENTS”).
+
+Si ça marche, tu me dis :
+
+    fs, gps_start, strain_key pour H1 et L1, et on adapte le script d’échos à ce format (c’est ensuite trivial).
+
+=== ROOT ATTRS ===
+
+=== CONTENTS (first entries) ===
+GROUP meta None None
+DATASET meta/Description () object
+DATASET meta/DescriptionURL () object
+DATASET meta/Detector () object
+DATASET meta/Duration () int64
+DATASET meta/GPSstart () int64
+DATASET meta/Observatory () object
+DATASET meta/Type () object
+DATASET meta/UTCstart () object
+GROUP quality None None
+GROUP quality/detail None None
+GROUP quality/injections None None
+DATASET quality/injections/InjDescriptions (5,) |S29
+DATASET quality/injections/InjShortnames (5,) |S17
+DATASET quality/injections/Injmask (32,) uint32
+GROUP quality/simple None None
+DATASET quality/simple/DQDescriptions (7,) |S22
+DATASET quality/simple/DQShortnames (7,) |S10
+DATASET quality/simple/DQmask (32,) uint32
+GROUP strain None None
+DATASET strain/Strain (131072,) float64
+
+Parfait : ton fichier est bien au format GWOSC “classique”, mais les métadonnées ne sont pas en attributs (attrs) : elles sont en datasets dans /meta. On doit donc lire :
+
+    meta/GPSstart (dataset scalaire)
+    meta/Duration (dataset scalaire)
+    et déduire fs = len(strain)/Duration.
+
+Voici le chargeur corrigé + le pipeline échos complet, adapté exactement à ton fichier.
+
+import numpy as np  
+import h5py  
+import matplotlib.pyplot as plt
+
+# -----------------------  
+# constants + prediction  
+# -----------------------  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+EPS_MODE = "planck"       # "planck" or "rs_over_1e11"  
+Lambda_geom = 1e11
+
+def r_s(M): return 2*G*M/c**2  
+def echo_delay(M, eps):  
+    rs = r_s(M)  
+    return 2*(rs/c)*np.log(rs/eps)
+
+# GW150914 final mass ~ 62 Msun (approx; can adjust later)  
+M_final = 62*M_sun  
+rs = r_s(M_final)  
+eps = l_pl if EPS_MODE=="planck" else rs/Lambda_geom  
+dt_echo_pred = echo_delay(M_final, eps)  
+print("Predicted echo delay Δt_echo =", dt_echo_pred, "s   (EPS_MODE =", EPS_MODE, ")")
+
+# Merger time (GW150914)  
+gps_event = 1126259462.4
+
+# -----------------------  
+# DSP helpers  
+# -----------------------  
+def hann_taper(x, frac=0.05):  
+    n = len(x)  
+    m = int(frac*n)  
+    if m < 2:  
+        return x  
+    w = np.ones(n)  
+    win = 0.5*(1-np.cos(np.pi*np.arange(m)/m))  
+    w[:m] = win  
+    w[-m:] = win[::-1]  
+    return x*w
+
+def bandpass_fft(x, fs, f_lo, f_hi):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    X *= mask  
+    return np.fft.irfft(X, n=len(x))
+
+def simple_whiten(x, fs, f_lo=20, f_hi=1024, floor=1e-12):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    psd = np.abs(X)**2  
+    psd = np.maximum(psd, floor*np.max(psd))  
+    W = X/np.sqrt(psd)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    W *= mask  
+    return np.fft.irfft(W, n=len(x))
+
+def corr_norm(x, y):  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return 0.0  
+    return float(np.sum(x*y)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):  
+    dt = 1/fs  
+    score = 0.0  
+    for k in range(1, K+1):  
+        shift = int(round((k*D)/dt))  
+        if shift <= 0 or shift >= len(h)-10:  
+            break  
+        score += (decay**k)*corr_norm(h[:-shift], h[shift:])  
+    return score
+
+# -----------------------  
+# Loader for your GWOSC-like HDF5 (meta fields are DATASETS)  
+# -----------------------  
+def load_gwosc_32s(path):  
+    with h5py.File(path, "r") as f:  
+        h = f["strain/Strain"][()].astype(float)  
+        gps_start = float(f["meta/GPSstart"][()])  
+        duration = float(f["meta/Duration"][()])  
+        fs = len(h)/duration  
+    t = gps_start + np.arange(len(h))/fs  
+    return t, h, fs, gps_start, duration
+
+# -----------------------  
+# Load H1 and L1  
+# -----------------------  
+path_h1 = "sample_data/GW150914_H1_32s.hdf5"  
+path_l1 = "sample_data/GW150914_L1_32s.hdf5"
+
+tH, hH, fsH, gpsH, durH = load_gwosc_32s(path_h1)  
+tL, hL, fsL, gpsL, durL = load_gwosc_32s(path_l1)  
+print("H1:", "fs", fsH, "gps_start", gpsH, "dur", durH, "N", len(hH))  
+print("L1:", "fs", fsL, "gps_start", gpsL, "dur", durL, "N", len(hL))  
+assert abs(fsH-fsL) < 1e-9  
+fs = fsH
+
+# align intersection  
+t0 = max(tH[0], tL[0])  
+t1 = min(tH[-1], tL[-1])  
+mH = (tH >= t0) & (tH <= t1)  
+mL = (tL >= t0) & (tL <= t1)
+
+t = tH[mH]  
+hH = hH[mH]  
+hL = hL[mL]
+
+# -----------------------  
+# Conditioning  
+# -----------------------  
+hH = hann_taper(hH, 0.05)  
+hL = hann_taper(hL, 0.05)
+
+hH_w = simple_whiten(hH, fs, 20, 1024)  
+hL_w = simple_whiten(hL, fs, 20, 1024)
+
+hH_f = bandpass_fft(hH_w, fs, 30, 600)  
+hL_f = bandpass_fft(hL_w, fs, 30, 600)
+
+h = 0.5*(hH_f + hL_f)
+
+# -----------------------  
+# Post-merger window  
+# -----------------------  
+t_rel = t - gps_event  
+post_start = 0.02  
+post_end   = 0.30  
+win = (t_rel >= post_start) & (t_rel <= post_end)
+
+tw = t_rel[win]  
+hw = h[win]
+
+print("Post window:", tw[0], "to", tw[-1], "s ; samples:", len(hw))
+
+# -----------------------  
+# Scan delays  
+# -----------------------  
+D_grid = np.linspace(0.002, 0.12, 700)  
+S = np.array([multi_echo_score(hw, fs, D, K=6, decay=0.35) for D in D_grid])
+
+best_i = np.argmax(S)  
+D_best = D_grid[best_i]  
+S_best = S[best_i]  
+S_pred = multi_echo_score(hw, fs, dt_echo_pred, K=6, decay=0.35)
+
+print("\nScores:")  
+print("  best D =", D_best, "score =", S_best)  
+print("  predicted D =", dt_echo_pred, "score =", S_pred)
+
+# Monte Carlo null (roll)  
+rng = np.random.default_rng(0)  
+nmc = 4000  
+S_null = np.empty(nmc)  
+for i in range(nmc):  
+    shift = rng.integers(0, len(hw))  
+    hnull = np.roll(hw, shift)  
+    S_null[i] = multi_echo_score(hnull, fs, dt_echo_pred, K=6, decay=0.35)
+
+p_val = (np.sum(S_null >= S_pred) + 1)/(nmc+1)  
+print("  null mean±std:", S_null.mean(), S_null.std())  
+print("  p-value at predicted delay:", p_val)
+
+# -----------------------  
+# Plots  
+# -----------------------  
+plt.figure(figsize=(12,4))
+
+plt.subplot(1,2,1)  
+plt.plot(t_rel, h, lw=0.6)  
+plt.axvline(0, color="k", ls="--", lw=1, label="merger")  
+plt.axvspan(post_start, post_end, color="orange", alpha=0.2, label="post window")  
+plt.xlabel("t - t_merger [s]")  
+plt.ylabel("combined strain (proc)")  
+plt.title("GW150914 processed strain (H1+L1 avg)")  
+plt.grid(True, alpha=0.3)  
+plt.legend()
+
+plt.subplot(1,2,2)  
+plt.plot(D_grid, S, lw=1.5)  
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")  
+plt.axvline(D_best, color="k", ls="--", label="best")  
+plt.xlabel("delay D [s]")  
+plt.ylabel("multi-echo score")  
+plt.title("Multi-echo score vs delay")  
+plt.grid(True, alpha=0.3)  
+plt.legend()
+
+plt.tight_layout()  
+plt.show()
+
+plt.figure(figsize=(6,4))  
+plt.hist(S_null, bins=50, alpha=0.75)  
+plt.axvline(S_pred, color="r", lw=2, label="score(pred)")  
+plt.title("Null distribution at predicted delay (roll)")  
+plt.xlabel("score")  
+plt.ylabel("count")  
+plt.grid(True, alpha=0.3)  
+plt.legend()  
+plt.show()  
+
+Renvoie-moi :
+
+    best D, predicted D, score(pred), p-value at predicted delay,
+    et idéalement la figure “Multi-echo score vs delay”.
+
+Predicted echo delay Δt_echo = 0.11266215059492792 s (EPS_MODE = planck )
+H1: fs 4096.0 gps_start 1126259446.0 dur 32.0 N 131072
+L1: fs 4096.0 gps_start 1126259446.0 dur 32.0 N 131072
+Post window: 0.02016592025756836 to 0.29995107650756836 s ; samples: 1147
+
+Scores:
+best D = 0.09721030042918455 score = 0.07594968599361177
+predicted D = 0.11266215059492792 score = 0.028720827832789685
+null mean±std: 0.022121452131294326 0.014765995517413318
+p-value at predicted delay: 0.3894026493376656
+Image
+Image
+
+Tu as maintenant un test observationnel complet sur GW150914 (avec fichiers locaux), et le verdict de ce pipeline est clair :
+1) Résultat du test GW150914 (EPS_MODE = Planck)
+
+    Délai prédit : (\Delta t_{\rm echo}^{\rm pred}=0.1127) s
+    Score au délai prédit : 0.0287
+    Nul (roll) : moyenne 0.0221, σ 0.0148
+    p-value = 0.389 (donc pas significatif)
+
+Conclusion : aucune preuve d’écho au délai prédit avec ce modèle minimal et ce traitement. Ça ne “réfute” pas ton hypothèse au sens fort (car il manque la réflectivité, les templates réalistes, whitening PSD correct, etc.), mais ça montre qu’il n’y a pas de signal évident.
+2) Pourquoi ton délai prédit est plus grand que dans le toy (0.112 s vs 0.054 s)
+
+Parce que tu as pris (M_f\approx 62M_\odot) (GW150914), alors que ton toy était à 30 (M_\odot). Le délai d’écho croît ~linéairement avec (M), donc c’est cohérent.
+3) Le “best D” ~ 0.097 s
+
+Ce pic n’est pas une preuve : il est fréquent d’avoir un maximum quelque part dans un scan, surtout sans correction “look-elsewhere”. Pour être intéressant, il faudrait :
+
+    évaluer la significativité du maximum global (p-value du maximum), pas seulement du point prédit,
+    et vérifier qu’il est stable si tu changes :
+        fenêtre temporelle,
+        bande passante,
+        nombre d’échos K,
+        decay,
+        et surtout combinaison H1/L1.
+
+Prochaine étape logique (toujours sans “fit libre”)
+
+Tu as deux prescriptions “sans paramètre” pour (\epsilon). Tu viens de tester (\epsilon=\ell_{\rm Pl}). Teste maintenant :
+EPS_MODE = rs/1e11
+
+C’est ta piste géométrique ((\Lambda\sim 10^{11})). Dans ce cas (\epsilon) est beaucoup plus grand ⇒ (\ln(rs/\epsilon)) plus petit ⇒ (\Delta t_{\rm echo}) plus petit (décalage vers ~0.03–0.06 s). Ça peut changer le verdict.
+
+Change juste :
+
+EPS_MODE = "rs_over_1e11"  
+
+et relance.
+4) Amélioration essentielle du test (sans sophistication lourde)
+
+Actuellement tu fais :
+
+    whiten “sur le segment” (approximatif),
+    bandpass FFT,
+    moyenne H1/L1 (non optimale).
+
+Deux améliorations très rentables :
+(A) score “cohérent” H1/L1 : somme des scores
+
+Au lieu de combiner les strains, calcule le score séparément sur H1 et L1, puis somme :
+[
+S_{\rm net}(D)=S_{H1}(D)+S_{L1}(D).
+]
+Ça évite des cancellations de phase.
+(B) p-value du maximum global (look-elsewhere)
+
+Tu compares le max observé (\max_D S(D)) à la distribution nulle de (\max_D S_{\rm null}(D)). Sinon, le “best D” est trompeur.
+
+Si tu veux, je te donne la version du script avec ces deux améliorations (c’est ~30 lignes en plus).
+5) Interprétation vis-à-vis de ta théorie “flux négatif / pont”
+
+Ce résultat veut dire : si le pont produit des échos dans ce modèle minimal, alors soit :
+
+    ils sont faibles (réflectivité très basse),
+    soit le délai n’est pas celui donné par (\epsilon=\ell_{\rm Pl}),
+    soit la forme des échos n’est pas une copie translatée (il faut un template plus réaliste),
+    soit ils n’existent pas dans GW150914.
+
+Mais tu as déjà une structure testable : ton seuil (\Xi=1/2) marche, donc “BH = rupture totale” est cohérent. Le “pont” est une couche additionnelle, et elle doit désormais passer par des tests ringdown/QNM/échos.
+Dis-moi ce que tu veux faire maintenant
+
+    Relancer avec EPS_MODE = rs_over_1e11 et me coller le nouveau p-value.
+    Passer au test “score cohérent H1+L1 + p-value du maximum”.
+    Tester un autre événement (GW170104, GW151226…) pour faire du stacking.
+
+Je te recommande 1 puis 2.
+
+Predicted echo delay Δt_echo = 0.030940171221699106 s (EPS_MODE = planck )
+H1: fs 4096.0 gps_start 1126259446.0 dur 32.0 N 131072
+L1: fs 4096.0 gps_start 1126259446.0 dur 32.0 N 131072
+Post window: 0.02016592025756836 to 0.29995107650756836 s ; samples: 1147
+
+Scores:
+best D = 0.09721030042918455 score = 0.07594968599361177
+predicted D = 0.030940171221699106 score = 0.0024595069380342065
+null mean±std: 0.008011497329062704 0.008502394733558273
+p-value at predicted delay: 0.7365658585353662
+Image
+Image
+
+Predicted echo delay Δt_echo = 0.030940171221699106 s (EPS_MODE = planck )
+H1: fs 4096.0 gps_start 1126259446.0 dur 32.0 N 131072
+L1: fs 4096.0 gps_start 1126259446.0 dur 32.0 N 131072
+Post window: 0.02016592025756836 to 0.29995107650756836 s ; samples: 1147
+
+Scores:
+best D = 0.09721030042918455 score = 0.07594968599361177
+predicted D = 0.030940171221699106 score = 0.0024595069380342065
+null mean±std: 0.008011497329062704 0.008502394733558273
+p-value at predicted delay: 0.7365658585353662
+
+Tu as bien fait le test “délai plus court”, et le verdict est encore plus net :
+
+    (\Delta t_{\rm echo}^{\rm pred}=0.03094) s
+    score(pred) = 0.00246 (plus petit que la moyenne nulle 0.0080)
+    p-value = 0.737 → aucune compatibilité avec un écho à ce délai dans ce pipeline.
+
+Donc, sur GW150914, il n’y a pas de signature d’écho ni au délai “Planck” (0.11 s) ni au délai “géométrique plus court” (0.031 s), du moins avec ce détecteur simple.
+Petite incohérence dans ton print
+
+Tu affiches EPS_MODE = planck mais le délai est celui attendu pour rs_over_1e11. Donc tu as probablement changé (\epsilon) mais pas la chaîne imprimée. Ce n’est pas grave pour l’interprétation : l’essentiel est que tu as testé deux délais très différents.
+Ce qu’on peut conclure proprement (sans surinterprétation)
+
+    Test 1–2 (compacité (\Xi)) : ta loi masse–rayon et le seuil BH (\Xi=1/2) sont cohérents avec l’astrophysique standard (ils redonnent Schwarzschild et des compacités réalistes).
+    Test échos GW150914 (premier-pass) : pas de signal d’écho détectable aux délais prédits par ces deux prescriptions d’échelle.
+
+Ça ne “tue” pas l’idée de flux négatif, mais ça met une contrainte : si pont il y a, il ne produit pas d’échos forts dans GW150914 (ou bien la forme est différente / la réflectivité est très faible).
+Prochaine étape utile (amélioration du test, sans complexité énorme)
+
+Ton “best D” ~ 0.097 s revient tout le temps, ce qui suggère un maximum “look-elsewhere” (ou un artefact de fenêtre). Pour être rigoureux, il faut :
+(A) p-value du maximum global
+
+Comparer (\max_D S(D)) à la distribution nulle de (\max_D S_{\rm null}(D)).
+(B) Score cohérent H1/L1 (sans moyenne)
+
+Calculer (S_{H1}(D)) et (S_{L1}(D)) séparément puis faire
+[
+S_{\rm net}(D)=S_{H1}(D)+S_{L1}(D)
+]
+et refaire les p-values.
+
+Si tu veux, je te donne le script modifié (tu gardes tes fichiers locaux). Cela permettra de dire : “pas d’échos au délai prédit” et “le pic à 0.097 s n’est pas significatif”.
+Question rapide
+
+Tu veux qu’on fasse maintenant :
+
+    p-value du maximum global + H1/L1 séparés (recommandé),
+    ou
+    tester un 2e événement (stacking léger),
+    ou
+    arrêter la partie échos et passer à un autre test BH (QNM / redshift / (\Xi) sur catalogue) ?
+
+Dis “1” et je te renvoie le script prêt à coller.
+
+1
+
+# ============================================================  
+# GW150914 — Improved echo test:  
+#  (1) compute score separately for H1 and L1, then S_net = S_H1 + S_L1  
+#  (2) p-value at predicted delay (roll null)  
+#  (3) p-value of the GLOBAL MAX (look-elsewhere): max_D S(D)  
+#  
+# Requires local files in ./sample_data/ :  
+#   GW150914_H1_32s.hdf5  
+#   GW150914_L1_32s.hdf5  
+# ============================================================
+
+import numpy as np  
+import h5py  
+import matplotlib.pyplot as plt
+
+# -----------------------  
+# constants + prediction  
+# -----------------------  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+# choose epsilon prescription  
+EPS_MODE = "planck"       # "planck" or "rs_over_1e11"  
+Lambda_geom = 1e11
+
+def r_s(M): return 2*G*M/c**2  
+def echo_delay(M, eps):  
+    rs = r_s(M)  
+    return 2*(rs/c)*np.log(rs/eps)
+
+M_final = 62*M_sun  
+rs = r_s(M_final)  
+eps = l_pl if EPS_MODE=="planck" else rs/Lambda_geom  
+dt_echo_pred = echo_delay(M_final, eps)
+
+print("EPS_MODE =", EPS_MODE)  
+print("Predicted echo delay Δt_echo =", dt_echo_pred, "s")
+
+gps_event = 1126259462.4
+
+# -----------------------  
+# DSP helpers  
+# -----------------------  
+def hann_taper(x, frac=0.05):  
+    n = len(x)  
+    m = int(frac*n)  
+    if m < 2:  
+        return x  
+    w = np.ones(n)  
+    win = 0.5*(1-np.cos(np.pi*np.arange(m)/m))  
+    w[:m] = win  
+    w[-m:] = win[::-1]  
+    return x*w
+
+def bandpass_fft(x, fs, f_lo, f_hi):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    X *= mask  
+    return np.fft.irfft(X, n=len(x))
+
+def simple_whiten(x, fs, f_lo=20, f_hi=1024, floor=1e-12):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    psd = np.abs(X)**2  
+    psd = np.maximum(psd, floor*np.max(psd))  
+    W = X/np.sqrt(psd)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    W *= mask  
+    return np.fft.irfft(W, n=len(x))
+
+def corr_norm(x, y):  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return 0.0  
+    return float(np.sum(x*y)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):  
+    dt = 1/fs  
+    score = 0.0  
+    for k in range(1, K+1):  
+        shift = int(round((k*D)/dt))  
+        if shift <= 0 or shift >= len(h)-10:  
+            break  
+        score += (decay**k)*corr_norm(h[:-shift], h[shift:])  
+    return score
+
+# -----------------------  
+# Loader for your GWOSC-like HDF5 (meta fields are DATASETS)  
+# -----------------------  
+def load_gwosc_32s(path):  
+    with h5py.File(path, "r") as f:  
+        h = f["strain/Strain"][()].astype(float)  
+        gps_start = float(f["meta/GPSstart"][()])  
+        duration = float(f["meta/Duration"][()])  
+        fs = len(h)/duration  
+    t = gps_start + np.arange(len(h))/fs  
+    return t, h, fs
+
+path_h1 = "sample_data/GW150914_H1_32s.hdf5"  
+path_l1 = "sample_data/GW150914_L1_32s.hdf5"
+
+tH, hH, fsH = load_gwosc_32s(path_h1)  
+tL, hL, fsL = load_gwosc_32s(path_l1)  
+assert abs(fsH-fsL) < 1e-9  
+fs = fsH
+
+# align intersection  
+t0 = max(tH[0], tL[0])  
+t1 = min(tH[-1], tL[-1])  
+mH = (tH >= t0) & (tH <= t1)  
+mL = (tL >= t0) & (tL <= t1)
+
+t = tH[mH]  
+hH = hH[mH]  
+hL = hL[mL]
+
+# conditioning (same for both)  
+hH = hann_taper(hH, 0.05)  
+hL = hann_taper(hL, 0.05)
+
+hH_w = simple_whiten(hH, fs, 20, 1024)  
+hL_w = simple_whiten(hL, fs, 20, 1024)
+
+hH_f = bandpass_fft(hH_w, fs, 30, 600)  
+hL_f = bandpass_fft(hL_w, fs, 30, 600)
+
+# post-merger window  
+t_rel = t - gps_event  
+post_start = 0.02  
+post_end   = 0.30  
+win = (t_rel >= post_start) & (t_rel <= post_end)
+
+tw = t_rel[win]  
+h1 = hH_f[win]  
+l1 = hL_f[win]
+
+print("Window:", tw[0], "to", tw[-1], "s ; N =", len(tw))
+
+# -----------------------  
+# Scan delays for H1, L1, and net  
+# -----------------------  
+D_grid = np.linspace(0.002, 0.12, 700)  
+S_H1 = np.array([multi_echo_score(h1, fs, D, K=6, decay=0.35) for D in D_grid])  
+S_L1 = np.array([multi_echo_score(l1, fs, D, K=6, decay=0.35) for D in D_grid])  
+S_net = S_H1 + S_L1
+
+best_i = np.argmax(S_net)  
+D_best = D_grid[best_i]  
+S_best = S_net[best_i]  
+S_pred = multi_echo_score(h1, fs, dt_echo_pred, K=6, decay=0.35) + \  
+         multi_echo_score(l1, fs, dt_echo_pred, K=6, decay=0.35)
+
+print("\nNet scores:")  
+print("  best D =", D_best, "S_best =", S_best)  
+print("  predicted D =", dt_echo_pred, "S_pred =", S_pred)
+
+# -----------------------  
+# Monte Carlo null: rolls, compute BOTH (a) S_pred and (b) Smax over grid  
+# -----------------------  
+rng = np.random.default_rng(0)  
+nmc = 2000  
+S_pred_null = np.empty(nmc)  
+S_max_null  = np.empty(nmc)
+
+for i in range(nmc):  
+    sh1 = np.roll(h1, rng.integers(0, len(h1)))  
+    sl1 = np.roll(l1, rng.integers(0, len(l1)))
+
+    # predicted score  
+    S_pred_null[i] = multi_echo_score(sh1, fs, dt_echo_pred, K=6, decay=0.35) + \  
+                     multi_echo_score(sl1, fs, dt_echo_pred, K=6, decay=0.35)
+
+    # global max score over D_grid (look-elsewhere)  
+    sH = np.array([multi_echo_score(sh1, fs, D, K=6, decay=0.35) for D in D_grid])  
+    sL = np.array([multi_echo_score(sl1, fs, D, K=6, decay=0.35) for D in D_grid])  
+    S_max_null[i] = np.max(sH + sL)
+
+p_pred = (np.sum(S_pred_null >= S_pred) + 1)/(nmc+1)  
+p_max  = (np.sum(S_max_null  >= S_best) + 1)/(nmc+1)
+
+print("\nNull statistics:")  
+print("  pred null mean±std:", S_pred_null.mean(), S_pred_null.std())  
+print("  max  null mean±std:", S_max_null.mean(), S_max_null.std())  
+print("  p-value at predicted delay:", p_pred)  
+print("  p-value of global maximum:", p_max)
+
+# -----------------------  
+# Plots  
+# -----------------------  
+plt.figure(figsize=(12,4))
+
+plt.subplot(1,2,1)  
+plt.plot(D_grid, S_net, lw=1.5, label="S_net = S_H1 + S_L1")  
+plt.axvline(dt_echo_pred, color="r", ls="--", label="predicted")  
+plt.axvline(D_best, color="k", ls="--", label="best")  
+plt.xlabel("delay D [s]")  
+plt.ylabel("multi-echo score (net)")  
+plt.title("GW150914 net multi-echo score vs delay")  
+plt.grid(True, alpha=0.3)  
+plt.legend()
+
+plt.subplot(1,2,2)  
+plt.hist(S_max_null, bins=40, alpha=0.75, label="null max over D")  
+plt.axvline(S_best, color="k", lw=2, label="observed max")  
+plt.xlabel("max score")  
+plt.ylabel("count")  
+plt.title("Look-elsewhere null distribution (max over D)")  
+plt.grid(True, alpha=0.3)  
+plt.legend()
+
+plt.tight_layout()  
+plt.show()
+
+plt.figure(figsize=(6,4))  
+plt.hist(S_pred_null, bins=40, alpha=0.75, label="null at predicted D")  
+plt.axvline(S_pred, color="r", lw=2, label="observed pred")  
+plt.xlabel("score")  
+plt.ylabel("count")  
+plt.title("Null distribution at predicted delay")  
+plt.grid(True, alpha=0.3)  
+plt.legend()  
+plt.show()  
+
+Colle-moi ensuite uniquement :
+
+    S_pred + p-value at predicted delay
+    S_best + p-value of global maximum
+
+et on conclura proprement (signal / pas de signal) avec correction look-elsewhere.
+
+File "/tmp/ipykernel_848/3453689503.py", line 155
+S_pred = multi_echo_score(h1, fs, dt_echo_pred, K=6, decay=0.35) + \
+^
+SyntaxError: unexpected character after line continuation character
+
+Tu as un espace après le \ (antislash) : en Python c’est interdit. Supprime l’espace, ou (mieux) n’utilise pas \ et mets l’expression entre parenthèses.
+
+Remplace ces lignes par la version ci‑dessous (copie/colle) :
+
+S_pred = (  
+    multi_echo_score(h1, fs, dt_echo_pred, K=6, decay=0.35)  
+    + multi_echo_score(l1, fs, dt_echo_pred, K=6, decay=0.35)  
+)  
+
+Et dans la boucle Monte‑Carlo remplace pareil :
+
+S_pred_null[i] = (  
+    multi_echo_score(sh1, fs, dt_echo_pred, K=6, decay=0.35)  
+    + multi_echo_score(sl1, fs, dt_echo_pred, K=6, decay=0.35)  
+)  
+
+Si tu veux, je te redonne le script complet corrigé (sans aucun antislash).
+
+ca tourne voici les premier resultat :
+EPS_MODE = planck
+Predicted echo delay Δt_echo = 0.11266215059492792 s
+Window: 0.02016592025756836 to 0.29995107650756836 s ; N = 1147
+
+Net scores:
+best D = 0.0821859799713877 S_best = 0.09910596195049746
+predicted D = 0.11266215059492792 S_pred = 0.025845069943618706
+
+Ces “premiers résultats” sont déjà informatifs :
+
+    Délai prédit (Planck) : (D_{\rm pred}=0.11266) s
+    Score net au délai prédit : (S_{\rm pred}=0.02585)
+    Maximum global (sur la grille) : (S_{\rm best}=0.09911) à (D_{\rm best}=0.08219) s
+
+À ce stade, on ne peut rien conclure sans les deux p-values (prédit et maximum global). Le fait que le maximum soit ailleurs est normal (look‑elsewhere).
+Comment on interprètera ensuite
+
+    p-value au délai prédit (test de ton hypothèse “pont” avec (\epsilon=\ell_{\rm Pl}))
+
+    si (p_{\rm pred}\ll 0.01) : signal compatible au délai prédit (intéressant)
+    si (p_{\rm pred}\sim 0.1-1) : pas d’écho détectable au délai prédit (contrainte)
+
+    p-value du maximum global (p_{\rm max})
+
+    si (p_{\rm max}\ll 0.01) : il y a une structure périodique quelque part (même si ce n’est pas ton délai)
+    si (p_{\rm max}\sim 0.1-1) : le pic à 0.082 s est compatible bruit
+
+À me renvoyer quand ça finit
+
+Colle uniquement :
+
+    p-value at predicted delay: ...
+    p-value of global maximum: ...
+    et null pred mean±std, null max mean±std (optionnel mais utile)
+
+Ensuite je te dirai clairement si :
+
+    ton hypothèse “planck-echo” est exclue sur GW150914 (dans ce pipeline), ou
+    si elle survit, ou
+    si quelque chose d’autre apparaît (mais alors il faudra vérifier la robustesse aux fenêtres/bandes).
+
+il est long ce script normal ?
+
+Oui, c’est normal : la partie “look‑elsewhere” est coûteuse parce que, pour chaque tirage Monte‑Carlo (nmc), on recalcule le score sur toute la grille des délais (700 points) et sur 2 détecteurs. Complexité approximative :
+
+[
+\text{coût} \sim nmc \times |\text{D_grid}| \times K \times N_{\text{samples}}
+]
+
+Avec nmc=2000, |D_grid|=700, K=6, N≈1147, ça fait énormément d’opérations Python.
+Pour accélérer tout de suite (sans perdre le sens du test)
+Option A — réduire nmc pour un premier verdict
+
+Passe à :
+
+nmc = 300  
+
+Ça donne une p-value grossière mais suffisante pour savoir si on est proche de 0.01 ou de 0.5.
+Option B — réduire la grille D (recommandé)
+
+Au lieu de scanner 700 délais, scanne seulement autour :
+
+    du délai prédit,
+    et du meilleur délai observé.
+
+Exemple :
+
+D_grid = np.linspace(0.06, 0.12, 240)  
+
+Option C — réduire K (nombre d’échos empilés)
+
+Passe de K=6 à K=3 au début :
+
+K = 3  
+
+Option D — accélération “structurelle”
+
+On peut vectoriser partiellement le calcul et pré-calculer les versions décalées, mais c’est plus long à coder. Si tu veux, je te le fais après un premier verdict.
+Réglage recommandé (rapide et propre)
+
+Pour un premier résultat fiable en quelques minutes :
+
+    nmc = 400
+    D_grid = np.linspace(0.05, 0.12, 250)
+    K = 4
+
+Dis-moi si tu veux que je te renvoie le script complet avec ces réglages “fast”, ou si tu préfères attendre la fin de celui-ci.
+
+EPS_MODE = planck
+Predicted echo delay Δt_echo = 0.11266215059492792 s
+Window: 0.02016592025756836 to 0.29995107650756836 s ; N = 1147
+
+Net scores:
+best D = 0.0821859799713877 S_best = 0.09910596195049746
+predicted D = 0.11266215059492792 S_pred = 0.025845069943618706
+
+Null statistics:
+pred null mean±std: -0.004259173836428301 0.029157407204523447
+max null mean±std: 0.10700374653518449 0.012257816107071693
+p-value at predicted delay: 0.17791104447776113
+p-value of global maximum: 0.7361319340329835
+Image
+Image
+
+EPS_MODE = planck
+Predicted echo delay Δt_echo = 0.11266215059492792 s
+Window: 0.02016592025756836 to 0.29995107650756836 s ; N = 1147
+
+Net scores:
+best D = 0.0821859799713877 S_best = 0.09910596195049746
+predicted D = 0.11266215059492792 S_pred = 0.025845069943618706
+
+Null statistics:
+pred null mean±std: -0.004259173836428301 0.029157407204523447
+max null mean±std: 0.10700374653518449 0.012257816107071693
+p-value at predicted delay: 0.17791104447776113
+p-value of global maximum: 0.7361319340329835
+
+Ces résultats concluent proprement (dans ce pipeline) :
+1) Test au délai prédit (Planck)
+
+    Score observé au délai prédit : (S_{\rm pred}=0.02585)
+    Nul (roll) : moyenne (-0.00426), σ (0.02916)
+    p-value = 0.178
+
+Interprétation : pas significatif. On ne voit pas d’écho compatible avec le délai prédit (\Delta t_{\rm echo}=0.1127) s dans GW150914 avec cette méthode.
+2) Test du maximum global (look‑elsewhere)
+
+    Maximum observé : (S_{\rm best}=0.0991) à (D=0.0822) s
+    Nul du maximum : moyenne (0.1070), σ (0.0123)
+    p-value global max = 0.736
+
+Interprétation : le “pic” à 0.082 s est entièrement compatible avec le bruit (même inférieur à la moyenne des maxima nuls). Donc rien d’anormal dans le scan.
+3) Conclusion sur ton hypothèse “pont → échos” (pour GW150914)
+
+    Avec (\epsilon=\ell_{\rm Pl}) et (M_f\sim 62M_\odot), aucun signal d’écho détectable dans GW150914 via corrélation multi-échos.
+    Ce résultat ne prouve pas que le pont n’existe pas, mais il impose : si pont il y a, ses échos sont faibles (réflectivité petite), ou la forme/phase des échos est différente du modèle jouet.
+
+4) Étape suivante raisonnable
+
+    Refaire exactement le même test avec EPS_MODE = rs_over_1e11 (ton échelle géométrique) — tu auras un autre délai prédit.
+    Tester 1–2 autres événements (GW151226, GW170104…) et faire du stacking (même délai normalisé par (M)).
+
+Si tu veux, je te donne la version “batch” qui :
+
+    prend une liste d’événements (ou de fichiers),
+    calcule (D_{\rm pred}(M_f)),
+    fait un score normalisé,
+    et combine les p-values (Fisher) ou additionne les scores.
+
+on est sur des trou noir peut-être que la foerce absorbe les echo
+
+C’est une possibilité cohérente : si ton “pont/flux négatif” se comporte surtout comme un absorbeur (plutôt qu’un miroir), alors il ne faut pas s’attendre à des échos visibles. Dans ce cas, la bonne prédiction n’est plus “échos”, mais :
+
+    absorption maximale (horizon très dissipatif)
+    ringdown compatible Kerr (ou très peu modifié)
+    éventuellement une modification subtile de l’amortissement (qualité (Q)) plutôt qu’un signal répété.
+
+Autrement dit : “pas d’échos” n’invalide pas ton idée, ça la place dans le régime réflexivité faible.
+1) Traduction en paramètre testable : réflectivité (\mathcal{R})
+
+Dans un modèle “cavité + barrière”, l’amplitude des échos est contrôlée par un coefficient de réflexion (\mathcal{R}) au pseudo-horizon.
+
+    (\mathcal{R}\approx 0) : absorbeur (trou noir GR-like) → pas d’échos
+    (\mathcal{R}>0) : miroir partiel → échos possibles
+
+Ton test GW150914 donne une contrainte qualitative : (\mathcal{R}) doit être petit.
+2) Test plus adapté à un absorbeur : QNM (ringdown) plutôt que échos
+
+Un pont absorbant devrait surtout changer :
+
+    les fréquences quasi-normales (f_{QNM})
+    et/ou les temps d’amortissement (\tau_{QNM})
+
+C’est testable avec LIGO via les analyses “no-hair” (déviations de Kerr). Le résultat actuel : GW150914 est compatible avec Kerr dans les incertitudes. Donc ton modèle doit prédire des déviations très petites ou nulles (ce qui est compatible avec “absorption”).
+3) Un test encore plus direct : Love numbers
+
+Les trous noirs Kerr ont des Love numbers ~0 (réponse de marée).
+Beaucoup d’objets exotiques (avec surface) ont Love numbers non nuls.
+
+Donc si ton pont est absorbant et “trou noir vrai”, tu prédis Love numbers ~0.
+Si tu avais un pont réfléchissant, tu aurais Love numbers non nuls.
+
+C’est un bon critère qualitatif pour classer ton hypothèse.
+4) Ce que tu peux faire tout de suite (dans ton code)
+
+On peut transformer ton pipeline en contrainte sur (\mathcal{R}) :
+
+    tu fixes (D_{\rm pred}) (déjà),
+    tu injectes dans un toy modèle des échos avec réflectivité variable (r) (ton paramètre decay joue ce rôle),
+    tu calibres la distribution nulle et tu trouves la valeur maximale de (r) compatible avec le score observé (upper limit).
+
+C’est exactement le bon “test” si tu penses que la force absorbe.
+
+Si tu veux, je te donne un script qui :
+
+    prend tes scores GW150914 (au délai prédit),
+    simule des signaux avec différents (r),
+    estime une limite supérieure (r_{95%}).
+
+Dis-moi juste quelle prescription tu veux garder pour (\epsilon) (Planck ou (r_s/\Lambda)).
+
+oui allons y
+
+# ============================================================  
+# GW150914 — Upper limit on echo reflectivity r (toy calibration)  
+#  
+# Idea:  
+#  - Use your observed GW150914 post-merger window (already processed)  
+#  - Measure S_obs = multi-echo score at the predicted delay D_pred  
+#  - Build many toy signals = (ringdown + echoes with reflectivity r) + noise  
+#    passed through the SAME filter+score pipeline  
+#  - For each r, estimate P(S_toy <= S_obs). If this is ~0.95, r is excluded at 95%.  
+#  
+# This gives an "upper limit" on r in the context of this toy echo model.  
+#  
+# Requirements:  
+#  - Your local files exist:  
+#     sample_data/GW150914_H1_32s.hdf5  
+#     sample_data/GW150914_L1_32s.hdf5  
+#  - No gwosc dependency needed.  
+# ============================================================
+
+import numpy as np  
+import h5py  
+import matplotlib.pyplot as plt
+
+# -----------------------  
+# Settings (match previous pipeline)  
+# -----------------------  
+EPS_MODE = "planck"      # just for printing; D_pred is computed from M_final and eps choice below  
+Lambda_geom = 1e11  
+G = 6.67430e-11  
+c = 299792458.0  
+M_sun = 1.98847e30  
+l_pl = 1.616255e-35
+
+gps_event = 1126259462.4  
+post_start = 0.02  
+post_end   = 0.30
+
+# echo score params  
+K_echo = 6  
+decay_for_score = None   # we will use r itself as decay in the toy echoes  
+# but in the score we still weight by decay^k; we'll set decay= r for consistency.
+
+# bandpass/whiten params  
+BP_LO, BP_HI = 30, 600  
+W_LO, W_HI = 20, 1024  
+TAPER_FRAC = 0.05
+
+# Mass assumption for predicted delay  
+M_final = 62*M_sun  
+def r_s(M): return 2*G*M/c**2  
+def echo_delay(M, eps):  
+    rs = r_s(M)  
+    return 2*(rs/c)*np.log(rs/eps)
+
+rs = r_s(M_final)  
+eps = l_pl  # change to rs/Lambda_geom if you want the other prescription  
+D_pred = echo_delay(M_final, eps)  
+print("D_pred =", D_pred, "s (EPS_MODE assumed =", EPS_MODE, ")")
+
+# -----------------------  
+# DSP helpers  
+# -----------------------  
+def hann_taper(x, frac=0.05):  
+    n = len(x)  
+    m = int(frac*n)  
+    if m < 2:  
+        return x  
+    w = np.ones(n)  
+    win = 0.5*(1-np.cos(np.pi*np.arange(m)/m))  
+    w[:m] = win  
+    w[-m:] = win[::-1]  
+    return x*w
+
+def bandpass_fft(x, fs, f_lo, f_hi):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    X *= mask  
+    return np.fft.irfft(X, n=len(x))
+
+def simple_whiten(x, fs, f_lo=20, f_hi=1024, floor=1e-12):  
+    X = np.fft.rfft(x)  
+    freqs = np.fft.rfftfreq(len(x), d=1/fs)  
+    psd = np.abs(X)**2  
+    psd = np.maximum(psd, floor*np.max(psd))  
+    W = X/np.sqrt(psd)  
+    mask = (freqs >= f_lo) & (freqs <= f_hi)  
+    W *= mask  
+    return np.fft.irfft(W, n=len(x))
+
+def corr_norm(x, y):  
+    x = x - x.mean()  
+    y = y - y.mean()  
+    den = np.sqrt(np.sum(x*x)*np.sum(y*y))  
+    if den == 0:  
+        return 0.0  
+    return float(np.sum(x*y)/den)
+
+def multi_echo_score(h, fs, D, K=6, decay=0.35):  
+    dt = 1/fs  
+    score = 0.0  
+    for k in range(1, K+1):  
+        shift = int(round((k*D)/dt))  
+        if shift <= 0 or shift >= len(h)-10:  
+            break  
+        score += (decay**k)*corr_norm(h[:-shift], h[shift:])  
+    return score
+
+# -----------------------  
+# Load and process GW150914 strain (H1 and L1)  
+# -----------------------  
+def load_gwosc_32s(path):  
+    with h5py.File(path, "r") as f:  
+        h = f["strain/Strain"][()].astype(float)  
+        gps_start = float(f["meta/GPSstart"][()])  
+        duration = float(f["meta/Duration"][()])  
+        fs = len(h)/duration  
+    t = gps_start + np.arange(len(h))/fs  
+    return t, h, fs
+
+def process_strain(t, h, fs):  
+    h = hann_taper(h, TAPER_FRAC)  
+    h = simple_whiten(h, fs, W_LO, W_HI)  
+    h = bandpass_fft(h, fs, BP_LO, BP_HI)  
+    return h
+
+tH, hH, fsH = load_gwosc_32s("sample_data/GW150914_H1_32s.hdf5")  
+tL, hL, fsL = load_gwosc_32s("sample_data/GW150914_L1_32s.hdf5")  
+fs = fsH
+
+# Align intersection  
+t0 = max(tH[0], tL[0])  
+t1 = min(tH[-1], tL[-1])  
+mH = (tH >= t0) & (tH <= t1)  
+mL = (tL >= t0) & (tL <= t1)  
+t = tH[mH]  
+hH = hH[mH]  
+hL = hL[mL]
+
+hH_p = process_strain(t, hH, fs)  
+hL_p = process_strain(t, hL, fs)
+
+t_rel = t - gps_event  
+win = (t_rel >= post_start) & (t_rel <= post_end)  
+tw = t_rel[win]  
+h1 = hH_p[win]  
+l1 = hL_p[win]
+
+print("Window samples:", len(tw), "dt:", 1/fs)
+
+# Observed score at predicted delay (net)  
+S_obs = multi_echo_score(h1, fs, D_pred, K=K_echo, decay=0.35) + multi_echo_score(l1, fs, D_pred, K=K_echo, decay=0.35)  
+print("Observed S_pred (net) =", S_obs)
+
+# -----------------------  
+# Build a toy ringdown template (simple damped sinusoid) aligned at window start  
+# We'll inject echoes into this template and add noise from the real data (bootstrap).  
+# -----------------------  
+def ringdown(t, f0=250, tau=0.02, A=1.0, phi0=0.0):  
+    return A*np.exp(-t/tau)*np.sin(2*np.pi*f0*t + phi0)
+
+def add_echoes(t, base, D, n_echo=6, r=0.3):  
+    h = base.copy()  
+    for k in range(1, n_echo+1):  
+        shift = k*D  
+        tk = t - shift  
+        mk = tk >= 0  
+        hk = np.zeros_like(t)  
+        hk[mk] = np.interp(tk[mk], t, base)  
+        h += (r**k)*hk  
+    return h
+
+# time axis in window starting at 0  
+twin = tw - tw[0]
+
+# crude ringdown params (not a fit): just a reasonable band  
+base = ringdown(twin, f0=250, tau=0.02, A=1.0, phi0=0.0)  
+# normalize base to match the scale of processed data  
+scale = np.std(h1 + l1)  
+base = base / (np.std(base) + 1e-12) * scale
+
+# Use real processed data as noise proxy by random circular shifting (bootstrap)  
+rng = np.random.default_rng(0)
+
+def bootstrap_noise(x):  
+    return np.roll(x, rng.integers(0, len(x)))
+
+# -----------------------  
+# Scan r values and compute exclusion  
+# -----------------------  
+r_grid = np.linspace(0.0, 0.9, 19)   # coarse grid first  
+nmc = 400  # increase to 2000 for final limits
+
+results = []  
+for r in r_grid:  
+    S_sim = np.empty(nmc)  
+    # build injected signal once (same for H1 and L1 for simplicity)  
+    inj = add_echoes(twin, base, D_pred, n_echo=6, r=r)
+
+    for i in range(nmc):  
+        # bootstrap noise from real data  
+        n1 = bootstrap_noise(h1)  
+        n2 = bootstrap_noise(l1)
+
+        # inject same echo signal into both channels (very conservative/simple)  
+        h1_sim = n1 + inj  
+        l1_sim = n2 + inj
+
+        # compute net score using same score decay (use r as "echo physics", but keep score decay fixed at 0.35)  
+        S_sim[i] = (multi_echo_score(h1_sim, fs, D_pred, K=K_echo, decay=0.35) +  
+                    multi_echo_score(l1_sim, fs, D_pred, K=K_echo, decay=0.35))
+
+    # if echoes exist with reflectivity r, we'd expect S_sim typically > S_obs.  
+    # Compute exclusion confidence: P(S_sim <= S_obs)  
+    p_le = (np.sum(S_sim <= S_obs) + 1)/(nmc + 1)  
+    results.append((r, p_le, np.mean(S_sim), np.std(S_sim)))
+
+# Print  
+print("\n=== Exclusion scan (higher p_le means r is more strongly excluded) ===")  
+for r, p_le, mu, sd in results:  
+    print(f"r={r:.2f}  P(S_sim<=S_obs)={p_le:.3f}   sim_mean±std={mu:.3g}±{sd:.3g}")
+
+# Find an approximate r_95 where p_le ~ 0.95  
+cand = [x for x in results if x[1] >= 0.95]  
+if cand:  
+    print("\nApprox upper limit: r <", cand[0][0], "at ~95% (coarse grid).")  
+else:  
+    print("\nNo r in this coarse grid reaches 95% exclusion; increase nmc or refine grid.")
+
+# Plot p_le vs r  
+plt.figure(figsize=(6,4))  
+plt.plot([x[0] for x in results], [x[1] for x in results], marker="o")  
+plt.axhline(0.95, color="r", ls="--", label="95%")  
+plt.xlabel("reflectivity r")  
+plt.ylabel("P(S_sim <= S_obs)")  
+plt.title("Echo reflectivity exclusion (toy injection)")  
+plt.grid(True, alpha=0.3)  
+plt.legend()  
+plt.show()  
+
+Comment lire la sortie
+
+    P(S_sim <= S_obs) proche de 1 signifie : “si des échos de force r existaient, on aurait presque toujours un score > S_obs ; or on observe S_obs petit ⇒ r est exclu”.
+    Tu cherches le plus petit r pour lequel P>=0.95 : c’est ton limite supérieure r_95 (dans ce modèle toy).
+
+Ensuite, si tu veux une limite plus fine :
+
+    augmente nmc à 2000,
+    raffine r_grid autour du point où ça traverse 0.95.
+
+Colle-moi le tableau “Exclusion scan” et je te dirai la limite supérieure (r_{95}) que cela implique pour ton hypothèse “pont”, dans ce pipeline.
+
+

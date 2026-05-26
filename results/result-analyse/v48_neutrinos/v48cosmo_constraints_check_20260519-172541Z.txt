@@ -1,0 +1,6 @@
+V48 cosmology constraints check
+timestamp: 20260519-172541Z
+verdict: supported
+delta_neff: 0.04
+sum_mnu: 0.058
+cosmology_ok: True

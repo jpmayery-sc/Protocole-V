@@ -1,0 +1,26 @@
+V85B cosmology repair summary
+timestamp: 20260522-092525Z
+verdict: cosmo_restoration_confirmed
+accepted_count: 1/1
+epsilon_best: -0.0069
+delta_em: -0.0069
+pi_lab: 1e-16
+pi_ns: 1.0
+G_eff_lab: 1.0
+F_temps_lab: 1.0
+G_eff_ns: 1.27999999999981
+F_temps_ns: 0.7692307692306272
+M_max: 2.0327692308
+R_1_4: 11.0667692308
+z_ns: 0.3
+best_fit_chi_total: 0.0
+best_fit_chi_sn: 0.0
+best_fit_chi_bao: 0.0
+best_fit_chi_cmb: 0.0
+best_fit_chi_growth: 0.0
+best_fit_DA_rec: 10.38260259907672
+best_fit_first_peak_shift: 0.0
+
+Notes:
+- V85B enforces pi_n^{cosmo} = 0 and keeps the diffuse cosmos exactly standard.
+- The compact-sector calibration is preserved from V83.

@@ -1,0 +1,35 @@
+{
+  "suite": "v22simulation_suite",
+  "timestamp": "20260519-174309Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "v22_wigner",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22wigner_check_20260519-174307Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22wigner_check_20260519-174307Z.txt"
+    },
+    {
+      "label": "v22_geometry_simulation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22geometrysimulation_check_20260519-174308Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22geometrysimulation_check_20260519-174308Z.txt"
+    },
+    {
+      "label": "v22_stability_simulation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22stabilitysimulation_check_20260519-174308Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22stabilitysimulation_check_20260519-174308Z.txt"
+    },
+    {
+      "label": "v22_verdict_simulation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22verdict_simulation_check_20260519-174308Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22verdict_simulation_check_20260519-174308Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22simulation_suite_summary_20260519-174309Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22simulation_suite_summary_20260519-174309Z.txt"
+}

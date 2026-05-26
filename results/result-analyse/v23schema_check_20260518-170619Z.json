@@ -1,0 +1,21 @@
+{
+  "section": "V23-SCHEMA",
+  "schema_ok": true,
+  "schema_description": "Minimal schema linking the internal space, the internal metric, the torsion connection, the parameter hierarchy and the observables of the pipeline.",
+  "core_objects": [
+    "M_int",
+    "g_int",
+    "Gamma",
+    "alpha0",
+    "torsion_eff",
+    "z_obs",
+    "delta_nu_over_nu",
+    "grav_torsion_eff"
+  ],
+  "schema_consistency": true,
+  "coherence_state": "coherent",
+  "verdict": "supported",
+  "timestamp": "20260518-170619Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23schema_check_20260518-170619Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23schema_check_20260518-170619Z.txt"
+}

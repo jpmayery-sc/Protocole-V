@@ -1,0 +1,5 @@
+V22 hierarchy theory check
+timestamp: 20260518-145645Z
+verdict: supported
+hierarchystabilitystate: stable
+hierarchymodelok: True

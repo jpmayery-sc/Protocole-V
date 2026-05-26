@@ -1,0 +1,5 @@
+V17 reference check
+timestamp: 20260518-170431Z
+verdict: supported
+source: minimal theoretical bounds
+targets: z_obs, delta_nu_over_nu, delta_E, fine_correction_eff, grav_torsion_eff

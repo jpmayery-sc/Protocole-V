@@ -1,0 +1,35 @@
+{
+  "suite": "v22theory_suite",
+  "timestamp": "20260520-084217Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "v22_geometry",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22geometry_check_20260520-084216Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22geometry_check_20260520-084216Z.txt"
+    },
+    {
+      "label": "v22_torsion_theory",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22torsion_theory_check_20260520-084216Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22torsion_theory_check_20260520-084216Z.txt"
+    },
+    {
+      "label": "v22_hierarchy_theory",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22hierarchy_theory_check_20260520-084216Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22hierarchy_theory_check_20260520-084216Z.txt"
+    },
+    {
+      "label": "v22_verdict_theory",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22verdict_theory_check_20260520-084217Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22verdict_theory_check_20260520-084217Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22theory_suite_summary_20260520-084217Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22theory_suite_summary_20260520-084217Z.txt"
+}

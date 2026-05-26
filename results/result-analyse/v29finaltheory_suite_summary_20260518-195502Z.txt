@@ -1,0 +1,11 @@
+V29 final theory suite summary
+timestamp: 20260518-195502Z
+overall_verdict: supported
+supported_count: 5/5
+
+Items:
+- v29_theory_final: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29theoryfinal_check_20260518-195501Z.json
+- v29_article_latex_full: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29articlelatexfull_check_20260518-195501Z.json
+- v29_hpc_simulation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29hpcsimulation_check_20260518-195502Z.json
+- v29_observational_tests: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29observationaltests_check_20260518-195502Z.json
+- v29_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29verdict_check_20260518-195502Z.json

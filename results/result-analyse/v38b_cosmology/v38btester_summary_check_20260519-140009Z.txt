@@ -1,0 +1,5 @@
+V38b tester summary check
+timestamp: 20260519-140009Z
+verdict: supported
+v38b_global_verdict: supported
+cosmology_consistency: True

@@ -1,0 +1,7 @@
+V20 geo check
+timestamp: 20260518-142300Z
+verdict: fragile
+geostructureok: False
+curvature_indicator: 0.0
+metric_consistency: False
+alpha0_geometriclink: 999999.9960041972

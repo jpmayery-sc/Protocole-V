@@ -1,0 +1,6 @@
+V30 validation check
+timestamp: 20260519-095817Z
+verdict: supported
+confirmed_count: 3
+open_count: 2
+weak_count: 0

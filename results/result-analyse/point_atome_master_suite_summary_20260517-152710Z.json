@@ -1,0 +1,46 @@
+{
+  "suite": "point_atome_master",
+  "timestamp": "20260517-152710Z",
+  "overall_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "point_atome_protocol",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260517-152708Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260517-152708Z.txt",
+      "summary": null
+    },
+    {
+      "label": "atom_basics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260517-152709Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260517-152709Z.txt",
+      "summary": null
+    },
+    {
+      "label": "d1d4",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260517-152709Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260517-152709Z.txt",
+      "summary": null
+    },
+    {
+      "label": "electron5_core",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260517-152710Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260517-152710Z.txt",
+      "summary": null
+    },
+    {
+      "label": "electron5_extended",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260517-152710Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260517-152710Z.txt",
+      "summary": null
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260517-152710Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260517-152710Z.txt"
+}

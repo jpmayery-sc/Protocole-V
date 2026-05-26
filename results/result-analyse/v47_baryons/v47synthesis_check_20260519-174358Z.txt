@@ -1,0 +1,9 @@
+V47 synthesis check
+timestamp: 20260519-174358Z
+verdict: supported
+baryon_mass_summary: {'section': 'V47-QCD-MASSES', 'source_v46_available': True, 'source_v46_supported': True, 'source_v46_timestamp': '20260519-164951Z', 'source_v46_supported_count': 5, 'source_v46_total': 5, 'mass_shifts': {'p': 0.0011, 'n': 0.0012, 'L': 0.003, 'S': 0.004, 'X': 0.007}, 'baryon_mass_ok': True, 'verdict': 'supported'}
+splitting_summary: {'section': 'V47-QCD-SPLITTINGS', 'source_v46_available': True, 'source_v46_supported': True, 'source_v46_timestamp': '20260519-164951Z', 'source_v46_supported_count': 5, 'source_v46_total': 5, 'splitting_shifts': {'n_minus_p': 0.0009, 'L_minus_p': 0.002, 'S_minus_N': 0.004, 'X_minus_N': 0.005}, 'splitting_ok': True, 'verdict': 'supported'}
+beta_decay_summary: {'section': 'V47-BETA-DECAYS', 'source_v46_available': True, 'source_v46_supported': True, 'source_v46_timestamp': '20260519-164951Z', 'source_v46_supported_count': 5, 'source_v46_total': 5, 'beta_decay_shift': 0.0007, 'beta_decay_ok': True, 'verdict': 'supported'}
+nuclear_summary: {'section': 'V47-NUCLEAR-BINDING', 'source_v46_available': True, 'source_v46_supported': True, 'source_v46_timestamp': '20260519-164951Z', 'source_v46_supported_count': 5, 'source_v46_total': 5, 'binding_shifts': {'deuterium': 0.003, 'He4': 0.002}, 'BBN_ok': True, 'nuclear_ok': True, 'verdict': 'supported'}
+stability_summary: {'section': 'V47-STABILITY', 'source_v46_available': True, 'source_v46_supported': True, 'source_v46_timestamp': '20260519-164951Z', 'source_v46_supported_count': 5, 'source_v46_total': 5, 'baryon_number_ok': True, 'no_exotic_channels': True, 'RG_consistency': True, 'geometry_consistency': True, 'stability_ok': True, 'verdict': 'supported'}
+v47_global_verdict: supported

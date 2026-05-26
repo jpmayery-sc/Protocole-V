@@ -1,0 +1,8 @@
+V43 colliders check
+timestamp: 20260519-162614Z
+verdict: supported
+external_references: [{'section': 'V43-COLLIDERS', 'observable': 'Delta a_mu', 'source': 'arXiv:2308.06230 / Fermilab Muon g-2', 'value': 'a_mu(Exp) = 116592059(22) x 10^-11'}]
+collider_signatures: [{'observable': 'Delta a_mu', 'prediction': 2.1e-09, 'uncertainty': 3e-10, 'test': ['Fermilab Muon g-2', 'J-PARC']}, {'observable': 'dilepton angular distortion', 'prediction_percent': [1.0, 3.0], 'test': ['HL-LHC']}]
+predicted_deviations: {'Delta a_mu': 2.1e-09, 'angular_distribution_percent': [1.0, 3.0]}
+collider_summary: Muon g-2 and dilepton angular distributions provide direct collider falsification handles.
+collider_verdict: supported

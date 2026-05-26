@@ -1,0 +1,31 @@
+V91 LCDM comparison summary
+timestamp: 20260526-104658Z
+verdict: v91_lcdm_confrontation_confirmed
+sample_count: 7
+z_min: 0.0
+z_max: 3.0
+max_abs_redshift_residual: 5.551115123125783e-17
+min_distance_ratio: 0.0
+max_distance_ratio: 0.5493921936380322
+min_v_ratio: 0.0
+max_v_ratio: 0.5310456797692346
+monotonic_tau: True
+info_drop_at_center: True
+distance_suppression: True
+lcdm_contrast: 11.390046255292969
+
+Parameters:
+- tau0: 1.0
+- z_center: 0.46
+- width: 0.16
+- geometry_amplitude: 0.18
+- distance_amplitude: 2.5
+- h0: 67.4
+- omega_m: 0.315
+- omega_r: 9e-05
+- omega_l: 0.685
+
+Notes:
+- LCDM is used as the baseline distance reference, not as a deformation target.
+- The redshift constraint is enforced explicitly through f_photon(z) = (1 + z) / g(z).
+- The comparison is carried by distance_ratio and v_ratio relative to the LCDM baseline.

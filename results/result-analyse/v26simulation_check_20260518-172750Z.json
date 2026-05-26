@@ -1,0 +1,13 @@
+{
+  "section": "V26-SIMULATION",
+  "simulationgeometryok": true,
+  "Kfieldevolution": true,
+  "quantumsimulationok": true,
+  "Eitimeseries": true,
+  "torsionsimulationok": true,
+  "spin_dynamics": true,
+  "verdict": "supported",
+  "timestamp": "20260518-172750Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26simulation_check_20260518-172750Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26simulation_check_20260518-172750Z.txt"
+}

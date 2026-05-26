@@ -1,0 +1,11 @@
+{
+  "section": "V29-HPC-SIMULATION",
+  "hpcquantumoutput": true,
+  "hpcgeometricoutput": true,
+  "hpccosmologyoutput": true,
+  "hpcmultiscalemap": true,
+  "verdict": "supported",
+  "timestamp": "20260518-195502Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29hpcsimulation_check_20260518-195502Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29hpcsimulation_check_20260518-195502Z.txt"
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "20260506-173303Z",
+  "model_formula": "D1 fixe le régime, l’électron transmet, le proton reçoit et transforme, le neutron régule, le photon signale le dépassement du seuil.",
+  "cases": [
+    {
+      "name": "Hydrogène-1",
+      "structure": {
+        "protons": 1,
+        "neutrons": 0,
+        "electrons": 1,
+        "neutron_to_proton": 0.0
+      },
+      "expected_role": "transmission simple",
+      "expected_signature": "pas de réserve neutronique à mobiliser",
+      "verdict": "colle",
+      "reason": "cas minimal sans réserve neutronique"
+    },
+    {
+      "name": "Fer-56",
+      "structure": {
+        "protons": 26,
+        "neutrons": 30,
+        "electrons": 26,
+        "neutron_to_proton": 1.154
+      },
+      "expected_role": "point de balance",
+      "expected_signature": "forte stabilité avec compromis proton/neutron",
+      "verdict": "colle",
+      "reason": "rapport neutron/proton compatible avec un point de balance"
+    },
+    {
+      "name": "Plomb-208",
+      "structure": {
+        "protons": 82,
+        "neutrons": 126,
+        "electrons": 82,
+        "neutron_to_proton": 1.537
+      },
+      "expected_role": "stabilité lourde sous contrainte",
+      "expected_signature": "réserve neutronique importante et proche d’une saturation",
+      "verdict": "colle",
+      "reason": "cas lourd compatible avec une stabilité sous contrainte"
+    }
+  ],
+  "global_verdict": "colle",
+  "falsification_rule": "Le modèle falsifie si H, Fe et Pb ne montrent pas respectivement transmission simple, point de balance et stabilité lourde sous contrainte."
+}

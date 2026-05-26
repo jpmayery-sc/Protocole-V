@@ -1,0 +1,34 @@
+Vue a deux noyaux sur le bloc de transition 4d
+Timestamp: 20260508-223935Z
+
+Hypothese: the 4d block is best read as two local regimes plus anomalies, not one repaired core
+Cas de controle: full 4d block Y -> Cd versus early core Y -> Mo and late core Tc -> Cd
+Observable: whether splitting the block into two cores improves the regularity signal
+Verdict: supported
+
+Bloc complet:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Noyau precoce Y -> Mo:
+- radius_trend: decreasing
+- ionization_trend: increasing
+- zeff_trend: increasing
+- mass_trend: increasing
+
+Noyau tardif Tc -> Cd:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Falsificateurs:
+- the full 4d block is already regular
+- the split into two cores does not change the regularity picture
+- neither core is more regular than the full block
+
+Reference: 4d block anomalies around Pd and Ag
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_4d_dual_core_view_check_20260508-223935Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_4d_dual_core_view_check_20260508-223935Z.txt

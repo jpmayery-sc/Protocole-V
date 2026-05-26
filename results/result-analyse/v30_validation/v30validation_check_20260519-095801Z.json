@@ -1,0 +1,67 @@
+{
+  "section": "V30-VALIDATION",
+  "validation_table": [
+    {
+      "name": "Mesons B",
+      "observable": [
+        "RK",
+        "RK*",
+        "B->mumu"
+      ],
+      "sigma_current": 2.7,
+      "status": "open",
+      "comment": "persistent lepton-universality tension",
+      "validation": "open"
+    },
+    {
+      "name": "Muon g-2",
+      "observable": [
+        "a_mu"
+      ],
+      "sigma_current": 3.0,
+      "status": "tension",
+      "comment": "depends on hadronic inputs",
+      "validation": "open"
+    },
+    {
+      "name": "Neutrinos",
+      "observable": [
+        "oscillations",
+        "Delta m^2"
+      ],
+      "sigma_current": Infinity,
+      "status": "confirmed",
+      "comment": "non-zero neutrino masses required",
+      "validation": "confirmed"
+    },
+    {
+      "name": "Dark matter",
+      "observable": [
+        "rotation curves",
+        "lensing",
+        "CMB"
+      ],
+      "sigma_current": Infinity,
+      "status": "confirmed",
+      "comment": "requires invisible mass component",
+      "validation": "confirmed"
+    },
+    {
+      "name": "Accelerated expansion",
+      "observable": [
+        "SN Ia luminosity-distance"
+      ],
+      "sigma_current": Infinity,
+      "status": "confirmed",
+      "comment": "requires Lambda or dark energy",
+      "validation": "confirmed"
+    }
+  ],
+  "confirmed_count": 3,
+  "open_count": 2,
+  "weak_count": 0,
+  "verdict": "supported",
+  "timestamp": "20260519-095801Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v30_validation\\v30validation_check_20260519-095801Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v30_validation\\v30validation_check_20260519-095801Z.txt"
+}

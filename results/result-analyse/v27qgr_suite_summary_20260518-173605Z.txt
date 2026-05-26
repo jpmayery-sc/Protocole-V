@@ -1,0 +1,12 @@
+V27 QGR suite summary
+timestamp: 20260518-173605Z
+overall_verdict: supported
+supported_count: 6/6
+
+Items:
+- v27_qgr: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v27qgr_check_20260518-173604Z.json
+- v27_renormalisation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v27renormalisation_check_20260518-173605Z.json
+- v27_multiscale: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v27multiscale_check_20260518-173605Z.json
+- v27_observables_advanced: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v27observablesadvanced_check_20260518-173605Z.json
+- v27_publication_advanced: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v27publicationadvanced_check_20260518-173605Z.json
+- v27_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v27verdict_check_20260518-173605Z.json

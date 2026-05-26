@@ -1,0 +1,74 @@
+{
+  "suite": "s_law_master",
+  "timestamp": "20260511-144044Z",
+  "overall_verdict": "partiel",
+  "supported_count": 6,
+  "total": 9,
+  "items": [
+    {
+      "label": "screening_law_saturation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260511-144043Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260511-144043Z.txt",
+      "summary": null
+    },
+    {
+      "label": "radius_predictivity",
+      "verdict": "partiel",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260511-144043Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260511-144043Z.txt",
+      "summary": null
+    },
+    {
+      "label": "fine_variation_equivalence",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_equivalence_check_20260511-144043Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_equivalence_check_20260511-144043Z.txt",
+      "summary": null
+    },
+    {
+      "label": "family_l_slope",
+      "verdict": "falsifie",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260511-144043Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260511-144043Z.txt",
+      "summary": null
+    },
+    {
+      "label": "regime_physics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260511-144044Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260511-144044Z.txt",
+      "summary": null
+    },
+    {
+      "label": "alpha_phase_observable",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\result-analyse\\alpha_phase_observable_check_20260511-144044Z.json",
+      "txt_path": null,
+      "summary": null
+    },
+    {
+      "label": "alpha_constant",
+      "verdict": "falsifie",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\result-analyse\\alpha_constant_check_20260511-144044Z.json",
+      "txt_path": null,
+      "summary": null
+    },
+    {
+      "label": "lanthanide_internal_residual",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_internal_residual_check_20260511-144044Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_internal_residual_check_20260511-144044Z.txt",
+      "summary": null
+    },
+    {
+      "label": "heavy_border",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260511-144044Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260511-144044Z.txt",
+      "summary": null
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\s_law_master_suite_summary_20260511-144044Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\s_law_master_suite_summary_20260511-144044Z.txt"
+}

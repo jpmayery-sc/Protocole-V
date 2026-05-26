@@ -1,0 +1,10 @@
+V40 effective suite summary
+timestamp: 20260519-154103Z
+v40_global_verdict: supported
+supported_count: 4/4
+
+Items:
+- v40_lagrangian: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v40_effective_model\v40lagrangian_check_20260519-154102Z.json
+- v40_projection: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v40_effective_model\v40projection_check_20260519-154103Z.json
+- v40_stability: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v40_effective_model\v40stability_check_20260519-154103Z.json
+- v40_synthesis: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v40_effective_model\v40synthesis_check_20260519-154103Z.json

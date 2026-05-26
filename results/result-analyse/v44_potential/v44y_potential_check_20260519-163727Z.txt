@@ -1,0 +1,8 @@
+V44 Y potential check
+timestamp: 20260519-163727Z
+verdict: supported
+gamma: 0.45
+Y_inf: 0.7
+Y0: 0.9
+Y_mass: 0.45
+Y_stability_ok: True

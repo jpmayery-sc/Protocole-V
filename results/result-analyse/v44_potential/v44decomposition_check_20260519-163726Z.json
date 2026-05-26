@@ -1,0 +1,24 @@
+{
+  "section": "V44-DECOMPOSITION",
+  "source_v43_available": true,
+  "source_v43_supported": true,
+  "source_v43_timestamp": "20260519-162615Z",
+  "source_v43_supported_count": 5,
+  "source_v43_total": 5,
+  "potential_terms": [
+    "V_KT = lambda_K K^2 + lambda_T T^2 + lambda_KT K T",
+    "V_Y = (gamma/2) (Y - Y_inf)^2"
+  ],
+  "kinetic_terms": [
+    "L_GR kinetic sector",
+    "L_K effective kinetic sector"
+  ],
+  "mixing_terms": [
+    "L_mix = xi K + eta Y"
+  ],
+  "decomposition_ok": true,
+  "verdict": "supported",
+  "timestamp": "20260519-163726Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44decomposition_check_20260519-163726Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44decomposition_check_20260519-163726Z.txt"
+}

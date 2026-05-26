@@ -1,0 +1,30 @@
+Recherche sur la famille du bore B -> Tl
+Timestamp: 20260511-130059Z
+
+Observables:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 12.479583326377531
+- ionization_rmse: 0.677220609845861
+- zeff_rmse: 0.07791454556408306
+- mass_rmse: 18.34956006174583
+- radius_step_cv: 1.1081062900314473
+- ionization_step_cv: 1.8931468502923237
+- zeff_step_cv: 0.19694428064362446
+- mass_step_cv: 0.544372120118808
+
+Family summary:
+- B: period=2, mass_u=10.81, radius_pm=87.0, ionization_ev=8.298, zeff_proxy=1.562238
+- Al: period=3, mass_u=26.9815385, radius_pm=143.0, ionization_ev=5.9858, zeff_proxy=1.990274
+- Ga: period=4, mass_u=69.723, radius_pm=135.0, ionization_ev=5.9993, zeff_proxy=2.65669
+- In: period=5, mass_u=114.818, radius_pm=156.0, ionization_ev=5.7864, zeff_proxy=3.261405
+- Tl: period=6, mass_u=204.38, radius_pm=170.0, ionization_ev=6.1082, zeff_proxy=4.02104
+
+Hypothese: for the boron family, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- Z_eff proxy is not smoother than mass across the family
+- mass alone explains the family trend as well as or better than Z_eff proxy

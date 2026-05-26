@@ -1,0 +1,423 @@
+{
+  "v20_geo": {
+    "theta_reference": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001002,
+      "p": 5.01,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 0.999,
+      "s_atom": 0.999,
+      "s_canal": 1.0
+    },
+    "center": {
+      "theta_reference": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "prediction": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.60018e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669266666666663e-06
+        },
+        "external": {
+          "z_obs": 0.00012559018,
+          "delta_nu_over_nu": 2.9598180000000003e-05,
+          "delta_E": 2.4003600180000002e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999000000000001
+        },
+        "verdict": "supported"
+      },
+      "internal": {
+        "z_geo": 1.0999e-06,
+        "z_int": 4.7998e-06,
+        "z_canal": 2.60006e-06,
+        "z_mod": 5.60018e-06,
+        "fine_delta": 0.00023998000000000002,
+        "alpha_residual": 0.0,
+        "theta_v15": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "theta_supported": true,
+        "internal_balance": 2.7669266666666663e-06
+      },
+      "external": {
+        "z_obs": 0.00012559018,
+        "delta_nu_over_nu": 2.9598180000000003e-05,
+        "delta_E": 2.4003600180000002e-05,
+        "fine_correction_eff": 1.9999166666666666,
+        "grav_torsion_eff": -0.00011999000000000001
+      },
+      "internal_balance": 2.7669266666666663e-06,
+      "alpha_residual": 0.0,
+      "grav_torsion_eff": -0.00011999000000000001
+    },
+    "geo_gradient": 9.999999999979575e-08,
+    "atom_gradient": 1.999999999995915e-07,
+    "mod_geo_gradient": 5.999999999996216e-08,
+    "mod_atom_gradient": 5.999999999996216e-08,
+    "canal_gradient": 0.0,
+    "alpha0_geometriclink": 999999.9960041972,
+    "curvature_indicator": 0.0,
+    "metric_consistency": true,
+    "geostructureok": true,
+    "verdict": "supported"
+  },
+  "v20_torsion": {
+    "theta_reference": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001002,
+      "p": 5.01,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 0.999,
+      "s_atom": 0.999,
+      "s_canal": 1.0
+    },
+    "center": {
+      "theta_reference": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "prediction": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.60018e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669266666666663e-06
+        },
+        "external": {
+          "z_obs": 0.00012559018,
+          "delta_nu_over_nu": 2.9598180000000003e-05,
+          "delta_E": 2.4003600180000002e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999000000000001
+        },
+        "verdict": "supported"
+      },
+      "internal": {
+        "z_geo": 1.0999e-06,
+        "z_int": 4.7998e-06,
+        "z_canal": 2.60006e-06,
+        "z_mod": 5.60018e-06,
+        "fine_delta": 0.00023998000000000002,
+        "alpha_residual": 0.0,
+        "theta_v15": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "theta_supported": true,
+        "internal_balance": 2.7669266666666663e-06
+      },
+      "external": {
+        "z_obs": 0.00012559018,
+        "delta_nu_over_nu": 2.9598180000000003e-05,
+        "delta_E": 2.4003600180000002e-05,
+        "fine_correction_eff": 1.9999166666666666,
+        "grav_torsion_eff": -0.00011999000000000001
+      },
+      "internal_balance": 2.7669266666666663e-06,
+      "alpha_residual": 0.0,
+      "grav_torsion_eff": -0.00011999000000000001
+    },
+    "torsion_strength": 0.00011999000000000001,
+    "torsion_p_derivative": 5.999999999996893e-06,
+    "torsion_kappa_coupling": 0.02500000000001416,
+    "torsion_stability": true,
+    "affine_signature": {
+      "p": "positive",
+      "A_kappa": "negative",
+      "canal": "positive"
+    },
+    "canal_coupling": 2.9999999999981078e-05,
+    "verdict": "supported"
+  },
+  "v20_hierarchy": {
+    "theta_reference": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001002,
+      "p": 5.01,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 0.999,
+      "s_atom": 0.999,
+      "s_canal": 1.0
+    },
+    "sensitivity": {
+      "theta_reference": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "rows": [
+        {
+          "parameter": "alpha0",
+          "step": 5e-11,
+          "observable": "alpha0_shift",
+          "low_value": -4.999999980020986e-11,
+          "high_value": 4.999999980020986e-11,
+          "derivative": 0.9999999960041972,
+          "abs_derivative": 0.9999999960041972,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_geo",
+          "step": 0.0005,
+          "observable": "z_geo",
+          "low_value": 1.0998500000000002e-06,
+          "high_value": 1.09995e-06,
+          "derivative": 9.999999999979575e-08,
+          "abs_derivative": 9.999999999979575e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_atom",
+          "step": 0.0005,
+          "observable": "z_int",
+          "low_value": 4.7997e-06,
+          "high_value": 4.7998999999999996e-06,
+          "derivative": 1.999999999995915e-07,
+          "abs_derivative": 1.999999999995915e-07,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "A_kappa",
+          "step": 1e-06,
+          "observable": "fine_delta",
+          "low_value": 0.00023993000000000002,
+          "high_value": 0.00024003000000000002,
+          "derivative": 0.05000000000000122,
+          "abs_derivative": 0.05000000000000122,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "p",
+          "step": 0.005,
+          "observable": "z_mod",
+          "low_value": 5.60003e-06,
+          "high_value": 5.60033e-06,
+          "derivative": 2.999999999998108e-08,
+          "abs_derivative": 2.999999999998108e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        }
+      ],
+      "ranking": [
+        {
+          "parameter": "alpha0",
+          "step": 5e-11,
+          "observable": "alpha0_shift",
+          "low_value": -4.999999980020986e-11,
+          "high_value": 4.999999980020986e-11,
+          "derivative": 0.9999999960041972,
+          "abs_derivative": 0.9999999960041972,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "A_kappa",
+          "step": 1e-06,
+          "observable": "fine_delta",
+          "low_value": 0.00023993000000000002,
+          "high_value": 0.00024003000000000002,
+          "derivative": 0.05000000000000122,
+          "abs_derivative": 0.05000000000000122,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_atom",
+          "step": 0.0005,
+          "observable": "z_int",
+          "low_value": 4.7997e-06,
+          "high_value": 4.7998999999999996e-06,
+          "derivative": 1.999999999995915e-07,
+          "abs_derivative": 1.999999999995915e-07,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_geo",
+          "step": 0.0005,
+          "observable": "z_geo",
+          "low_value": 1.0998500000000002e-06,
+          "high_value": 1.09995e-06,
+          "derivative": 9.999999999979575e-08,
+          "abs_derivative": 9.999999999979575e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "p",
+          "step": 0.005,
+          "observable": "z_mod",
+          "low_value": 5.60003e-06,
+          "high_value": 5.60033e-06,
+          "derivative": 2.999999999998108e-08,
+          "abs_derivative": 2.999999999998108e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        }
+      ],
+      "top2_stable": true,
+      "dominant_gap": 4999999.980031198,
+      "median_abs_derivative": 1.999999999995915e-07,
+      "verdict": "supported"
+    },
+    "hierarchy_ranking": [
+      {
+        "parameter": "alpha0",
+        "weight": 0.9999999960041972,
+        "role": "anchor"
+      },
+      {
+        "parameter": "A_kappa",
+        "weight": 0.05000000000000122,
+        "role": "coupling"
+      },
+      {
+        "parameter": "s_atom",
+        "weight": 1.999999999995915e-07,
+        "role": "metric"
+      },
+      {
+        "parameter": "s_geo",
+        "weight": 9.999999999979575e-08,
+        "role": "metric"
+      },
+      {
+        "parameter": "p",
+        "weight": 2.999999999998108e-08,
+        "role": "torsion"
+      }
+    ],
+    "dominant_parameter": "alpha0",
+    "metric_parameters": [
+      "s_atom",
+      "s_geo"
+    ],
+    "torsion_parameter": "p",
+    "coupling_parameter": "A_kappa",
+    "stable_hierarchy": true,
+    "verdict": "supported"
+  },
+  "verdict_global": "supported",
+  "structure_detectee": "coherente",
+  "niveau_de_confiance": "haute",
+  "zone_de_recherche_prioritaire": "v21-theory",
+  "verdict": "supported",
+  "timestamp": "20260518-170542Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20verdict_check_20260518-170542Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20verdict_check_20260518-170542Z.txt"
+}

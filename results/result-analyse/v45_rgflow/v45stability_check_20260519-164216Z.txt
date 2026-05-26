@@ -1,0 +1,6 @@
+V45 stability check
+timestamp: 20260519-164216Z
+verdict: supported
+stability_matrix: [[0.14, 0.0, 0.0], [0.0, 0.11, 0.0], [0.0, 0.0, 0.45]]
+eigenvalues_RG: [0.14, 0.11, 0.45]
+RG_stability_ok: True

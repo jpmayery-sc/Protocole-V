@@ -1,0 +1,14 @@
+V10 rydberg check
+timestamp: 20260517-185734Z
+verdict: conforme
+increasing_ok: True
+band_ok: True
+coherence_ok: True
+
+Samples:
+- n=2: rn_ref=2.116708 delta_rn=3.893767e-03 rel=1.839539e-03
+- n=4: rn_ref=8.466832 delta_rn=2.280290e-02 rel=2.693203e-03
+- n=8: rn_ref=33.867328 delta_rn=1.246005e-01 rel=3.679078e-03
+- n=16: rn_ref=135.469312 delta_rn=6.437788e-01 rel=4.752211e-03
+- n=32: rn_ref=541.877248 delta_rn=3.187079e+00 rel=5.881552e-03
+- n=64: rn_ref=2167.508992 delta_rn=1.528281e+01 rel=7.050865e-03

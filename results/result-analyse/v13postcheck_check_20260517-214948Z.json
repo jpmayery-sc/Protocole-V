@@ -1,0 +1,51 @@
+{
+  "timestamp": "20260517-214948Z",
+  "hypothesis": "la calibration MAP de V13 doit reparer V12-ALPHA tout en gardant les autres bornes V12",
+  "case_control": "theta MAP",
+  "observable": "alpha residual, redshifts internes, correction fine",
+  "expected": "alpha reparé, redshifts dans les bornes, correction fine dans la fenetre V12",
+  "measured": {
+    "alpha_repaired_ok": true,
+    "redshift_ok": true,
+    "fine_ok": true,
+    "theta_supported": true,
+    "posterior_ok": true,
+    "samples_kept": 400
+  },
+  "diagnostics": {
+    "acceptance_rate": 0.6598,
+    "final_log_posterior": -4.054680658568902,
+    "best_log_posterior": 0.0,
+    "map_theta": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001,
+      "p": 5.0,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 1.0,
+      "s_atom": 1.0,
+      "s_canal": 1.0
+    }
+  },
+  "map_theta": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001,
+    "p": 5.0,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 1.0,
+    "s_atom": 1.0,
+    "s_canal": 1.0
+  },
+  "map_observables": {
+    "z_geo": 1.1e-06,
+    "z_int": 4.8e-06,
+    "z_canal": 2.6e-06,
+    "z_mod": 5.6e-06,
+    "alpha_model": 0.0072973525692838015,
+    "alpha_residual": 0.0,
+    "fine_delta": 0.00024
+  },
+  "verdict": "supported",
+  "reference": "V12 repair check via V13 MAP"
+}

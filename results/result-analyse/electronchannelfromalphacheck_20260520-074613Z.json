@@ -1,0 +1,29 @@
+{
+  "timestamp": "20260520-074613Z",
+  "hypothesis": "l'electron est un canal D1-D2-D3 dont la reponse effective se lit dans les pentes V5-N",
+  "case_control": "kappa_2, kappa_3, kappa_4",
+  "observable": "ajustement loi puissance kappa_n ~ n^{-p}",
+  "expected": "decroissance monotone avec une loi simple et un residu faible",
+  "measured": {
+    "n_values": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "kappas": [
+      0.002725,
+      0.00031666666666666665,
+      9e-05
+    ],
+    "exponent": 4.9456681557600435,
+    "slope": -4.9456681557600435,
+    "rmse": 6.944686902903456e-05,
+    "relative_rmse": 0.06652706985218851
+  },
+  "decreasing_ok": true,
+  "exponent_ok": true,
+  "fit_quality_ok": true,
+  "channel_ok": true,
+  "verdict": "conforme",
+  "reference": "V5-N torsion-response power law"
+}

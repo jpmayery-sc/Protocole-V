@@ -1,0 +1,6 @@
+V15 stability check
+timestamp: 20260518-084733Z
+verdict: supported
+locked_names: alpha0, s_geo, s_atom, A_kappa, p
+frozen_names: aE, aR, s_canal
+supported_cases: 15/15

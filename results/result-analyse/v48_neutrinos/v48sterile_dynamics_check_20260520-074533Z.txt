@@ -1,0 +1,6 @@
+V48 sterile dynamics check
+timestamp: 20260520-074533Z
+verdict: supported
+geometric_mass_shift: {'z_0': 0.0, 'z_1': 0.0008, 'z_2': 0.0011}
+rg_stability_ok: True
+no_tachyon_ok: True

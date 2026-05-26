@@ -1,0 +1,11 @@
+Point Atome protocol suite summary
+timestamp: 20260518-143434Z
+overall_verdict: supported
+supported_count: 5/5
+
+Items:
+- saturation_magnetic: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\saturation_magnetic_suite_summary_20260518-143432Z.json
+- omega_structure: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\omega_structure\omega_structure_suite_summary_20260518-143432Z.json
+- heavy_border: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\heavy_border\heavy_border_suite_summary_20260518-143432Z.json
+- atom_basics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\atom_basics_suite_summary_20260518-143433Z.json
+- regime_physics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\regime_physics\regime_physics_suite_summary_20260518-143434Z.json

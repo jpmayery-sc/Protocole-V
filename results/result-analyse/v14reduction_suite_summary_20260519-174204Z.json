@@ -1,0 +1,35 @@
+{
+  "suite": "v14reduction_suite",
+  "timestamp": "20260519-174204Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "v14_sensi",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14sensi_check_20260519-174157Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14sensi_check_20260519-174157Z.txt"
+    },
+    {
+      "label": "v14_rank",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14rank_check_20260519-174157Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14rank_check_20260519-174157Z.txt"
+    },
+    {
+      "label": "v14_reduce",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduce_check_20260519-174159Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduce_check_20260519-174159Z.txt"
+    },
+    {
+      "label": "v14_recheck",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14recheck_check_20260519-174201Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14recheck_check_20260519-174201Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduction_suite_summary_20260519-174204Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduction_suite_summary_20260519-174204Z.txt"
+}

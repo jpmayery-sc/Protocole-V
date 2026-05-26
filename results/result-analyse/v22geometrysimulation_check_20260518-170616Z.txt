@@ -1,0 +1,4 @@
+V22 geometric simulation check
+timestamp: 20260518-170616Z
+verdict: supported
+non_riemannian_support: True

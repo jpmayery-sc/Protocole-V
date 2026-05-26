@@ -1,0 +1,14 @@
+V50 intrication suite summary
+timestamp: 20260520-0942Z
+v50_global_verdict: intrication_required
+supported_count: 5/7
+intrication_required_count: 2/7
+
+Items:
+- v50_scan: completed
+- v50_fit: completed
+- v50_residu: completed
+- v50_forme: completed
+- v50_robustness: completed
+- v50_intrication: intrication_required
+- v50_synthesis: intrication_required

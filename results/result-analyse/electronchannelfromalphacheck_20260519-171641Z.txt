@@ -1,0 +1,16 @@
+Electron channel from alpha check
+timestamp: 20260519-171641Z
+verdict: conforme
+exponent: 4.945668155760043
+slope: -4.945668155760043
+rmse: 6.944686902903456e-05
+relative_rmse: 0.066527
+decreasing_ok: True
+exponent_ok: True
+fit_quality_ok: True
+channel_ok: True
+
+Cases:
+- n=2 kappa=2.725000000000000e-03
+- n=3 kappa=3.166666666666666e-04
+- n=4 kappa=9.000000000000001e-05

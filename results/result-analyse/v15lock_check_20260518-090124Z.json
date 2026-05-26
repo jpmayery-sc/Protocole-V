@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260518-090124Z",
+  "hypothesis": "le vecteur final peut etre fige sans perdre la compatibilite V11-V14",
+  "case_control": "vecteur reduit verrouille",
+  "observable": "theta final, redshifts, alpha_residual, fine_delta",
+  "expected": "cinq parametres gardes, trois parametres figes, support conserve",
+  "measured": {
+    "locked_names": [
+      "alpha0",
+      "s_geo",
+      "s_atom",
+      "A_kappa",
+      "p"
+    ],
+    "frozen_names": [
+      "aE",
+      "aR",
+      "s_canal"
+    ],
+    "supported": true,
+    "alpha_repaired_ok": true,
+    "redshift_ok": true,
+    "fine_ok": true
+  },
+  "reduced_theta": {
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 1.0,
+    "s_atom": 1.0,
+    "A_kappa": 0.001,
+    "p": 5.0
+  },
+  "full_theta": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001,
+    "p": 5.0,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 1.0,
+    "s_atom": 1.0,
+    "s_canal": 1.0
+  },
+  "observables": {
+    "z_geo": 1.1e-06,
+    "z_int": 4.8e-06,
+    "z_canal": 2.6e-06,
+    "z_mod": 5.6e-06,
+    "alpha_model": 0.0072973525692838015,
+    "alpha_residual": 0.0,
+    "fine_delta": 0.00024
+  },
+  "verdict": "supported",
+  "reference": "V15 lock consolidation"
+}

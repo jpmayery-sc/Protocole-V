@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260508-195032Z",
+  "cases": [
+    {
+      "label": "hydrogen_neutral",
+      "symbol": "H",
+      "protons": 1,
+      "electrons": 1,
+      "kind": "neutral",
+      "charge": 0,
+      "status": "conforme strict"
+    },
+    {
+      "label": "helium_neutral",
+      "symbol": "He",
+      "protons": 2,
+      "electrons": 2,
+      "kind": "neutral",
+      "charge": 0,
+      "status": "conforme strict"
+    },
+    {
+      "label": "iron_neutral",
+      "symbol": "Fe",
+      "protons": 26,
+      "electrons": 26,
+      "kind": "neutral",
+      "charge": 0,
+      "status": "conforme strict"
+    },
+    {
+      "label": "sodium_cation",
+      "symbol": "Na+",
+      "protons": 11,
+      "electrons": 10,
+      "kind": "ion",
+      "charge": 1,
+      "status": "conforme strict"
+    },
+    {
+      "label": "chlorine_anion",
+      "symbol": "Cl-",
+      "protons": 17,
+      "electrons": 18,
+      "kind": "ion",
+      "charge": -1,
+      "status": "conforme strict"
+    }
+  ],
+  "neutral_rule_status": "conforme strict",
+  "ion_rule_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "un atome annoncé neutre ne vérifie pas N_e = N_p",
+    "l’ionisation change le nombre de protons au lieu des électrons",
+    "les cas ioniques ne se distinguent pas des cas neutres"
+  ]
+}

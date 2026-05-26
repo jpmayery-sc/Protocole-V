@@ -1,0 +1,8 @@
+V44 KT potential check
+timestamp: 20260519-163545Z
+verdict: supported
+lambda_K: 0.14
+lambda_T: 0.11
+lambda_KT: -0.03
+KT_positive_definite: True
+KT_stability_ok: True

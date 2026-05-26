@@ -1,0 +1,18 @@
+{
+  "suite": "skin_effect",
+  "timestamp": "20260512-112246Z",
+  "overall_verdict": "conforme strict",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "skin_effect",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_check_20260512-112246Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_check_20260512-112246Z.txt",
+      "hypothesis": "the skin depth decreases with frequency and responds correctly to resistivity and permeability"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_suite_summary_20260512-112246Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_suite_summary_20260512-112246Z.txt"
+}

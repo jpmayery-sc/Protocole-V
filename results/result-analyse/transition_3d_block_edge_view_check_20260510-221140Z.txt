@@ -1,0 +1,28 @@
+Bloc + bord de serie sur le bloc de transition 3d
+Timestamp: 20260510-221140Z
+
+Hypothese: the 3d transition block needs a block-and-edge view to isolate the usable core
+Cas de controle: full 3d block Sc -> Zn versus a repaired core excluding the strongest local anomalies
+Observable: trend repair and regularity change after removing local anomalies
+Verdict: partiel
+
+Bloc complet:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: mixed
+
+Noyau repare:
+- radius_trend: decreasing
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: mixed
+
+Falsificateurs:
+- the full 3d block is already regular
+- the repaired core does not improve regularity
+- Z_eff is not more regular than mass in the repaired core
+
+Reference: 3d block with known local anomalies around Cr and Cu
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_3d_block_edge_view_check_20260510-221140Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_3d_block_edge_view_check_20260510-221140Z.txt

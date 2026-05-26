@@ -1,0 +1,11 @@
+V23 theory synthesis suite summary
+timestamp: 20260518-160854Z
+overall_verdict: supported
+supported_count: 5/5
+
+Items:
+- v23_schema: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v23schema_check_20260518-160853Z.json
+- v23_invariants: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v23invariants_check_20260518-160853Z.json
+- v23_domain: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v23domain_check_20260518-160853Z.json
+- v23_openquestions: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v23openquestions_check_20260518-160853Z.json
+- v23_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v23verdict_check_20260518-160853Z.json

@@ -1,0 +1,10 @@
+V20 research suite summary
+timestamp: 20260520-084145Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v20_geo: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v20geo_check_20260520-084144Z.json
+- v20_torsion: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v20torsion_check_20260520-084144Z.json
+- v20_hierarchy: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v20hierarchy_check_20260520-084145Z.json
+- v20_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v20verdict_check_20260520-084145Z.json

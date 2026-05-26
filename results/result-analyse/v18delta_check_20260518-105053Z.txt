@@ -1,0 +1,5 @@
+V18 delta check
+timestamp: 20260518-105053Z
+verdict: supported
+baseline_deviation_score: 0.061080
+baseline_deviation_class: supported

@@ -1,0 +1,6 @@
+V16 check
+timestamp: 20260520-084210Z
+verdict: supported
+internal_ok: True
+external_ok: True
+consistency_ok: True

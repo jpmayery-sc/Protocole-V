@@ -1,0 +1,9 @@
+V33 K/T/Y refinement suite summary
+timestamp: 20260519-102222Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- v33_math: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v33_kty_refinement\v33math_check_20260519-102222Z.json
+- v33_predictions: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v33_kty_refinement\v33predictions_check_20260519-102222Z.json
+- v33_tester_summary: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v33_kty_refinement\v33tester_summary_check_20260519-102222Z.json

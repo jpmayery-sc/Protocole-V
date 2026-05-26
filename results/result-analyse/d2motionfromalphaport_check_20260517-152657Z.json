@@ -1,0 +1,57 @@
+{
+  "timestamp": "20260517-152657Z",
+  "hypothesis": "une variation de la porte alpha se traduit en un mouvement effectif en D2",
+  "case_control": "alpha_ref vs alpha_approx",
+  "observable": "delta theta, delta tau, delta phi, delta P",
+  "expected": "variation petite mais structuree, conserve la forme 1/r et ne sature pas",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "alpha_approx": 0.0072992700729927005,
+    "delta_alpha": -1.9175037088989613e-06,
+    "delta_theta_rad": -1.2048031130217074e-05,
+    "delta_theta_small_ok": true,
+    "tau_shape_ok": true,
+    "tau_inverse_ok": true,
+    "effect_structured_ok": true
+  },
+  "samples": [
+    {
+      "radius": 1.0,
+      "tau_ref": 0.0072973525692838015,
+      "tau_approx": 0.0072992700729927005,
+      "delta_tau": -1.9175037088989613e-06,
+      "delta_phi_ref": 0.0031087512698201886,
+      "delta_phi_approx": 0.0031112025458970424,
+      "delta_delta_phi": -2.4512760768537548e-06,
+      "polarization_ref": 2.4160816685827752e-06,
+      "polarization_approx": 2.4198933684352356e-06,
+      "delta_polarization": -3.811699852460365e-09
+    },
+    {
+      "radius": 2.0,
+      "tau_ref": 0.0036486762846419008,
+      "tau_approx": 0.0036496350364963502,
+      "delta_tau": -9.587518544494807e-07,
+      "delta_phi_ref": 0.0007771878174550472,
+      "delta_phi_approx": 0.0007778006364742606,
+      "delta_delta_phi": -6.128190192134387e-07,
+      "polarization_ref": 1.5100521829927566e-07,
+      "polarization_approx": 1.5124344990008023e-07,
+      "delta_polarization": -2.382316008045684e-10
+    },
+    {
+      "radius": 5.0,
+      "tau_ref": 0.0014594705138567603,
+      "tau_approx": 0.00145985401459854,
+      "delta_tau": -3.8350074177970553e-07,
+      "delta_phi_ref": 0.00012435005079280756,
+      "delta_phi_approx": 0.00012444810183588167,
+      "delta_delta_phi": -9.805104307411658e-08,
+      "polarization_ref": 3.865733778062155e-09,
+      "polarization_approx": 3.871832507641464e-09,
+      "delta_polarization": -6.0987295793089045e-12
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V5-G + D2 conique / torsion / polarisation"
+}

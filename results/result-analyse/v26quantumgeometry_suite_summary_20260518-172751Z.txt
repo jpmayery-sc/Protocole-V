@@ -1,0 +1,12 @@
+V26 quantum geometry suite summary
+timestamp: 20260518-172751Z
+overall_verdict: supported
+supported_count: 6/6
+
+Items:
+- v26_qft: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v26qft_check_20260518-172750Z.json
+- v26_perturbations: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v26perturbations_check_20260518-172750Z.json
+- v26_simulation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v26simulation_check_20260518-172750Z.json
+- v26_observables: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v26observables_check_20260518-172750Z.json
+- v26_publication: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v26publication_check_20260518-172750Z.json
+- v26_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v26verdict_check_20260518-172750Z.json

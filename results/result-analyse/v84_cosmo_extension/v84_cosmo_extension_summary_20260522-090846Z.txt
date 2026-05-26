@@ -1,0 +1,21 @@
+V84 cosmology extension summary
+timestamp: 20260522-090846Z
+verdict: cosmo_rupture
+accepted_count: 0/56
+epsilon_min_acceptable: None
+epsilon_max_acceptable: None
+best_fit_epsilon: -0.0076
+best_fit_pi_cosmo: 0.0
+best_fit_G_eff_cosmo: 1.0
+best_fit_F_temps_cosmo: 1.0
+best_fit_chi_total: 2260.618411984395
+best_fit_chi_sn: 0.0
+best_fit_chi_bao: 2222.2222222222226
+best_fit_chi_cmb: 5.535026856094648
+best_fit_chi_growth: 32.86116290607792
+best_fit_DA_rec: 10.38260259907672
+best_fit_first_peak_shift: 0.0
+
+Notes:
+- V84 is a toy cosmology confrontation, not a full Boltzmann-code replacement.
+- The pi_n^{cosmo} cases are intended to separate a nearly standard regime from a mild deformation regime.

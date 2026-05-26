@@ -1,0 +1,14 @@
+V8 radius check
+timestamp: 20260517-185841Z
+verdict: conforme
+order_ok: True
+pb_soft_ok: True
+span_ok: True
+radius_band_ok: True
+minimum_ok: True
+
+Species:
+- H: R_eff=0.540000 alpha_span=6.374620e-06 gradient_min=4.131698e-05
+- He: R_eff=0.840000 alpha_span=5.737158e-06 gradient_min=1.707487e-05
+- Fe: R_eff=1.680000 alpha_span=2.868579e-06 gradient_min=4.268719e-06
+- Pb: R_eff=2.520000 alpha_span=1.912386e-06 gradient_min=1.897208e-06

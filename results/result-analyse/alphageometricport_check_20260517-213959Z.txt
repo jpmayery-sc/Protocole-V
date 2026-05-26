@@ -1,0 +1,12 @@
+Alpha geometric port check
+timestamp: 20260517-213959Z
+verdict: conforme
+alpha_ref: 0.007297352569284
+alpha_approx: 0.007299270072993
+delta_theta_ref_rad: 0.045850618444633
+delta_theta_approx_rad: 0.045862666475763
+delta_Dtheta_rad: -0.000012048031130
+absolute_delta_Dtheta_rad: 0.000012048031130
+relative_delta_Dtheta: 2.627670e-04
+exact_claim_ok: False
+geometric_port_ok: True

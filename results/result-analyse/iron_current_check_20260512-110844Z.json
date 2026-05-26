@@ -1,0 +1,43 @@
+{
+  "timestamp": "20260512-110844Z",
+  "reference": {
+    "rho_20_c_ohm_m": 9.71e-08,
+    "temp_coeff_per_c": 0.005,
+    "copper_reference_rho_20_c_ohm_m": 1.68e-08
+  },
+  "ohmic_test": {
+    "length_m": 1.0,
+    "area_m2": 1e-06,
+    "resistance_ohm": 0.0971,
+    "v_test_v": 1.0,
+    "i_test_a": 10.298661174047373,
+    "status": "conforme strict"
+  },
+  "temperature_test": {
+    "rho_20_c": 9.71e-08,
+    "rho_100_c": 1.3593999999999999e-07,
+    "status": "conforme strict"
+  },
+  "contrast_test": {
+    "rho_iron": 9.71e-08,
+    "rho_copper": 1.68e-08,
+    "status": "conforme strict"
+  },
+  "purity_test": {
+    "rho_pure": 9.71e-08,
+    "rho_impure": 1.1652e-07,
+    "status": "conforme strict"
+  },
+  "microstructure_test": {
+    "rho_pure": 9.71e-08,
+    "rho_microstructured": 1.2623e-07,
+    "status": "conforme strict"
+  },
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "le fer n’est pas plus résistant que le cuivre",
+    "la loi d’Ohm ne tient pas au régime faible",
+    "la résistivité ne monte pas avec la température",
+    "les impuretés ou la microstructure n’augmentent pas la résistivité"
+  ]
+}

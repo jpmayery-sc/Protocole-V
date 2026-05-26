@@ -1,0 +1,14 @@
+{
+  "section": "V28-RENORMALISATION-MULTISCALE",
+  "renormalized_lagrangian": true,
+  "multiscale_counterterms": [
+    "delta L_geom",
+    "delta L_K",
+    "delta L_T",
+    "delta L_ent"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-194553Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28renormmultiscale_check_20260518-194553Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28renormmultiscale_check_20260518-194553Z.txt"
+}

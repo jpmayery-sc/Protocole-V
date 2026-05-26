@@ -1,0 +1,31 @@
+{
+  "suite": "tube_theory_numeric_test",
+  "timestamp": "template",
+  "overall_verdict": "not_run",
+  "supported_count": 0,
+  "total": 3,
+  "items": [
+    {
+      "label": "one_fixed_damper",
+      "verdict": "pending",
+      "json_path": "data/hysteresis/One_fixed_damper.json",
+      "txt_path": ""
+    },
+    {
+      "label": "test_experiments",
+      "verdict": "pending",
+      "json_path": "data/hysteresis/Test_experiments.json",
+      "txt_path": ""
+    },
+    {
+      "label": "core_loss_mhz",
+      "verdict": "pending",
+      "json_path": "data/induction/MHzCoreLoss.csv",
+      "txt_path": ""
+    }
+  ],
+  "omega": "omega_winding",
+  "fit_dataset": "core_loss_mhz",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\results\\tube_theory_suite_summary_template.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\results\\tube_theory_suite_summary_template.txt"
+}

@@ -1,0 +1,251 @@
+# V60 — RUN DU MODÈLE COMPLET + COMPARATIF DONNÉES
+# Exécution numérique du modèle complet K/T/Y + D1/D2 + V_ent
+Version : 1.0
+
+Protocole précédent : ProtocoleV53.md
+Protocole suivant : V61 (optionnel : consolidation numérique avancée)
+
+Wrapper global suggéré :
+- python/scripts/runv60_run_suite.py
+
+CONTENU :
+- 0. Objectif du run
+- 1. Entrées nécessaires
+- 2. Étapes de calcul
+- 3. Observables à produire
+- 4. Comparatif aux données réelles
+- 5. Formats de sortie
+- 6. Critères de validation numérique
+
+
+0. OBJECTIF DU RUN
+-------------------
+Exécuter numériquement le modèle complet V60 :
+
+    (K, T, Y, D1, D2, V_total, V_ent)
+
+et produire :
+
+- les courbes K(z), T(z), Y(z)
+- les dérivées dY/dz, dT/dz, dK/dz
+- le potentiel V_total(z)
+- les observables cosmologiques H(z), fσ₈(z), S₈
+- un comparatif chiffré avec les données réelles (DESI, Planck, KiDS, etc.)
+
+
+1. ENTRÉES NÉCESSAIRES
+-----------------------
+1.1 Paramètres du modèle :
+- α_K
+- α_T
+- α_KT
+- γ* (fixé à 1.73)
+- Y∞
+- χ₂
+- paramètres D1/D2 (β, etc.)
+
+1.2 Domaine en z :
+- z_min, z_max
+- nombre de points N_z
+
+1.3 Conditions initiales :
+- K(z0), T(z0), Y(z0)
+- dY/dz(z0) si nécessaire
+
+1.4 Données réelles (fichiers externes) :
+- fσ₈_obs(z_i), σ_fσ8(z_i)
+- H_obs(z_i), σ_H(z_i)
+- S₈_obs ± σ_S8 (valeur globale)
+- éventuellement BAO, autres sondes
+
+
+2. ÉTAPES DE CALCUL
+--------------------
+Étape 1 — Résolution des équations de mouvement
+- Résoudre numériquement :
+    d²Y/dz² + γ*(Y – Y∞) + χ₂ dT/dz = 0
+    dT/dz + 2α_T T + α_KT K + χ₂ dY/dz = 0
+    dK/dz + 2α_K K + α_KT T = 0
+- Obtenir :
+    K(z), T(z), Y(z), dY/dz(z), dT/dz(z), dK/dz(z)
+
+Étape 2 — Calcul du potentiel
+- Calculer :
+    V_KT(z) = α_K K(z)² + α_T T(z)² + α_KT K(z) T(z)
+    V_Y(z)  = (γ*/2)(Y(z) – Y∞)²
+    V_ent(z)= χ₂ T(z) dY/dz(z)
+    V_total(z) = V_KT(z) + V_Y(z) + V_ent(z)
+
+Étape 3 — Calcul des observables cosmologiques
+- À partir de K, T, Y (et des règles définies dans V35–V53), calculer :
+    H(z)
+    fσ₈(z)
+    S₈ (valeur globale)
+- Noter clairement les formules utilisées (implémentation testeur).
+
+Étape 4 — Run de contrôle SANS intrication
+- Refaire le calcul avec :
+    V_ent = 0
+- Produire :
+    fσ₈_noent(z)
+    S₈_noent
+
+Étape 5 — Comparatif interne
+- Calculer :
+    Δfσ₈(z) = fσ₈_with_ent(z) – fσ₈_noent(z)
+    ΔS₈     = S₈_with_ent – S₈_noent
+
+
+3. OBSERVABLES À PRODUIRE
+--------------------------
+Le testeur doit produire au minimum :
+
+- K(z), T(z), Y(z)
+- dY/dz(z), dT/dz(z), dK/dz(z)
+- V_KT(z), V_Y(z), V_ent(z), V_total(z)
+- H(z)
+- fσ₈_with_ent(z)
+- fσ₈_noent(z)
+- S₈_with_ent
+- S₈_noent
+
+
+4. COMPARATIF AVEC LES DONNÉES RÉELLES
+---------------------------------------
+4.1 fσ₈(z) — Comparatif point par point
+- Pour chaque point de données z_i :
+    - lire fσ₈_obs(z_i), σ_fσ8(z_i)
+    - interpoler fσ₈_with_ent(z_i)
+    - calculer le résidu :
+        R_i = fσ₈_with_ent(z_i) – fσ₈_obs(z_i)
+    - calculer le χ² :
+        χ²_fσ8 = Σ_i [ R_i² / σ_fσ8(z_i)² ]
+
+- Faire la même chose pour fσ₈_noent(z) :
+    χ²_fσ8_noent
+
+- Calculer l’amélioration :
+    Δχ²_fσ8 = χ²_fσ8_noent – χ²_fσ8_with_ent
+
+4.2 S₈ — Comparatif global
+- Comparer :
+    S₈_with_ent à S₈_obs ± σ_S8
+    S₈_noent à S₈_obs ± σ_S8
+
+- Noter :
+    - si S₈_with_ent tombe dans l’intervalle observé
+    - si S₈_noent en sort
+
+4.3 H(z) — Contrôle de cohérence
+- Comparer H(z) aux données H_obs(z_i)
+- Calculer un χ²_H (même principe que pour fσ₈)
+
+4.4 Résumé comparatif
+- Le testeur doit produire un tableau récapitulatif :
+
+    - χ²_fσ8_with_ent
+    - χ²_fσ8_noent
+    - Δχ²_fσ8
+    - S₈_with_ent, S₈_noent, S₈_obs
+    - χ²_H
+
+- Et un commentaire simple :
+    - intrication améliore / n’améliore pas les données
+    - cohérence globale : OK / à revoir
+
+
+5. FORMATS DE SORTIE
+---------------------
+5.1 Fichiers numériques
+- JSON ou CSV :
+    - z, K(z), T(z), Y(z)
+    - dY/dz(z), dT/dz(z), dK/dz(z)
+    - V_KT(z), V_Y(z), V_ent(z), V_total(z)
+    - H(z)
+    - fσ₈_with_ent(z), fσ₈_noent(z)
+
+5.2 Fichiers TXT (rapports)
+- v60_run_summary.txt :
+    - paramètres utilisés
+    - χ²_fσ8_with_ent, χ²_fσ8_noent, Δχ²_fσ8
+    - S₈_with_ent, S₈_noent, S₈_obs
+    - χ²_H
+    - verdicts (voir section 6)
+
+5.3 Figures (PNG ou PDF)
+- fσ₈(z) :
+    - courbe modèle avec intrication
+    - courbe modèle sans intrication
+    - points de données réelles + barres d’erreur
+- S₈ :
+    - valeur modèle vs bande observée
+- éventuellement :
+    - V_total(z)
+    - H(z)
+
+
+6. CRITÈRES DE VALIDATION NUMÉRIQUE
+------------------------------------
+Le run V60 est considéré comme validant le modèle si :
+
+- χ²_fσ8_with_ent < χ²_fσ8_noent
+- Δχ²_fσ8 significatif (à juger, mais typiquement Δχ² > 5)
+- S₈_with_ent dans l’intervalle observé
+- H(z) cohérent (χ²_H raisonnable)
+- pas de divergence numérique dans K, T, Y
+- V_total(z) reste convexe sur la plage étudiée
+
+Le testeur doit conclure par un verdict :
+
+- intrication_confirmed_numérique : true/false
+- modèle_globalement_cohérent : true/false
+
+
+7. TEST ET CHIFFRES OBSERVÉS
+----------------------------
+
+Suite exécutée : v60_run_suite
+Horodatage : 20260520-105702Z
+
+Chiffres globaux :
+- v60_global_verdict : intrication_confirmed_numerical
+- supported_count : 5/6
+- intrication_confirmed_numerical_count : 1/6
+- total : 6
+
+Points saillants :
+- gamma_star : 1.73
+- inputs_ok : true
+- parameters_ok : true
+- K_curve_ok : true
+- T_curve_ok : true
+- Y_curve_ok : true
+- V_total_convex : true
+- V_ent_active : true
+- H_ok : true
+- fs8_with_ent_ok : true
+- S8_with_ent : 0.776
+- chi2_fs8_with_ent : 1.84
+- chi2_fs8_noent : 9.62
+- delta_chi2_fs8 : 7.78
+- intrication_confirmed_numerique : true
+- modele_globalement_coherent : true
+
+Comparatif clé :
+- χ²_fσ8_with_ent < χ²_fσ8_noent : true
+- Δχ²_fσ8 : 7.78
+- S₈_with_ent dans l’intervalle observé : true
+- H(z) cohérent : true
+- V_total(z) convexe : true
+
+Fichiers de sortie générés :
+- JSON : results/result-analyse/v60_run/v60_run_suite_summary_20260520-105702Z.json
+- TXT : results/result-analyse/v60_run/v60_run_suite_summary_20260520-105702Z.txt
+
+Items validés :
+- v60_inputs : supported
+- v60_eom : supported
+- v60_potential : supported
+- v60_observables : supported
+- v60_comparison : supported
+- v60_synthesis : intrication_confirmed_numerical

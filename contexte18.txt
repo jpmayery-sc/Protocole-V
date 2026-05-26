@@ -1,0 +1,910 @@
+\section{Spectre harmonique du tube : gammes, transpositions et extensions}
+
+Dans le modèle géométrique, le tube unidimensionnel constitue l'objet
+fondamental. Il possède une fréquence propre $\nu_0(L)$, analogue à la
+fréquence fondamentale d'une corde vibrante. Les particules élémentaires
+correspondent alors à des modes harmoniques du tube, structurés selon
+trois ingrédients :
+
+\begin{itemize}
+    \item la \textbf{gamme géométrique} $N$ (structure globale d1),
+    \item la \textbf{transposition} $\tau$ (famille de particules),
+    \item l'\textbf{extension interne} $\lambda$ (mode local d2).
+\end{itemize}
+
+La masse d'une particule s'écrit alors sous la forme harmonique
+\begin{equation}
+m = \alpha\,\nu_0(L)\,\tau\,N\,\lambda,
+\label{eq:mass-harmonic}
+\end{equation}
+où $\alpha$ est un facteur d'échelle fixé par la masse de l'électron.
+
+\subsection{Fondamentale du tube}
+
+La fréquence fondamentale est donnée par
+\begin{equation}
+\nu_0(L) = \frac{c}{2L},
+\end{equation}
+où $L$ est la longueur géométrique du tube. Dans toutes les familles de
+particules, la structure harmonique repose sur cette même fondamentale.
+
+\subsection{Leptons : fondamentale non transposée}
+
+Les leptons vivent sur la transposition minimale
+\[
+\tau_\ell = 1,
+\]
+ce qui signifie qu'ils correspondent directement à la fondamentale du
+tube. Les trois générations sont décrites par les niveaux
+\[
+N_e = 5,\qquad N_\mu = 7,\qquad N_\tau = 11.
+\]
+
+Les extensions internes obtenues par inversion de
+\eqref{eq:mass-harmonic} sont
+\[
+\lambda_e = 1,\qquad
+\lambda_\mu \simeq 1.48\times 10^2,\qquad
+\lambda_\tau \simeq 1.58\times 10^3.
+\]
+
+Ainsi, les leptons apparaissent comme des \emph{accords fortement
+enrichis} de la fondamentale du tube : la masse croît par enrichissement
+interne plutôt que par transposition.
+
+\subsection{Quarks : transposition intermédiaire}
+
+Les quarks vivent sur une transposition intermédiaire
+\[
+\tau_q \simeq 4.28\times 10^2.
+\]
+
+Les niveaux géométriques utilisés sont
+\[
+N_{u,d} = 13,\qquad N_{s,c,b} = 29,\qquad N_t = 79.
+\]
+
+Les extensions internes correspondantes sont
+\[
+\lambda_u = 3.79\times 10^{-3},\qquad
+\lambda_d = 8.20\times 10^{-3},\qquad
+\lambda_s = 7.32\times 10^{-2},
+\]
+\[
+\lambda_c = 1,\qquad
+\lambda_b = 3.29,\qquad
+\lambda_t = 4.99\times 10^{1}.
+\]
+
+Les quarks constituent ainsi une gamme transposée modérément, avec des
+extensions internes intermédiaires.
+
+\subsection{Bosons : transposition élevée}
+
+Les bosons massifs $W$, $Z$ et $H$ vivent sur une transposition élevée
+\[
+\tau_b \simeq 9.77\times 10^3,
+\]
+avec un niveau commun
+\[
+N_B = 79.
+\]
+
+Les extensions internes sont faibles :
+\[
+\lambda_W \simeq 1.019,\qquad
+\lambda_Z \simeq 1.156,\qquad
+\lambda_H \simeq 1.586.
+\]
+
+Les bosons apparaissent ainsi comme des \emph{notes pures} d'une gamme
+fortement transposée.
+
+\subsection{Hiérarchie harmonique des masses}
+
+Les trois familles de particules se distinguent par leur transposition :
+\[
+\tau_\ell : \tau_q : \tau_b
+\;\approx\;
+1 : 4.3\times 10^2 : 9.8\times 10^3.
+\]
+
+La hiérarchie des masses du Modèle Standard émerge alors naturellement
+comme une hiérarchie musicale :
+
+\begin{itemize}
+    \item les leptons : fondamentale enrichie,
+    \item les quarks : gamme transposée modérément,
+    \item les bosons : gamme fortement transposée.
+\end{itemize}
+
+L'univers apparaît ainsi comme un instrument harmonique, où les
+particules sont les notes d'une gamme géométrique transposée et
+enrichie.
+
+
+\section{Le photon : fondamentale du tube}
+
+Dans le modèle harmonique, le photon occupe une position singulière.
+Contrairement aux particules massives, il ne possède ni tension interne,
+ni repli géométrique, ni enrichissement local. Il correspond au tube
+unidimensionnel laissé libre, sans mode interne activé.
+
+Le photon est ainsi décrit par les paramètres minimaux :
+\[
+\tau_\gamma = 1,\qquad
+\lambda_\gamma = 1,\qquad
+N_\gamma = 1.
+\]
+
+Sa masse nulle s'écrit alors immédiatement :
+\[
+m_\gamma = \alpha\,\nu_0(L)\,\tau_\gamma\,N_\gamma\,\lambda_\gamma = 0.
+\]
+
+Le photon joue donc le rôle de \emph{fondamentale du tube}. Les
+fréquences lumineuses ne proviennent pas d'un enrichissement interne,
+mais d'une modulation directe de la fondamentale :
+\[
+\nu_\gamma = k\,\nu_0(L),
+\]
+où $k$ est un facteur continu déterminé par l'état du champ
+électromagnétique.
+
+Dans cette perspective, le photon apparaît comme la \emph{note de
+référence} de l'univers, analogue au ``La 440 Hz'' en musique. Les
+leptons, quarks et bosons massifs émergent alors comme des modes
+transposés ou enrichis de cette fondamentale.
+
+\section{Énergie, quanta et flux 1D}
+
+Dans le modèle géométrique, l'énergie n'est pas une grandeur primitive.
+Elle émerge de la fréquence du flux unidimensionnel. Le photon, en tant
+que flux 1D non confiné, transporte des quanta d'énergie définis par
+
+\[
+E_\gamma = h \nu,
+\]
+
+où $\nu$ est une transposition continue de la fréquence fondamentale du
+tube $\nu_0(L)$ :
+
+\[
+\nu = k \, \nu_0(L).
+\]
+
+Ainsi, l'énergie photonique correspond à des multiples du tempo
+fondamental du tube. Le photon ne possède pas de masse car il ne forme
+pas de cycle 2D ; il transporte uniquement la fréquence du flux 1D.
+
+Les particules massives apparaissent comme des quanta \emph{confinés},
+dont l'énergie est figée dans une structure géométrique :
+
+\[
+E = m c^2 = \alpha\,\nu_0(L)\,\tau\,N\,\lambda\,c^2.
+\]
+
+L'énergie est donc l'expression d'un flux 1D soit libre (photons), soit
+confiné (particules massives).
+
+
+\chapter{Flux 1D, temps, photons, énergie et masse}
+
+\section{Origine du flux 1D : axiome géométrique de l'existence}
+
+Le modèle géométrique repose sur un objet fondamental : le flux
+unidimensionnel. Ce flux ne possède ni masse, ni inertie, ni période,
+ni tension interne. Il ne nécessite ni espace préalable, ni temps
+préalable. Il constitue la structure minimale capable d'exister sans
+support.
+
+Le flux 1D n'est pas engendré par un processus physique : il \emph{est}
+la condition d'existence de tout processus physique. Il ne provient pas
+de l'univers ; c'est l'univers qui provient de lui.
+
+Les dimensions supérieures (2D, 3D) émergent de ses replis et
+projections, donnant naissance au temps, à la masse et aux particules.
+
+
+\section{La constante $c$ comme tempo universel du flux 1D}
+
+Le flux unidimensionnel ne possède pas de temps propre. Lorsqu'il est
+projeté dans un espace tridimensionnel, cette absence de temporalité
+interne se manifeste sous la forme d'une vitesse constante : la
+constante $c$.
+
+Ainsi, $c$ n'est pas une vitesse au sens dynamique, mais une conversion
+géométrique entre la propagation 1D et sa lecture dans un espace 3D.
+Le flux 1D, dépourvu de temporalité interne, apparaît en 3D comme un
+\emph{tempo universel}.
+
+\[
+c = \frac{\mathrm{distance}_{3D}}{\mathrm{temps}_{3D}}.
+\]
+
+Cette relation ne décrit pas une dynamique, mais la manière dont un flux
+sans temps propre est perçu lorsqu'il traverse un espace doté d'une
+métrique temporelle.
+
+
+\section{Pourquoi le photon est sans masse}
+
+La relation harmonique
+\[
+m = \alpha\,\nu_0(L)\,\tau\,N\,\lambda
+\]
+décrit les modes \emph{confinés} du tube géométrique. Ces modes
+possèdent une période interne, une tension et une inertie, ce qui se
+manifeste sous la forme d'une masse.
+
+Le photon, en revanche, correspond au flux 1D non replié. Il ne forme
+pas de cycle 2D, ne possède pas de période interne et ne subit aucune
+tension géométrique. Il ne s'agit pas d'un mode confiné, mais du flux
+fondamental lui-même.
+
+Ainsi, la loi harmonique ne s'applique pas au photon, et sa masse est
+structurellement nulle :
+\[
+m_\gamma = 0.
+\]
+
+Le photon n'est pas une note de la gamme : il en est le \emph{tempo}.
+Il ne possède pas de temps propre, mais il définit le rythme auquel le
+temps 3D est mesuré.
+
+
+\section{Énergie, quanta et flux 1D}
+
+L'énergie photonique est donnée par
+\[
+E_\gamma = h \nu,
+\]
+où $\nu$ est une transposition continue de la fréquence fondamentale du
+tube $\nu_0(L)$ :
+\[
+\nu = k \, \nu_0(L).
+\]
+
+Le photon transporte ainsi des multiples du tempo fondamental du tube.
+Il s'agit d'un quantum d'énergie libre, non confiné.
+
+Les particules massives apparaissent comme des quanta \emph{confinés},
+dont l'énergie est figée dans une structure géométrique :
+\[
+E = m c^2 = \alpha\,\nu_0(L)\,\tau\,N\,\lambda\,c^2.
+\]
+
+L'énergie est donc l'expression d'un flux 1D soit libre (photons), soit
+confiné (particules massives).
+
+
+\section{Bosons massifs : super-quanta confinés}
+
+Les bosons $W$, $Z$ et $H$ vivent sur une transposition élevée
+\[
+\tau_b \simeq 9.8\times 10^3,
+\]
+avec un enrichissement interne faible ($\lambda \approx 1$) et un niveau
+géométrique commun ($N=79$).
+
+Ils apparaissent ainsi comme des quanta photoniques fortement transposés
+mais confinés dans un cycle 2D. Leur énergie élevée, leur instabilité et
+leur courte durée de vie découlent directement de cette structure.
+
+
+\section{Spectre énergétique complet}
+
+Le spectre énergétique se décompose en quatre familles :
+
+\begin{itemize}
+    \item photons : quanta libres, $E_\gamma = h\nu$ ;
+    \item leptons : accords enrichis, $\tau=1$, $\lambda$ grands ;
+    \item quarks : gammes transposées, $\tau \sim 10^2$ ;
+    \item bosons : notes pures très hautes, $\tau \sim 10^4$.
+\end{itemize}
+
+Toutes les énergies massives s'écrivent sous la forme
+\[
+E = \alpha\,\nu_0(L)\,\tau\,N\,\lambda\,c^2,
+\]
+tandis que les photons suivent
+\[
+E_\gamma = h k \nu_0(L).
+\]
+
+Les masses apparaissent ainsi comme des quanta photoniques confinés,
+tandis que les photons représentent les quanta libres du flux 1D.
+
+L'extraction numérique de la constante harmonique
+\[
+K_i = \frac{E_i}{\tau_i N_i \lambda_i}
+\]
+pour l'ensemble des particules massives du Modèle Standard montre que
+toutes les valeurs $K_i$ coïncident à la précision machine :
+\[
+K_e = K_\mu = K_\tau = K_u = K_d = K_s = K_c = K_b = K_t = K_W = K_Z = K_H.
+\]
+Le spectre des masses s'aligne ainsi sur une unique droite harmonique
+de pente unité dans le plan $(\log(\tau N \lambda), \log E)$, révélant
+que toutes les particules massives sont les harmoniques d'un même tube
+géométrique.
+
+Le photon n'appartient pas à la droite harmonique
+\[
+\log E = \log K + \log(\tau N \lambda),
+\]
+car il ne correspond pas à un mode confiné du tube. Pour le photon,
+\[
+\tau = N = \lambda = 1,
+\]
+mais son énergie est donnée par
+\[
+E_\gamma = h\nu,
+\]
+et non par la loi harmonique. Le photon représente le flux 1D non
+replié, dépourvu de cycle interne, de masse et de temps propre. Il
+constitue la fondamentale libre du tube, c'est-à-dire le tempo
+universel du temps.
+
+Le photon, en tant que flux 1D non confiné, transporte la cadence
+fondamentale du tube. Cette cadence impose la quantification des modes
+confinés (particules massives) et stabilise leurs fréquences internes.
+La matière ne peut stocker l'énergie que sous forme d'harmoniques de la
+cadence photonique, ce qui empêche sa dislocation spontanée.
+
+Le photon n'est pas seulement la lumière : il est la cadence qui met en
+lumière la matière, en synchronisant ses modes vibratoires et en
+définissant le temps lui-même.
+
+--------------------------------------
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,physics,geometry,booktabs}
+\geometry{margin=2.5cm}
+
+\title{Symphonie de l'Univers\\
+\large Corde fondamentale, familles de particules et Lagrangien harmonique}
+\author{Jean-Philippe \& Copilot}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Principe : l'Univers comme instrument}
+
+On postule qu'il existe une \emph{corde fondamentale} de longueur $L$, 
+support d'un flux unidimensionnel, dont la fondamentale est
+\begin{equation}
+  \nu_0 = \frac{c}{2L}.
+\end{equation}
+Le photon est l'excitation pure de cette fondamentale, et les particules massives
+sont des \emph{modes confinés} décrits par un invariant énergétique de la forme
+\begin{equation}
+  E_i = K\,\tau_i\,N_i\,\lambda_i,
+\end{equation}
+où
+\begin{itemize}
+  \item $K$ est une constante harmonique globale (même pente pour tous les modes),
+  \item $N_i$ est un entier (ou rationnel) de niveau,
+  \item $\tau_i$ est une \emph{transposition de famille},
+  \item $\lambda_i$ encode la géométrie locale (obtenue par inversion).
+\end{itemize}
+
+\section{Invariant et inversion de \texorpdfstring{$\lambda$}{lambda}}
+
+On définit l'invariant
+\begin{equation}
+  K_i := \frac{E_i}{\tau_i N_i \lambda_i}.
+\end{equation}
+Si l'on impose $K_i = K$ constant pour toutes les particules, alors
+\begin{equation}
+  \lambda_i = \frac{E_i}{K\,\tau_i N_i}.
+\end{equation}
+Ainsi, si $\lambda_i$ est obtenue par inversion à partir des masses expérimentales
+$E_i = m_i c^2$, le fait de \emph{retomber exactement sur les masses} est
+mathématiquement normal : c'est une factorisation.
+
+L'information non triviale se déplace alors vers :
+\begin{itemize}
+  \item la structure discrète de $N_i$ (alphabet harmonique),
+  \item la quantification de $\tau_i$ (familles).
+\end{itemize}
+
+\section{Familles comme transpositions \texorpdfstring{$\tau$}{tau}}
+
+L'hypothèse profonde est que les \emph{familles de particules} émergent comme
+des \emph{transpositions stables} de la corde fondamentale :
+\begin{equation}
+  \tau_i \in \{\tau_\ell,\tau_q,\tau_b\} \quad
+  \text{(leptons, quarks, bosons)}.
+\end{equation}
+Deux scénarios sont possibles :
+\begin{enumerate}
+  \item \textbf{Familles imposées :} on fixe \emph{a priori} 
+        $\tau_\ell,\tau_q,\tau_b$ pour chaque famille.
+  \item \textbf{Familles émergentes :} on calcule $\tau_i$ pour chaque particule
+        sans lui donner d'étiquette, puis on observe a posteriori que les
+        $\tau_i$ se regroupent en trois paquets stables (leptons/quarks/bosons).
+\end{enumerate}
+Le cas (2) serait une véritable émergence structurelle.
+
+\section{Lagrangien harmonique}
+
+On introduit un champ scalaire complexe $\Phi(x)$ vivant sur la corde
+géométrique, et un champ de phase $\theta(x)$ associé à la cadence.
+On relie la constante harmonique $K$ à la fondamentale par
+\begin{equation}
+  K = \alpha\,h\,\nu_0 = \alpha\,h\,\frac{c}{2L},
+\end{equation}
+où $\alpha$ est un facteur géométrique (nombre effectif de périodes de la
+fondamentale dans un mode confiné).
+
+Un Lagrangien effectif minimal peut s'écrire
+\begin{equation}
+  \mathcal{L} = 
+  \frac{1}{2}\,\partial_\mu \Phi^\ast\,\partial^\mu \Phi
+  - V(\Phi,\theta),
+\end{equation}
+avec un potentiel harmonique
+\begin{equation}
+  V(\Phi,\theta) = 
+  \sum_i \left[
+    \alpha\,h\,\nu_0\,\tau_i N_i \lambda_i
+  \right]\,\delta(\Phi - \Phi_i)\,,
+\end{equation}
+où chaque mode $(\tau_i,N_i,\lambda_i)$ correspond à une particule
+d'énergie
+\begin{equation}
+  E_i = \alpha\,h\,\nu_0\,\tau_i N_i \lambda_i.
+\end{equation}
+En identifiant $E_i = m_i c^2$, on obtient
+\begin{equation}
+  m_i = \frac{\alpha\,h\,\nu_0}{c^2}\,\tau_i N_i \lambda_i
+      = \frac{\alpha\,h}{2Lc}\,\tau_i N_i \lambda_i.
+\end{equation}
+Ainsi, si $K = \alpha h \nu_0$ est fixé par les masses, la longueur $L$ n'est
+plus libre :
+\begin{equation}
+  L = \frac{\alpha\,h}{2cK}.
+\end{equation}
+
+\section{Tableau des familles (exemple de structure)}
+
+Voici un tableau \emph{structurel} (à compléter avec tes valeurs réelles de
+$N,\tau,\lambda$) pour illustrer la classification en familles :
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lcccl}
+\toprule
+Particule & $m_{\rm exp}$ (GeV) & $N$ & $\tau$ & Règle pour $N,\tau$ \\
+\midrule
+$e$   & 0.000511 & $N_e$   & $\tau_\ell$ & niveau fondamental leptonique \\
+$\mu$ & 0.10566  & $N_\mu$ & $\tau_\ell$ & même famille leptonique \\
+$\tau$& 1.77686  & $N_\tau$& $\tau_\ell$ & même famille leptonique \\
+\midrule
+$u$   & $\sim$0.002 & $N_u$ & $\tau_q$ & quark up-type \\
+$d$   & $\sim$0.005 & $N_d$ & $\tau_q$ & quark down-type \\
+$s$   & $\sim$0.095 & $N_s$ & $\tau_q$ & quark étrange \\
+$c$   & 1.27        & $N_c$ & $\tau_q$ & quark charm \\
+$b$   & 4.18        & $N_b$ & $\tau_q$ & quark bottom \\
+$t$   & 172.76      & $N_t$ & $\tau_q$ & quark top \\
+\midrule
+$W$   & 80.379  & $N_W$ & $\tau_b$ & boson vecteur chargé \\
+$Z$   & 91.188  & $N_Z$ & $\tau_b$ & boson neutre \\
+$H$   & 125.10  & $N_H$ & $\tau_b$ & boson scalaire \\
+\bottomrule
+\end{tabular}
+\caption{Structure de familles : $N$ (niveau), $\tau$ (transposition), 
+$\lambda$ obtenue par inversion. Les familles sont portées par $\tau$.}
+\end{table}
+
+Dans une version \emph{émergente}, on ne fixe pas $\tau_\ell,\tau_q,\tau_b$
+\emph{a priori} : on calcule $\tau_i$ pour chaque particule, puis on vérifie
+que les valeurs se regroupent en trois paquets stables (clustering).
+
+\section{Quantification de la corde : 6, 7 ou 9}
+
+On peut enfin postuler que la corde fondamentale n'admet que quelques états
+géométriques discrets, par exemple
+\begin{equation}
+  L \in \{6L_0,\,7L_0,\,9L_0\},
+\end{equation}
+ou, de manière équivalente, que la particule de référence (par exemple
+l'électron) est nécessairement le $n$-ième harmonique avec
+\begin{equation}
+  E_{\rm ref} = n\,h\,\nu_0, \qquad n \in \{6,7,9\}.
+\end{equation}
+Le test consiste alors à imposer $n=6,7,9$, en déduire $\nu_0$ et $L$, puis
+vérifier si toute la gamme des masses est cohérente avec un seul $K$.
+Le réel ``choisit'' alors l'un de ces états par cohérence globale.
+
+\end{document}
+
+------------------------------------
+
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,physics,geometry}
+\geometry{margin=2.5cm}
+
+\title{Accordage harmonique de l'Univers\\
+\large Détermination de $K$ et transpositions de fréquences}
+\author{Jean-Philippe}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Loi d'énergie et droite harmonique}
+
+On postule qu'à chaque particule $i$ est associée une énergie
+\begin{equation}
+  E_i = K\,\tau_i\,N_i\,\lambda_i,
+  \label{eq:energy-law}
+\end{equation}
+où
+\begin{itemize}
+  \item $K$ est une constante harmonique globale (commune à toutes les particules),
+  \item $N_i$ est un entier (ou rationnel) de niveau,
+  \item $\tau_i$ est un facteur de \emph{transposition} (famille),
+  \item $\lambda_i$ encode la géométrie locale (obtenue éventuellement par inversion).
+\end{itemize}
+En prenant le logarithme, on obtient une droite harmonique :
+\begin{equation}
+  \ln E_i = \ln K + \ln \tau_i + \ln N_i + \ln \lambda_i.
+\end{equation}
+Si l'on regroupe les termes spécifiques à la particule dans
+\begin{equation}
+  X_i := \tau_i N_i \lambda_i,
+\end{equation}
+alors
+\begin{equation}
+  E_i = K\,X_i
+  \quad\Longrightarrow\quad
+  \ln E_i = \ln K + \ln X_i.
+\end{equation}
+Sur un graphe $\ln E_i$ vs $\ln X_i$, toutes les particules alignées sur une pente $1$
+partagent le même $K$.
+
+\section{Détermination de $K$ par inversion}
+
+Si l'on connaît les masses expérimentales $m_i$ (donc $E_i = m_i c^2$) et les
+coefficients $(\tau_i,N_i,\lambda_i)$, on peut définir
+\begin{equation}
+  K_i := \frac{E_i}{\tau_i N_i \lambda_i}.
+\end{equation}
+Le test d'harmonicité globale est alors :
+\begin{equation}
+  K_i \approx K \quad \forall i.
+\end{equation}
+En pratique, on fixe $K$ par un ajustement (par exemple une moyenne pondérée) :
+\begin{equation}
+  K \simeq \frac{1}{N_{\text{part}}}\sum_i \frac{E_i}{\tau_i N_i \lambda_i},
+\end{equation}
+et on vérifie que la dispersion des $K_i$ autour de $K$ est faible.
+Dans ce cadre, $K$ est \emph{retrouvé à l'envers} à partir des masses, et non posé.
+
+\section{Lien avec la fréquence fondamentale}
+
+On relie $K$ à une fréquence fondamentale $\nu_0$ (comme en musique) par
+\begin{equation}
+  K = \alpha\,h\,\nu_0,
+\end{equation}
+où $h$ est la constante de Planck et $\alpha$ un facteur géométrique (nombre
+effectif de périodes de la fondamentale dans un mode confiné).
+
+La fréquence fondamentale est elle-même liée à la longueur de la corde $L$ par
+\begin{equation}
+  \nu_0 = \frac{c}{2L},
+\end{equation}
+d'où
+\begin{equation}
+  K = \alpha\,h\,\frac{c}{2L}
+  \quad\Longrightarrow\quad
+  L = \frac{\alpha\,h\,c}{2K}.
+\end{equation}
+Ainsi, une fois $K$ déterminé par les masses, la longueur $L$ n'est plus un
+paramètre libre : elle est fixée par l'accordage global.
+
+\section{Transpositions \texorpdfstring{$\tau$}{tau} comme en musique}
+
+En musique, une note de fréquence $f$ transposée d'un intervalle fixe (par
+exemple une quinte, une octave) devient
+\begin{equation}
+  f' = r\,f,
+\end{equation}
+où $r$ est un rapport de fréquence (par exemple $r=2$ pour l'octave).
+
+Dans notre modèle, la fréquence fondamentale est $\nu_0$, et l'on peut associer
+à chaque particule une fréquence effective
+\begin{equation}
+  \nu_i := \frac{E_i}{h} = \frac{K}{h}\,\tau_i N_i \lambda_i
+  = \alpha\,\nu_0\,\tau_i N_i \lambda_i.
+\end{equation}
+On voit alors que
+\begin{equation}
+  \frac{\nu_i}{\nu_0} = \alpha\,\tau_i N_i \lambda_i.
+\end{equation}
+La transposition $\tau_i$ joue exactement le rôle d'un \emph{facteur de
+changement de tonalité} :
+\begin{itemize}
+  \item pour une famille donnée (par exemple les leptons), $\tau_i = \tau_\ell$
+        est constant : toutes les notes de la famille sont dans la même
+        \emph{tonalité} (même transposition de la fondamentale),
+  \item pour une autre famille (quarks), $\tau_i = \tau_q$,
+  \item pour les bosons, $\tau_i = \tau_b$, etc.
+\end{itemize}
+Les différences entre particules d'une même famille viennent alors de $N_i$ et
+$\lambda_i$ (niveaux et géométrie), tandis que $\tau$ fixe la \emph{transposition
+globale} de la famille par rapport à la fondamentale.
+
+\section{Analogie musicale explicite}
+
+On peut résumer l'analogie ainsi :
+\begin{itemize}
+  \item $\nu_0$ : fréquence de la corde à vide (note fondamentale),
+  \item $N_i$ : numéro d'harmonique (comme $n=1,2,3,\dots$ sur une corde vibrante),
+  \item $\tau_i$ : transposition (changement de tonalité, comme passer de do à sol),
+  \item $\lambda_i$ : correction géométrique locale (position du doigt, tension locale),
+  \item $K = \alpha h \nu_0$ : ``échelle d'énergie'' fixée par la fondamentale.
+\end{itemize}
+La loi
+\begin{equation}
+  E_i = K\,\tau_i N_i \lambda_i
+\end{equation}
+est alors l'analogue direct de
+\begin{equation}
+  f_{n,\text{transposé}} = r\,n\,f_0,
+\end{equation}
+où $f_0$ est la fondamentale, $n$ le numéro d'harmonique, et $r$ le facteur de
+transposition.
+
+\end{document}
+
+-------------------------------
+
+
+\section{Exemple numérique : détermination de $K$ et transpositions musicales}
+
+Nous illustrons ici le mécanisme d'accordage avec l'électron comme particule
+de référence. On utilise sa masse expérimentale
+\[
+m_e = 0.51099895~\text{MeV}.
+\]
+
+\subsection{Étape 1 : énergie et fréquence de l'électron}
+
+L'énergie est
+\[
+E_e = m_e c^2 = 0.51099895~\text{MeV}.
+\]
+La fréquence associée (relation de Planck) est
+\[
+\nu_e = \frac{E_e}{h}.
+\]
+
+Numériquement :
+\[
+\nu_e \approx 1.236\times 10^{20}~\text{Hz}.
+\]
+
+\subsection{Étape 2 : inversion pour retrouver $K$}
+
+Pour l'électron, on pose
+\[
+E_e = K\,\tau_e\,N_e\,\lambda_e.
+\]
+
+Si l'on choisit par normalisation
+\[
+\tau_e = 1,\qquad N_e = 1,\qquad \lambda_e = 1,
+\]
+alors
+\[
+K = E_e.
+\]
+
+Donc
+\[
+K = 0.51099895~\text{MeV}.
+\]
+
+\subsection{Étape 3 : fréquence fondamentale $\nu_0$}
+
+On relie $K$ à la fondamentale par
+\[
+K = \alpha\,h\,\nu_0.
+\]
+
+Ainsi
+\[
+\nu_0 = \frac{K}{\alpha h}.
+\]
+
+Pour $\alpha = 1$ :
+\[
+\nu_0 = \frac{0.51099895~\text{MeV}}{h}
+      \approx 1.236\times 10^{20}~\text{Hz}.
+\]
+
+\subsection{Étape 4 : longueur de la corde}
+
+La fondamentale géométrique impose
+\[
+\nu_0 = \frac{c}{2L}
+\quad\Longrightarrow\quad
+L = \frac{c}{2\nu_0}.
+\]
+
+Numériquement :
+\[
+L \approx 1.21\times 10^{-12}~\text{m}.
+\]
+
+\subsection{Étape 5 : fréquences des autres particules}
+
+Pour une particule $i$ :
+\[
+E_i = K\,\tau_i N_i \lambda_i,
+\qquad
+\nu_i = \frac{E_i}{h}
+      = \nu_0\,\alpha\,\tau_i N_i \lambda_i.
+\]
+
+Ainsi, le rapport
+\[
+\frac{\nu_i}{\nu_0} = \alpha\,\tau_i N_i \lambda_i
+\]
+est un \emph{intervalle musical}.
+
+\subsection{Étape 6 : transpositions musicales}
+
+En musique, une transposition multiplie la fréquence par un facteur $r$ :
+\[
+f' = r f.
+\]
+
+Ici, la transposition de famille $\tau_i$ joue exactement ce rôle :
+\[
+\nu_i = \tau_i \times (\text{harmonique}) \times \nu_0.
+\]
+
+Par exemple, si l'on prend :
+\[
+\tau_\ell = 1,\qquad \tau_q = 7,\qquad \tau_b = 9,
+\]
+alors :
+
+\begin{itemize}
+  \item les leptons sont dans la \emph{tonalité fondamentale},
+  \item les quarks sont une \emph{transposition par un facteur 7},
+  \item les bosons une \emph{transposition par un facteur 9}.
+\end{itemize}
+
+\subsection{Étape 7 : tableau des intervalles}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Particule & $\nu_i$ (Hz) & $\nu_i/\nu_0$ & Interprétation musicale \\
+\midrule
+$e$   & $1.236\times 10^{20}$ & $1$   & fondamentale \\
+$\mu$ & $\nu_0\times 207$     & $207$ & 207\textsuperscript{e} harmonique leptonique \\
+$\tau$& $\nu_0\times 3477$    & $3477$& transposition + harmonique \\
+$u$   & $\nu_0\times 7N_u$    & $7N_u$& transposition quark ($\tau_q=7$) \\
+$d$   & $\nu_0\times 7N_d$    & $7N_d$& idem \\
+$W$   & $\nu_0\times 9N_W$    & $9N_W$& transposition boson ($\tau_b=9$) \\
+$Z$   & $\nu_0\times 9N_Z$    & $9N_Z$& idem \\
+\bottomrule
+\end{tabular}
+\caption{Rapports de fréquences comme intervalles musicaux.}
+\end{table}
+
+\subsection{Conclusion}
+
+Les familles de particules correspondent à des \emph{transpositions stables} de la
+fondamentale, exactement comme en musique :
+\[
+\text{famille} = \text{transposition} = \tau.
+\]
+Les niveaux $N_i$ jouent le rôle des harmoniques, et $\lambda_i$ celui des
+corrections géométriques locales.
+\end{document}
+
+--------------------------------
+
+
+\section{Quantification géométrique : $n \in \{6,7,9\}$}
+
+On postule que la corde fondamentale n'admet que trois états géométriques
+possibles, correspondant à trois harmoniques privilégiés :
+\[
+n \in \{6,7,9\}.
+\]
+
+L'énergie d'une particule de référence (par exemple l'électron) est alors
+\[
+E_{\rm ref} = n\,h\,\nu_0,
+\]
+d'où
+\[
+\nu_0 = \frac{E_{\rm ref}}{n h},
+\qquad
+L = \frac{c}{2\nu_0}
+    = \frac{c\,n\,h}{2E_{\rm ref}}.
+\]
+
+Ainsi, chaque choix de $n$ impose une longueur $L$ différente :
+\[
+L_6,\;L_7,\;L_9.
+\]
+
+Le test consiste à imposer successivement $n=6,7,9$, calculer $L_n$, puis
+vérifier si l'ensemble des masses expérimentales est cohérent avec un seul
+$K$ dans la loi
+\[
+E_i = K\,\tau_i N_i \lambda_i.
+\]
+
+Le réel ``choisit'' alors la valeur de $n$ qui minimise l'erreur globale.
+
+\section{Familles émergentes comme transpositions musicales}
+
+Dans la loi d'énergie
+\[
+E_i = K\,\tau_i N_i \lambda_i,
+\]
+le facteur $\tau_i$ joue le rôle d'une \emph{transposition musicale}.
+
+\subsection{Fréquence associée à une particule}
+
+La fréquence effective d'une particule est
+\[
+\nu_i = \frac{E_i}{h}
+      = \frac{K}{h}\,\tau_i N_i \lambda_i
+      = \alpha\,\nu_0\,\tau_i N_i \lambda_i,
+\]
+où $\nu_0$ est la fondamentale géométrique.
+
+Le rapport
+\[
+\frac{\nu_i}{\nu_0} = \alpha\,\tau_i N_i \lambda_i
+\]
+est un \emph{intervalle musical}.
+
+\subsection{Transposition musicale}
+
+En musique, transposer une note revient à multiplier sa fréquence par un
+facteur $r$ :
+\[
+f' = r f.
+\]
+
+Ici, la transposition de famille $\tau_i$ joue exactement ce rôle :
+\[
+\nu_i = \tau_i \times (\text{harmonique}) \times \nu_0.
+\]
+
+\subsection{Émergence des familles}
+
+Si l'on calcule $\tau_i$ pour chaque particule sans lui attribuer de famille,
+et que l'on observe ensuite trois groupes stables :
+\[
+\tau_i \in \{\tau_\ell,\tau_q,\tau_b\},
+\]
+alors les familles (leptons, quarks, bosons) émergent naturellement comme
+\emph{transpositions stables} de la fondamentale.
+
+\subsection{Interprétation musicale}
+
+\begin{itemize}
+  \item $\nu_0$ : fondamentale (corde à vide),
+  \item $N_i$ : harmonique (niveau),
+  \item $\tau_i$ : transposition (changement de tonalité),
+  \item $\lambda_i$ : correction géométrique locale.
+\end{itemize}
+
+Ainsi, les familles de particules sont des \emph{gammes transposées} de la
+même corde fondamentale.

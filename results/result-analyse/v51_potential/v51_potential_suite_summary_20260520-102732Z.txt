@@ -1,0 +1,14 @@
+V51 potential suite summary
+timestamp: 20260520-102732Z
+v51_global_verdict: intrication_confirmed
+supported_count: 6/7
+intrication_confirmed_count: 1/7
+
+Items:
+- v51_definition: supported
+- v51_dynamics: supported
+- v51_consistency: supported
+- v51_cosmo: supported
+- v51_matter: supported
+- v51_photon: supported
+- v51_synthesis: intrication_confirmed

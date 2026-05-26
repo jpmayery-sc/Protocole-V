@@ -1,0 +1,9 @@
+V77C A=7 flux comparison
+delta_EM = 0.0
+- Li7_over_H = 5.240000e-10
+- Be7_over_H = 4.150000e-10
+- Li_total_over_H = 9.390000e-10
+delta_EM = -0.0069
+- Li7_over_H = 1.566465e-10
+- Be7_over_H = 1.329241e-10
+- Li_total_over_H = 2.895706e-10

@@ -1,0 +1,7 @@
+V41 discrete symmetry check
+timestamp: 20260519-155357Z
+verdict: supported
+Z2_Y_ok: False
+Z2_KT_ok: False
+discrete_symmetry_summary: The effective mix term breaks exact Y -> -Y and (K, T) -> (-K, -T) invariances, so discrete symmetries are classified as absent rather than contradictory.
+v41_discrete_verdict: supported

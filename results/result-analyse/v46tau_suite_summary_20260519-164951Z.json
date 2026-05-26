@@ -1,0 +1,41 @@
+{
+  "suite": "v46tau_suite",
+  "timestamp": "20260519-164951Z",
+  "v46_global_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "v46_tau_gminus2",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_gminus2_check_20260519-164950Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_gminus2_check_20260519-164950Z.txt"
+    },
+    {
+      "label": "v46_tau_decays",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_decays_check_20260519-164950Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_decays_check_20260519-164950Z.txt"
+    },
+    {
+      "label": "v46_tau_lfu",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_lfu_check_20260519-164950Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_lfu_check_20260519-164950Z.txt"
+    },
+    {
+      "label": "v46_tau_stability",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_stability_check_20260519-164950Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_stability_check_20260519-164950Z.txt"
+    },
+    {
+      "label": "v46_synthesis",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46synthesis_check_20260519-164951Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46synthesis_check_20260519-164951Z.txt"
+    }
+  ],
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46tau_suite_summary_20260519-164951Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46tau_suite_summary_20260519-164951Z.txt"
+}

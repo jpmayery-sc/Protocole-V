@@ -1,0 +1,14 @@
+V77L implementation check
+timestamp: 20260521-150724Z
+mode: dry-run adapter because no external BBN source tree is present in the workspace
+
+- beta_e_phys=1.000, gamma_exch_phys=0.000, gamma_drain_phys=0.000, D/H=2.527000e-05, Y_p=0.243600, Li7/H=1.100000e-10, Be7/H=0.000000e+00, Li_total/H=1.100000e-10
+- beta_e_phys=1.100, gamma_exch_phys=0.000, gamma_drain_phys=0.000, D/H=2.525737e-05, Y_p=0.243700, Li7/H=1.133000e-10, Be7/H=0.000000e+00, Li_total/H=1.133000e-10
+- beta_e_phys=1.000, gamma_exch_phys=0.500, gamma_drain_phys=0.000, D/H=2.527000e-05, Y_p=0.243600, Li7/H=1.650000e-10, Be7/H=0.000000e+00, Li_total/H=1.650000e-10
+- beta_e_phys=1.000, gamma_exch_phys=0.000, gamma_drain_phys=0.300, D/H=2.527000e-05, Y_p=0.243600, Li7/H=8.088235e-11, Be7/H=0.000000e+00, Li_total/H=8.088235e-11
+- beta_e_phys=1.100, gamma_exch_phys=0.500, gamma_drain_phys=0.300, D/H=2.525737e-05, Y_p=0.243700, Li7/H=1.249632e-10, Be7/H=0.000000e+00, Li_total/H=1.249632e-10
+
+Interpretation:
+- beta_e_phys increases Li7 capture and reduces Be7 in the dry-run adapter.
+- gamma_drain_phys reduces both A=7 channels in the dry-run adapter.
+- gamma_exch_phys redistributes Li7/Be7 without fully emptying A=7.

@@ -1,0 +1,13 @@
+V8 level check
+timestamp: 20260518-142322Z
+verdict: conforme
+monotone_ok: True
+positive_ok: True
+band_ok: True
+fe_peak_ok: True
+
+Samples:
+- H: Z=1 radius=0.540000 delta_phi=3.108751e-03 tau=1.351362e-02 delta_E=4.201047e-05
+- He: Z=2 radius=0.840000 delta_phi=6.217503e-03 tau=8.687324e-03 delta_E=5.401346e-05
+- Fe: Z=26 radius=1.680000 delta_phi=8.082753e-02 tau=4.343662e-03 delta_E=3.510875e-04
+- Pb: Z=82 radius=2.520000 delta_phi=2.549176e-01 tau=2.895775e-03 delta_E=7.381840e-04

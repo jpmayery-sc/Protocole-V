@@ -1,0 +1,22 @@
+V26 publication check
+{
+  "section": "V26-PUBLICATION",
+  "publication_structure": [
+    "Resume",
+    "Introduction",
+    "Axiomes fondamentaux",
+    "Geometrie emergente",
+    "Tubes quantiques",
+    "Spin & torsion",
+    "Lagrangien quantique",
+    "Cosmologie geometrique",
+    "Tests falsifiables",
+    "Discussion",
+    "Conclusion"
+  ],
+  "readyforsubmission": true,
+  "verdict": "supported",
+  "timestamp": "20260518-172750Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26publication_check_20260518-172750Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26publication_check_20260518-172750Z.txt"
+}

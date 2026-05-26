@@ -1,0 +1,16 @@
+{
+  "section": "V41-GEOMETRIC",
+  "source_v40_available": true,
+  "source_v40_supported": true,
+  "source_v40_timestamp": "20260519-154103Z",
+  "source_v40_supported_count": 4,
+  "source_v40_total": 4,
+  "D1D2_symmetry_ok": true,
+  "rescaling_symmetry_ok": true,
+  "geometric_symmetry_summary": "Sent(Y) keeps its effective relaxation form under D1/D2-like shifts of the asymptotic level, and K/T rescalings are absorbed into weak coupling redefinitions.",
+  "v41_geometric_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-155335Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41geometric_check_20260519-155335Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41geometric_check_20260519-155335Z.txt"
+}

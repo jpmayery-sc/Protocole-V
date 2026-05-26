@@ -1,0 +1,39 @@
+V79BIS temporal geometry report
+timestamp: 20260521-161006Z
+verdict: structural_pinch_persists
+best_fit_beta_e_phys: 1.0
+best_fit_gamma_exch_phys: 1.09
+best_fit_gamma_drain_phys: 0.64
+surface_verdict: structural_pinch_persists
+dominant_surface: S_BBN
+
+surface_summaries:
+- S_BBN: accepted=567, components=9, bottleneck=bande acceptable encore trop fine, metric=Li_total_surface/H
+  beta_span=(0.96, 1.04)
+  gamma_exch_span=(1.03, 1.15)
+  gamma_drain_span=(0.56, 0.72)
+- S_capture: accepted=567, components=9, bottleneck=bande acceptable encore trop fine, metric=Li_total_surface/H
+  beta_span=(0.96, 1.04)
+  gamma_exch_span=(1.03, 1.15)
+  gamma_drain_span=(0.56, 0.72)
+- S_proxy_obs: accepted=567, components=9, bottleneck=bande acceptable encore trop fine, metric=Li_total_surface/H
+  beta_span=(0.96, 1.04)
+  gamma_exch_span=(1.03, 1.15)
+  gamma_drain_span=(0.56, 0.72)
+
+Interpretation:
+- S_BBN keeps the standard BBN counting of Li7 + Be7.
+- S_capture and S_proxy_obs probe whether the Li band is sensitive to the observation surface in time.
+- if the accepted band expands at later surfaces, the pinch is temporal-geometric rather than purely structural.
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\v79bis_timeline_a7.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\v79bis_results_S_BBN.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\v79bis_results_S_capture.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\v79bis_results_S_proxy_obs.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\plots\v79bis_S_BBN_Litot_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\plots\v79bis_S_BBN_Li_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\plots\v79bis_S_capture_Litot_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\plots\v79bis_S_capture_Li_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\plots\v79bis_S_proxy_obs_Litot_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v79bis_temporal_geometry_a7\plots\v79bis_S_proxy_obs_Li_surface_gamma_phys.png

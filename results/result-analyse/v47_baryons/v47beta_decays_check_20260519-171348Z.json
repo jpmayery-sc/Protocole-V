@@ -1,0 +1,14 @@
+{
+  "section": "V47-BETA-DECAYS",
+  "source_v46_available": true,
+  "source_v46_supported": true,
+  "source_v46_timestamp": "20260519-164951Z",
+  "source_v46_supported_count": 5,
+  "source_v46_total": 5,
+  "beta_decay_shift": 0.0007,
+  "beta_decay_ok": true,
+  "verdict": "supported",
+  "timestamp": "20260519-171348Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47beta_decays_check_20260519-171348Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47beta_decays_check_20260519-171348Z.txt"
+}

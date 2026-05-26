@@ -1,0 +1,26 @@
+V7 coupling check
+timestamp: 20260517-213000Z
+verdict: conforme
+alpha0: 0.007297352569284
+aE: 5.649315032904030e-06
+amplitude: 0.080431478309018
+exponent: 4.945668155760043
+ar: 1.204803113021707e-05
+domain_ok: True
+partial_E_positive_ok: True
+partial_n_negative_ok: True
+partial_r_negative_ok: True
+stability_range: 8.026793e-05
+stability_surface_ok: True
+stability_band_ok: True
+
+Grid sample:
+- E=45.0 n=5 r=4.0 alpha=0.007582673793617
+- E=45.0 n=5 r=5.0 alpha=0.007582071392061
+- E=45.0 n=5 r=6.0 alpha=0.007581669791023
+- E=45.0 n=6 r=4.0 alpha=0.007565984891263
+- E=45.0 n=6 r=5.0 alpha=0.007565382489706
+- E=45.0 n=6 r=6.0 alpha=0.007564980888669
+- E=45.0 n=7 r=4.0 alpha=0.007559903018046
+- E=45.0 n=7 r=5.0 alpha=0.007559300616489
+- E=45.0 n=7 r=6.0 alpha=0.007558899015451

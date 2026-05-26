@@ -1,0 +1,14 @@
+JWST-04 galaxy formation pipeline summary
+timestamp: 20260522-153705Z
+verdict: jwst04_homogenized_supported
+chi2_m: 29187.858853177066
+chi2_sfr: 2628.5569799170776
+chi2_l: 79.2960631338773
+chi2_n: 88.09149499627459
+baseline_total_chi2: 2636270.6671180255
+total_chi2: 31983.803391224294
+delta_chi2: 2604286.8637268012
+mean_m_hom: 4000000000.0
+mean_sfr_hom: 32.0
+mean_l_hom: 17880000000.0
+mean_n_hom: 0.27

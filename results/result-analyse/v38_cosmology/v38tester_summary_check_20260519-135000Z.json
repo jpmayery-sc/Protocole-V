@@ -1,0 +1,21 @@
+{
+  "section": "V38-SYNTHESIS",
+  "hubble_summary": {
+    "v38_hubble_verdict": "supported",
+    "hubble_match_ok": true
+  },
+  "lambda_summary": {
+    "v38_lambda_verdict": "supported",
+    "lambda_match_ok": true
+  },
+  "growth_summary": {
+    "v38_growth_verdict": "inconclusive",
+    "growth_match_ok": false
+  },
+  "cosmology_consistency": false,
+  "v38_global_verdict": "partially_supported",
+  "verdict": "partially_supported",
+  "timestamp": "20260519-135000Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38tester_summary_check_20260519-135000Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38tester_summary_check_20260519-135000Z.txt"
+}

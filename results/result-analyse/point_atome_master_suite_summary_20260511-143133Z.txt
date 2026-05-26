@@ -1,0 +1,10 @@
+Point Atome master suite summary
+timestamp: 20260511-143133Z
+overall_verdict: partiel
+supported_count: 3/4
+
+Items:
+- point_atome_protocol: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_protocol_suite_summary_20260511-143132Z.json
+- d1d4: unknown -> None
+- electron5_core: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_core\electron5_core_suite_summary_20260511-143133Z.json
+- electron5_extended: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_extended\electron5_extended_suite_summary_20260511-143133Z.json

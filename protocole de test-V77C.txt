@@ -1,0 +1,234 @@
+V77C — AUTOPSIE DU CANAL A=7 (MODE RECHERCHE)
+Version : 1.0 — Niveau moteur
+Auteur : Jean-Philippe
+Objet : comprendre pourquoi Li_total reste verrouillé trop haut dans le proxy V80/V77B
+ 
+Protocole précédent : V77B
+Protocole suivant : V78R (si un verrou structurel est identifié)
+ 
+Wrapper global suggéré :
+- python/scripts/runv77c_a7_autopsy.py
+ 
+CONTENU :
+- 0. Objectif
+- 1. Hypothèses
+- 2. Ce qu’on sait déjà (faits établis)
+- 3. Questions de recherche
+- 4. Pipeline V77C
+- 5. Sorties attendues
+- 6. Transition
+ 
+0. OBJECTIF
+-----------
+Passer en mode recherche fondamentale sur le cœur BBN A=7.
+ 
+V77C ne cherche pas à “réparer” le lithium, mais à :
+- identifier la cause structurelle qui empêche Li_total de descendre,
+- localiser le “verrou” dans le proxy A=7 (Li-7, Be-7, destructions, normalisations),
+- préparer une éventuelle révision profonde du modèle (V78R).
+ 
+V77C est une AUTOPSIE du moteur A=7, pas un pipeline de calibration.
+ 
+ 
+1. HYPOTHÈSES
+-------------
+- On ne touche plus aux paramètres globaux :
+  - ε_best = -0.0069
+  - δ_EM = -0.0069 (point de référence)
+  - k_G, k_T, k_n = valeurs V83
+- On ne joue plus sur :
+  - α_Be
+  - variations de taux Li/Be
+- On se concentre sur :
+  - la structure interne du proxy BBN A=7,
+  - les flux de production/destruction Li-7 / Be-7,
+  - la façon dont Li_total est construit.
+ 
+ 
+2. CE QU’ON SAIT DÉJÀ (FAITS ÉTABLIS)
+-------------------------------------
+Issu de V77 et V77B :
+ 
+- Li-7/H réagit bien à δ_EM :
+  → Li-7/H peut être placé dans la fenêtre observationnelle.
+- Be-7/H réagit un peu, mais reste élevée.
+- Li_total = Li-7/H + Be-7/H reste systématiquement trop haut.
+- α_Be (pondération EM spécifique Be-7) ne change pas qualitativement Li_total.
+- ±5% sur les taux Li/Be ne suffisent pas à faire passer Li_total.
+- 0/225 cas où Li_total passe dans V77B.
+ 
+Conclusion :
+- le problème n’est pas un réglage fin,
+- le problème est STRUCTUREL dans la façon dont le proxy A=7 est construit.
+ 
+ 
+3. QUESTIONS DE RECHERCHE
+-------------------------
+V77C doit répondre à :
+ 
+1) Comment le proxy V80 modélise-t-il exactement :
+   - la production de Li-7,
+   - la production de Be-7,
+   - la destruction de Li-7,
+   - la destruction de Be-7,
+   - la construction de Li_total ?
+ 
+2) Existe-t-il un “verrou” structurel :
+   - corrélation trop forte Li-7 / Be-7,
+   - normalisation interne A=7,
+   - destruction A=7 mal modélisée,
+   - compression des canaux dans un terme effectif trop rigide ?
+ 
+3) Quel canal, s’il est coupé ou modifié artificiellement, fait enfin descendre Li_total ?
+ 
+ 
+4. PIPELINE V77C
+----------------
+ 
+4.1 Extraction des équations internes A=7
+----------------------------------------
+Objectif : rendre explicite ce qui est implicite dans le code.
+ 
+Actions :
+- Documenter dans un bloc texte / log :
+  - les équations ou règles utilisées pour :
+    - Li-7 production,
+    - Li-7 destruction,
+    - Be-7 production,
+    - Be-7 destruction,
+    - Li_total.
+- Si le proxy utilise des “termes effectifs” (par ex. un seul terme pour A=7),
+  - les expliciter clairement.
+ 
+Sortie :
+- un dump textuel “V77C_A7_STRUCTURE.txt” décrivant le moteur A=7.
+ 
+ 
+4.2 Tracé des flux internes (δ_EM = 0 et δ_EM = -0.0069)
+--------------------------------------------------------
+Objectif : voir qui domine dans le budget A=7.
+ 
+Actions :
+- Pour δ_EM = 0 :
+  - calculer les contributions relatives :
+    - flux vers Li-7 direct,
+    - flux vers Be-7,
+    - flux de destruction Li-7,
+    - flux de destruction Be-7.
+- Pour δ_EM = -0.0069 :
+  - refaire la même chose.
+- Comparer :
+  - quels flux augmentent / diminuent,
+  - si le flux total A=7 est “rigide”.
+ 
+Sortie :
+- un fichier “V77C_A7_FLUXES.txt” avec les flux comparés (δ_EM = 0 et δ_EM = -0.0069).
+ 
+ 
+4.3 Chirurgie numérique : coupure de canaux
+-------------------------------------------
+Objectif : identifier le canal qui verrouille Li_total.
+ 
+Actions (tests artificiels, non physiques, mais diagnostiques) :
+ 
+- Test 1 : couper la production Be-7
+  - mettre à zéro (ou réduire fortement) le terme de production Be-7,
+  - recalculer Li-7/H, Be-7/H, Li_total,
+  - observer si Li_total descend dans la fenêtre.
+ 
+- Test 2 : couper la destruction Be-7
+  - supprimer (ou réduire fortement) la destruction Be-7,
+  - observer si Li_total explose.
+ 
+- Test 3 : couper la destruction Li-7
+  - supprimer (ou réduire fortement) la destruction Li-7,
+  - observer si Li_total explose.
+ 
+- Test 4 : couper simultanément certains canaux croisés (si présents).
+ 
+But :
+- si couper un canal fait descendre Li_total → ce canal est un candidat “verrou”,
+- si rien ne change vraiment → le verrou est ailleurs (normalisation, structure globale).
+ 
+Sortie :
+- un fichier “V77C_A7_SURGERY.txt” listant :
+  - les scénarios testés,
+  - les valeurs Li-7/H, Be-7/H, Li_total associées.
+ 
+ 
+4.4 Recherche de normalisation / saturation interne A=7
+-------------------------------------------------------
+Objectif : vérifier si le proxy impose implicitement un plateau A=7.
+ 
+Actions :
+- Inspecter le code pour :
+  - facteurs de normalisation spécifiques à A=7,
+  - saturations numériques (min/max),
+  - contraintes du type “A=7 fixé par une fraction constante”.
+- Tester :
+  - un cas où on autorise explicitement Li_total à descendre librement
+    (par exemple en retirant une normalisation ou un facteur commun).
+ 
+Sortie :
+- un fichier “V77C_A7_NORMALISATION.txt” indiquant :
+  - s’il existe une normalisation interne A=7,
+  - si oui, son rôle dans le verrouillage de Li_total.
+ 
+ 
+4.5 Comparaison qualitative avec un schéma BBN standard
+-------------------------------------------------------
+Objectif : vérifier si le proxy A=7 est qualitativement cohérent.
+ 
+Actions :
+- Comparer, au moins qualitativement, avec la littérature BBN :
+  - dans un code BBN standard, Be-7 domine-t-il la production A=7 ?
+  - la destruction A=7 est-elle importante ?
+- Vérifier si le proxy :
+  - respecte cette hiérarchie,
+  - ou simplifie trop (par ex. un seul terme effectif A=7).
+ 
+Sortie :
+- un fichier “V77C_A7_COMPARISON.txt” avec :
+  - une comparaison qualitative,
+  - une conclusion : “proxy A=7 réaliste / trop compressé / à revoir”.
+ 
+ 
+5. SORTIES ATTENDUES
+--------------------
+V77C doit produire au minimum :
+ 
+- V77C_A7_STRUCTURE.txt
+  → description explicite des équations / règles A=7.
+ 
+- V77C_A7_FLUXES.txt
+  → flux internes Li-7 / Be-7 (production / destruction) pour δ_EM = 0 et δ_EM = -0.0069.
+ 
+- V77C_A7_SURGERY.txt
+  → résultats des tests de coupure de canaux (Li-7, Be-7).
+ 
+- V77C_A7_NORMALISATION.txt
+  → diagnostic sur la présence d’une normalisation / saturation A=7.
+ 
+- V77C_A7_COMPARISON.txt
+  → comparaison qualitative avec un schéma BBN standard.
+ 
+Et surtout :
+- une phrase claire du testeur sur :
+  > “Quel est, selon lui, le verrou structurel qui empêche Li_total de descendre ?”
+ 
+ 
+6. TRANSITION
+-------------
+- Si V77C identifie clairement un verrou (par ex. :
+  - production Be-7 trop rigide,
+  - destruction A=7 mal modélisée,
+  - normalisation interne A=7),
+  → V78R pourra proposer une refonte ciblée du proxy A=7.
+ 
+- Si V77C ne trouve pas de verrou clair :
+  → il faudra envisager que le proxy V80 est trop simplifié pour traiter A=7,
+    et qu’un passage à un schéma BBN plus réaliste (ou import d’un code externe) est nécessaire.
+ 
+V77C est un protocole de RECHERCHE, pas de validation.
+Il doit éclairer où le modèle pêche, pas le sauver.
+ 

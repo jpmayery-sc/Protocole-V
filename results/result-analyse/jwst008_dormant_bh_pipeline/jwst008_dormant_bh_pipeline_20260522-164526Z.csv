@@ -1,0 +1,9 @@
+metric,value
+verdict,jwst08_dormant_bh_supported
+chi2_broad_ha,0.05046266071494085
+chi2_lbol,19.438752773412677
+chi2_ratio,1.1257168133162367
+chi2_compactness,4.379792527879032
+baseline_total_chi2,233.71701274104754
+total_chi2,24.99472477532289
+delta_chi2,208.72228796572466

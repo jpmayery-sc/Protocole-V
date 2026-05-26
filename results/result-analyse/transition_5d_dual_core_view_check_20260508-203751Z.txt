@@ -1,0 +1,34 @@
+Vue a deux noyaux sur le bloc de transition 5d
+Timestamp: 20260508-203751Z
+
+Hypothese: the 5d block is best read as two local regimes plus anomalies, not one repaired core
+Cas de controle: full 5d block Hf -> Hg versus early core Hf -> W and late core Os -> Hg
+Observable: whether splitting the block into two cores improves the regularity signal
+Verdict: supported
+
+Bloc complet:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Noyau precoce Hf -> W:
+- radius_trend: decreasing
+- ionization_trend: increasing
+- zeff_trend: increasing
+- mass_trend: increasing
+
+Noyau tardif Os -> Hg:
+- radius_trend: increasing
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Falsificateurs:
+- the full 5d block is already regular
+- the split into two cores does not change the regularity picture
+- neither core is more regular than the full block
+
+Reference: 5d block anomalies around Re, Ir, Pt and Hg
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_5d_dual_core_view_check_20260508-203751Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_5d_dual_core_view_check_20260508-203751Z.txt

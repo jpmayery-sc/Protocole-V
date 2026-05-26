@@ -1,0 +1,14 @@
+Contrôle électromagnétique: induction et auto-induction
+Timestamp: 20260512-115925Z
+
+Tests:
+- Flux constant: conforme strict
+- Symétrie de signe: conforme strict
+- Réponse plus forte à variation rapide: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- une tension notable apparaît à flux constant
+- le signe de la réponse ne suit pas la variation de flux
+- une variation rapide ne produit pas une réponse plus forte

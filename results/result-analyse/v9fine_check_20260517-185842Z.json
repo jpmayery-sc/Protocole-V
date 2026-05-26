@@ -1,0 +1,54 @@
+{
+  "timestamp": "20260517-185842Z",
+  "hypothesis": "la torsion D2, la porte alpha et le canal electronique produisent des corrections fines sensibles a Z",
+  "case_control": "Fe, Xe, Pb, U",
+  "observable": "delta E_torsion(Z) et sensibility score",
+  "expected": "croissance reguliere et amplitude realiste dans la bande 10^-6 a 10^-3 eV",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "base_delta_phi": 0.0031087512698201886,
+    "monotone_ok": true,
+    "band_ok": true,
+    "high_sensitivity_ok": true
+  },
+  "samples": [
+    {
+      "name": "Fe",
+      "z": 26,
+      "band": 3,
+      "radius_proxy": 1.6757450735341242,
+      "delta_energy": 0.00035197895851444465,
+      "kappa_gap": 0.00022666666666666663,
+      "sensitivity_score": 1.552848346387256
+    },
+    {
+      "name": "Xe",
+      "z": 54,
+      "band": 4,
+      "radius_proxy": 2.260601999370879,
+      "delta_energy": 0.0005419022543152667,
+      "kappa_gap": 6.190995993001771e-05,
+      "sensitivity_score": 8.753070667915576
+    },
+    {
+      "name": "Pb",
+      "z": 82,
+      "band": 6,
+      "radius_proxy": 2.7044001359157286,
+      "delta_energy": 0.0006878507395094548,
+      "kappa_gap": 6.0818732172828555e-06,
+      "sensitivity_score": 113.09850023752382
+    },
+    {
+      "name": "U",
+      "z": 92,
+      "band": 6,
+      "radius_proxy": 2.8438323921226143,
+      "delta_energy": 0.0007338970397345358,
+      "kappa_gap": 6.0818732172828555e-06,
+      "sensitivity_score": 120.66957227076372
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V7 electron channel + V8 level shift"
+}

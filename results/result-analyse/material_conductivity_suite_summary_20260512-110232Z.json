@@ -1,0 +1,18 @@
+{
+  "suite": "material_conductivity",
+  "timestamp": "20260512-110232Z",
+  "overall_verdict": "supported",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "material_conductivity",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_check_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_check_20260512-110232Z.txt",
+      "hypothesis": "copper, iron, aluminum, and silicon occupy distinct conductivity regimes under the expected perturbations"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_suite_summary_20260512-110232Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_suite_summary_20260512-110232Z.txt"
+}

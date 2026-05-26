@@ -1,0 +1,177 @@
+{
+  "suite": "jwst007_smbh_pipeline",
+  "timestamp": "20260522-164213Z",
+  "verdict": "jwst07_smbh_precoces_supported",
+  "redshift_bins": [
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0
+  ],
+  "growth_window_myr": [
+    600.0,
+    525.0,
+    450.0,
+    375.0,
+    300.0
+  ],
+  "observed": {
+    "redshift_bins": [
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0
+    ],
+    "mbh_log_hom": [
+      7.32,
+      7.48,
+      7.67,
+      7.86,
+      8.02
+    ],
+    "lbol_log_hom": [
+      45.92,
+      46.06,
+      46.22,
+      46.39,
+      46.52
+    ],
+    "ratio_hom": [
+      0.012,
+      0.015,
+      0.018,
+      0.021,
+      0.024
+    ],
+    "compactness_hom": [
+      0.82,
+      0.79,
+      0.76,
+      0.72,
+      0.68
+    ]
+  },
+  "sigma": {
+    "mbh_log_hom": [
+      0.1,
+      0.1,
+      0.1,
+      0.11,
+      0.11
+    ],
+    "lbol_log_hom": [
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.12
+    ],
+    "ratio_hom": [
+      0.0025,
+      0.0025,
+      0.0025,
+      0.0025,
+      0.003
+    ],
+    "compactness_hom": [
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+    ]
+  },
+  "model": {
+    "mbh_log_mod": [
+      7.873416730864038,
+      7.7017282360240324,
+      7.564911415288761,
+      7.371059483903825,
+      7.13021244891346
+    ],
+    "lbol_log_mod": [
+      46.32861135153182,
+      46.216245998978586,
+      46.14731161159104,
+      46.04220480107648,
+      45.884198026805095
+    ],
+    "ratio_mod": [
+      0.013030180488554118,
+      0.013028186653861207,
+      0.013267311453939497,
+      0.0126869294544399,
+      0.01163419221927413
+    ],
+    "compactness_mod": [
+      0.7787757454006373,
+      0.7631810041647592,
+      0.7515,
+      0.7398189958352407,
+      0.7242242545993627
+    ],
+    "seed_log": 4.4,
+    "accretion_eff": 0.55,
+    "inflow_rate": 0.5,
+    "compactness_d2": 0.85,
+    "dynamical_cohesion": 0.85,
+    "growth_drive": 0.6415,
+    "lbol0": 45.55,
+    "lbol_boost": 0.21,
+    "lbol_slope": 0.55,
+    "ratio0": 0.009,
+    "ratio_slope": 1.0,
+    "c0": 0.7,
+    "c_slope": 0.8
+  },
+  "baseline": {
+    "mbh_log_mod": [
+      7.92,
+      7.84,
+      7.76,
+      7.68,
+      7.6
+    ],
+    "lbol_log_mod": [
+      45.6,
+      45.690000000000005,
+      45.78,
+      45.870000000000005,
+      45.96
+    ],
+    "ratio_mod": [
+      0.034,
+      0.0325,
+      0.031,
+      0.029500000000000002,
+      0.028
+    ],
+    "compactness_mod": [
+      0.64,
+      0.63,
+      0.62,
+      0.61,
+      0.6
+    ]
+  },
+  "chi2_mbh": 121.83652929640178,
+  "chi2_lbol": 50.12953473053861,
+  "chi2_ratio": 32.42312418241683,
+  "chi2_compactness": 5.377249995189193,
+  "baseline_chi2_mbh": 67.02619834710737,
+  "baseline_chi2_lbol": 70.61805555555519,
+  "baseline_chi2_ratio": 166.8177777777778,
+  "baseline_chi2_compactness": 106.7777777777778,
+  "total_chi2": 209.7664382045464,
+  "baseline_total_chi2": 411.23980945821813,
+  "delta_chi2": 201.47337125367173,
+  "mean_mbh_log_hom": 7.67,
+  "mean_lbol_log_hom": 46.222,
+  "mean_ratio_hom": 0.018,
+  "mean_compactness_hom": 0.754,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst007_smbh_pipeline\\jwst007_smbh_pipeline_20260522-164213Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst007_smbh_pipeline\\jwst007_smbh_pipeline_20260522-164213Z.txt",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst007_smbh_pipeline\\jwst007_smbh_pipeline_20260522-164213Z.csv"
+}

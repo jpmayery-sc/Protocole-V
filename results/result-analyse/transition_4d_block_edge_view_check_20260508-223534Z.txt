@@ -1,0 +1,28 @@
+Bloc + bord de serie sur le bloc de transition 4d
+Timestamp: 20260508-223534Z
+
+Hypothese: the 4d transition block benefits from a block-and-edge view to isolate the usable core
+Cas de controle: full 4d block Y -> Cd versus a repaired core excluding the strongest local anomalies
+Observable: trend repair and regularity change after removing local anomalies
+Verdict: partiel
+
+Bloc complet:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Noyau repare:
+- radius_trend: mixed
+- ionization_trend: increasing
+- zeff_trend: increasing
+- mass_trend: increasing
+
+Falsificateurs:
+- the full 4d block is already regular
+- the repaired core does not improve regularity
+- Z_eff is not more regular than mass in the repaired core
+
+Reference: 4d block with local anomalies around Pd and Ag
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_4d_block_edge_view_check_20260508-223534Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_4d_block_edge_view_check_20260508-223534Z.txt

@@ -1,0 +1,3 @@
+rho0=4.855632e+08 Msun/kpc^3
+V_disk_at_15.0kpc=117.289402 km/s
+V_em_required=161.997519 km/s

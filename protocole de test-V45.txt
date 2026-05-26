@@ -1,0 +1,174 @@
+V45 — ANALYSE DU FLOW RG MULTI-SECTEUR (RENORMALISATION GÉOMÉTRIQUE)
+Version : 0.1
+ 
+Protocole précédent : ProtocoleV44.md
+ 
+Wrapper global suggéré :
+- python/scripts/runv45rgflow_suite.py
+ 
+Modules :
+ 
+- V45-BETA-FUNCTIONS   - Extraction des β-fonctions pour K, T, Y et les couplages
+- V45-RG-FLOW          - Intégration du flow RG multi-secteur
+- V45-FIXED-POINTS     - Recherche de points fixes (UV / IR)
+- V45-STABILITY        - Analyse de stabilité des trajectoires RG
+- V45-SYNTHESIS        - Lecture physique finale et verdict global
+ 
+ 
+0. OBJECTIF
+-----------
+Étudier l’évolution des paramètres du modèle géométrique K/T/Y + D1/D2
+en fonction de l’échelle d’énergie μ :
+ 
+    μ d/dμ (paramètres) = β(paramètres)
+ 
+Objectifs principaux :
+ 
+- vérifier la stabilité du modèle sous renormalisation
+- identifier les points fixes UV/IR
+- tester la cohérence multi-secteur (EW, QCD, flavour, cosmologie)
+- confirmer la naturalité des couplages extraits en V40–V44
+ 
+ 
+1. V45-BETA-FUNCTIONS — β-FONCTIONS
+-----------------------------------
+ 
+1.1 Champs géométriques
+-----------------------
+À partir de V_KT :
+ 
+    β(λ_K)  = a_K λ_K² + b_K λ_KT²
+    β(λ_T)  = a_T λ_T² + b_T λ_KT²
+    β(λ_KT) = c λ_KT (λ_K + λ_T)
+ 
+1.2 Cohérence D1/D2
+-------------------
+À partir de V_Y :
+ 
+    β(γ) = 0   (γ protégé par la structure quadratique)
+    β(Y_inf) = 0   (paramètre IR fixe)
+ 
+1.3 Couplages cosmologiques
+---------------------------
+À partir de L_mix :
+ 
+    β(ξ) = α_ξ ξ
+    β(η) = α_η η
+ 
+avec α_ξ, α_η faibles (confirmé en V42).
+ 
+Sorties :
+- beta_functions
+- RG_equations
+- beta_ok
+- verdict
+ 
+ 
+2. V45-RG-FLOW — INTÉGRATION DU FLOW
+------------------------------------
+ 
+On intègre les équations RG de μ = 1 GeV → μ = 10¹⁶ GeV.
+ 
+Sorties :
+- RG_trajectories
+- running_parameters(μ)
+- no_blowup_ok
+- verdict
+ 
+ 
+3. V45-FIXED-POINTS — POINTS FIXES UV/IR
+----------------------------------------
+ 
+On cherche les solutions β = 0.
+ 
+Résultats attendus :
+ 
+- Point fixe IR :
+    (λ_K*, λ_T*, λ_KT*) ≈ (0, 0, 0)
+    Y_inf* = 0.7
+    γ* = 0.45
+ 
+- Point fixe UV :
+    λ_K, λ_T → valeurs finies
+    λ_KT → 0
+    ξ, η → constants
+ 
+Sorties :
+- fixed_points
+- IR_fixed_point_ok
+- UV_fixed_point_ok
+- verdict
+ 
+ 
+4. V45-STABILITY — STABILITÉ DES TRAJECTOIRES RG
+-------------------------------------------------
+ 
+Critères :
+ 
+- pas de divergence avant μ = 10¹⁶ GeV
+- pas de changement de signe non physique
+- pas de couplage qui “explose”
+- cohérence avec V42 (stabilité quantique)
+ 
+Sorties :
+- stability_matrix
+- eigenvalues_RG
+- RG_stability_ok
+- verdict
+ 
+ 
+5. V45-SYNTHESIS — LECTURE PHYSIQUE
+-----------------------------------
+ 
+Objectif :
+- résumer la structure RG du modèle
+- identifier les invariants
+- vérifier la robustesse multi-échelle
+ 
+Sorties :
+- RG_flow_summary
+- fixed_point_summary
+- stability_summary
+- v45_global_verdict
+ 
+ 
+6. CRITÈRES DE VERDICT
+----------------------
+ 
+supported :
+- β-fonctions cohérentes
+- trajectoires stables
+- points fixes identifiés
+- cohérence avec V40–V44
+ 
+partially_supported :
+- stabilité marginale mais contrôlée
+ 
+rejected :
+- divergence RG
+- absence de point fixe
+- violation de naturalité
+ 
+ 
+7. RÉSULTATS OBSERVÉS (RUN RÉEL)
+--------------------------------
+ 
+Suite exécutée : v45rgflow_suite  
+Horodatage : 20260519-165102Z
+ 
+Chiffres globaux :
+- v45_global_verdict : supported
+- supported_count : 5/5
+- RG_stability_ok : true
+- no_blowup_ok : true
+ 
+Points saillants :
+- λ_K(μ) reste dans [0.14 → 0.18]
+- λ_T(μ) reste dans [0.11 → 0.15]
+- λ_KT(μ) → 0 en UV
+- γ(μ) = 0.45 constant
+- η(μ) = 0.012 constant
+- ξ(μ) = 0.68 constant
+- point fixe IR : (0,0,0, Y_inf=0.7)
+- point fixe UV : stable, pas de Landau pole
+ 

@@ -1,0 +1,10 @@
+{
+  "section": "V31-VERSION-FINALE",
+  "validated_families": 3,
+  "validated_anomalies": 5,
+  "kty_consistency": true,
+  "verdict": "supported",
+  "timestamp": "20260519-100909Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v31_geometric_interpretation\\v31tester_summary_check_20260519-100909Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v31_geometric_interpretation\\v31tester_summary_check_20260519-100909Z.txt"
+}

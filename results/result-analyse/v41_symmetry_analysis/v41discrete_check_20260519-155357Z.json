@@ -1,0 +1,16 @@
+{
+  "section": "V41-DISCRETE",
+  "source_v40_available": true,
+  "source_v40_supported": true,
+  "source_v40_timestamp": "20260519-154103Z",
+  "source_v40_supported_count": 4,
+  "source_v40_total": 4,
+  "Z2_Y_ok": false,
+  "Z2_KT_ok": false,
+  "discrete_symmetry_summary": "The effective mix term breaks exact Y -> -Y and (K, T) -> (-K, -T) invariances, so discrete symmetries are classified as absent rather than contradictory.",
+  "v41_discrete_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-155357Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41discrete_check_20260519-155357Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41discrete_check_20260519-155357Z.txt"
+}

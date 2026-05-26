@@ -1,0 +1,10 @@
+V28 simulation HPC check
+{
+  "section": "V28-SIMULATION-HPC",
+  "hpcsimulationok": true,
+  "multiscalehpcoutput": true,
+  "verdict": "supported",
+  "timestamp": "20260518-194553Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28simulationhpc_check_20260518-194553Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28simulationhpc_check_20260518-194553Z.txt"
+}

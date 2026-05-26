@@ -1,0 +1,660 @@
+{
+  "suite": "experience4_global",
+  "timestamp": "20260519-174404Z",
+  "overall_verdict": "partiel",
+  "supported_count": 8,
+  "total": 10,
+  "items": [
+    {
+      "label": "atom_basics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260519-174231Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260519-174231Z.txt",
+      "items": [
+        {
+          "label": "neutral_atom",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260519-174230Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260519-174230Z.txt"
+        },
+        {
+          "label": "iron_rust",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260519-174231Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260519-174231Z.txt"
+        },
+        {
+          "label": "h_fe_pb",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260519-174231Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260519-174231Z.txt"
+        },
+        {
+          "label": "nzstability",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260519-174231Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260519-174231Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "point_atome_protocol",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260519-174235Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260519-174235Z.txt",
+      "items": [
+        {
+          "label": "saturation_magnetic",
+          "verdict": "conforme strict",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260519-174232Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260519-174232Z.txt",
+          "items": [
+            {
+              "label": "strong_nonlinear_magnetic_response",
+              "verdict": "conforme strict",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_nonlinear_magnetic_response_check_20260519-174232Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_nonlinear_magnetic_response_check_20260519-174232Z.txt",
+              "hypothesis": "the magnetic response saturates at strong drive while remaining linear at low field"
+            }
+          ]
+        },
+        {
+          "label": "omega_structure",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_structure_suite_summary_20260519-174232Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_structure_suite_summary_20260519-174232Z.txt",
+          "items": [
+            {
+              "label": "omega_z_structure",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260519-174232Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260519-174232Z.txt",
+              "hypothesis": "Omega(Z) improves the reading of heavy series by adding torsion, curvature and a normalized internal radius"
+            }
+          ]
+        },
+        {
+          "label": "heavy_border",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_suite_summary_20260519-174232Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_suite_summary_20260519-174232Z.txt",
+          "items": [
+            {
+              "label": "heavy_border_control",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260519-174232Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260519-174232Z.txt",
+              "hypothesis": "Fr / Ra / Lr must remain separated at the heavy border and not collapse into one class"
+            }
+          ]
+        },
+        {
+          "label": "atom_basics",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260519-174233Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260519-174233Z.txt",
+          "items": [
+            {
+              "label": "neutral_atom",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260519-174232Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260519-174232Z.txt"
+            },
+            {
+              "label": "iron_rust",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260519-174232Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260519-174232Z.txt"
+            },
+            {
+              "label": "h_fe_pb",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260519-174233Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260519-174233Z.txt"
+            },
+            {
+              "label": "nzstability",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260519-174233Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260519-174233Z.txt"
+            }
+          ]
+        },
+        {
+          "label": "regime_physics",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260519-174235Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260519-174235Z.txt",
+          "items": [
+            {
+              "label": "atomique",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260519-174233Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260519-174233Z.txt",
+              "hypothesis": "D1 dominates in the atomic regime while D4 stays negligible"
+            },
+            {
+              "label": "metal",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260519-174234Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260519-174234Z.txt",
+              "hypothesis": "Metals keep D4 moderate, below D1, while the Fermi scale stays in the few-eV window"
+            },
+            {
+              "label": "lanthanide",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260519-174234Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260519-174234Z.txt",
+              "hypothesis": "Lanthanides require D3 and do not collapse to D1-only reading"
+            },
+            {
+              "label": "dense",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260519-174234Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260519-174234Z.txt",
+              "hypothesis": "Dense matter admits a local D1 ~= D4 balance that moves continuously with density"
+            },
+            {
+              "label": "flow",
+              "verdict": "supported",
+              "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_flow_check_20260519-174234Z.json",
+              "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_flow_check_20260519-174234Z.txt",
+              "hypothesis": "The D1 / D2 / D3 / D4 grid stays ordered across atomic, metallic, lanthanide, and dense regimes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "point_atome_master",
+      "verdict": "partiel",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260519-174310Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260519-174310Z.txt",
+      "items": [
+        {
+          "label": "point_atome_protocol",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260519-174238Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260519-174238Z.txt",
+          "summary": null
+        },
+        {
+          "label": "atom_basics",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260519-174240Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260519-174240Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v8atomicsuite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v8atomicsuite_summary_20260519-174241Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v8atomicsuite_summary_20260519-174241Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v9atomicsuite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v9atomicsuite_summary_20260519-174242Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v9atomicsuite_summary_20260519-174242Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v10atomdynamics_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v10atomdynamics_suite_summary_20260519-174243Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v10atomdynamics_suite_summary_20260519-174243Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v11redshift_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v11redshift_suite_summary_20260519-174245Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v11redshift_suite_summary_20260519-174245Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v12falsifier_suite",
+          "verdict": "falsified",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12falsifier_suite_summary_20260519-174246Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12falsifier_suite_summary_20260519-174246Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v13mcmc_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_suite_summary_20260519-174248Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_suite_summary_20260519-174248Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v14reduction_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduction_suite_summary_20260519-174254Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduction_suite_summary_20260519-174254Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v15consolidation_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15consolidation_suite_summary_20260519-174255Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15consolidation_suite_summary_20260519-174255Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v16prediction_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v16prediction_suite_summary_20260519-174256Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v16prediction_suite_summary_20260519-174256Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v17validation_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v17validation_suite_summary_20260519-174258Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v17validation_suite_summary_20260519-174258Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v18calibration_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibration_suite_summary_20260519-174259Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibration_suite_summary_20260519-174259Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v19metacalibration_suite",
+          "verdict": "partiel",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19metacalibration_suite_summary_20260519-174301Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19metacalibration_suite_summary_20260519-174301Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v20research_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20research_suite_summary_20260519-174302Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20research_suite_summary_20260519-174302Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v21borderline_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v21borderline_suite_summary_20260519-174304Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v21borderline_suite_summary_20260519-174304Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v22theory_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22theory_suite_summary_20260519-174306Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22theory_suite_summary_20260519-174306Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v22experiment_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22experiment_suite_summary_20260519-174307Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22experiment_suite_summary_20260519-174307Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v22simulation_suite",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22simulation_suite_summary_20260519-174309Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22simulation_suite_summary_20260519-174309Z.txt",
+          "summary": null
+        },
+        {
+          "label": "d1d4",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260519-174309Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260519-174309Z.txt",
+          "summary": null
+        },
+        {
+          "label": "electron5_core",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260519-174310Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260519-174310Z.txt",
+          "summary": null
+        },
+        {
+          "label": "electron5_extended",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260519-174310Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260519-174310Z.txt",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "label": "s_law_master",
+      "verdict": "partiel",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\s_law_master_suite_summary_20260519-174353Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\s_law_master_suite_summary_20260519-174353Z.txt",
+      "items": [
+        {
+          "label": "screening_law_saturation",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260519-174310Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260519-174310Z.txt",
+          "summary": null
+        },
+        {
+          "label": "radius_predictivity",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260519-174311Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260519-174311Z.txt",
+          "summary": null
+        },
+        {
+          "label": "fine_variation_equivalence",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_equivalence_check_20260519-174311Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_equivalence_check_20260519-174311Z.txt",
+          "summary": null
+        },
+        {
+          "label": "family_l_slope",
+          "role": "falsifier",
+          "verdict": "falsifie",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260519-174311Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260519-174311Z.txt",
+          "summary": null
+        },
+        {
+          "label": "regime_physics",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260519-174312Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260519-174312Z.txt",
+          "summary": null
+        },
+        {
+          "label": "alpha_phase_observable",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\result-analyse\\alpha_phase_observable_check_20260519-174312Z.json",
+          "txt_path": null,
+          "summary": null
+        },
+        {
+          "label": "alpha_constant",
+          "role": "falsifier",
+          "verdict": "falsifie",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\result-analyse\\alpha_constant_check_20260519-174312Z.json",
+          "txt_path": null,
+          "summary": null
+        },
+        {
+          "label": "alphaportsuite",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaportsuite_suite_summary_20260519-174313Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaportsuite_suite_summary_20260519-174313Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v6_d2_electron",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v6_d2_electron_suite_summary_20260519-174314Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v6_d2_electron_suite_summary_20260519-174314Z.txt",
+          "summary": null
+        },
+        {
+          "label": "v7unifiedphysics_suite",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7unifiedphysics_suite_summary_20260519-174315Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7unifiedphysics_suite_summary_20260519-174315Z.txt",
+          "summary": null
+        },
+        {
+          "label": "point_atome_master",
+          "role": "support",
+          "verdict": "partiel",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260519-174352Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260519-174352Z.txt",
+          "summary": null
+        },
+        {
+          "label": "lanthanide_internal_residual",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_internal_residual_check_20260519-174352Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_internal_residual_check_20260519-174352Z.txt",
+          "summary": null
+        },
+        {
+          "label": "heavy_border",
+          "role": "support",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260519-174353Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260519-174353Z.txt",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "label": "alphaportsuite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaportsuite_suite_summary_20260519-174354Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaportsuite_suite_summary_20260519-174354Z.txt",
+      "items": [
+        {
+          "label": "alphaenergyrunning",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaenergyrunning_check_20260519-174353Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaenergyrunning_check_20260519-174353Z.txt"
+        },
+        {
+          "label": "alphatorsionorder",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphatorsionorder_check_20260519-174353Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphatorsionorder_check_20260519-174353Z.txt"
+        },
+        {
+          "label": "alphageometricport",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphageometricport_check_20260519-174353Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphageometricport_check_20260519-174353Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "v6_d2_electron",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v6_d2_electron_suite_summary_20260519-174355Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v6_d2_electron_suite_summary_20260519-174355Z.txt",
+      "items": [
+        {
+          "label": "d2_motion_from_alpha_port",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\d2motionfromalphaport_check_20260519-174354Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\d2motionfromalphaport_check_20260519-174354Z.txt"
+        },
+        {
+          "label": "electron_channel_from_alpha",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\electronchannelfromalphacheck_20260519-174354Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\electronchannelfromalphacheck_20260519-174354Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "v7unifiedphysics_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7unifiedphysics_suite_summary_20260519-174356Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7unifiedphysics_suite_summary_20260519-174356Z.txt",
+      "items": [
+        {
+          "label": "v7_geo",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7geo_check_20260519-174355Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7geo_check_20260519-174355Z.txt"
+        },
+        {
+          "label": "v7_elec",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7electronic_check_20260519-174355Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7electronic_check_20260519-174355Z.txt"
+        },
+        {
+          "label": "v7_coupling",
+          "verdict": "conforme",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7coupling_check_20260519-174355Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7coupling_check_20260519-174355Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "v47_baryons_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47baryons_suite_summary_20260519-174359Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47baryons_suite_summary_20260519-174359Z.txt",
+      "items": [
+        {
+          "label": "v47_qcd_masses",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47qcd_masses_check_20260519-174356Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47qcd_masses_check_20260519-174356Z.txt"
+        },
+        {
+          "label": "v47_qcd_splittings",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47qcd_splittings_check_20260519-174357Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47qcd_splittings_check_20260519-174357Z.txt"
+        },
+        {
+          "label": "v47_beta_decays",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47beta_decays_check_20260519-174357Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47beta_decays_check_20260519-174357Z.txt"
+        },
+        {
+          "label": "v47_nuclear_binding",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47nuclear_binding_check_20260519-174357Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47nuclear_binding_check_20260519-174357Z.txt"
+        },
+        {
+          "label": "v47_stability",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47stability_check_20260519-174358Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47stability_check_20260519-174358Z.txt"
+        },
+        {
+          "label": "v47_synthesis",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47synthesis_check_20260519-174358Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47synthesis_check_20260519-174358Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "v48_neutrinos_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48neutrinos_suite_summary_20260519-174404Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48neutrinos_suite_summary_20260519-174404Z.txt",
+      "items": [
+        {
+          "label": "v48_mass_model",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48mass_model_check_20260519-174359Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48mass_model_check_20260519-174359Z.txt"
+        },
+        {
+          "label": "v48_mixing",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48mixing_check_20260519-174400Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48mixing_check_20260519-174400Z.txt"
+        },
+        {
+          "label": "v48_sterile_dynamics",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48sterile_dynamics_check_20260519-174400Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48sterile_dynamics_check_20260519-174400Z.txt"
+        },
+        {
+          "label": "v48_cosmo_constraints",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48cosmo_constraints_check_20260519-174401Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48cosmo_constraints_check_20260519-174401Z.txt"
+        },
+        {
+          "label": "v48_decays",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48decays_check_20260519-174401Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48decays_check_20260519-174401Z.txt"
+        },
+        {
+          "label": "v48_synthesis",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48synthesis_check_20260519-174404Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v48_neutrinos\\v48synthesis_check_20260519-174404Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "v49_photon_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v49_photon\\v49photon_suite_summary_20260519-174404Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v49_photon\\v49photon_suite_summary_20260519-174404Z.txt",
+      "items": [
+        {
+          "label": "v49_maxwell",
+          "verdict": "supported",
+          "photon_mass_bound_ok": true,
+          "gauge_invariance_ok": true,
+          "modified_maxwell_equations": "Maxwell sector remains gauge-consistent with negligible geometric couplings."
+        },
+        {
+          "label": "v49_dispersion",
+          "verdict": "supported",
+          "dispersion_ok": true,
+          "birefringence_ok": true,
+          "dispersion_shift": 3.1e-17,
+          "birefringence_shift": 4.2e-18
+        },
+        {
+          "label": "v49_cmb_polarization",
+          "verdict": "supported",
+          "cmb_polarization_ok": true,
+          "cmb_rotation_deg": 0.012
+        },
+        {
+          "label": "v49_astro_prop",
+          "verdict": "supported",
+          "astro_ok": true,
+          "pulsar_constraints_ok": true,
+          "grb_constraints_ok": true,
+          "vlbi_constraints_ok": true
+        },
+        {
+          "label": "v49_stability",
+          "verdict": "supported",
+          "stability_ok": true,
+          "no_tachyon": true,
+          "no_longitudinal_mode": true,
+          "lorentz_ok": true
+        },
+        {
+          "label": "v49_synthesis",
+          "verdict": "supported",
+          "v49_global_verdict": "supported",
+          "mass_model_summary": "Photon sector stays massless while geometric corrections remain controlled.",
+          "mixing_summary": "No active-states analogue of large mixing is generated in the photon sector.",
+          "cosmology_summary": "CMB and astrophysical propagation constraints remain below threshold.",
+          "decay_summary": "No decay channel applies; no pathological radiative instability appears.",
+          "stability_summary": "Photon propagation remains stable and Lorentz-consistent in the tested regime."
+        }
+      ]
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\experience4_global_suite_summary_20260519-174404Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\experience4_global_suite_summary_20260519-174404Z.txt"
+}

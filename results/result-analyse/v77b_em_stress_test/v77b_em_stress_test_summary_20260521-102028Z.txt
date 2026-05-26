@@ -1,0 +1,20 @@
+V77B EM differential stress test summary
+timestamp: 20260521-102028Z
+verdict: resolution_ultra_fine
+verdict_text: direction EM différentiel tuning
+row_count: 225
+direct_pass_count: 225
+total_pass_count: 0
+best_delta_em: -0.0072
+best_alpha_be: 1.0
+best_proxy_chi2: 11.16793048965819
+best_D_over_H: 2.533414568331329e-05
+best_Y_p: 0.24673
+best_Li7_over_H: 1.412029743915857e-10
+best_Be7_over_H: 1.2017935186348036e-10
+best_Li_total_over_H: 2.6138232625506605e-10
+
+Plots:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77b_em_stress_test\plots\Li7_over_H_heatmap.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77b_em_stress_test\plots\Be7_over_H_heatmap.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77b_em_stress_test\plots\Li_total_over_H_heatmap.png

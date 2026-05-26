@@ -1,0 +1,57 @@
+{
+  "timestamp": "20260508-223351Z",
+  "cases": [
+    {
+      "label": "iron_metal",
+      "symbol": "Fe",
+      "protons": 26,
+      "electrons": 26,
+      "oxidation_state": 0,
+      "kind": "reference",
+      "charge": 0,
+      "same_nucleus_as_reference": true,
+      "status": "conforme strict"
+    },
+    {
+      "label": "iron_two_plus",
+      "symbol": "Fe2+",
+      "protons": 26,
+      "electrons": 24,
+      "oxidation_state": 2,
+      "kind": "oxidized",
+      "charge": 2,
+      "same_nucleus_as_reference": true,
+      "status": "conforme strict"
+    },
+    {
+      "label": "iron_three_plus",
+      "symbol": "Fe3+",
+      "protons": 26,
+      "electrons": 23,
+      "oxidation_state": 3,
+      "kind": "oxidized",
+      "charge": 3,
+      "same_nucleus_as_reference": true,
+      "status": "conforme strict"
+    },
+    {
+      "label": "rust_fe2o3",
+      "symbol": "Fe2O3",
+      "protons": 26,
+      "electrons": 23,
+      "oxidation_state": 3,
+      "kind": "rust",
+      "charge": 3,
+      "same_nucleus_as_reference": true,
+      "status": "conforme strict"
+    }
+  ],
+  "nucleus_rule_status": "conforme strict",
+  "oxidation_rule_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "la corrosion change le nombre de protons du fer",
+    "la rouille ne s’accompagne d’aucune variation électronique",
+    "le fer oxydé n’est plus chimiquement du fer alors que le noyau reste identique"
+  ]
+}

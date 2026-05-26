@@ -1,0 +1,60 @@
+{
+  "suite": "v49photon_suite",
+  "timestamp": "20260519-174404Z",
+  "v49_global_verdict": "supported",
+  "overall_verdict": "supported",
+  "verdict": "supported",
+  "supported_count": 6,
+  "total": 6,
+  "items": [
+    {
+      "label": "v49_maxwell",
+      "verdict": "supported",
+      "photon_mass_bound_ok": true,
+      "gauge_invariance_ok": true,
+      "modified_maxwell_equations": "Maxwell sector remains gauge-consistent with negligible geometric couplings."
+    },
+    {
+      "label": "v49_dispersion",
+      "verdict": "supported",
+      "dispersion_ok": true,
+      "birefringence_ok": true,
+      "dispersion_shift": 3.1e-17,
+      "birefringence_shift": 4.2e-18
+    },
+    {
+      "label": "v49_cmb_polarization",
+      "verdict": "supported",
+      "cmb_polarization_ok": true,
+      "cmb_rotation_deg": 0.012
+    },
+    {
+      "label": "v49_astro_prop",
+      "verdict": "supported",
+      "astro_ok": true,
+      "pulsar_constraints_ok": true,
+      "grb_constraints_ok": true,
+      "vlbi_constraints_ok": true
+    },
+    {
+      "label": "v49_stability",
+      "verdict": "supported",
+      "stability_ok": true,
+      "no_tachyon": true,
+      "no_longitudinal_mode": true,
+      "lorentz_ok": true
+    },
+    {
+      "label": "v49_synthesis",
+      "verdict": "supported",
+      "v49_global_verdict": "supported",
+      "mass_model_summary": "Photon sector stays massless while geometric corrections remain controlled.",
+      "mixing_summary": "No active-states analogue of large mixing is generated in the photon sector.",
+      "cosmology_summary": "CMB and astrophysical propagation constraints remain below threshold.",
+      "decay_summary": "No decay channel applies; no pathological radiative instability appears.",
+      "stability_summary": "Photon propagation remains stable and Lorentz-consistent in the tested regime."
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v49_photon\\v49photon_suite_summary_20260519-174404Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v49_photon\\v49photon_suite_summary_20260519-174404Z.txt"
+}

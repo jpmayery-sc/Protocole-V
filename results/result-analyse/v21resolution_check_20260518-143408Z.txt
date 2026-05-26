@@ -1,0 +1,8 @@
+V21 resolution check
+timestamp: 20260518-143408Z
+verdict: supported
+resolution_state: resolu
+resolution_confidence: haute
+map_verdict: supported
+sensitivity_verdict: supported
+robust_verdict: borderline

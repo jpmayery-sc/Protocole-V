@@ -1,0 +1,18 @@
+Campagne de test - Dossier électron
+Timestamp: 20260506-175254Z
+
+Formule de travail:
+- D1 fixe le régime, l’électron transmet, le proton reçoit et transforme, le neutron régule, le photon signale le dépassement du seuil.
+
+Résultats par cas:
+- Hydrogène-1: Z=1, N=0, e-=1, N/Z=0.0 -> conforme strict (cas minimal exact)
+  Falsifier: un neutron apparaît ou Z/e- n’est plus égal à 1
+- Fer-56: Z=26, N=30, e-=26, N/Z=1.154 -> conforme strict (point de balance exact)
+  Falsifier: N/Z sort de la fenêtre de balance ou la symétrie Z=e- disparaît
+- Plomb-208: Z=82, N=126, e-=82, N/Z=1.537 -> conforme strict (cas lourd proche de saturation)
+  Falsifier: la réserve neutronique n’est pas nettement dominante
+
+Règle de falsification:
+- Le modèle falsifie si H, Fe et Pb ne passent pas les seuils stricts définis pour le cas minimal, le point de balance et le cas lourd.
+
+Verdict global: conforme strict

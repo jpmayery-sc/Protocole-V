@@ -1,0 +1,17 @@
+V10 ionization check
+timestamp: 20260518-090144Z
+verdict: conforme
+peak_z: 26
+peak_value: 29.695288756463523
+z_ion_crit: 30
+decline_after_peak_ok: True
+critical_peak_ok: True
+zcrit_band_ok: True
+v9_coherence_ok: True
+
+Samples:
+- Z=1: E_ref=12.686135 torsion=6.694127e-06 coupling=1.367884e-02 E_eff=12.699807
+- Z=2: E_ref=12.738889 torsion=1.137925e-05 coupling=1.700704e-02 E_eff=12.755885
+- Z=26: E_ref=29.475352 torsion=6.335621e-05 coupling=2.200000e-01 E_eff=29.695289
+- Z=82: E_ref=12.065748 torsion=1.238131e-04 coupling=1.946806e-07 E_eff=12.065624
+- Z=92: E_ref=12.046350 torsion=1.321015e-04 coupling=8.599665e-10 E_eff=12.046218

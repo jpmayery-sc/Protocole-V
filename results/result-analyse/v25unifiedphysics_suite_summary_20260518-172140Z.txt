@@ -1,0 +1,11 @@
+V25 unified physics suite summary
+timestamp: 20260518-172140Z
+overall_verdict: supported
+supported_count: 5/5
+
+Items:
+- v25_quantum: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v25quantum_check_20260518-172139Z.json
+- v25_cosmology: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v25cosmology_check_20260518-172139Z.json
+- v25_spintorsion: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v25spintorsion_check_20260518-172139Z.json
+- v25_falsification: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v25falsification_check_20260518-172139Z.json
+- v25_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v25verdict_check_20260518-172139Z.json

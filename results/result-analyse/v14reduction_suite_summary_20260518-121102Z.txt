@@ -1,0 +1,10 @@
+V14 reduction suite summary
+timestamp: 20260518-121102Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v14_sensi: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v14sensi_check_20260518-121058Z.json
+- v14_rank: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v14rank_check_20260518-121058Z.json
+- v14_reduce: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v14reduce_check_20260518-121059Z.json
+- v14_recheck: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v14recheck_check_20260518-121101Z.json

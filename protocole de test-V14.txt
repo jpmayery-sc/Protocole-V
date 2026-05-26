@@ -1,0 +1,83 @@
+Tu as la bonne intuition : on réduit et on consolide avant de prédire.  
+On va donc faire une V14‑REDUCTION propre, centrée sur : “quels paramètres sont vraiment nécessaires après V13 ?”.
+ 
+Je te propose ProtocoleV14.md orienté réduction, sans encore ouvrir la partie prédiction.
+ 
+---
+ 
+V14 — Réduction paramétrique après MCMC
+ 
+But :  
+partir du posterior de V13 pour :
+ 
+- identifier les paramètres réellement contraints,  
+- geler ceux qui sont bien fixés,  
+- repérer ceux qui sont redondants ou inutiles,  
+- simplifier le modèle sans perdre la compatibilité V4→V13.
+ 
+---
+ 
+1. V14-SENSI — Analyse de sensibilité
+ 
+- On fait varier chaque paramètre autour de sa valeur MAP.  
+- On regarde l’impact sur :
+  - \(z{\rm geo}, z{\rm int}, z{\rm canal}, z{\rm mod}\)  
+  - \(|\alpha - \alpha_{\rm ref}|\)  
+  - \(\Delta E_{\rm torsion}\)
+ 
+Idée :  
+si un paramètre bouge beaucoup sans changer les observables → candidat à la réduction.
+ 
+---
+ 
+2. V14-RANK — Classement des paramètres
+ 
+À partir de V13 :
+ 
+- on calcule la variance/posterior de chaque paramètre,  
+- on classe :
+ 
+  - fortement contraints (à garder),  
+  - faiblement contraints (à regrouper ou geler),  
+  - quasi‑plats (à supprimer ou fixer).
+ 
+---
+ 
+3. V14-REDUCE — Nouveau vecteur de paramètres
+ 
+On passe de :
+ 
+\[
+\theta = (aE, aR, A\kappa, p, \alpha0, s{\rm geo}, s{\rm atom}, s_{\rm canal})
+\]
+ 
+à un vecteur réduit, par exemple :
+ 
+\[
+\theta{\rm red} = (aR, p, \alpha0, s{\rm atom})
+\]
+ 
+(à ajuster selon ce que V14‑SENSI et V14‑RANK diront).
+ 
+---
+ 
+4. V14-RECHECK — Vérification post‑réduction
+ 
+On reroule :
+ 
+- V11 (redshift),  
+- V12 (falsification),  
+- V13‑POSTCHECK (calibration),
+ 
+avec \(\theta_{\rm red}\) seulement.
+ 
+Verdict :
+ 
+- supported si tout tient,  
+- partial si ça se dégrade un peu mais reste cohérent,  
+- falsified si la réduction casse la structure.
+ 
+---
+ 
+Si tu veux, je peux maintenant te générer ProtocoleV14.md complet (avec fichiers, tests, etc.), ou on peut directement détailler V14‑SENSI (comment mesurer concrètement la sensibilité de chaque paramètre).
+ 

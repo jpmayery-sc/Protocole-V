@@ -1,0 +1,9 @@
+metric,value
+verdict,jwst05_reionisation_supported
+chi2_xiion,3.4308148997353234
+chi2_fesc,17.66746892986548
+chi2_n,4.28688363552658
+chi2_tau,3.910506250000007
+baseline_total_chi2,498.3863247935288
+total_chi2,29.29567371512739
+delta_chi2,469.0906510784014

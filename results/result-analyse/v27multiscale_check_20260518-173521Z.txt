@@ -1,0 +1,13 @@
+V27 multiscale check
+{
+  "section": "V27-MULTISCALE",
+  "quantumscalesimulation": true,
+  "geometricscalesimulation": true,
+  "cosmologicalscalesimulation": true,
+  "multiscalecouplingok": true,
+  "scaletransitionmap": true,
+  "verdict": "supported",
+  "timestamp": "20260518-173521Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27multiscale_check_20260518-173521Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27multiscale_check_20260518-173521Z.txt"
+}

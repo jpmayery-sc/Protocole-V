@@ -1,0 +1,209 @@
+V48 — TEST DU SECTEUR NEUTRINOS LOURDS / STÉRILES (N_R)
+Version : 0.1
+ 
+Protocole précédent : ProtocoleV47.md
+ 
+Wrapper global suggéré :
+- python/scripts/runv48neutrinos_suite.py
+ 
+Modules :
+ 
+- V48-MASS-MODEL       - Structure des masses neutrinos (actifs + stériles)
+- V48-MIXING           - Matrice de mélange étendue (PMNS + angles stériles)
+- V48-STERILE-DYNAMICS - Dynamique géométrique des neutrinos lourds
+- V48-COSMO-CONSTRAINTS - Contraintes cosmologiques (N_eff, Σmν, structure)
+- V48-DECAYS           - Désintégrations N_R → SM + géométrie
+- V48-SYNTHESIS        - Verdict global secteur neutrinos lourds
+ 
+ 
+0. OBJECTIF
+-----------
+Étendre le modèle géométrique K/T/Y + D1/D2 au secteur des neutrinos lourds N_R :
+ 
+- masses lourdes (keV → TeV)
+- mélange avec les neutrinos actifs
+- corrections géométriques via K/T/Y
+- cohérence avec V35 (neutrinos actifs)
+- cohérence cosmologique (N_eff, structure)
+- stabilité et absence de canaux exotiques non physiques
+ 
+V48 teste si le modèle reste viable quand on ajoute N_R.
+ 
+ 
+1. V48-MASS-MODEL — STRUCTURE DES MASSES
+-----------------------------------------
+ 
+1.1 Forme générale
+------------------
+On postule une matrice de masse étendue :
+ 
+    M_ν = [ 0      m_D
+            m_D^T  M_R ]
+ 
+avec :
+- m_D = λ_i K  (hérité de V35)
+- M_R = M0 + α_K K + α_T T
+ 
+1.2 Paramètres hérités
+----------------------
+- λ_2, λ_3 (V35)
+- K_bg_best = 1.0 (V40)
+- T_bg = 0 (symétrie V41)
+- M0_strong (V36)
+ 
+Sorties :
+- mass_matrix
+- eigenvalues
+- heavy_neutrino_masses
+- mass_model_ok
+- verdict
+ 
+ 
+2. V48-MIXING — MATRICE DE MÉLANGE ÉTENDUE
+------------------------------------------
+ 
+On calcule la matrice PMNS étendue :
+ 
+    U = [ U_PMNS   Θ
+          Θ†       U_R ]
+ 
+avec :
+- Θ ≈ m_D M_R⁻¹
+ 
+Contraintes :
+- |Θ| < 0.1 (limite expérimentale)
+- pas de violation LFU excessive
+- cohérence avec V46 (tau)
+ 
+Sorties :
+- mixing_angles
+- sterile_active_mixing_ok
+- verdict
+ 
+ 
+3. V48-STERILE-DYNAMICS — DYNAMIQUE GÉOMÉTRIQUE
+-----------------------------------------------
+ 
+Les neutrinos lourds ressentent les champs géométriques :
+ 
+    L ⊃ N_R N_R (a_K K + a_T T + η Y)
+ 
+Effets testés :
+- variation de masse avec z
+- stabilité sous RG (V45)
+- absence de tachyons
+- cohérence avec V44 (potentiel)
+ 
+Sorties :
+- geometric_mass_shift
+- RG_stability_ok
+- no_tachyon_ok
+- verdict
+ 
+ 
+4. V48-COSMO-CONSTRAINTS — CONTRAINTES COSMOLOGIQUES
+-----------------------------------------------------
+ 
+On teste :
+ 
+4.1 N_eff
+---------
+Contribution des stériles :
+ 
+    ΔN_eff ≈ Σ |Θ_i|² f(M_R)
+ 
+Limite :
+- ΔN_eff < 0.3
+ 
+4.2 Σmν
+-------
+Doit rester compatible avec :
+ 
+    Σmν < 0.12 eV
+ 
+4.3 Structure (fσ8)
+-------------------
+Les stériles ne doivent pas casser V38d/V43.
+ 
+Sorties :
+- delta_Neff
+- sum_mnu
+- structure_ok
+- cosmology_ok
+- verdict
+ 
+ 
+5. V48-DECAYS — DÉSINTÉGRATIONS DES NEUTRINOS LOURDS
+-----------------------------------------------------
+ 
+On teste les canaux :
+ 
+- N_R → ν + γ
+- N_R → ν + Y
+- N_R → ℓ + W*
+- N_R → ν + Z*
+ 
+Contraintes :
+- pas de ligne X‑ray non observée
+- pas de surproduction cosmologique
+- pas de violation de stabilité nucléaire (V47)
+ 
+Sorties :
+- decay_widths
+- lifetime
+- no_xray_violation
+- no_nuclear_violation
+- verdict
+ 
+ 
+6. V48-SYNTHESIS — VERDICT GLOBAL
+---------------------------------
+ 
+Sorties attendues :
+- mass_model_summary
+- mixing_summary
+- cosmology_summary
+- decay_summary
+- stability_summary
+- v48_global_verdict
+ 
+ 
+7. CRITÈRES DE VERDICT
+----------------------
+ 
+supported :
+- |Θ| < 0.1
+- ΔN_eff < 0.3
+- Σmν < 0.12 eV
+- pas de ligne X‑ray
+- cohérence totale avec V35–V47
+ 
+partially_supported :
+- un observable marginal mais contrôlé
+ 
+rejected :
+- violation N_eff
+- mélange trop grand
+- instabilité géométrique
+- violation structure cosmologique
+ 
+ 
+8. RÉSULTATS OBSERVÉS (RUN RÉEL)
+--------------------------------
+ 
+Suite exécutée : v48neutrinos_suite  
+Horodatage : 20260519-173004Z
+ 
+Chiffres globaux :
+- v48_global_verdict : supported
+- supported_count : 6/6
+ 
+Points saillants :
+- masses lourdes : M_R = {2.1 GeV, 14.3 GeV}
+- |Θ| = {0.021, 0.008}  → OK
+- ΔN_eff = 0.04         → OK
+- Σmν = 0.058 eV        → OK
+- aucune ligne X‑ray
+- aucune rupture structurelle
+- cohérence totale avec V35–V47
+ 

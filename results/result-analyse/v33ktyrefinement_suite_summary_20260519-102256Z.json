@@ -1,0 +1,29 @@
+{
+  "suite": "v33ktyrefinement_suite",
+  "timestamp": "20260519-102256Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "v33_math",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33math_check_20260519-102256Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33math_check_20260519-102256Z.txt"
+    },
+    {
+      "label": "v33_predictions",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33predictions_check_20260519-102256Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33predictions_check_20260519-102256Z.txt"
+    },
+    {
+      "label": "v33_tester_summary",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33tester_summary_check_20260519-102256Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33_kty_refinement\\v33tester_summary_check_20260519-102256Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33ktyrefinement_suite_summary_20260519-102256Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v33ktyrefinement_suite_summary_20260519-102256Z.txt"
+}

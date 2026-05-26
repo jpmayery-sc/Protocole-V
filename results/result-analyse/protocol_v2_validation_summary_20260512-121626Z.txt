@@ -1,0 +1,26 @@
+Protocol V2 validation summary
+timestamp: 20260512-121626Z
+overall_verdict: partiel
+supported_count: 1/4
+
+Stages:
+- H1: supported - Local model only
+  - A single amplitude term does not transfer cleanly across Cu, Al, Ag, and Fe.
+- H2: contradicted - Global alpha' correction
+  - The alpha' correction does not improve transfer enough.
+- H3: contradicted - Quadratic beta' term
+  - The quadratic term is not justified by the held-out error.
+- H4: contradicted - Mass-weighted FTM comparison
+  - The mass-weighted transform increases the spread across materials.
+  - raw_cv: 0.629879
+  - weighted_cv: 0.813523
+
+Model metrics:
+- H1 RMSE: 0.004025
+- H1 mean relative error: 3.563785
+- H2 RMSE: 0.006726
+- H2 mean relative error: 6.547333
+- H3 RMSE: 0.007132
+- H3 mean relative error: 7.135963
+- H4 raw CV: 0.629879
+- H4 weighted CV: 0.813523

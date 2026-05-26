@@ -1,0 +1,26 @@
+{
+  "suite": "tube_theory_numeric_test",
+  "omega": "omega_winding",
+  "fit_dataset": "core_loss_mhz",
+  "datasets": [
+    {
+      "name": "one_fixed_damper",
+      "path": "data/hysteresis/One_fixed_damper.json",
+      "observable": "force",
+      "source_url": "https://raw.githubusercontent.com/Duchanoy/DNN_magnet/master/Datasets/One_fixed_damper.json"
+    },
+    {
+      "name": "test_experiments",
+      "path": "data/hysteresis/Test_experiments.json",
+      "companion_path": "data/hysteresis/inp_Test_experiments.json",
+      "observable": "force",
+      "source_url": "https://raw.githubusercontent.com/Duchanoy/DNN_magnet/master/Datasets/Test_experiments.json"
+    },
+    {
+      "name": "core_loss_mhz",
+      "path": "data/induction/MHzCoreLoss.csv",
+      "observable": "PowerLossDensity_mW_per_cm3",
+      "source_url": "https://raw.githubusercontent.com/asu-mapel/MHzCoreLossAggregateDataset/main/MHzCoreLoss.csv"
+    }
+  ]
+}

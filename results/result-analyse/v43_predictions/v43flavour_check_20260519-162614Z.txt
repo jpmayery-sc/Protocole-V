@@ -1,0 +1,9 @@
+V43 flavour check
+timestamp: 20260519-162614Z
+verdict: supported
+external_references: [{'section': 'V43-FLAVOUR', 'observable': 'R_K', 'source': 'LHCb, CERN Document Server 2931511 / arXiv:2505.03483', 'value': 'R_K = 1.08'}]
+flavour_predictions: [{'observable': 'R_K', 'prediction': 0.86, 'uncertainty': 0.03}, {'observable': 'LFU_violation', 'prediction_percent': [2.0, 4.0], 'channels': ['B -> K mu mu', 'B -> K e e']}]
+RK_prediction: {'value': 0.86, 'uncertainty': 0.03}
+LFU_prediction: {'low_percent': 2.0, 'high_percent': 4.0}
+flavour_summary: A modest suppression of RK together with a 2-4 percent LFU deviation is predicted.
+flavour_verdict: supported

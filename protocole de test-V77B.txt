@@ -1,0 +1,128 @@
+V77B — STRESS TEST A=7 : LI-7, BE-7, CANAL EM
+ 
+Objectif
+Ne plus raisonner à l’aveugle sur Li-7 seul, mais :
+- tester simultanément Li-7, Be-7 et Li_total,
+- faire bouger de façon contrôlée :
+  - le canal EM global (delta_EM),
+  - la pondération EM spécifique de Be-7,
+  - les taux nucléaires Li/Be,
+- et regarder QUI réagit, COMMENT, et AVEC QUELLE SENSIBILITÉ.
+ 
+V77B ne cherche pas encore à “réparer”, mais à dégager une direction claire.
+ 
+0. Hypothèses fixes
+-------------------
+On ne touche pas au cœur du modèle :
+- ε_best = -0.0069
+- couplages gravité/temps/neutrons (k_G, k_T, k_n) = V83
+- proxy BBN = V80 (même code, mêmes constantes)
+ 
+On joue uniquement sur :
+- delta_EM (micro-variations autour de -0.0069),
+- une pondération EM spécifique pour Be-7,
+- des variations de taux nucléaires Li/Be.
+ 
+1. Paramètres de test
+---------------------
+ 
+1) delta_EM global
+   - plage : [-0.0072, -0.0066]
+   - pas : 3 à 5 points (coarse mais suffisant pour voir les tendances)
+ 
+2) pondération EM spécifique Be-7
+   - introduire un facteur α_Be :
+     - delta_EM^(Li) = delta_EM
+     - delta_EM^(Be) = α_Be * delta_EM
+   - plage α_Be : [0.5, 1.0]
+   - idée : voir si une sensibilité différentielle Li vs Be existe naturellement
+ 
+3) variations de taux nucléaires Li/Be
+   - Li-7 : ±5%
+   - Be-7 : ±5%
+   - éventuellement cas croisés (Li up, Be down, etc.)
+ 
+2. Observables suivies
+----------------------
+ 
+Pour chaque combinaison (delta_EM, α_Be, taux) :
+- D/H
+- Y_p
+- Li-7/H
+- Be-7/H
+- Li_total = Li-7/H + Be-7/H
+- éventuellement un χ²_proxy_BBN (D, Y, Li_total)
+ 
+3. Pipeline V77B
+----------------
+ 
+1) Boucle sur delta_EM ∈ [-0.0072, -0.0066]
+2) Pour chaque delta_EM, boucle sur α_Be ∈ [0.5, 1.0]
+3) Pour chaque (delta_EM, α_Be), boucle sur variations de taux Li/Be (±5%)
+4) À chaque point :
+   - lancer le proxy BBN
+   - enregistrer D/H, Y_p, Li-7/H, Be-7/H, Li_total
+5) Construire :
+   - cartes Li-7/H(delta_EM, α_Be)
+   - cartes Be-7/H(delta_EM, α_Be)
+   - cartes Li_total(delta_EM, α_Be)
+   - indicateurs de stabilité sous variations de taux
+ 
+4. Ce qu’on cherche à voir
+--------------------------
+ 
+1) Qui est le plus sensible à delta_EM ?
+   - Li-7 ?
+   - Be-7 ?
+   - les deux pareil ?
+   - le total Li bouge-t-il vraiment ou juste la répartition interne ?
+ 
+2) α_Be change-t-il quelque chose de significatif ?
+   - si Li_total est très sensible à α_Be → bonne piste pour un canal EM différentiel
+   - si Li_total ne réagit presque pas → le problème est ailleurs (structure du réseau, pas juste EM)
+ 
+3) Les variations de taux Li/Be :
+   - si Li_total explose dès ±5% → résolution fragile
+   - si Li_total reste dans une bande raisonnable → résolution potentiellement robuste si bien réglée
+ 
+5. Verdict V77B
+----------------
+ 
+V77B doit répondre à une question simple :
+ 
+> “Est-ce que le canal EM, modulé différemment sur Be-7,  
+> a le pouvoir de corriger Li_total sans casser D/H et Y_p ?”
+ 
+Trois cas possibles :
+ 
+1) **Canal EM différentiel efficace :**
+   - Li_total peut être abaissé en jouant sur α_Be,
+   - D/H et Y_p restent stables,
+   - sensibilité aux taux nucléaires raisonnable.
+   → On tient une vraie direction physique : “pondération EM spécifique Be-7”.
+ 
+2) **Canal EM différentiel inefficace :**
+   - Li_total reste trop haut quelle que soit α_Be,
+   - ou D/H / Y_p se dégradent dès qu’on force.
+   → Le problème n’est pas dans la simple pondération EM, il faut revoir plus profond (structure du réseau, autre canal).
+ 
+3) **Résolution ultra-fine :**
+   - il existe une petite zone (delta_EM, α_Be) où tout passe,
+   - mais elle est très sensible aux taux nucléaires.
+   → On documente ça comme “tuning fort”, pas comme résolution robuste.
+ 
+6. Sorties attendues
+--------------------
+- cartes Li-7/H(delta_EM, α_Be)
+- cartes Be-7/H(delta_EM, α_Be)
+- cartes Li_total(delta_EM, α_Be)
+- tableau de stabilité sous variations de taux
+- verdict qualitatif : “direction EM différentiel utile / inutile / tuning”
+ 
+7. Transition
+-------------
+- si une direction claire apparaît (par ex. α_Be < 1 qui baisse Li_total proprement) :
+  → on peut envisager une modification structurée du modèle (V78) pour intégrer un canal EM différentiel Li/Be.
+- si aucune direction nette n’apparaît :
+  → il faudra accepter que le canal EM seul ne suffit pas à résoudre Li_total, et le lithium reste une tension physique ouverte dans ce cadre.
+ 

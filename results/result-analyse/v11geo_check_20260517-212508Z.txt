@@ -1,0 +1,13 @@
+V11 geometric redshift check
+timestamp: 20260517-212508Z
+verdict: conforme
+sign_ok: True
+amplitude_ok: True
+growth_ok: True
+z_growth_ok: True
+
+Cases:
+- H_alpha: quiet=1.951452e-07, nominal=2.439315e-07, extreme=3.293075e-07
+- Fe_alpha: quiet=2.943305e-07, nominal=3.679132e-07, extreme=4.966828e-07
+- Pb_alpha: quiet=5.090306e-07, nominal=6.362882e-07, extreme=8.589891e-07
+- U_alpha: quiet=5.983377e-07, nominal=7.479221e-07, extreme=1.009695e-06

@@ -1,0 +1,32 @@
+Recherche sur la famille des halogenes F -> At
+Timestamp: 20260508-195334Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 4.866210024238572
+- ionization_rmse: 0.9360532590616835
+- zeff_rmse: 0.039759821967708116
+- mass_rmse: 16.578368525804727
+- radius_step_cv: 0.3684413841338339
+- ionization_step_cv: 0.725012274435067
+- zeff_step_cv: 0.09483207232447408
+- mass_step_cv: 0.49561930434935164
+
+Family summary:
+- F: period=2, mass_u=18.998403163, radius_pm=64.0, ionization_ev=17.4228, zeff_proxy=2.263703
+- Cl: period=3, mass_u=35.45, radius_pm=99.0, ionization_ev=12.9676, zeff_proxy=2.92942
+- Br: period=4, mass_u=79.904, radius_pm=114.0, ionization_ev=11.8138, zeff_proxy=3.728081
+- I: period=5, mass_u=126.90447, radius_pm=133.0, ionization_ev=10.4513, zeff_proxy=4.383144
+- At: period=6, mass_u=210.0, radius_pm=150.0, ionization_ev=9.5, zeff_proxy=5.014684
+
+Hypothese: for the halogen family, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across F -> At
+- first ionization energy is not monotonic across F -> At
+- Z_eff proxy is not smoother than mass across the family
+- mass alone explains the family trend as well as or better than Z_eff proxy

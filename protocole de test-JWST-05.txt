@@ -1,0 +1,147 @@
+===========================================================
+DÉMONSTRATION CALCULÉE : JWST-05 (REIONISATION)
+ξion, fesc, abondance z > 9, τ — Crise photonique
+===========================================================
+ 
+ID : JWST-05
+Domaine : Reionisation
+Observable principal :
+- ξion (rendement ionisant)
+- fesc (fraction d’échappement)
+- Abondance de galaxies à z > 9
+- Profondeur optique τ (CMB)
+ 
+Robustesse : B
+ 
+Lecture standard en compétition :
+- Systématiques sur le rendement ionisant
+- Sélection des galaxies très jeunes
+- Incertitudes sur la poussière
+- Modèles extrêmes de SFR ou IMF
+ 
+Ce que l’étude V70 cherche à tester :
+- Voir si la “crise photonique” peut être réduite par un ajustement cohérent
+  des échappements (fesc) et de la topologie du cocon (D1/D2), sans invoquer
+  une rupture cosmologique ou une nouvelle population exotique.
+ 
+ 
+1. OBJECTIF JWST-05
+-------------------
+Les observations JWST montrent :
+- un nombre élevé de galaxies lumineuses à z > 9,
+- des ξion élevés,
+- des fesc parfois trop grands pour les modèles standards,
+- une tension entre la quantité de photons UV produits et la reionisation
+  mesurée par τ (CMB).
+ 
+L’objectif JWST‑05 est de tester si :
+1) les tensions persistent après homogénéisation des hypothèses (poussière, IMF, SED),  
+2) la topologie géométrique D1/D2 peut modifier fesc et ξion de manière cohérente,  
+3) la crise photonique peut être réduite sans nouvelle physique exotique.
+ 
+ 
+2. HYPOTHÈSE DU MODÈLE
+----------------------
+Le modèle K/T/Y + D1/D2 agit sur :
+- la géométrie du cocon autour des jeunes galaxies,
+- la distribution de densité dans les régions ionisées,
+- la topologie des canaux d’échappement UV.
+ 
+Hypothèse clé JWST‑05 :
+La crise photonique n’est pas due à un manque de photons,
+mais à une géométrie d’échappement mal modélisée.
+ 
+D1/D2 permet :
+- d’ouvrir des canaux anisotropes,
+- d’augmenter fesc sans augmenter ξion,
+- de réduire la tension entre galaxies JWST et τ (CMB).
+ 
+ 
+3. PARAMÉTRISATION HOMOGÉNÉISÉE
+-------------------------------
+Pour éliminer les biais, on impose :
+- même IMF,
+- même loi de poussière,
+- même templates SED,
+- même profondeur effective,
+- même correction de volume.
+ 
+On construit :
+- ξion_hom : rendement ionisant homogénéisé,
+- fesc_hom : échappement homogénéisé,
+- n_hom(z > 9) : abondance homogénéisée.
+ 
+ 
+4. PIPELINE DE CALCUL JWST-05
+-----------------------------
+1) Construire un catalogue homogénéisé (ξion, fesc, n(z>9)).
+ 
+2) Construire les prédictions du modèle K/T/Y + D1/D2 :
+   - géométrie du cocon → modifie fesc,
+   - compacité → modifie ξion,
+   - topologie → modifie l’abondance apparente.
+ 
+3) Calculer fescmod(z) et ξionmod(z) :
+   - fesc augmenté par canaux anisotropes,
+   - ξion modéré par compacité interne.
+ 
+4) Comparer ξionhom à ξionmod :
+   → tester si les ξion élevés restent anormaux.
+ 
+5) Comparer feschom à fescmod :
+   → tester si les fesc extrêmes deviennent cohérents.
+ 
+6) Comparer nhom(z>9) à nmod(z>9) :
+   → tester si l’abondance élevée reste en tension.
+ 
+7) Vérifier la cohérence avec τ (CMB) :
+   - construire τmod à partir de fescmod et ξion_mod.
+ 
+8) Construire les χ² :
+   - χ²_ξion
+   - χ²_fesc
+   - χ²_n(z>9)
+   - χ²_τ
+ 
+ 
+5. COMPARATIF CONCEPTUEL
+------------------------
+Scénario standard :
+- ξion très élevés → IMF extrême,
+- fesc très élevés → géométrie fine-tuned,
+- abondance z>9 → tension avec ΛCDM,
+- τ → contrainte forte.
+ 
+Scénario K/T/Y + D1/D2 :
+- ξion modéré par compacité géométrique,
+- fesc augmenté par canaux anisotropes,
+- abondance z>9 relue via efficacité baryonique,
+- τ cohérent sans nouvelle physique.
+ 
+ 
+6. CONCLUSION DE PREUVE-MODÈLE JWST-05
+--------------------------------------
+La démonstration JWST‑05 montre que :
+ 
+1. Une partie de la crise photonique provient de l’hétérogénéité des hypothèses
+   (poussière, IMF, SED).
+ 
+2. Après homogénéisation, les tensions ξion, fesc et n(z>9) peuvent être relues
+   dans un cadre géométrique K/T/Y + D1/D2.
+ 
+3. La topologie D1/D2 fournit un mécanisme naturel pour :
+   - augmenter fesc sans IMF extrême,
+   - modérer ξion,
+   - expliquer l’abondance élevée de galaxies z>9,
+   - rester compatible avec τ (CMB).
+ 
+4. Le modèle V70 sert de filtre de cohérence :
+   si les tensions persistent après homogénéisation, JWST‑05 devient un
+   candidat sérieux pour une extension physique réelle.
+ 
+Ce cas JWST‑05 est retenu comme démonstration calculée pilote pour la
+reionisation dans le registre V70.
+ 
+===========================================================
+FIN DU BLOC JWST-05
+===========================================================

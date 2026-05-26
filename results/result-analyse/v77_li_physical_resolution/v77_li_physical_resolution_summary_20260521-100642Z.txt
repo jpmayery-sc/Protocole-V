@@ -1,0 +1,53 @@
+V77 lithium physical-resolution summary
+timestamp: 20260521-100642Z
+verdict: resolution_fine
+verdict_text: Li résolu de façon fine
+delta_center: -0.0069
+scan_window: [-0.0072, -0.0066], step=9.999999999999593e-06
+scan_count: 61
+control_ok: True
+center_D_over_H: 2.529882918906704e-05
+center_Y_p: 0.246745
+center_Li7_over_H: 1.566465015625287e-10
+center_Be7_over_H: 1.3292413078503833e-10
+center_Li_total_over_H: 2.8957063234756704e-10
+center_passes_all_direct: True
+center_passes_all_total: False
+
+Control errors:
+- delta_em_abs_error: 0.0
+- D_over_H_abs_error: 2.918906704001459e-11
+- Y_p_abs_error: 0.0
+- Li7_over_H_abs_error: 4.984374712851143e-16
+- Be7_over_H_abs_error: 1.3078503832985446e-16
+
+Control tolerances:
+- delta_em_abs_error: 1e-12
+- D_over_H_abs_error: 1e-10
+- Y_p_abs_error: 1e-06
+- Li7_over_H_abs_error: 1e-12
+- Be7_over_H_abs_error: 1e-12
+
+Bands:
+- D_over_H: {'count': 61, 'delta_min': -0.0072, 'delta_max': -0.0066, 'delta_width': 0.0005999999999999998}
+- Y_p: {'count': 61, 'delta_min': -0.0072, 'delta_max': -0.0066, 'delta_width': 0.0005999999999999998}
+- Li7_over_H: {'count': 61, 'delta_min': -0.0072, 'delta_max': -0.0066, 'delta_width': 0.0005999999999999998}
+- Li_total_over_H: {'count': 0, 'delta_min': None, 'delta_max': None, 'delta_width': None}
+
+Slopes at center:
+- D_over_H: -0.00011763955577154078
+- Y_p: 0.05000000000004987
+- Li7_over_H: 2.741315176556652e-08
+- Li_total_over_H: 4.934564329696163e-08
+- Li_selectivity: 5.482630353107835e-07
+
+Rate robustness:
+- total_cases: 9
+- passes_all_direct: 9
+- passes_all_total: 0
+
+Plots:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77_li_physical_resolution\plots\D_over_H_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77_li_physical_resolution\plots\Y_p_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77_li_physical_resolution\plots\Li7_over_H_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77_li_physical_resolution\plots\Li_total_over_H_vs_delta_em.png

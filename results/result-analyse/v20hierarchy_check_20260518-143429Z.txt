@@ -1,0 +1,7 @@
+V20 hierarchy check
+timestamp: 20260518-143429Z
+verdict: supported
+dominant_parameter: alpha0
+metric_parameters: s_atom, s_geo
+torsion_parameter: p
+coupling_parameter: A_kappa

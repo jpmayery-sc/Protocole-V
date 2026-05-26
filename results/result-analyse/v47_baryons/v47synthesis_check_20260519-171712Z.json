@@ -1,0 +1,90 @@
+{
+  "section": "V47-SYNTHESIS",
+  "baryon_mass_summary": {
+    "section": "V47-QCD-MASSES",
+    "source_v46_available": true,
+    "source_v46_supported": true,
+    "source_v46_timestamp": "20260519-164951Z",
+    "source_v46_supported_count": 5,
+    "source_v46_total": 5,
+    "mass_shifts": {
+      "p": 0.0011,
+      "n": 0.0012,
+      "L": 0.003,
+      "S": 0.004,
+      "X": 0.007
+    },
+    "baryon_mass_ok": true,
+    "verdict": "supported"
+  },
+  "splitting_summary": {
+    "section": "V47-QCD-SPLITTINGS",
+    "source_v46_available": true,
+    "source_v46_supported": true,
+    "source_v46_timestamp": "20260519-164951Z",
+    "source_v46_supported_count": 5,
+    "source_v46_total": 5,
+    "splitting_shifts": {
+      "n_minus_p": 0.0009,
+      "L_minus_p": 0.002,
+      "S_minus_N": 0.004,
+      "X_minus_N": 0.005
+    },
+    "splitting_ok": true,
+    "verdict": "supported"
+  },
+  "beta_decay_summary": {
+    "section": "V47-BETA-DECAYS",
+    "source_v46_available": true,
+    "source_v46_supported": true,
+    "source_v46_timestamp": "20260519-164951Z",
+    "source_v46_supported_count": 5,
+    "source_v46_total": 5,
+    "beta_decay_shift": 0.0007,
+    "beta_decay_ok": true,
+    "verdict": "supported"
+  },
+  "nuclear_summary": {
+    "section": "V47-NUCLEAR-BINDING",
+    "source_v46_available": true,
+    "source_v46_supported": true,
+    "source_v46_timestamp": "20260519-164951Z",
+    "source_v46_supported_count": 5,
+    "source_v46_total": 5,
+    "binding_shifts": {
+      "deuterium": 0.003,
+      "He4": 0.002
+    },
+    "BBN_ok": true,
+    "nuclear_ok": true,
+    "verdict": "supported"
+  },
+  "stability_summary": {
+    "section": "V47-STABILITY",
+    "source_v46_available": true,
+    "source_v46_supported": true,
+    "source_v46_timestamp": "20260519-164951Z",
+    "source_v46_supported_count": 5,
+    "source_v46_total": 5,
+    "baryon_number_ok": true,
+    "no_exotic_channels": true,
+    "RG_consistency": true,
+    "geometry_consistency": true,
+    "stability_ok": true,
+    "verdict": "supported"
+  },
+  "source_v46_summary": {
+    "source_v46_available": true,
+    "source_v46_supported": true,
+    "source_v46_timestamp": "20260519-164951Z",
+    "source_v46_supported_count": 5,
+    "source_v46_total": 5
+  },
+  "v47_global_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "verdict": "supported",
+  "timestamp": "20260519-171712Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47synthesis_check_20260519-171712Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v47_baryons\\v47synthesis_check_20260519-171712Z.txt"
+}

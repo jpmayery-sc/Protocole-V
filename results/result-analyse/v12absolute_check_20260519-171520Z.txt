@@ -1,0 +1,9 @@
+V12 absolute bounds check
+timestamp: 20260519-171520Z
+verdict: conforme
+
+Blocks:
+- geo: conforme | in_bounds=True | monotone_ok=True | values=[2.4393147611216526e-07, 3.679131767807885e-07, 6.362881995694561e-07, 7.479221292365444e-07]
+- atom: conforme | in_bounds=True | monotone_ok=True | values=[3.9354070719206714e-07, 5.747095007535248e-07, 3.3521805572804293e-06, 5.854048846888991e-06, 6.115808664454451e-06]
+- canal: conforme | in_bounds=True | monotone_ok=True | values=[8.98645350096726e-07, 1.1040267160788616e-06, 2.0923048556515816e-06, 2.4717661281133484e-06]
+- total: conforme | in_bounds=True | monotone_ok=True | values=[1.5361175334009585e-06, 2.0466493936131747e-06, 6.080773612501467e-06, 9.073737104238884e-06]

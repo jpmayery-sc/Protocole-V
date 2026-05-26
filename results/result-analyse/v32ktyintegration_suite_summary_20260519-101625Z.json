@@ -1,0 +1,29 @@
+{
+  "suite": "v32ktyintegration_suite",
+  "timestamp": "20260519-101625Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "v32_math",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32math_check_20260519-101625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32math_check_20260519-101625Z.txt"
+    },
+    {
+      "label": "v32_predictions",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32predictions_check_20260519-101625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32predictions_check_20260519-101625Z.txt"
+    },
+    {
+      "label": "v32_tester_summary",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32tester_summary_check_20260519-101625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32tester_summary_check_20260519-101625Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32ktyintegration_suite_summary_20260519-101625Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32ktyintegration_suite_summary_20260519-101625Z.txt"
+}

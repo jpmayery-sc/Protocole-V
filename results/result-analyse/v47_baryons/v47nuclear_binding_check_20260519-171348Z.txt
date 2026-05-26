@@ -1,0 +1,6 @@
+V47 nuclear binding check
+timestamp: 20260519-171348Z
+verdict: supported
+binding_shifts: {'deuterium': 0.003, 'He4': 0.002}
+BBN_ok: True
+nuclear_ok: True

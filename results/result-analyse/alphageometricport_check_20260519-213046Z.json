@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260519-213046Z",
+  "hypothesis": "la porte alpha se lit comme un deficit angulaire variable en D2",
+  "case_control": "alpha_ref vs 1/137",
+  "observable": "deltaDtheta = 2pi(alpharef - 1/137)",
+  "expected": "ecart non nul mais faible, utilisable comme seuil geometrique",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "alpha_approx": 0.0072992700729927005,
+    "delta_Dtheta_rad": -1.2048031130217074e-05,
+    "delta_Dtheta_deg": -0.0006903013352036694
+  },
+  "exact_claim_ok": false,
+  "geometric_port_ok": true,
+  "verdict": "conforme",
+  "reference": "alpha inverse = 137.035999084"
+}

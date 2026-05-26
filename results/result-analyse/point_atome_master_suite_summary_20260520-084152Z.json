@@ -1,0 +1,165 @@
+{
+  "suite": "point_atome_master",
+  "timestamp": "20260520-084152Z",
+  "overall_verdict": "partiel",
+  "supported_count": 20,
+  "total": 22,
+  "items": [
+    {
+      "label": "point_atome_protocol",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260520-084129Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260520-084129Z.txt",
+      "summary": null
+    },
+    {
+      "label": "atom_basics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260520-084130Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260520-084130Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v8atomicsuite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v8atomicsuite_summary_20260520-084130Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v8atomicsuite_summary_20260520-084130Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v9atomicsuite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v9atomicsuite_summary_20260520-084131Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v9atomicsuite_summary_20260520-084131Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v10atomdynamics_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v10atomdynamics_suite_summary_20260520-084132Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v10atomdynamics_suite_summary_20260520-084132Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v11redshift_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v11redshift_suite_summary_20260520-084132Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v11redshift_suite_summary_20260520-084132Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v12falsifier_suite",
+      "verdict": "falsified",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12falsifier_suite_summary_20260520-084133Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12falsifier_suite_summary_20260520-084133Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v13mcmc_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_suite_summary_20260520-084135Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_suite_summary_20260520-084135Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v14reduction_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduction_suite_summary_20260520-084139Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v14reduction_suite_summary_20260520-084139Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v15consolidation_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15consolidation_suite_summary_20260520-084140Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v15consolidation_suite_summary_20260520-084140Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v16prediction_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v16prediction_suite_summary_20260520-084141Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v16prediction_suite_summary_20260520-084141Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v17validation_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v17validation_suite_summary_20260520-084142Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v17validation_suite_summary_20260520-084142Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v18calibration_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibration_suite_summary_20260520-084143Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v18calibration_suite_summary_20260520-084143Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v19metacalibration_suite",
+      "verdict": "partiel",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19metacalibration_suite_summary_20260520-084144Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19metacalibration_suite_summary_20260520-084144Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v20research_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20research_suite_summary_20260520-084145Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20research_suite_summary_20260520-084145Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v21borderline_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v21borderline_suite_summary_20260520-084147Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v21borderline_suite_summary_20260520-084147Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v22theory_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22theory_suite_summary_20260520-084148Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22theory_suite_summary_20260520-084148Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v22experiment_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22experiment_suite_summary_20260520-084150Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22experiment_suite_summary_20260520-084150Z.txt",
+      "summary": null
+    },
+    {
+      "label": "v22simulation_suite",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22simulation_suite_summary_20260520-084151Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22simulation_suite_summary_20260520-084151Z.txt",
+      "summary": null
+    },
+    {
+      "label": "d1d4",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260520-084151Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\d1d4\\d1d4_suite_summary_20260520-084151Z.txt",
+      "summary": null
+    },
+    {
+      "label": "electron5_core",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260520-084151Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_core\\electron5_core_suite_summary_20260520-084151Z.txt",
+      "summary": null
+    },
+    {
+      "label": "electron5_extended",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260520-084152Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\electron5_extended\\electron5_extended_suite_summary_20260520-084152Z.txt",
+      "summary": null
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260520-084152Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260520-084152Z.txt"
+}

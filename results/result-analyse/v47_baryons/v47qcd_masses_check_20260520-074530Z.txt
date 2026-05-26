@@ -1,0 +1,5 @@
+V47 QCD masses check
+timestamp: 20260520-074530Z
+verdict: supported
+mass_shifts: {'p': 0.0011, 'n': 0.0012, 'L': 0.003, 'S': 0.004, 'X': 0.007}
+baryon_mass_ok: True

@@ -1,0 +1,223 @@
+{
+  "section": "V39-LIKELIHOODS",
+  "params_in_bounds": true,
+  "parameters": {
+    "A_mu": 2.5e-06,
+    "B_mu": 2.2e-06,
+    "lambda_2": 0.0032,
+    "lambda_3": 0.0041,
+    "alpha_s": 0.018,
+    "beta_s": 0.022,
+    "M0_strong": 0.82,
+    "C_e": 0.0012,
+    "C_mu": 0.0014,
+    "C_tau": 0.0018,
+    "epsilon": 0.11,
+    "alpha": 0.08,
+    "xi": -0.3,
+    "eta": 0.012,
+    "gamma": 0.45,
+    "Sent_inf": 0.7
+  },
+  "sectors": {
+    "muon": {
+      "observable": "Delta a_mu",
+      "model": 2.51e-09,
+      "target": 2.51e-09,
+      "sigma": 1.8e-10,
+      "residual_sigma": 0.0,
+      "likelihood": 1.0,
+      "within_2sigma": true
+    },
+    "neutrino": {
+      "observable": "neutrinos",
+      "model": {
+        "dm2_sol": 7.4e-05,
+        "dm2_atm": 0.0025,
+        "sum_mnu": 0.09
+      },
+      "target": {
+        "dm2_sol": 7.4e-05,
+        "dm2_atm": 0.0025,
+        "sum_mnu": 0.09
+      },
+      "sigma": {
+        "dm2_sol": 1.2e-05,
+        "dm2_atm": 0.0002,
+        "sum_mnu": 0.015
+      },
+      "residual_sigma": {
+        "dm2_sol": 0.0,
+        "dm2_atm": 0.0,
+        "sum_mnu": 0.0
+      },
+      "chi2": 0.0,
+      "likelihood": 1.0,
+      "within_2sigma": true
+    },
+    "qcd": {
+      "observable": "m_glueball_eff",
+      "model": 1.6,
+      "target": 1.6,
+      "sigma": 0.12,
+      "residual_sigma": 0.0,
+      "likelihood": 1.0,
+      "within_2sigma": true
+    },
+    "flavour": {
+      "observable": "delta_RK",
+      "model": -0.062,
+      "target": -0.07,
+      "sigma": 0.03,
+      "residual_sigma": 0.26666666666666694,
+      "likelihood": 0.9650691177896803,
+      "within_2sigma": true
+    },
+    "dark_matter": {
+      "observable": "rho_DM_eff_over_rho_baryon",
+      "model": 5.0,
+      "target": 5.0,
+      "sigma": 0.6,
+      "residual_sigma": 0.0,
+      "likelihood": 1.0,
+      "within_2sigma": true
+    },
+    "hubble": {
+      "observable": "H(z)",
+      "z_grid": [
+        0.1,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "model": {
+        "0.1": 73.39836570262186,
+        "0.5": 91.6214001470151,
+        "1.0": 123.27038479689683,
+        "2.0": 207.6752343351565
+      },
+      "target": {
+        "0.1": 73.1,
+        "0.5": 91.8,
+        "1.0": 123.4,
+        "2.0": 208.0
+      },
+      "relative_errors": {
+        "0.1": 0.004081610158985843,
+        "0.5": -0.0019455321675915299,
+        "1.0": -0.0010503663136399593,
+        "2.0": -0.0015613733886707265
+      },
+      "chi2": 0.0023985793156748535,
+      "likelihood": 0.9988014292026016,
+      "hubble_match_ok": true,
+      "alpha_natural_ok": true,
+      "no_explosion_ok": true,
+      "within_2sigma": true,
+      "alpha": 0.08
+    },
+    "lambda": {
+      "observable": "rho_Lambda_eff_over_rho_crit",
+      "Lambda_0": 0.66,
+      "xi": -0.3,
+      "K_bg_best": 1.0,
+      "model": 0.654,
+      "target": 0.68,
+      "sigma": 0.04,
+      "residual_sigma": -0.6500000000000006,
+      "likelihood": 0.8095716486678866,
+      "lambda_match_ok": true,
+      "xi_natural_ok": true,
+      "within_2sigma": true
+    },
+    "growth": {
+      "observable": "f_sigma8",
+      "z_grid": [
+        0.0,
+        0.5,
+        1.0,
+        1.5
+      ],
+      "model": {
+        "0.0": 0.48518399999999995,
+        "0.5": 0.4279685414311829,
+        "1.0": 0.37753656690158593,
+        "1.5": 0.33307313247872794
+      },
+      "target": {
+        "0.0": 0.48,
+        "0.5": 0.425,
+        "1.0": 0.375,
+        "1.5": 0.335
+      },
+      "sent_profile": {
+        "0.0": 0.9,
+        "0.5": 0.8597032437518755,
+        "1.0": 0.8275256303243547,
+        "1.5": 0.8018312841215098
+      },
+      "relative_errors": {
+        "0.0": 0.010799999999999931,
+        "0.5": 0.00698480336748921,
+        "1.0": 0.00676417840422916,
+        "1.5": -0.005751843347080835
+      },
+      "chi2": 0.02442652894560853,
+      "likelihood": 0.987861014737005,
+      "growth_match_ok": true,
+      "naturality_ok": true,
+      "multi_scale_ok": true,
+      "stability_ok": true,
+      "within_2sigma": true,
+      "eta": 0.012,
+      "gamma": 0.45,
+      "Sent_inf": 0.7,
+      "Sent_0": 0.9
+    }
+  },
+  "likelihoods": {
+    "muon": 1.0,
+    "neutrino": 1.0,
+    "qcd": 1.0,
+    "flavour": 0.9650691177896803,
+    "dark_matter": 1.0,
+    "hubble": 0.9988014292026016,
+    "lambda": 0.8095716486678866,
+    "growth": 0.987861014737005
+  },
+  "sector_residuals": {
+    "muon": 0.0,
+    "neutrino": {
+      "dm2_sol": 0.0,
+      "dm2_atm": 0.0,
+      "sum_mnu": 0.0
+    },
+    "qcd": 0.0,
+    "flavour": 0.26666666666666694,
+    "dark_matter": 0.0,
+    "hubble": {
+      "0.1": 0.004081610158985843,
+      "0.5": -0.0019455321675915299,
+      "1.0": -0.0010503663136399593,
+      "2.0": -0.0015613733886707265
+    },
+    "lambda": -0.6500000000000006,
+    "growth": {
+      "0.0": 0.010799999999999931,
+      "0.5": 0.00698480336748921,
+      "1.0": 0.00676417840422916,
+      "1.5": -0.005751843347080835
+    }
+  },
+  "L_total": 0.7708834303229805,
+  "L_max": 0.7708834303229805,
+  "L_total_over_L_max": 1.0,
+  "supported_region_non_empty": true,
+  "multi_scale_consistency": true,
+  "sector_balance_ok": true,
+  "v39_likelihood_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-152450Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v39_mcmc\\v39likelihoods_check_20260519-152450Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v39_mcmc\\v39likelihoods_check_20260519-152450Z.txt"
+}

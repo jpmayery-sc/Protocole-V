@@ -1,0 +1,10 @@
+V12 alpha bounds check
+timestamp: 20260518-090312Z
+verdict: falsifie
+strict_band_ok: False
+derivative_r_ok: True
+derivative_e_ok: True
+derivative_n_ok: True
+surface_present_ok: True
+max_deviation: 3.418144e-04
+stability_range: 8.026793e-05

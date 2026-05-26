@@ -1,0 +1,50 @@
+{
+  "timestamp": "20260518-170427Z",
+  "hypothesis": "la vraisemblance V13 doit favoriser la solution qui repare V12-ALPHA",
+  "case_control": "theta cible vs theta perturbe",
+  "observable": "z_geo, z_int, z_canal, z_mod, alpha_residual, fine_delta",
+  "expected": "log-vraisemblance plus haute sur la solution cible, alpha_repaired_ok vrai",
+  "measured": {
+    "alpha_repaired_ok": true,
+    "target_better_ok": true,
+    "finite_ok": true,
+    "target_log_likelihood": 0.0,
+    "perturbed_log_likelihood": -0.1283619999985153
+  },
+  "target_observables": {
+    "z_geo": 1.1e-06,
+    "z_int": 4.8e-06,
+    "z_canal": 2.6e-06,
+    "z_mod": 5.6e-06,
+    "alpha_model": 0.0072973525692838015,
+    "alpha_residual": 0.0,
+    "fine_delta": 0.00024
+  },
+  "perturbed_observables": {
+    "z_geo": 1.1120000000000001e-06,
+    "z_int": 4.8e-06,
+    "z_canal": 2.6e-06,
+    "z_mod": 5.6071999999999994e-06,
+    "alpha_model": 0.0072973575692838015,
+    "alpha_residual": 4.999999999970306e-09,
+    "fine_delta": 0.00024
+  },
+  "sigmas": {
+    "z_geo": 1.5e-07,
+    "z_int": 3e-07,
+    "z_canal": 2e-07,
+    "z_mod": 4e-07,
+    "alpha_residual": 1e-08,
+    "fine_delta": 8e-05
+  },
+  "targets": {
+    "z_geo": 1.1e-06,
+    "z_int": 4.8e-06,
+    "z_canal": 2.6e-06,
+    "z_mod": 5.6e-06,
+    "alpha_residual": 0.0,
+    "fine_delta": 0.00024
+  },
+  "verdict": "supported",
+  "reference": "V12 calibration windows"
+}

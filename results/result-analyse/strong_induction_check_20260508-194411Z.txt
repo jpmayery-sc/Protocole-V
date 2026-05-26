@@ -1,0 +1,17 @@
+Contrôle électromagnétique: induction forte
+Timestamp: 20260508-194411Z
+
+Tests:
+- Faible excitation quasi linéaire: conforme strict
+- Distorsion à forte excitation: conforme strict
+- Réponse plus forte à excitation rapide: conforme strict
+- Erreur moyenne faible champ: 0.047007
+- Erreur moyenne fort champ: 0.434830
+- Erreur moyenne excitation rapide: 0.199235
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- la réponse reste parfaitement linéaire même à forte excitation
+- la variation rapide ne change pas l'amplitude induite
+- le régime fort est indiscernable du régime faible

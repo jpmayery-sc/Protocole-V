@@ -1,0 +1,16 @@
+{
+  "section": "V46-TAU-STABILITY",
+  "source_v45_available": true,
+  "source_v45_supported": true,
+  "source_v45_timestamp": "20260519-164224Z",
+  "source_v45_supported_count": 5,
+  "source_v45_total": 5,
+  "multisector_consistency": true,
+  "RG_consistency": true,
+  "geometry_consistency": true,
+  "stability_ok": true,
+  "verdict": "supported",
+  "timestamp": "20260519-164950Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_stability_check_20260519-164950Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v46_tau\\v46tau_stability_check_20260519-164950Z.txt"
+}

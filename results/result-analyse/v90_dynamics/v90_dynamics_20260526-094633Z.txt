@@ -1,0 +1,32 @@
+V90 dynamics summary
+timestamp: 20260526-094633Z
+verdict: v90_calculation_scaffold_partial
+sample_count: 7
+z_min: 0.0
+z_max: 3.0
+max_abs_redshift_residual: 2.5368000645756426
+min_v_info: 0.0
+max_v_info: 0.7566586206982542
+min_tau: 1.0096125993639684
+max_tau: 1.1799999770465723
+monotonic_z_model: True
+tau_increasing: True
+info_drop_at_center: False
+
+Parameters:
+- tau0: 1.0
+- z_center: 0.46
+- width: 0.16
+- geometry_amplitude: 0.18
+- photon_amplitude: 0.24
+- distance_amplitude: 0.12
+- distance_scale: 0.00015373972263647997
+- h0: 67.4
+- omega_m: 0.315
+- omega_r: 9e-05
+- omega_l: 0.685
+
+Notes:
+- The script is phenomenological: g(z) and f_photon(z) are smooth calibration functions.
+- The redshift identity 1 + z = g(z) * f_photon(z) is used as the V90 consistency relation.
+- The distance proxy is normalized from the standard comoving distance so the calculation stays dimensionless and testable.

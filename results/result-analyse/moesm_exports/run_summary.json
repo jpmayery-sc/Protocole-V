@@ -1,0 +1,279 @@
+{
+  "output_dir": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports",
+  "workbooks": {
+    "MOESM2": {
+      "workbook": "MOESM2",
+      "source_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\downloaded_xlsx\\MOESM2.xlsx",
+      "sheet_count": 9,
+      "sheets": [
+        {
+          "sheet": "Fig2a-Experiment",
+          "rows_including_header": 184,
+          "data_rows": 183,
+          "columns": 5,
+          "header": [
+            "series",
+            "t_probe_us",
+            "P_down",
+            "P_down_err",
+            null
+          ],
+          "numeric_min": 0.003059028602487912,
+          "numeric_max": 303.6,
+          "first_col_labels": [
+            "dl_phi_m_plus_pi2",
+            "ds_phi_m",
+            "th_data"
+          ],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2a-Experiment.csv"
+        },
+        {
+          "sheet": "Fig2a-Fits",
+          "rows_including_header": 51,
+          "data_rows": 50,
+          "columns": 4,
+          "header": [
+            "t_probe_us_th_fit",
+            "P_down_th_fit",
+            "t_probe_us_ds_fit",
+            "P_down_ds_fit"
+          ],
+          "numeric_min": 0.5,
+          "numeric_max": 203.6,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2a-Fits.csv"
+        },
+        {
+          "sheet": "Fig2a-Simulation",
+          "rows_including_header": 61,
+          "data_rows": 60,
+          "columns": 2,
+          "header": [
+            "t_probe_us",
+            "P_up"
+          ],
+          "numeric_min": 0.5000516719256158,
+          "numeric_max": 298.6,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2a-Simulation.csv"
+        },
+        {
+          "sheet": "Fig2b-Experimet",
+          "rows_including_header": 20,
+          "data_rows": 19,
+          "columns": 4,
+          "header": [
+            "series",
+            "t_sqz_us",
+            "r",
+            "r_err"
+          ],
+          "numeric_min": 0.0189513505403318,
+          "numeric_max": 1000.0,
+          "first_col_labels": [
+            "$\\Delta$ = 100 kHz",
+            "$\\Delta$ = 50 kHz"
+          ],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2b-Experimet.csv"
+        },
+        {
+          "sheet": "Fig2b-Theory",
+          "rows_including_header": 101,
+          "data_rows": 100,
+          "columns": 4,
+          "header": [
+            "t_sqz_us",
+            "$\\Delta$ = 50 kHz",
+            "$\\Delta$ = 100 kHz",
+            "eta^2"
+          ],
+          "numeric_min": 0.0,
+          "numeric_max": 1000.0,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2b-Theory.csv"
+        },
+        {
+          "sheet": "Fig2c-Experiment",
+          "rows_including_header": 151,
+          "data_rows": 150,
+          "columns": 5,
+          "header": [
+            "series",
+            "phi_probe_cycles",
+            "P_down",
+            "P_down_err",
+            null
+          ],
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "first_col_labels": [
+            "start in $|\\downarrow\\rangle$",
+            "start in $|\\uparrow\\rangle$"
+          ],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2c-Experiment.csv"
+        },
+        {
+          "sheet": "Fig2c-Fit",
+          "rows_including_header": 401,
+          "data_rows": 400,
+          "columns": 4,
+          "header": [
+            "phi_probe_cycles_down",
+            "P_down_fit",
+            "phi_probe_cycles_up",
+            "P_up_fit"
+          ],
+          "numeric_min": -0.152,
+          "numeric_max": 1.098,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2c-Fit.csv"
+        },
+        {
+          "sheet": "Fig2d-Experiment",
+          "rows_including_header": 15,
+          "data_rows": 14,
+          "columns": 5,
+          "header": [
+            null,
+            "series",
+            "phase_diff_rad",
+            "r",
+            "r_err"
+          ],
+          "numeric_min": -0.0561336872216656,
+          "numeric_max": 1.04582068461389,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2d-Experiment.csv"
+        },
+        {
+          "sheet": "Fig2d-Fit",
+          "rows_including_header": 51,
+          "data_rows": 50,
+          "columns": 2,
+          "header": [
+            "\\Delta_\\phi",
+            "r_fit"
+          ],
+          "numeric_min": 0.0,
+          "numeric_max": 1.024871982800574,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM2\\Fig2d-Fit.csv"
+        }
+      ]
+    },
+    "MOESM3": {
+      "workbook": "MOESM3",
+      "source_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\downloaded_xlsx\\MOESM3.xlsx",
+      "sheet_count": 7,
+      "sheets": [
+        {
+          "sheet": "sqz_exp",
+          "rows_including_header": 194482,
+          "data_rows": 194481,
+          "columns": 3,
+          "header": [
+            "gamma_r",
+            "gamma_im",
+            "W"
+          ],
+          "numeric_min": -14.77602791224193,
+          "numeric_max": 14.77602791224193,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\sqz_exp.csv"
+        },
+        {
+          "sheet": "sqz_sim",
+          "rows_including_header": 194482,
+          "data_rows": 194481,
+          "columns": 3,
+          "header": [
+            "gamma_r",
+            "gamma_im",
+            "W"
+          ],
+          "numeric_min": -4.0,
+          "numeric_max": 4.0,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\sqz_sim.csv"
+        },
+        {
+          "sheet": "trisqz_exp",
+          "rows_including_header": 194482,
+          "data_rows": 194481,
+          "columns": 3,
+          "header": [
+            "gamma_r",
+            "gamma_im",
+            "W"
+          ],
+          "numeric_min": -14.77602791224193,
+          "numeric_max": 14.77602791224193,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\trisqz_exp.csv"
+        },
+        {
+          "sheet": "trisqz_sim",
+          "rows_including_header": 194482,
+          "data_rows": 194481,
+          "columns": 3,
+          "header": [
+            "gamma_r",
+            "gamma_im",
+            "W"
+          ],
+          "numeric_min": -4.0,
+          "numeric_max": 4.0,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\trisqz_sim.csv"
+        },
+        {
+          "sheet": "quadsqz_exp",
+          "rows_including_header": 203402,
+          "data_rows": 203401,
+          "columns": 3,
+          "header": [
+            "gamma_r",
+            "gamma_im",
+            "W"
+          ],
+          "numeric_min": -15.39247137665673,
+          "numeric_max": 15.39247137665673,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\quadsqz_exp.csv"
+        },
+        {
+          "sheet": "quadsqz_sim",
+          "rows_including_header": 203402,
+          "data_rows": 203401,
+          "columns": 3,
+          "header": [
+            "gamma_r",
+            "gamma_im",
+            "W"
+          ],
+          "numeric_min": -4.0,
+          "numeric_max": 4.0,
+          "first_col_labels": [],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\quadsqz_sim.csv"
+        },
+        {
+          "sheet": "README",
+          "rows_including_header": 3,
+          "data_rows": 2,
+          "columns": 1,
+          "header": [
+            "note"
+          ],
+          "numeric_min": null,
+          "numeric_max": null,
+          "first_col_labels": [
+            "Each sheet contains the exact grid used for pcolormesh: columns gamma_r, gamma_im, W.",
+            "One row corresponds to one pixel/grid-point in the plotted array (no interpolation)."
+          ],
+          "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\README.csv"
+        }
+      ]
+    }
+  },
+  "comparison_report": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\moesm_comparison_report.md"
+}

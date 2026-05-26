@@ -1,0 +1,32 @@
+Recherche sur la famille alcalino-terreuse Be -> Ba
+Timestamp: 20260508-195243Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 12.102065939334489
+- ionization_rmse: 0.4349892051534152
+- zeff_rmse: 0.031168195285954853
+- mass_rmse: 12.458726813856462
+- radius_step_cv: 0.580965283951653
+- ionization_step_cv: 0.5640287457934875
+- zeff_step_cv: 0.12219389639923048
+- mass_step_cv: 0.5163663007288615
+
+Family summary:
+- Be: period=2, mass_u=9.0121831, radius_pm=112.0, ionization_ev=9.3227, zeff_proxy=1.65589
+- Mg: period=3, mass_u=24.305, radius_pm=160.0, ionization_ev=7.6462, zeff_proxy=2.249441
+- Ca: period=4, mass_u=40.078, radius_pm=197.0, ionization_ev=6.1132, zeff_proxy=2.68179
+- Sr: period=5, mass_u=87.62, radius_pm=215.0, ionization_ev=5.6949, zeff_proxy=3.235516
+- Ba: period=6, mass_u=137.327, radius_pm=222.0, ionization_ev=5.2117, zeff_proxy=3.714253
+
+Hypothese: for the alkaline earth family, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across Be -> Ba
+- first ionization energy is not monotonic across Be -> Ba
+- Z_eff proxy is not smoother than mass across the family
+- mass alone explains the family trend as well as or better than Z_eff proxy

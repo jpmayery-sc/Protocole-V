@@ -1,0 +1,6 @@
+V38d hubble check
+timestamp: 20260519-151124Z
+verdict: supported
+hubble_match_ok: True
+alpha_natural_ok: True
+no_explosion_ok: True

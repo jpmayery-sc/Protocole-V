@@ -1,0 +1,6 @@
+metric,value
+verdict,part02_flavor_supported
+chi2_model,0.32778007346189136
+chi2_baseline,57.60745638200183
+delta_chi2,57.27967630853994
+max_abs_local_shift,0.02999999999999997

@@ -1,0 +1,6 @@
+V34 muon check
+timestamp: 20260519-103020Z
+verdict: supported
+muon_constraints_satisfied: True
+electron_safe: True
+tau_safe: True

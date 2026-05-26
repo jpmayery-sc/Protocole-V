@@ -1,0 +1,20 @@
+V7 ELECTRIC check
+timestamp: 20260518-170505Z
+verdict: conforme
+exponent: 4.945668155760043
+amplitude: 0.080431478309018
+rmse: 6.944686902903456e-05
+relative_rmse: 0.066527
+monotone_ok: True
+positive_ok: True
+saturation_absent_ok: True
+critical_floor_ok: True
+fit_quality_ok: True
+
+Sequence:
+- n=2 kappa=2.725000000000000e-03
+- n=3 kappa=3.166666666666666e-04
+- n=4 kappa=9.000000000000001e-05
+- n=5 kappa=2.809004006998229e-05
+- n=6 kappa=1.140113771584520e-05
+- n=7 kappa=5.319264498562340e-06

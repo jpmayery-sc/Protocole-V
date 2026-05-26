@@ -1,0 +1,29 @@
+V29 test 1 data preparation
+timestamp: 2026-05-18 20:15:11Z
+
+Downloaded sources:
+- cosmic_chronometers_raw: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\raw\HzTable_MM_BC32.txt
+- bao_mean_raw: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\raw\desi_2024_gaussian_bao_ALL_GCcomb_mean.txt
+- bao_cov_raw: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\raw\desi_2024_gaussian_bao_ALL_GCcomb_cov.txt
+- pantheon_data_raw: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\raw\Pantheon+SH0ES.dat
+- pantheon_statonly_cov_raw: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\raw\Pantheon+SH0ES_STATONLY.cov
+- pantheon_statsys_cov_raw: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\raw\Pantheon+SH0ES_STAT+SYS.cov
+
+Chronometers rows: 32
+Chronometer z range: 0.07 to 1.965
+BAO mean points: 12
+BAO quantities: DH_over_rs, DM_over_rs, DV_over_rs
+BAO covariance rows: 12
+BAO covariance max width: 12
+Pantheon+ rows: 1701
+Pantheon+ z range: 0.00122 to 2.26137
+Pantheon+ stat-only covariance rows: 1701
+Pantheon+ stat+sys covariance rows: 1701
+
+Prepared files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\prepared\cosmic_chronometers_hz.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\prepared\desi_bao_all_gccomb_mean.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\prepared\desi_bao_all_gccomb_cov.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\prepared\pantheon_plus_shoes.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\prepared\pantheon_plus_shoes_statonly_cov.npy
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v29_test1_data\prepared\pantheon_plus_shoes_statsys_cov.npy

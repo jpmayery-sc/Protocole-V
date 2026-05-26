@@ -1,0 +1,7 @@
+Saturation magnetic suite summary
+timestamp: 20260517-213924Z
+overall_verdict: conforme strict
+supported_count: 1/1
+
+Items:
+- strong_nonlinear_magnetic_response: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\strong_nonlinear_magnetic_response_check_20260517-213924Z.json

@@ -1,0 +1,16 @@
+Contrôle du courant triphasé
+Timestamp: 20260506-180557Z
+
+Tests:
+- Équilibre des courants: conforme strict
+- Puissance équilibrée: conforme strict
+- Déséquilibre du courant: conforme strict
+- Réponse en puissance au déséquilibre: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- les trois phases ne sont pas séparées correctement
+- la somme des courants ne s’annule pas en équilibre
+- la puissance totale varie trop en régime équilibré
+- un déséquilibre ne crée aucun écart mesurable

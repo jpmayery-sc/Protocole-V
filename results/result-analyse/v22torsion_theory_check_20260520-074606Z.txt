@@ -1,0 +1,6 @@
+V22 torsion theory check
+timestamp: 20260520-074606Z
+verdict: supported
+torsionconnectionform: {'Gamma': 'Levi-Civita + K(p, A_kappa)', 'torsion_tensor': 'K^lambda_{mu nu}(p, A_kappa)', 'observable_anchor': 'grav_torsion_eff'}
+torsioninvarianttype: metric_affine_with_torsion
+torsionstabilitystate: stable

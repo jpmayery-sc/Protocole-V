@@ -1,0 +1,7 @@
+V19 verdict check
+timestamp: 20260518-150420Z
+verdict: partiel
+classification: localement bon
+map_verdict: supported
+sensitivity_verdict: supported
+robust_global_verdict: borderline

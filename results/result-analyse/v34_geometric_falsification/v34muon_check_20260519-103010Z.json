@@ -1,0 +1,50 @@
+{
+  "section": "V34-MUON",
+  "coefficients": {
+    "A_mu": 4e-06,
+    "B_mu": 6e-06
+  },
+  "scales": {
+    "K_mu": 0.0005,
+    "T_mu": 0.0005,
+    "K_e": 1e-06,
+    "T_e": 1e-06,
+    "K_tau": 1e-05,
+    "T_tau": 1e-05
+  },
+  "delta_a_mu": 5e-09,
+  "delta_a_e": 1.0000000000000001e-11,
+  "delta_a_tau": 1.0000000000000002e-10,
+  "muon_constraints_satisfied": false,
+  "electron_safe": false,
+  "tau_safe": false,
+  "ms_limit_ok": true,
+  "rejected_reasons": [
+    "muon target not reproduced",
+    "electron correction too large",
+    "tau correction too large"
+  ],
+  "muon_verdict": "rejected",
+  "parameter_ranges": {
+    "A_mu": [
+      0.0,
+      0.001
+    ],
+    "B_mu": [
+      0.0,
+      0.001
+    ],
+    "K_tilde": [
+      1e-06,
+      0.001
+    ],
+    "T_tilde": [
+      1e-06,
+      0.001
+    ]
+  },
+  "verdict": "rejected",
+  "timestamp": "20260519-103010Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v34_geometric_falsification\\v34muon_check_20260519-103010Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v34_geometric_falsification\\v34muon_check_20260519-103010Z.txt"
+}

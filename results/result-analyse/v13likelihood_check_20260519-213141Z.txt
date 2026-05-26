@@ -1,0 +1,8 @@
+V13 likelihood check
+timestamp: 20260519-213141Z
+verdict: supported
+alpha_repaired_ok: True
+target_better_ok: True
+finite_ok: True
+target_log_likelihood: 0.000000
+perturbed_log_likelihood: -0.128362

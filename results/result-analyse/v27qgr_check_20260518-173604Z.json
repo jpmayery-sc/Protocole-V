@@ -1,0 +1,21 @@
+{
+  "section": "V27-QGR",
+  "qgr_equation": "i hbar d/dtau |Y(tau)> = (H_geom + H_K + H_T + H_int)|Y(tau)>",
+  "qgroperatorset": [
+    "H_geom",
+    "H_K",
+    "H_T",
+    "H_int"
+  ],
+  "qgr_consistency": true,
+  "internal_geodesics": true,
+  "relativisticpropagationok": true,
+  "relativistictubemodes": true,
+  "qgrtubespectrum": [
+    "L(tau) = 2 pi / sqrt(K(tau))"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-173604Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27qgr_check_20260518-173604Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27qgr_check_20260518-173604Z.txt"
+}

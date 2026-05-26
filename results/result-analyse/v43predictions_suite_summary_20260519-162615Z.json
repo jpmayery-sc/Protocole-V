@@ -1,0 +1,73 @@
+{
+  "suite": "v43predictions_suite",
+  "timestamp": "20260519-162615Z",
+  "v43_global_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "v43_colliders",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43colliders_check_20260519-162614Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43colliders_check_20260519-162614Z.txt"
+    },
+    {
+      "label": "v43_flavour",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43flavour_check_20260519-162614Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43flavour_check_20260519-162614Z.txt"
+    },
+    {
+      "label": "v43_cosmology",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43cosmology_check_20260519-162614Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43cosmology_check_20260519-162614Z.txt"
+    },
+    {
+      "label": "v43_astro",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43astro_check_20260519-162614Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43astro_check_20260519-162614Z.txt"
+    },
+    {
+      "label": "v43_synthesis",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43synthesis_check_20260519-162615Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43synthesis_check_20260519-162615Z.txt"
+    }
+  ],
+  "external_references": {
+    "muon_g2": {
+      "section": "V43-COLLIDERS",
+      "observable": "Delta a_mu",
+      "source": "arXiv:2308.06230 / Fermilab Muon g-2",
+      "value": "a_mu(Exp) = 116592059(22) x 10^-11"
+    },
+    "rk": {
+      "section": "V43-FLAVOUR",
+      "observable": "R_K",
+      "source": "LHCb, CERN Document Server 2931511 / arXiv:2505.03483",
+      "value": "R_K = 1.08"
+    },
+    "hubble": {
+      "section": "V43-COSMOLOGY",
+      "observable": "H0",
+      "source": "Planck 2018 cosmological parameters",
+      "value": "H0 = 67.4 +/- 0.5 km/s/Mpc"
+    },
+    "des_y6": {
+      "section": "V43-COSMOLOGY",
+      "observable": "S8",
+      "source": "DES Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing (arXiv:2601.14559)",
+      "value": "S8 = 0.789 +0.012/-0.012"
+    },
+    "kids_1000": {
+      "section": "V43-ASTRO",
+      "observable": "S8",
+      "source": "KiDS-1000 cosmic shear, arXiv:2007.15633",
+      "value": "S8 = 0.759 +0.024/-0.021"
+    }
+  },
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43predictions_suite_summary_20260519-162615Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43predictions_suite_summary_20260519-162615Z.txt"
+}

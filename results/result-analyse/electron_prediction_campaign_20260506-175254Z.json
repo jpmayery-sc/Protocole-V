@@ -1,0 +1,50 @@
+{
+  "timestamp": "20260506-175254Z",
+  "model_formula": "D1 fixe le régime, l’électron transmet, le proton reçoit et transforme, le neutron régule, le photon signale le dépassement du seuil.",
+  "cases": [
+    {
+      "name": "Hydrogène-1",
+      "structure": {
+        "protons": 1,
+        "neutrons": 0,
+        "electrons": 1,
+        "neutron_to_proton": 0.0
+      },
+      "expected_role": "transmission simple",
+      "expected_signature": "pas de réserve neutronique à mobiliser",
+      "verdict": "conforme strict",
+      "reason": "cas minimal exact",
+      "falsifier": "un neutron apparaît ou Z/e- n’est plus égal à 1"
+    },
+    {
+      "name": "Fer-56",
+      "structure": {
+        "protons": 26,
+        "neutrons": 30,
+        "electrons": 26,
+        "neutron_to_proton": 1.154
+      },
+      "expected_role": "point de balance",
+      "expected_signature": "forte stabilité avec compromis proton/neutron",
+      "verdict": "conforme strict",
+      "reason": "point de balance exact",
+      "falsifier": "N/Z sort de la fenêtre de balance ou la symétrie Z=e- disparaît"
+    },
+    {
+      "name": "Plomb-208",
+      "structure": {
+        "protons": 82,
+        "neutrons": 126,
+        "electrons": 82,
+        "neutron_to_proton": 1.537
+      },
+      "expected_role": "stabilité lourde sous contrainte",
+      "expected_signature": "réserve neutronique importante et proche d’une saturation",
+      "verdict": "conforme strict",
+      "reason": "cas lourd proche de saturation",
+      "falsifier": "la réserve neutronique n’est pas nettement dominante"
+    }
+  ],
+  "global_verdict": "conforme strict",
+  "falsification_rule": "Le modèle falsifie si H, Fe et Pb ne passent pas les seuils stricts définis pour le cas minimal, le point de balance et le cas lourd."
+}

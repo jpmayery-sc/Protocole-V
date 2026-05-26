@@ -1,0 +1,5 @@
+V77C A=7 normalisation check
+- no hidden A=7 normalization factor found in the proxy
+- no saturation clamp found
+- Li_total is unconstrained except by the two positive exponentials and their sum
+- therefore the lock is structural, not numerical

@@ -1,0 +1,9 @@
+V36 scale strong suite summary
+timestamp: 20260519-131903Z
+v36_global_verdict: supported
+supported_count: 3/3
+
+Items:
+- v36_scales: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v36_scale_strong\v36scales_check_20260519-131903Z.json
+- v36_strong: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v36_scale_strong\v36strong_check_20260519-131903Z.json
+- v36_tester_summary: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v36_scale_strong\v36tester_summary_check_20260519-131903Z.json

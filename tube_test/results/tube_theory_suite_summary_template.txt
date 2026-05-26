@@ -1,0 +1,8 @@
+Tube Theory suite summary
+overall_verdict: not_run
+supported_count: 0/3
+
+Items:
+- one_fixed_damper: pending -> data/hysteresis/One_fixed_damper.json
+- test_experiments: pending -> data/hysteresis/Test_experiments.json
+- core_loss_mhz: pending -> data/induction/MHzCoreLoss.csv

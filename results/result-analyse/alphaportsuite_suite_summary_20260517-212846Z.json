@@ -1,0 +1,29 @@
+{
+  "suite": "alphaportsuite",
+  "timestamp": "20260517-212846Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "alphaenergyrunning",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaenergyrunning_check_20260517-212845Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaenergyrunning_check_20260517-212845Z.txt"
+    },
+    {
+      "label": "alphatorsionorder",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphatorsionorder_check_20260517-212845Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphatorsionorder_check_20260517-212845Z.txt"
+    },
+    {
+      "label": "alphageometricport",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphageometricport_check_20260517-212845Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphageometricport_check_20260517-212845Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaportsuite_suite_summary_20260517-212846Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alphaportsuite_suite_summary_20260517-212846Z.txt"
+}

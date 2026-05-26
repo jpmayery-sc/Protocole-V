@@ -1,0 +1,14 @@
+Material conductivity check
+timestamp: 20260511-000623Z
+verdict: supported
+ordering_ok: True
+copper_ok: True
+iron_ok: True
+aluminum_ok: True
+silicon_ok: True
+
+Cases:
+- cuivre: rho_pure=1.680e-08 rho_hot=1.950e-08 rho_impure=3.250e-08
+- fer: rho_pure=9.710e-08 rho_hot=1.100e-07 rho_impure=1.340e-07
+- aluminium: rho_pure=2.820e-08 rho_hot=3.150e-08 rho_oxide=4.200e-08
+- silicium: sigma_intrinsic=1.000e-04 sigma_hot=2.000e-03 sigma_doped_n=1.000e+02 sigma_doped_p=8.000e+01

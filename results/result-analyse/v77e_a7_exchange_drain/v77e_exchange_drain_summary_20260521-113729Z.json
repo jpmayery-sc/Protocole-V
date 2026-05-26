@@ -1,0 +1,29 @@
+{
+  "suite": "v77e_a7_exchange_drain",
+  "timestamp": "20260521-113729Z",
+  "verdict": "zone_viable_trouvee",
+  "row_count": 25,
+  "both_pass_count": 4,
+  "best_row": {
+    "gamma_exch": 1.0,
+    "gamma_drain": 0.375,
+    "eta_exch": 1.0,
+    "Li7_exch": 2.225e-10,
+    "Be7_exch": 0.0,
+    "Li7_final": 1.390625e-10,
+    "Be7_final": 0.0,
+    "Li_total_final": 1.390625e-10,
+    "Li7_pass": true,
+    "LiTot_pass": true,
+    "passes_both": true
+  },
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain\\v77e_exchange_drain_scan.csv",
+  "plot_paths": [
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain\\plots\\Li7_final_heatmap.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain\\plots\\Be7_final_heatmap.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain\\plots\\Li_total_final_heatmap.png"
+  ],
+  "output_dir": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain\\v77e_exchange_drain_summary_20260521-113729Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77e_a7_exchange_drain\\v77e_exchange_drain_summary_20260521-113729Z.txt"
+}

@@ -1,0 +1,48 @@
+{
+  "section": "V24-VERDICT",
+  "V24_AXIOMS": {
+    "section": "V24-AXIOMS",
+    "axioms_list": [
+      "global non-factorisable state Y",
+      "emergent geometry from Sent(Y)",
+      "quantal tubes as local geometric projections",
+      "constrained energy modes for matter and light",
+      "internal torsion generating spin-like structure",
+      "emergent gravity from confined energy"
+    ],
+    "axioms_consistency": true,
+    "axioms_conflicts": [],
+    "verdict": "supported"
+  },
+  "V24_LAGRANGIAN": {
+    "section": "V24-LAGRANGIAN",
+    "lagrangian_form": {
+      "L_tot": "L_grav + L_K + L_mat + L_lum",
+      "L_grav": "(16 pi G_eff)^-1 R[g]",
+      "L_K": "1/2 (dK)^2 - V(K)",
+      "L_mat": "psi-bar(i gamma.D - m(K)) psi",
+      "L_lum": "-1/4 F_mu_nu F^mu_nu"
+    },
+    "eulerlagrangeequations": [
+      "variation in g -> emergent gravity",
+      "variation in K -> internal curvature dynamics",
+      "variation in psi -> geometric Dirac equation",
+      "variation in A -> Maxwell equation"
+    ],
+    "lagrangian_consistency": true,
+    "verdict": "supported"
+  },
+  "V24_TESTS": {
+    "section": "V24-TESTS",
+    "physicstestspassed": true,
+    "failed_tests": [],
+    "physics_verdict": "supported"
+  },
+  "v24_verdict": "supported",
+  "physics_summary": "V24 is coherent: axioms, lagrangian, effective physics and tests agree.",
+  "next_step": "extend_to_V25",
+  "verdict": "supported",
+  "timestamp": "20260518-170216Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v24verdict_check_20260518-170216Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v24verdict_check_20260518-170216Z.txt"
+}

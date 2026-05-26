@@ -1,0 +1,6 @@
+V39 diagnostics check
+timestamp: 20260519-152325Z
+verdict: partially_supported
+convergence_ok: False
+stability_ok: True
+multi_sector_balance_ok: True

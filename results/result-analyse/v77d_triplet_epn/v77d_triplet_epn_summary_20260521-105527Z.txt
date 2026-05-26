@@ -1,0 +1,19 @@
+V77D triplet e-p-n scan summary
+timestamp: 20260521-105527Z
+verdict: direction_physique_ouverte
+verdict_text: beta_e ouvre une direction physique pour compenser A=7
+row_count: 5
+li_total_drop_fraction: 0.23147478711029223
+baseline_beta_e: 1.0
+baseline_Li_total_over_H: 2.8957063234756704e-10
+best_beta_e: 1.2
+best_Li_total_over_H: 2.2254233187152126e-10
+best_D_over_H: 2.546169376810722e-05
+best_Y_p: 0.246676
+best_Li7_over_H: 1.2303780727001755e-10
+best_Be7_over_H: 9.950452460150371e-11
+
+Plots:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77d_triplet_epn\plots\Li7_over_H_vs_beta_e.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77d_triplet_epn\plots\Be7_over_H_vs_beta_e.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77d_triplet_epn\plots\Li_total_over_H_vs_beta_e.png

@@ -1,0 +1,105 @@
+{
+  "timestamp": "20260518-085644Z",
+  "hypothesis": "la variation relative du canal electronique induit un redshift effectif petit et monotone",
+  "case_control": "H, Fe, Pb, U",
+  "observable": "z_canal",
+  "expected": "variation monotone avec Z, sans divergence, plus marquee pour des torsions plus fortes",
+  "measured": {
+    "monotone_ok": true,
+    "env_growth_ok": true,
+    "band_ok": true,
+    "no_divergence_ok": true
+  },
+  "cases": [
+    {
+      "name": "H",
+      "z": 1,
+      "environments": [
+        {
+          "name": "quiet",
+          "channel_scale": 0.8,
+          "redshift": 7.189162800773808e-07
+        },
+        {
+          "name": "nominal",
+          "channel_scale": 1.0,
+          "redshift": 8.98645350096726e-07
+        },
+        {
+          "name": "extreme",
+          "channel_scale": 1.2,
+          "redshift": 1.0783744201160711e-06
+        }
+      ],
+      "nominal_redshift": 8.98645350096726e-07
+    },
+    {
+      "name": "Fe",
+      "z": 26,
+      "environments": [
+        {
+          "name": "quiet",
+          "channel_scale": 0.8,
+          "redshift": 8.832213728630894e-07
+        },
+        {
+          "name": "nominal",
+          "channel_scale": 1.0,
+          "redshift": 1.1040267160788616e-06
+        },
+        {
+          "name": "extreme",
+          "channel_scale": 1.2,
+          "redshift": 1.3248320592946338e-06
+        }
+      ],
+      "nominal_redshift": 1.1040267160788616e-06
+    },
+    {
+      "name": "Pb",
+      "z": 82,
+      "environments": [
+        {
+          "name": "quiet",
+          "channel_scale": 0.8,
+          "redshift": 1.6738438845212653e-06
+        },
+        {
+          "name": "nominal",
+          "channel_scale": 1.0,
+          "redshift": 2.0923048556515816e-06
+        },
+        {
+          "name": "extreme",
+          "channel_scale": 1.2,
+          "redshift": 2.510765826781898e-06
+        }
+      ],
+      "nominal_redshift": 2.0923048556515816e-06
+    },
+    {
+      "name": "U",
+      "z": 92,
+      "environments": [
+        {
+          "name": "quiet",
+          "channel_scale": 0.8,
+          "redshift": 1.9774129024906785e-06
+        },
+        {
+          "name": "nominal",
+          "channel_scale": 1.0,
+          "redshift": 2.4717661281133484e-06
+        },
+        {
+          "name": "extreme",
+          "channel_scale": 1.2,
+          "redshift": 2.966119353736018e-06
+        }
+      ],
+      "nominal_redshift": 2.4717661281133484e-06
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V7 electron response"
+}

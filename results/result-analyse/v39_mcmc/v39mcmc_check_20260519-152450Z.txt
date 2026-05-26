@@ -1,0 +1,6 @@
+V39 mcmc check
+timestamp: 20260519-152450Z
+verdict: supported
+r_hat_logl: 1.0001416355914619
+r_hat_epsilon: 1.0
+supported_region_fraction: 1.0

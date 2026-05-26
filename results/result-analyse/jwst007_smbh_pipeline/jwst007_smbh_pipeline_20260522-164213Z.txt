@@ -1,0 +1,14 @@
+JWST-07 SMBH precocious-growth pipeline summary
+timestamp: 20260522-164213Z
+verdict: jwst07_smbh_precoces_supported
+chi2_mbh: 121.83652929640178
+chi2_lbol: 50.12953473053861
+chi2_ratio: 32.42312418241683
+chi2_compactness: 5.377249995189193
+baseline_total_chi2: 411.23980945821813
+total_chi2: 209.7664382045464
+delta_chi2: 201.47337125367173
+mean_mbh_log_hom: 7.67
+mean_lbol_log_hom: 46.222
+mean_ratio_hom: 0.018
+mean_compactness_hom: 0.754

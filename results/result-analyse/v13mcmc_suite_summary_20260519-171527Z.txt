@@ -1,0 +1,10 @@
+V13 MCMC suite summary
+timestamp: 20260519-171527Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v13_params: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v13params_check_20260519-171526Z.json
+- v13_likelihood: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v13likelihood_check_20260519-171526Z.json
+- v13_mcmc: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v13mcmc_check_20260519-171526Z.json
+- v13_postcheck: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v13postcheck_check_20260519-171527Z.json

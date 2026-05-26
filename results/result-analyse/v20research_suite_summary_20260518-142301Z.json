@@ -1,0 +1,35 @@
+{
+  "suite": "v20research_suite",
+  "timestamp": "20260518-142301Z",
+  "overall_verdict": "partiel",
+  "supported_count": 2,
+  "total": 4,
+  "items": [
+    {
+      "label": "v20_geo",
+      "verdict": "fragile",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20geo_check_20260518-142300Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20geo_check_20260518-142300Z.txt"
+    },
+    {
+      "label": "v20_torsion",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20torsion_check_20260518-142300Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20torsion_check_20260518-142300Z.txt"
+    },
+    {
+      "label": "v20_hierarchy",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20hierarchy_check_20260518-142301Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20hierarchy_check_20260518-142301Z.txt"
+    },
+    {
+      "label": "v20_verdict",
+      "verdict": "fragile",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20verdict_check_20260518-142301Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20verdict_check_20260518-142301Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20research_suite_summary_20260518-142301Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v20research_suite_summary_20260518-142301Z.txt"
+}

@@ -1,0 +1,6 @@
+V36 strong check
+timestamp: 20260519-131903Z
+verdict: supported
+mass_match_ok: True
+naturality_ok: True
+hierarchy_ok: True

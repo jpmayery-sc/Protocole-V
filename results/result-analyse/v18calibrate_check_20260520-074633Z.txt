@@ -1,0 +1,6 @@
+V18 calibrate check
+timestamp: 20260520-074633Z
+verdict: supported-improved
+best_profile: calibration_agressive
+baseline_deviation_score: 0.061080
+best_deviation_score: 0.060988

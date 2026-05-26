@@ -1,0 +1,10 @@
+Current regime suite summary
+timestamp: 20260512-110844Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- copper_current: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\copper_current_check_20260512-110844Z.json
+- iron_current: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\iron_current_check_20260512-110844Z.json
+- aluminum_current: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\aluminum_current_check_20260512-110844Z.json
+- three_phase_current: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\three_phase_current_check_20260512-110844Z.json

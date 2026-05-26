@@ -1,0 +1,15 @@
+V14 rank check
+timestamp: 20260519-171303Z
+verdict: supported
+keep_names: alpha0, s_geo, s_atom, A_kappa, p
+strong: alpha0, s_geo, s_atom
+weak: A_kappa, p
+flat: aE, aR, s_canal
+- alpha0: combined_score=0.020000 class=strongly_constrained
+- s_geo: combined_score=0.067857 class=strongly_constrained
+- s_atom: combined_score=0.068153 class=strongly_constrained
+- A_kappa: combined_score=0.155132 class=weakly_constrained
+- p: combined_score=0.036380 class=weakly_constrained
+- aE: combined_score=0.053333 class=quasi_flat
+- aR: combined_score=0.033334 class=quasi_flat
+- s_canal: combined_score=0.056024 class=quasi_flat

@@ -1,0 +1,87 @@
+{
+  "timestamp": "20260508-195243Z",
+  "family_name": "alkaline_earth_family",
+  "family": [
+    {
+      "symbol": "Be",
+      "name": "Beryllium",
+      "period": 2,
+      "mass_u": 9.0121831,
+      "radius_pm": 112.0,
+      "ionization_ev": 9.3227,
+      "principal_n": 2,
+      "zeff_proxy": 1.65589
+    },
+    {
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "period": 3,
+      "mass_u": 24.305,
+      "radius_pm": 160.0,
+      "ionization_ev": 7.6462,
+      "principal_n": 3,
+      "zeff_proxy": 2.249441
+    },
+    {
+      "symbol": "Ca",
+      "name": "Calcium",
+      "period": 4,
+      "mass_u": 40.078,
+      "radius_pm": 197.0,
+      "ionization_ev": 6.1132,
+      "principal_n": 4,
+      "zeff_proxy": 2.68179
+    },
+    {
+      "symbol": "Sr",
+      "name": "Strontium",
+      "period": 5,
+      "mass_u": 87.62,
+      "radius_pm": 215.0,
+      "ionization_ev": 5.6949,
+      "principal_n": 5,
+      "zeff_proxy": 3.235516
+    },
+    {
+      "symbol": "Ba",
+      "name": "Barium",
+      "period": 6,
+      "mass_u": 137.327,
+      "radius_pm": 222.0,
+      "ionization_ev": 5.2117,
+      "principal_n": 6,
+      "zeff_proxy": 3.714253
+    }
+  ],
+  "observables": {
+    "radius_trend": "increasing",
+    "ionization_trend": "decreasing",
+    "zeff_trend": "increasing",
+    "mass_trend": "increasing",
+    "radius_rmse": 12.102065939334489,
+    "ionization_rmse": 0.4349892051534152,
+    "zeff_rmse": 0.031168195285954853,
+    "mass_rmse": 12.458726813856462,
+    "radius_step_cv": 0.580965283951653,
+    "ionization_step_cv": 0.5640287457934875,
+    "zeff_step_cv": 0.12219389639923048,
+    "mass_step_cv": 0.5163663007288615
+  },
+  "hypothesis": "for the alkaline earth family, radius tracks Z_eff better than mass alone",
+  "case_control": "Be -> Mg -> Ca -> Sr -> Ba same-valence family",
+  "expected": {
+    "radius": "monotonic increase",
+    "ionization": "monotonic decrease",
+    "zeff_proxy": "smooth monotonic increase",
+    "mass": "less explanatory than zeff_proxy for the family trend"
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "radius is not monotonic across Be -> Ba",
+    "first ionization energy is not monotonic across Be -> Ba",
+    "Z_eff proxy is not smoother than mass across the family",
+    "mass alone explains the family trend as well as or better than Z_eff proxy"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alkaline_earth_family_zeff_check_20260508-195243Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\alkaline_earth_family_zeff_check_20260508-195243Z.txt"
+}

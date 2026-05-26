@@ -1,0 +1,22 @@
+V83 coupling calibration summary
+timestamp: 20260521-091416Z
+verdict: v83_calibration_confirmed
+epsilon_best: -0.0069
+delta_em: -0.0069
+k_n_calibrated: 144.92753623188406
+k_t_calibrated: 43.47826086956522
+k_g_calibrated: 40.57971014492754
+pi_n_labo: 1e-16
+pi_n_ns: 1.0
+G_eff_labo: 1.0
+G_eff_ns: 1.28
+F_temps_labo: 1.0
+F_temps_ns: 0.7692307692307692
+z_eff: 0.30000000000000004
+M_max: 2.0327692307692304
+R_1p4: 11.06676923076923
+variation_em_labo: 6.9e-19
+
+Notes:
+- V83 fixe epsilon et calibre les couplages pour les fenêtres gravité/temps/NS.
+- Les proxys restent phénoménologiques mais gardent les bons ordres de grandeur d'observation.

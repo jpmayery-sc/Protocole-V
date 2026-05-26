@@ -1,0 +1,31 @@
+\section{Annexe A -- Équations complètes}
+Dans cette version, $K$, $T$ et $Y$ sont traités comme des champs effectifs scalaires issus d'une réduction de symétrie d'un cadre géométrique plus général. $K$ représente une projection scalaire de la courbure, $T$ un invariant scalaire de torsion effectif, et $Y$ un paramètre de cohérence ou d'ordre qui encode le couplage multi-échelle du secteur réduit. Ils ne sont donc pas des observables brutes, mais des variables effectives construites pour la fermeture du système.
+
+Le système final consolidé est écrit à partir de l'action effective suivante :
+\[
+\mathcal{L}_{\mathrm{eff}}=\frac12 A_K\left(\frac{dK}{d\lambda}\right)^2+\frac12 A_T\left(\frac{dT}{d\lambda}\right)^2+\frac12 A_Y\left(\frac{dY}{d\lambda}\right)^2 - V_{KT}-V_Y-V_D + \chi_2 T\frac{dY}{d\lambda}.
+\]
+Les équations d'Euler-Lagrange sont alors, en notant la prime comme la dérivation par rapport à $\lambda$ :
+\[
+\frac{d}{d\lambda}\left(\frac{\partial \mathcal{L}_{\mathrm{eff}}}{\partial Y'}\right)-\frac{\partial \mathcal{L}_{\mathrm{eff}}}{\partial Y}=0,
+\qquad
+\frac{d}{d\lambda}\left(\frac{\partial \mathcal{L}_{\mathrm{eff}}}{\partial T'}\right)-\frac{\partial \mathcal{L}_{\mathrm{eff}}}{\partial T}=0,
+\qquad
+\frac{d}{d\lambda}\left(\frac{\partial \mathcal{L}_{\mathrm{eff}}}{\partial K'}\right)-\frac{\partial \mathcal{L}_{\mathrm{eff}}}{\partial K}=0.
+\]
+Le système final consolidé utilisé dans la synthèse est :
+\[
+V_{total}^{(eff)}=\alpha_KK^2+\alpha_TT^2+\alpha_{KT}KT+\frac{\gamma^*}{2}(Y-Y_\infty)^2+\beta_1Y_{D1}^2+\beta_2Y_{D2}^2+\beta_{12}Y_{D1}Y_{D2}.
+\]
+Les équations de mouvement associées sont :
+\[
+ A_Y\frac{d^2Y}{d\lambda^2}+\gamma^*(Y-Y_\infty)+\chi_2\frac{dT}{d\lambda}=0,
+\qquad
+ A_T\frac{d^2T}{d\lambda^2}+2\alpha_TT+\alpha_{KT}K-\chi_2\frac{dY}{d\lambda}=0,
+\qquad
+ A_K\frac{d^2K}{d\lambda^2}+2\alpha_KK+\alpha_{KT}T=0.
+\]
+
+\section{Réduction sans intrication}
+En posant $\chi_2=0$, on obtient le scénario de contrôle utilisé dans V60--V61.
+Dans le même esprit, le fond standard est récupéré en figeant les degrés effectifs autour d'une configuration homogène, ce qui sert de limite de comparaison explicite pour la suite du manuscrit.

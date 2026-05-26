@@ -1,0 +1,35 @@
+{
+  "suite": "v19metacalibration_suite",
+  "timestamp": "20260518-170836Z",
+  "overall_verdict": "partiel",
+  "supported_count": 2,
+  "total": 4,
+  "items": [
+    {
+      "label": "v19_map",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19map_check_20260518-170835Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19map_check_20260518-170835Z.txt"
+    },
+    {
+      "label": "v19_sensitivity",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19sensitivity_check_20260518-170835Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19sensitivity_check_20260518-170835Z.txt"
+    },
+    {
+      "label": "v19_robust_global",
+      "verdict": "borderline",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19robustglobal_check_20260518-170835Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19robustglobal_check_20260518-170835Z.txt"
+    },
+    {
+      "label": "v19_verdict",
+      "verdict": "partiel",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19verdict_check_20260518-170835Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19verdict_check_20260518-170835Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19metacalibration_suite_summary_20260518-170836Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19metacalibration_suite_summary_20260518-170836Z.txt"
+}

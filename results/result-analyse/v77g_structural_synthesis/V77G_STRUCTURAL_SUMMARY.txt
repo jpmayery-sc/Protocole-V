@@ -1,0 +1,32 @@
+V77G structural synthesis
+
+1) Ce que le proxy a appris
+- V77C : Li_total = Li7 + Be7, verrou structurel positif sans destruction explicite.
+- V77D : beta_e crée une pente monotone et convexe sur Li_total.
+- V77E : exchange + drain renverse l’équilibre A=7 et ouvre une zone de passage de largeur moyenne.
+- V77F : la courbe Li_total montre une pente nette, sans point de bascule interne marqué.
+
+2) Schéma minimal A=7
+- Variables : Li7, Be7, Li_total = Li7 + Be7.
+- Leviers : delta_EM, beta_e, gamma_exch, gamma_drain.
+- Rôles : delta_EM ajuste, beta_e incline, gamma_exch redistribue, gamma_drain vide.
+
+3) Questions pour le réel
+- Existe-t-il un levier électronique analogue à beta_e ?
+- Les destructions A=7 peuvent-elles jouer le rôle de gamma_drain ?
+- Les échanges Be7 <-> Li7 ont-ils un analogue réaliste ?
+- Le code réel reproduit-il une pente nette avec une zone de passage moyenne ?
+
+4) Phrase de synthèse
+Le proxy jouet A=7 montre qu’un levier électronique (beta_e) combiné à un schéma échange + vidange (gamma_exch, gamma_drain) permet de renverser l’équilibre interne A=7 et de faire passer Li_total dans une zone acceptable de largeur moyenne.
+V78R devra tester si des mécanismes physiques réels peuvent reproduire cette géométrie de courbe.
+
+5) Extraits consolidés
+[v77c]
+[v77c_summary]
+[v77d]
+[v77d_summary]
+[v77e]
+[v77e_summary]
+[v77f]
+[v77f_summary]

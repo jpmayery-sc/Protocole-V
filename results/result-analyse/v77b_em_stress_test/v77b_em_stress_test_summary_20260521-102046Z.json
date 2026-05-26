@@ -1,0 +1,56 @@
+{
+  "suite": "v77b_em_stress_test",
+  "timestamp": "20260521-102046Z",
+  "verdict": "resolution_ultra_fine",
+  "verdict_text": "direction EM différentiel tuning",
+  "scan_delta_values": [
+    -0.0072,
+    -0.00705,
+    -0.0069,
+    -0.00675,
+    -0.0066
+  ],
+  "scan_alpha_values": [
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0
+  ],
+  "row_count": 225,
+  "direct_pass_count": 225,
+  "total_pass_count": 0,
+  "best_row": {
+    "delta_em": -0.0072,
+    "alpha_be": 1.0,
+    "li_scale": 0.95,
+    "be_scale": 0.95,
+    "D_over_H": 2.533414568331329e-05,
+    "Y_p": 0.24673,
+    "Li7_over_H": 1.412029743915857e-10,
+    "Be7_over_H": 1.2017935186348036e-10,
+    "Li_total_over_H": 2.6138232625506605e-10,
+    "D_z": 0.2138189443776366,
+    "Y_z": 0.02371134020618639,
+    "Li7_z": 0.5418395357552995,
+    "Li_total_z": 3.3349137501634205,
+    "proxy_chi2": 11.16793048965819,
+    "passes_D": true,
+    "passes_Y": true,
+    "passes_Li7": true,
+    "passes_Li_total": false,
+    "passes_all_direct": true,
+    "passes_all_total": false
+  },
+  "best_alpha_be": 1.0,
+  "best_delta_em": -0.0072,
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test\\v77b_em_stress_test_grid.csv",
+  "plot_paths": [
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test\\plots\\Li7_over_H_heatmap.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test\\plots\\Be7_over_H_heatmap.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test\\plots\\Li_total_over_H_heatmap.png"
+  ],
+  "output_dir": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test\\v77b_em_stress_test_summary_20260521-102046Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77b_em_stress_test\\v77b_em_stress_test_summary_20260521-102046Z.txt"
+}

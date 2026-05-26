@@ -1,0 +1,47 @@
+{
+  "suite": "v27qgr_suite",
+  "timestamp": "20260518-173605Z",
+  "overall_verdict": "supported",
+  "supported_count": 6,
+  "total": 6,
+  "items": [
+    {
+      "label": "v27_qgr",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27qgr_check_20260518-173604Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27qgr_check_20260518-173604Z.txt"
+    },
+    {
+      "label": "v27_renormalisation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27renormalisation_check_20260518-173605Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27renormalisation_check_20260518-173605Z.txt"
+    },
+    {
+      "label": "v27_multiscale",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27multiscale_check_20260518-173605Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27multiscale_check_20260518-173605Z.txt"
+    },
+    {
+      "label": "v27_observables_advanced",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27observablesadvanced_check_20260518-173605Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27observablesadvanced_check_20260518-173605Z.txt"
+    },
+    {
+      "label": "v27_publication_advanced",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27publicationadvanced_check_20260518-173605Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27publicationadvanced_check_20260518-173605Z.txt"
+    },
+    {
+      "label": "v27_verdict",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27verdict_check_20260518-173605Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27verdict_check_20260518-173605Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27qgr_suite_summary_20260518-173605Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27qgr_suite_summary_20260518-173605Z.txt"
+}

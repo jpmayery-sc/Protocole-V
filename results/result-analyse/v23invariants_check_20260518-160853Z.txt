@@ -1,0 +1,5 @@
+V23 invariants check
+timestamp: 20260518-160853Z
+verdict: supported
+invariantsstabilitystate: stable
+stable: True

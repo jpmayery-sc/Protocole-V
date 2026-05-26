@@ -1,0 +1,54 @@
+{
+  "timestamp": "20260518-101909Z",
+  "hypothesis": "les corrections fines doivent rester dans une plage realiste et suivre une hierarchie avec Z",
+  "case_control": "H, He, Fe, Xe, Pb, U",
+  "observable": "DeltaE_torsion(Z)",
+  "expected": "amplitude entre 10^-6 et 10^-3 eV et croissance avec Z",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "base_delta_phi": 0.0031087512698201886,
+    "absolute_band_ok": true,
+    "monotone_ok": true,
+    "fe_stable_ok": true
+  },
+  "cases": [
+    {
+      "name": "H",
+      "z": 1,
+      "n": 2,
+      "correction": 9.924973653912903e-06
+    },
+    {
+      "name": "He",
+      "z": 2,
+      "n": 2,
+      "correction": 1.9849947307825806e-05
+    },
+    {
+      "name": "Fe",
+      "z": 26,
+      "n": 2,
+      "correction": 0.00025804931500173547
+    },
+    {
+      "name": "Xe",
+      "z": 54,
+      "n": 2,
+      "correction": 0.0005359485773112967
+    },
+    {
+      "name": "Pb",
+      "z": 82,
+      "n": 2,
+      "correction": 0.0008138478396208581
+    },
+    {
+      "name": "U",
+      "z": 92,
+      "n": 2,
+      "correction": 0.000913097576159987
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V8 level shift and V10 spectral corrections"
+}

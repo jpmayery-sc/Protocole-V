@@ -1,0 +1,13 @@
+Point Atome master suite summary
+timestamp: 20260517-154933Z
+overall_verdict: supported
+supported_count: 7/7
+
+Items:
+- point_atome_protocol: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_protocol_suite_summary_20260517-154930Z.json
+- atom_basics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\atom_basics_suite_summary_20260517-154931Z.json
+- v8atomicsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v8atomicsuite_summary_20260517-154932Z.json
+- v9atomicsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v9atomicsuite_summary_20260517-154932Z.json
+- d1d4: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d4\d1d4_suite_summary_20260517-154932Z.json
+- electron5_core: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_core\electron5_core_suite_summary_20260517-154933Z.json
+- electron5_extended: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_extended\electron5_extended_suite_summary_20260517-154933Z.json

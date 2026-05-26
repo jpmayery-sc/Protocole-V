@@ -1,0 +1,14 @@
+Contrôle électromagnétique: réponse non linéaire magnétique
+Timestamp: 20260506-212908Z
+
+Tests:
+- Faible champ quasi linéaire: conforme strict
+- Saturation à champ fort: conforme strict
+- Courbure de la réponse: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- la réponse reste linéaire jusqu’à fort champ
+- la saturation n’apparaît pas
+- un matériau magnétique ne se distingue pas d’un matériau non magnétique

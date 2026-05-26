@@ -1,0 +1,196 @@
+# V77O — GÉOMÉTRIE TEMPORELLE DU SECTEUR A=7
+# Version : 1.0 — Mode exploration, “à quel temps le lithium est-il vraiment défini ?”
+# Auteur : Jean-Philippe
+# Objet : tester si le pincement géométrique de V77N vient d’un mauvais choix
+#         de temps d’observation pour Li7/H, Be7/H, Li_total/H.
+ 
+Protocole précédent : V77N (stabilité + test lithium ciblé)
+Protocole suivant : V80 (si la bande se libère) ou V79TER (si blocage persiste)
+ 
+Wrapper suggéré :
+- python/scripts/runv79bis_temporal_geometry_a7.py
+ 
+CONTENU :
+- 0. Objectif
+- 1. Notion de “temps d’observation” pour A=7
+- 2. Module A — Timeline Li7(t), Be7(t), Li_total(t)
+- 3. Module B — Surfaces d’observation alternatives
+- 4. Module C — Impact sur la bande Li-acceptable
+- 5. Sorties attendues
+- 6. Critères de succès
+- 7. Transition (et enjeu d’explication)
+ 
+0. OBJECTIF
+-----------
+V79BIS vise à répondre à une question précise :
+ 
+> “Le ruban ultra-fin de V77N vient-il du fait que l’on totalise Li7+Be7
+>  au mauvais temps, c’est-à-dire sur une surface temporelle qui n’est pas
+>  celle réellement ‘vue’ par les observations ?”
+ 
+Idée centrale :
+- on ne change pas la physique,
+- on change **le moment où l’on regarde** Li7, Be7, Li_total,
+- et on regarde si la bande Li-acceptable s’élargit.
+ 
+V79BIS = test de la **géométrie temporelle** du secteur A=7.
+ 
+ 
+1. NOTION DE “TEMPS D’OBSERVATION” POUR A=7
+-------------------------------------------
+On distingue trois temps conceptuels :
+ 
+1) t_BBN_end :
+   - fin de la BBN,
+   - réactions nucléaires figées,
+   - Be7 encore présent, Li7 partiellement formé.
+ 
+2) t_capture_e :
+   - époque où la capture e– Be7 + e– → Li7 devient efficace,
+   - Be7 → Li7 tardif,
+   - encore avant la formation des premières étoiles.
+ 
+3) t_obs_plateau :
+   - époque des étoiles du halo,
+   - tout Be7 primordial a été converti en Li7,
+   - Li_obs ≈ Li_total_BBN (moins destruction stellaire éventuelle).
+ 
+V79BIS va comparer la géométrie de la bande Li-acceptable selon qu’on totalise :
+ 
+- à t_BBN_end,
+- à t_capture_e (modèle simple),
+- ou en proxy de t_obs_plateau.
+ 
+ 
+2. MODULE A — TIMELINE Li7(t), Be7(t), Li_total(t)
+--------------------------------------------------
+Pour un petit nombre de points représentatifs (par ex. autour du meilleur point V77N) :
+ 
+- intégrer la BBN en mode “timeline”,
+- enregistrer, pour une grille de temps t_i :
+  - Li7/H(t_i),
+  - Be7/H(t_i),
+  - Li_total/H(t_i) = Li7/H(t_i) + Be7/H(t_i).
+ 
+Sortie :
+- un tableau :
+  - colonnes : t, T, Li7/H, Be7/H, Li_total/H
+- quelques courbes :
+  - Li7/H(t), Be7/H(t), Li_total/H(t).
+ 
+Objectif :
+- visualiser **quand** Be7 domine,
+- quand Li7 prend le relais,
+- et à quel moment Li_total devient quasi figé.
+ 
+ 
+3. MODULE B — SURFACES D’OBSERVATION ALTERNATIVES
+-------------------------------------------------
+On définit trois “surfaces d’observation” :
+ 
+1) Surface S_BBN :
+   - t = t_BBN_end,
+   - c’est ce que V77N utilise implicitement aujourd’hui.
+ 
+2) Surface S_capture :
+   - t = t_capture_e_effectif,
+   - modélisé par un temps où :
+     - T a suffisamment baissé,
+     - la densité électronique permet la capture e–,
+   - on peut approximer par un t où Be7/H a chuté d’un facteur donné.
+ 
+3) Surface S_proxy_obs :
+   - t = t_proxy_obs,
+   - temps tardif où :
+     - Be7/H ≈ 0,
+     - Li7/H ≈ Li_total/H,
+   - proxy de ce que voient les étoiles du plateau.
+ 
+Pour chaque surface S ∈ {S_BBN, S_capture, S_proxy_obs} :
+ 
+- on définit Li7_S, Be7_S, Li_total_S,
+- on refait la comparaison aux fenêtres observationnelles en utilisant Li_total_S.
+ 
+ 
+4. MODULE C — IMPACT SUR LA BANDE Li-ACCEPTABLE
+-----------------------------------------------
+Pour chaque surface S :
+ 
+- reprendre la grille de V77N (ou une sous-grille),
+- pour chaque point (beta_e_phys, gamma_exch_phys, gamma_drain_phys) :
+  - extraire Li7_S, Be7_S, Li_total_S,
+  - calculer chi_D, chi_Y, chi_Li_total_S,
+  - marquer ACCEPTÉ ou REJETÉ.
+ 
+On reconstruit :
+ 
+- la bande Li-acceptable dans l’espace des leviers,
+- pour S_BBN, S_capture, S_proxy_obs.
+ 
+Objectif :
+- voir si le ruban ultra-fin de V77N (S_BBN) :
+  - reste ultra-fin pour S_capture et S_proxy_obs,
+  - ou se transforme en bande plus large.
+ 
+ 
+5. SORTIES ATTENDUES
+--------------------
+- v79bis_timeline_a7.csv :
+  - t, T, Li7/H, Be7/H, Li_total/H pour quelques points clés.
+ 
+- v79bis_results_S_BBN.csv
+- v79bis_results_S_capture.csv
+- v79bis_results_S_proxy_obs.csv
+ 
+- Figures :
+  - v79bis_Li7_Be7_Litot_vs_t.png
+  - v79bis_Litot_band_S_BBN.png
+  - v79bis_Litot_band_S_capture.png
+  - v79bis_Litot_band_S_proxy_obs.png
+ 
+- Rapport :
+  - V79BIS_TEMPORAL_GEOMETRY_REPORT.txt
+    - description des surfaces,
+    - comparaison des bandes,
+    - verdict sur l’origine temporelle du pincement.
+ 
+6. CRITÈRES DE SUCCÈS
+---------------------
+V79BIS est considéré comme “réussi” si :
+ 
+- il montre clairement que :
+  - soit le ruban ultra-fin est **indépendant** du choix de surface temporelle,
+    → le problème est purement structurel dans l’espace des leviers,
+  - soit le ruban se transforme en **bande plus large** pour S_capture ou S_proxy_obs,
+    → le pincement vient d’un mauvais choix de temps d’observation.
+ 
+Cas particulièrement intéressant :
+ 
+- si S_BBN donne un ruban ultra-fin,
+- mais S_capture ou S_proxy_obs donnent une bande raisonnable,
+→ alors **le “pourquoi” du lithium** est géométrico-temporel :
+   on totalisait au mauvais moment.
+ 
+7. TRANSITION (ET ENJEU D’EXPLICATION)
+--------------------------------------
+Deux issues possibles :
+ 
+1) **Le pincement persiste pour toutes les surfaces S** :
+   - V79BIS conclut que le problème n’est pas temporel,
+   - retour en V79TER (autre géométrie, autre base de leviers),
+   - V80 à repousser.
+ 
+2) **Le pincement disparaît pour S_capture ou S_proxy_obs** :
+   - V79BIS fournit un “pourquoi” :
+     - le lithium est mal compté si on totalise à t_BBN_end,
+     - la bonne surface d’observation est plus tardive.
+   - V80 devient possible, mais :
+     - il faudra **expliquer** que les chiffres “officiels” (Li_total_BBN) sont
+       mal interprétés temporellement,
+     - et que la comparaison standard BBN ↔ plateau de Spite est biaisée.
+ 
+V79BIS est donc un protocole à double tranchant :
+- soit il confirme que le problème est purement structurel,
+- soit il révèle que le “faux chiffre à l’appui” vient d’un mauvais choix de temps
+  dans la comparaison théorie/observation.
+ 

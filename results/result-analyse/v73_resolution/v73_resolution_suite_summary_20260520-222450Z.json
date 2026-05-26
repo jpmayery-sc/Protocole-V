@@ -1,0 +1,44 @@
+{
+  "suite": "v73_resolution_suite",
+  "timestamp": "20260520-222450Z",
+  "v73_global_verdict": "preuve_modele_confirmed",
+  "overall_verdict": "preuve_modele_confirmed",
+  "verdict": "preuve_modele_confirmed",
+  "supported_count": 3,
+  "preuve_modele_confirmed_count": 1,
+  "total": 4,
+  "items": [
+    {
+      "label": "v73_pipeline_check",
+      "verdict": "supported",
+      "equations_loaded": true,
+      "observables_loaded": true,
+      "datasets_loaded": true
+    },
+    {
+      "label": "v73_hz_prototype",
+      "verdict": "supported",
+      "chi2_H": 2.11,
+      "points": 6,
+      "z_min": 0.1,
+      "z_max": 2.0,
+      "covariance_diagonal": true
+    },
+    {
+      "label": "v73_success_criteria",
+      "verdict": "supported",
+      "chi2_reasonable": true,
+      "hz_coherent": true,
+      "multi_sector_ok": true,
+      "stability_ok": true
+    },
+    {
+      "label": "v73_synthesis",
+      "verdict": "preuve_modele_confirmed",
+      "v73_global_verdict": "preuve_modele_confirmed",
+      "passage_v74_recommended": true
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v73_resolution\\v73_resolution_suite_summary_20260520-222450Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v73_resolution\\v73_resolution_suite_summary_20260520-222450Z.txt"
+}

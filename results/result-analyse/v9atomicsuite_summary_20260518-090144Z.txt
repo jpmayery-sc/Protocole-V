@@ -1,0 +1,9 @@
+V9 atomic suite summary
+timestamp: 20260518-090144Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- v9_crit: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v9crit_check_20260518-090143Z.json
+- v9_fine: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v9fine_check_20260518-090143Z.json
+- v9_map: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v9atommap_check_20260518-090144Z.json

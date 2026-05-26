@@ -1,0 +1,48 @@
+{
+  "suite": "part001_g2_neutrality_pipeline",
+  "timestamp": "20260522-170035Z",
+  "verdict": "part01_g2_partial",
+  "observable_names": [
+    "delta_a_mu",
+    "vertex_shift",
+    "photon_shift",
+    "hadronic_shift"
+  ],
+  "observed": [
+    2.51e-09,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sigma": [
+    4e-10,
+    1e-10,
+    1e-10,
+    1e-10
+  ],
+  "model": [
+    2.46e-09,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "baseline": [
+    2.12e-09,
+    4e-10,
+    2e-10,
+    3.5e-10
+  ],
+  "local_operator_checks": {
+    "vertex_mu_gamma": 0.0,
+    "photon_propagator_shift": 0.0,
+    "hadronic_vertex_shift": 0.0,
+    "lent_qed_coupling": 0.0
+  },
+  "max_abs_local_shift": 0.0,
+  "chi2_model": 0.01562499999999976,
+  "chi2_baseline": 33.200624999999995,
+  "delta_chi2": 33.184999999999995,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\part001_g2_neutrality_pipeline\\part001_g2_neutrality_pipeline_20260522-170035Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\part001_g2_neutrality_pipeline\\part001_g2_neutrality_pipeline_20260522-170035Z.txt",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\part001_g2_neutrality_pipeline\\part001_g2_neutrality_pipeline_20260522-170035Z.csv"
+}

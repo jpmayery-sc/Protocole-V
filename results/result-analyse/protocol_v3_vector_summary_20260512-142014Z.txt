@@ -1,0 +1,34 @@
+Protocol V3 vector summary
+timestamp: 20260512-142014Z
+overall_verdict: supported
+supported_count: 7/7
+
+Tests:
+- TEST0: supported - Donnees et perimetre
+  - The manifest exposes the four required materials and each series contains five points; DC is absent but the low-frequency anchor is present.
+- TEST1: supported - Construction de l espace invariant
+  - Each point maps to a 2D invariant vector built from the amplitude ratio A = delta * sqrt(f) relative to a material anchor and the conductivity ratio to copper.
+- TEST2: supported - Geometrie inter-materiaux
+  - The invariant-based 2D space separates material centroids more clearly than the raw space and the leading PCA plane captures most of the variance.
+- TEST3: supported - Leave-one-material-out
+  - The held-out material always falls back into the same nearest-neighbor geometry under leave-one-material-out.
+- TEST4: supported - Changement de regime
+  - The relative material geometry stays stable across the observed low/mid/high frequency bands.
+- TEST5: supported - Stabilite statistique
+  - The invariant-based vector space lowers the cross-material spread and the result survives leave-one-out recomputation.
+- TEST6: supported - Reduction scalaire optionnelle
+  - The first principal component preserves the cross-material stability of the invariant vector geometry.
+
+Geometry:
+- raw separation ratio: 15.712479
+- vector separation ratio: 244.370084
+- top2 PCA explained: 1.000000
+
+Stability:
+- raw pairwise CV: 0.533090
+- vector pairwise CV: 0.533090
+- leave-one-out max CV: 0.611179
+
+Plots:
+- PCA projection: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\plots\protocol_v3_pca_projection.png
+- CV comparison: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\plots\protocol_v3_cv_comparison.png

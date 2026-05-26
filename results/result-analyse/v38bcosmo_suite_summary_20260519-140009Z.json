@@ -1,0 +1,35 @@
+{
+  "suite": "v38bcosmo_suite",
+  "timestamp": "20260519-140009Z",
+  "v38b_global_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "v38b_hubble",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38bhubble_check_20260519-140009Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38bhubble_check_20260519-140009Z.txt"
+    },
+    {
+      "label": "v38b_lambda",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38blambda_check_20260519-140009Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38blambda_check_20260519-140009Z.txt"
+    },
+    {
+      "label": "v38b_growth",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38bgrowth_check_20260519-140009Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38bgrowth_check_20260519-140009Z.txt"
+    },
+    {
+      "label": "v38b_tester_summary",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38btester_summary_check_20260519-140009Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38b_cosmology\\v38btester_summary_check_20260519-140009Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38bcosmo_suite_summary_20260519-140009Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38bcosmo_suite_summary_20260519-140009Z.txt"
+}

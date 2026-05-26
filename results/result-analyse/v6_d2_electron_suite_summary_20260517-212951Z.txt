@@ -1,0 +1,8 @@
+V6 D2/electron suite summary
+timestamp: 20260517-212951Z
+overall_verdict: supported
+supported_count: 2/2
+
+Items:
+- d2_motion_from_alpha_port: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\d2motionfromalphaport_check_20260517-212951Z.json
+- electron_channel_from_alpha: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\electronchannelfromalphacheck_20260517-212951Z.json

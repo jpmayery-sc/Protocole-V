@@ -1,0 +1,60 @@
+{
+  "timestamp": "20260519-171328Z",
+  "hypothesis": "les observables redshift internes de V11 doivent rester dans des bornes conservatrices",
+  "case_control": "geo, atom, canal, total",
+  "observable": "z_geo, z_int, z_canal, z_mod",
+  "expected": "conforme si les valeurs nominales restent dans les bornes, falsifie sinon",
+  "measured": {
+    "geo": {
+      "values": [
+        2.4393147611216526e-07,
+        3.679131767807885e-07,
+        6.362881995694561e-07,
+        7.479221292365444e-07
+      ],
+      "lower": 1e-07,
+      "upper": 2e-06,
+      "in_bounds": true,
+      "monotone_ok": true
+    },
+    "atom": {
+      "values": [
+        3.9354070719206714e-07,
+        5.747095007535248e-07,
+        3.3521805572804293e-06,
+        5.854048846888991e-06,
+        6.115808664454451e-06
+      ],
+      "lower": 1e-07,
+      "upper": 1e-05,
+      "in_bounds": true,
+      "monotone_ok": true
+    },
+    "canal": {
+      "values": [
+        8.98645350096726e-07,
+        1.1040267160788616e-06,
+        2.0923048556515816e-06,
+        2.4717661281133484e-06
+      ],
+      "lower": 5e-07,
+      "upper": 5e-06,
+      "in_bounds": true,
+      "monotone_ok": true
+    },
+    "total": {
+      "values": [
+        1.5361175334009585e-06,
+        2.0466493936131747e-06,
+        6.080773612501467e-06,
+        9.073737104238884e-06
+      ],
+      "lower": 1e-06,
+      "upper": 1e-05,
+      "in_bounds": true,
+      "monotone_ok": true
+    }
+  },
+  "verdict": "conforme",
+  "reference": "V11 GEO, ATOM, CANAL and TOTAL blocks"
+}

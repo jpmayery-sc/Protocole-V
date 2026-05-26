@@ -1,0 +1,10 @@
+V22 theory suite summary
+timestamp: 20260519-171536Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v22_geometry: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22geometry_check_20260519-171536Z.json
+- v22_torsion_theory: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22torsion_theory_check_20260519-171536Z.json
+- v22_hierarchy_theory: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22hierarchy_theory_check_20260519-171536Z.json
+- v22_verdict_theory: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22verdict_theory_check_20260519-171536Z.json

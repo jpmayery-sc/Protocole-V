@@ -1,0 +1,8 @@
+V46 synthesis check
+timestamp: 20260519-164932Z
+verdict: supported
+tau_gminus2_summary: {'section': 'V46-TAU-GMINUS2', 'source_v45_available': True, 'source_v45_supported': True, 'source_v45_timestamp': '20260519-164224Z', 'source_v45_supported_count': 5, 'source_v45_total': 5, 'm_tau': 1.777, 'delta_a_tau_model': 3.2e-06, 'delta_a_tau_bound_ok': True, 'verdict': 'supported'}
+tau_decay_summary: {'section': 'V46-TAU-DECAYS', 'source_v45_available': True, 'source_v45_supported': True, 'source_v45_timestamp': '20260519-164224Z', 'source_v45_supported_count': 5, 'source_v45_total': 5, 'tau_decay_shifts': [0.0012, 0.0011], 'tau_decay_ok': True, 'verdict': 'supported'}
+tau_LFU_summary: {'section': 'V46-TAU-LFU', 'source_v45_available': True, 'source_v45_supported': True, 'source_v45_timestamp': '20260519-164224Z', 'source_v45_supported_count': 5, 'source_v45_total': 5, 'LFU_W_shift': 0.003, 'LFU_Z_shift': 0.001, 'LFU_ok': True, 'verdict': 'supported'}
+multisector_summary: {'section': 'V46-TAU-STABILITY', 'source_v45_available': True, 'source_v45_supported': True, 'source_v45_timestamp': '20260519-164224Z', 'source_v45_supported_count': 5, 'source_v45_total': 5, 'multisector_consistency': True, 'RG_consistency': True, 'geometry_consistency': True, 'stability_ok': True, 'verdict': 'supported'}
+v46_global_verdict: supported

@@ -1,0 +1,5 @@
+V24 lagrangian check
+timestamp: 20260518-170113Z
+verdict: supported
+lagrangian_consistency: True
+terms: 5

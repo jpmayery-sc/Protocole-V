@@ -1,0 +1,94 @@
+{
+  "suite": "s_law_master",
+  "timestamp": "20260517-142629Z",
+  "overall_verdict": "supported",
+  "supported_count": 8,
+  "support_total": 8,
+  "falsifier_ok": 2,
+  "falsifier_total": 2,
+  "total": 10,
+  "items": [
+    {
+      "label": "screening_law_saturation",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260517-142625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\screening_law\\screening_law_saturation_check_20260517-142625Z.txt",
+      "summary": null
+    },
+    {
+      "label": "radius_predictivity",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260517-142625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\radius_predictivity\\radius_predictivity_check_20260517-142625Z.txt",
+      "summary": null
+    },
+    {
+      "label": "fine_variation_equivalence",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_equivalence_check_20260517-142625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\fine_variation_equivalence_check_20260517-142625Z.txt",
+      "summary": null
+    },
+    {
+      "label": "family_l_slope",
+      "role": "falsifier",
+      "verdict": "falsifie",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260517-142625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\family_l_slope_check_20260517-142625Z.txt",
+      "summary": null
+    },
+    {
+      "label": "regime_physics",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260517-142625Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260517-142625Z.txt",
+      "summary": null
+    },
+    {
+      "label": "alpha_phase_observable",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\result-analyse\\alpha_phase_observable_check_20260517-142625Z.json",
+      "txt_path": null,
+      "summary": null
+    },
+    {
+      "label": "alpha_constant",
+      "role": "falsifier",
+      "verdict": "falsifie",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\result-analyse\\alpha_constant_check_20260517-142625Z.json",
+      "txt_path": null,
+      "summary": null
+    },
+    {
+      "label": "point_atome_master",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260517-142629Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_master_suite_summary_20260517-142629Z.txt",
+      "summary": null
+    },
+    {
+      "label": "lanthanide_internal_residual",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_internal_residual_check_20260517-142629Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\lanthanide_internal_residual_check_20260517-142629Z.txt",
+      "summary": null
+    },
+    {
+      "label": "heavy_border",
+      "role": "support",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-142629Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-142629Z.txt",
+      "summary": null
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\s_law_master_suite_summary_20260517-142629Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\s_law_master_suite_summary_20260517-142629Z.txt"
+}

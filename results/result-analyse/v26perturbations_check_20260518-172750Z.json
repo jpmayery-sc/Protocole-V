@@ -1,0 +1,14 @@
+{
+  "section": "V26-PERTURBATIONS",
+  "deltaK_modes": true,
+  "deltaT_modes": true,
+  "perturbation_stability": true,
+  "tubeperturbationspectrum": true,
+  "energyshiftmodes": true,
+  "variationnalperturbationmodes": true,
+  "entanglement_shift": true,
+  "verdict": "supported",
+  "timestamp": "20260518-172750Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26perturbations_check_20260518-172750Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26perturbations_check_20260518-172750Z.txt"
+}

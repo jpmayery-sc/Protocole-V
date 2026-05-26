@@ -1,0 +1,21 @@
+V80b — Test lithium avec ε_best
+ 
+1. Fixer :
+   - ε = ε_best = -0.0069
+   - delta_EM = -0.0069
+   - autres paramètres cosmologiques standards
+ 
+2. Lancer le code BBN :
+   - calculer D/H, Y_p, Li-7/H, Be-7/H
+ 
+3. Comparer aux données :
+   - D/H_obs, Y_p_obs, Li-7_obs
+ 
+4. Vérifier :
+   - D/H et Y_p OK
+   - Li-7 réduit dans le bon sens et avec un facteur compatible
+ 
+5. Conclusion :
+   - si Li-7 est bien corrigé → le modèle tient numériquement
+   - si Li-7 reste trop haut → il faudra revoir soit le canal EM, soit un détail du couplage au secteur nucléaire
+ 

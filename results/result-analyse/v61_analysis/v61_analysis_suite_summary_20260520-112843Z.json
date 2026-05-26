@@ -1,0 +1,60 @@
+{
+  "suite": "v61_analysis_suite",
+  "timestamp": "20260520-112843Z",
+  "v61_global_verdict": "intrication_confirmed_numerical",
+  "overall_verdict": "intrication_confirmed_numerical",
+  "verdict": "intrication_confirmed_numerical",
+  "supported_count": 5,
+  "intrication_confirmed_numerical_count": 1,
+  "total": 6,
+  "items": [
+    {
+      "label": "v61_file_check",
+      "verdict": "supported",
+      "json_inputs_ok": true,
+      "txt_inputs_ok": true,
+      "png_inputs_ok": true
+    },
+    {
+      "label": "v61_automatic_checks",
+      "verdict": "supported",
+      "curves_ok": true,
+      "observables_ok": true,
+      "chi2_ok": true,
+      "potential_ok": true,
+      "parameters_ok": true
+    },
+    {
+      "label": "v61_manual_analysis",
+      "verdict": "supported",
+      "residuals_corr_with_dYdz": true,
+      "stability_ok": true,
+      "multi_sector_ok": true
+    },
+    {
+      "label": "v61_comparison",
+      "verdict": "supported",
+      "chi2_fs8_with_ent": 1.84,
+      "chi2_fs8_noent": 9.62,
+      "delta_chi2_fs8": 7.78,
+      "S8_with_ent": 0.776,
+      "S8_noent": 0.812,
+      "S8_obs": 0.776,
+      "chi2_H": 2.11
+    },
+    {
+      "label": "v61_verdict",
+      "verdict": "supported",
+      "intrication_confirmed_numerical": true,
+      "model_global_coherent": true
+    },
+    {
+      "label": "v61_synthesis",
+      "verdict": "intrication_confirmed_numerical",
+      "v61_global_verdict": "intrication_confirmed_numerical",
+      "passage_v70_recommended": true
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v61_analysis\\v61_analysis_suite_summary_20260520-112843Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v61_analysis\\v61_analysis_suite_summary_20260520-112843Z.txt"
+}

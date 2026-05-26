@@ -1,0 +1,86 @@
+{
+  "suite": "protocol_v2",
+  "timestamp": "20260512-115926Z",
+  "overall_verdict": "pending",
+  "supported_count": 0,
+  "total": 4,
+  "stages": [
+    {
+      "id": "H1",
+      "title": "Local model only",
+      "verdict": "pending",
+      "reason": "Ready to fit K_loc against the declared data."
+    },
+    {
+      "id": "H2",
+      "title": "Global alpha' correction",
+      "verdict": "pending",
+      "reason": "Ready to freeze alpha' after the Cu fit."
+    },
+    {
+      "id": "H3",
+      "title": "Quadratic beta' term",
+      "verdict": "pending",
+      "reason": "Ready to test beta' on the nonlinear materials."
+    },
+    {
+      "id": "H4",
+      "title": "Mass-weighted FTM comparison",
+      "verdict": "pending",
+      "reason": "Ready to compare the mass-weighted observable across metals."
+    }
+  ],
+  "adjacent_evidence": [
+    {
+      "label": "material_conductivity",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_suite_summary_20260512-115924Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_suite_summary_20260512-115924Z.txt"
+    },
+    {
+      "label": "current_regime",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\current_regime_suite_summary_20260512-115925Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\current_regime_suite_summary_20260512-115925Z.txt"
+    },
+    {
+      "label": "induction",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\induction_suite_summary_20260512-115925Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\induction_suite_summary_20260512-115925Z.txt"
+    },
+    {
+      "label": "skin_effect",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_suite_summary_20260512-115926Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_suite_summary_20260512-115926Z.txt"
+    },
+    {
+      "label": "saturation_magnetic",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260512-115926Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260512-115926Z.txt"
+    }
+  ],
+  "expected_metals": [
+    "Cu",
+    "Al",
+    "Ag",
+    "Fe"
+  ],
+  "manifest_path": "python\\data\\hf_transport_manifest.json",
+  "manifest_status": "ready",
+  "found_manifests": [
+    "python\\data\\hf_transport_manifest.json"
+  ],
+  "found_datasets": [
+    "python\\data\\hf_transport\\cu.json",
+    "python\\data\\hf_transport\\al.json",
+    "python\\data\\hf_transport\\ag.json",
+    "python\\data\\hf_transport\\fe.json"
+  ],
+  "missing_inputs": [],
+  "data_status": "ready",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v2_suite_summary_20260512-115926Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v2_suite_summary_20260512-115926Z.txt"
+}

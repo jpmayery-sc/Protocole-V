@@ -1,0 +1,12 @@
+V12 falsifier suite summary
+timestamp: 20260517-212957Z
+overall_verdict: falsified
+supported_count: 2/4
+partial_count: 0
+falsified_count: 2
+
+Items:
+- v12_absolute: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v12absolute_check_20260517-212957Z.json
+- v12_alpha: falsifie -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v12alpha_check_20260517-212957Z.json
+- v12_fine: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v12fine_check_20260517-212957Z.json
+- v12_global: falsified -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v12global_check_20260517-212957Z.json

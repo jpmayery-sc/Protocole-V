@@ -1,0 +1,10 @@
+V11 redshift suite summary
+timestamp: 20260517-211315Z
+overall_verdict: partiel
+supported_count: 3/4
+
+Items:
+- v11_geo: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v11geo_check_20260517-211314Z.json
+- v11_atom: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v11atom_check_20260517-211314Z.json
+- v11_canal: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v11canal_check_20260517-211315Z.json
+- v11_total: rejette -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v11total_check_20260517-211315Z.json

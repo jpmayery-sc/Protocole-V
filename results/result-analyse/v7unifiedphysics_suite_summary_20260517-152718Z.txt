@@ -1,0 +1,9 @@
+V7 unified physics suite summary
+timestamp: 20260517-152718Z
+overall_verdict: partiel
+supported_count: 2/3
+
+Items:
+- v7_geo: rejette -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v7geo_check_20260517-152717Z.json
+- v7_elec: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v7electronic_check_20260517-152718Z.json
+- v7_coupling: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v7coupling_check_20260517-152718Z.json

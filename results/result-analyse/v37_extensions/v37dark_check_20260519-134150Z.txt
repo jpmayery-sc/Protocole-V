@@ -1,0 +1,6 @@
+V37 dark check
+timestamp: 20260519-134150Z
+verdict: supported
+halo_match_ok: True
+epsilon_ok: True
+multi_scale_ok: True

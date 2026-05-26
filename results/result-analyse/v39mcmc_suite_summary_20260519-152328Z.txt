@@ -1,0 +1,11 @@
+V39 mcmc suite summary
+timestamp: 20260519-152328Z
+v39_global_verdict: partially_supported
+supported_count: 2/5
+
+Items:
+- v39_paramspace: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v39_mcmc\v39paramspace_check_20260519-152322Z.json
+- v39_likelihoods: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v39_mcmc\v39likelihoods_check_20260519-152322Z.json
+- v39_mcmc: partially_supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v39_mcmc\v39mcmc_check_20260519-152322Z.json
+- v39_diagnostics: partially_supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v39_mcmc\v39diagnostics_check_20260519-152325Z.json
+- v39_synthesis: partially_supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v39_mcmc\v39synthesis_check_20260519-152327Z.json

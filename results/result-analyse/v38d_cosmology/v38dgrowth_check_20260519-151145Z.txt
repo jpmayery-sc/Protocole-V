@@ -1,0 +1,7 @@
+V38d growth check
+timestamp: 20260519-151145Z
+verdict: supported
+eta_best: 0.012
+gamma_best: 0.45
+Sent_inf_best: 0.7
+growth_match_ok: True

@@ -1,0 +1,6 @@
+V45 RG flow check
+timestamp: 20260519-164216Z
+verdict: supported
+mu_grid: [1.0, 100.0, 10000.0, 100000000.0, 1000000000000.0, 100000000000000.0, 1e+16]
+RG_trajectories: [{'mu': 1.0, 'lambda_K': 0.14, 'lambda_T': 0.11, 'lambda_KT': -0.03, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}, {'mu': 100.0, 'lambda_K': 0.16, 'lambda_T': 0.125, 'lambda_KT': -0.014898, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}, {'mu': 10000.0, 'lambda_K': 0.18, 'lambda_T': 0.14, 'lambda_KT': -0.007398, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}, {'mu': 100000000.0, 'lambda_K': 0.22, 'lambda_T': 0.17, 'lambda_KT': -0.001824, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}, {'mu': 1000000000000.0, 'lambda_K': 0.26, 'lambda_T': 0.2, 'lambda_KT': -0.00045, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}, {'mu': 100000000000000.0, 'lambda_K': 0.28, 'lambda_T': 0.215, 'lambda_KT': -0.000223, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}, {'mu': 1e+16, 'lambda_K': 0.3, 'lambda_T': 0.23, 'lambda_KT': -0.000111, 'gamma': 0.45, 'Y_inf': 0.7, 'xi': 0.68, 'eta': 0.012}]
+no_blowup_ok: True

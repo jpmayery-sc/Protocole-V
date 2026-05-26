@@ -1,0 +1,9 @@
+V20 verdict check
+timestamp: 20260518-142301Z
+verdict_global: fragile
+structure_detectee: fragile
+niveau_de_confiance: faible
+zone_de_recherche_prioritaire: v20_hierarchy
+geo_verdict: fragile
+torsion_verdict: supported
+hierarchy_verdict: supported

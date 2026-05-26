@@ -1,0 +1,5 @@
+V77C A=7 surgery
+baseline: Li7_over_H=1.566465e-10, Be7_over_H=1.329241e-10, Li_total_over_H=2.895706e-10
+cut_Be7_production: Li7_over_H=1.566465e-10, Be7_over_H=0.000000e+00, Li_total_over_H=1.566465e-10
+cut_Li7_production: Li7_over_H=0.000000e+00, Be7_over_H=1.329241e-10, Li_total_over_H=1.329241e-10
+cut_A7_total: Li7_over_H=0.000000e+00, Be7_over_H=0.000000e+00, Li_total_over_H=0.000000e+00

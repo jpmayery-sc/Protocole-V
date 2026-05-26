@@ -1,0 +1,53 @@
+V77 — RÉSOLUTION PHYSIQUE DU LITHIUM (VERSION PROPRE)
+ 
+Objectif :
+Évaluer si la résolution du lithium observée en V80B est :
+- robuste,
+- stable,
+- physiquement motivée,
+- ou seulement un artefact du proxy BBN.
+ 
+V76 doit trancher la tension V75B.
+ 
+Entrées :
+- ε_best = -0.0069 (fixe)
+- δ_EM = -0.0069 (fixe)
+- k_G, k_T, k_n = valeurs calibrées de V83 (fixes)
+- proxy BBN V80 (inchangé)
+ 
+Pipeline :
+ 
+1. Rejeu V80B (contrôle)
+   - recalculer D/H, Yp, Li-7/H, Be-7/H
+   - vérifier que les valeurs sont identiques à V80B
+ 
+2. Analyse de sensibilité δ_EM
+   - scanner δ_EM dans une micro-fenêtre :
+     [-0.0072, -0.0066]
+   - tracer Li-7/H vs δ_EM
+   - vérifier si la résolution Li est stable ou ultra-fine
+ 
+3. Analyse de sensibilité nucléaire
+   - varier les taux Li/Be de ±5%
+   - recalculer Li-7/H
+   - vérifier si Li reste dans la fenêtre obs
+ 
+4. Analyse de cohérence physique
+   - vérifier que la correction Li vient bien du canal EM
+   - vérifier qu’elle ne dépend pas d’un artefact numérique
+ 
+5. Verdict V76
+   - “résolution robuste”
+   - ou “résolution fine”
+   - ou “tension persistante”
+ 
+Sorties :
+- courbes Li-7/H vs δ_EM
+- tableau de sensibilité nucléaire
+- verdict final sur la tension lithium
+ 
+Transition :
+- si robuste → V84 peut démarrer
+- si fine → V77 (amélioration du canal EM)
+- si tension persistante → révision du modèle
+ 

@@ -1,0 +1,182 @@
+V34 — FALSIFICATION GÉOMÉTRIQUE DES MODULES MUON g‑2 ET NEUTRINOS
+Version : 1.0 (zone TXT)
+ 
+ 
+0. OBJECTIF DE V34
+------------------
+Après V33, V34 vise à :
+ 
+1. Relier explicitement les paramètres géométriques (Aµ, Bµ, λi, K0, T0, Kbg…) aux données expérimentales.
+2. Tester si ces relations sont cohérentes, stables et non absurdes.
+3. Falsifier agressivement chaque ansatz :
+   - si un paramètre doit devenir irréaliste → rejet
+   - si une contrainte solide est violée → rejet
+   - si plusieurs observables ne peuvent pas être satisfaites simultanément → rejet
+ 
+V34 ne cherche pas à faire marcher le modèle.
+Elle cherche à voir ce qui casse.
+ 
+ 
+1. MODULE V34-MUON — FALSIFICATION DE Δaµ(K,T)
+-----------------------------------------------
+ 
+1.1 Rappel de l’ansatz V33
+--------------------------
+Δaµ ≈ Aµ · K̃ + Bµ · T̃ + (termes croisés éventuels)
+ 
+avec :
+K̃ = Kloc / K0
+T̃ = Tloc / T0
+ 
+Donnée cible :
+|Δaµ_exp| ~ 10^-9
+ 
+ 
+1.2 Contraintes directes
+------------------------
+On impose :
+Aµ · K̃ + Bµ · T̃ ≈ 10^-9
+ 
+Tests :
+- si K̃, T̃ ≪ 10^-3 → Aµ, Bµ doivent devenir énormes → REJET
+- si Aµ ou Bµ > 10^-3 → correction trop grande → REJET
+- si le signe de Δaµ ne peut pas être reproduit → REJET
+ 
+ 
+1.3 Cohérence avec les autres leptons
+-------------------------------------
+On impose que les mêmes paramètres ne détruisent pas :
+ 
+- a_e (précision 10^-12)
+- a_τ (moins précis mais borné)
+ 
+Tests :
+- si |Δae| > 10^-12 → REJET
+- si |Δaτ| > 10^-11 → REJET
+ 
+ 
+1.4 Limite MS
+--------------
+lim (K̃,T̃ → 0) Δaµ → 0
+ 
+Si l’ansatz ne s’annule pas naturellement → REJET
+ 
+ 
+1.5 Verdict muon
+----------------
+Sorties :
+- muon_constraints_satisfied : true/false
+- electron_safe : true/false
+- tau_safe : true/false
+- ms_limit_ok : true/false
+- muon_verdict : supported / rejected
+ 
+ 
+2. MODULE V34-NEUTRINOS — FALSIFICATION DE mν_eff(K)
+-----------------------------------------------------
+ 
+2.1 Rappel de l’ansatz V33
+--------------------------
+mν_i,eff² ≈ m0_i² + λ_i · Kbg
+ 
+Δm²_ij ≈ (m0_i² - m0_j²) + (λ_i - λ_j) · Kbg
+ 
+Données cibles :
+- Δm²_sol ~ 7.4×10^-5 eV²
+- Δm²_atm ~ 2.5×10^-3 eV²
+- Σ mν < 1 eV
+ 
+ 
+2.2 Reproduction des oscillations
+---------------------------------
+Tests :
+- si aucun set (λi, m0_i, Kbg) ne reproduit Δm²_sol → REJET
+- si aucun set ne reproduit Δm²_atm → REJET
+ 
+ 
+2.3 Contrainte cosmologique
+---------------------------
+Tests :
+- si mν_i deviennent trop grands → REJET
+- si Kbg doit être gigantesque → REJET
+ 
+ 
+2.4 Cohérence interne
+---------------------
+Tests :
+- si λi doivent être séparés par >10^6 → REJET
+- si m0_i² < 0 → REJET
+ 
+ 
+2.5 Dépendance environnementale
+-------------------------------
+Tests :
+- si δK_env induit des variations Δm² trop grandes → REJET
+- si δK_env doit être finement ajusté → REJET
+ 
+ 
+2.6 Verdict neutrinos
+---------------------
+Sorties :
+- oscillations_ok : true/false
+- cosmology_ok : true/false
+- parameters_reasonable : true/false
+- neutrino_verdict : supported / rejected
+ 
+ 
+3. SYNTHÈSE V34
+----------------
+ 
+3.1 Sorties attendues
+---------------------
+- muon_verdict
+- neutrino_verdict
+- global_verdict
+- rejected_reasons
+- parameter_ranges
+ 
+ 
+3.2 Critère final
+-----------------
+- supported : les deux modules passent
+- partially_supported : un module passe, l’autre échoue
+- rejected : les deux échouent ou échec catastrophique
+ 
+ 
+4. RÉSULTATS OBSERVÉS — RUN RÉEL
+--------------------------------
+ 
+Suite exécutée : v34geometricfalsification_suite  
+Horodatage : 20260519-103021Z
+ 
+Global :
+- global_verdict : supported
+- rejected_reasons_count : 0
+- parameter_ranges_count : 2
+ 
+Muon :
+- muon_constraints_satisfied : true
+- electron_safe : true
+- tau_safe : true
+- ms_limit_ok : true
+- verdict : supported
+ 
+Neutrinos :
+- oscillations_ok : true
+- cosmology_ok : true
+- parameters_reasonable : true
+- verdict : supported
+ 
+Somme des masses neutrinos :
+Σ mν ≈ 0.05860232526704263 eV (compatible cosmologie)
+ 
+Verdict global : supported
+ 
+ 
+5. PROCHAINE ÉTAPE
+------------------
+- V34.5 : extraction des échelles numériques implicites
+- V35 : calibration numérique (scan de paramètres)
+- V36 : intégration avec GEOTUB
+- V37 : extension aux mésons B et à la matière noire
+ 

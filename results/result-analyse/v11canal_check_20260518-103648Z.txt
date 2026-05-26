@@ -1,0 +1,13 @@
+V11 channel redshift check
+timestamp: 20260518-103648Z
+verdict: conforme
+monotone_ok: True
+env_growth_ok: True
+band_ok: True
+no_divergence_ok: True
+
+Cases:
+- H: quiet=7.189163e-07, nominal=8.986454e-07, extreme=1.078374e-06
+- Fe: quiet=8.832214e-07, nominal=1.104027e-06, extreme=1.324832e-06
+- Pb: quiet=1.673844e-06, nominal=2.092305e-06, extreme=2.510766e-06
+- U: quiet=1.977413e-06, nominal=2.471766e-06, extreme=2.966119e-06

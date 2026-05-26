@@ -1,0 +1,73 @@
+v80 – Modèle BBN (version “mécanisme fixé”)
+ 
+Objectif :
+- Figer le mécanisme D1/D2/D3 côté BBN uniquement.
+- Déterminer une bande numérique propre pour delta_EM compatible avec les abondances primordiales.
+- Produire des sorties claires pour un testeur externe (reproductible, lisible, sans spéculation).
+ 
+Hypothèses de travail :
+- delta_EM : petite déformation électromagnétique globale issue de D1.
+- pi_n : paramètre de structuration neutronique (mais en BBN, milieu peu neutronique → pi_n ≈ pi_n_BBN fixé).
+- G_eff, facteur de temps, etc. ne sont PAS encore utilisés dans les équations BBN (on reste proche du formalisme standard, seule delta_EM agit sur les taux EM pertinents).
+- On ne touche pas à la structure du code BBN de base, on ajoute une couche “delta_EM”.
+ 
+Entrées principales :
+- Plage de delta_EM à scanner : [delta_EM_min, delta_EM_max] (par ex. -2 % à -0.1 %).
+- Paramètres cosmologiques standards (η_b, N_eff, etc.) fixés à leurs valeurs usuelles.
+- pi_n_BBN fixé (valeur raisonnable ou neutre, documentée dans le texte).
+ 
+Pipeline v80 :
+1. Initialisation
+   - Définir la plage delta_EM.
+   - Charger / initialiser le code BBN standard (ou son équivalent jouet).
+   - Documenter clairement les constantes utilisées.
+ 
+2. Implémentation de delta_EM
+   - Introduire delta_EM comme correction sur les termes EM pertinents (par ex. masses effectives, Q-values, taux de réaction sensibles).
+   - Garder une trace explicite de “où” delta_EM intervient (commentaires clairs).
+ 
+3. Scan de delta_EM
+   - Boucler sur la plage delta_EM.
+   - Pour chaque valeur :
+     - Lancer le calcul BBN.
+     - Extraire les abondances finales : D/H, He-4, Li-7, éventuellement Be-7.
+   - Stocker les résultats dans des tableaux structurés.
+ 
+4. Critères de sélection
+   - Définir des fenêtres d’acceptation pour :
+     - D/H (avec barres d’erreur observationnelles).
+     - Y_p (He-4).
+     - Li-7 (objectif : soulagement du problème du lithium).
+     - Be-7 (si suivi).
+   - Marquer les delta_EM “acceptables” (booléen ou masque).
+ 
+5. Résultats et visualisation
+   - Tracer :
+     - D/H vs delta_EM.
+     - Y_p vs delta_EM.
+     - Li-7 vs delta_EM.
+     - (optionnel) Be-7 vs delta_EM.
+   - Mettre en évidence la bande de delta_EM qui satisfait tous les critères.
+   - Afficher en texte :
+     - delta_EM_min_acceptable
+     - delta_EM_max_acceptable
+     - valeur(s) centrale(s) possible(s).
+ 
+6. Résumé pour le testeur
+   - Bloc texte en fin de notebook :
+     - Rappel des hypothèses.
+     - Plage scannée.
+     - Bande delta_EM compatible avec les données BBN.
+     - Limitations (pas encore de Lagrangien, pas encore de couplage explicite à G_eff, etc.).
+   - Mention explicite : v80 = “BBN only, mécanisme paramétré par delta_EM, sans Lagrangien”.
+ 
+Sorties attendues :
+- Une bande numérique claire pour delta_EM (par ex. delta_EM ∈ [a, b]).
+- Graphiques propres, lisibles, avec légendes explicites.
+- Un résumé textuel que l’on pourra réutiliser tel quel dans v81 (construction du Lagrangien).
+ 
+Transition vers v81 :
+- v81 = introduction d’un paramètre de déformation ε de D1.
+- Objectif v81 : trouver un Lagrangien minimal qui reproduit delta_EM(ε) et, plus tard, pi_n(ε), G_eff(ε).
+- v80 sert de “référence expérimentale BBN” pour contraindre ε dans v81.
+ 

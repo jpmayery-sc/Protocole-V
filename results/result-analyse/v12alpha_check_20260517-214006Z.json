@@ -1,0 +1,19 @@
+{
+  "timestamp": "20260517-214006Z",
+  "hypothesis": "alpha(E,n,r) must stay extremely close to alpha_ref and preserve its geometric gradients",
+  "case_control": "V7 coupling grid",
+  "observable": "alpha(E,n,r)",
+  "expected": "strict band, monotone radial decay, nonzero stability surface",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "strict_band_ok": false,
+    "derivative_r_ok": true,
+    "derivative_e_ok": true,
+    "derivative_n_ok": true,
+    "surface_present_ok": true,
+    "max_deviation": 0.00034181437466225886,
+    "stability_range": 8.026792849464594e-05
+  },
+  "verdict": "falsifie",
+  "reference": "V7 coupling field alpha(E,n,r)"
+}

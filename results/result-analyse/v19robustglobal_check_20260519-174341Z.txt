@@ -1,0 +1,7 @@
+V19 robust global check
+timestamp: 20260519-174341Z
+verdict: borderline
+supported_chain_length: 4
+fragile_layer: none
+recovery_margin: 1e-06
+bottleneck_flag: True

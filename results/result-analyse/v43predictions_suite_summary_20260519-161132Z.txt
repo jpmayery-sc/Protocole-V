@@ -1,0 +1,11 @@
+V43 predictions suite summary
+timestamp: 20260519-161132Z
+v43_global_verdict: supported
+supported_count: 5/5
+
+Items:
+- v43_colliders: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v43_predictions\v43colliders_check_20260519-161131Z.json
+- v43_flavour: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v43_predictions\v43flavour_check_20260519-161131Z.json
+- v43_cosmology: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v43_predictions\v43cosmology_check_20260519-161132Z.json
+- v43_astro: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v43_predictions\v43astro_check_20260519-161132Z.json
+- v43_synthesis: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v43_predictions\v43synthesis_check_20260519-161132Z.json

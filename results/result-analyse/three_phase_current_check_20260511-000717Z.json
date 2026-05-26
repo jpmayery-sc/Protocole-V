@@ -1,0 +1,38 @@
+{
+  "timestamp": "20260511-000717Z",
+  "balanced_case": {
+    "max_abs_current_sum": 1.7763568394002505e-15,
+    "power_mean": 30.0,
+    "power_min": 29.999999999999982,
+    "power_max": 30.000000000000018,
+    "power_span": 3.552713678800501e-14
+  },
+  "unbalanced_case": {
+    "max_abs_current_sum": 0.5000000000000004,
+    "power_mean": 25.625,
+    "power_min": 21.25,
+    "power_max": 30.0,
+    "power_span": 8.75
+  },
+  "neutral_case": {
+    "balanced_neutral_max": 1.7763568394002505e-15,
+    "balanced_neutral_mean": 5.232243847364168e-16,
+    "defective_neutral_max": 1.2000000000000004,
+    "defective_neutral_mean": 0.7639388786981333
+  },
+  "balanced_current_status": "conforme strict",
+  "balanced_power_status": "conforme strict",
+  "unbalanced_current_status": "conforme strict",
+  "unbalanced_power_status": "conforme strict",
+  "neutral_balanced_status": "conforme strict",
+  "neutral_defect_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "les trois phases ne sont pas séparées correctement",
+    "la somme des courants ne s’annule pas en équilibre",
+    "la puissance totale varie trop en régime équilibré",
+    "un déséquilibre ne crée aucun écart mesurable",
+    "le neutre reste nul alors qu’une phase est affaiblie",
+    "une phase coupée ou très faible ne laisse aucune signature sur le neutre"
+  ]
+}

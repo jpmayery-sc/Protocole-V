@@ -1,0 +1,6 @@
+V48 mixing check
+timestamp: 20260519-174400Z
+verdict: supported
+mixing_angles: {'theta14': 0.021, 'theta25': 0.008, 'theta34': 0.005}
+max_theta: 0.021
+sterile_active_mixing_ok: True

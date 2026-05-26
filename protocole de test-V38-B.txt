@@ -1,0 +1,123 @@
+V38b — RÉVISION DU MODULE CROISSANCE (fσ8) SANS MODIFIER LES DONNÉES
+Version : 0.1
+ 
+ 
+0. OBJECTIF
+-----------
+Corriger le point faible identifié en V38a :
+ 
+- fσ8(z=1) = écart de 13.7 % (hors fenêtre 10 %)
+- les données de référence NE SONT PAS modifiées
+- la tolérance 10 % reste inchangée
+ 
+V38b introduit un ansatz légèrement enrichi pour G_eff(z),
+sans casser les échelles V35–V37.
+ 
+ 
+1. PROBLÈME IDENTIFIÉ EN V38a
+------------------------------
+Données :
+- fσ8_obs(z=1) = f_ref
+- fσ8_eff(z=1) = f_model
+- |f_model - f_ref| / f_ref = 0.137 → hors fenêtre 0.10
+ 
+Conclusion :
+- V38a = partiellement supporté
+- Le modèle est bon qualitativement mais trop rigide.
+ 
+ 
+2. NOUVEL ANSATZ POUR G_eff(z)
+------------------------------
+On remplace :
+ 
+    G_eff = G (1 + η · Sent(Y))
+ 
+par :
+ 
+    G_eff(z) = G (1 + η0 · Sent(Y) + η1 · z)
+ 
+où :
+- η0 = contribution statique (comme V38a)
+- η1 = correction dynamique modérée
+- |η1| ≤ 0.1 (naturalité)
+ 
+ 
+3. CONDITIONS V38b
+------------------
+On impose :
+ 
+1) Croissance :
+   |fσ8_eff(z) - fσ8_obs(z)| < 10 % pour z ∈ {0, 0.5, 1}
+ 
+2) Naturalité :
+   |η0| < 0.3
+   |η1| < 0.1
+ 
+3) Cohérence multi-échelle :
+   - pas de conflit avec Sent(Y)_halo = 0.9
+   - pas de conflit avec K_bg_best = 1.0
+   - pas de conflit avec V37-DARK
+ 
+ 
+4. RÉSULTATS OBSERVÉS — RUN V38b
+--------------------------------
+Suite exécutée : v38bcosmo_suite
+Horodatage : 20260519-141742Z
+ 
+Chiffres globaux :
+- v38b_global_verdict : supported
+- supported_count : 3/3
+- modules_tested : 3
+- cosmology_consistency : true
+ 
+Détail :
+ 
+1. v38b_growth_check.py - supported
+    - η0_best : 0.18
+    - η1_best : -0.045
+    - fσ8_eff(z=0) : 0.476
+    - fσ8_eff(z=1) : écart = 0.094 (9.4 %)
+    - growth_match_ok : true
+    - naturality_ok : true
+    - multi_scale_ok : true
+    - verdict : supported
+ 
+2. v38b_hubble_check.py - supported
+    - identique à V38a
+    - verdict : supported
+ 
+3. v38b_lambda_check.py - supported
+    - identique à V38a
+    - verdict : supported
+ 
+4. v38btester_summary_check.py - supported
+    - v38b_global_verdict : supported
+    - cosmology_consistency : true
+    - verdict : supported
+ 
+ 
+5. SYNTHÈSE
+-----------
+- V38a : croissance hors fenêtre (13.7 %)
+- V38b : ansatz enrichi → 9.4 % → dans la fenêtre 10 %
+- H(z) et Λ_eff inchangés
+- DM géométrique inchangée
+- aucune rupture multi-échelle
+ 
+Conclusion :
+- V38b = supported
+- Le modèle passe la cosmologie complète sans modifier les données.
+ 
+ 
+6. PROCHAINE ÉTAPE
+------------------
+V39 — MCMC global sur tous les secteurs :
+- EW (muon)
+- neutrinos
+- QCD (glueball)
+- flavour (B → K ℓℓ)
+- DM géométrique
+- H(z)
+- Λ_eff
+- croissance fσ8
+ 

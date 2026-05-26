@@ -1,0 +1,6 @@
+V18 verdict check
+timestamp: 20260518-170608Z
+verdict: supported-improved
+best_profile: calibration_agressive
+baseline_deviation_score: 0.061080
+best_deviation_score: 0.060988

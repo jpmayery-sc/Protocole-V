@@ -1,0 +1,31 @@
+{
+  "theta_reference": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001002,
+    "p": 5.01,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 0.999,
+    "s_atom": 0.999,
+    "s_canal": 1.0
+  },
+  "source": [
+    "DLMF 34",
+    "DLMF 34.2"
+  ],
+  "selection_rules": {
+    "triangle": true,
+    "m_sum_zero": true,
+    "integer_perimeter": true
+  },
+  "coupling_family": [
+    "3j",
+    "6j",
+    "9j"
+  ],
+  "wignerbasisok": true,
+  "verdict": "supported",
+  "timestamp": "20260520-084150Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22wigner_check_20260520-084150Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22wigner_check_20260520-084150Z.txt"
+}

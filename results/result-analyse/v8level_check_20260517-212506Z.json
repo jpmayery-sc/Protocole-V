@@ -1,0 +1,51 @@
+{
+  "timestamp": "20260517-212506Z",
+  "hypothesis": "la torsion D2 et la porte alpha induisent une correction d'energie analogue a une fine structure",
+  "case_control": "H, He, Fe, Pb",
+  "observable": "delta E_torsion = C * delta_phi * tau(r)",
+  "expected": "delta E non nul, croissant avec Z, amplitude dans 10^-6 a 10^-3 eV",
+  "measured": {
+    "base_delta_phi": 0.0031087512698201886,
+    "alpha_ref": 0.0072973525692838015,
+    "monotone_ok": true,
+    "positive_ok": true,
+    "band_ok": true,
+    "fe_peak_ok": true
+  },
+  "level_samples": [
+    {
+      "name": "H",
+      "z": 1.0,
+      "radius": 0.54,
+      "delta_phi": 0.0031087512698201886,
+      "tau": 0.013513615869044076,
+      "delta_energy": 4.2010470492753026e-05
+    },
+    {
+      "name": "He",
+      "z": 2.0,
+      "radius": 0.84,
+      "delta_phi": 0.006217502539640377,
+      "tau": 0.008687324487242621,
+      "delta_energy": 5.401346206211103e-05
+    },
+    {
+      "name": "Fe",
+      "z": 26.0,
+      "radius": 1.68,
+      "delta_phi": 0.0808275330153249,
+      "tau": 0.0043436622436213105,
+      "delta_energy": 0.0003510875034037217
+    },
+    {
+      "name": "Pb",
+      "z": 82.0,
+      "radius": 2.52,
+      "delta_phi": 0.2549176041252555,
+      "tau": 0.0028957748290808737,
+      "delta_energy": 0.0007381839815155175
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V6-D2 motion and V7 radius field"
+}

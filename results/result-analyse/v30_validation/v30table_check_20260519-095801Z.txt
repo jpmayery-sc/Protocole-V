@@ -1,0 +1,6 @@
+V30 table check
+timestamp: 20260519-095801Z
+verdict: supported
+confirmed: 3
+open: 2
+weak: 0

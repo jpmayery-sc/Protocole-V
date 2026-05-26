@@ -1,0 +1,16 @@
+MOESM2 workbook summary
+source: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\downloaded_xlsx\MOESM2.xlsx
+sheet_count: 9
+
+- Fig2a-Experiment: rows=183, cols=5, numeric_min=0.003059028602487912, numeric_max=303.6
+  first_col_labels: dl_phi_m_plus_pi2, ds_phi_m, th_data
+- Fig2a-Fits: rows=50, cols=4, numeric_min=0.5, numeric_max=203.6
+- Fig2a-Simulation: rows=60, cols=2, numeric_min=0.5000516719256158, numeric_max=298.6
+- Fig2b-Experimet: rows=19, cols=4, numeric_min=0.0189513505403318, numeric_max=1000.0
+  first_col_labels: $\Delta$ = 100 kHz, $\Delta$ = 50 kHz
+- Fig2b-Theory: rows=100, cols=4, numeric_min=0.0, numeric_max=1000.0
+- Fig2c-Experiment: rows=150, cols=5, numeric_min=0.0, numeric_max=1.0
+  first_col_labels: start in $|\downarrow\rangle$, start in $|\uparrow\rangle$
+- Fig2c-Fit: rows=400, cols=4, numeric_min=-0.152, numeric_max=1.098
+- Fig2d-Experiment: rows=14, cols=5, numeric_min=-0.0561336872216656, numeric_max=1.04582068461389
+- Fig2d-Fit: rows=50, cols=2, numeric_min=0.0, numeric_max=1.024871982800574

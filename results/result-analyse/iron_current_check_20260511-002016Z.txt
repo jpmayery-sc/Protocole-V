@@ -1,0 +1,22 @@
+Contrôle du courant électrique dans le fer
+Timestamp: 20260511-002016Z
+
+Références:
+- rho(20°C) = 9.710e-08 ohm*m
+- coefficient thermique = 0.0050 /°C
+- référence cuivre = 1.680e-08 ohm*m
+
+Tests:
+- Ohmique faible champ: conforme strict
+- Température: conforme strict
+- Contraste avec le cuivre: conforme strict
+- Pureté: conforme strict
+- Microstructure: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- le fer n’est pas plus résistant que le cuivre
+- la loi d’Ohm ne tient pas au régime faible
+- la résistivité ne monte pas avec la température
+- les impuretés ou la microstructure n’augmentent pas la résistivité

@@ -1,0 +1,12 @@
+V9 fine corrections check
+timestamp: 20260517-215117Z
+verdict: conforme
+monotone_ok: True
+band_ok: True
+high_sensitivity_ok: True
+
+Samples:
+- Fe: Z=26 band=3 delta_E=3.519790e-04 sensitivity=1.552848e+00
+- Xe: Z=54 band=4 delta_E=5.419023e-04 sensitivity=8.753071e+00
+- Pb: Z=82 band=6 delta_E=6.878507e-04 sensitivity=1.130985e+02
+- U: Z=92 band=6 delta_E=7.338970e-04 sensitivity=1.206696e+02

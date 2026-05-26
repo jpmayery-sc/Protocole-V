@@ -1,0 +1,5 @@
+V39 synthesis check
+timestamp: 20260519-152513Z
+verdict: supported
+v39_global_verdict: supported
+multi_scale_consistency: True

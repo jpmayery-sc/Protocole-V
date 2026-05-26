@@ -1,0 +1,16 @@
+Contrôle électromagnétique: saturation magnétique forte
+Timestamp: 20260519-213206Z
+
+Tests:
+- Faible champ quasi linéaire: conforme strict
+- Courbure au champ intermédiaire: conforme strict
+- Saturation au champ fort: conforme strict
+- Plateau au champ fort: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- la réponse reste linéaire à fort champ
+- la saturation ne se rapproche pas d’un plateau
+- la réponse forte ne se distingue pas du régime faible
+- le matériau magnétique ne montre pas de courbure supplémentaire

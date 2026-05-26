@@ -1,0 +1,16 @@
+V13 params check
+timestamp: 20260518-170513Z
+verdict: supported
+bounds_ok: True
+target_ok: True
+order_ok: True
+
+Theta:
+- aE: 0.0
+- aR: 0.0
+- A_kappa: 0.001
+- p: 5.0
+- alpha0: 0.0072973525692838015
+- s_geo: 1.0
+- s_atom: 1.0
+- s_canal: 1.0

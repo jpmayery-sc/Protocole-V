@@ -1,0 +1,66 @@
+{
+  "timestamp": "20260518-085643Z",
+  "hypothesis": "les etats tres excites amplifient les effets geometriques D2 sans divergence",
+  "case_control": "n = 2, 4, 8, 16, 32, 64",
+  "observable": "delta r_n et deviation relative",
+  "expected": "croissance avec n et deviation sous 1 pour cent du rayon",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "geo_anchor": 6.374619645617766e-06,
+    "increasing_ok": true,
+    "band_ok": true,
+    "coherence_ok": true
+  },
+  "samples": [
+    {
+      "n": 2,
+      "rn_ref": 2.116708,
+      "alpha_ref": 0.0072973525692838015,
+      "alpha_approx": 0.007283928805514181,
+      "delta_rn": 0.003893766662840026,
+      "relative_deviation": 0.001839538879637638
+    },
+    {
+      "n": 4,
+      "rn_ref": 8.466832,
+      "alpha_ref": 0.0072973525692838015,
+      "alpha_approx": 0.0072776993143345925,
+      "delta_rn": 0.02280290096007498,
+      "relative_deviation": 0.0026932034272175213
+    },
+    {
+      "n": 8,
+      "rn_ref": 33.867328,
+      "alpha_ref": 0.0072973525692838015,
+      "alpha_approx": 0.00727050504174456,
+      "delta_rn": 0.12460053321087372,
+      "relative_deviation": 0.0036790777592750666
+    },
+    {
+      "n": 16,
+      "rn_ref": 135.469312,
+      "alpha_ref": 0.0072973525692838015,
+      "alpha_approx": 0.0072626740091551265,
+      "delta_rn": 0.6437787728054616,
+      "relative_deviation": 0.004752211134027621
+    },
+    {
+      "n": 32,
+      "rn_ref": 541.877248,
+      "alpha_ref": 0.0072973525692838015,
+      "alpha_approx": 0.00725443281332379,
+      "delta_rn": 3.187079015797849,
+      "relative_deviation": 0.0058815516384217136
+    },
+    {
+      "n": 64,
+      "rn_ref": 2167.508992,
+      "alpha_ref": 0.0072973525692838015,
+      "alpha_approx": 0.007245899922045054,
+      "delta_rn": 15.282813115213685,
+      "relative_deviation": 0.007050864919878351
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V7 geometry and V8 radius block"
+}

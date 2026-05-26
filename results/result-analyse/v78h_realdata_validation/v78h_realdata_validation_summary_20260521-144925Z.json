@@ -1,0 +1,74 @@
+{
+  "suite": "v78h_realdata_validation",
+  "timestamp": "20260521-144925Z",
+  "verdict": "accepted_band_found",
+  "input_csv": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\data\\v78h_real_bbn_reference.csv",
+  "total": 20,
+  "accepted_count": 1,
+  "best_fit_beta_e_phys": 0.0,
+  "best_fit_gamma_exch_phys": 0.0,
+  "best_fit_gamma_drain_phys": 0.0,
+  "curve_reading": "courbe plate à courbure mixte",
+  "surface_reading": "surface acceptable mais étroite",
+  "comparison_with_v77g": "cohérente qualitativement avec V77G sur une tranche unique",
+  "csv_full_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\v78h_results_full.csv",
+  "csv_accepted_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\v78h_results_accepted.csv",
+  "plot_litot_beta_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\plots\\v78h_Litot_vs_beta_e.png",
+  "plot_surface_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\plots\\v78h_Litot_surface_gamma.png",
+  "plot_observables_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\plots\\v78h_DH_vs_param.png",
+  "observations": {
+    "D_over_H": {
+      "obs": 2.527e-05,
+      "sigma": 3e-07
+    },
+    "Y_p": {
+      "obs": 0.2436,
+      "sigma": 0.004
+    },
+    "Li7_over_H": {
+      "obs": 1.3e-10,
+      "sigma": 2e-11
+    }
+  },
+  "observations_source": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\data\\v78h_observations.json",
+  "best_fit": {
+    "beta_e_phys": 0.0,
+    "gamma_exch_phys": 0.0,
+    "gamma_drain_phys": 0.0,
+    "D_over_H": 2.527e-05,
+    "Y_p": 0.2436,
+    "Li7_over_H": 1.1e-10,
+    "Li_total_over_H": 1.1e-10,
+    "Be7_over_H": NaN,
+    "chi_D": 0.0,
+    "chi_Y": 0.0,
+    "chi_Li7": 0.9999999999999999,
+    "passes_D": true,
+    "passes_Y": true,
+    "passes_Li7": true,
+    "passes_all": true,
+    "chi_sum": 0.9999999999999999
+  },
+  "accepted_rows": [
+    {
+      "beta_e_phys": 0.0,
+      "gamma_exch_phys": 0.0,
+      "gamma_drain_phys": 0.0,
+      "D_over_H": 2.527e-05,
+      "Y_p": 0.2436,
+      "Li7_over_H": 1.1e-10,
+      "Li_total_over_H": 1.1e-10,
+      "Be7_over_H": NaN,
+      "chi_D": 0.0,
+      "chi_Y": 0.0,
+      "chi_Li7": 0.9999999999999999,
+      "passes_D": true,
+      "passes_Y": true,
+      "passes_Li7": true,
+      "passes_all": true,
+      "chi_sum": 0.9999999999999999
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\v78h_realdata_validation_summary_20260521-144925Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v78h_realdata_validation\\V78H_REALDATA_SUMMARY.txt"
+}

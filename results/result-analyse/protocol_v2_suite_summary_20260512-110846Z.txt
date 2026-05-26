@@ -1,0 +1,18 @@
+Protocol V2 suite summary
+timestamp: 20260512-110846Z
+overall_verdict: blocked
+data_status: template
+supported_count: 0/4
+
+Stages:
+- H1: blocked -> Local model only
+- H2: blocked -> Global alpha' correction
+- H3: blocked -> Quadratic beta' term
+- H4: blocked -> Mass-weighted FTM comparison
+
+Adjacent evidence:
+- material_conductivity: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\material_conductivity_suite_summary_20260512-110844Z.json
+- current_regime: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\current_regime_suite_summary_20260512-110844Z.json
+- induction: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\induction_suite_summary_20260512-110845Z.json
+- skin_effect: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\skin_effect_suite_summary_20260512-110845Z.json
+- saturation_magnetic: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\saturation_magnetic_suite_summary_20260512-110846Z.json

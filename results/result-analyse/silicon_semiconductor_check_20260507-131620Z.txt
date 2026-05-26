@@ -1,0 +1,16 @@
+Contrôle du silicium comme semi-conducteur
+Timestamp: 20260507-131620Z
+
+Tests:
+- Intrinsèque: conforme strict
+- Température: conforme strict
+- Dopage: conforme strict
+- Contraste avec métal: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- le silicium intrinsèque se comporte comme un métal
+- la température ne change presque pas la conduction
+- le dopage n’a pas d’effet net
+- le cadre ne distingue pas le semi-conducteur du conducteur métallique

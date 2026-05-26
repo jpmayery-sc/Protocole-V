@@ -1,0 +1,10 @@
+V17 validation suite summary
+timestamp: 20260518-150458Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v17_reference: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v17reference_check_20260518-150458Z.json
+- v17_compare: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v17compare_check_20260518-150458Z.json
+- v17_deviation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v17deviation_check_20260518-150458Z.json
+- v17_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v17verdict_check_20260518-150458Z.json

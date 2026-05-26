@@ -1,0 +1,86 @@
+{
+  "suite": "v77l_physical_levers_impl",
+  "timestamp": "20260521-150724Z",
+  "rows": [
+    {
+      "D_over_H": 2.527e-05,
+      "Y_p": 0.2436,
+      "Li7_over_H": 1.1e-10,
+      "Be7_over_H": 0.0,
+      "Li_total_over_H": 1.1e-10,
+      "screening_eff": 1.0,
+      "capture_eff": 1.0,
+      "beta_response_ok": true,
+      "exchange_response_ok": true,
+      "drain_response_ok": true,
+      "beta_e_phys": 1.0,
+      "gamma_exch_phys": 0.0,
+      "gamma_drain_phys": 0.0
+    },
+    {
+      "D_over_H": 2.5257365e-05,
+      "Y_p": 0.2437,
+      "Li7_over_H": 1.133e-10,
+      "Be7_over_H": 0.0,
+      "Li_total_over_H": 1.133e-10,
+      "screening_eff": 1.02,
+      "capture_eff": 1.03,
+      "beta_response_ok": true,
+      "exchange_response_ok": true,
+      "drain_response_ok": true,
+      "beta_e_phys": 1.1,
+      "gamma_exch_phys": 0.0,
+      "gamma_drain_phys": 0.0
+    },
+    {
+      "D_over_H": 2.527e-05,
+      "Y_p": 0.2436,
+      "Li7_over_H": 1.65e-10,
+      "Be7_over_H": 0.0,
+      "Li_total_over_H": 1.65e-10,
+      "screening_eff": 1.0,
+      "capture_eff": 1.0,
+      "beta_response_ok": true,
+      "exchange_response_ok": true,
+      "drain_response_ok": true,
+      "beta_e_phys": 1.0,
+      "gamma_exch_phys": 0.5,
+      "gamma_drain_phys": 0.0
+    },
+    {
+      "D_over_H": 2.527e-05,
+      "Y_p": 0.2436,
+      "Li7_over_H": 8.088235294117648e-11,
+      "Be7_over_H": 0.0,
+      "Li_total_over_H": 8.088235294117648e-11,
+      "screening_eff": 1.0,
+      "capture_eff": 1.0,
+      "beta_response_ok": true,
+      "exchange_response_ok": true,
+      "drain_response_ok": true,
+      "beta_e_phys": 1.0,
+      "gamma_exch_phys": 0.0,
+      "gamma_drain_phys": 0.3
+    },
+    {
+      "D_over_H": 2.5257365e-05,
+      "Y_p": 0.2437,
+      "Li7_over_H": 1.2496323529411765e-10,
+      "Be7_over_H": 0.0,
+      "Li_total_over_H": 1.2496323529411765e-10,
+      "screening_eff": 1.02,
+      "capture_eff": 1.03,
+      "beta_response_ok": true,
+      "exchange_response_ok": true,
+      "drain_response_ok": true,
+      "beta_e_phys": 1.1,
+      "gamma_exch_phys": 0.5,
+      "gamma_drain_phys": 0.3
+    }
+  ],
+  "log_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77l_physical_levers_impl\\V77L_IMPLEMENTATION_CHECK.txt",
+  "notes": [
+    "No external AlterBBN/PArthENoPE source tree was available in the workspace.",
+    "This is an explicit adapter boundary, not a claim of patching a real BBN code here."
+  ]
+}

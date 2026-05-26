@@ -1,0 +1,4 @@
+V23 open questions check
+timestamp: 20260518-161145Z
+verdict: supported
+open_questions: 4

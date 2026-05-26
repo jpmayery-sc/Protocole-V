@@ -1,0 +1,5 @@
+V31 tester summary check
+timestamp: 20260519-101046Z
+verdict: supported
+validated_families: 3
+validated_anomalies: 5

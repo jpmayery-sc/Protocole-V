@@ -1,0 +1,41 @@
+{
+  "suite": "v23theorysynthesis_suite",
+  "timestamp": "20260518-161145Z",
+  "overall_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "v23_schema",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23schema_check_20260518-161145Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23schema_check_20260518-161145Z.txt"
+    },
+    {
+      "label": "v23_invariants",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23invariants_check_20260518-161145Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23invariants_check_20260518-161145Z.txt"
+    },
+    {
+      "label": "v23_domain",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23domain_check_20260518-161145Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23domain_check_20260518-161145Z.txt"
+    },
+    {
+      "label": "v23_openquestions",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23openquestions_check_20260518-161145Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23openquestions_check_20260518-161145Z.txt"
+    },
+    {
+      "label": "v23_verdict",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23verdict_check_20260518-161145Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23verdict_check_20260518-161145Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23theorysynthesis_suite_summary_20260518-161145Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23theorysynthesis_suite_summary_20260518-161145Z.txt"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260518-170338Z",
+  "hypothesis": "les hyperparametres V13 doivent rester dans des priors bornes et inclure la solution cible",
+  "case_control": "aE, aR, A_kappa, p, alpha0, s_geo, s_atom, s_canal",
+  "observable": "vecteur theta",
+  "expected": "bornes valides, ordre stable, theta cible dans le support",
+  "measured": {
+    "bounds_ok": true,
+    "target_ok": true,
+    "order_ok": true
+  },
+  "theta": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001,
+    "p": 5.0,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 1.0,
+    "s_atom": 1.0,
+    "s_canal": 1.0
+  },
+  "bounds": {
+    "aE": [
+      -1e-05,
+      1e-05
+    ],
+    "aR": [
+      -0.0001,
+      0.0001
+    ],
+    "A_kappa": [
+      0.0001,
+      0.01
+    ],
+    "p": [
+      3.5,
+      6.5
+    ],
+    "alpha0": [
+      0.00729734,
+      0.00729736
+    ],
+    "s_geo": [
+      0.1,
+      10.0
+    ],
+    "s_atom": [
+      0.1,
+      10.0
+    ],
+    "s_canal": [
+      0.1,
+      10.0
+    ]
+  },
+  "verdict": "supported",
+  "reference": "V13 parameter vector"
+}

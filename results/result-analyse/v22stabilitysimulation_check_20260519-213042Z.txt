@@ -1,0 +1,4 @@
+V22 stability simulation check
+timestamp: 20260519-213042Z
+verdict: supported
+multivariable_robustness: True

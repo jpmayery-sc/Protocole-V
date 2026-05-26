@@ -1,0 +1,35 @@
+{
+  "suite": "v22experiment_suite",
+  "timestamp": "20260519-171538Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "v22_spectroscopy",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22spectroscopy_check_20260519-171537Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22spectroscopy_check_20260519-171537Z.txt"
+    },
+    {
+      "label": "v22_astrophysics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22astrophysics_check_20260519-171537Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22astrophysics_check_20260519-171537Z.txt"
+    },
+    {
+      "label": "v22_torsion_observable",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22torsionobservable_check_20260519-171537Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22torsionobservable_check_20260519-171537Z.txt"
+    },
+    {
+      "label": "v22_verdict_experiment",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22verdict_experiment_check_20260519-171537Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22verdict_experiment_check_20260519-171537Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22experiment_suite_summary_20260519-171538Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22experiment_suite_summary_20260519-171538Z.txt"
+}

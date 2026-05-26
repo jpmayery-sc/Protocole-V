@@ -1,0 +1,10 @@
+V21 borderline suite summary
+timestamp: 20260518-170454Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v21_borderline: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v21borderline_check_20260518-170454Z.json
+- v21_recovery: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v21recovery_check_20260518-170454Z.json
+- v21_resolution: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v21resolution_check_20260518-170454Z.json
+- v21_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v21verdict_check_20260518-170454Z.json

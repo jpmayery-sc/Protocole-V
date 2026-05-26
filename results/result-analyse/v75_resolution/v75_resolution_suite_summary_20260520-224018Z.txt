@@ -1,0 +1,11 @@
+V75 resolution suite summary
+timestamp: 20260520-224018Z
+v75_global_verdict: cadre_BBN_coherent
+supported_count: 3/4
+cadre_BBN_coherent_count: 1/4
+
+Items:
+- v75_pipeline_check: supported
+- v75_bbn_framework: supported
+- v75_success_criteria: supported
+- v75_synthesis: cadre_BBN_coherent

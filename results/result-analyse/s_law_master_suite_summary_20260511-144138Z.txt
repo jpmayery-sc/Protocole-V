@@ -1,0 +1,16 @@
+S-law master suite summary
+timestamp: 20260511-144138Z
+overall_verdict: supported
+supported_count: 7/7
+falsifier_count: 2/2
+
+Items:
+- screening_law_saturation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\screening_law\screening_law_saturation_check_20260511-144137Z.json
+- radius_predictivity: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\radius_predictivity\radius_predictivity_check_20260511-144137Z.json
+- fine_variation_equivalence: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\fine_variation_equivalence_check_20260511-144137Z.json
+- family_l_slope: falsifie -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\family_l_slope_check_20260511-144137Z.json
+- regime_physics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\regime_physics\regime_physics_suite_summary_20260511-144138Z.json
+- alpha_phase_observable: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\result-analyse\alpha_phase_observable_check_20260511-144138Z.json
+- alpha_constant: falsifie -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\result-analyse\alpha_constant_check_20260511-144138Z.json
+- lanthanide_internal_residual: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\lanthanide_internal_residual_check_20260511-144138Z.json
+- heavy_border: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\heavy_border\heavy_border_control_check_20260511-144138Z.json

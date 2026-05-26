@@ -1,0 +1,8 @@
+V47 stability check
+timestamp: 20260519-213122Z
+verdict: supported
+baryon_number_ok: True
+no_exotic_channels: True
+RG_consistency: True
+geometry_consistency: True
+stability_ok: True

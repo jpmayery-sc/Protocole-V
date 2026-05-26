@@ -1,0 +1,6 @@
+V16 internal check
+timestamp: 20260518-170300Z
+verdict: supported
+z_mod: 5.6e-06
+alpha_residual: 0.0
+fine_delta: 0.00024

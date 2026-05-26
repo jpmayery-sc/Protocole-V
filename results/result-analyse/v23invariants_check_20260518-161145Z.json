@@ -1,0 +1,27 @@
+{
+  "section": "V23-INVARIANTS",
+  "invariants_list": [
+    "alpha0",
+    "metric_pair(s_geo, s_atom)",
+    "torsion_eff",
+    "dominant -> metric -> torsion -> coupling hierarchy"
+  ],
+  "invariants_classification": {
+    "geometric": [
+      "alpha0",
+      "metric_pair(s_geo, s_atom)"
+    ],
+    "torsion": [
+      "torsion_eff"
+    ],
+    "structure": [
+      "dominant -> metric -> torsion -> coupling hierarchy"
+    ]
+  },
+  "invariantsstabilitystate": "stable",
+  "stable": true,
+  "verdict": "supported",
+  "timestamp": "20260518-161145Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23invariants_check_20260518-161145Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23invariants_check_20260518-161145Z.txt"
+}

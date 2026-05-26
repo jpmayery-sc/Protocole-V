@@ -1,0 +1,99 @@
+{
+  "timestamp": "20260517-214946Z",
+  "hypothesis": "autour du point MAP de V13, certains parametres bougent peu et peuvent etre figees",
+  "case_control": "variation locale de chaque parametre autour de theta MAP",
+  "observable": "z_geo, z_int, z_canal, z_mod, alpha_residual, fine_delta",
+  "expected": "trois parametres quasi-plats et cinq parametres a conserver pour la reduction",
+  "measured": {
+    "keep_names": [
+      "A_kappa",
+      "aE",
+      "s_canal",
+      "aR",
+      "s_atom"
+    ],
+    "freeze_names": [
+      "p",
+      "alpha0",
+      "s_geo"
+    ]
+  },
+  "rows": [
+    {
+      "name": "A_kappa",
+      "step": 0.0002,
+      "max_abs_delta": 9.999999999999999e-06,
+      "normalized_score": 0.12499999999999997,
+      "rank": 1,
+      "class": "weakly_constrained"
+    },
+    {
+      "name": "aE",
+      "step": 2e-06,
+      "max_abs_delta": 7.999999999999966e-09,
+      "normalized_score": 0.05333333333333311,
+      "rank": 2,
+      "class": "weakly_constrained"
+    },
+    {
+      "name": "s_canal",
+      "step": 0.05,
+      "max_abs_delta": 7.499999999999928e-09,
+      "normalized_score": 0.037499999999999645,
+      "rank": 3,
+      "class": "quasi_flat"
+    },
+    {
+      "name": "aR",
+      "step": 2e-05,
+      "max_abs_delta": 9.999999999999904e-09,
+      "normalized_score": 0.033333333333333014,
+      "rank": 4,
+      "class": "quasi_flat"
+    },
+    {
+      "name": "s_atom",
+      "step": 0.05,
+      "max_abs_delta": 9.999999999999904e-09,
+      "normalized_score": 0.033333333333333014,
+      "rank": 5,
+      "class": "quasi_flat"
+    },
+    {
+      "name": "s_geo",
+      "step": 0.05,
+      "max_abs_delta": 4.999999999999952e-09,
+      "normalized_score": 0.033333333333333014,
+      "rank": 6,
+      "class": "quasi_flat"
+    },
+    {
+      "name": "alpha0",
+      "step": 2e-10,
+      "max_abs_delta": 2.0000000006820118e-10,
+      "normalized_score": 0.020000000006820118,
+      "rank": 7,
+      "class": "quasi_flat"
+    },
+    {
+      "name": "p",
+      "step": 0.1,
+      "max_abs_delta": 1.200000000000002e-06,
+      "normalized_score": 0.015000000000000024,
+      "rank": 8,
+      "class": "quasi_flat"
+    }
+  ],
+  "reduced_theta": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001,
+    "p": 5.0,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 1.0,
+    "s_atom": 1.0,
+    "s_canal": 1.0
+  },
+  "verdict": "falsified",
+  "reference": "V13 MAP sensitivity analysis"
+}

@@ -1,0 +1,10 @@
+V22 experiment suite summary
+timestamp: 20260518-150425Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v22_spectroscopy: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22spectroscopy_check_20260518-150425Z.json
+- v22_astrophysics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22astrophysics_check_20260518-150425Z.json
+- v22_torsion_observable: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22torsionobservable_check_20260518-150425Z.json
+- v22_verdict_experiment: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22verdict_experiment_check_20260518-150425Z.json

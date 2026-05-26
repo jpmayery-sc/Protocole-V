@@ -1,0 +1,652 @@
+{
+  "suite": "protocol_v3_vector",
+  "timestamp": "20260512-142014Z",
+  "overall_verdict": "supported",
+  "supported_count": 7,
+  "total": 7,
+  "tests": [
+    {
+      "id": "TEST0",
+      "title": "Donnees et perimetre",
+      "verdict": "supported",
+      "reason": "The manifest exposes the four required materials and each series contains five points; DC is absent but the low-frequency anchor is present.",
+      "metrics": {
+        "required_materials": [
+          "cu",
+          "al",
+          "ag",
+          "fe"
+        ],
+        "optional_materials": [
+          "au",
+          "ni"
+        ],
+        "material_count": 4,
+        "point_count": 20,
+        "bands_present": [
+          "bf_proxy",
+          "hf_advanced_proxy",
+          "hf_classic"
+        ]
+      }
+    },
+    {
+      "id": "TEST1",
+      "title": "Construction de l espace invariant",
+      "verdict": "supported",
+      "reason": "Each point maps to a 2D invariant vector built from the amplitude ratio A = delta * sqrt(f) relative to a material anchor and the conductivity ratio to copper.",
+      "metrics": {
+        "vector_dimension": 2,
+        "feature_names": [
+          "log10(A/A_ref_material)",
+          "sigma/sigma_Cu"
+        ],
+        "vector_centroids": {
+          "cu": [
+            -0.00014803235388901665,
+            1.0
+          ],
+          "al": [
+            -5.605060566032808e-05,
+            0.6113475177304966
+          ],
+          "ag": [
+            -5.115207748554385e-05,
+            1.0842767295597484
+          ],
+          "fe": [
+            0.000195296374851966,
+            0.17754891864057673
+          ]
+        }
+      }
+    },
+    {
+      "id": "TEST2",
+      "title": "Geometrie inter-materiaux",
+      "verdict": "supported",
+      "reason": "The invariant-based 2D space separates material centroids more clearly than the raw space and the leading PCA plane captures most of the variance.",
+      "metrics": {
+        "separation_ratio": 244.3700844615297,
+        "raw_separation_ratio": 15.712479203340548,
+        "pca_explained_variance_ratio": [
+          0.9999993220672782,
+          6.779327218259052e-07
+        ],
+        "pca_top2_explained": 1.0,
+        "nearest_neighbors": {
+          "cu": "ag",
+          "al": "cu",
+          "ag": "cu",
+          "fe": "al"
+        }
+      }
+    },
+    {
+      "id": "TEST3",
+      "title": "Leave-one-material-out",
+      "verdict": "supported",
+      "reason": "The held-out material always falls back into the same nearest-neighbor geometry under leave-one-material-out.",
+      "metrics": {
+        "folds": [
+          {
+            "held_out": "cu",
+            "train_family": [
+              "al",
+              "ag",
+              "fe"
+            ],
+            "full_nearest_neighbor": "ag",
+            "projected_nearest_neighbor": "ag",
+            "full_rank": [
+              "ag",
+              "al",
+              "fe"
+            ],
+            "projected_rank": [
+              "ag",
+              "al",
+              "fe"
+            ],
+            "displacement_to_train_center": 0.3756089865812533,
+            "order_match": true,
+            "pca_top2_explained": 1.0
+          },
+          {
+            "held_out": "al",
+            "train_family": [
+              "cu",
+              "ag",
+              "fe"
+            ],
+            "full_nearest_neighbor": "cu",
+            "projected_nearest_neighbor": "cu",
+            "full_rank": [
+              "cu",
+              "fe",
+              "ag"
+            ],
+            "projected_rank": [
+              "cu",
+              "fe",
+              "ag"
+            ],
+            "displacement_to_train_center": 0.14259437551550883,
+            "order_match": true,
+            "pca_top2_explained": 0.9999999999999999
+          },
+          {
+            "held_out": "ag",
+            "train_family": [
+              "cu",
+              "al",
+              "fe"
+            ],
+            "full_nearest_neighbor": "cu",
+            "projected_nearest_neighbor": "cu",
+            "full_rank": [
+              "cu",
+              "al",
+              "fe"
+            ],
+            "projected_rank": [
+              "cu",
+              "al",
+              "fe"
+            ],
+            "displacement_to_train_center": 0.4879779198188274,
+            "order_match": true,
+            "pca_top2_explained": 1.0
+          },
+          {
+            "held_out": "fe",
+            "train_family": [
+              "cu",
+              "al",
+              "ag"
+            ],
+            "full_nearest_neighbor": "al",
+            "projected_nearest_neighbor": "al",
+            "full_rank": [
+              "al",
+              "cu",
+              "ag"
+            ],
+            "projected_rank": [
+              "al",
+              "cu",
+              "ag"
+            ],
+            "displacement_to_train_center": 0.7209925516379556,
+            "order_match": true,
+            "pca_top2_explained": 1.0000000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "TEST4",
+      "title": "Changement de regime",
+      "verdict": "supported",
+      "reason": "The relative material geometry stays stable across the observed low/mid/high frequency bands.",
+      "metrics": {
+        "coverage": {
+          "bf_proxy": true,
+          "hf_classic": true,
+          "hf_advanced_proxy": true
+        },
+        "explicit_dc_available": false,
+        "band_pca_top2": {
+          "bf_proxy": 1.0,
+          "hf_classic": 1.0,
+          "hf_advanced_proxy": 1.0
+        },
+        "band_nearest_neighbors": {
+          "bf_proxy": {
+            "cu": "ag",
+            "al": "cu",
+            "ag": "cu",
+            "fe": "al"
+          },
+          "hf_classic": {
+            "cu": "ag",
+            "al": "cu",
+            "ag": "cu",
+            "fe": "al"
+          },
+          "hf_advanced_proxy": {
+            "cu": "ag",
+            "al": "cu",
+            "ag": "cu",
+            "fe": "al"
+          }
+        },
+        "band_mean_shift": 0.00013619727403195073,
+        "band_max_shift": 0.00029576767267756437
+      }
+    },
+    {
+      "id": "TEST5",
+      "title": "Stabilite statistique",
+      "verdict": "supported",
+      "reason": "The invariant-based vector space lowers the cross-material spread and the result survives leave-one-out recomputation.",
+      "metrics": {
+        "raw_pairwise_cv": 0.533089750427372,
+        "vector_pairwise_cv": 0.5330897121130956,
+        "improvement_ratio": 0.9999999281279066,
+        "leave_one_out_pairwise_cv": [
+          0.354539689507365,
+          0.6111786625442106,
+          0.35514775570368573,
+          0.5294631440198087
+        ]
+      }
+    },
+    {
+      "id": "TEST6",
+      "title": "Reduction scalaire optionnelle",
+      "verdict": "supported",
+      "reason": "The first principal component preserves the cross-material stability of the invariant vector geometry.",
+      "metrics": {
+        "scalar_pairwise_cv": 0.5330897817729272,
+        "vector_pairwise_cv": 0.5330897121130956,
+        "material_scalar_centroids": {
+          "cu": 0.2817067362011768,
+          "al": -0.10694575592335129,
+          "ag": 0.3659834317453938,
+          "fe": -0.54074441202322
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "label": "cu",
+      "path": "python\\data\\hf_transport\\cu.json",
+      "rho_ohm_m": 1.724e-08,
+      "mu_r_eff": 1.0,
+      "conductivity_proxy": 58004640.37122969,
+      "delta_ref": 0.014784,
+      "frequency_ref": 20.0,
+      "amplitude_ref": 0.06611605795871378,
+      "vector_centroid": [
+        -0.00014803235388901665,
+        1.0
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.0035618199999999994,
+        0.0,
+        58004640.37122969
+      ],
+      "vector_radius": 9.324504676134709e-05,
+      "raw_radius": 311118.4000000001,
+      "point_count": 5
+    },
+    {
+      "label": "al",
+      "path": "python\\data\\hf_transport\\al.json",
+      "rho_ohm_m": 2.82e-08,
+      "mu_r_eff": 1.0,
+      "conductivity_proxy": 35460992.90780142,
+      "delta_ref": 0.018885,
+      "frequency_ref": 20.0,
+      "amplitude_ref": 0.08445628751016705,
+      "vector_centroid": [
+        -5.605060566032808e-05,
+        0.6113475177304966
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.004549699999999999,
+        0.0,
+        35460992.90780142
+      ],
+      "vector_radius": 0.00024703829011873686,
+      "raw_radius": 311118.4000000001,
+      "point_count": 5
+    },
+    {
+      "label": "ag",
+      "path": "python\\data\\hf_transport\\ag.json",
+      "rho_ohm_m": 1.59e-08,
+      "mu_r_eff": 1.0,
+      "conductivity_proxy": 62893081.76100629,
+      "delta_ref": 0.014188,
+      "frequency_ref": 20.0,
+      "amplitude_ref": 0.06345066492953404,
+      "vector_centroid": [
+        -5.115207748554385e-05,
+        1.0842767295597484
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.00341828,
+        0.0,
+        62893081.76100628
+      ],
+      "vector_radius": 0.00034487357742570327,
+      "raw_radius": 311118.4,
+      "point_count": 5
+    },
+    {
+      "label": "fe",
+      "path": "python\\data\\hf_transport\\fe.json",
+      "rho_ohm_m": 9.71e-08,
+      "mu_r_eff": 1000.0,
+      "conductivity_proxy": 10298661.174047373,
+      "delta_ref": 0.001109,
+      "frequency_ref": 20.0,
+      "amplitude_ref": 0.004959598774094533,
+      "vector_centroid": [
+        0.000195296374851966,
+        0.17754891864057673
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.000267252,
+        1.0,
+        10298661.174047373
+      ],
+      "vector_radius": 0.0002062496425849027,
+      "raw_radius": 311118.4,
+      "point_count": 5
+    }
+  ],
+  "geometry": {
+    "centroids": {
+      "cu": [
+        -0.00014803235388901665,
+        1.0
+      ],
+      "al": [
+        -5.605060566032808e-05,
+        0.6113475177304966
+      ],
+      "ag": [
+        -5.115207748554385e-05,
+        1.0842767295597484
+      ],
+      "fe": [
+        0.000195296374851966,
+        0.17754891864057673
+      ]
+    },
+    "raw_centroids": {
+      "cu": [
+        222204.0,
+        0.0035618199999999994,
+        0.0,
+        58004640.37122969
+      ],
+      "al": [
+        222204.0,
+        0.004549699999999999,
+        0.0,
+        35460992.90780142
+      ],
+      "ag": [
+        222204.0,
+        0.00341828,
+        0.0,
+        62893081.76100628
+      ],
+      "fe": [
+        222204.0,
+        0.000267252,
+        1.0,
+        10298661.174047373
+      ]
+    },
+    "within_radius_mean": 0.00022285163922267247,
+    "raw_within_radius_mean": 311118.4,
+    "between_distance_mean": 0.5181393599317614,
+    "raw_between_distance_mean": 30054484.870717507,
+    "separation_ratio": 244.3700844615297,
+    "raw_separation_ratio": 15.712479203340548,
+    "pca_explained_variance_ratio": [
+      0.9999993220672782,
+      6.779327218259052e-07
+    ],
+    "pca_top2_explained": 1.0,
+    "nearest_neighbors": {
+      "cu": "ag",
+      "al": "cu",
+      "ag": "cu",
+      "fe": "al"
+    },
+    "verdict": "supported",
+    "reason": "The invariant-based 2D space separates material centroids more clearly than the raw space and the leading PCA plane captures most of the variance."
+  },
+  "leave_one_out": {
+    "folds": [
+      {
+        "held_out": "cu",
+        "train_family": [
+          "al",
+          "ag",
+          "fe"
+        ],
+        "full_nearest_neighbor": "ag",
+        "projected_nearest_neighbor": "ag",
+        "full_rank": [
+          "ag",
+          "al",
+          "fe"
+        ],
+        "projected_rank": [
+          "ag",
+          "al",
+          "fe"
+        ],
+        "displacement_to_train_center": 0.3756089865812533,
+        "order_match": true,
+        "pca_top2_explained": 1.0
+      },
+      {
+        "held_out": "al",
+        "train_family": [
+          "cu",
+          "ag",
+          "fe"
+        ],
+        "full_nearest_neighbor": "cu",
+        "projected_nearest_neighbor": "cu",
+        "full_rank": [
+          "cu",
+          "fe",
+          "ag"
+        ],
+        "projected_rank": [
+          "cu",
+          "fe",
+          "ag"
+        ],
+        "displacement_to_train_center": 0.14259437551550883,
+        "order_match": true,
+        "pca_top2_explained": 0.9999999999999999
+      },
+      {
+        "held_out": "ag",
+        "train_family": [
+          "cu",
+          "al",
+          "fe"
+        ],
+        "full_nearest_neighbor": "cu",
+        "projected_nearest_neighbor": "cu",
+        "full_rank": [
+          "cu",
+          "al",
+          "fe"
+        ],
+        "projected_rank": [
+          "cu",
+          "al",
+          "fe"
+        ],
+        "displacement_to_train_center": 0.4879779198188274,
+        "order_match": true,
+        "pca_top2_explained": 1.0
+      },
+      {
+        "held_out": "fe",
+        "train_family": [
+          "cu",
+          "al",
+          "ag"
+        ],
+        "full_nearest_neighbor": "al",
+        "projected_nearest_neighbor": "al",
+        "full_rank": [
+          "al",
+          "cu",
+          "ag"
+        ],
+        "projected_rank": [
+          "al",
+          "cu",
+          "ag"
+        ],
+        "displacement_to_train_center": 0.7209925516379556,
+        "order_match": true,
+        "pca_top2_explained": 1.0000000000000002
+      }
+    ],
+    "verdict": "supported",
+    "reason": "The held-out material always falls back into the same nearest-neighbor geometry under leave-one-material-out."
+  },
+  "regime": {
+    "coverage": {
+      "bf_proxy": true,
+      "hf_classic": true,
+      "hf_advanced_proxy": true
+    },
+    "explicit_dc_available": false,
+    "band_centroids": {
+      "bf_proxy": {
+        "cu": [
+          -0.00018425586385672943,
+          1.0
+        ],
+        "al": [
+          -0.0003044856528291545,
+          0.6113475177304966
+        ],
+        "ag": [
+          -0.00016090033784733662,
+          1.0842767295597484
+        ],
+        "fe": [
+          0.0002265542140415231,
+          0.17754891864057673
+        ]
+      },
+      "hf_classic": {
+        "cu": [
+          -0.00013307890967487957,
+          1.0
+        ],
+        "al": [
+          5.199816159939399e-05,
+          0.6113475177304966
+        ],
+        "ag": [
+          0.0002064800192150311,
+          1.0842767295597484
+        ],
+        "fe": [
+          0.00024412046856498156,
+          0.17754891864057673
+        ]
+      },
+      "hf_advanced_proxy": {
+        "cu": [
+          -0.0001054922223818652,
+          1.0
+        ],
+        "al": [
+          0.00022472195415788076,
+          0.6113475177304966
+        ],
+        "ag": [
+          -0.00034691975016310823,
+          1.0842767295597484
+        ],
+        "fe": [
+          3.5132509046820614e-05,
+          0.17754891864057673
+        ]
+      }
+    },
+    "band_pca_top2": {
+      "bf_proxy": 1.0,
+      "hf_classic": 1.0,
+      "hf_advanced_proxy": 1.0
+    },
+    "band_nearest_neighbors": {
+      "bf_proxy": {
+        "cu": "ag",
+        "al": "cu",
+        "ag": "cu",
+        "fe": "al"
+      },
+      "hf_classic": {
+        "cu": "ag",
+        "al": "cu",
+        "ag": "cu",
+        "fe": "al"
+      },
+      "hf_advanced_proxy": {
+        "cu": "ag",
+        "al": "cu",
+        "ag": "cu",
+        "fe": "al"
+      }
+    },
+    "band_mean_shift": 0.00013619727403195073,
+    "band_max_shift": 0.00029576767267756437,
+    "verdict": "supported",
+    "reason": "The relative material geometry stays stable across the observed low/mid/high frequency bands."
+  },
+  "stability": {
+    "raw_pairwise_cv": 0.533089750427372,
+    "vector_pairwise_cv": 0.5330897121130956,
+    "leave_one_out_pairwise_cv": [
+      0.354539689507365,
+      0.6111786625442106,
+      0.35514775570368573,
+      0.5294631440198087
+    ],
+    "improvement_ratio": 0.9999999281279066,
+    "verdict": "supported",
+    "reason": "The invariant-based vector space lowers the cross-material spread and the result survives leave-one-out recomputation."
+  },
+  "scalar": {
+    "material_scalar_centroids": {
+      "cu": 0.2817067362011768,
+      "al": -0.10694575592335129,
+      "ag": 0.3659834317453938,
+      "fe": -0.54074441202322
+    },
+    "scalar_pairwise_distances": [
+      0.3886524921245281,
+      0.08427669554421696,
+      0.8224511482243968,
+      0.47292918766874503,
+      0.4337986560998687,
+      0.9067278437686137
+    ],
+    "scalar_pairwise_cv": 0.5330897817729272,
+    "vector_pairwise_cv": 0.5330897121130956,
+    "verdict": "supported",
+    "reason": "The first principal component preserves the cross-material stability of the invariant vector geometry."
+  },
+  "plots": {
+    "pca_projection": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\plots\\protocol_v3_pca_projection.png",
+    "cv_comparison": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\plots\\protocol_v3_cv_comparison.png"
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v3_vector_summary_20260512-142014Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v3_vector_summary_20260512-142014Z.txt",
+  "md_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocole_v3_vectoriel.md"
+}

@@ -1,0 +1,99 @@
+{
+  "suite": "v77_li_physical_resolution",
+  "timestamp": "20260521-100642Z",
+  "verdict": "resolution_fine",
+  "verdict_text": "Li résolu de façon fine",
+  "delta_center": -0.0069,
+  "scan_min": -0.0072,
+  "scan_max": -0.0066,
+  "scan_step": 9.999999999999593e-06,
+  "scan_count": 61,
+  "control_ok": true,
+  "control_tolerances": {
+    "delta_em_abs_error": 1e-12,
+    "D_over_H_abs_error": 1e-10,
+    "Y_p_abs_error": 1e-06,
+    "Li7_over_H_abs_error": 1e-12,
+    "Be7_over_H_abs_error": 1e-12
+  },
+  "control_errors": {
+    "delta_em_abs_error": 0.0,
+    "D_over_H_abs_error": 2.918906704001459e-11,
+    "Y_p_abs_error": 0.0,
+    "Li7_over_H_abs_error": 4.984374712851143e-16,
+    "Be7_over_H_abs_error": 1.3078503832985446e-16
+  },
+  "center_point": {
+    "delta_em": -0.0069,
+    "li_scale": 1.0,
+    "be_scale": 1.0,
+    "D_over_H": 2.529882918906704e-05,
+    "Y_p": 0.246745,
+    "Li7_over_H": 1.566465015625287e-10,
+    "Be7_over_H": 1.3292413078503833e-10,
+    "Li_total_over_H": 2.8957063234756704e-10,
+    "D_z": 0.0960972968901293,
+    "Y_z": 0.025257731958762394,
+    "Li7_z": 0.04366123991842856,
+    "Li_total_z": 4.2442139466957105,
+    "passes_D": true,
+    "passes_Y": true,
+    "passes_Li7": true,
+    "passes_Li_total": false,
+    "passes_all_direct": true,
+    "passes_all_total": false
+  },
+  "bands": {
+    "D_over_H": {
+      "count": 61,
+      "delta_min": -0.0072,
+      "delta_max": -0.0066,
+      "delta_width": 0.0005999999999999998
+    },
+    "Y_p": {
+      "count": 61,
+      "delta_min": -0.0072,
+      "delta_max": -0.0066,
+      "delta_width": 0.0005999999999999998
+    },
+    "Li7_over_H": {
+      "count": 61,
+      "delta_min": -0.0072,
+      "delta_max": -0.0066,
+      "delta_width": 0.0005999999999999998
+    },
+    "Li_total_over_H": {
+      "count": 0,
+      "delta_min": null,
+      "delta_max": null,
+      "delta_width": null
+    }
+  },
+  "slopes_at_center": {
+    "D_over_H": -0.00011763955577154078,
+    "Y_p": 0.05000000000004987,
+    "Li7_over_H": 2.741315176556652e-08,
+    "Li_total_over_H": 4.934564329696163e-08,
+    "Li_selectivity": 5.482630353107835e-07
+  },
+  "rate_robustness": {
+    "grid": [
+      0.95,
+      1.0,
+      1.05
+    ],
+    "total_cases": 9,
+    "passes_all_direct": 9,
+    "passes_all_total": 0
+  },
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\v77_li_physical_resolution_scan.csv",
+  "plot_paths": [
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\plots\\D_over_H_vs_delta_em.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\plots\\Y_p_vs_delta_em.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\plots\\Li7_over_H_vs_delta_em.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\plots\\Li_total_over_H_vs_delta_em.png"
+  ],
+  "output_dir": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\v77_li_physical_resolution_summary_20260521-100642Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77_li_physical_resolution\\v77_li_physical_resolution_summary_20260521-100642Z.txt"
+}

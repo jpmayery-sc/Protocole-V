@@ -1,0 +1,31 @@
+Recherche refinee sur la sous-famille des tetrels C -> Sn
+Timestamp: 20260508-195742Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 7.224956747275377
+- ionization_rmse: 0.7295035837814643
+- zeff_rmse: 0.04745072968661311
+- mass_rmse: 8.083430797006924
+- radius_step_cv: 0.4985185152621431
+- ionization_step_cv: 0.9812599774247677
+- zeff_step_cv: 0.14763408193705516
+- mass_step_cv: 0.3879342689665677
+
+Family summary:
+- C: period=2, mass_u=12.011, radius_pm=67.0, ionization_ev=11.2603, zeff_proxy=1.81985
+- Si: period=3, mass_u=28.085, radius_pm=111.0, ionization_ev=8.1517, zeff_proxy=2.322608
+- Ge: period=4, mass_u=72.63, radius_pm=125.0, ionization_ev=7.8994, zeff_proxy=3.04851
+- Sn: period=5, mass_u=118.71, radius_pm=145.0, ionization_ev=7.3439, zeff_proxy=3.67421
+
+Hypothese: for the tetrel subfamily C -> Sn, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across C -> Sn
+- first ionization energy is not monotonic across C -> Sn
+- Z_eff proxy is not smoother than mass across the subfamily
+- mass alone explains the subfamily trend as well as or better than Z_eff proxy

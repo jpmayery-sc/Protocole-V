@@ -1,0 +1,170 @@
+V37 — EXTENSION AUX MÉSONS B ET À LA MATIÈRE NOIRE
+Version : 0.1 (pré‑MCMC global)
+ 
+ 
+0. OBJECTIF DE V37
+------------------
+1) Tester si le schéma géométrique K/T/Y, validé pour :
+   - muon (EW)
+   - neutrinos (ultra‑léger)
+   - glueball (fort)
+   reste cohérent dans le secteur flavour (mésons B).
+ 
+2) Tester si la lecture géométrique de la matière noire (déficit de cohérence Sent(Y))
+   peut être calibrée sans casser les échelles trouvées en V35–V36.
+ 
+V37 prépare V38 (cosmo) et V39 (MCMC global).
+ 
+ 
+1. V37-BPHYSICS — TEST DES MÉSONS B
+-----------------------------------
+ 
+1.1 Données expérimentales
+--------------------------
+Les anomalies flavour les plus connues :
+ 
+- R_K = BR(B→K μμ) / BR(B→K ee)
+- R_K* = même observable sur K*
+- tensions ~2.5–3σ selon les analyses
+ 
+Cible qualitative :
+- quelques % d’écart entre e et μ
+- signe cohérent avec les données
+ 
+ 
+1.2 Ansatz géométrique
+----------------------
+On réutilise la structure V31 :
+ 
+ΔP(B→K ℓℓ) ≈ C_ℓ · F(K_loc, T_loc)
+ 
+où :
+- C_e, C_μ, C_τ : coefficients dépendant de la structure interne du lepton ℓ
+- F(K_loc, T_loc) : même fonction pour tous les leptons
+- K_loc, T_loc : valeurs locales dans la zone de désintégration du méson B
+ 
+ 
+1.3 Hypothèse d’échelle flavour
+-------------------------------
+On pose :
+ 
+K_loc^B = d_K · K_loc_best  
+T_loc^B = d_T · T_loc_best  
+ 
+avec d_K, d_T ∈ {2, 5, 10}  
+(les mésons B vivent dans un régime intermédiaire entre EW et QCD).
+ 
+ 
+1.4 Condition flavour
+---------------------
+On impose :
+ 
+R_K,eff = (P_μ / P_e)_eff ≈ 1 + δ_RK
+ 
+avec δ_RK ∈ [0.01, 0.10] (fenêtre des tensions observées).
+ 
+On cherche des triplets (C_e, C_μ, C_τ) tels que :
+ 
+- |δ_RK| dans la fenêtre
+- C_ℓ naturels (pas 10^8, pas 10^-12)
+- hiérarchie raisonnable :
+  C_μ / C_e < 10^4
+ 
+ 
+1.5 Tests de cohérence
+----------------------
+- flavour_match_ok : δ_RK dans la fenêtre
+- naturality_ok : C_ℓ raisonnables
+- hierarchy_ok : pas de hiérarchie monstrueuse
+- v37_B_verdict : supported / rejected / inconclusive
+ 
+ 
+2. V37-DARK — TEST DE LA MATIÈRE NOIRE
+--------------------------------------
+ 
+2.1 Données cibles
+------------------
+- profils de rotation galactique plats
+- fraction de masse invisible ~85 %
+- pas de particule détectée
+ 
+Cible qualitative :
+- reproduire un effet de halo sans particule exotique
+ 
+ 
+2.2 Ansatz géométrique
+----------------------
+On réutilise V31 :
+ 
+g_eff = g_GR + δg(Sent(Y))
+ 
+avec :
+ 
+Sent(Y) = cohérence interne  
+déficit de cohérence → effet “masse manquante”
+ 
+ 
+2.3 Hypothèse d’échelle cosmologique
+------------------------------------
+On pose :
+ 
+Sent(Y)_halo = 1 − ε  
+avec ε ∈ {0.05, 0.10, 0.20}
+ 
+δg doit produire un effet équivalent à une densité ρ_DM,eff.
+ 
+ 
+2.4 Condition DM
+----------------
+On impose :
+ 
+v_rot,eff(r) ≈ constante  
+dans la zone r ∈ [5 kpc, 20 kpc]
+ 
+et :
+ 
+ρ_DM,eff / ρ_baryon ≈ 5 ± 2
+ 
+ 
+2.5 Tests de cohérence
+----------------------
+- halo_match_ok : profils compatibles
+- epsilon_ok : ε raisonnable
+- multi_scale_ok : pas de conflit avec K_bg_best
+- v37_DM_verdict : supported / rejected / inconclusive
+ 
+ 
+3. V37-SYNTHESIS — LECTURE PHYSIQUE
+-----------------------------------
+ 
+3.1 Objectif
+------------
+Relier :
+ 
+- secteur flavour (mésons B)
+- secteur DM (Sent(Y))
+- échelles V35–V36 (muon, neutrinos, glueball)
+ 
+et tester si K/T/Y peut supporter **tous les secteurs simultanément**.
+ 
+ 
+3.2 Sorties attendues
+---------------------
+- flavour_summary
+- dark_summary
+- multi_sector_consistency
+- v37_global_verdict
+ 
+ 
+4. PROCHAINE ÉTAPE
+------------------
+Si V37 est supported :
+ 
+- V38 : extension cosmologique complète (H(z), Λ_eff(K))
+- V39 : MCMC global sur tous les secteurs
+ 
+Si V37 échoue :
+ 
+- révision de l’ansatz flavour ou Sent(Y)
+- recalibrage des échelles D1/D2
+ 

@@ -1,0 +1,5 @@
+V23 schema check
+timestamp: 20260518-161145Z
+verdict: supported
+schema_ok: True
+schema_consistency: True

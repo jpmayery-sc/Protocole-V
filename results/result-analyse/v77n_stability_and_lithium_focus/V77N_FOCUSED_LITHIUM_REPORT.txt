@@ -1,0 +1,25 @@
+V77N focused lithium report
+timestamp: 20260521-154314Z
+best_fit_beta_e_phys: 1.0
+best_fit_gamma_exch_phys: 1.09
+best_fit_gamma_drain_phys: 0.64
+best_fit_chi_sum: 0.0033936651583709823
+accepted_count: 605
+accepted_components: 5
+dominant_bottleneck: bande acceptable encore trop fine
+dominant_metric: Li_total/H
+beta_span: (0.98, 1.02)
+gamma_exch_span: (1.05, 1.15)
+gamma_drain_span: (0.6, 0.7)
+
+Interpretation:
+- the accepted set is now centered on the best V77N point and exposes the local bottleneck.
+- if gamma_drain_span collapses faster than beta_span and gamma_exch_span, the Li_total window is what pinches the physics.
+- if beta_span remains narrow too, the electronic lever is part of the lock, not just a cosmetic correction.
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\v77n_results_focused.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_focused_Li7_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_focused_Litot_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_focused_Li7_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_focused_Litot_surface_gamma_phys.png

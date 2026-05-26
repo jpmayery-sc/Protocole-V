@@ -1,0 +1,173 @@
+Protocole V6 — Loi dérivée Fréquence–Torsion–Masse (FTM)
+Finalité de V6 (à acter clairement)
+
+V6 n’a pas pour but de “valider la FTM”.
+V6 cherche à déterminer quel statut physique réel la loi FTM peut raisonnablement avoir :
+
+invariant structurel,
+loi effective conditionnelle,
+ou paramétrage heuristique non robuste.
+
+
+Aucune promotion automatique vers une loi physique fondamentale.
+
+Données et hypothèses autorisées (figées)
+Lois utilisées (sans modification)
+
+
+Loi du tube :
+ωtube(m)=Km\omega_{\text{tube}}(m) = K \sqrt{m}ωtube​(m)=Km​
+
+
+Loi multi‑phase maximale :
+Nphases,max=1+ntorsionsN_{\text{phases,max}} = 1 + n_{\text{torsions}}Nphases,max​=1+ntorsions​
+
+
+Loi dérivée FTM :
+Nphases,eff(m,ω)=[1+ntorsions F(ω/Ωtorsion)]⋅G(ωtube(m)/Ωtorsion)N_{\text{phases,eff}}(m,\omega) =
+\big[1 + n_{\text{torsions}}\,F(\omega/\Omega_{\text{torsion}})\big]
+\cdot
+G\big(\omega_{\text{tube}}(m)/\Omega_{\text{torsion}}\big)Nphases,eff​(m,ω)=[1+ntorsions​F(ω/Ωtorsion​)]⋅G(ωtube​(m)/Ωtorsion​)
+
+
+avec :
+
+F(x)=x21+x2F(x) = \frac{x^2}{1+x^2}F(x)=1+x2x2​
+G(y)=y1+yG(y) = \frac{y}{1+y}G(y)=1+yy​
+
+👉 Aucun autre terme autorisé.
+
+Hypothèses à tester (V6-H)
+
+H6-1 : la dépendance en masse proposée par G(y)G(y)G(y) a une signification physique robuste, non purement ordinale.
+H6-2 : le facteur de torsion F(ω/Ω)F(\omega/\Omega)F(ω/Ω) décrit une activation réelle, pas un simple seuil arbitraire.
+H6-3 : la combinaison F × G introduit une structure prédictive stable, pas seulement une hiérarchie qualitative.
+H6-4 : la loi FTM n’est pas équivalente à une réécriture triviale de V2 (portance conductrice).
+
+
+🧪 Série de tests V6
+
+🔬 TEST V6-1 — Test d’équivalence structurelle (clé)
+Question
+
+La loi FTM apporte‑t‑elle une structure nouvelle par rapport à l’espace invariant V3 ?
+
+Test
+
+Calculer Nphases,effN_{\text{phases,eff}}Nphases,eff​ pour Cu / Al / Fe / Ag.
+Comparer:
+
+l’ordre FTM (via Nphases,effN_{\text{phases,eff}}Nphases,eff​),
+l’ordre V3 sur l’axe V2 (σ/σ_Cu).
+
+
+
+Critère de rejet
+
+❌ si FTM ≡ une projection monotone de V2
+→ la loi est redondante, donc non physique.
+
+Critère de soutien
+
+✅ si FTM introduit une séparation différente ou enrichie
+→ loi potentiellement informative.
+
+
+🔬 TEST V6-2 — Robustesse par leave‑one‑material‑out
+Question
+
+La dépendance en masse est‑elle stable, ou seulement ajustée à un petit ensemble ?
+
+Test
+
+retirer un matériau,
+recalculer les classements FTM,
+vérifier la cohérence des positions relatives.
+
+Critère
+
+✅ stabilité de l’ordre et des écarts relatifs
+❌ permutation instable → rejet de la loi comme loi physique
+
+
+🔬 TEST V6-3 — Nature du facteur de torsion
+Question
+
+Le facteur F(ω/Ω)F(\omega/\Omega)F(ω/Ω) décrit‑il un changement de régime réel ?
+
+Tests
+
+analyser les transitions bf_proxy → hf_classic → hf_advanced_proxy,
+comparer les activations prévues par F à celles déjà observées dans V1.
+
+Critère
+
+✅ F corrélé à l’activation géométrique HF (V1)
+❌ F introduit une dynamique étrangère → rejet
+
+
+🔬 TEST V6-4 — Limite haute (régime saturé)
+Question
+
+La limite ω≫Ωtorsion\omega \gg \Omega_{\text{torsion}}ω≫Ωtorsion​ est‑elle physiquement cohérente ?
+
+Tests
+
+comparer :
+Nphases,eff  →ω→∞  (1+ntorsions) G(y)N_{\text{phases,eff}} \;\xrightarrow{\omega\to\infty}\; (1+n_{\text{torsions}})\,G(y)Nphases,eff​ω→∞​(1+ntorsions​)G(y)
+
+vérifier si cette saturation :
+
+respecte les écarts V3,
+ne crée pas de plateau universel artificiel.
+
+
+
+Critère
+
+✅ saturation différenciée par matériau
+❌ plateau commun non observé → rejet
+
+
+🔬 TEST V6-5 — Test falsifiant dur (indispensable)
+Question
+
+Peut‑on expliquer toutes les séparations FTM sans invoquer la torsion ?
+
+Test
+
+fixer ntorsions=0n_{\text{torsions}} = 0ntorsions​=0,
+réduire Nphases,effN_{\text{phases,eff}}Nphases,eff​ à G(y)G(y)G(y),
+comparer avec V3.
+
+Verdict
+
+✅ si torsion change réellement la structure
+❌ sinon → torsion = artifice narratif
+
+
+✅ Sorties attendues de V6
+Un rapport qui tranche sans ambiguïté :
+
+🔍 ce que FTM apporte réellement ;
+❌ ce qu’elle n’apporte pas ;
+✅ son statut épistémique correct parmi :
+
+loi effective conditionnelle,
+outil descriptif heuristique,
+formalisme non robuste.
+
+
+
+
+🔒 Règle de clôture importante
+Quelle que soit l’issue de V6 :
+
+❌ échec de FTM ≠ échec de tube,
+❌ échec de FTM ≠ remise en cause de V3–V5,
+✅ FTM est une branche exploratoire indépendante.
+
+
+✅ Lecture stratégique
+Après V3–V5, attaquer FTM est pertinent, mais uniquement sous cette forme exploratoire.
+V6 est suffisant pour décider si la loi dérivée mérite d’aller plus loin.

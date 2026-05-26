@@ -1,0 +1,17 @@
+Experience 4 global suite summary
+timestamp: 20260519-213245Z
+overall_verdict: partiel
+supported_count: 9/11
+
+Items:
+- atom_basics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\atom_basics_suite_summary_20260519-213128Z.json
+- point_atome_protocol: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_protocol_suite_summary_20260519-213131Z.json
+- point_atome_master: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_master_suite_summary_20260519-213201Z.json
+- s_law_master: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\s_law_master_suite_summary_20260519-213236Z.json
+- alphaportsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alphaportsuite_suite_summary_20260519-213237Z.json
+- v6_d2_electron: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v6_d2_electron_suite_summary_20260519-213237Z.json
+- v7unifiedphysics_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v7unifiedphysics_suite_summary_20260519-213238Z.json
+- v47_baryons_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47baryons_suite_summary_20260519-213241Z.json
+- v48_b_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_b\v48b_suite_summary_20260519-213241Z.json
+- v48_neutrinos_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48neutrinos_suite_summary_20260519-213245Z.json
+- v49_photon_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v49_photon\v49photon_suite_summary_20260519-213245Z.json

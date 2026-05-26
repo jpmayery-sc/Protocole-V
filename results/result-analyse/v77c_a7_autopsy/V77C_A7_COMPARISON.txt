@@ -1,0 +1,5 @@
+V77C A=7 qualitative comparison
+- standard BBN expects a non-trivial A=7 network where Be7 is important and destruction channels matter
+- the proxy compresses A=7 into two monotonic positive branches
+- no explicit destruction flow exists
+- conclusion: proxy A=7 is too compressed for a realistic autopsy of the full lithium network

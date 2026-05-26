@@ -1,0 +1,6 @@
+V43 synthesis check
+timestamp: 20260519-161104Z
+verdict: supported
+predictions_table: [{'sector': 'Muon', 'observable': 'Delta a_mu', 'prediction': '2.1e-9', 'experiment': 'Fermilab, J-PARC'}, {'sector': 'Flavour', 'observable': 'R_K', 'prediction': '0.86', 'experiment': 'LHCb, Belle II'}, {'sector': 'Cosmology', 'observable': 'f_sigma8(z=1)', 'prediction': '0.377', 'experiment': 'Euclid, DESI'}, {'sector': 'Cosmology', 'observable': 'H0', 'prediction': '69.4', 'experiment': 'SH0ES, Planck'}, {'sector': 'Geometric DM', 'observable': 'Rotation curves', 'prediction': '+3-5 %', 'experiment': 'SKA, Gaia'}, {'sector': 'Lensing', 'observable': 'Shear cosmique', 'prediction': '+1-2 %', 'experiment': 'Euclid, LSST'}]
+falsifiability_ok: True
+v43_global_verdict: supported

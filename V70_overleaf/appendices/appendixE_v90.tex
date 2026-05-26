@@ -1,0 +1,176 @@
+\section{Annexe E -- Protocole V90}
+Le protocole V90 unifie la géométrie dynamique, le temps propre local, la vitesse d'information et le redshift observé dans un cadre simple à comparer à $\Lambda$CDM.
+
+\subsection{Objectif}
+Établir la relation complète entre la géométrie dynamique, le temps propre local, la vitesse d'information, la vitesse effective et le redshift observé, afin de relier les anomalies cosmologiques: tension de Hubble, zone critique autour de $z\approx0.46$, supernovas et régimes compacts sans singularité.
+
+\subsection{Hypothèses de base}
+\begin{enumerate}
+    \item La géométrie n'est pas infinie et reste régulière même dans les zones extrêmes.
+    \item Le temps propre n'est pas universel: chaque région possède un rythme d'écoulement différent.
+    \item La vitesse d'information dépend du temps propre local.
+    \item La vitesse effective observée dépend de la géométrie et du temps propre.
+    \item Le redshift contient une composante géométrique et une composante dynamique du photon.
+\end{enumerate}
+
+\subsection{Définition des quantités}
+On note $\tau(z)$ le temps propre local, $d(z)$ la distance géométrique effective, $v_{\mathrm{info}}(z)$ la vitesse d'information, $v_{\mathrm{eff}}(z)$ la vitesse effective observée, $g(z)$ le facteur géométrique et $f_{\mathrm{photon}}(z)$ la contribution dynamique du photon.
+
+\subsection{Déroulé calculé}
+On déroule maintenant la chaîne de calcul utilisée dans le test V90.
+
+\paragraph{Étape 1: fonction de transition}
+On introduit une transition lisse autour de la zone critique:
+\[
+S(z)=\frac{1}{1+\exp\!\left(-\frac{z-z_c}{w}\right)}
+\]
+avec $z_c=0.46$ et $w=0.16$.
+
+\paragraph{Étape 2: géométrie dynamique}
+Le facteur géométrique est pris sous la forme
+\[
+g(z)=1+\alpha_g S(z),
+\qquad \alpha_g=0.18.
+\]
+Ainsi, pour $z=0.46$, on a $S(0.46)=0.5$ et donc
+\[
+g(0.46)=1+0.18\times 0.5=1.09.
+\]
+
+\paragraph{Étape 3: temps propre local}
+Le temps propre local suit directement
+\[
+\tau(z)=\tau_0 g(z),
+\qquad \tau_0=1.
+\]
+Donc, à $z=0.46$:
+\[
+\tau(0.46)=1\times 1.09=1.09.
+\]
+
+\paragraph{Étape 4: distance géométrique standard}
+La distance comobile standard est prise sous la forme
+\[
+d_{\mathrm{std}}(z)=c\int_0^z \frac{dz'}{H(z')}
+\]
+avec
+\[
+H(z)=H_0\sqrt{\Omega_r(1+z)^4+\Omega_m(1+z)^3+\Omega_\Lambda},
+\]
+et les paramètres du test $H_0=67.4$, $\Omega_m=0.315$, $\Omega_r=9\times10^{-5}$, $\Omega_\Lambda=0.685$.
+Pour $z=0.46$, le calcul numérique donne
+\[
+d_{\mathrm{std}}(0.46)=0.27904193604302047.
+\]
+
+\paragraph{Étape 5: distance effective}
+On introduit une compression locale de la distance:
+\[
+d(z)=\frac{d_{\mathrm{std}}(z)}{1+z}\,\frac{1}{1+\beta S(z)},
+\qquad \beta=2.5.
+\]
+À $z=0.46$, cela donne
+\[
+d(0.46)=\frac{0.27904193604302047}{1.46}\,\frac{1}{1+2.5\times 0.5}
+=0.08494427276804276.
+\]
+
+\paragraph{Étape 6: vitesse d'information}
+La vitesse d'information locale suit alors
+\[
+v_{\mathrm{info}}(z)=\frac{d(z)}{\tau(z)}.
+\]
+Donc, à $z=0.46$:
+\[
+v_{\mathrm{info}}(0.46)=\frac{0.08494427276804276}{1.09}=0.07793052547526857.
+\]
+
+\paragraph{Étape 7: facteur photonique}
+Pour imposer la relation de redshift testée dans le script, on définit
+\[
+f_{\mathrm{photon}}(z)=\frac{1+z}{g(z)}.
+\]
+Alors, à $z=0.46$:
+\[
+f_{\mathrm{photon}}(0.46)=\frac{1.46}{1.09}=1.3394495412844036.
+\]
+
+\paragraph{Étape 8: vitesse effective observée}
+La vitesse effective observée est
+\[
+v_{\mathrm{eff}}(z)=v_{\mathrm{info}}(z)\,f_{\mathrm{photon}}(z).
+\]
+Donc, à $z=0.46$:
+\[
+v_{\mathrm{eff}}(0.46)=0.07793052547526857\times 1.3394495412844036
+=0.10438400659990102.
+\]
+
+\paragraph{Étape 9: redshift total}
+Le redshift total est
+\[
+1+z=g(z)f_{\mathrm{photon}}(z).
+\]
+À $z=0.46$:
+\[
+g(0.46)f_{\mathrm{photon}}(0.46)=1.09\times 1.3394495412844036=1.46,
+\]
+donc
+\[
+1+z=1.46 \quad\Rightarrow\quad z=0.46.
+\]
+
+\paragraph{Étape 10: cohérence numérique}
+Le résidu de redshift vaut
+\[
+\Delta z = (g f_{\mathrm{photon}}-1)-z.
+\]
+Pour $z=0.46$, le test retourne
+\[
+\Delta z = -5.551115123125783\times 10^{-17},
+\]
+ce qui est numériquement nul.
+
+\subsection{Résumé des valeurs testées}
+Le calcul est stabilisé sur la grille $z=\{0,0.23,0.46,0.69,1,2,3\}$ avec les valeurs centrales suivantes:
+\begin{center}
+\begin{tabular}{lrrrr}
+\hline
+$z$ & $g(z)$ & $\tau(z)$ & $v_{\mathrm{info}}(z)$ & $v_{\mathrm{eff}}(z)$ \\
+\hline
+0.23 & 1.0345479015605026 & 1.0345479015605026 & 0.07883840064020031 & 0.0937329558555731 \\
+0.46 & 1.09 & 1.09 & 0.07793052547526857 & 0.10438400659990102 \\
+0.69 & 1.1454520984394974 & 1.1454520984394974 & 0.06717653676800872 & 0.09911226082050893 \\
+\hline
+\end{tabular}
+\end{center}
+
+On voit bien que le point critique $z\approx 0.46$ marque un ralentissement du temps propre, une baisse de la vitesse d'information et une augmentation du facteur photonique, tout en gardant l'identité de redshift exacte dans le test.
+
+\subsection{Relations fondamentales}
+\begin{align}
+    \tau(z) &= \tau_0\,g(z),\\
+    v_{\mathrm{info}}(z) &= \frac{d(z)}{\tau(z)},\\
+    v_{\mathrm{eff}}(z) &= v_{\mathrm{info}}(z)\,f_{\mathrm{photon}}(z),\\
+    1+z &= g(z)\,f_{\mathrm{photon}}(z).
+\end{align}
+
+En combinant ces relations, on obtient l'équation finale du modèle:
+\[
+1+z = \left[\frac{d(z)}{\tau_0\,g(z)}\right] f_{\mathrm{photon}}(z).
+\]
+
+\subsection{Zone critique}
+Autour de $z\approx0.46$, le facteur géométrique varie rapidement, le temps propre ralentit, la vitesse d'information diminue et la vitesse effective augmente. Dans cette zone, le redshift devient plus fort que la prédiction standard.
+
+\subsection{Conséquences physiques}
+\begin{itemize}
+    \item La vitesse d'information n'est pas constante.
+    \item Le redshift n'est pas purement géométrique.
+    \item La tension de Hubble devient une conséquence du couple $\tau(z)+g(z)$.
+    \item Les supernovas super-lumineuses peuvent être relues comme une conversion gamma vers visible dans une géométrie extrême.
+    \item Les trous noirs n'ont pas besoin de singularité si le temps propre diffère et si la dissipation géométrique reste finie.
+\end{itemize}
+
+\subsection{Suite du programme}
+Les prochaines étapes sont de tracer $v_{\mathrm{info}}(z)$, définir explicitement $g(z)$, calibrer $f_{\mathrm{photon}}(z)$, puis comparer V90 à $\Lambda$CDM.

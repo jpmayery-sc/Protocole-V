@@ -1,0 +1,11 @@
+V46 tau suite summary
+timestamp: 20260519-164924Z
+v46_global_verdict: supported
+supported_count: 5/5
+
+Items:
+- v46_tau_gminus2: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v46_tau\v46tau_gminus2_check_20260519-164923Z.json
+- v46_tau_decays: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v46_tau\v46tau_decays_check_20260519-164923Z.json
+- v46_tau_lfu: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v46_tau\v46tau_lfu_check_20260519-164923Z.json
+- v46_tau_stability: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v46_tau\v46tau_stability_check_20260519-164923Z.json
+- v46_synthesis: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v46_tau\v46synthesis_check_20260519-164924Z.json

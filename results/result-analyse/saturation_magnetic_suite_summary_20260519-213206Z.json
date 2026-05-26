@@ -1,0 +1,18 @@
+{
+  "suite": "saturation_magnetic",
+  "timestamp": "20260519-213206Z",
+  "overall_verdict": "conforme strict",
+  "supported_count": 1,
+  "total": 1,
+  "items": [
+    {
+      "label": "strong_nonlinear_magnetic_response",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_nonlinear_magnetic_response_check_20260519-213206Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_nonlinear_magnetic_response_check_20260519-213206Z.txt",
+      "hypothesis": "the magnetic response saturates at strong drive while remaining linear at low field"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260519-213206Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260519-213206Z.txt"
+}

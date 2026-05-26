@@ -1,0 +1,145 @@
+# V77Q — TEST JOUET DE SURVIE A=7 (Li7 / Be7)
+# Version : 1.0 — Bloc “survie sélective” pour comprendre ce qui coince
+# Auteur : Jean-Philippe
+# Objet : Tester, dans un modèle jouet, si la séparation explicite Be7 / Li7
+#         (production, destruction, conversion tardive) peut ouvrir une bande
+#         Li_total/H, ou si la rigidité reste structurelle.
+ 
+Protocole précédent : V77P (projection EM sur A=7)
+Protocole suivant : V79Q (si nécessaire, test de pincement avec bloc survie)
+ 
+Wrapper suggéré :
+- python/scripts/runv77q_a7_survival_test.py
+ 
+CONTENU :
+- 0. Objectif
+- 1. Variables et équations du bloc “survie A=7”
+- 2. Paramètres à scanner
+- 3. Observables et diagnostics
+- 4. Scénarios possibles
+- 5. Critère de lecture : où ça coince vraiment ?
+ 
+ 
+0. OBJECTIF
+-----------
+V77Q ne cherche pas à refaire une BBN complète, mais à répondre à une question
+très ciblée :
+ 
+> “Si on sépare explicitement Be7 (robuste) et Li7 (fragile) avec des taux
+>  de destruction / conversion, est-ce qu’on peut ouvrir une bande Li_total/H
+>  raisonnable, ou est-ce que la rigidité reste là malgré tout ?”
+ 
+On veut savoir si le bloc manquant est bien un bloc “survie sélective A=7”
+ou si le problème est encore plus structurel.
+ 
+ 
+1. VARIABLES ET ÉQUATIONS DU BLOC “SURVIE A=7”
+----------------------------------------------
+On introduit deux abondances effectives (adimensionnées, normalisées à H) :
+ 
+- Be7(t)  : abondance de béryllium-7
+- Li7(t)  : abondance de lithium-7
+ 
+On travaille sur une fenêtre de temps jouet t ∈ [t_start, t_end],
+qui représente la phase “BBN tardive + post-BBN précoce”.
+ 
+Équations jouet :
+ 
+    dBe7/dt = P_Be7(t) - Γ_Be * Be7
+ 
+    dLi7/dt = - Γ_burn * Li7 + Γ_cap * Be7
+ 
+où :
+ 
+- P_Be7(t)  : terme de production effective de Be7 (fonction jouet, par ex. un bump)
+- Γ_Be      : taux de destruction lente de Be7 (faible)
+- Γ_burn    : taux de destruction de Li7 dans le plasma (fort)
+- Γ_cap     : taux de conversion tardive Be7 → Li7 (capture e⁻ effective)
+ 
+Li_total(t) = Li7(t) + Be7(t) est l’abondance totale A=7.
+ 
+ 
+2. PARAMÈTRES À SCANNER
+-----------------------
+On ne cherche pas à “fit”, mais à voir la géométrie.
+ 
+Paramètres jouets à balayer :
+ 
+- Γ_burn  ∈ [Γ_burn_min, Γ_burn_max]
+  (fragilité de Li7 dans le plasma)
+ 
+- Γ_cap   ∈ [Γ_cap_min, Γ_cap_max]
+  (efficacité de la conversion tardive Be7 → Li7)
+ 
+- éventuellement un facteur de milieu f_env qui ne touche QUE A=7 :
+  - par exemple : Γ_burn_eff = f_env * Γ_burn
+  - ou Γ_cap_eff = f_env * Γ_cap
+ 
+On peut fixer P_Be7(t) comme une gaussienne centrée sur t_BBN avec une largeur σ,
+et Γ_Be très petit (Be7 quasi stable sur la fenêtre).
+ 
+ 
+3. OBSERVABLES ET DIAGNOSTICS
+-----------------------------
+Pour chaque triplet (Γ_burn, Γ_cap, f_env) :
+ 
+1) Intégrer le système (Be7, Li7) de t_start à t_end.
+2) Calculer :
+ 
+   - Li7_final   = Li7(t_end)
+   - Be7_final   = Be7(t_end)
+   - Li_total    = Li7_final + Be7_final
+ 
+3) Comparer Li_total à une “valeur cible” Li_target (issue de V77O/V79BIS).
+ 
+4) Définir un chi_jouet :
+ 
+       chi_jouet = (Li_total - Li_target)² / σ_Li²
+ 
+   (σ_Li : écart-type jouet, juste pour voir la forme de la surface)
+ 
+5) Regarder :
+ 
+   - la largeur de la bande de paramètres qui donne chi_jouet < chi_max,
+   - la forme de la surface chi_jouet(Γ_burn, Γ_cap).
+ 
+ 
+4. SCÉNARIOS POSSIBLES
+----------------------
+Scénario A — “Survie A=7 = bon étage” :
+- Une variation modérée de Γ_burn ou Γ_cap ouvre une bande de paramètres
+  où Li_total reste compatible avec Li_target.
+- La surface chi_jouet est “large” dans au moins une direction.
+- → Le bloc “survie sélective A=7” est un candidat sérieux pour la structure.
+ 
+Scénario B — “Survie A=7 = insuffisant” :
+- Même en balayant largement Γ_burn et Γ_cap, la bande reste ultra-fine.
+- La surface chi_jouet est raide dans toutes les directions.
+- → La rigidité ne vient pas seulement de la survie A=7, mais d’un étage
+  plus global (structure de fond, transport, géométrie globale).
+ 
+Scénario C — “Instabilité / comportement non physique” :
+- Pour certains réglages, Be7 ou Li7 explosent ou deviennent négatifs.
+- → Le bloc jouet est mal posé ou trop simpliste, il faut le raffiner.
+ 
+ 
+5. CRITÈRE DE LECTURE : OÙ ÇA COINCE VRAIMENT ?
+-----------------------------------------------
+V77Q est réussi si :
+ 
+- on obtient une carte chi_jouet(Γ_burn, Γ_cap) lisible,
+- on peut dire clairement :
+ 
+  - soit : “Oui, un bloc survie A=7 peut naturellement desserrer la bande,
+           donc il manque bien un étage ‘survie sélective’ dans la structure.”
+  - soit : “Non, même avec ce bloc, la rigidité reste, donc le problème est
+           encore plus structurel (fond, transport, géométrie globale).”
+ 
+V77Q ne prétend pas “résoudre” le lithium.
+Il sert à localiser le blocage :
+ 
+> Est-ce que ça coince déjà au niveau de la survie A=7,
+> ou est-ce que ça coince plus haut dans la structure ?
+ 
+C’est un test de localisation, pas un fit cosmologique.
+ 

@@ -1,0 +1,10 @@
+{
+  "suite": "v77f_curve_shape",
+  "timestamp": "20260521-114805Z",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77f_curve_shape\\V77F_CURVE_SHAPE.txt",
+  "plot_paths": [
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77f_curve_shape\\plots\\v77d_curve_shape.png",
+    "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77f_curve_shape\\plots\\v77e_surface_shape.png"
+  ],
+  "output_dir": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77f_curve_shape"
+}

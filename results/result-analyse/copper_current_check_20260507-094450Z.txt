@@ -1,0 +1,18 @@
+Contrôle du courant électrique dans le cuivre
+Timestamp: 20260507-094450Z
+
+Références:
+- rho(20°C) = 1.680e-08 ohm*m
+- coefficient thermique = 0.0039 /°C
+
+Tests:
+- Ohmique faible champ: conforme strict
+- Température: conforme strict
+- Pureté: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- la loi d’Ohm ne tient pas au régime faible
+- la résistivité ne monte pas avec la température
+- les impuretés n’augmentent pas la résistivité

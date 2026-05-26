@@ -1,0 +1,43 @@
+{
+  "section": "V34-NEUTRINOS",
+  "k_bg": 1.0,
+  "lambda_values": {
+    "nu1": 0.0,
+    "nu2": 7.4e-05,
+    "nu3": 0.0025
+  },
+  "m0_values": {
+    "nu1": 0.0,
+    "nu2": 0.0,
+    "nu3": 0.0
+  },
+  "delta_k_env": 0.0001,
+  "delta_m2_sol": 7.4e-05,
+  "delta_m2_atm": 0.0025,
+  "sum_mnu": 0.05860232526704263,
+  "oscillations_ok": true,
+  "cosmology_ok": true,
+  "parameters_reasonable": true,
+  "ms_limit_ok": true,
+  "environmental_stability_ok": true,
+  "rejected_reasons": [],
+  "neutrino_verdict": "supported",
+  "parameter_ranges": {
+    "K_bg": [
+      0.0,
+      10.0
+    ],
+    "lambda_values": [
+      0.0,
+      0.01
+    ],
+    "delta_K_env": [
+      0.0,
+      0.001
+    ]
+  },
+  "verdict": "supported",
+  "timestamp": "20260519-103010Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v34_geometric_falsification\\v34neutrinos_check_20260519-103010Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v34_geometric_falsification\\v34neutrinos_check_20260519-103010Z.txt"
+}

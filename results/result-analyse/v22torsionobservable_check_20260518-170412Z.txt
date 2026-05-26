@@ -1,0 +1,6 @@
+V22 torsion observable experiment check
+timestamp: 20260518-170412Z
+verdict: supported
+torsion_bound: 0.00011999000000000001
+spin_gravity_coupling: 0.02500000000001416
+torsionobservableok: True

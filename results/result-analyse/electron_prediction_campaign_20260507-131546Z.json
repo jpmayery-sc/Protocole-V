@@ -1,0 +1,134 @@
+{
+  "timestamp": "20260507-131546Z",
+  "model_formula": "D1 fixe le régime, l’électron transmet, le proton reçoit et transforme, le neutron régule, le photon signale le dépassement du seuil.",
+  "cases": [
+    {
+      "name": "Hydrogène-1",
+      "structure": {
+        "protons": 1,
+        "neutrons": 0,
+        "electrons": 1,
+        "neutron_to_proton": 0.0
+      },
+      "expected_role": "transmission simple",
+      "expected_signature": "pas de réserve neutronique à mobiliser",
+      "verdict": "conforme strict",
+      "reason": "cas minimal exact",
+      "falsifier": "un neutron apparaît ou Z/e- n’est plus égal à 1"
+    },
+    {
+      "name": "Deutérium-2",
+      "structure": {
+        "protons": 1,
+        "neutrons": 1,
+        "electrons": 1,
+        "neutron_to_proton": 1.0
+      },
+      "expected_role": "première réserve stable",
+      "expected_signature": "réserve neutronique minimale mais présente",
+      "verdict": "conforme strict",
+      "reason": "première réserve neutronique exacte",
+      "falsifier": "N/Z n’est pas égal à 1 ou la structure 1p-1n-1e- est rompue"
+    },
+    {
+      "name": "Tritium-3",
+      "structure": {
+        "protons": 1,
+        "neutrons": 2,
+        "electrons": 1,
+        "neutron_to_proton": 2.0
+      },
+      "expected_role": "réserve forte mais limite de stabilité",
+      "expected_signature": "excès neutronique net par rapport à l’hydrogène",
+      "verdict": "conforme strict",
+      "reason": "réserve neutronique forte et bien au-delà de la balance",
+      "falsifier": "N/Z reste trop proche de 1 ou la réserve neutronique n’est pas dominante"
+    },
+    {
+      "name": "Hélium-4",
+      "structure": {
+        "protons": 2,
+        "neutrons": 2,
+        "electrons": 2,
+        "neutron_to_proton": 1.0
+      },
+      "expected_role": "noyau compact très stable",
+      "expected_signature": "répartition symétrique de la réserve",
+      "verdict": "conforme strict",
+      "reason": "noyau compact et symétrique",
+      "falsifier": "la symétrie 2p-2n-2e- n’est pas respectée"
+    },
+    {
+      "name": "Carbone-12",
+      "structure": {
+        "protons": 6,
+        "neutrons": 6,
+        "electrons": 6,
+        "neutron_to_proton": 1.0
+      },
+      "expected_role": "structure équilibrée",
+      "expected_signature": "symétrie proton/neutron au niveau léger",
+      "verdict": "conforme strict",
+      "reason": "structure légère équilibrée",
+      "falsifier": "la symétrie 6p-6n-6e- n’est pas respectée"
+    },
+    {
+      "name": "Oxygène-16",
+      "structure": {
+        "protons": 8,
+        "neutrons": 8,
+        "electrons": 8,
+        "neutron_to_proton": 1.0
+      },
+      "expected_role": "noyau léger très stable",
+      "expected_signature": "symétrie renforcée et stabilité forte",
+      "verdict": "conforme strict",
+      "reason": "noyau léger très stable",
+      "falsifier": "la symétrie 8p-8n-8e- n’est pas respectée"
+    },
+    {
+      "name": "Fer-56",
+      "structure": {
+        "protons": 26,
+        "neutrons": 30,
+        "electrons": 26,
+        "neutron_to_proton": 1.154
+      },
+      "expected_role": "point de balance",
+      "expected_signature": "forte stabilité avec compromis proton/neutron",
+      "verdict": "conforme strict",
+      "reason": "point de balance exact",
+      "falsifier": "N/Z sort de la fenêtre de balance ou la symétrie Z=e- disparaît"
+    },
+    {
+      "name": "Plomb-208",
+      "structure": {
+        "protons": 82,
+        "neutrons": 126,
+        "electrons": 82,
+        "neutron_to_proton": 1.537
+      },
+      "expected_role": "stabilité lourde sous contrainte",
+      "expected_signature": "réserve neutronique importante et proche d’une saturation",
+      "verdict": "conforme strict",
+      "reason": "cas lourd proche de saturation",
+      "falsifier": "la réserve neutronique n’est pas nettement dominante"
+    },
+    {
+      "name": "Uranium-238",
+      "structure": {
+        "protons": 92,
+        "neutrons": 146,
+        "electrons": 92,
+        "neutron_to_proton": 1.587
+      },
+      "expected_role": "cas très lourd proche de la limite haute",
+      "expected_signature": "réserve neutronique dominante avec forte contrainte",
+      "verdict": "conforme strict",
+      "reason": "cas très lourd avec forte contrainte",
+      "falsifier": "la réserve neutronique n’est pas dominante ou la symétrie Z=e- est rompue"
+    }
+  ],
+  "global_verdict": "conforme strict",
+  "falsification_rule": "Le modèle falsifie si H, D, T, He, C, O, Fe, Pb et U ne passent pas leurs seuils stricts de structure, de symétrie et de progression neutronique."
+}

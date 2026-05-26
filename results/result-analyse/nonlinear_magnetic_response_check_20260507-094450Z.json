@@ -1,0 +1,22 @@
+{
+  "timestamp": "20260507-094450Z",
+  "low_field_values": [
+    0.0,
+    0.04995837495787998,
+    0.09966799462495582
+  ],
+  "high_field_values": [
+    0.0,
+    0.9051482536448664,
+    0.9950547536867305
+  ],
+  "low_linear_status": "conforme strict",
+  "high_saturation_status": "conforme strict",
+  "curve_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "la réponse reste linéaire jusqu’à fort champ",
+    "la saturation n’apparaît pas",
+    "un matériau magnétique ne se distingue pas d’un matériau non magnétique"
+  ]
+}

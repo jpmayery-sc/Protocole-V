@@ -1,0 +1,22 @@
+Contrôle du courant électrique dans l’aluminium
+Timestamp: 20260512-110844Z
+
+Références:
+- rho(20°C) = 2.820e-08 ohm*m
+- coefficient thermique = 0.0043 /°C
+- référence cuivre = 1.680e-08 ohm*m
+- référence fer = 9.710e-08 ohm*m
+
+Tests:
+- Ohmique faible champ: conforme strict
+- Température: conforme strict
+- Contraste avec cuivre et fer: conforme strict
+- Surface / pureté: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- l’aluminium n’est pas intermédiaire entre cuivre et fer
+- la loi d’Ohm ne tient pas au régime faible
+- la résistivité ne monte pas avec la température
+- les impuretés ou l’oxyde n’augmentent pas la résistivité

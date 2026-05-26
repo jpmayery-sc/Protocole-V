@@ -1,0 +1,10 @@
+V13 MCMC check
+timestamp: 20260518-121120Z
+verdict: supported
+acceptance_rate: 0.660
+samples_kept: 400
+map_supported: True
+mean_supported: True
+acceptance_ok: True
+samples_ok: True
+likelihood_gain_ok: True

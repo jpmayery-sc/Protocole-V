@@ -1,0 +1,206 @@
+{
+  "timestamp": "20260508-223545Z",
+  "hypothesis": "the 5d block is best read as two local regimes plus anomalies, not one repaired core",
+  "case_control": "full 5d block Hf -> Hg versus early core Hf -> W and late core Os -> Hg",
+  "observable": "whether splitting the block into two cores improves the regularity signal",
+  "expected": {
+    "full_family": "mixed or broken trend",
+    "early_core": "distinct core behavior",
+    "late_core": "distinct core behavior"
+  },
+  "measured": {
+    "full_family": {
+      "series": [
+        {
+          "symbol": "Hf",
+          "period": 6,
+          "mass_u": 178.49,
+          "radius_pm": 159.0,
+          "ionization_ev": 6.8251,
+          "zeff_proxy": 4.250464
+        },
+        {
+          "symbol": "Ta",
+          "period": 6,
+          "mass_u": 180.94788,
+          "radius_pm": 146.0,
+          "ionization_ev": 7.5496,
+          "zeff_proxy": 4.470373
+        },
+        {
+          "symbol": "W",
+          "period": 6,
+          "mass_u": 183.84,
+          "radius_pm": 139.0,
+          "ionization_ev": 7.864,
+          "zeff_proxy": 4.562507
+        },
+        {
+          "symbol": "Re",
+          "period": 6,
+          "mass_u": 186.207,
+          "radius_pm": 137.0,
+          "ionization_ev": 7.8335,
+          "zeff_proxy": 4.553651
+        },
+        {
+          "symbol": "Os",
+          "period": 6,
+          "mass_u": 190.23,
+          "radius_pm": 135.0,
+          "ionization_ev": 8.4382,
+          "zeff_proxy": 4.726141
+        },
+        {
+          "symbol": "Ir",
+          "period": 6,
+          "mass_u": 192.217,
+          "radius_pm": 136.0,
+          "ionization_ev": 8.967,
+          "zeff_proxy": 4.871979
+        },
+        {
+          "symbol": "Pt",
+          "period": 6,
+          "mass_u": 195.084,
+          "radius_pm": 139.0,
+          "ionization_ev": 8.9588,
+          "zeff_proxy": 4.869751
+        },
+        {
+          "symbol": "Au",
+          "period": 6,
+          "mass_u": 196.96657,
+          "radius_pm": 144.0,
+          "ionization_ev": 9.2255,
+          "zeff_proxy": 4.941704
+        },
+        {
+          "symbol": "Hg",
+          "period": 6,
+          "mass_u": 200.592,
+          "radius_pm": 151.0,
+          "ionization_ev": 10.4375,
+          "zeff_proxy": 5.256299
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "increasing",
+      "radius_rmse": 7.344982330278185,
+      "ionization_rmse": 0.2555555250241527,
+      "zeff_rmse": 0.06766936256146161,
+      "mass_rmse": 0.4055025068571975,
+      "radius_step_cv": 6.144102863722254,
+      "ionization_step_cv": 0.85014543035371,
+      "zeff_step_cv": 0.8229070829278712,
+      "mass_step_cv": 0.255498651926169
+    },
+    "early_core": {
+      "series": [
+        {
+          "symbol": "Hf",
+          "period": 6,
+          "mass_u": 178.49,
+          "radius_pm": 159.0,
+          "ionization_ev": 6.8251,
+          "zeff_proxy": 4.250464
+        },
+        {
+          "symbol": "Ta",
+          "period": 6,
+          "mass_u": 180.94788,
+          "radius_pm": 146.0,
+          "ionization_ev": 7.5496,
+          "zeff_proxy": 4.470373
+        },
+        {
+          "symbol": "W",
+          "period": 6,
+          "mass_u": 183.84,
+          "radius_pm": 139.0,
+          "ionization_ev": 7.864,
+          "zeff_proxy": 4.562507
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "increasing",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "radius_rmse": 1.4142135623730951,
+      "ionization_rmse": 0.09666149698820103,
+      "zeff_rmse": 0.030116956821726347,
+      "mass_rmse": 0.10235134955415948,
+      "radius_step_cv": 0.3,
+      "ionization_step_cv": 0.39474444123592256,
+      "zeff_step_cv": 0.40947965255501195,
+      "mass_step_cv": 0.08116635514019015
+    },
+    "late_core": {
+      "series": [
+        {
+          "symbol": "Os",
+          "period": 6,
+          "mass_u": 190.23,
+          "radius_pm": 135.0,
+          "ionization_ev": 8.4382,
+          "zeff_proxy": 4.726141
+        },
+        {
+          "symbol": "Ir",
+          "period": 6,
+          "mass_u": 192.217,
+          "radius_pm": 136.0,
+          "ionization_ev": 8.967,
+          "zeff_proxy": 4.871979
+        },
+        {
+          "symbol": "Pt",
+          "period": 6,
+          "mass_u": 195.084,
+          "radius_pm": 139.0,
+          "ionization_ev": 8.9588,
+          "zeff_proxy": 4.869751
+        },
+        {
+          "symbol": "Au",
+          "period": 6,
+          "mass_u": 196.96657,
+          "radius_pm": 144.0,
+          "ionization_ev": 9.2255,
+          "zeff_proxy": 4.941704
+        },
+        {
+          "symbol": "Hg",
+          "period": 6,
+          "mass_u": 200.592,
+          "radius_pm": 151.0,
+          "ionization_ev": 10.4375,
+          "zeff_proxy": 5.256299
+        }
+      ],
+      "radius_trend": "increasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "increasing",
+      "radius_rmse": 1.6733200530681511,
+      "ionization_rmse": 0.28720248571347673,
+      "zeff_rmse": 0.07404479220278355,
+      "mass_rmse": 0.3875629377094801,
+      "radius_step_cv": 0.5590169943749475,
+      "ionization_step_cv": 0.906114825933526,
+      "zeff_step_cv": 0.8859574315901765,
+      "mass_step_cv": 0.27384103739830545
+    }
+  },
+  "verdict": "supported",
+  "reference": "5d block anomalies around Re, Ir, Pt and Hg",
+  "falsifiers": [
+    "the full 5d block is already regular",
+    "the split into two cores does not change the regularity picture",
+    "neither core is more regular than the full block"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_5d_dual_core_view_check_20260508-223545Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_5d_dual_core_view_check_20260508-223545Z.txt"
+}

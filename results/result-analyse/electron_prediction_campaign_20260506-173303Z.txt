@@ -1,0 +1,15 @@
+Campagne de test - Dossier électron
+Timestamp: 20260506-173303Z
+
+Formule de travail:
+- D1 fixe le régime, l’électron transmet, le proton reçoit et transforme, le neutron régule, le photon signale le dépassement du seuil.
+
+Résultats par cas:
+- Hydrogène-1: Z=1, N=0, e-=1, N/Z=0.0 -> colle (cas minimal sans réserve neutronique)
+- Fer-56: Z=26, N=30, e-=26, N/Z=1.154 -> colle (rapport neutron/proton compatible avec un point de balance)
+- Plomb-208: Z=82, N=126, e-=82, N/Z=1.537 -> colle (cas lourd compatible avec une stabilité sous contrainte)
+
+Règle de falsification:
+- Le modèle falsifie si H, Fe et Pb ne montrent pas respectivement transmission simple, point de balance et stabilité lourde sous contrainte.
+
+Verdict global: colle

@@ -1,0 +1,22 @@
+{
+  "section": "V35-NEUTRINOS",
+  "scan_count": 27,
+  "best_neutrino_point": {
+    "K_bg": 1.0,
+    "lambda_2": 7.4e-05,
+    "lambda_3": 0.0025,
+    "delta_m2_sol": 7.4e-05,
+    "delta_m2_atm": 0.0025,
+    "sum_mnu": 0.05860232526704263
+  },
+  "best_neutrino_score": 0.0,
+  "oscillations_hit": true,
+  "cosmology_safe": true,
+  "parameters_reasonable": true,
+  "rejected_reasons": [],
+  "neutrino_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-104501Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v35_numeric_calibration\\v35neutrino_scan_check_20260519-104501Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v35_numeric_calibration\\v35neutrino_scan_check_20260519-104501Z.txt"
+}

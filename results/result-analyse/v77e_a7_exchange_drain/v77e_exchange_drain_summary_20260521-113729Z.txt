@@ -1,0 +1,15 @@
+V77E exchange + drain scan summary
+timestamp: 20260521-113729Z
+verdict: zone_viable_trouvee
+row_count: 25
+both_pass_count: 4
+best_gamma_exch: 1.0
+best_gamma_drain: 0.375
+best_Li7_final: 1.390625e-10
+best_Be7_final: 0.0
+best_Li_total_final: 1.390625e-10
+
+Plots:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77e_a7_exchange_drain\plots\Li7_final_heatmap.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77e_a7_exchange_drain\plots\Be7_final_heatmap.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77e_a7_exchange_drain\plots\Li_total_final_heatmap.png

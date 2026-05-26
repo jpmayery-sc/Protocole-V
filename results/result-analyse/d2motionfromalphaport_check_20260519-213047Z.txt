@@ -1,0 +1,16 @@
+D2 motion from alpha port check
+timestamp: 20260519-213047Z
+verdict: conforme
+alpha_ref: 0.007297352569284
+alpha_approx: 0.007299270072993
+delta_alpha: -1.917503708898961e-06
+delta_theta_rad: -1.204803113021707e-05
+delta_theta_small_ok: True
+tau_shape_ok: True
+tau_inverse_ok: True
+effect_structured_ok: True
+
+Samples:
+- r=1.0: delta_tau=-1.917503708898961e-06 delta_phi_ref=3.108751269820189e-03 delta_phi_approx=3.111202545897042e-03 delta_P=-3.811699852460365e-09
+- r=2.0: delta_tau=-9.587518544494807e-07 delta_phi_ref=7.771878174550472e-04 delta_phi_approx=7.778006364742606e-04 delta_P=-2.382316008045684e-10
+- r=5.0: delta_tau=-3.835007417797055e-07 delta_phi_ref=1.243500507928076e-04 delta_phi_approx=1.244481018358817e-04 delta_P=-6.098729579308905e-12

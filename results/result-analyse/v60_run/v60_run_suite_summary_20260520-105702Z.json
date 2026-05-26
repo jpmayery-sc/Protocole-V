@@ -1,0 +1,54 @@
+{
+  "suite": "v60_run_suite",
+  "timestamp": "20260520-105702Z",
+  "v60_global_verdict": "intrication_confirmed_numerical",
+  "overall_verdict": "intrication_confirmed_numerical",
+  "verdict": "intrication_confirmed_numerical",
+  "supported_count": 5,
+  "intrication_confirmed_numerical_count": 1,
+  "total": 6,
+  "items": [
+    {
+      "label": "v60_inputs",
+      "verdict": "supported",
+      "gamma_star": 1.73,
+      "inputs_ok": true,
+      "parameters_ok": true
+    },
+    {
+      "label": "v60_eom",
+      "verdict": "supported",
+      "K_curve_ok": true,
+      "T_curve_ok": true,
+      "Y_curve_ok": true
+    },
+    {
+      "label": "v60_potential",
+      "verdict": "supported",
+      "V_total_convex": true,
+      "V_ent_active": true
+    },
+    {
+      "label": "v60_observables",
+      "verdict": "supported",
+      "H_ok": true,
+      "fs8_with_ent_ok": true,
+      "S8_with_ent": 0.776
+    },
+    {
+      "label": "v60_comparison",
+      "verdict": "supported",
+      "chi2_fs8_with_ent": 1.84,
+      "chi2_fs8_noent": 9.62,
+      "delta_chi2_fs8": 7.78
+    },
+    {
+      "label": "v60_synthesis",
+      "verdict": "intrication_confirmed_numerical",
+      "intrication_confirmed_numerique": true,
+      "modele_globalement_coherent": true
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v60_run\\v60_run_suite_summary_20260520-105702Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v60_run\\v60_run_suite_summary_20260520-105702Z.txt"
+}

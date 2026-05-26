@@ -1,0 +1,135 @@
+{
+  "timestamp": "20260517-211333Z",
+  "hypothesis": "la torsion D2 induit un redshift geometrique de phase petit mais non nul",
+  "case_control": "H_alpha, Fe_alpha, Pb_alpha, U_alpha",
+  "observable": "z_geo",
+  "expected": "signe coherent, amplitude faible et croissance avec la torsion",
+  "measured": {
+    "base_delta_phi": 0.0031087512698201886,
+    "sign_ok": true,
+    "amplitude_ok": true,
+    "growth_ok": true,
+    "z_growth_ok": true,
+    "v9_coherence_ok": true
+  },
+  "cases": [
+    {
+      "name": "H_alpha",
+      "z": 1,
+      "torsion_scale": 0.8,
+      "environments": [
+        {
+          "name": "quiet",
+          "geo_scale": 0.8,
+          "phase_ref": 0.0031398387825183906,
+          "phase_env": 0.003141064915851724,
+          "redshift": 1.9514518088977363e-07
+        },
+        {
+          "name": "nominal",
+          "geo_scale": 1.0,
+          "phase_ref": 0.0031398387825183906,
+          "phase_env": 0.003141371449185057,
+          "redshift": 2.4393147611216526e-07
+        },
+        {
+          "name": "extreme",
+          "geo_scale": 1.35,
+          "phase_ref": 0.0031398387825183906,
+          "phase_env": 0.0031419078825183906,
+          "redshift": 3.293074927514369e-07
+        }
+      ],
+      "nominal_redshift": 2.4393147611216526e-07
+    },
+    {
+      "name": "Fe_alpha",
+      "z": 26,
+      "torsion_scale": 1.0,
+      "environments": [
+        {
+          "name": "quiet",
+          "geo_scale": 0.8,
+          "phase_ref": 0.003917026599973438,
+          "phase_env": 0.003918875933306771,
+          "redshift": 2.9433054142457555e-07
+        },
+        {
+          "name": "nominal",
+          "geo_scale": 1.0,
+          "phase_ref": 0.003917026599973438,
+          "phase_env": 0.003919338266640105,
+          "redshift": 3.679131767807885e-07
+        },
+        {
+          "name": "extreme",
+          "geo_scale": 1.35,
+          "phase_ref": 0.003917026599973438,
+          "phase_env": 0.003920147349973438,
+          "redshift": 4.966827886540575e-07
+        }
+      ],
+      "nominal_redshift": 3.679131767807885e-07
+    },
+    {
+      "name": "Pb_alpha",
+      "z": 82,
+      "torsion_scale": 1.25,
+      "environments": [
+        {
+          "name": "quiet",
+          "geo_scale": 0.8,
+          "phase_ref": 0.005657927311072743,
+          "phase_env": 0.005661125644406077,
+          "redshift": 5.090305596555925e-07
+        },
+        {
+          "name": "nominal",
+          "geo_scale": 1.0,
+          "phase_ref": 0.005657927311072743,
+          "phase_env": 0.00566192522773941,
+          "redshift": 6.362881995694561e-07
+        },
+        {
+          "name": "extreme",
+          "geo_scale": 1.35,
+          "phase_ref": 0.005657927311072743,
+          "phase_env": 0.005663324498572743,
+          "redshift": 8.58989069418752e-07
+        }
+      ],
+      "nominal_redshift": 6.362881995694561e-07
+    },
+    {
+      "name": "U_alpha",
+      "z": 92,
+      "torsion_scale": 1.4,
+      "environments": [
+        {
+          "name": "quiet",
+          "geo_scale": 0.8,
+          "phase_ref": 0.005968802438054762,
+          "phase_env": 0.005972561904721429,
+          "redshift": 5.983377033892631e-07
+        },
+        {
+          "name": "nominal",
+          "geo_scale": 1.0,
+          "phase_ref": 0.005968802438054762,
+          "phase_env": 0.005973501771388096,
+          "redshift": 7.479221292365444e-07
+        },
+        {
+          "name": "extreme",
+          "geo_scale": 1.35,
+          "phase_ref": 0.005968802438054762,
+          "phase_env": 0.005975146538054762,
+          "redshift": 1.0096948744692521e-06
+        }
+      ],
+      "nominal_redshift": 7.479221292365444e-07
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V8 level shift and V9 critical regime"
+}

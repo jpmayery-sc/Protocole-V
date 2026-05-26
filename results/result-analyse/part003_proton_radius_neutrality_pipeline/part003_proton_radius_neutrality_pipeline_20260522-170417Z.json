@@ -1,0 +1,48 @@
+{
+  "suite": "part003_proton_radius_neutrality_pipeline",
+  "timestamp": "20260522-170417Z",
+  "verdict": "part03_proton_radius_partial",
+  "observable_names": [
+    "delta_rp",
+    "lamb_shift_shift",
+    "ep_vertex_shift",
+    "mup_vertex_shift"
+  ],
+  "observed": [
+    -0.031,
+    0.84,
+    0.004,
+    0.006
+  ],
+  "sigma": [
+    0.01,
+    0.12,
+    0.006,
+    0.006
+  ],
+  "model": [
+    -0.029,
+    0.82,
+    0.004,
+    0.006
+  ],
+  "baseline": [
+    0.015,
+    0.55,
+    0.015,
+    0.014
+  ],
+  "local_operator_checks": {
+    "delta_rp": 0.0,
+    "lamb_shift_shift": 0.0,
+    "ep_vertex_shift": 0.0,
+    "mup_vertex_shift": 0.0
+  },
+  "max_abs_local_shift": 0.0,
+  "chi2_model": 0.06777777777777776,
+  "chi2_baseline": 32.13916666666666,
+  "delta_chi2": 32.07138888888888,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\part003_proton_radius_neutrality_pipeline\\part003_proton_radius_neutrality_pipeline_20260522-170417Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\part003_proton_radius_neutrality_pipeline\\part003_proton_radius_neutrality_pipeline_20260522-170417Z.txt",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\part003_proton_radius_neutrality_pipeline\\part003_proton_radius_neutrality_pipeline_20260522-170417Z.csv"
+}

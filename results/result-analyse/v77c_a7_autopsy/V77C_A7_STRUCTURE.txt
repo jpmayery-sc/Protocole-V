@@ -1,0 +1,7 @@
+V77C A=7 structure
+- Li7_over_H = Li7_base * exp(175.0 * delta_EM)
+- Be7_over_H = Be7_base * exp(165.0 * delta_EM)
+- Li_total_over_H = Li7_over_H + Be7_over_H
+- no explicit destruction term exists in the proxy
+- no saturation or max/min clamp exists on the A=7 channel
+- the lock is additive: two positive channels are summed without cancellation

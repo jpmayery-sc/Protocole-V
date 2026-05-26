@@ -1,0 +1,19 @@
+{
+  "timestamp": "20260506-214334Z",
+  "low_frequency_depth_m": 0.009225496965451984,
+  "strong_frequency_depth_m": 9.225496965451983e-05,
+  "corrected_strong_depth_m": 5.7659356034074894e-05,
+  "strong_depth_higher_rho_m": 8.154264330108766e-05,
+  "strong_depth_higher_mu_m": 1.8233489348624986e-05,
+  "low_high_status": "conforme strict",
+  "correction_status": "conforme strict",
+  "rho_status": "conforme strict",
+  "mu_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "la profondeur de peau ne diminue pas quand la fréquence augmente",
+    "la correction forte ne resserre pas davantage le courant",
+    "une résistivité plus grande ne change pas la profondeur de peau corrigée",
+    "une perméabilité plus grande ne réduit pas la profondeur de peau corrigée"
+  ]
+}

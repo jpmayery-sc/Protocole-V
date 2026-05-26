@@ -1,0 +1,13 @@
+V19 map check
+timestamp: 20260518-170541Z
+verdict: supported
+supported_count: 13/13
+baseline_deviation_score: 0.06098758233333329
+supported_ratio: 1.0
+
+Axes:
+- alpha0: supported (locked)
+- s_geo: supported (stable)
+- s_atom: supported (stable)
+- A_kappa: supported (stable)
+- p: supported (stable)

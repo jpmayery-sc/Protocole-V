@@ -1,0 +1,23 @@
+{
+  "suite": "v80b_lithium_check",
+  "timestamp": "20260521-092911Z",
+  "verdict": "bbn_liou_solved",
+  "delta_em": -0.0069,
+  "D_over_H": 2.529882918906704e-05,
+  "Y_p": 0.246745,
+  "Li7_over_H": 1.566465015625287e-10,
+  "Be7_over_H": 1.3292413078503833e-10,
+  "D_z": 0.0960972968901293,
+  "Y_z": 0.025257731958762394,
+  "Li_z": 0.04366123991842856,
+  "passes_D": true,
+  "passes_Y": true,
+  "passes_Li": true,
+  "passes_all": true,
+  "notes": [
+    "V80B is a fixed-point BBN check at epsilon_best.",
+    "The same toy proxy as V80 is reused so the result stays reproducible."
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v80b_lithium_check\\v80b_lithium_check_summary_20260521-092911Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v80b_lithium_check\\v80b_lithium_check_summary_20260521-092911Z.txt"
+}

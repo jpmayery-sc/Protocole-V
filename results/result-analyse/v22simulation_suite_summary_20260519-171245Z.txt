@@ -1,0 +1,10 @@
+V22 simulation suite summary
+timestamp: 20260519-171245Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v22_wigner: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22wigner_check_20260519-171244Z.json
+- v22_geometry_simulation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22geometrysimulation_check_20260519-171244Z.json
+- v22_stability_simulation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22stabilitysimulation_check_20260519-171245Z.json
+- v22_verdict_simulation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22verdict_simulation_check_20260519-171245Z.json

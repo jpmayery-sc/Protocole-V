@@ -1,0 +1,12 @@
+Halogen Zeff* check
+Timestamp: 20260509-215422Z
+Hypothese: the user-provided Zeff* correction keeps the halogen family F -> At monotone
+Cas de controle: standard Zeff proxy versus corrected Zeff* on the halogen family
+Observable: monotonicity of Zeff* and comparison with the raw radius and ionization trends
+Attendu: Zeff* becomes increasing across F -> At
+Mesuree: increasing
+Verdict: supported
+Critere de rejet: Zeff* non monotone sur F -> At
+Reference: a=0.0, b=0.25, c=0.00011, d=0.0
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\halogen_zeff_star_check_20260509-215422Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\halogen_zeff_star_check_20260509-215422Z.txt

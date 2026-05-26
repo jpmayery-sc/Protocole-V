@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260507-094225Z",
+  "reference": {
+    "intrinsic_rho_300k_ohm_m": 2300.0,
+    "heated_rho_ohm_m": 230.0,
+    "doped_rho_ohm_m": 0.1,
+    "metal_rho_reference_ohm_m": 2.82e-08
+  },
+  "intrinsic_test": {
+    "status": "conforme strict"
+  },
+  "thermal_test": {
+    "status": "conforme strict"
+  },
+  "doping_test": {
+    "status": "conforme strict"
+  },
+  "contrast_test": {
+    "status": "conforme strict"
+  },
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "le silicium intrinsèque se comporte comme un métal",
+    "la température ne change presque pas la conduction",
+    "le dopage n’a pas d’effet net",
+    "le cadre ne distingue pas le semi-conducteur du conducteur métallique"
+  ]
+}

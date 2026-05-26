@@ -1,0 +1,25 @@
+{
+  "section": "V40-LAGRANGIAN",
+  "source_v39_available": true,
+  "source_v39_supported": true,
+  "source_v39_timestamp": "20260519-152514Z",
+  "source_v39_supported_count": 5,
+  "source_v39_total": 5,
+  "effective_lagrangian": "L_eff = L_GR + L_K + L_Sent + L_mix; L_K ~ -(1/2) (∂K_bg)^2, L_Sent ~ relaxation(Sent(Y)), L_mix ~ eta * Sent(Y) * K_bg",
+  "extracted_parameters": {
+    "K_bg_best": 1.0,
+    "Sent_0": 0.9,
+    "eta": 0.012,
+    "gamma": 0.45,
+    "Sent_inf": 0.7,
+    "alpha": 0.12,
+    "xi": 0.68
+  },
+  "naturality_ok": true,
+  "lagrangian_anchored_ok": true,
+  "v40_lagrangian_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-153931Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v40_effective_model\\v40lagrangian_check_20260519-153931Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v40_effective_model\\v40lagrangian_check_20260519-153931Z.txt"
+}

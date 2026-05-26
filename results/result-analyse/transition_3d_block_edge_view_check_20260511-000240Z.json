@@ -1,0 +1,190 @@
+{
+  "timestamp": "20260511-000240Z",
+  "hypothesis": "the 3d transition block needs a block-and-edge view to isolate the usable core",
+  "case_control": "full 3d block Sc -> Zn versus a repaired core excluding the strongest local anomalies",
+  "observable": "trend repair and regularity change after removing local anomalies",
+  "expected": {
+    "full_family": "mixed or broken trend",
+    "core": "more regular than the full series",
+    "z_eff": "more regular than mass in the core"
+  },
+  "measured": {
+    "full_family": {
+      "series": [
+        {
+          "symbol": "Sc",
+          "period": 4,
+          "mass_u": 44.955908,
+          "radius_pm": 162.0,
+          "ionization_ev": 6.5615,
+          "zeff_proxy": 2.778383
+        },
+        {
+          "symbol": "Ti",
+          "period": 4,
+          "mass_u": 47.867,
+          "radius_pm": 147.0,
+          "ionization_ev": 6.8281,
+          "zeff_proxy": 2.834265
+        },
+        {
+          "symbol": "V",
+          "period": 4,
+          "mass_u": 50.9415,
+          "radius_pm": 134.0,
+          "ionization_ev": 6.7462,
+          "zeff_proxy": 2.817216
+        },
+        {
+          "symbol": "Cr",
+          "period": 4,
+          "mass_u": 51.9961,
+          "radius_pm": 128.0,
+          "ionization_ev": 6.7665,
+          "zeff_proxy": 2.821451
+        },
+        {
+          "symbol": "Mn",
+          "period": 4,
+          "mass_u": 54.938044,
+          "radius_pm": 127.0,
+          "ionization_ev": 7.434,
+          "zeff_proxy": 2.957344
+        },
+        {
+          "symbol": "Fe",
+          "period": 4,
+          "mass_u": 55.845,
+          "radius_pm": 126.0,
+          "ionization_ev": 7.9024,
+          "zeff_proxy": 3.049089
+        },
+        {
+          "symbol": "Co",
+          "period": 4,
+          "mass_u": 58.933194,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.881,
+          "zeff_proxy": 3.044957
+        },
+        {
+          "symbol": "Ni",
+          "period": 4,
+          "mass_u": 58.6934,
+          "radius_pm": 124.0,
+          "ionization_ev": 7.6398,
+          "zeff_proxy": 2.997999
+        },
+        {
+          "symbol": "Cu",
+          "period": 4,
+          "mass_u": 63.546,
+          "radius_pm": 128.0,
+          "ionization_ev": 7.7264,
+          "zeff_proxy": 3.014943
+        },
+        {
+          "symbol": "Zn",
+          "period": 4,
+          "mass_u": 65.38,
+          "radius_pm": 134.0,
+          "ionization_ev": 9.3942,
+          "zeff_proxy": 3.324455
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "mixed",
+      "radius_rmse": 8.464184794912278,
+      "ionization_rmse": 0.39289549612171343,
+      "zeff_rmse": 0.07358227351881258,
+      "mass_rmse": 0.8402252444556956,
+      "radius_step_cv": 2.139878882706463,
+      "ionization_step_cv": 1.7399767957822219,
+      "zeff_step_cv": 1.6976517645346687,
+      "mass_step_cv": 0.6347289293879522
+    },
+    "core": {
+      "series": [
+        {
+          "symbol": "Sc",
+          "period": 4,
+          "mass_u": 44.955908,
+          "radius_pm": 162.0,
+          "ionization_ev": 6.5615,
+          "zeff_proxy": 2.778383
+        },
+        {
+          "symbol": "Ti",
+          "period": 4,
+          "mass_u": 47.867,
+          "radius_pm": 147.0,
+          "ionization_ev": 6.8281,
+          "zeff_proxy": 2.834265
+        },
+        {
+          "symbol": "V",
+          "period": 4,
+          "mass_u": 50.9415,
+          "radius_pm": 134.0,
+          "ionization_ev": 6.7462,
+          "zeff_proxy": 2.817216
+        },
+        {
+          "symbol": "Mn",
+          "period": 4,
+          "mass_u": 54.938044,
+          "radius_pm": 127.0,
+          "ionization_ev": 7.434,
+          "zeff_proxy": 2.957344
+        },
+        {
+          "symbol": "Fe",
+          "period": 4,
+          "mass_u": 55.845,
+          "radius_pm": 126.0,
+          "ionization_ev": 7.9024,
+          "zeff_proxy": 3.049089
+        },
+        {
+          "symbol": "Co",
+          "period": 4,
+          "mass_u": 58.933194,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.881,
+          "zeff_proxy": 3.044957
+        },
+        {
+          "symbol": "Ni",
+          "period": 4,
+          "mass_u": 58.6934,
+          "radius_pm": 124.0,
+          "ionization_ev": 7.6398,
+          "zeff_proxy": 2.997999
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "mixed",
+      "radius_rmse": 6.045743991285379,
+      "ionization_rmse": 0.2388986335076798,
+      "zeff_rmse": 0.047839649765092626,
+      "mass_rmse": 1.0831072961624078,
+      "radius_step_cv": 0.9236804618307497,
+      "ionization_step_cv": 1.8103236188466665,
+      "zeff_step_cv": 1.7862991823791046,
+      "mass_step_cv": 0.6395048576368736
+    }
+  },
+  "verdict": "partiel",
+  "reference": "3d block with known local anomalies around Cr and Cu",
+  "falsifiers": [
+    "the full 3d block is already regular",
+    "the repaired core does not improve regularity",
+    "Z_eff is not more regular than mass in the repaired core"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_3d_block_edge_view_check_20260511-000240Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_3d_block_edge_view_check_20260511-000240Z.txt"
+}

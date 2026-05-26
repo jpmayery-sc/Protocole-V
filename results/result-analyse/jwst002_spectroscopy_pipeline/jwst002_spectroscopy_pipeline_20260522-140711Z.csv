@@ -1,0 +1,11 @@
+metric,value
+verdict,jwst02_multilayer_supported
+best_single_sigma,1.75
+best_single_chi2,1208.9438433913645
+best_multi_chi2,0.0
+delta_chi2,1208.9438433913645
+core_fwhm_angstrom,2.0
+wing_flux_ratio,0.1657914197945534
+core_flux_fraction,0.5081418871891543
+equivalent_width,13.025566775804625
+nucleus_to_ailes_ratio,2.1739130434782608

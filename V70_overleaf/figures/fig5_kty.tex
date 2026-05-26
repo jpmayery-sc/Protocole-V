@@ -1,0 +1,17 @@
+\begin{tikzpicture}[node distance=1.7cm, every node/.style={align=center}]
+\node[draw,rounded corners,minimum width=2.3cm,minimum height=1cm] (K) {$K$\\courbure};
+\node[draw,rounded corners,minimum width=2.3cm,minimum height=1cm,below left=of K] (T) {$T$\\torsion};
+\node[draw,rounded corners,minimum width=2.3cm,minimum height=1cm,below right=of K] (Y) {$Y$\\cohérence};
+\node[draw,rounded corners,minimum width=2.8cm,minimum height=1cm,below=2.0cm of Y] (D) {$D1/D2$\\multi-échelle};
+\node[draw,rounded corners,minimum width=3.2cm,minimum height=1cm,right=2.1cm of Y] (V) {$V_{ent}$\\intrication torsionnelle};
+\node[draw,rounded corners,minimum width=3.2cm,minimum height=1cm,below=2.0cm of V] (VT) {$V_{total}$\\potentiel consolidé};
+
+\draw[-{Stealth}] (K) -- (Y);
+\draw[-{Stealth}] (T) -- (Y);
+\draw[-{Stealth}] (K) -- (T);
+\draw[-{Stealth}] (Y) -- (D);
+\draw[-{Stealth}] (D) -- (VT);
+\draw[-{Stealth}] (V) -- (VT);
+\draw[-{Stealth}] (Y) -- (V);
+\draw[-{Stealth}] (T) -- (V);
+\end{tikzpicture}

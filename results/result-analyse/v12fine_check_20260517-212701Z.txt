@@ -1,0 +1,14 @@
+V12 fine bounds check
+timestamp: 20260517-212701Z
+verdict: conforme
+absolute_band_ok: True
+monotone_ok: True
+fe_stable_ok: True
+
+Cases:
+- H: Z=1 n=2 correction=9.924974e-06
+- He: Z=2 n=2 correction=1.984995e-05
+- Fe: Z=26 n=2 correction=2.580493e-04
+- Xe: Z=54 n=2 correction=5.359486e-04
+- Pb: Z=82 n=2 correction=8.138478e-04
+- U: Z=92 n=2 correction=9.130976e-04

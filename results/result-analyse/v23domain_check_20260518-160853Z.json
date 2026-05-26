@@ -1,0 +1,35 @@
+{
+  "section": "V23-DOMAIN",
+  "validitydomainspec": {
+    "safe_region": "robust and internally consistent",
+    "borderline_region": "narrow transition zone",
+    "forbidden_region": "instable or falsified regime"
+  },
+  "safe_region": {
+    "label": "safe",
+    "conditions": [
+      "stable invariants",
+      "coherent torsion",
+      "consistent metric"
+    ]
+  },
+  "borderline_region": {
+    "label": "borderline",
+    "conditions": [
+      "small margin",
+      "transition behaviour"
+    ]
+  },
+  "forbidden_region": {
+    "label": "forbidden",
+    "conditions": [
+      "instability",
+      "hierarchy inversion",
+      "torsion inconsistency"
+    ]
+  },
+  "verdict": "supported",
+  "timestamp": "20260518-160853Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23domain_check_20260518-160853Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23domain_check_20260518-160853Z.txt"
+}

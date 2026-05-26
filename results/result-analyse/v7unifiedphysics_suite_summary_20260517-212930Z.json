@@ -1,0 +1,29 @@
+{
+  "suite": "v7unifiedphysics_suite",
+  "timestamp": "20260517-212930Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "v7_geo",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7geo_check_20260517-212930Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7geo_check_20260517-212930Z.txt"
+    },
+    {
+      "label": "v7_elec",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7electronic_check_20260517-212930Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7electronic_check_20260517-212930Z.txt"
+    },
+    {
+      "label": "v7_coupling",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7coupling_check_20260517-212930Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7coupling_check_20260517-212930Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7unifiedphysics_suite_summary_20260517-212930Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v7unifiedphysics_suite_summary_20260517-212930Z.txt"
+}

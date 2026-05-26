@@ -1,0 +1,154 @@
+v83 — CALIBRATION GLOBALE : GRAVITÉ, TEMPS, ÉTOILES À NEUTRONS
+(Version complète, calibrée pour coller aux données réelles)
+ 
+Objectif :
+Utiliser la bande ε_physique issue de V82 pour calibrer les constantes du Lagrangien (k_G, k_T, k_n) afin que :
+- les masses d’étoiles à neutrons tombent juste,
+- les rayons tombent juste,
+- les redshifts tombent juste,
+- la gravité locale reste inchangée,
+- la BBN reste inchangée.
+ 
+v83 = ajustement des COUPLAGES, pas de ε.
+ε est fixé par la BBN → c’est la base physique.
+ 
+------------------------------------------------------------
+1. Entrées nécessaires
+------------------------------------------------------------
+ 
+1) Paramètre fondamental :
+   ε_best = -0.0069 (issu de V82)
+ 
+2) Fonctions du Lagrangien V81 :
+   - delta_EM(ε)
+   - pi_n(ε, ρ_n)
+   - G_eff(ε, ρ_n)
+   - F_temps(ε, ρ_n)
+ 
+3) Données réelles :
+   - masses NS : 2.01–2.08 M⊙ (PSR J0348+0432, J0740+6620)
+   - rayons NICER : 11–14 km pour 1.4 M⊙
+   - redshifts observés : z ≈ 0.2–0.4
+   - G local : variation < 2×10⁻⁵
+   - variation EM labo : < 10⁻¹⁶
+ 
+4) Paramètres à calibrer :
+   - k_G (gravité)
+   - k_T (temps)
+   - k_n (structuration neutronique)
+ 
+------------------------------------------------------------
+2. Pipeline v83
+------------------------------------------------------------
+ 
+Étape A — Calibration de k_G (gravité)
+--------------------------------------
+Objectif : obtenir M_max ≈ 2.0–2.1 M⊙.
+ 
+1. Fixer ε = ε_best.
+2. Faire varier k_G dans une plage raisonnable (ex : 0.1 → 5).
+3. Pour chaque k_G :
+   - calculer G_eff(ε, ρ_n^NS)
+   - intégrer TOV modifié
+   - extraire M_max
+4. Choisir k_G tel que :
+   M_max ≈ 2.05 ± 0.05 M⊙
+ 
+Sortie :
+   k_G_calibré
+ 
+Étape B — Calibration de k_T (temps)
+------------------------------------
+Objectif : obtenir z ≈ 0.2–0.4.
+ 
+1. Fixer ε = ε_best et k_G = k_G_calibré.
+2. Faire varier k_T (ex : 0.1 → 5).
+3. Pour chaque k_T :
+   - calculer F_temps(ε, ρ_n^NS)
+   - en déduire z_eff = 1/F_temps - 1
+4. Choisir k_T tel que :
+   z_eff ≈ 0.25–0.35
+ 
+Sortie :
+   k_T_calibré
+ 
+Étape C — Calibration de k_n (structuration neutronique)
+--------------------------------------------------------
+Objectif : 
+- pi_n ≈ 0 en labo,
+- pi_n ≈ 1 en NS,
+- variation EM labo < 10⁻¹⁶.
+ 
+1. Fixer ε = ε_best.
+2. Faire varier k_n (ex : 0.1 → 10).
+3. Pour chaque k_n :
+   - calculer pi_n_labo = k_n ε ρ_labo / ρ_NS
+   - calculer variation_EM_labo = delta_EM × pi_n_labo
+4. Choisir k_n tel que :
+   variation_EM_labo < 10⁻¹⁶
+   pi_n_NS ≈ 1
+ 
+Sortie :
+   k_n_calibré
+ 
+------------------------------------------------------------
+3. Vérifications globales
+------------------------------------------------------------
+ 
+Une fois k_G, k_T, k_n calibrés :
+ 
+1. Vérifier G_eff en labo :
+   G_eff(ε, pi_n=0) ≈ G
+ 
+2. Vérifier G_eff en NS :
+   cohérent avec masses observées
+ 
+3. Vérifier rayons :
+   R_1.4 ≈ 11–14 km
+ 
+4. Vérifier redshift :
+   z_eff ≈ 0.2–0.4
+ 
+5. Vérifier BBN :
+   delta_EM(ε_best) reste dans [-0.008, -0.0059]
+ 
+6. Vérifier labo :
+   variation EM < 10⁻¹⁶
+ 
+------------------------------------------------------------
+4. Sorties v83
+------------------------------------------------------------
+ 
+1. Valeurs calibrées :
+   - k_G_calibré
+   - k_T_calibré
+   - k_n_calibré
+ 
+2. Prédictions finales :
+   - G_eff(labo)
+   - G_eff(NS)
+   - M_max
+   - R_1.4
+   - z_eff
+   - delta_EM
+   - variation EM labo
+ 
+3. Courbes :
+   - M–R modifié vs données NICER
+   - z_eff vs M
+   - G_eff vs densité
+   - F_temps vs densité
+ 
+------------------------------------------------------------
+5. Transition vers v84
+------------------------------------------------------------
+ 
+v84 = extension cosmologique :
+- impact de ε_best sur l’expansion,
+- densité critique,
+- structure à grande échelle,
+- signatures CMB,
+- cohérence avec ΛCDM.
+ 
+v83 fournit les paramètres calibrés pour passer au cosmologique.
+ 

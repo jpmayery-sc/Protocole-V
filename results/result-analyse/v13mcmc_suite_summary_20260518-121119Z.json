@@ -1,0 +1,35 @@
+{
+  "suite": "v13mcmc_suite",
+  "timestamp": "20260518-121119Z",
+  "overall_verdict": "supported",
+  "supported_count": 4,
+  "total": 4,
+  "items": [
+    {
+      "label": "v13_params",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13params_check_20260518-121119Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13params_check_20260518-121119Z.txt"
+    },
+    {
+      "label": "v13_likelihood",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13likelihood_check_20260518-121119Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13likelihood_check_20260518-121119Z.txt"
+    },
+    {
+      "label": "v13_mcmc",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_check_20260518-121119Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_check_20260518-121119Z.txt"
+    },
+    {
+      "label": "v13_postcheck",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13postcheck_check_20260518-121119Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13postcheck_check_20260518-121119Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_suite_summary_20260518-121119Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v13mcmc_suite_summary_20260518-121119Z.txt"
+}

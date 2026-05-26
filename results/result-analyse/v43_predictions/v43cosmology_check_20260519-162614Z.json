@@ -1,0 +1,58 @@
+{
+  "section": "V43-COSMOLOGY",
+  "source_v42_available": true,
+  "source_v42_supported": true,
+  "source_v42_timestamp": "20260519-160618Z",
+  "source_v42_supported_count": 6,
+  "source_v42_total": 6,
+  "external_references": [
+    {
+      "section": "V43-COSMOLOGY",
+      "observable": "H0",
+      "source": "Planck 2018 cosmological parameters",
+      "value": "H0 = 67.4 +/- 0.5 km/s/Mpc"
+    },
+    {
+      "section": "V43-COSMOLOGY",
+      "observable": "S8",
+      "source": "DES Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing (arXiv:2601.14559)",
+      "value": "S8 = 0.789 +0.012/-0.012"
+    }
+  ],
+  "cosmology_predictions": [
+    {
+      "observable": "f_sigma8(z=1)",
+      "prediction": 0.377,
+      "uncertainty": 0.01
+    },
+    {
+      "observable": "H0_eff",
+      "prediction": 69.4,
+      "uncertainty": 0.6
+    },
+    {
+      "observable": "Lambda_eff_ratio",
+      "prediction": 0.68,
+      "uncertainty": 0.02
+    }
+  ],
+  "fs8_prediction": {
+    "z": 1.0,
+    "value": 0.377,
+    "uncertainty": 0.01
+  },
+  "H0_prediction": {
+    "value": 69.4,
+    "uncertainty": 0.6
+  },
+  "Lambda_prediction": {
+    "value": 0.68,
+    "uncertainty": 0.02
+  },
+  "cosmology_summary": "The model predicts a slightly enhanced growth rate and a mildly elevated H0 relative to Planck.",
+  "cosmology_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-162614Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43cosmology_check_20260519-162614Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43cosmology_check_20260519-162614Z.txt"
+}

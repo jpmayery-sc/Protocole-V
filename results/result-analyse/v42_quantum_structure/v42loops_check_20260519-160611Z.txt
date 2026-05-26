@@ -1,0 +1,7 @@
+V42 loops check
+timestamp: 20260519-160611Z
+verdict: supported
+loop_corrections: {'delta_m_K2': 0.11, 'delta_m_T2': 0.09, 'delta_m_Y2': 0.07, 'delta_xi': 0.04, 'delta_eta': 0.03, 'delta_m_K2_matter': 0.14, 'delta_m_T2_matter': 0.1}
+naturality_ok: True
+divergence_control_ok: True
+v42_loops_verdict: supported

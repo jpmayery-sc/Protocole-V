@@ -1,0 +1,16 @@
+V28 complete physics suite summary
+timestamp: 20260518-194554Z
+overall_verdict: supported
+supported_count: 10/10
+
+Items:
+- v28_unification: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28unification_check_20260518-194552Z.json
+- v28_qgr_complete: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28qgrcomplete_check_20260518-194553Z.json
+- v28_renorm_multiscale: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28renormmultiscale_check_20260518-194553Z.json
+- v28_cosmology_full: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28cosmologyfull_check_20260518-194553Z.json
+- v28_tubes_full: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28tubesfull_check_20260518-194553Z.json
+- v28_intrication: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28intrication_check_20260518-194553Z.json
+- v28_simulation_hpc: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28simulationhpc_check_20260518-194553Z.json
+- v28_observables_ultimes: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28observablesultimate_check_20260518-194554Z.json
+- v28_article_latex: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28articlelatex_check_20260518-194554Z.json
+- v28_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v28verdict_check_20260518-194554Z.json

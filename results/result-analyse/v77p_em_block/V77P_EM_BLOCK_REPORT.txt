@@ -1,0 +1,44 @@
+V77P EM block report
+timestamp: 20260521-174658Z
+verdict: mixed_em_response
+best_surface: S_EM_OFF
+dominant_surface: S_EM_OFF
+best_fit_beta_e_phys: 1.0
+best_fit_gamma_exch_phys: 1.09
+best_fit_gamma_drain_phys: 0.64
+best_tuning_B_eff: 0.0
+best_tuning_E_ind: 0.0
+best_tuning_chi_sum: 0.0033936651583709823
+
+surface_summaries:
+- S_EM_OFF: accepted=567, components=9, best_chi_sum=0.0033936651583709823, softness=1.0
+  beta_span=(0.96, 1.04)
+  gamma_exch_span=(1.03, 1.15)
+  gamma_drain_span=(0.56, 0.72)
+- S_EM_SOFT: accepted=567, components=9, best_chi_sum=0.15575746367443422, softness=0.7142857142857142
+  beta_span=(0.96, 1.04)
+  gamma_exch_span=(1.03, 1.15)
+  gamma_drain_span=(0.56, 0.72)
+- S_EM_STRONG: accepted=541, components=9, best_chi_sum=0.37683198814037383, softness=0.5555555555555556
+  beta_span=(0.96, 1.04)
+  gamma_exch_span=(1.03, 1.15)
+  gamma_drain_span=(0.56, 0.72)
+
+Interpretation:
+- compare the no-EM surface with soft and strong EM projections.
+- the tuning scan around zero is the cheapest check for a more favorable EM setting.
+- if chi_sum drops and the Li_total band broadens, EM is acting like a soft mode.
+- if nothing changes materially, the A=7 pinch is still structural.
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\v77p_results_S_EM_OFF.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\v77p_results_S_EM_SOFT.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\v77p_results_S_EM_STRONG.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\v77p_em_tuning_scan.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_S_EM_OFF_Li_total_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_S_EM_OFF_Li_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_S_EM_SOFT_Li_total_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_S_EM_SOFT_Li_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_S_EM_STRONG_Li_total_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_S_EM_STRONG_Li_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77p_em_block\plots\v77p_em_tuning_scan_heatmap.png

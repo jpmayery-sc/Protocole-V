@@ -1,0 +1,21 @@
+V29 observational tests check
+{
+  "section": "V29-OBSERVATIONAL-TESTS",
+  "lcdmfalsificationtests": true,
+  "predicted_signatures": [
+    "ddotH != 0",
+    "delta K(x,t)",
+    "interferometry of curvature",
+    "spin geometry 720/360"
+  ],
+  "observation_targets": [
+    "slow acceleration variation",
+    "geometry fluctuations",
+    "phase shifts",
+    "spin rotation signatures"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-195350Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29observationaltests_check_20260518-195350Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29observationaltests_check_20260518-195350Z.txt"
+}

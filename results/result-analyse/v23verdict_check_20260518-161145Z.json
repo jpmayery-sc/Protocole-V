@@ -1,0 +1,123 @@
+{
+  "section": "V23-VERDICT",
+  "V23_SCHEMA": {
+    "section": "V23-SCHEMA",
+    "schema_ok": true,
+    "schema_description": "Minimal schema linking the internal space, the internal metric, the torsion connection, the parameter hierarchy and the observables of the pipeline.",
+    "core_objects": [
+      "M_int",
+      "g_int",
+      "Gamma",
+      "alpha0",
+      "torsion_eff",
+      "z_obs",
+      "delta_nu_over_nu",
+      "grav_torsion_eff"
+    ],
+    "schema_consistency": true,
+    "coherence_state": "coherent",
+    "verdict": "supported"
+  },
+  "V23_INVARIANTS": {
+    "section": "V23-INVARIANTS",
+    "invariants_list": [
+      "alpha0",
+      "metric_pair(s_geo, s_atom)",
+      "torsion_eff",
+      "dominant -> metric -> torsion -> coupling hierarchy"
+    ],
+    "invariants_classification": {
+      "geometric": [
+        "alpha0",
+        "metric_pair(s_geo, s_atom)"
+      ],
+      "torsion": [
+        "torsion_eff"
+      ],
+      "structure": [
+        "dominant -> metric -> torsion -> coupling hierarchy"
+      ]
+    },
+    "invariantsstabilitystate": "stable",
+    "stable": true,
+    "verdict": "supported"
+  },
+  "V23_DOMAIN": {
+    "section": "V23-DOMAIN",
+    "validitydomainspec": {
+      "safe_region": "robust and internally consistent",
+      "borderline_region": "narrow transition zone",
+      "forbidden_region": "instable or falsified regime"
+    },
+    "safe_region": {
+      "label": "safe",
+      "conditions": [
+        "stable invariants",
+        "coherent torsion",
+        "consistent metric"
+      ]
+    },
+    "borderline_region": {
+      "label": "borderline",
+      "conditions": [
+        "small margin",
+        "transition behaviour"
+      ]
+    },
+    "forbidden_region": {
+      "label": "forbidden",
+      "conditions": [
+        "instability",
+        "hierarchy inversion",
+        "torsion inconsistency"
+      ]
+    },
+    "verdict": "supported"
+  },
+  "V23_OPEN": {
+    "section": "V23-OPEN",
+    "openquestionslist": [
+      "Refine the link to V12 falsification.",
+      "Check whether the geometric picture extends to a wider domain.",
+      "Compare the torsion sector with Einstein-Cartan style formalisms.",
+      "Test whether the hierarchy survives alternate couplings."
+    ],
+    "priority_ranking": [
+      {
+        "priority": 1,
+        "topic": "V12 falsification link",
+        "kind": "theoretical"
+      },
+      {
+        "priority": 2,
+        "topic": "Geometric extension range",
+        "kind": "theoretical"
+      },
+      {
+        "priority": 3,
+        "topic": "Einstein-Cartan comparison",
+        "kind": "theoretical"
+      },
+      {
+        "priority": 4,
+        "topic": "Coupling robustness",
+        "kind": "numerical"
+      }
+    ],
+    "futureworkoutline": [
+      "Write a compact narrative summary of the full synthesis.",
+      "Push the geometric sector against wider parameter ranges.",
+      "Compare the torsion sector with alternate curvature models."
+    ],
+    "verdict": "supported"
+  },
+  "v23verdict": "coherent_model",
+  "theory_summary": "V23 compresses the pipeline into a minimal coherent synthesis: a stable schema, stable invariants, a bounded domain of validity and a short list of open questions.",
+  "confidence_level": "very_high",
+  "recommendednextstep": "write_v23theorysummary",
+  "coherent_model": true,
+  "verdict": "supported",
+  "timestamp": "20260518-161145Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23verdict_check_20260518-161145Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v23verdict_check_20260518-161145Z.txt"
+}

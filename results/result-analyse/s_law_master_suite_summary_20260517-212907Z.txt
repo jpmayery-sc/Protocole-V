@@ -1,0 +1,20 @@
+S-law master suite summary
+timestamp: 20260517-212907Z
+overall_verdict: partiel
+supported_count: 10/11
+falsifier_count: 2/2
+
+Items:
+- screening_law_saturation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\screening_law\screening_law_saturation_check_20260517-212857Z.json
+- radius_predictivity: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\radius_predictivity\radius_predictivity_check_20260517-212857Z.json
+- fine_variation_equivalence: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\fine_variation_equivalence_check_20260517-212857Z.json
+- family_l_slope: falsifie -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\family_l_slope_check_20260517-212857Z.json
+- regime_physics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\regime_physics\regime_physics_suite_summary_20260517-212858Z.json
+- alpha_phase_observable: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\result-analyse\alpha_phase_observable_check_20260517-212858Z.json
+- alpha_constant: falsifie -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\result-analyse\alpha_constant_check_20260517-212858Z.json
+- alphaportsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alphaportsuite_suite_summary_20260517-212859Z.json
+- v6_d2_electron: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v6_d2_electron_suite_summary_20260517-212859Z.json
+- v7unifiedphysics_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v7unifiedphysics_suite_summary_20260517-212900Z.json
+- point_atome_master: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_master_suite_summary_20260517-212907Z.json
+- lanthanide_internal_residual: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\lanthanide_internal_residual_check_20260517-212907Z.json
+- heavy_border: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\heavy_border\heavy_border_control_check_20260517-212907Z.json

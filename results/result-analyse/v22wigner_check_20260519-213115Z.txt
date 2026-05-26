@@ -1,0 +1,5 @@
+V22 Wigner simulation check
+timestamp: 20260519-213115Z
+verdict: supported
+selection_rules: {'triangle': True, 'm_sum_zero': True, 'integer_perimeter': True}
+coupling_family: 3j, 6j, 9j

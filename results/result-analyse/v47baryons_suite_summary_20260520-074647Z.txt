@@ -1,0 +1,12 @@
+V47 baryons suite summary
+timestamp: 20260520-074647Z
+v47_global_verdict: supported
+supported_count: 6/6
+
+Items:
+- v47_qcd_masses: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47_baryons\v47qcd_masses_check_20260520-074645Z.json
+- v47_qcd_splittings: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47_baryons\v47qcd_splittings_check_20260520-074645Z.json
+- v47_beta_decays: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47_baryons\v47beta_decays_check_20260520-074646Z.json
+- v47_nuclear_binding: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47_baryons\v47nuclear_binding_check_20260520-074646Z.json
+- v47_stability: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47_baryons\v47stability_check_20260520-074646Z.json
+- v47_synthesis: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v47_baryons\v47synthesis_check_20260520-074647Z.json

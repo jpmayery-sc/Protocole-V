@@ -1,0 +1,47 @@
+{
+  "suite": "v41symmetries_suite",
+  "timestamp": "20260519-155336Z",
+  "v41_global_verdict": "supported",
+  "supported_count": 6,
+  "total": 6,
+  "items": [
+    {
+      "label": "v41_setup",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41setup_check_20260519-155334Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41setup_check_20260519-155334Z.txt"
+    },
+    {
+      "label": "v41_continuous",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41continuous_check_20260519-155334Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41continuous_check_20260519-155334Z.txt"
+    },
+    {
+      "label": "v41_discrete",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41discrete_check_20260519-155335Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41discrete_check_20260519-155335Z.txt"
+    },
+    {
+      "label": "v41_geometric",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41geometric_check_20260519-155335Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41geometric_check_20260519-155335Z.txt"
+    },
+    {
+      "label": "v41_conserved",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41conserved_check_20260519-155335Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41conserved_check_20260519-155335Z.txt"
+    },
+    {
+      "label": "v41_synthesis",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41synthesis_check_20260519-155336Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41_symmetry_analysis\\v41synthesis_check_20260519-155336Z.txt"
+    }
+  ],
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41symmetries_suite_summary_20260519-155336Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v41symmetries_suite_summary_20260519-155336Z.txt"
+}

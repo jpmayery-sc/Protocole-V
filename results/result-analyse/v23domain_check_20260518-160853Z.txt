@@ -1,0 +1,6 @@
+V23 domain check
+timestamp: 20260518-160853Z
+verdict: supported
+safe_region: safe
+borderline_region: borderline
+forbidden_region: forbidden

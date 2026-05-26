@@ -1,0 +1,49 @@
+{
+  "section": "V34-VERSION-FINALE",
+  "muon_verdict": "rejected",
+  "neutrino_verdict": "supported",
+  "global_verdict": "partially_supported",
+  "rejected_reasons": [
+    "muon target not reproduced",
+    "electron correction too large",
+    "tau correction too large"
+  ],
+  "parameter_ranges": {
+    "muon": {
+      "A_mu": [
+        0.0,
+        0.001
+      ],
+      "B_mu": [
+        0.0,
+        0.001
+      ],
+      "K_tilde": [
+        1e-06,
+        0.001
+      ],
+      "T_tilde": [
+        1e-06,
+        0.001
+      ]
+    },
+    "neutrinos": {
+      "K_bg": [
+        0.0,
+        10.0
+      ],
+      "lambda_values": [
+        0.0,
+        0.01
+      ],
+      "delta_K_env": [
+        0.0,
+        0.001
+      ]
+    }
+  },
+  "verdict": "partially_supported",
+  "timestamp": "20260519-103010Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v34_geometric_falsification\\v34tester_summary_check_20260519-103010Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v34_geometric_falsification\\v34tester_summary_check_20260519-103010Z.txt"
+}

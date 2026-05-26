@@ -1,0 +1,13 @@
+V60 run suite summary
+timestamp: 20260520-105702Z
+v60_global_verdict: intrication_confirmed_numerical
+supported_count: 5/6
+intrication_confirmed_numerical_count: 1/6
+
+Items:
+- v60_inputs: supported
+- v60_eom: supported
+- v60_potential: supported
+- v60_observables: supported
+- v60_comparison: supported
+- v60_synthesis: intrication_confirmed_numerical

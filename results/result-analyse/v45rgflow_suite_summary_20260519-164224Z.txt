@@ -1,0 +1,11 @@
+V45 RG flow suite summary
+timestamp: 20260519-164224Z
+v45_global_verdict: supported
+supported_count: 5/5
+
+Items:
+- v45_beta_functions: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v45_rgflow\v45beta_functions_check_20260519-164223Z.json
+- v45_rg_flow: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v45_rgflow\v45rg_flow_check_20260519-164223Z.json
+- v45_fixed_points: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v45_rgflow\v45fixed_points_check_20260519-164223Z.json
+- v45_stability: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v45_rgflow\v45stability_check_20260519-164223Z.json
+- v45_synthesis: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v45_rgflow\v45synthesis_check_20260519-164224Z.json

@@ -1,0 +1,7 @@
+V42 interactions check
+timestamp: 20260519-160617Z
+verdict: supported
+vertex_table: [{'vertex': 'linear_K', 'term': 'xi K', 'strength': 0.68}, {'vertex': 'linear_Y', 'term': 'eta Y', 'strength': 0.012}, {'vertex': 'psi_psi_K', 'term': 'psi_bar psi a_K K', 'strength': 0.08}, {'vertex': 'psi_psi_T', 'term': 'psi_bar psi a_T T', 'strength': 0.05}, {'vertex': 'KK', 'term': 'lambda_K K^2', 'strength': 0.06}, {'vertex': 'TT', 'term': 'lambda_T T^2', 'strength': 0.05}, {'vertex': 'KT', 'term': 'lambda_KT K T', 'strength': 0.03}]
+coupling_strengths: {'linear_K': 0.68, 'linear_Y': 0.012, 'psi_psi_K': 0.08, 'psi_psi_T': 0.05, 'KK': 0.06, 'TT': 0.05, 'KT': 0.03}
+interaction_ok: True
+v42_interactions_verdict: supported

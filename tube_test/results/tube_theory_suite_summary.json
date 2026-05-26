@@ -1,0 +1,125 @@
+{
+  "suite": "tube_theory_numeric_test",
+  "timestamp": "20260512-075328Z",
+  "overall_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "omega": "omega_winding",
+  "fit_dataset": "core_loss_mhz",
+  "manifest_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\data\\manifest.json",
+  "data_checked": [
+    "one_fixed_damper",
+    "test_experiments",
+    "core_loss_mhz"
+  ],
+  "data_companions": [
+    "data/hysteresis/inp_Test_experiments.json"
+  ],
+  "metrics": {
+    "one_fixed_damper": {
+      "lambda": 0.667491172706015,
+      "reports": [
+        {
+          "name": "one_fixed_damper:03L_1.0R",
+          "lambda": 0.667491172706015,
+          "standard": {
+            "rmse": 11.44774640230608,
+            "aic": 1952.2343118953654,
+            "bic": 1956.2257764424735,
+            "chi2_red": 1.0025062656641606
+          },
+          "tube": {
+            "rmse": 6.781528910132655,
+            "aic": 1535.3620635997995,
+            "bic": 1543.3449926940154,
+            "chi2_red": 0.3526891944338199
+          }
+        }
+      ],
+      "standard_rmse": 11.44774640230608,
+      "tube_rmse": 6.781528910132655,
+      "standard_aic": 1952.2343118953654,
+      "tube_aic": 1535.3620635997995
+    },
+    "test_experiments": {
+      "lambda": 0.5386824915149018,
+      "reports": [
+        {
+          "name": "test_experiments:09L_1.25R",
+          "lambda": 0.5386824915149018,
+          "standard": {
+            "rmse": 9.004633398563545,
+            "aic": 1760.1914135387383,
+            "bic": 1764.1828780858464,
+            "chi2_red": 1.0025062656641606
+          },
+          "tube": {
+            "rmse": 5.179796482265948,
+            "aic": 1319.8126130893643,
+            "bic": 1327.7955421835802,
+            "chi2_red": 0.33256017450686987
+          }
+        },
+        {
+          "name": "test_experiments:07L_1.75R",
+          "lambda": 0.5386824915149018,
+          "standard": {
+            "rmse": 8.333805042274774,
+            "aic": 1698.2561117368455,
+            "bic": 1702.2475762839535,
+            "chi2_red": 1.0025062656641601
+          },
+          "tube": {
+            "rmse": 4.3806760515463825,
+            "aic": 1185.7624497166355,
+            "bic": 1193.7453788108514,
+            "chi2_red": 0.2776978537878485
+          }
+        },
+        {
+          "name": "test_experiments:2F_09L_1.25R",
+          "lambda": 0.5386824915149018,
+          "standard": {
+            "rmse": 6.11166023202774,
+            "aic": 1450.1587680075386,
+            "bic": 1454.1502325546467,
+            "chi2_red": 1.0025062656641603
+          },
+          "tube": {
+            "rmse": 3.107461859452044,
+            "aic": 911.0450164954362,
+            "bic": 919.0279455896522,
+            "chi2_red": 0.2598185342186502
+          }
+        }
+      ],
+      "standard_rmse": 7.8166995576220195,
+      "tube_rmse": 4.222644797754792,
+      "standard_aic": 1636.202097761041,
+      "tube_aic": 1138.8733597671453
+    },
+    "core_loss_mhz_rows_checked": 966
+  },
+  "items": [
+    {
+      "label": "one_fixed_damper",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\data\\hysteresis\\One_fixed_damper.json",
+      "txt_path": ""
+    },
+    {
+      "label": "test_experiments",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\data\\hysteresis\\Test_experiments.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\data\\hysteresis\\inp_Test_experiments.json"
+    },
+    {
+      "label": "core_loss_mhz",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\data\\induction\\MHzCoreLoss.csv",
+      "txt_path": ""
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\results\\tube_theory_suite_summary.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\tube_test\\results\\tube_theory_suite_summary.txt"
+}

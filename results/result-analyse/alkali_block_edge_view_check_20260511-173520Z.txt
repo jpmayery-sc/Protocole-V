@@ -1,0 +1,32 @@
+Bloc + bord de serie sur la famille alcaline
+Timestamp: 20260511-173520Z
+
+Hypothese: the block-and-edge view is not needed when the full family is already monotone
+Cas de controle: full family Li -> Cs versus subfamily Li -> Rb
+Observable: whether removing the heavy edge changes a monotone family in a meaningful way
+Verdict: supported
+
+Famille complete:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- zeff_rmse: 0.03560261268687887
+- mass_rmse: 11.565227569952832
+
+Sous-famille Li -> Rb:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- zeff_rmse: 0.03486092445792936
+- mass_rmse: 8.298044734361458
+
+Falsificateurs:
+- the full family is not already monotone
+- the subfamily reveals a hidden repair target
+- the block-and-edge view becomes necessary for interpretation
+
+Reference: alkali family monotone baseline
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alkali_block_edge_view_check_20260511-173520Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alkali_block_edge_view_check_20260511-173520Z.txt

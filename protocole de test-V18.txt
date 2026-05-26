@@ -1,0 +1,139 @@
+Parfait jean‑philippe — on lance V18, la couche la plus délicate depuis le début du pipeline.  
+Tu viens de valider V17 (validation externe minimale), donc V18 peut enfin exister : la calibration externe fine.
+ 
+Et là, on entre dans la partie où ton modèle commence à s’ajuster réellement au monde extérieur, pas seulement à des bornes théoriques.
+ 
+---
+ 
+🎯 Objectif de V18
+V18 répond à une seule question :
+ 
+> Comment ajuster le noyau verrouillé V15 pour réduire encore les écarts externes révélés par V17, sans casser la stabilité interne ?
+ 
+C’est une calibration externe fine, pas une refonte.
+ 
+V18 doit :
+ 
+- prendre les prédictions internes/externe de V16,  
+- prendre les écarts mesurés en V17,  
+- ajuster légèrement les paramètres verrouillés,  
+- vérifier que la stabilité V15 n’est pas cassée,  
+- vérifier que la cohérence V16 n’est pas cassée,  
+- vérifier que la compatibilité V17 s’améliore.
+ 
+C’est une couche d’optimisation contrôlée.
+ 
+---
+ 
+🧱 Architecture V18
+V18 doit contenir quatre modules :
+ 
+- V18‑DELTA — extraction des écarts externes (depuis V17)  
+- V18‑CALIBRATE — ajustement contrôlé du noyau V15  
+- V18‑RECHECK — re‑exécution de V16 et V17 avec les paramètres ajustés  
+- V18‑VERDICT — décision : amélioration / neutre / dégradation  
+ 
+Wrapper global :
+ 
+- v18calibration_suite
+ 
+---
+ 
+🔬 1. V18‑DELTA — extraction des écarts
+On récupère depuis V17 :
+ 
+- deviation_vector  
+- deviation_score  
+- deviation_class  
+ 
+On identifie :
+ 
+- les observables les plus sensibles  
+- les paramètres internes les plus influents  
+- les directions d’ajustement possibles
+ 
+Exemple :
+ 
+- zobs → dépend de zmod → dépend de sgeo, satom  
+- deltanu/nu → dépend de finedelta → dépend de A_kappa  
+- gravtorsioneff → dépend de p  
+ 
+---
+ 
+🔧 2. V18‑CALIBRATE — ajustement contrôlé
+On applique des micro‑ajustements :
+ 
+- alpha0 → ±0.1%  
+- s_geo → ±0.5%  
+- s_atom → ±0.5%  
+- A_kappa → ±1%  
+- p → ±1%  
+ 
+Ces variations sont beaucoup plus petites que celles testées en V15.
+ 
+On cherche :
+ 
+- à réduire deviation_score  
+- sans casser internal_ok  
+- sans casser external_ok  
+- sans casser consistency_ok  
+ 
+C’est une optimisation sous contraintes.
+ 
+---
+ 
+🔁 3. V18‑RECHECK — re‑exécution V16 + V17
+Après chaque micro‑ajustement :
+ 
+- on recalcule V16‑INTERNAL  
+- on recalcule V16‑EXTERNAL  
+- on recalcule V17‑COMPARE  
+- on recalcule V17‑DEVIATION  
+ 
+On mesure :
+ 
+- si deviation_score ↓  
+- si les observables se rapprochent du centre des bornes  
+- si la stabilité interne reste intacte  
+ 
+---
+ 
+🧾 4. V18‑VERDICT — décision finale
+Trois issues possibles :
+ 
+✔ supported‑improved
+Le modèle est plus proche du référentiel externe qu’en V17.
+ 
+✔ supported‑neutral
+Aucun gain significatif, mais aucune dégradation.
+ 
+❌ degraded
+Les ajustements cassent la stabilité interne ou augmentent les écarts externes.
+ 
+Dans ce cas, on revient au noyau V15.
+ 
+---
+ 
+🧠 Pourquoi V18 est crucial
+V18 est la première couche où ton modèle :
+ 
+- s’ajuste activement au monde extérieur  
+- réduit ses écarts  
+- devient plus précis  
+- se prépare à une confrontation expérimentale réelle
+ 
+C’est la couche qui transforme ton modèle en instrument de mesure.
+ 
+---
+ 
+🚀 On construit V18 maintenant
+Pour générer le protocole V18 complet (comme V15, V16, V17), j’ai besoin d’un choix simple :
+ 
+👉 Quel type de calibration veux‑tu pour V18 ?
+ 
+- Calibration douce (micro‑ajustements très faibles)  
+- Calibration standard (ajustements faibles mais visibles)  
+- Calibration agressive (optimisation forte, risque de casser V15)  
+ 
+Tu choisis, et je te génère Protocole V18 immédiatement.
+ 

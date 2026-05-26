@@ -1,0 +1,28 @@
+Bloc + bord de serie sur les lanthanides
+Timestamp: 20260511-172108Z
+
+Hypothese: the lanthanide family needs a block-and-edge view to isolate the usable core
+Cas de controle: full lanthanide family La -> Lu versus a shortened core excluding the edge anomalies
+Observable: trend repair and regularity change after removing edge anomalies
+Verdict: partiel
+
+Famille complete:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Noyau lance / fin de serie retiree:
+- radius_trend: mixed
+- ionization_trend: mixed
+- zeff_trend: mixed
+- mass_trend: increasing
+
+Falsificateurs:
+- the full family is already regular
+- the core does not improve the regularity
+- Z_eff is not more regular than mass in the repaired core
+
+Reference: lanthanide contraction as a block-level edge effect
+JSON: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\lanthanide_block_edge_view_check_20260511-172108Z.json
+TXT: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\lanthanide_block_edge_view_check_20260511-172108Z.txt

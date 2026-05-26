@@ -1,0 +1,81 @@
+{
+  "suite": "protocol_v2",
+  "timestamp": "20260512-110234Z",
+  "overall_verdict": "blocked",
+  "supported_count": 0,
+  "total": 4,
+  "stages": [
+    {
+      "id": "H1",
+      "title": "Local model only",
+      "verdict": "blocked",
+      "reason": "No HF transport dataset is available to compare K_loc against measured residuals."
+    },
+    {
+      "id": "H2",
+      "title": "Global alpha' correction",
+      "verdict": "blocked",
+      "reason": "The protocol needs a frozen global fit on Cu before cross-material testing."
+    },
+    {
+      "id": "H3",
+      "title": "Quadratic beta' term",
+      "verdict": "blocked",
+      "reason": "There is no material-resolved HF set for Fe or Ni to test nonlinearity."
+    },
+    {
+      "id": "H4",
+      "title": "Mass-weighted FTM comparison",
+      "verdict": "blocked",
+      "reason": "The repository does not yet expose the inter-material HF observables needed for sigma sqrt(m) comparison."
+    }
+  ],
+  "adjacent_evidence": [
+    {
+      "label": "material_conductivity",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_suite_summary_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\material_conductivity_suite_summary_20260512-110232Z.txt"
+    },
+    {
+      "label": "current_regime",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\current_regime_suite_summary_20260512-110232Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\current_regime_suite_summary_20260512-110232Z.txt"
+    },
+    {
+      "label": "induction",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\induction_suite_summary_20260512-110233Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\induction_suite_summary_20260512-110233Z.txt"
+    },
+    {
+      "label": "skin_effect",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_suite_summary_20260512-110233Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\skin_effect_suite_summary_20260512-110233Z.txt"
+    },
+    {
+      "label": "saturation_magnetic",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260512-110234Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260512-110234Z.txt"
+    }
+  ],
+  "expected_metals": [
+    "Cu",
+    "Al",
+    "Ag",
+    "Fe"
+  ],
+  "found_manifests": [],
+  "missing_inputs": [
+    "missing manifest: python\\data\\protocol_v2_manifest.json",
+    "missing manifest: python\\data\\hf_transport_manifest.json",
+    "missing manifest: data\\protocol_v2_manifest.json",
+    "missing manifest: data\\hf_transport_manifest.json"
+  ],
+  "data_status": "missing",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v2_suite_summary_20260512-110234Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v2_suite_summary_20260512-110234Z.txt"
+}

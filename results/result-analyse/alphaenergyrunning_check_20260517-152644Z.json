@@ -1,0 +1,21 @@
+{
+  "timestamp": "20260517-152644Z",
+  "hypothesis": "alpha varie avec l'energie (running coupling)",
+  "case_control": "valeurs tabulees de alpha(E)",
+  "observable": "pente d_alpha/dE",
+  "expected": "pente positive faible, alpha croissante avec E",
+  "measured": {
+    "alpha_E1": 0.0072973525205055605,
+    "alpha_E2": 0.0078125,
+    "energy_E1_GeV": 0.0,
+    "energy_E2_GeV": 91.1876,
+    "delta_alpha": 0.0005151474794944395,
+    "delta_energy_GeV": 91.1876,
+    "dalphadE": 5.6493150329040295e-06,
+    "sign": "positive"
+  },
+  "running_coupling_ok": true,
+  "small_slope_ok": true,
+  "verdict": "conforme",
+  "reference": "QED running coupling"
+}

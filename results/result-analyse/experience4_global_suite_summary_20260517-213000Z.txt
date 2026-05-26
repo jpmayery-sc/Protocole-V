@@ -1,0 +1,13 @@
+Experience 4 global suite summary
+timestamp: 20260517-213000Z
+overall_verdict: partiel
+supported_count: 5/7
+
+Items:
+- atom_basics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\atom_basics_suite_summary_20260517-212940Z.json
+- point_atome_protocol: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_protocol_suite_summary_20260517-212942Z.json
+- point_atome_master: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_master_suite_summary_20260517-212949Z.json
+- s_law_master: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\s_law_master_suite_summary_20260517-212958Z.json
+- alphaportsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alphaportsuite_suite_summary_20260517-212959Z.json
+- v6_d2_electron: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v6_d2_electron_suite_summary_20260517-212959Z.json
+- v7unifiedphysics_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v7unifiedphysics_suite_summary_20260517-213000Z.json

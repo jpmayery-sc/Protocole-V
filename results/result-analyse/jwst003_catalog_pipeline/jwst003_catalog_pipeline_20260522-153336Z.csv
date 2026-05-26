@@ -1,0 +1,7 @@
+metric,value
+verdict,jwst03_homogenized_supported
+chi2_n,7.515688133707378
+chi2_agn,21.19139344852965
+baseline_chi2_n,99.03574870739591
+baseline_chi2_agn,77.41099343169955
+delta_chi2,147.73966055685844

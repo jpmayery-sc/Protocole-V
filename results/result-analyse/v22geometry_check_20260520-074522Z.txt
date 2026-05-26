@@ -1,0 +1,6 @@
+V22 geometry theory check
+timestamp: 20260520-074522Z
+verdict: supported
+alpha0invarianttype: dimensionless_invariant
+curvature_state: flat-locally-stable
+geometrymodelok: True

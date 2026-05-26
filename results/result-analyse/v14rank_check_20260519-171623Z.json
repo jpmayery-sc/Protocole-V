@@ -1,0 +1,130 @@
+{
+  "timestamp": "20260519-171623Z",
+  "hypothesis": "le posterior V13 permet de classer les parametres en forts, faibles et quasi-plats",
+  "case_control": "spread posterior V13 + sensibilite locale",
+  "observable": "posterior_std, normalized_score, combined_score",
+  "expected": "alpha0, s_geo, s_atom, A_kappa et p dominent la reduction",
+  "measured": {
+    "keep_names": [
+      "alpha0",
+      "s_geo",
+      "s_atom",
+      "A_kappa",
+      "p"
+    ],
+    "strong": [
+      "alpha0",
+      "s_geo",
+      "s_atom"
+    ],
+    "weak": [
+      "A_kappa",
+      "p"
+    ],
+    "flat": [
+      "aE",
+      "aR",
+      "s_canal"
+    ]
+  },
+  "ranking_rows": [
+    {
+      "name": "alpha0",
+      "step": 2e-10,
+      "max_abs_delta": 2.0000000006820118e-10,
+      "normalized_score": 0.020000000006820118,
+      "rank": 1,
+      "class": "strongly_constrained",
+      "posterior_std": 1.216460058890557e-09,
+      "combined_score": 0.02000000003114932,
+      "spread_class": "tightly_posteriored",
+      "combined_rank": 1
+    },
+    {
+      "name": "s_geo",
+      "step": 0.05,
+      "max_abs_delta": 4.999999999999952e-09,
+      "normalized_score": 0.04083333333333252,
+      "rank": 2,
+      "class": "strongly_constrained",
+      "posterior_std": 0.6618152565633046,
+      "combined_score": 0.06785745630966693,
+      "spread_class": "loose_posteriored",
+      "combined_rank": 2
+    },
+    {
+      "name": "s_atom",
+      "step": 0.05,
+      "max_abs_delta": 9.999999999999904e-09,
+      "normalized_score": 0.04083333333333252,
+      "rank": 3,
+      "class": "strongly_constrained",
+      "posterior_std": 0.6690537898059149,
+      "combined_score": 0.06815302975040684,
+      "spread_class": "loose_posteriored",
+      "combined_rank": 3
+    },
+    {
+      "name": "A_kappa",
+      "step": 0.0002,
+      "max_abs_delta": 9.999999999999999e-06,
+      "normalized_score": 0.1550000000000001,
+      "rank": 4,
+      "class": "weakly_constrained",
+      "posterior_std": 0.0008537759965044124,
+      "combined_score": 0.1551323352794583,
+      "spread_class": "tightly_posteriored",
+      "combined_rank": 4
+    },
+    {
+      "name": "p",
+      "step": 0.1,
+      "max_abs_delta": 1.200000000000002e-06,
+      "normalized_score": 0.022499999999999527,
+      "rank": 5,
+      "class": "weakly_constrained",
+      "posterior_std": 0.6168927699958892,
+      "combined_score": 0.036380087324906746,
+      "spread_class": "loose_posteriored",
+      "combined_rank": 5
+    },
+    {
+      "name": "aE",
+      "step": 2e-06,
+      "max_abs_delta": 7.999999999999966e-09,
+      "normalized_score": 0.0533333373231971,
+      "rank": 6,
+      "class": "quasi_flat",
+      "posterior_std": 2.477787091707592e-06,
+      "combined_score": 0.05333346947185188,
+      "spread_class": "tightly_posteriored",
+      "combined_rank": 6
+    },
+    {
+      "name": "aR",
+      "step": 2e-05,
+      "max_abs_delta": 9.999999999999904e-09,
+      "normalized_score": 0.03333335336938916,
+      "rank": 7,
+      "class": "quasi_flat",
+      "posterior_std": 2.2554517314267264e-05,
+      "combined_score": 0.03333410518708487,
+      "spread_class": "tightly_posteriored",
+      "combined_rank": 7
+    },
+    {
+      "name": "s_canal",
+      "step": 0.05,
+      "max_abs_delta": 7.499999999999928e-09,
+      "normalized_score": 0.037499999999999645,
+      "rank": 8,
+      "class": "quasi_flat",
+      "posterior_std": 0.49396177517670237,
+      "combined_score": 0.05602356656912581,
+      "spread_class": "loose_posteriored",
+      "combined_rank": 8
+    }
+  ],
+  "verdict": "supported",
+  "reference": "V13 posterior covariance and local sensitivity"
+}

@@ -1,0 +1,6 @@
+metric,value
+verdict,trans01_frb_supported
+chi2_model,0.5594135802469146
+chi2_baseline,111.1520061728395
+delta_chi2,110.5925925925926
+max_abs_local_shift,8.0

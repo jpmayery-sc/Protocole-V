@@ -1,0 +1,29 @@
+{
+  "timestamp": "20260517-145643Z",
+  "low_field_values": [
+    0.0,
+    0.041642570745485954,
+    0.08314096643359976
+  ],
+  "medium_field_values": [
+    0.0,
+    0.8482836399575129,
+    0.9866142981514303
+  ],
+  "strong_field_values": [
+    0.0,
+    0.9999092042625951,
+    0.9999999958776927
+  ],
+  "low_linear_status": "conforme strict",
+  "medium_curve_status": "conforme strict",
+  "strong_saturation_status": "conforme strict",
+  "strong_plateau_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "la réponse reste linéaire à fort champ",
+    "la saturation ne se rapproche pas d’un plateau",
+    "la réponse forte ne se distingue pas du régime faible",
+    "le matériau magnétique ne montre pas de courbure supplémentaire"
+  ]
+}

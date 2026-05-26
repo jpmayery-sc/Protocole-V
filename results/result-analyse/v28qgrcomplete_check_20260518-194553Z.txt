@@ -1,0 +1,10 @@
+V28 QGR complete check
+{
+  "section": "V28-QGR-COMPLETE",
+  "qgrcompleteequation": "i hbar d/dtau |Y> = (H_geom + H_K + H_T + H_int + H_ent)|Y>",
+  "qgrcompleteconsistency": true,
+  "verdict": "supported",
+  "timestamp": "20260518-194553Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28qgrcomplete_check_20260518-194553Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28qgrcomplete_check_20260518-194553Z.txt"
+}

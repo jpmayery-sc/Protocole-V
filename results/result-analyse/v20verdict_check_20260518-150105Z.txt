@@ -1,0 +1,9 @@
+V20 verdict check
+timestamp: 20260518-150105Z
+verdict_global: supported
+structure_detectee: coherente
+niveau_de_confiance: haute
+zone_de_recherche_prioritaire: v21-theory
+geo_verdict: supported
+torsion_verdict: supported
+hierarchy_verdict: supported

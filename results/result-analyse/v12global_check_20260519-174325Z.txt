@@ -1,0 +1,11 @@
+V12 global falsification check
+timestamp: 20260519-174325Z
+verdict: falsified
+supported_count: 2
+partial_count: 0
+falsified_count: 1
+
+Blocks:
+- v12_absolute: conforme
+- v12_alpha: falsifie
+- v12_fine: conforme

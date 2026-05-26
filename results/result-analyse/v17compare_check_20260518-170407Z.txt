@@ -1,0 +1,5 @@
+V17 compare check
+timestamp: 20260518-170407Z
+verdict: supported
+all_in_bounds: True
+all_signs_ok: True

@@ -1,0 +1,2 @@
+beta_e_phys,gamma_exch_phys,gamma_drain_phys,D_over_H,Y_p,Li7_over_H,Li_total_over_H,Be7_over_H,chi_D,chi_Y,chi_Li7,passes_D,passes_Y,passes_Li7,passes_all,chi_sum
+0.0,0.0,0.0,2.527e-05,0.2436,1.1e-10,1.1e-10,,0.0,0.0,0.9999999999999999,True,True,True,True,0.9999999999999999

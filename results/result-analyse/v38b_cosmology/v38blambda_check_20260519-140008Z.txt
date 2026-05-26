@@ -1,0 +1,4 @@
+V38b lambda check
+timestamp: 20260519-140008Z
+verdict: supported
+lambda_match_ok: True

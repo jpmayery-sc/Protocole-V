@@ -1,0 +1,23 @@
+{
+  "suite": "induction",
+  "timestamp": "20260511-000353Z",
+  "overall_verdict": "supported",
+  "supported_count": 2,
+  "total": 2,
+  "items": [
+    {
+      "label": "weak_induction",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\electromagnetic_induction_check_20260511-000353Z.json",
+      "txt_path": null
+    },
+    {
+      "label": "strong_induction",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_induction_check_20260511-000353Z.json",
+      "txt_path": null
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\induction_suite_summary_20260511-000353Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\induction_suite_summary_20260511-000353Z.txt"
+}

@@ -1,0 +1,15 @@
+V14 sensi check
+timestamp: 20260517-214946Z
+verdict: falsified
+keep_names: A_kappa, aE, s_canal, aR, s_atom
+freeze_names: p, alpha0, s_geo
+
+Rows:
+- A_kappa: rank=1 class=weakly_constrained score=0.125000
+- aE: rank=2 class=weakly_constrained score=0.053333
+- s_canal: rank=3 class=quasi_flat score=0.037500
+- aR: rank=4 class=quasi_flat score=0.033333
+- s_atom: rank=5 class=quasi_flat score=0.033333
+- s_geo: rank=6 class=quasi_flat score=0.033333
+- alpha0: rank=7 class=quasi_flat score=0.020000
+- p: rank=8 class=quasi_flat score=0.015000

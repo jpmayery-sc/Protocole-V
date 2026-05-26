@@ -1,0 +1,113 @@
+{
+  "workbook": "MOESM3",
+  "source_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\downloaded_xlsx\\MOESM3.xlsx",
+  "sheet_count": 7,
+  "sheets": [
+    {
+      "sheet": "sqz_exp",
+      "rows_including_header": 194482,
+      "data_rows": 194481,
+      "columns": 3,
+      "header": [
+        "gamma_r",
+        "gamma_im",
+        "W"
+      ],
+      "numeric_min": -14.77602791224193,
+      "numeric_max": 14.77602791224193,
+      "first_col_labels": [],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\sqz_exp.csv"
+    },
+    {
+      "sheet": "sqz_sim",
+      "rows_including_header": 194482,
+      "data_rows": 194481,
+      "columns": 3,
+      "header": [
+        "gamma_r",
+        "gamma_im",
+        "W"
+      ],
+      "numeric_min": -4.0,
+      "numeric_max": 4.0,
+      "first_col_labels": [],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\sqz_sim.csv"
+    },
+    {
+      "sheet": "trisqz_exp",
+      "rows_including_header": 194482,
+      "data_rows": 194481,
+      "columns": 3,
+      "header": [
+        "gamma_r",
+        "gamma_im",
+        "W"
+      ],
+      "numeric_min": -14.77602791224193,
+      "numeric_max": 14.77602791224193,
+      "first_col_labels": [],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\trisqz_exp.csv"
+    },
+    {
+      "sheet": "trisqz_sim",
+      "rows_including_header": 194482,
+      "data_rows": 194481,
+      "columns": 3,
+      "header": [
+        "gamma_r",
+        "gamma_im",
+        "W"
+      ],
+      "numeric_min": -4.0,
+      "numeric_max": 4.0,
+      "first_col_labels": [],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\trisqz_sim.csv"
+    },
+    {
+      "sheet": "quadsqz_exp",
+      "rows_including_header": 203402,
+      "data_rows": 203401,
+      "columns": 3,
+      "header": [
+        "gamma_r",
+        "gamma_im",
+        "W"
+      ],
+      "numeric_min": -15.39247137665673,
+      "numeric_max": 15.39247137665673,
+      "first_col_labels": [],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\quadsqz_exp.csv"
+    },
+    {
+      "sheet": "quadsqz_sim",
+      "rows_including_header": 203402,
+      "data_rows": 203401,
+      "columns": 3,
+      "header": [
+        "gamma_r",
+        "gamma_im",
+        "W"
+      ],
+      "numeric_min": -4.0,
+      "numeric_max": 4.0,
+      "first_col_labels": [],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\quadsqz_sim.csv"
+    },
+    {
+      "sheet": "README",
+      "rows_including_header": 3,
+      "data_rows": 2,
+      "columns": 1,
+      "header": [
+        "note"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "first_col_labels": [
+        "Each sheet contains the exact grid used for pcolormesh: columns gamma_r, gamma_im, W.",
+        "One row corresponds to one pixel/grid-point in the plotted array (no interpolation)."
+      ],
+      "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\moesm_exports\\MOESM3\\README.csv"
+    }
+  ]
+}

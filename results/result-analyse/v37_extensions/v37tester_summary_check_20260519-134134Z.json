@@ -1,0 +1,17 @@
+{
+  "section": "V37-SYNTHESIS",
+  "flavour_summary": {
+    "v37_B_verdict": "supported",
+    "delta_RK": 0.04999999999999992
+  },
+  "dark_summary": {
+    "v37_DM_verdict": "supported",
+    "Sent_Y_halo": 0.9
+  },
+  "multi_sector_consistency": true,
+  "v37_global_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-134134Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v37_extensions\\v37tester_summary_check_20260519-134134Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v37_extensions\\v37tester_summary_check_20260519-134134Z.txt"
+}

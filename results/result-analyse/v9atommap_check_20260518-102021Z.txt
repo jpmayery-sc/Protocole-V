@@ -1,0 +1,16 @@
+V9 atom map check
+timestamp: 20260518-102021Z
+verdict: conforme
+radius_monotone_ok: True
+level_monotone_ok: True
+stability_peak_ok: True
+heavy_limit_ok: True
+
+Rows:
+- H: Z=1 radius=0.610000 delta_E=3.718960e-05 score=1.264206e+04
+- He: Z=2 radius=0.717696 delta_E=6.321805e-05 score=1.375380e+04
+- C: Z=6 radius=0.986867 delta_E=1.379253e-04 score=4.388325e+04
+- O: Z=8 radius=1.085391 delta_E=1.672072e-04 score=7.996990e+04
+- Fe: Z=26 radius=1.675745 delta_E=3.519790e-04 score=1.029612e+07
+- Pb: Z=82 radius=2.704400 delta_E=6.878507e-04 score=3.627611e-06
+- U: Z=92 radius=2.843832 delta_E=7.338970e-04 score=1.644819e-11

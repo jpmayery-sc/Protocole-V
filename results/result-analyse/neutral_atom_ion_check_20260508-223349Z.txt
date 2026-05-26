@@ -1,0 +1,16 @@
+Contrôle des atomes neutres et des ions
+Timestamp: 20260508-223349Z
+
+Tests:
+- hydrogen_neutral (H): conforme strict (N_p=1, N_e=1, charge=0)
+- helium_neutral (He): conforme strict (N_p=2, N_e=2, charge=0)
+- iron_neutral (Fe): conforme strict (N_p=26, N_e=26, charge=0)
+- sodium_cation (Na+): conforme strict (N_p=11, N_e=10, charge=1)
+- chlorine_anion (Cl-): conforme strict (N_p=17, N_e=18, charge=-1)
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- un atome annoncé neutre ne vérifie pas N_e = N_p
+- l’ionisation change le nombre de protons au lieu des électrons
+- les cas ioniques ne se distinguent pas des cas neutres

@@ -1,0 +1,8 @@
+Induction suite summary
+timestamp: 20260512-110233Z
+overall_verdict: supported
+supported_count: 2/2
+
+Items:
+- weak_induction: conforme strict -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\electromagnetic_induction_check_20260512-110233Z.json
+- strong_induction: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\strong_induction_check_20260512-110233Z.json

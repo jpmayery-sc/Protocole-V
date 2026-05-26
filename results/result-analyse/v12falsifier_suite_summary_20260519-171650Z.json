@@ -1,0 +1,37 @@
+{
+  "suite": "v12falsifier_suite",
+  "timestamp": "20260519-171650Z",
+  "overall_verdict": "falsified",
+  "supported_count": 2,
+  "partial_count": 0,
+  "falsified_count": 2,
+  "total": 4,
+  "items": [
+    {
+      "label": "v12_absolute",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12absolute_check_20260519-171649Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12absolute_check_20260519-171649Z.txt"
+    },
+    {
+      "label": "v12_alpha",
+      "verdict": "falsifie",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12alpha_check_20260519-171649Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12alpha_check_20260519-171649Z.txt"
+    },
+    {
+      "label": "v12_fine",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12fine_check_20260519-171649Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12fine_check_20260519-171649Z.txt"
+    },
+    {
+      "label": "v12_global",
+      "verdict": "falsified",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12global_check_20260519-171649Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12global_check_20260519-171649Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12falsifier_suite_summary_20260519-171650Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v12falsifier_suite_summary_20260519-171650Z.txt"
+}

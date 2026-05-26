@@ -1,0 +1,13 @@
+Alpha energy running check
+timestamp: 20260517-145650Z
+verdict: conforme
+alpha_E1: 0.007297352520506
+alpha_E2: 0.007812500000000
+energy_E1_GeV: 0.0000
+energy_E2_GeV: 91.1876
+delta_alpha: 5.151474794944395e-04
+delta_energy_GeV: 91.1876
+dalphadE: 5.649315032904030e-06
+sign: positive
+running_coupling_ok: True
+small_slope_ok: True

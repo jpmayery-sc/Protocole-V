@@ -1,0 +1,48 @@
+{
+  "suite": "trans001_frb_neutrality_pipeline",
+  "timestamp": "20260522-165552Z",
+  "verdict": "trans01_frb_neutral",
+  "observable_names": [
+    "delta_dm",
+    "sigma_dm_shift",
+    "dm_lss_shift",
+    "omega_b_shift"
+  ],
+  "observed": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sigma": [
+    0.001,
+    0.001,
+    0.001,
+    0.001
+  ],
+  "model": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "baseline": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "local_operator_checks": {
+    "delta_dm": 0.0,
+    "sigma_dm_shift": 0.0,
+    "dm_lss_shift": 0.0,
+    "omega_b_shift": 0.0
+  },
+  "max_abs_local_shift": 0.0,
+  "chi2_model": 0.0,
+  "chi2_baseline": 0.0,
+  "delta_chi2": 0.0,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\trans001_frb_neutrality_pipeline\\trans001_frb_neutrality_pipeline_20260522-165552Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\trans001_frb_neutrality_pipeline\\trans001_frb_neutrality_pipeline_20260522-165552Z.txt",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\trans001_frb_neutrality_pipeline\\trans001_frb_neutrality_pipeline_20260522-165552Z.csv"
+}

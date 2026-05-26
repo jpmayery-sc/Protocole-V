@@ -1,0 +1,32 @@
+Recherche sur la famille alcaline Li -> Cs
+Timestamp: 20260508-195201Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 7.025667228100117
+- ionization_rmse: 0.13795273393448926
+- zeff_rmse: 0.03560261268687887
+- mass_rmse: 11.565227569952832
+- radius_step_cv: 0.3426276227009901
+- ionization_step_cv: 0.6641184825584203
+- zeff_step_cv: 0.13561961615296145
+- mass_step_cv: 0.4895581402011926
+
+Family summary:
+- Li: period=2, mass_u=6.94, radius_pm=152.0, ionization_ev=5.3917, zeff_proxy=1.259283
+- Na: period=3, mass_u=22.98976928, radius_pm=186.0, ionization_ev=5.1391, zeff_proxy=1.844146
+- K: period=4, mass_u=39.0983, radius_pm=227.0, ionization_ev=4.3407, zeff_proxy=2.259802
+- Rb: period=5, mass_u=85.4678, radius_pm=248.0, ionization_ev=4.1771, zeff_proxy=2.771009
+- Cs: period=6, mass_u=132.90545196, radius_pm=265.0, ionization_ev=3.8939, zeff_proxy=3.210511
+
+Hypothese: for the alkali family, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across Li -> Cs
+- first ionization energy is not monotonic across Li -> Cs
+- Z_eff proxy is not smoother than mass across the family
+- mass alone explains the family trend as well as or better than Z_eff proxy

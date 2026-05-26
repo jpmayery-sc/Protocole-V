@@ -1,0 +1,41 @@
+{
+  "suite": "v29finaltheory_suite",
+  "timestamp": "20260518-195502Z",
+  "overall_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "v29_theory_final",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29theoryfinal_check_20260518-195501Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29theoryfinal_check_20260518-195501Z.txt"
+    },
+    {
+      "label": "v29_article_latex_full",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29articlelatexfull_check_20260518-195501Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29articlelatexfull_check_20260518-195501Z.txt"
+    },
+    {
+      "label": "v29_hpc_simulation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29hpcsimulation_check_20260518-195502Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29hpcsimulation_check_20260518-195502Z.txt"
+    },
+    {
+      "label": "v29_observational_tests",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29observationaltests_check_20260518-195502Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29observationaltests_check_20260518-195502Z.txt"
+    },
+    {
+      "label": "v29_verdict",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29verdict_check_20260518-195502Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29verdict_check_20260518-195502Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29finaltheory_suite_summary_20260518-195502Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29finaltheory_suite_summary_20260518-195502Z.txt"
+}

@@ -1,0 +1,6 @@
+V34 neutrinos check
+timestamp: 20260519-103010Z
+verdict: supported
+oscillations_ok: True
+cosmology_ok: True
+parameters_reasonable: True

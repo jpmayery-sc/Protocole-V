@@ -1,0 +1,59 @@
+{
+  "section": "V29-T1-DATA-COMPARISON",
+  "timestamp": "20260518-201723Z",
+  "hypothesis": "the prepared test 1 observations follow a flat LCDM reference at the broad-shape level",
+  "reference_model": {
+    "type": "flat_lcdm",
+    "H0_km_s_Mpc": 67.4,
+    "Omega_m": 0.315,
+    "r_s_Mpc": 147.09
+  },
+  "method": "diagonal chi-square for H(z) and Pantheon+, direct quantity mapping for DESI BAO",
+  "datasets": {
+    "chronometers": {
+      "rows": 32,
+      "z_min": 0.07,
+      "z_max": 1.965,
+      "chi2": 14.91689597682334,
+      "dof": 30,
+      "reduced_chi2": 0.49722986589411133,
+      "rmse": 12.229998733807477,
+      "max_abs_residual": 30.684458890435792
+    },
+    "bao": {
+      "rows": 12,
+      "z_min": 0.295,
+      "z_max": 2.33,
+      "quantities": [
+        "DH_over_rs",
+        "DM_over_rs",
+        "DV_over_rs"
+      ],
+      "chi2": 12.131161573275348,
+      "dof": 9,
+      "reduced_chi2": 1.3479068414750386,
+      "rmse": 0.6024467534625639,
+      "max_abs_residual": 1.7492345103302647
+    },
+    "pantheon_plus_shoes": {
+      "rows": 1701,
+      "z_min": 0.00122,
+      "z_max": 2.26137,
+      "best_fit_offset": -0.18408818958625933,
+      "chi2": 749.2117499243791,
+      "dof": 1699,
+      "reduced_chi2": 0.4409721894787399,
+      "rmse": 0.17280843238168891,
+      "max_abs_residual": 1.1068872374946856
+    }
+  },
+  "summary": {
+    "max_reduced_chi2": 1.3479068414750386,
+    "min_reduced_chi2": 0.4409721894787399,
+    "mean_reduced_chi2": 0.7620362989492966
+  },
+  "verdict": "supported",
+  "note": "Pantheon+ and BAO use prepared public tables; covariance matrices are available for a later full correlated fit.",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_comparison\\v29test1_compare_check_20260518-201723Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_comparison\\v29test1_compare_check_20260518-201723Z.txt"
+}

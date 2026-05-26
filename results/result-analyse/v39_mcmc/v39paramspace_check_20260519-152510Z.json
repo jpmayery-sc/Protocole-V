@@ -1,0 +1,93 @@
+{
+  "section": "V39-PARAMSPACE",
+  "bounds": {
+    "A_mu": [
+      1e-07,
+      1e-05
+    ],
+    "B_mu": [
+      1e-07,
+      1e-05
+    ],
+    "lambda_2": [
+      0.0001,
+      0.01
+    ],
+    "lambda_3": [
+      0.0001,
+      0.01
+    ],
+    "alpha_s": [
+      0.001,
+      0.1
+    ],
+    "beta_s": [
+      0.001,
+      0.1
+    ],
+    "M0_strong": [
+      0.0,
+      1.0
+    ],
+    "C_e": [
+      0.0001,
+      0.1
+    ],
+    "C_mu": [
+      0.0001,
+      0.1
+    ],
+    "C_tau": [
+      0.0001,
+      0.1
+    ],
+    "epsilon": [
+      0.05,
+      0.2
+    ],
+    "alpha": [
+      -0.2,
+      0.5
+    ],
+    "xi": [
+      -2.0,
+      2.0
+    ],
+    "eta": [
+      -0.3,
+      0.3
+    ],
+    "gamma": [
+      0.05,
+      1.0
+    ],
+    "Sent_inf": [
+      0.5,
+      1.0
+    ]
+  },
+  "K_bg_best": 1.0,
+  "Sent_0": 0.9,
+  "best_fit_parameters": {
+    "A_mu": 2.5e-06,
+    "B_mu": 2.2e-06,
+    "lambda_2": 0.0032,
+    "lambda_3": 0.0041,
+    "alpha_s": 0.018,
+    "beta_s": 0.022,
+    "M0_strong": 0.82,
+    "C_e": 0.0012,
+    "C_mu": 0.0014,
+    "C_tau": 0.0018,
+    "epsilon": 0.11,
+    "alpha": 0.08,
+    "xi": -0.3,
+    "eta": 0.012,
+    "gamma": 0.45,
+    "Sent_inf": 0.7
+  },
+  "verdict": "supported",
+  "timestamp": "20260519-152510Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v39_mcmc\\v39paramspace_check_20260519-152510Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v39_mcmc\\v39paramspace_check_20260519-152510Z.txt"
+}

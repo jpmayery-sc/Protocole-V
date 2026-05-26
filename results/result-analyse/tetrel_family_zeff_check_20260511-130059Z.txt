@@ -1,0 +1,31 @@
+Recherche sur la famille des tetrels C -> Pb
+Timestamp: 20260511-130059Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: mixed
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 8.588364221433554
+- ionization_rmse: 0.8195433045300293
+- zeff_rmse: 0.0584932564192695
+- mass_rmse: 17.974179513401996
+- radius_step_cv: 0.6171675291337378
+- ionization_step_cv: 1.3109830270719687
+- zeff_step_cv: 0.15199422306231827
+- mass_step_cv: 0.5296340073297576
+
+Family summary:
+- C: period=2, mass_u=12.011, radius_pm=67.0, ionization_ev=11.2603, zeff_proxy=1.81985
+- Si: period=3, mass_u=28.085, radius_pm=111.0, ionization_ev=8.1517, zeff_proxy=2.322608
+- Ge: period=4, mass_u=72.63, radius_pm=125.0, ionization_ev=7.8994, zeff_proxy=3.04851
+- Sn: period=5, mass_u=118.71, radius_pm=145.0, ionization_ev=7.3439, zeff_proxy=3.67421
+- Pb: period=6, mass_u=207.2, radius_pm=154.0, ionization_ev=7.4167, zeff_proxy=4.430851
+
+Hypothese: for the tetrel family, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across C -> Pb
+- Z_eff proxy is not smoother than mass across the family
+- mass alone explains the family trend as well as or better than Z_eff proxy

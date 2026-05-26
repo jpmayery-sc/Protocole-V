@@ -1,0 +1,44 @@
+{
+  "section": "V43-COSMOLOGY",
+  "source_v42_available": true,
+  "source_v42_supported": true,
+  "source_v42_timestamp": "20260519-160618Z",
+  "source_v42_supported_count": 6,
+  "source_v42_total": 6,
+  "cosmology_predictions": [
+    {
+      "observable": "f_sigma8(z=1)",
+      "prediction": 0.377,
+      "uncertainty": 0.01
+    },
+    {
+      "observable": "H0_eff",
+      "prediction": 69.4,
+      "uncertainty": 0.6
+    },
+    {
+      "observable": "Lambda_eff_ratio",
+      "prediction": 0.68,
+      "uncertainty": 0.02
+    }
+  ],
+  "fs8_prediction": {
+    "z": 1.0,
+    "value": 0.377,
+    "uncertainty": 0.01
+  },
+  "H0_prediction": {
+    "value": 69.4,
+    "uncertainty": 0.6
+  },
+  "Lambda_prediction": {
+    "value": 0.68,
+    "uncertainty": 0.02
+  },
+  "cosmology_summary": "The model predicts a slightly enhanced growth rate and a mildly elevated H0 relative to Planck.",
+  "cosmology_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-161104Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43cosmology_check_20260519-161104Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v43_predictions\\v43cosmology_check_20260519-161104Z.txt"
+}

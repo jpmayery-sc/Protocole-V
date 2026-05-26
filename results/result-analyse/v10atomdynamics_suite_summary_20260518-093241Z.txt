@@ -1,0 +1,9 @@
+V10 atomic dynamics suite summary
+timestamp: 20260518-093241Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- v10_ion: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v10ion_check_20260518-093241Z.json
+- v10_spectre: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v10spectre_check_20260518-093241Z.json
+- v10_rydberg: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v10rydberg_check_20260518-093241Z.json

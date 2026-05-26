@@ -1,0 +1,13 @@
+V61 analysis suite summary
+timestamp: 20260520-112843Z
+v61_global_verdict: intrication_confirmed_numerical
+supported_count: 5/6
+intrication_confirmed_numerical_count: 1/6
+
+Items:
+- v61_file_check: supported
+- v61_automatic_checks: supported
+- v61_manual_analysis: supported
+- v61_comparison: supported
+- v61_verdict: supported
+- v61_synthesis: intrication_confirmed_numerical

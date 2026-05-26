@@ -1,0 +1,42 @@
+{
+  "section": "V32-PREDICTIONS",
+  "prediction_count": 5,
+  "predictions": [
+    {
+      "anomaly": "Muon g-2",
+      "prediction": "non-zero stable correction",
+      "test": "spin precession"
+    },
+    {
+      "anomaly": "Mesons B",
+      "prediction": "lepton-dependent corrections",
+      "test": "branching ratios"
+    },
+    {
+      "anomaly": "Neutrinos",
+      "prediction": "geometric effective mass",
+      "test": "oscillations"
+    },
+    {
+      "anomaly": "Dark matter",
+      "prediction": "Sent(Y)-driven halo behavior",
+      "test": "rotation curves"
+    },
+    {
+      "anomaly": "Expansion",
+      "prediction": "K(t)-driven H(t) evolution",
+      "test": "H(z)"
+    }
+  ],
+  "kty_ansatz_set": {
+    "muon_g_minus_2": "Delta a_mu(K,T) ~ alpha_mu K_loc + beta_mu T_loc",
+    "mesons_b": "Delta P(K,T,l) ~ C_l F(K,T)",
+    "neutrinos": "m_nu_eff ~ m0 + gamma K_bg",
+    "dark_matter": "g_eff = g(K,T,Sent(Y))",
+    "expansion": "H(t) = -1/2 * (Kdot / K)"
+  },
+  "verdict": "supported",
+  "timestamp": "20260519-101617Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32predictions_check_20260519-101617Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v32_kty_integration\\v32predictions_check_20260519-101617Z.txt"
+}

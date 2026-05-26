@@ -1,0 +1,29 @@
+ECGP bench summary
+timestamp: 20260513-090035Z
+overall_verdict: rejected
+input_status: demo_control
+trial_count: 6
+materials: al, cu, fe
+frequencies_hz: 1000000.0, 5000000.0
+mean_delta: 0.0030000000000000027
+material_spread: 0.0030000000000000027
+frequency_spread: 0.0
+geometry_spread: 0.002250000000000002
+
+Checks:
+- delta_fidelity = measured_fidelity - control_fidelity
+- losses and other matched controls are already absorbed by the control channel
+- material and frequency summaries are computed only after normalization
+
+Material summary:
+- al: mean_delta=0.0015000000000000013, count=2
+- cu: mean_delta=0.0030000000000000027, count=2
+- fe: mean_delta=0.004500000000000004, count=2
+
+Frequency summary:
+- 1000000.0: mean_delta=0.0030000000000000027, count=3
+- 5000000.0: mean_delta=0.0030000000000000027, count=3
+
+Geometry summary:
+- spiral: mean_delta=0.004500000000000004, count=2
+- straight: mean_delta=0.002250000000000002, count=4

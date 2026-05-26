@@ -1,0 +1,15 @@
+V7 GEO check
+timestamp: 20260517-152636Z
+verdict: rejette
+trajectory_monotone_ok: True
+precession_monotone_ok: True
+precession_positive_ok: True
+radial_monotone_ok: True
+radial_small_ok: False
+delta_theta_consistent_ok: True
+
+Samples:
+- alpha_ref: alpha=0.007297352569284 beta=0.992702647430716 theta_track=0.592325007966301 precession=0.046187666128727
+- alpha_mid: alpha=0.007298311321138 beta=0.992701688678862 theta_track=0.592325580034130 precession=0.046193779040737
+- alpha_approx: alpha=0.007299270072993 beta=0.992700729927007 theta_track=0.592326152103064 precession=0.046199891964556
+- alpha_high: alpha=0.007812500000000 beta=0.992187500000000 theta_track=0.592632545307785 precession=0.049473900056532

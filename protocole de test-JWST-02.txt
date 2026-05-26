@@ -1,0 +1,129 @@
+===========================================================
+DÉMONSTRATION CALCULÉE : JWST-02 (SPECTROSCOPIE)
+Profils Hα/Hβ/He, noyau étroit + ailes larges
+===========================================================
+ 
+ID : JWST-02
+Domaine : JWST / spectroscopie
+Observable principal : Profils Hα/Hβ/He, noyau étroit et ailes larges
+Robustesse : A
+ 
+Lecture standard en compétition :
+- Diffusion électronique dans un cocon ionisé
+- Largeur Doppler dans une BLR (Broad Line Region) unique
+ 
+Ce que l’étude V70 cherche à tester :
+- Vérifier si l’élargissement apparent des raies peut venir d’une
+  structure multi-couche (géométrique) plutôt que d’une seule cinématique.
+ 
+ 
+1. OBJECTIF JWST-02
+-------------------
+Construire un cas pilote où les profils de raies Hα/Hβ/He observés par JWST
+(peigne noyau étroit + ailes larges) sont interprétés non pas comme une
+seule région cinématique (BLR Doppler), mais comme la superposition de
+plusieurs couches géométriques :
+ 
+- un noyau compact, dense, peu turbulent ;
+- un cocon ionisé intermédiaire ;
+- une enveloppe plus diffuse, partiellement ionisée.
+ 
+Le but est de tester si le modèle K/T/Y + D1/D2 peut reproduire les profils
+observés avec une structure multi-couche, sans invoquer une cinématique
+extrême unique.
+ 
+ 
+2. HYPOTHÈSE DU MODÈLE
+----------------------
+Le modèle K/T/Y + D1/D2 décrit la région centrale comme :
+ 
+- une structure géométrique à plusieurs couches (D1/D2) ;
+- chaque couche ayant sa propre densité, température, ionisation ;
+- les photons Hα/Hβ/He traversant successivement ces couches.
+ 
+Hypothèse clé JWST-02 :
+L’élargissement des raies est dominé par la **structure multi-couche**
+(densité, gradients, diffusion) plutôt que par une seule vitesse Doppler
+extrême dans une BLR unique.
+ 
+ 
+3. PARAMÉTRISATION DES COUCHES
+------------------------------
+On décrit trois couches effectives :
+ 
+- Couche 1 : noyau étroit
+  - densité élevée, turbulence faible
+  - produit le noyau étroit des raies
+ 
+- Couche 2 : cocon ionisé
+  - densité intermédiaire, diffusion électronique significative
+  - élargit les ailes des raies par diffusion
+ 
+- Couche 3 : enveloppe diffuse
+  - densité faible, gradients de vitesse modérés
+  - ajoute une composante large mais peu intense
+ 
+Chaque couche est reliée à une projection D1/D2 différente du même champ
+K/T/Y, ce qui préserve la cohérence géométrique du modèle.
+ 
+ 
+4. PIPELINE DE CALCUL JWST-02
+-----------------------------
+1) Fixer un jeu de paramètres géométriques pour les trois couches :
+   - densité, température, profondeur optique, ionisation.
+ 
+2) Construire le profil de raie théorique pour chaque couche :
+   - noyau étroit (émission + faible Doppler),
+   - cocon (diffusion électronique),
+   - enveloppe (élargissement modéré).
+ 
+3) Superposer les trois contributions pour obtenir le profil total :
+   - I_total(λ) = I_1(λ) + I_2(λ) + I_3(λ).
+ 
+4) Comparer le profil synthétique aux profils JWST :
+   - largeur du noyau,
+   - extension des ailes,
+   - rapport noyau/ailes,
+   - symétrie ou asymétrie.
+ 
+5) Construire un χ²_spectro simple sur les points de profil :
+   - χ² = Σ (I_mod(λ_i) - I_obs(λ_i))² / σ(λ_i)².
+ 
+ 
+5. COMPARATIF CONCEPTUEL
+------------------------
+Scénario standard (BLR unique) :
+- une seule région cinématique,
+- largeurs dominées par Doppler,
+- géométrie souvent simplifiée.
+ 
+Scénario K/T/Y + D1/D2 (multi-couche) :
+- plusieurs couches géométriques superposées,
+- une partie de l’élargissement vient de la diffusion et de la structure,
+- la cinématique extrême n’est plus nécessaire partout.
+ 
+ 
+6. CONCLUSION DE PREUVE-MODÈLE JWST-02
+--------------------------------------
+La démonstration JWST-02 ne cherche pas à ajuster un objet particulier,
+mais à montrer que :
+ 
+1. Un profil Hα/Hβ/He avec noyau étroit + ailes larges peut être reproduit
+   par une structure multi-couche cohérente avec K/T/Y + D1/D2.
+ 
+2. L’élargissement apparent des raies n’implique pas nécessairement une
+   seule BLR Doppler extrême ; il peut émerger d’une géométrie à plusieurs
+   couches (noyau + cocon + enveloppe).
+ 
+3. Le modèle V70 fournit un cadre naturel pour séparer :
+   - la source énergétique (moteur central),
+   - la géométrie du cocon,
+   - la structure multi-couche qui façonne les profils.
+ 
+Ce cas JWST-02 est retenu comme démonstration calculée pilote pour la
+spectroscopie JWST dans le registre V70.
+ 
+===========================================================
+FIN DU BLOC JWST-02
+===========================================================
+ 

@@ -1,0 +1,10 @@
+V16 prediction suite summary
+timestamp: 20260518-170540Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v16_internal: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v16internal_check_20260518-170539Z.json
+- v16_external: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v16external_check_20260518-170539Z.json
+- v16_check: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v16check_check_20260518-170539Z.json
+- v16_export: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v16export_check_20260518-170539Z.json

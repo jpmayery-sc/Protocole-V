@@ -1,0 +1,41 @@
+{
+  "suite": "v25unifiedphysics_suite",
+  "timestamp": "20260518-172047Z",
+  "overall_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "v25_quantum",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25quantum_check_20260518-172046Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25quantum_check_20260518-172046Z.txt"
+    },
+    {
+      "label": "v25_cosmology",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25cosmology_check_20260518-172046Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25cosmology_check_20260518-172046Z.txt"
+    },
+    {
+      "label": "v25_spintorsion",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25spintorsion_check_20260518-172046Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25spintorsion_check_20260518-172046Z.txt"
+    },
+    {
+      "label": "v25_falsification",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25falsification_check_20260518-172047Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25falsification_check_20260518-172047Z.txt"
+    },
+    {
+      "label": "v25_verdict",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25verdict_check_20260518-172047Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25verdict_check_20260518-172047Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25unifiedphysics_suite_summary_20260518-172047Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25unifiedphysics_suite_summary_20260518-172047Z.txt"
+}

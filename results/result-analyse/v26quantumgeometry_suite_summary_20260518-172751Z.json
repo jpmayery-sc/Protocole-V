@@ -1,0 +1,47 @@
+{
+  "suite": "v26quantumgeometry_suite",
+  "timestamp": "20260518-172751Z",
+  "overall_verdict": "supported",
+  "supported_count": 6,
+  "total": 6,
+  "items": [
+    {
+      "label": "v26_qft",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26qft_check_20260518-172750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26qft_check_20260518-172750Z.txt"
+    },
+    {
+      "label": "v26_perturbations",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26perturbations_check_20260518-172750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26perturbations_check_20260518-172750Z.txt"
+    },
+    {
+      "label": "v26_simulation",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26simulation_check_20260518-172750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26simulation_check_20260518-172750Z.txt"
+    },
+    {
+      "label": "v26_observables",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26observables_check_20260518-172750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26observables_check_20260518-172750Z.txt"
+    },
+    {
+      "label": "v26_publication",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26publication_check_20260518-172750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26publication_check_20260518-172750Z.txt"
+    },
+    {
+      "label": "v26_verdict",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26verdict_check_20260518-172750Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26verdict_check_20260518-172750Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26quantumgeometry_suite_summary_20260518-172751Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26quantumgeometry_suite_summary_20260518-172751Z.txt"
+}

@@ -1,0 +1,6 @@
+V37 bphysics check
+timestamp: 20260519-134150Z
+verdict: supported
+flavour_match_ok: True
+naturality_ok: True
+hierarchy_ok: True

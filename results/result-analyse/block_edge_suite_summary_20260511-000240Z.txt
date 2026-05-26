@@ -1,0 +1,10 @@
+Block-edge suite summary
+timestamp: 20260511-000240Z
+overall_verdict: partiel
+supported_count: 0/3
+partial_count: 3/3
+
+Items:
+- 3d_transition: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_3d_block_edge_view_check_20260511-000240Z.json
+- 4d_transition: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\transition_4d_block_edge_view_check_20260511-000240Z.json
+- lanthanide: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\lanthanide_block_edge_view_check_20260511-000240Z.json

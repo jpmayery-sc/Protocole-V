@@ -1,0 +1,24 @@
+{
+  "section": "V36-SYNTHESIS",
+  "scales_summary": {
+    "K_loc_best": 0.0002,
+    "T_loc_best": 0.0008,
+    "K_bg_best": 1.0,
+    "K_loc_strong": 0.002,
+    "T_loc_strong": 0.008
+  },
+  "couplings_summary": {
+    "A_mu_best": 1e-06,
+    "B_mu_best": 1e-06,
+    "lambda_2_best": 7.4e-05,
+    "lambda_3_best": 0.0025,
+    "alpha_s": 0.001,
+    "beta_s": 0.001
+  },
+  "multi_scale_consistency": true,
+  "v36_global_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-131903Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36tester_summary_check_20260519-131903Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36tester_summary_check_20260519-131903Z.txt"
+}

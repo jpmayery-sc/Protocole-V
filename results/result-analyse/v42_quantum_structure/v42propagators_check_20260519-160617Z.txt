@@ -1,0 +1,8 @@
+V42 propagators check
+timestamp: 20260519-160617Z
+verdict: supported
+propagator_K: Delta_K(p) = 1 / (p^2 - 0.18)
+propagator_T: Delta_T(p) = 1 / (p^2 - 0.12)
+propagator_Y: Delta_Y(p) = 1 / (p^2 - 0.45)
+positivity_ok: True
+v42_propagators_verdict: supported

@@ -1,0 +1,14 @@
+V11 atomic redshift check
+timestamp: 20260517-211314Z
+verdict: conforme
+amplitude_ok: True
+z_growth_ok: True
+env_growth_ok: True
+heavy_tail_ok: True
+
+Cases:
+- H: quiet=3.689444e-07, nominal=4.919259e-07, extreme=6.149074e-07
+- He: quiet=5.387902e-07, nominal=7.183869e-07, extreme=8.979836e-07
+- Fe: quiet=3.142669e-06, nominal=4.190226e-06, extreme=5.237782e-06
+- Pb: quiet=5.488171e-06, nominal=7.317561e-06, extreme=9.146951e-06
+- U: quiet=5.733571e-06, nominal=7.644761e-06, extreme=9.555951e-06

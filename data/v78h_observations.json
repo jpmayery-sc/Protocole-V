@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "purpose": "Reference observational windows for V78H real-data validation",
+    "created": "2026-05-21",
+    "notes": [
+      "D/H from Cooke et al. 2018, arXiv:1710.11129",
+      "Y_p from Hsyu et al. 2020, arXiv:2005.12290",
+      "Li7/H from a conservative Spite-plateau compilation, chosen as a broad validation window"
+    ]
+  },
+  "D_over_H": {
+    "obs": 2.527e-05,
+    "sigma": 3.0e-07,
+    "source": "arXiv:1710.11129 / Cooke et al. 2018",
+    "label": "Primordial deuterium abundance"
+  },
+  "Y_p": {
+    "obs": 0.2436,
+    "sigma": 0.004,
+    "source": "arXiv:2005.12290 / Hsyu et al. 2020",
+    "label": "Primordial helium mass fraction"
+  },
+  "Li7_over_H": {
+    "obs": 1.3e-10,
+    "sigma": 2.0e-11,
+    "source": "Spite plateau compilation; broad validation window",
+    "label": "Primordial lithium-7 abundance"
+  }
+}

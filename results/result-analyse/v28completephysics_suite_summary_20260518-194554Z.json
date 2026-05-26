@@ -1,0 +1,71 @@
+{
+  "suite": "v28completephysics_suite",
+  "timestamp": "20260518-194554Z",
+  "overall_verdict": "supported",
+  "supported_count": 10,
+  "total": 10,
+  "items": [
+    {
+      "label": "v28_unification",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28unification_check_20260518-194552Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28unification_check_20260518-194552Z.txt"
+    },
+    {
+      "label": "v28_qgr_complete",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28qgrcomplete_check_20260518-194553Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28qgrcomplete_check_20260518-194553Z.txt"
+    },
+    {
+      "label": "v28_renorm_multiscale",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28renormmultiscale_check_20260518-194553Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28renormmultiscale_check_20260518-194553Z.txt"
+    },
+    {
+      "label": "v28_cosmology_full",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28cosmologyfull_check_20260518-194553Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28cosmologyfull_check_20260518-194553Z.txt"
+    },
+    {
+      "label": "v28_tubes_full",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28tubesfull_check_20260518-194553Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28tubesfull_check_20260518-194553Z.txt"
+    },
+    {
+      "label": "v28_intrication",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28intrication_check_20260518-194553Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28intrication_check_20260518-194553Z.txt"
+    },
+    {
+      "label": "v28_simulation_hpc",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28simulationhpc_check_20260518-194553Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28simulationhpc_check_20260518-194553Z.txt"
+    },
+    {
+      "label": "v28_observables_ultimes",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28observablesultimate_check_20260518-194554Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28observablesultimate_check_20260518-194554Z.txt"
+    },
+    {
+      "label": "v28_article_latex",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28articlelatex_check_20260518-194554Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28articlelatex_check_20260518-194554Z.txt"
+    },
+    {
+      "label": "v28_verdict",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28verdict_check_20260518-194554Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28verdict_check_20260518-194554Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28completephysics_suite_summary_20260518-194554Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28completephysics_suite_summary_20260518-194554Z.txt"
+}

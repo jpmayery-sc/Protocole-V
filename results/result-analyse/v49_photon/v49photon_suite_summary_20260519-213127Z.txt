@@ -1,0 +1,12 @@
+V49 photon suite summary
+timestamp: 20260519-213127Z
+v49_global_verdict: supported
+supported_count: 6/6
+
+Items:
+- v49_maxwell: supported
+- v49_dispersion: supported
+- v49_cmb_polarization: supported
+- v49_astro_prop: supported
+- v49_stability: supported
+- v49_synthesis: supported

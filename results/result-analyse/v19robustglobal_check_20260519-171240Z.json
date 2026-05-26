@@ -1,0 +1,5954 @@
+{
+  "theta_reference": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001002,
+    "p": 5.01,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 0.999,
+    "s_atom": 0.999,
+    "s_canal": 1.0
+  },
+  "map": {
+    "reference_profile": {
+      "profile_name": "calibration_agressive",
+      "theta_v18": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.60018e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669266666666663e-06
+        },
+        "external": {
+          "z_obs": 0.00012559018,
+          "delta_nu_over_nu": 2.9598180000000003e-05,
+          "delta_E": 2.4003600180000002e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999000000000001
+        },
+        "verdict": "supported"
+      },
+      "comparison": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.60018e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669266666666663e-06
+          },
+          "external": {
+            "z_obs": 0.00012559018,
+            "delta_nu_over_nu": 2.9598180000000003e-05,
+            "delta_E": 2.4003600180000002e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999000000000001
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012559018,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.901800000000052e-07,
+            "relative_error": 0.004721440000000042,
+            "center_offset": 0.023607200000000217,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.9598180000000003e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.098180000000001e-06,
+            "relative_error": 0.0385326315789474,
+            "center_offset": 0.08036399999999898,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.4003600180000002e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 3.600180000001347e-09,
+            "relative_error": 0.00015000750000005613,
+            "center_offset": 0.000900045000000337,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9999166666666666,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 8.333333333343518e-05,
+            "relative_error": 4.166666666671759e-05,
+            "center_offset": 0.00016666666666687036,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00011999000000000001,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 9.999999999994822e-09,
+            "relative_error": 8.333333333329018e-05,
+            "center_offset": 0.19990000000000002,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "deviation": {
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.60018e-06,
+              "fine_delta": 0.00023998000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.7669266666666663e-06
+            },
+            "external": {
+              "z_obs": 0.00012559018,
+              "delta_nu_over_nu": 2.9598180000000003e-05,
+              "delta_E": 2.4003600180000002e-05,
+              "fine_correction_eff": 1.9999166666666666,
+              "grav_torsion_eff": -0.00011999000000000001
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012559018,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.901800000000052e-07,
+              "relative_error": 0.004721440000000042,
+              "center_offset": 0.023607200000000217,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.9598180000000003e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.098180000000001e-06,
+              "relative_error": 0.0385326315789474,
+              "center_offset": 0.08036399999999898,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.4003600180000002e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 3.600180000001347e-09,
+              "relative_error": 0.00015000750000005613,
+              "center_offset": 0.000900045000000337,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9999166666666666,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 8.333333333343518e-05,
+              "relative_error": 4.166666666671759e-05,
+              "center_offset": 0.00016666666666687036,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00011999000000000001,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 9.999999999994822e-09,
+              "relative_error": 8.333333333329018e-05,
+              "center_offset": 0.19990000000000002,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation_vector": {
+          "z_obs": 0.023607200000000217,
+          "delta_nu_over_nu": 0.08036399999999898,
+          "delta_E": 0.000900045000000337,
+          "fine_correction_eff": 0.00016666666666687036,
+          "grav_torsion_eff": 0.19990000000000002
+        },
+        "deviation_score": 0.06098758233333329,
+        "deviation_class": "supported",
+        "monotone_ok": true
+      },
+      "verdict": "supported",
+      "supported": true,
+      "deviation_score": 0.06098758233333329,
+      "deviation_class": "supported",
+      "internal_ok": true,
+      "external_ok": true,
+      "comparison_ok": true
+    },
+    "theta_reference": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001002,
+      "p": 5.01,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 0.999,
+      "s_atom": 0.999,
+      "s_canal": 1.0
+    },
+    "baseline_deviation_score": 0.06098758233333329,
+    "axes": [
+      {
+        "axis": "alpha0",
+        "baseline_deviation_score": 0.06098758233333329,
+        "samples": [
+          {
+            "position": "center",
+            "delta": 0.0,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06098758233333329,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          }
+        ],
+        "supported_count": 1,
+        "total": 1,
+        "stability_state": "locked",
+        "verdict": "supported"
+      },
+      {
+        "axis": "s_geo",
+        "baseline_deviation_score": 0.06098758233333329,
+        "samples": [
+          {
+            "position": "low",
+            "delta": -0.0005,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.9985,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.060988540833333514,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "center",
+            "delta": 0.0,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06098758233333329,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "high",
+            "delta": 0.0005,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.9994999999999999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.060986623833333184,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          }
+        ],
+        "supported_count": 3,
+        "total": 3,
+        "stability_state": "stable",
+        "verdict": "supported"
+      },
+      {
+        "axis": "s_atom",
+        "baseline_deviation_score": 0.06098758233333329,
+        "samples": [
+          {
+            "position": "low",
+            "delta": -0.0005,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.9985,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.060988540833333514,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "center",
+            "delta": 0.0,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06098758233333329,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "high",
+            "delta": 0.0005,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.9994999999999999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.060986623833333184,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          }
+        ],
+        "supported_count": 3,
+        "total": 3,
+        "stability_state": "stable",
+        "verdict": "supported"
+      },
+      {
+        "axis": "A_kappa",
+        "baseline_deviation_score": 0.06098758233333329,
+        "samples": [
+          {
+            "position": "low",
+            "delta": -1e-06,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.0010010000000000002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06091089766666634,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "center",
+            "delta": 0.0,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06098758233333329,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "high",
+            "delta": 1e-06,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001003,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06130424900000012,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          }
+        ],
+        "supported_count": 3,
+        "total": 3,
+        "stability_state": "stable",
+        "verdict": "supported"
+      },
+      {
+        "axis": "p",
+        "baseline_deviation_score": 0.06098758233333329,
+        "samples": [
+          {
+            "position": "low",
+            "delta": -0.005,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.005,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06138570816666668,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "center",
+            "delta": 0.0,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.06098758233333329,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          },
+          {
+            "position": "high",
+            "delta": 0.005,
+            "theta": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.015,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "deviation_score": 0.060962756833333145,
+            "deviation_class": "supported",
+            "comparison_ok": true,
+            "internal_ok": true,
+            "external_ok": true,
+            "supported": true
+          }
+        ],
+        "supported_count": 3,
+        "total": 3,
+        "stability_state": "stable",
+        "verdict": "supported"
+      }
+    ],
+    "samples": [
+      {
+        "position": "center",
+        "delta": 0.0,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06098758233333329,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "low",
+        "delta": -0.0005,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.9985,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.060988540833333514,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "center",
+        "delta": 0.0,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06098758233333329,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "high",
+        "delta": 0.0005,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.9994999999999999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.060986623833333184,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "low",
+        "delta": -0.0005,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.9985,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.060988540833333514,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "center",
+        "delta": 0.0,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06098758233333329,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "high",
+        "delta": 0.0005,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.9994999999999999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.060986623833333184,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "low",
+        "delta": -1e-06,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.0010010000000000002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06091089766666634,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "center",
+        "delta": 0.0,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06098758233333329,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "high",
+        "delta": 1e-06,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001003,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06130424900000012,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "low",
+        "delta": -0.005,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.005,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06138570816666668,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "center",
+        "delta": 0.0,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.06098758233333329,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      },
+      {
+        "position": "high",
+        "delta": 0.005,
+        "theta": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.015,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "deviation_score": 0.060962756833333145,
+        "deviation_class": "supported",
+        "comparison_ok": true,
+        "internal_ok": true,
+        "external_ok": true,
+        "supported": true
+      }
+    ],
+    "supported_count": 13,
+    "total": 13,
+    "supported_ratio": 1.0,
+    "verdict": "supported"
+  },
+  "chain_rows": [
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.9985,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_s_geo_low",
+      "v18": {
+        "profile_name": "v19_chain_s_geo_low",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.9985,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0998500000000002e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600149999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.9985,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669133333333326e-06
+          },
+          "external": {
+            "z_obs": 0.00012559015000000002,
+            "delta_nu_over_nu": 2.959815e-05,
+            "delta_E": 2.4003600150000002e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999000000000002
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0998500000000002e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.600149999999999e-06,
+              "fine_delta": 0.00023998000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.9985,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.7669133333333326e-06
+            },
+            "external": {
+              "z_obs": 0.00012559015000000002,
+              "delta_nu_over_nu": 2.959815e-05,
+              "delta_E": 2.4003600150000002e-05,
+              "fine_correction_eff": 1.9999166666666666,
+              "grav_torsion_eff": -0.00011999000000000002
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012559015000000002,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.901500000000167e-07,
+              "relative_error": 0.004721200000000134,
+              "center_offset": 0.023606000000000675,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.959815e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.098149999999999e-06,
+              "relative_error": 0.03853157894736838,
+              "center_offset": 0.0803699999999994,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.4003600150000002e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 3.6001500000018734e-09,
+              "relative_error": 0.00015000625000007807,
+              "center_offset": 0.0009000375000004686,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9999166666666666,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 8.333333333343518e-05,
+              "relative_error": 4.166666666671759e-05,
+              "center_offset": 0.00016666666666687036,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00011999000000000002,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 9.99999999998127e-09,
+              "relative_error": 8.333333333317725e-05,
+              "center_offset": 0.19990000000000016,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0998500000000002e-06,
+                "z_int": 4.7998e-06,
+                "z_canal": 2.60006e-06,
+                "z_mod": 5.600149999999999e-06,
+                "fine_delta": 0.00023998000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001002,
+                  "p": 5.01,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.9985,
+                  "s_atom": 0.999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.7669133333333326e-06
+              },
+              "external": {
+                "z_obs": 0.00012559015000000002,
+                "delta_nu_over_nu": 2.959815e-05,
+                "delta_E": 2.4003600150000002e-05,
+                "fine_correction_eff": 1.9999166666666666,
+                "grav_torsion_eff": -0.00011999000000000002
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012559015000000002,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 5.901500000000167e-07,
+                "relative_error": 0.004721200000000134,
+                "center_offset": 0.023606000000000675,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.959815e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.098149999999999e-06,
+                "relative_error": 0.03853157894736838,
+                "center_offset": 0.0803699999999994,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.4003600150000002e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 3.6001500000018734e-09,
+                "relative_error": 0.00015000625000007807,
+                "center_offset": 0.0009000375000004686,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 1.9999166666666666,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 8.333333333343518e-05,
+                "relative_error": 4.166666666671759e-05,
+                "center_offset": 0.00016666666666687036,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00011999000000000002,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 9.99999999998127e-09,
+                "relative_error": 8.333333333317725e-05,
+                "center_offset": 0.19990000000000016,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.023606000000000675,
+            "delta_nu_over_nu": 0.0803699999999994,
+            "delta_E": 0.0009000375000004686,
+            "fine_correction_eff": 0.00016666666666687036,
+            "grav_torsion_eff": 0.19990000000000016
+          },
+          "deviation_score": 0.060988540833333514,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.060988540833333514,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.060988540833333514
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0998500000000002e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600149999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.9985,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669133333333326e-06
+          },
+          "external": {
+            "z_obs": 0.00012559015000000002,
+            "delta_nu_over_nu": 2.959815e-05,
+            "delta_E": 2.4003600150000002e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999000000000002
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012559015000000002,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.901500000000167e-07,
+            "relative_error": 0.004721200000000134,
+            "center_offset": 0.023606000000000675,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.959815e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.098149999999999e-06,
+            "relative_error": 0.03853157894736838,
+            "center_offset": 0.0803699999999994,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.4003600150000002e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 3.6001500000018734e-09,
+            "relative_error": 0.00015000625000007807,
+            "center_offset": 0.0009000375000004686,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9999166666666666,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 8.333333333343518e-05,
+            "relative_error": 4.166666666671759e-05,
+            "center_offset": 0.00016666666666687036,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00011999000000000002,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 9.99999999998127e-09,
+            "relative_error": 8.333333333317725e-05,
+            "center_offset": 0.19990000000000016,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0998500000000002e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.600149999999999e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.9985,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669133333333326e-06
+        },
+        "external": {
+          "z_obs": 0.00012559015000000002,
+          "delta_nu_over_nu": 2.959815e-05,
+          "delta_E": 2.4003600150000002e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999000000000002
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.9994999999999999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_s_geo_high",
+      "v18": {
+        "profile_name": "v19_chain_s_geo_high",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.9994999999999999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.09995e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600209999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.9994999999999999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.766939999999999e-06
+          },
+          "external": {
+            "z_obs": 0.00012559021,
+            "delta_nu_over_nu": 2.959821e-05,
+            "delta_E": 2.400360021e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.09995e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.600209999999999e-06,
+              "fine_delta": 0.00023998000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.9994999999999999,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.766939999999999e-06
+            },
+            "external": {
+              "z_obs": 0.00012559021,
+              "delta_nu_over_nu": 2.959821e-05,
+              "delta_E": 2.400360021e-05,
+              "fine_correction_eff": 1.9999166666666666,
+              "grav_torsion_eff": -0.00011999
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012559021,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.902099999999938e-07,
+              "relative_error": 0.00472167999999995,
+              "center_offset": 0.02360839999999976,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.959821e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.0982099999999998e-06,
+              "relative_error": 0.0385336842105263,
+              "center_offset": 0.08035799999999924,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.400360021e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 3.6002100000008205e-09,
+              "relative_error": 0.0001500087500000342,
+              "center_offset": 0.0009000525000002053,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9999166666666666,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 8.333333333343518e-05,
+              "relative_error": 4.166666666671759e-05,
+              "center_offset": 0.00016666666666687036,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00011999,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 1.0000000000008375e-08,
+              "relative_error": 8.333333333340313e-05,
+              "center_offset": 0.19989999999999988,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.09995e-06,
+                "z_int": 4.7998e-06,
+                "z_canal": 2.60006e-06,
+                "z_mod": 5.600209999999999e-06,
+                "fine_delta": 0.00023998000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001002,
+                  "p": 5.01,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.9994999999999999,
+                  "s_atom": 0.999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.766939999999999e-06
+              },
+              "external": {
+                "z_obs": 0.00012559021,
+                "delta_nu_over_nu": 2.959821e-05,
+                "delta_E": 2.400360021e-05,
+                "fine_correction_eff": 1.9999166666666666,
+                "grav_torsion_eff": -0.00011999
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012559021,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 5.902099999999938e-07,
+                "relative_error": 0.00472167999999995,
+                "center_offset": 0.02360839999999976,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.959821e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.0982099999999998e-06,
+                "relative_error": 0.0385336842105263,
+                "center_offset": 0.08035799999999924,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.400360021e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 3.6002100000008205e-09,
+                "relative_error": 0.0001500087500000342,
+                "center_offset": 0.0009000525000002053,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 1.9999166666666666,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 8.333333333343518e-05,
+                "relative_error": 4.166666666671759e-05,
+                "center_offset": 0.00016666666666687036,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00011999,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 1.0000000000008375e-08,
+                "relative_error": 8.333333333340313e-05,
+                "center_offset": 0.19989999999999988,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.02360839999999976,
+            "delta_nu_over_nu": 0.08035799999999924,
+            "delta_E": 0.0009000525000002053,
+            "fine_correction_eff": 0.00016666666666687036,
+            "grav_torsion_eff": 0.19989999999999988
+          },
+          "deviation_score": 0.060986623833333184,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.060986623833333184,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.060986623833333184
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.09995e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600209999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.9994999999999999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.766939999999999e-06
+          },
+          "external": {
+            "z_obs": 0.00012559021,
+            "delta_nu_over_nu": 2.959821e-05,
+            "delta_E": 2.400360021e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012559021,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.902099999999938e-07,
+            "relative_error": 0.00472167999999995,
+            "center_offset": 0.02360839999999976,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.959821e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.0982099999999998e-06,
+            "relative_error": 0.0385336842105263,
+            "center_offset": 0.08035799999999924,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.400360021e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 3.6002100000008205e-09,
+            "relative_error": 0.0001500087500000342,
+            "center_offset": 0.0009000525000002053,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9999166666666666,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 8.333333333343518e-05,
+            "relative_error": 4.166666666671759e-05,
+            "center_offset": 0.00016666666666687036,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00011999,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 1.0000000000008375e-08,
+            "relative_error": 8.333333333340313e-05,
+            "center_offset": 0.19989999999999988,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.09995e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.600209999999999e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.9994999999999999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.766939999999999e-06
+        },
+        "external": {
+          "z_obs": 0.00012559021,
+          "delta_nu_over_nu": 2.959821e-05,
+          "delta_E": 2.400360021e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.9985,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_s_atom_low",
+      "v18": {
+        "profile_name": "v19_chain_s_atom_low",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.9985,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7997e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600149999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.9985,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669299999999993e-06
+          },
+          "external": {
+            "z_obs": 0.00012559015000000002,
+            "delta_nu_over_nu": 2.959815e-05,
+            "delta_E": 2.4003600150000002e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999000000000002
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7997e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.600149999999999e-06,
+              "fine_delta": 0.00023998000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.9985,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.7669299999999993e-06
+            },
+            "external": {
+              "z_obs": 0.00012559015000000002,
+              "delta_nu_over_nu": 2.959815e-05,
+              "delta_E": 2.4003600150000002e-05,
+              "fine_correction_eff": 1.9999166666666666,
+              "grav_torsion_eff": -0.00011999000000000002
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012559015000000002,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.901500000000167e-07,
+              "relative_error": 0.004721200000000134,
+              "center_offset": 0.023606000000000675,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.959815e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.098149999999999e-06,
+              "relative_error": 0.03853157894736838,
+              "center_offset": 0.0803699999999994,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.4003600150000002e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 3.6001500000018734e-09,
+              "relative_error": 0.00015000625000007807,
+              "center_offset": 0.0009000375000004686,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9999166666666666,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 8.333333333343518e-05,
+              "relative_error": 4.166666666671759e-05,
+              "center_offset": 0.00016666666666687036,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00011999000000000002,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 9.99999999998127e-09,
+              "relative_error": 8.333333333317725e-05,
+              "center_offset": 0.19990000000000016,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0999e-06,
+                "z_int": 4.7997e-06,
+                "z_canal": 2.60006e-06,
+                "z_mod": 5.600149999999999e-06,
+                "fine_delta": 0.00023998000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001002,
+                  "p": 5.01,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.999,
+                  "s_atom": 0.9985,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.7669299999999993e-06
+              },
+              "external": {
+                "z_obs": 0.00012559015000000002,
+                "delta_nu_over_nu": 2.959815e-05,
+                "delta_E": 2.4003600150000002e-05,
+                "fine_correction_eff": 1.9999166666666666,
+                "grav_torsion_eff": -0.00011999000000000002
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012559015000000002,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 5.901500000000167e-07,
+                "relative_error": 0.004721200000000134,
+                "center_offset": 0.023606000000000675,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.959815e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.098149999999999e-06,
+                "relative_error": 0.03853157894736838,
+                "center_offset": 0.0803699999999994,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.4003600150000002e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 3.6001500000018734e-09,
+                "relative_error": 0.00015000625000007807,
+                "center_offset": 0.0009000375000004686,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 1.9999166666666666,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 8.333333333343518e-05,
+                "relative_error": 4.166666666671759e-05,
+                "center_offset": 0.00016666666666687036,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00011999000000000002,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 9.99999999998127e-09,
+                "relative_error": 8.333333333317725e-05,
+                "center_offset": 0.19990000000000016,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.023606000000000675,
+            "delta_nu_over_nu": 0.0803699999999994,
+            "delta_E": 0.0009000375000004686,
+            "fine_correction_eff": 0.00016666666666687036,
+            "grav_torsion_eff": 0.19990000000000016
+          },
+          "deviation_score": 0.060988540833333514,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.060988540833333514,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.060988540833333514
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7997e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600149999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.9985,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669299999999993e-06
+          },
+          "external": {
+            "z_obs": 0.00012559015000000002,
+            "delta_nu_over_nu": 2.959815e-05,
+            "delta_E": 2.4003600150000002e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999000000000002
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012559015000000002,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.901500000000167e-07,
+            "relative_error": 0.004721200000000134,
+            "center_offset": 0.023606000000000675,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.959815e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.098149999999999e-06,
+            "relative_error": 0.03853157894736838,
+            "center_offset": 0.0803699999999994,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.4003600150000002e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 3.6001500000018734e-09,
+            "relative_error": 0.00015000625000007807,
+            "center_offset": 0.0009000375000004686,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9999166666666666,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 8.333333333343518e-05,
+            "relative_error": 4.166666666671759e-05,
+            "center_offset": 0.00016666666666687036,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00011999000000000002,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 9.99999999998127e-09,
+            "relative_error": 8.333333333317725e-05,
+            "center_offset": 0.19990000000000016,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7997e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.600149999999999e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.9985,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669299999999993e-06
+        },
+        "external": {
+          "z_obs": 0.00012559015000000002,
+          "delta_nu_over_nu": 2.959815e-05,
+          "delta_E": 2.4003600150000002e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999000000000002
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.9994999999999999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_s_atom_high",
+      "v18": {
+        "profile_name": "v19_chain_s_atom_high",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.9994999999999999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998999999999996e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600209999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.9994999999999999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669233333333324e-06
+          },
+          "external": {
+            "z_obs": 0.00012559021,
+            "delta_nu_over_nu": 2.959821e-05,
+            "delta_E": 2.400360021e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7998999999999996e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.600209999999999e-06,
+              "fine_delta": 0.00023998000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.9994999999999999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.7669233333333324e-06
+            },
+            "external": {
+              "z_obs": 0.00012559021,
+              "delta_nu_over_nu": 2.959821e-05,
+              "delta_E": 2.400360021e-05,
+              "fine_correction_eff": 1.9999166666666666,
+              "grav_torsion_eff": -0.00011999
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012559021,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.902099999999938e-07,
+              "relative_error": 0.00472167999999995,
+              "center_offset": 0.02360839999999976,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.959821e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.0982099999999998e-06,
+              "relative_error": 0.0385336842105263,
+              "center_offset": 0.08035799999999924,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.400360021e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 3.6002100000008205e-09,
+              "relative_error": 0.0001500087500000342,
+              "center_offset": 0.0009000525000002053,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9999166666666666,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 8.333333333343518e-05,
+              "relative_error": 4.166666666671759e-05,
+              "center_offset": 0.00016666666666687036,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00011999,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 1.0000000000008375e-08,
+              "relative_error": 8.333333333340313e-05,
+              "center_offset": 0.19989999999999988,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0999e-06,
+                "z_int": 4.7998999999999996e-06,
+                "z_canal": 2.60006e-06,
+                "z_mod": 5.600209999999999e-06,
+                "fine_delta": 0.00023998000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001002,
+                  "p": 5.01,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.999,
+                  "s_atom": 0.9994999999999999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.7669233333333324e-06
+              },
+              "external": {
+                "z_obs": 0.00012559021,
+                "delta_nu_over_nu": 2.959821e-05,
+                "delta_E": 2.400360021e-05,
+                "fine_correction_eff": 1.9999166666666666,
+                "grav_torsion_eff": -0.00011999
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012559021,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 5.902099999999938e-07,
+                "relative_error": 0.00472167999999995,
+                "center_offset": 0.02360839999999976,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.959821e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.0982099999999998e-06,
+                "relative_error": 0.0385336842105263,
+                "center_offset": 0.08035799999999924,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.400360021e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 3.6002100000008205e-09,
+                "relative_error": 0.0001500087500000342,
+                "center_offset": 0.0009000525000002053,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 1.9999166666666666,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 8.333333333343518e-05,
+                "relative_error": 4.166666666671759e-05,
+                "center_offset": 0.00016666666666687036,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00011999,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 1.0000000000008375e-08,
+                "relative_error": 8.333333333340313e-05,
+                "center_offset": 0.19989999999999988,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.02360839999999976,
+            "delta_nu_over_nu": 0.08035799999999924,
+            "delta_E": 0.0009000525000002053,
+            "fine_correction_eff": 0.00016666666666687036,
+            "grav_torsion_eff": 0.19989999999999988
+          },
+          "deviation_score": 0.060986623833333184,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.060986623833333184,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.060986623833333184
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998999999999996e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.600209999999999e-06,
+            "fine_delta": 0.00023998000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.9994999999999999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669233333333324e-06
+          },
+          "external": {
+            "z_obs": 0.00012559021,
+            "delta_nu_over_nu": 2.959821e-05,
+            "delta_E": 2.400360021e-05,
+            "fine_correction_eff": 1.9999166666666666,
+            "grav_torsion_eff": -0.00011999
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012559021,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.902099999999938e-07,
+            "relative_error": 0.00472167999999995,
+            "center_offset": 0.02360839999999976,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.959821e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.0982099999999998e-06,
+            "relative_error": 0.0385336842105263,
+            "center_offset": 0.08035799999999924,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.400360021e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 3.6002100000008205e-09,
+            "relative_error": 0.0001500087500000342,
+            "center_offset": 0.0009000525000002053,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9999166666666666,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 8.333333333343518e-05,
+            "relative_error": 4.166666666671759e-05,
+            "center_offset": 0.00016666666666687036,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00011999,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 1.0000000000008375e-08,
+            "relative_error": 8.333333333340313e-05,
+            "center_offset": 0.19989999999999988,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998999999999996e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.600209999999999e-06,
+          "fine_delta": 0.00023998000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.9994999999999999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669233333333324e-06
+        },
+        "external": {
+          "z_obs": 0.00012559021,
+          "delta_nu_over_nu": 2.959821e-05,
+          "delta_E": 2.400360021e-05,
+          "fine_correction_eff": 1.9999166666666666,
+          "grav_torsion_eff": -0.00011999
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.0010010000000000002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_A_kappa_low",
+      "v18": {
+        "profile_name": "v19_chain_A_kappa_low",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.0010010000000000002,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60003e-06,
+            "z_mod": 5.60018e-06,
+            "fine_delta": 0.00023993000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.0010010000000000002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669366666666657e-06
+          },
+          "external": {
+            "z_obs": 0.00012556518,
+            "delta_nu_over_nu": 2.9593180000000002e-05,
+            "delta_E": 2.399860018e-05,
+            "fine_correction_eff": 1.9997083333333334,
+            "grav_torsion_eff": -0.000119965
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60003e-06,
+              "z_mod": 5.60018e-06,
+              "fine_delta": 0.00023993000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.0010010000000000002,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.7669366666666657e-06
+            },
+            "external": {
+              "z_obs": 0.00012556518,
+              "delta_nu_over_nu": 2.9593180000000002e-05,
+              "delta_E": 2.399860018e-05,
+              "fine_correction_eff": 1.9997083333333334,
+              "grav_torsion_eff": -0.000119965
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012556518,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.651799999999911e-07,
+              "relative_error": 0.004521439999999929,
+              "center_offset": 0.02260719999999965,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.9593180000000002e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.0931800000000003e-06,
+              "relative_error": 0.03835719298245615,
+              "center_offset": 0.08136399999999915,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.399860018e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 1.3998199999994522e-09,
+              "relative_error": 5.832583333331051e-05,
+              "center_offset": 0.00034995499999986317,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9997083333333334,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 0.00029166666666657903,
+              "relative_error": 0.00014583333333328952,
+              "center_offset": 0.0005833333333331581,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.000119965,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 3.500000000000898e-08,
+              "relative_error": 0.0002916666666667415,
+              "center_offset": 0.19964999999999988,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0999e-06,
+                "z_int": 4.7998e-06,
+                "z_canal": 2.60003e-06,
+                "z_mod": 5.60018e-06,
+                "fine_delta": 0.00023993000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.0010010000000000002,
+                  "p": 5.01,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.999,
+                  "s_atom": 0.999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.7669366666666657e-06
+              },
+              "external": {
+                "z_obs": 0.00012556518,
+                "delta_nu_over_nu": 2.9593180000000002e-05,
+                "delta_E": 2.399860018e-05,
+                "fine_correction_eff": 1.9997083333333334,
+                "grav_torsion_eff": -0.000119965
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012556518,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 5.651799999999911e-07,
+                "relative_error": 0.004521439999999929,
+                "center_offset": 0.02260719999999965,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.9593180000000002e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.0931800000000003e-06,
+                "relative_error": 0.03835719298245615,
+                "center_offset": 0.08136399999999915,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.399860018e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 1.3998199999994522e-09,
+                "relative_error": 5.832583333331051e-05,
+                "center_offset": 0.00034995499999986317,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 1.9997083333333334,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 0.00029166666666657903,
+                "relative_error": 0.00014583333333328952,
+                "center_offset": 0.0005833333333331581,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.000119965,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 3.500000000000898e-08,
+                "relative_error": 0.0002916666666667415,
+                "center_offset": 0.19964999999999988,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.02260719999999965,
+            "delta_nu_over_nu": 0.08136399999999915,
+            "delta_E": 0.00034995499999986317,
+            "fine_correction_eff": 0.0005833333333331581,
+            "grav_torsion_eff": 0.19964999999999988
+          },
+          "deviation_score": 0.06091089766666634,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.06091089766666634,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.06091089766666634
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60003e-06,
+            "z_mod": 5.60018e-06,
+            "fine_delta": 0.00023993000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.0010010000000000002,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7669366666666657e-06
+          },
+          "external": {
+            "z_obs": 0.00012556518,
+            "delta_nu_over_nu": 2.9593180000000002e-05,
+            "delta_E": 2.399860018e-05,
+            "fine_correction_eff": 1.9997083333333334,
+            "grav_torsion_eff": -0.000119965
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012556518,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.651799999999911e-07,
+            "relative_error": 0.004521439999999929,
+            "center_offset": 0.02260719999999965,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.9593180000000002e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.0931800000000003e-06,
+            "relative_error": 0.03835719298245615,
+            "center_offset": 0.08136399999999915,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.399860018e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 1.3998199999994522e-09,
+            "relative_error": 5.832583333331051e-05,
+            "center_offset": 0.00034995499999986317,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9997083333333334,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 0.00029166666666657903,
+            "relative_error": 0.00014583333333328952,
+            "center_offset": 0.0005833333333331581,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.000119965,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 3.500000000000898e-08,
+            "relative_error": 0.0002916666666667415,
+            "center_offset": 0.19964999999999988,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60003e-06,
+          "z_mod": 5.60018e-06,
+          "fine_delta": 0.00023993000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.0010010000000000002,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7669366666666657e-06
+        },
+        "external": {
+          "z_obs": 0.00012556518,
+          "delta_nu_over_nu": 2.9593180000000002e-05,
+          "delta_E": 2.399860018e-05,
+          "fine_correction_eff": 1.9997083333333334,
+          "grav_torsion_eff": -0.000119965
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001003,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_A_kappa_high",
+      "v18": {
+        "profile_name": "v19_chain_A_kappa_high",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001003,
+          "p": 5.01,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60009e-06,
+            "z_mod": 5.60018e-06,
+            "fine_delta": 0.00024003000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001003,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.766916666666666e-06
+          },
+          "external": {
+            "z_obs": 0.00012561518000000002,
+            "delta_nu_over_nu": 2.9603180000000003e-05,
+            "delta_E": 2.4008600180000003e-05,
+            "fine_correction_eff": 2.000125,
+            "grav_torsion_eff": -0.00012001500000000002
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60009e-06,
+              "z_mod": 5.60018e-06,
+              "fine_delta": 0.00024003000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001003,
+                "p": 5.01,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.766916666666666e-06
+            },
+            "external": {
+              "z_obs": 0.00012561518000000002,
+              "delta_nu_over_nu": 2.9603180000000003e-05,
+              "delta_E": 2.4008600180000003e-05,
+              "fine_correction_eff": 2.000125,
+              "grav_torsion_eff": -0.00012001500000000002
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012561518000000002,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 6.151800000000194e-07,
+              "relative_error": 0.004921440000000155,
+              "center_offset": 0.024607200000000787,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.9603180000000003e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.1031800000000019e-06,
+              "relative_error": 0.03870807017543866,
+              "center_offset": 0.07936399999999882,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.4008600180000003e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 8.600180000002146e-09,
+              "relative_error": 0.00035834083333342274,
+              "center_offset": 0.002150045000000537,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 2.000125,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 0.00012500000000015277,
+              "relative_error": 6.250000000007638e-05,
+              "center_offset": 0.00025000000000030553,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00012001500000000002,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 1.5000000000019338e-08,
+              "relative_error": 0.00012500000000016114,
+              "center_offset": 0.20015000000000016,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0999e-06,
+                "z_int": 4.7998e-06,
+                "z_canal": 2.60009e-06,
+                "z_mod": 5.60018e-06,
+                "fine_delta": 0.00024003000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001003,
+                  "p": 5.01,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.999,
+                  "s_atom": 0.999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.766916666666666e-06
+              },
+              "external": {
+                "z_obs": 0.00012561518000000002,
+                "delta_nu_over_nu": 2.9603180000000003e-05,
+                "delta_E": 2.4008600180000003e-05,
+                "fine_correction_eff": 2.000125,
+                "grav_torsion_eff": -0.00012001500000000002
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012561518000000002,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 6.151800000000194e-07,
+                "relative_error": 0.004921440000000155,
+                "center_offset": 0.024607200000000787,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.9603180000000003e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.1031800000000019e-06,
+                "relative_error": 0.03870807017543866,
+                "center_offset": 0.07936399999999882,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.4008600180000003e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 8.600180000002146e-09,
+                "relative_error": 0.00035834083333342274,
+                "center_offset": 0.002150045000000537,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 2.000125,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 0.00012500000000015277,
+                "relative_error": 6.250000000007638e-05,
+                "center_offset": 0.00025000000000030553,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00012001500000000002,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 1.5000000000019338e-08,
+                "relative_error": 0.00012500000000016114,
+                "center_offset": 0.20015000000000016,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.024607200000000787,
+            "delta_nu_over_nu": 0.07936399999999882,
+            "delta_E": 0.002150045000000537,
+            "fine_correction_eff": 0.00025000000000030553,
+            "grav_torsion_eff": 0.20015000000000016
+          },
+          "deviation_score": 0.06130424900000012,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.06130424900000012,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.06130424900000012
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60009e-06,
+            "z_mod": 5.60018e-06,
+            "fine_delta": 0.00024003000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001003,
+              "p": 5.01,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.766916666666666e-06
+          },
+          "external": {
+            "z_obs": 0.00012561518000000002,
+            "delta_nu_over_nu": 2.9603180000000003e-05,
+            "delta_E": 2.4008600180000003e-05,
+            "fine_correction_eff": 2.000125,
+            "grav_torsion_eff": -0.00012001500000000002
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012561518000000002,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 6.151800000000194e-07,
+            "relative_error": 0.004921440000000155,
+            "center_offset": 0.024607200000000787,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.9603180000000003e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.1031800000000019e-06,
+            "relative_error": 0.03870807017543866,
+            "center_offset": 0.07936399999999882,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.4008600180000003e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 8.600180000002146e-09,
+            "relative_error": 0.00035834083333342274,
+            "center_offset": 0.002150045000000537,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 2.000125,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 0.00012500000000015277,
+            "relative_error": 6.250000000007638e-05,
+            "center_offset": 0.00025000000000030553,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00012001500000000002,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 1.5000000000019338e-08,
+            "relative_error": 0.00012500000000016114,
+            "center_offset": 0.20015000000000016,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60009e-06,
+          "z_mod": 5.60018e-06,
+          "fine_delta": 0.00024003000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001003,
+            "p": 5.01,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.766916666666666e-06
+        },
+        "external": {
+          "z_obs": 0.00012561518000000002,
+          "delta_nu_over_nu": 2.9603180000000003e-05,
+          "delta_E": 2.4008600180000003e-05,
+          "fine_correction_eff": 2.000125,
+          "grav_torsion_eff": -0.00012001500000000002
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.005,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_p_low",
+      "v18": {
+        "profile_name": "v19_chain_p_low",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.005,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.60003e-06,
+            "fine_delta": 0.00024004,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.005,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.766776666666667e-06
+          },
+          "external": {
+            "z_obs": 0.00012562003,
+            "delta_nu_over_nu": 2.9604030000000002e-05,
+            "delta_E": 2.4009600030000004e-05,
+            "fine_correction_eff": 2.000166666666667,
+            "grav_torsion_eff": -0.00012001999999999999
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.60003e-06,
+              "fine_delta": 0.00024004,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.005,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.766776666666667e-06
+            },
+            "external": {
+              "z_obs": 0.00012562003,
+              "delta_nu_over_nu": 2.9604030000000002e-05,
+              "delta_E": 2.4009600030000004e-05,
+              "fine_correction_eff": 2.000166666666667,
+              "grav_torsion_eff": -0.00012001999999999999
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012562003,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 6.200299999999928e-07,
+              "relative_error": 0.004960239999999942,
+              "center_offset": 0.02480119999999972,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.9604030000000002e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.1040300000000003e-06,
+              "relative_error": 0.03873789473684212,
+              "center_offset": 0.07919399999999913,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.4009600030000004e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 9.600030000003583e-09,
+              "relative_error": 0.00040000125000014925,
+              "center_offset": 0.002400007500000896,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 2.000166666666667,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 0.00016666666666687036,
+              "relative_error": 8.333333333343518e-05,
+              "center_offset": 0.0003333333333337407,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00012001999999999999,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 1.9999999999989644e-08,
+              "relative_error": 0.00016666666666658036,
+              "center_offset": 0.20019999999999988,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0999e-06,
+                "z_int": 4.7998e-06,
+                "z_canal": 2.60006e-06,
+                "z_mod": 5.60003e-06,
+                "fine_delta": 0.00024004,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001002,
+                  "p": 5.005,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.999,
+                  "s_atom": 0.999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.766776666666667e-06
+              },
+              "external": {
+                "z_obs": 0.00012562003,
+                "delta_nu_over_nu": 2.9604030000000002e-05,
+                "delta_E": 2.4009600030000004e-05,
+                "fine_correction_eff": 2.000166666666667,
+                "grav_torsion_eff": -0.00012001999999999999
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012562003,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 6.200299999999928e-07,
+                "relative_error": 0.004960239999999942,
+                "center_offset": 0.02480119999999972,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.9604030000000002e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.1040300000000003e-06,
+                "relative_error": 0.03873789473684212,
+                "center_offset": 0.07919399999999913,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.4009600030000004e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 9.600030000003583e-09,
+                "relative_error": 0.00040000125000014925,
+                "center_offset": 0.002400007500000896,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 2.000166666666667,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 0.00016666666666687036,
+                "relative_error": 8.333333333343518e-05,
+                "center_offset": 0.0003333333333337407,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00012001999999999999,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 1.9999999999989644e-08,
+                "relative_error": 0.00016666666666658036,
+                "center_offset": 0.20019999999999988,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.02480119999999972,
+            "delta_nu_over_nu": 0.07919399999999913,
+            "delta_E": 0.002400007500000896,
+            "fine_correction_eff": 0.0003333333333337407,
+            "grav_torsion_eff": 0.20019999999999988
+          },
+          "deviation_score": 0.06138570816666668,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.06138570816666668,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.06138570816666668
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.60003e-06,
+            "fine_delta": 0.00024004,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.005,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.766776666666667e-06
+          },
+          "external": {
+            "z_obs": 0.00012562003,
+            "delta_nu_over_nu": 2.9604030000000002e-05,
+            "delta_E": 2.4009600030000004e-05,
+            "fine_correction_eff": 2.000166666666667,
+            "grav_torsion_eff": -0.00012001999999999999
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012562003,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 6.200299999999928e-07,
+            "relative_error": 0.004960239999999942,
+            "center_offset": 0.02480119999999972,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.9604030000000002e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.1040300000000003e-06,
+            "relative_error": 0.03873789473684212,
+            "center_offset": 0.07919399999999913,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.4009600030000004e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 9.600030000003583e-09,
+            "relative_error": 0.00040000125000014925,
+            "center_offset": 0.002400007500000896,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 2.000166666666667,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 0.00016666666666687036,
+            "relative_error": 8.333333333343518e-05,
+            "center_offset": 0.0003333333333337407,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00012001999999999999,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 1.9999999999989644e-08,
+            "relative_error": 0.00016666666666658036,
+            "center_offset": 0.20019999999999988,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.60003e-06,
+          "fine_delta": 0.00024004,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.005,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.766776666666667e-06
+        },
+        "external": {
+          "z_obs": 0.00012562003,
+          "delta_nu_over_nu": 2.9604030000000002e-05,
+          "delta_E": 2.4009600030000004e-05,
+          "fine_correction_eff": 2.000166666666667,
+          "grav_torsion_eff": -0.00012001999999999999
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    },
+    {
+      "theta": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.015,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "profile_name": "v19_chain_p_high",
+      "v18": {
+        "profile_name": "v19_chain_p_high",
+        "theta_v18": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "A_kappa": 0.001002,
+          "p": 5.015,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 0.999,
+          "s_atom": 0.999,
+          "s_canal": 1.0
+        },
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.60033e-06,
+            "fine_delta": 0.00023992000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.015,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7670766666666666e-06
+          },
+          "external": {
+            "z_obs": 0.00012556033000000002,
+            "delta_nu_over_nu": 2.9592330000000003e-05,
+            "delta_E": 2.3997600330000003e-05,
+            "fine_correction_eff": 1.9996666666666667,
+            "grav_torsion_eff": -0.00011996000000000002
+          },
+          "verdict": "supported"
+        },
+        "comparison": {
+          "v16": {
+            "suite": "v16prediction_suite",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "internal": {
+              "z_geo": 1.0999e-06,
+              "z_int": 4.7998e-06,
+              "z_canal": 2.60006e-06,
+              "z_mod": 5.60033e-06,
+              "fine_delta": 0.00023992000000000002,
+              "alpha_residual": 0.0,
+              "theta_v15": {
+                "aE": 0.0,
+                "aR": 0.0,
+                "A_kappa": 0.001002,
+                "p": 5.015,
+                "alpha0": 0.0072973525692838015,
+                "s_geo": 0.999,
+                "s_atom": 0.999,
+                "s_canal": 1.0
+              },
+              "theta_supported": true,
+              "internal_balance": 2.7670766666666666e-06
+            },
+            "external": {
+              "z_obs": 0.00012556033000000002,
+              "delta_nu_over_nu": 2.9592330000000003e-05,
+              "delta_E": 2.3997600330000003e-05,
+              "fine_correction_eff": 1.9996666666666667,
+              "grav_torsion_eff": -0.00011996000000000002
+            },
+            "verdict": "supported"
+          },
+          "reference": {
+            "source": "minimal theoretical bounds",
+            "locked_names": [
+              "alpha0",
+              "s_geo",
+              "s_atom",
+              "A_kappa",
+              "p"
+            ],
+            "frozen_names": [
+              "aE",
+              "aR",
+              "s_canal"
+            ],
+            "order": [
+              "z_obs",
+              "delta_nu_over_nu",
+              "delta_E",
+              "fine_correction_eff",
+              "grav_torsion_eff"
+            ],
+            "targets": {
+              "z_obs": 0.000125,
+              "delta_nu_over_nu": 2.85e-05,
+              "delta_E": 2.4e-05,
+              "fine_correction_eff": 2.0,
+              "grav_torsion_eff": -0.00012
+            },
+            "bounds": {
+              "z_obs": [
+                0.0001,
+                0.00015
+              ],
+              "delta_nu_over_nu": [
+                2.5e-05,
+                3.5e-05
+              ],
+              "delta_E": [
+                2e-05,
+                2.8e-05
+              ],
+              "fine_correction_eff": [
+                1.5,
+                2.5
+              ],
+              "grav_torsion_eff": [
+                -0.0002,
+                0.0
+              ]
+            }
+          },
+          "rows": [
+            {
+              "name": "z_obs",
+              "predicted": 0.00012556033000000002,
+              "target": 0.000125,
+              "lower": 0.0001,
+              "upper": 0.00015,
+              "absolute_error": 5.603300000000177e-07,
+              "relative_error": 0.004482640000000142,
+              "center_offset": 0.022413200000000716,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_nu_over_nu",
+              "predicted": 2.9592330000000003e-05,
+              "target": 2.85e-05,
+              "lower": 2.5e-05,
+              "upper": 3.5e-05,
+              "absolute_error": 1.0923300000000018e-06,
+              "relative_error": 0.03832736842105269,
+              "center_offset": 0.08153399999999884,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "delta_E",
+              "predicted": 2.3997600330000003e-05,
+              "target": 2.4e-05,
+              "lower": 2e-05,
+              "upper": 2.8e-05,
+              "absolute_error": 2.399669999997501e-09,
+              "relative_error": 9.998624999989587e-05,
+              "center_offset": 0.0005999174999993754,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "fine_correction_eff",
+              "predicted": 1.9996666666666667,
+              "target": 2.0,
+              "lower": 1.5,
+              "upper": 2.5,
+              "absolute_error": 0.0003333333333332966,
+              "relative_error": 0.0001666666666666483,
+              "center_offset": 0.0006666666666665932,
+              "in_bounds": true,
+              "sign_ok": true
+            },
+            {
+              "name": "grav_torsion_eff",
+              "predicted": -0.00011996000000000002,
+              "target": -0.00012,
+              "lower": -0.0002,
+              "upper": 0.0,
+              "absolute_error": 3.999999999997929e-08,
+              "relative_error": 0.0003333333333331607,
+              "center_offset": 0.19960000000000017,
+              "in_bounds": true,
+              "sign_ok": true
+            }
+          ],
+          "all_in_bounds": true,
+          "all_signs_ok": true,
+          "comparison_ok": true
+        },
+        "deviation": {
+          "comparison": {
+            "v16": {
+              "suite": "v16prediction_suite",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "internal": {
+                "z_geo": 1.0999e-06,
+                "z_int": 4.7998e-06,
+                "z_canal": 2.60006e-06,
+                "z_mod": 5.60033e-06,
+                "fine_delta": 0.00023992000000000002,
+                "alpha_residual": 0.0,
+                "theta_v15": {
+                  "aE": 0.0,
+                  "aR": 0.0,
+                  "A_kappa": 0.001002,
+                  "p": 5.015,
+                  "alpha0": 0.0072973525692838015,
+                  "s_geo": 0.999,
+                  "s_atom": 0.999,
+                  "s_canal": 1.0
+                },
+                "theta_supported": true,
+                "internal_balance": 2.7670766666666666e-06
+              },
+              "external": {
+                "z_obs": 0.00012556033000000002,
+                "delta_nu_over_nu": 2.9592330000000003e-05,
+                "delta_E": 2.3997600330000003e-05,
+                "fine_correction_eff": 1.9996666666666667,
+                "grav_torsion_eff": -0.00011996000000000002
+              },
+              "verdict": "supported"
+            },
+            "reference": {
+              "source": "minimal theoretical bounds",
+              "locked_names": [
+                "alpha0",
+                "s_geo",
+                "s_atom",
+                "A_kappa",
+                "p"
+              ],
+              "frozen_names": [
+                "aE",
+                "aR",
+                "s_canal"
+              ],
+              "order": [
+                "z_obs",
+                "delta_nu_over_nu",
+                "delta_E",
+                "fine_correction_eff",
+                "grav_torsion_eff"
+              ],
+              "targets": {
+                "z_obs": 0.000125,
+                "delta_nu_over_nu": 2.85e-05,
+                "delta_E": 2.4e-05,
+                "fine_correction_eff": 2.0,
+                "grav_torsion_eff": -0.00012
+              },
+              "bounds": {
+                "z_obs": [
+                  0.0001,
+                  0.00015
+                ],
+                "delta_nu_over_nu": [
+                  2.5e-05,
+                  3.5e-05
+                ],
+                "delta_E": [
+                  2e-05,
+                  2.8e-05
+                ],
+                "fine_correction_eff": [
+                  1.5,
+                  2.5
+                ],
+                "grav_torsion_eff": [
+                  -0.0002,
+                  0.0
+                ]
+              }
+            },
+            "rows": [
+              {
+                "name": "z_obs",
+                "predicted": 0.00012556033000000002,
+                "target": 0.000125,
+                "lower": 0.0001,
+                "upper": 0.00015,
+                "absolute_error": 5.603300000000177e-07,
+                "relative_error": 0.004482640000000142,
+                "center_offset": 0.022413200000000716,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_nu_over_nu",
+                "predicted": 2.9592330000000003e-05,
+                "target": 2.85e-05,
+                "lower": 2.5e-05,
+                "upper": 3.5e-05,
+                "absolute_error": 1.0923300000000018e-06,
+                "relative_error": 0.03832736842105269,
+                "center_offset": 0.08153399999999884,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "delta_E",
+                "predicted": 2.3997600330000003e-05,
+                "target": 2.4e-05,
+                "lower": 2e-05,
+                "upper": 2.8e-05,
+                "absolute_error": 2.399669999997501e-09,
+                "relative_error": 9.998624999989587e-05,
+                "center_offset": 0.0005999174999993754,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "fine_correction_eff",
+                "predicted": 1.9996666666666667,
+                "target": 2.0,
+                "lower": 1.5,
+                "upper": 2.5,
+                "absolute_error": 0.0003333333333332966,
+                "relative_error": 0.0001666666666666483,
+                "center_offset": 0.0006666666666665932,
+                "in_bounds": true,
+                "sign_ok": true
+              },
+              {
+                "name": "grav_torsion_eff",
+                "predicted": -0.00011996000000000002,
+                "target": -0.00012,
+                "lower": -0.0002,
+                "upper": 0.0,
+                "absolute_error": 3.999999999997929e-08,
+                "relative_error": 0.0003333333333331607,
+                "center_offset": 0.19960000000000017,
+                "in_bounds": true,
+                "sign_ok": true
+              }
+            ],
+            "all_in_bounds": true,
+            "all_signs_ok": true,
+            "comparison_ok": true
+          },
+          "deviation_vector": {
+            "z_obs": 0.022413200000000716,
+            "delta_nu_over_nu": 0.08153399999999884,
+            "delta_E": 0.0005999174999993754,
+            "fine_correction_eff": 0.0006666666666665932,
+            "grav_torsion_eff": 0.19960000000000017
+          },
+          "deviation_score": 0.060962756833333145,
+          "deviation_class": "supported",
+          "monotone_ok": true
+        },
+        "verdict": "supported",
+        "supported": true,
+        "deviation_score": 0.060962756833333145,
+        "deviation_class": "supported",
+        "internal_ok": true,
+        "external_ok": true,
+        "comparison_ok": true,
+        "score": 0.060962756833333145
+      },
+      "v17": {
+        "v16": {
+          "suite": "v16prediction_suite",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "internal": {
+            "z_geo": 1.0999e-06,
+            "z_int": 4.7998e-06,
+            "z_canal": 2.60006e-06,
+            "z_mod": 5.60033e-06,
+            "fine_delta": 0.00023992000000000002,
+            "alpha_residual": 0.0,
+            "theta_v15": {
+              "aE": 0.0,
+              "aR": 0.0,
+              "A_kappa": 0.001002,
+              "p": 5.015,
+              "alpha0": 0.0072973525692838015,
+              "s_geo": 0.999,
+              "s_atom": 0.999,
+              "s_canal": 1.0
+            },
+            "theta_supported": true,
+            "internal_balance": 2.7670766666666666e-06
+          },
+          "external": {
+            "z_obs": 0.00012556033000000002,
+            "delta_nu_over_nu": 2.9592330000000003e-05,
+            "delta_E": 2.3997600330000003e-05,
+            "fine_correction_eff": 1.9996666666666667,
+            "grav_torsion_eff": -0.00011996000000000002
+          },
+          "verdict": "supported"
+        },
+        "reference": {
+          "source": "minimal theoretical bounds",
+          "locked_names": [
+            "alpha0",
+            "s_geo",
+            "s_atom",
+            "A_kappa",
+            "p"
+          ],
+          "frozen_names": [
+            "aE",
+            "aR",
+            "s_canal"
+          ],
+          "order": [
+            "z_obs",
+            "delta_nu_over_nu",
+            "delta_E",
+            "fine_correction_eff",
+            "grav_torsion_eff"
+          ],
+          "targets": {
+            "z_obs": 0.000125,
+            "delta_nu_over_nu": 2.85e-05,
+            "delta_E": 2.4e-05,
+            "fine_correction_eff": 2.0,
+            "grav_torsion_eff": -0.00012
+          },
+          "bounds": {
+            "z_obs": [
+              0.0001,
+              0.00015
+            ],
+            "delta_nu_over_nu": [
+              2.5e-05,
+              3.5e-05
+            ],
+            "delta_E": [
+              2e-05,
+              2.8e-05
+            ],
+            "fine_correction_eff": [
+              1.5,
+              2.5
+            ],
+            "grav_torsion_eff": [
+              -0.0002,
+              0.0
+            ]
+          }
+        },
+        "rows": [
+          {
+            "name": "z_obs",
+            "predicted": 0.00012556033000000002,
+            "target": 0.000125,
+            "lower": 0.0001,
+            "upper": 0.00015,
+            "absolute_error": 5.603300000000177e-07,
+            "relative_error": 0.004482640000000142,
+            "center_offset": 0.022413200000000716,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_nu_over_nu",
+            "predicted": 2.9592330000000003e-05,
+            "target": 2.85e-05,
+            "lower": 2.5e-05,
+            "upper": 3.5e-05,
+            "absolute_error": 1.0923300000000018e-06,
+            "relative_error": 0.03832736842105269,
+            "center_offset": 0.08153399999999884,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "delta_E",
+            "predicted": 2.3997600330000003e-05,
+            "target": 2.4e-05,
+            "lower": 2e-05,
+            "upper": 2.8e-05,
+            "absolute_error": 2.399669999997501e-09,
+            "relative_error": 9.998624999989587e-05,
+            "center_offset": 0.0005999174999993754,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "fine_correction_eff",
+            "predicted": 1.9996666666666667,
+            "target": 2.0,
+            "lower": 1.5,
+            "upper": 2.5,
+            "absolute_error": 0.0003333333333332966,
+            "relative_error": 0.0001666666666666483,
+            "center_offset": 0.0006666666666665932,
+            "in_bounds": true,
+            "sign_ok": true
+          },
+          {
+            "name": "grav_torsion_eff",
+            "predicted": -0.00011996000000000002,
+            "target": -0.00012,
+            "lower": -0.0002,
+            "upper": 0.0,
+            "absolute_error": 3.999999999997929e-08,
+            "relative_error": 0.0003333333333331607,
+            "center_offset": 0.19960000000000017,
+            "in_bounds": true,
+            "sign_ok": true
+          }
+        ],
+        "all_in_bounds": true,
+        "all_signs_ok": true,
+        "comparison_ok": true
+      },
+      "v16": {
+        "suite": "v16prediction_suite",
+        "locked_names": [
+          "alpha0",
+          "s_geo",
+          "s_atom",
+          "A_kappa",
+          "p"
+        ],
+        "frozen_names": [
+          "aE",
+          "aR",
+          "s_canal"
+        ],
+        "internal": {
+          "z_geo": 1.0999e-06,
+          "z_int": 4.7998e-06,
+          "z_canal": 2.60006e-06,
+          "z_mod": 5.60033e-06,
+          "fine_delta": 0.00023992000000000002,
+          "alpha_residual": 0.0,
+          "theta_v15": {
+            "aE": 0.0,
+            "aR": 0.0,
+            "A_kappa": 0.001002,
+            "p": 5.015,
+            "alpha0": 0.0072973525692838015,
+            "s_geo": 0.999,
+            "s_atom": 0.999,
+            "s_canal": 1.0
+          },
+          "theta_supported": true,
+          "internal_balance": 2.7670766666666666e-06
+        },
+        "external": {
+          "z_obs": 0.00012556033000000002,
+          "delta_nu_over_nu": 2.9592330000000003e-05,
+          "delta_E": 2.3997600330000003e-05,
+          "fine_correction_eff": 1.9996666666666667,
+          "grav_torsion_eff": -0.00011996000000000002
+        },
+        "verdict": "supported"
+      },
+      "v15_supported": true,
+      "chain_length": 4,
+      "supported": true
+    }
+  ],
+  "supported_chain_length": 4,
+  "fragile_layer": "none",
+  "recovery_margin": 1e-06,
+  "bottleneck_flag": true,
+  "verdict": "borderline",
+  "timestamp": "20260519-171240Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19robustglobal_check_20260519-171240Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v19robustglobal_check_20260519-171240Z.txt"
+}

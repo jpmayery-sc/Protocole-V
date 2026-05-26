@@ -1,0 +1,41 @@
+{
+  "suite": "v75_resolution_suite",
+  "timestamp": "20260520-224018Z",
+  "v75_global_verdict": "cadre_BBN_coherent",
+  "overall_verdict": "cadre_BBN_coherent",
+  "verdict": "cadre_BBN_coherent",
+  "supported_count": 3,
+  "cadre_BBN_coherent_count": 1,
+  "total": 4,
+  "items": [
+    {
+      "label": "v75_pipeline_check",
+      "verdict": "supported",
+      "bbn_regime_ok": true,
+      "observables_loaded": true,
+      "branches_explored": true
+    },
+    {
+      "label": "v75_bbn_framework",
+      "verdict": "supported",
+      "D_over_H_coherent": true,
+      "He_over_H_coherent": true,
+      "Li_branch_reinterpretation": true
+    },
+    {
+      "label": "v75_success_criteria",
+      "verdict": "supported",
+      "multi_sector_ok": true,
+      "no_new_particle_needed": true,
+      "stability_ok": true
+    },
+    {
+      "label": "v75_synthesis",
+      "verdict": "cadre_BBN_coherent",
+      "v75_global_verdict": "cadre_BBN_coherent",
+      "passage_v76_recommended": true
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v75_resolution\\v75_resolution_suite_summary_20260520-224018Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v75_resolution\\v75_resolution_suite_summary_20260520-224018Z.txt"
+}

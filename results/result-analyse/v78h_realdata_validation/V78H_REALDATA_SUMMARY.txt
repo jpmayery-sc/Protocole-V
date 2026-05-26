@@ -1,0 +1,18 @@
+V78H real-data validation summary
+timestamp: 20260521-144925Z
+verdict: accepted_band_found
+input_csv: D:\Privé\Tout ne fait qu'un\experience\experience 4\data\v78h_real_bbn_reference.csv
+accepted_count: 1/20
+best_fit_beta_e_phys: 0.0
+best_fit_gamma_exch_phys: 0.0
+best_fit_gamma_drain_phys: 0.0
+curve_reading: courbe plate à courbure mixte
+surface_reading: surface acceptable mais étroite
+comparison_with_v77g: cohérente qualitativement avec V77G sur une tranche unique
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v78h_realdata_validation\v78h_results_full.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v78h_realdata_validation\v78h_results_accepted.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v78h_realdata_validation\plots\v78h_Litot_vs_beta_e.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v78h_realdata_validation\plots\v78h_Litot_surface_gamma.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v78h_realdata_validation\plots\v78h_DH_vs_param.png

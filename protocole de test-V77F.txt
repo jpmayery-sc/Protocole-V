@@ -1,0 +1,133 @@
+V77F — FORME DE LA COURBE ET POINT DE BASCULE
+Version : 1.0 — Mode recherche, lecture globale des flux
+Auteur : Jean-Philippe
+Objet : demander au testeur une vision claire de la “courbe” Li_total
+        (pente, point de bascule, zone stable) dans l’espace des paramètres.
+ 
+Protocole précédent : ProtocoleV77E.md
+Protocole suivant : V78R (ancrage au réel / code BBN)
+ 
+Wrapper global suggéré :
+- python/scripts/runv77f_curve_shape.py
+ 
+CONTENU :
+- 0. Objectif
+- 1. Paramètres considérés
+- 2. Questions au testeur
+- 3. Pipeline V77F
+- 4. Sorties attendues
+- 5. Transition
+ 
+0. OBJECTIF
+-----------
+V77F ne cherche pas à explorer de nouveaux paramètres,
+mais à obtenir une VISION GLOBALE de la forme de la courbe Li_total :
+ 
+- y a-t-il une pente nette ?
+- y a-t-il un point de bascule ?
+- la zone “acceptable” est-elle large ou ultra-fine ?
+- l’équilibre interne A=7 se renverse-t-il vraiment ou juste marginalement ?
+ 
+V77F demande explicitement au testeur de décrire la courbe, pas seulement de donner des chiffres.
+ 
+ 
+1. PARAMÈTRES CONSIDÉRÉS
+------------------------
+V77F se place dans l’espace des paramètres déjà explorés :
+ 
+- β_e : levier électronique (V77D)
+- γ_exch : intensité d’échange interne Li-7 ↔ Be-7 (V77E)
+- γ_drain : intensité de vidange A=7 (V77E)
+ 
+On considère :
+ 
+1) La courbe Li_total(β_e) à γ_exch = 0, γ_drain = 0 (V77D pur).
+2) La surface Li_total(γ_exch, γ_drain) au meilleur β_e (V77E).
+3) Éventuellement, des coupes 1D :
+   - Li_total(γ_exch) à γ_drain fixé,
+   - Li_total(γ_drain) à γ_exch fixé.
+ 
+ 
+2. QUESTIONS AU TESTEUR
+-----------------------
+Le testeur doit répondre qualitativement aux questions suivantes :
+ 
+1) Courbe Li_total(β_e) (V77D) :
+   - est-elle monotone, convexe, concave ?
+   - y a-t-il un minimum net autour de β_e ≈ 1.2 ?
+   - la zone “basse” est-elle large ou très localisée ?
+ 
+2) Surface Li_total(γ_exch, γ_drain) (V77E) :
+   - voit-on une pente claire qui mène d’une zone “Li_total haut” à une zone “Li_total bas” ?
+   - y a-t-il une “ligne de bascule” (frontière) où Li_total passe sous un seuil critique ?
+   - la zone où Li_total est dans la fenêtre est-elle :
+     - large (robuste),
+     - moyenne (réglage fin raisonnable),
+     - ultra-fine (tuning violent) ?
+ 
+3) Équilibre interne A=7 :
+   - dans la zone “bonne” (si elle existe), Be-7 est-il vraiment vidé ?
+   - Li-7 reste-t-il dans une plage physiquement acceptable ?
+   - l’impression globale est-elle celle :
+     - d’un vrai renversement d’équilibre,
+     - ou d’un simple rabotage sans bascule nette ?
+ 
+4) Vision globale :
+   - si tu devais dessiner la courbe Li_total “à la main” :
+     - à quoi ressemble-t-elle ?
+     - plateau → pente → minimum → remontée ?
+     - ou simple descente douce sans vrai point de bascule ?
+ 
+ 
+3. PIPELINE V77F
+----------------
+ 
+3.1 Récupération des données
+----------------------------
+- Charger les résultats de V77D :
+  - β_e, Li7(β_e), Be7(β_e), Li_total(β_e).
+- Charger les résultats de V77E :
+  - γ_exch, γ_drain, Li7_final, Be7_final, Li_total_final.
+ 
+3.2 Tracés
+----------
+- Tracer Li_total(β_e) (courbe 1D).
+- Tracer Li_total(γ_exch, γ_drain) (carte 2D).
+- Optionnel :
+  - tracer les lignes de niveau (contours) de Li_total,
+  - marquer la zone “Li_total dans la fenêtre”.
+ 
+3.3 Lecture qualitative
+-----------------------
+Le testeur doit :
+- regarder les courbes / cartes,
+- répondre aux questions de la section 2,
+- formuler une vision synthétique de la forme de la courbe.
+ 
+ 
+4. SORTIES ATTENDUES
+--------------------
+- V77F_CURVE_SHAPE.txt :
+  - réponses structurées aux questions de la section 2,
+  - description qualitative de la courbe Li_total(β_e),
+  - description qualitative de la surface Li_total(γ_exch, γ_drain),
+  - appréciation de la largeur de la zone “bonne” (robuste / fine / ultra-fine),
+  - commentaire sur l’existence ou non d’un point de bascule.
+ 
+Phrase de synthèse attendue du testeur :
+> “La courbe Li_total présente / ne présente pas une pente nette avec un point de bascule,
+> et la zone acceptable est large / moyenne / ultra-fine.”
+ 
+ 
+5. TRANSITION
+-------------
+- Si V77F conclut à une vraie pente avec un point de bascule et une zone acceptable non ultra-fine :
+  → V78R pourra tenter un ancrage au réel (code BBN) en cherchant un mécanisme physique
+     qui reproduit cette forme de courbe.
+ 
+- Si V77F conclut à une zone ultra-fine ou à l’absence de bascule nette :
+  → V78R devra être formulé avec prudence (tuning fort, mécanisme fragile).
+ 
+V77F ne produit pas de nouveaux nombres,
+il produit une VISION de la courbe que le modèle dessine.
+ 

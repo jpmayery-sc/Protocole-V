@@ -1,0 +1,26 @@
+JWST-01 LRD pipeline summary
+timestamp: 20260522-142115Z
+verdict: jwst01_multilayer_supported
+best_simple_chi2: 209.94810549764756
+best_multi_chi2: 45.152624328055516
+delta_chi2: 164.79548116959205
+
+Observed target:
+- uv_optical_color: 2.18
+- sed_redness: 1.42
+- compactness_kpc: 0.31
+- xray_suppression: 0.08
+- radio_suppression: 0.13
+- balmer_strength: 0.74
+- he_strength: 0.63
+- abundance_index: 0.86
+
+Best multi-layer metrics:
+- uv_optical_color: 1.3741798046706855
+- sed_redness: 1.4443185332192066
+- compactness_kpc: 0.31
+- xray_suppression: 0.08
+- radio_suppression: 0.13
+- balmer_strength: 0.74
+- he_strength: 0.63
+- abundance_index: 0.86

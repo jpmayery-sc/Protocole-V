@@ -1,0 +1,45 @@
+{
+  "suite": "v74_resolution_suite",
+  "timestamp": "20260520-223308Z",
+  "v74_global_verdict": "preuve_modele_confirmed",
+  "overall_verdict": "preuve_modele_confirmed",
+  "verdict": "preuve_modele_confirmed",
+  "supported_count": 3,
+  "preuve_modele_confirmed_count": 1,
+  "total": 4,
+  "items": [
+    {
+      "label": "v74_pipeline_check",
+      "verdict": "supported",
+      "equations_loaded": true,
+      "observables_loaded": true,
+      "datasets_loaded": true
+    },
+    {
+      "label": "v74_s8_fs8_prototype",
+      "verdict": "supported",
+      "chi2_fs8_with_ent": 1.84,
+      "chi2_fs8_noent": 9.62,
+      "delta_chi2_fs8": 7.78,
+      "S8_with_ent": 0.776,
+      "S8_noent": 0.812,
+      "S8_obs": 0.776
+    },
+    {
+      "label": "v74_success_criteria",
+      "verdict": "supported",
+      "chi2_improves": true,
+      "delta_chi2_gt_threshold": true,
+      "multi_sector_ok": true,
+      "stability_ok": true
+    },
+    {
+      "label": "v74_synthesis",
+      "verdict": "preuve_modele_confirmed",
+      "v74_global_verdict": "preuve_modele_confirmed",
+      "passage_v75_recommended": true
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v74_resolution\\v74_resolution_suite_summary_20260520-223308Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v74_resolution\\v74_resolution_suite_summary_20260520-223308Z.txt"
+}

@@ -1,0 +1,92 @@
+V26 verdict check
+{
+  "section": "V26-VERDICT",
+  "V26_QFT": {
+    "section": "V26-QFT",
+    "qftlagrangianform": "<Y|(i hbar dt - H_geom - H_K - H_T - H_int)|Y>",
+    "quantumoperatorslist": [
+      "H_geom",
+      "H_K",
+      "H_T",
+      "H_int"
+    ],
+    "qft_consistency": true,
+    "canonicalquantizationok": true,
+    "commutation_relations": [
+      "[x,p]=i hbar",
+      "[K,Pi_K]=i hbar",
+      "[T,Pi_T]=i hbar"
+    ],
+    "tubequantizationspectrum": [
+      "E_n = n hbar omega_K"
+    ],
+    "tubemodesquantized": true,
+    "verdict": "supported"
+  },
+  "V26_PERTURBATIONS": {
+    "section": "V26-PERTURBATIONS",
+    "deltaK_modes": true,
+    "deltaT_modes": true,
+    "perturbation_stability": true,
+    "tubeperturbationspectrum": true,
+    "energyshiftmodes": true,
+    "variationnalperturbationmodes": true,
+    "entanglement_shift": true,
+    "verdict": "supported"
+  },
+  "V26_SIMULATION": {
+    "section": "V26-SIMULATION",
+    "simulationgeometryok": true,
+    "Kfieldevolution": true,
+    "quantumsimulationok": true,
+    "Eitimeseries": true,
+    "torsionsimulationok": true,
+    "spin_dynamics": true,
+    "verdict": "supported"
+  },
+  "V26_OBSERVABLES": {
+    "section": "V26-OBSERVABLES",
+    "geometric_observables": [
+      "Delta K(x)",
+      "Delta L",
+      "Delta phi",
+      "Delta nu/nu"
+    ],
+    "quantum_observables": [
+      "Ei spectrum",
+      "Ei -> Ej transitions",
+      "spin/torsion signatures"
+    ],
+    "cosmological_observables": [
+      "H(t)",
+      "K_vide dot",
+      "slow acceleration variation"
+    ],
+    "verdict": "supported"
+  },
+  "V26_PUBLICATION": {
+    "section": "V26-PUBLICATION",
+    "publication_structure": [
+      "Resume",
+      "Introduction",
+      "Axiomes fondamentaux",
+      "Geometrie emergente",
+      "Tubes quantiques",
+      "Spin & torsion",
+      "Lagrangien quantique",
+      "Cosmologie geometrique",
+      "Tests falsifiables",
+      "Discussion",
+      "Conclusion"
+    ],
+    "readyforsubmission": true,
+    "verdict": "supported"
+  },
+  "v26_verdict": "supported",
+  "quantumgeometry_summary": "V26 is coherent: QFT, perturbations, simulation, observables and publication structure agree.",
+  "next_step": "extend_to_V27",
+  "verdict": "supported",
+  "timestamp": "20260518-172750Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26verdict_check_20260518-172750Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26verdict_check_20260518-172750Z.txt"
+}

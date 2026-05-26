@@ -1,0 +1,8 @@
+V21 recovery check
+timestamp: 20260519-172458Z
+verdict: supported
+recovery_margin: 1e-06
+recovery_depth: 0.0005
+resolution_score: 5.0005
+supported_chain_length: 4
+bottleneck_flag: True

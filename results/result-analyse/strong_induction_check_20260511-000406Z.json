@@ -1,0 +1,49 @@
+{
+  "timestamp": "20260511-000406Z",
+  "verdict": "supported",
+  "monotone_ok": true,
+  "curvature_ok": true,
+  "sign_ok": true,
+  "cases": [
+    {
+      "name": "weak",
+      "field_rate": 1.0,
+      "gain": 1.0,
+      "phase": 0.0,
+      "linear_prediction": 1.0,
+      "induced_voltage": 0.24870600354319242,
+      "deviation_from_linear": 0.7512939964568076,
+      "relative_deviation": 0.7512939964568076
+    },
+    {
+      "name": "intermediate",
+      "field_rate": 4.0,
+      "gain": 1.0,
+      "phase": 0.0,
+      "linear_prediction": 4.0,
+      "induced_voltage": 0.9242343145200195,
+      "deviation_from_linear": 3.0757656854799804,
+      "relative_deviation": 0.7689414213699951
+    },
+    {
+      "name": "strong",
+      "field_rate": 10.0,
+      "gain": 1.0,
+      "phase": 0.0,
+      "linear_prediction": 10.0,
+      "induced_voltage": 1.6965672799150258,
+      "deviation_from_linear": 8.303432720084974,
+      "relative_deviation": 0.8303432720084973
+    },
+    {
+      "name": "very_strong",
+      "field_rate": 18.0,
+      "gain": 1.0,
+      "phase": 0.0,
+      "linear_prediction": 18.0,
+      "induced_voltage": 1.9560522294776272,
+      "deviation_from_linear": 16.043947770522372,
+      "relative_deviation": 0.8913304316956874
+    }
+  ]
+}

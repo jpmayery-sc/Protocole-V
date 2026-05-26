@@ -1,0 +1,6 @@
+V16 external check
+timestamp: 20260519-172519Z
+verdict: supported
+z_obs: 0.0001256
+delta_nu_over_nu: 2.96e-05
+delta_E: 2.40056e-05

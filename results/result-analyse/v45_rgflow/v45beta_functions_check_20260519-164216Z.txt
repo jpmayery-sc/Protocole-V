@@ -1,0 +1,6 @@
+V45 beta functions check
+timestamp: 20260519-164216Z
+verdict: supported
+beta_functions: {'lambda_K': 'a_K lambda_K^2 + b_K lambda_KT^2', 'lambda_T': 'a_T lambda_T^2 + b_T lambda_KT^2', 'lambda_KT': 'c lambda_KT (lambda_K + lambda_T)', 'gamma': '0', 'Y_inf': '0', 'xi': 'alpha_xi xi', 'eta': 'alpha_eta eta'}
+RG_equations: 6
+beta_ok: True

@@ -1,0 +1,50 @@
+{
+  "section": "V40-STABILITY",
+  "stability_grid": [
+    {
+      "z": 0.0,
+      "sent": 0.9,
+      "k_bg": 1.0,
+      "lagrangian_density": 1.258
+    },
+    {
+      "z": 0.5,
+      "sent": 0.8597032437518755,
+      "k_bg": 1.0498589407196788,
+      "lagrangian_density": 1.2615005082195114
+    },
+    {
+      "z": 1.0,
+      "sent": 0.8275256303243547,
+      "k_bg": 1.086734862526058,
+      "lagrangian_density": 1.2637488114534907
+    },
+    {
+      "z": 1.5,
+      "sent": 0.8018312841215098,
+      "k_bg": 1.1162277138629513,
+      "lagrangian_density": 1.2655178115151686
+    },
+    {
+      "z": 2.0,
+      "sent": 0.7813139319481198,
+      "k_bg": 1.1409183116147532,
+      "lagrangian_density": 1.2670974473786116
+    },
+    {
+      "z": 3.0,
+      "sent": 0.7518480521291783,
+      "k_bg": 1.1809926614295303,
+      "lagrangian_density": 1.27009224506884
+    }
+  ],
+  "positivity_ok": true,
+  "bounded_variation_ok": true,
+  "multi_scale_ok": true,
+  "source_v39_supported": true,
+  "v40_stability_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-154040Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v40_effective_model\\v40stability_check_20260519-154040Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v40_effective_model\\v40stability_check_20260519-154040Z.txt"
+}

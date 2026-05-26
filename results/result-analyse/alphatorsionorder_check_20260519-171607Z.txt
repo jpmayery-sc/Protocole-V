@@ -1,0 +1,17 @@
+Alpha torsion-order check
+timestamp: 20260519-171607Z
+verdict: conforme
+kappa_2: 2.725000000000000e-03
+kappa_3: 3.166666666666666e-04
+kappa_4: 9.000000000000001e-05
+ratio3over2: 0.116207951070336
+ratio4over3: 0.284210526315790
+ratio4over2: 0.033027522935780
+trend_ok: True
+controlled_decay_ok: True
+order_spread_ok: True
+
+Cases:
+- n=2 squeezing: rn=1.09 tsqz_us=400.0 kappa_n=2.725000000000000e-03
+- n=3 trisqueezing: rn=0.19 tsqz_us=600.0 kappa_n=3.166666666666666e-04
+- n=4 quadsqueezing: rn=0.054 tsqz_us=600.0 kappa_n=9.000000000000001e-05

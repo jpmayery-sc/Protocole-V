@@ -1,0 +1,67 @@
+{
+  "timestamp": "20260511-130104Z",
+  "family_name": "boron_subfamily",
+  "family": [
+    {
+      "symbol": "B",
+      "name": "Boron",
+      "period": 2,
+      "mass_u": 10.81,
+      "radius_pm": 87.0,
+      "ionization_ev": 8.298,
+      "principal_n": 2,
+      "zeff_proxy": 1.562238
+    },
+    {
+      "symbol": "Al",
+      "name": "Aluminum",
+      "period": 3,
+      "mass_u": 26.9815385,
+      "radius_pm": 143.0,
+      "ionization_ev": 5.9858,
+      "principal_n": 3,
+      "zeff_proxy": 1.990274
+    },
+    {
+      "symbol": "In",
+      "name": "Indium",
+      "period": 5,
+      "mass_u": 114.818,
+      "radius_pm": 156.0,
+      "ionization_ev": 5.7864,
+      "principal_n": 5,
+      "zeff_proxy": 3.261405
+    }
+  ],
+  "observables": {
+    "radius_trend": "increasing",
+    "ionization_trend": "decreasing",
+    "zeff_trend": "increasing",
+    "mass_trend": "increasing",
+    "radius_rmse": 10.13519719700718,
+    "ionization_rmse": 0.49799173576364586,
+    "zeff_rmse": 0.1987194557004811,
+    "mass_rmse": 16.891584342170596,
+    "radius_step_cv": 0.6231884057971014,
+    "ionization_step_cv": 0.8412167542602327,
+    "zeff_step_cv": 0.4961814770276735,
+    "mass_step_cv": 0.6890327955541882
+  },
+  "hypothesis": "for the boron subfamily B -> Al -> In, radius tracks Z_eff better than mass alone",
+  "case_control": "B -> Al -> In same-family prefix excluding the irregular endpoints",
+  "expected": {
+    "radius": "monotonic increase",
+    "ionization": "monotonic decrease",
+    "zeff_proxy": "smooth monotonic increase",
+    "mass": "less explanatory than zeff_proxy for the subfamily trend"
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "radius is not monotonic across B -> In",
+    "first ionization energy is not monotonic across B -> In",
+    "Z_eff proxy is not smoother than mass across the subfamily",
+    "mass alone explains the subfamily trend as well as or better than Z_eff proxy"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\boron_subfamily_refined_check_20260511-130104Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\boron_subfamily_refined_check_20260511-130104Z.txt"
+}

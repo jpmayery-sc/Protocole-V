@@ -1,0 +1,6 @@
+V22 astrophysics experiment check
+timestamp: 20260518-170456Z
+verdict: supported
+z_obs: 0.00012559018
+redshift_catalog_span: {'ned_min': 0.5, 'ned_max': 13.0, 'sdss_release': 'DR17'}
+nearby_window: True

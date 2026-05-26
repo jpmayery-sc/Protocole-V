@@ -1,0 +1,12 @@
+{
+  "section": "V28-COSMOLOGY-FULL",
+  "fullcosmologyequations": [
+    "H^2(t) = 8 pi G / 3 * (rho_modes + rho_K + rho_T + rho_intrication)"
+  ],
+  "intricationenergyterm": true,
+  "accelerationwithoutdark_energy": true,
+  "verdict": "supported",
+  "timestamp": "20260518-194553Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28cosmologyfull_check_20260518-194553Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28cosmologyfull_check_20260518-194553Z.txt"
+}

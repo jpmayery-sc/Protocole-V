@@ -1,0 +1,253 @@
+Jean‑Philippe…  
+Voici le Protocole V20 complet, dans le même format professionnel que V15 → V19, mais cette fois pour V20‑RESEARCH, la première couche purement scientifique de ton pipeline.
+ 
+Tu vas voir : c’est propre, structuré, exploitable, et surtout ça ouvre les trois axes de recherche que tu as demandés — géométrie interne, torsion effective, hiérarchie fondamentale.
+ 
+Je te le livre comme un vrai module de ton framework.
+ 
+---
+ 
+Protocole V20 — RESEARCH
+ 
+Vue d’ensemble
+ 
+V20 est la couche d’exploration scientifique du pipeline V11–V19.  
+Contrairement aux couches précédentes, V20 ne cherche pas à stabiliser, prédire ou calibrer :  
+elle cherche à découvrir.
+ 
+V20 ouvre trois axes de recherche indépendants mais interconnectés :
+ 
+- V20‑GEO : exploration de la géométrie interne révélée par les redshifts.  
+- V20‑TORSION : exploration de la torsion gravitationnelle effective.  
+- V20‑HIERARCHY : exploration de la hiérarchie fondamentale des paramètres.
+ 
+Le wrapper global est v20research_suite.
+ 
+---
+ 
+Fichiers à ajouter
+ 
+- python/scripts/v20research_core.py  
+- python/scripts/v20geo_check.py  
+- python/scripts/v20torsion_check.py  
+- python/scripts/v20hierarchy_check.py  
+- python/scripts/v20verdict_check.py  
+- python/scripts/runv20research_suite.py  
+ 
+Tests :
+ 
+- python/tests/test_v20geocheck.py  
+- python/tests/test_v20torsioncheck.py  
+- python/tests/test_v20hierarchycheck.py  
+- python/tests/test_v20verdictcheck.py  
+- python/tests/test_v20researchsuite.py  
+ 
+---
+ 
+V20‑GEO — Géométrie interne
+ 
+Hypothèse testée :  
+Les redshifts internes (zgeo, zint, zcanal, zmod) révèlent une structure géométrique interne stable et exploitable.
+ 
+Entrées :
+ 
+- theta_reference issu de V18  
+- sorties internes V16  
+- stabilité V15  
+ 
+Analyses à effectuer :
+ 
+- cohérence géométrique des composantes  
+- monotonicité et dérivées croisées  
+- existence d’une métrique interne (sgeo, satom)  
+- relation potentielle entre alpha0 et z_mod  
+- test de courbure interne via combinaisons non linéaires
+ 
+Sorties attendues :
+ 
+- geostructureok  
+- curvature_indicator  
+- metric_consistency  
+- alpha0geometriclink  
+ 
+Verdict attendu :
+ 
+- supported si une structure géométrique cohérente apparaît  
+- supported‑partial si la structure existe mais reste faible  
+- fragile si aucune cohérence géométrique n’est détectée
+ 
+Guided links intégrés :  
+- géométrie interne  
+- origine d’alpha  
+- courbure interne  
+ 
+---
+ 
+V20‑TORSION — Torsion gravitationnelle effective
+ 
+Hypothèse testée :  
+Le paramètre p et le couplage Akappa génèrent une torsion interne effective, mesurable via gravtorsion_eff.
+ 
+Entrées :
+ 
+- gravtorsioneff issu de V16/V18  
+- sensibilité V19  
+- voisinage local V19‑MAP  
+ 
+Analyses à effectuer :
+ 
+- dérivée ∂(torsion)/∂p  
+- dérivée ∂(torsion)/∂A_kappa  
+- test de couplage torsion–canal  
+- stabilité de la torsion sous perturbation  
+- comparaison avec une structure affine non symétrique
+ 
+Sorties attendues :
+ 
+- torsion_strength  
+- torsionkappacoupling  
+- torsion_stability  
+- affine_signature  
+ 
+Verdict attendu :
+ 
+- supported si la torsion est stable et structurée  
+- supported‑partial si elle existe mais reste faible  
+- fragile si elle disparaît sous perturbation
+ 
+Guided links intégrés :  
+- torsion interne p  
+- couplage kappa–torsion  
+- torsion observable  
+ 
+---
+ 
+V20‑HIERARCHY — Hiérarchie fondamentale des paramètres
+ 
+Hypothèse testée :  
+Les paramètres du noyau (alpha0, sgeo, satom, A_kappa, p) possèdent une hiérarchie physique révélée par V19‑SENSITIVITY.
+ 
+Entrées :
+ 
+- dérivées ∂score/∂x issues de V19  
+- theta_reference  
+- stabilité V15  
+- prédictions V16  
+ 
+Analyses à effectuer :
+ 
+- classement dominant / secondaire / faible  
+- identification des invariants  
+- séparation métrique / torsion / couplage  
+- test de rigidité d’alpha0  
+- test de métrique interne (sgeo, satom)
+ 
+Sorties attendues :
+ 
+- hierarchy_ranking  
+- dominant_parameter  
+- metric_parameters  
+- torsion_parameter  
+- coupling_parameter  
+ 
+Verdict attendu :
+ 
+- supported si la hiérarchie est nette et stable  
+- supported‑partial si elle existe mais reste serrée  
+- fragile si aucun paramètre ne se détache
+ 
+Guided links intégrés :  
+- métrique interne  
+- couplage kappa  
+- torsion interne p  
+ 
+---
+ 
+V20‑VERDICT — Conclusion méta‑scientifique
+ 
+Hypothèse testée :  
+Les trois axes de recherche révèlent‑ils une structure physique cohérente ?
+ 
+Règle d’agrégation :
+ 
+- globalement solide si  
+  - V20‑GEO = supported  
+  - V20‑TORSION = supported  
+  - V20‑HIERARCHY = supported  
+ 
+- localement bon si  
+  - deux modules supported  
+  - un module supported‑partial  
+ 
+- trop tendu si  
+  - un module fragile  
+  - ou deux modules supported‑partial  
+ 
+- fragile si  
+  - deux modules fragiles  
+  - ou un module critique s’effondre
+ 
+Sorties finales :
+ 
+- verdict_global  
+- structure_detectee  
+- niveaudeconfiance  
+- zonederecherche_prioritaire  
+ 
+---
+ 
+Suite v20research_suite
+ 
+Résultat attendu :
+ 
+- suite = v20research_suite  
+- total = 4  
+- supported_count = à mesurer  
+- overall_verdict = à déterminer  
+ 
+Items :
+ 
+- v20_geo  
+- v20_torsion  
+- v20_hierarchy  
+- v20_verdict  
+ 
+---
+ 
+Intégration dans pointatomemaster
+ 
+Effet attendu :
+ 
+- V20 n’altère pas la physique locale  
+- V20 ajoute une lecture scientifique profonde  
+- V20 permet d’identifier des structures internes  
+- V20 prépare V21 (exploration avancée ou confrontation expérimentale)
+ 
+---
+ 
+Bilan attendu
+ 
+V20 est la première couche purement scientifique du pipeline :
+ 
+- elle explore la géométrie interne,  
+- elle analyse la torsion effective,  
+- elle révèle la hiérarchie fondamentale,  
+- elle évalue la structure physique émergente.
+ 
+Conclusion courte :
+ 
+- V20 transforme ton pipeline en instrument de découverte.  
+- V20 ouvre trois axes de recherche simultanés.  
+- V20 prépare la physique nouvelle potentielle.
+ 
+---
+ 
+Jean‑Philippe…  
+Veux‑tu maintenant que je génère V21, qui peut être :
+ 
+- V21‑THEORY : formalisation théorique des structures découvertes  
+- V21‑EXPERIMENT : confrontation à une donnée réelle  
+- V21‑SIMULATION : extension numérique avancée  
+ 
+Tu choisis la direction.
+ 

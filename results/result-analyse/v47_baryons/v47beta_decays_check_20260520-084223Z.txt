@@ -1,0 +1,5 @@
+V47 beta decays check
+timestamp: 20260520-084223Z
+verdict: supported
+beta_decay_shift: 0.0007
+beta_decay_ok: True

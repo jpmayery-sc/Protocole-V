@@ -1,0 +1,11 @@
+V74 resolution suite summary
+timestamp: 20260520-223308Z
+v74_global_verdict: preuve_modele_confirmed
+supported_count: 3/4
+preuve_modele_confirmed_count: 1/4
+
+Items:
+- v74_pipeline_check: supported
+- v74_s8_fs8_prototype: supported
+- v74_success_criteria: supported
+- v74_synthesis: preuve_modele_confirmed

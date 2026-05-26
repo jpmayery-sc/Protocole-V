@@ -1,0 +1,212 @@
+V42 — STRUCTURE QUANTIQUE DU MODÈLE GÉOMÉTRIQUE EFFECTIF
+Version : 0.1
+ 
+Protocole précédent : ProtocoleV41.md
+ 
+Wrapper global suggéré :
+- python/scripts/runv42quantum_suite.py
+ 
+Modules :
+ 
+- V42-FIELDS        - Champs quantisables et degrés de liberté
+- V42-PROPAGATORS   - Propagateurs effectifs de K, T, Y
+- V42-INTERACTIONS  - Vertices et couplages quantiques
+- V42-LOOPS         - Corrections à une boucle
+- V42-RENORMALITY   - Renormalisabilité effective
+- V42-SYNTHESIS     - Lecture physique et verdict global
+ 
+ 
+0. OBJECTIF
+-----------
+Analyser la structure quantique du lagrangien géométrique extrait en V40 :
+ 
+- identification des champs quantisables
+- extraction des propagateurs
+- vertices d’interaction
+- corrections à une boucle
+- stabilité quantique
+- renormalisabilité effective (au sens EFT)
+ 
+V42 ne modifie pas le modèle : il en analyse la structure quantique.
+ 
+ 
+1. V42-FIELDS — CHAMPS QUANTISABLES
+-----------------------------------
+ 
+1.1 Champs scalaires géométriques
+---------------------------------
+Les champs K(x), T(x), Y(x) sont traités comme des scalaires réels.
+ 
+Contenu :
+- K : mode de courbure interne
+- T : mode de torsion interne
+- Y : mode de cohérence D1/D2
+ 
+Sorties :
+- field_list
+- mass_dimensions
+- canonical_normalization_ok
+- verdict
+ 
+ 
+2. V42-PROPAGATORS — PROPAGATEURS EFFECTIFS
+-------------------------------------------
+ 
+2.1 Forme générale
+------------------
+À partir de L_K + L_Sent, on extrait les propagateurs :
+ 
+    Δ_K(p) = 1 / (p² - m_K²)
+    Δ_T(p) = 1 / (p² - m_T²)
+    Δ_Y(p) = 1 / (p² - m_Y²)
+ 
+où les masses effectives proviennent de V40 :
+- m_K² = ∂²V_KT/∂K²
+- m_T² = ∂²V_KT/∂T²
+- m_Y² = γ
+ 
+Sorties :
+- propagator_K
+- propagator_T
+- propagator_Y
+- positivity_ok
+- verdict
+ 
+ 
+3. V42-INTERACTIONS — VERTICES QUANTIQUES
+-----------------------------------------
+ 
+3.1 Vertices géométriques
+--------------------------
+À partir de L_mix :
+ 
+    L_mix ⊃ ξ K + η Y
+ 
+→ vertices linéaires (sources cosmologiques)
+ 
+3.2 Vertices matière-géométrie
+-------------------------------
+De L_int :
+ 
+    ψ̄ ψ (a_K K + a_T T)
+ 
+→ vertices :
+- ψψK
+- ψψT
+ 
+3.3 Vertices géométriques internes
+-----------------------------------
+De V_KT :
+ 
+    λ_K K², λ_T T², λ_KT K T
+ 
+→ vertices :
+- KK
+- TT
+- KT
+ 
+Sorties :
+- vertex_table
+- coupling_strengths
+- interaction_ok
+- verdict
+ 
+ 
+4. V42-LOOPS — CORRECTIONS À UNE BOUCLE
+---------------------------------------
+ 
+4.1 Corrections géométriques
+----------------------------
+On calcule les corrections à une boucle pour :
+ 
+- m_K²
+- m_T²
+- m_Y²
+- ξ
+- η
+ 
+Critères :
+- corrections < 30 % (naturalité EFT)
+- absence de divergences non contrôlées
+ 
+4.2 Corrections matière → géométrie
+-----------------------------------
+Les boucles fermioniques induisent :
+ 
+    δm_K² ∝ a_K² Λ²
+    δm_T² ∝ a_T² Λ²
+ 
+où Λ est l’échelle de coupure EFT.
+ 
+Sorties :
+- loop_corrections
+- naturality_ok
+- divergence_control_ok
+- verdict
+ 
+ 
+5. V42-RENORMALITY — RENORMALISABILITÉ EFFECTIVE
+------------------------------------------------
+ 
+5.1 EFT (Effective Field Theory)
+--------------------------------
+On vérifie que :
+ 
+- le modèle est renormalisable au sens EFT
+- les divergences sont absorbables dans les paramètres existants
+- aucune nouvelle structure n’est requise
+ 
+5.2 Critères
+------------
+- pas de divergences quadratiques non absorbables
+- pas de couplages dimension > 6 dominants
+- stabilité sous renormalisation
+ 
+Sorties :
+- EFT_validity_ok
+- RG_flow_stable
+- renormality_summary
+- verdict
+ 
+ 
+6. V42-SYNTHESIS — LECTURE PHYSIQUE FINALE
+------------------------------------------
+ 
+6.1 Objectif
+------------
+Résumer la structure quantique :
+ 
+- propagateurs bien définis
+- vertices naturels
+- corrections à une boucle contrôlées
+- renormalisabilité EFT
+- stabilité quantique globale
+ 
+6.2 Sorties attendues
+---------------------
+- propagator_summary
+- vertex_summary
+- loop_summary
+- renormality_summary
+- quantum_structure_ok
+- v42_global_verdict
+ 
+ 
+7. CRITÈRES DE VERDICT
+----------------------
+ 
+supported :
+- propagateurs positifs
+- vertices naturels
+- corrections à une boucle < 30 %
+- renormalisabilité EFT
+- cohérence avec V40–V41
+ 
+partially_supported :
+- corrections marginales mais contrôlées
+ 
+rejected :
+- divergences non absorbables
+- instabilité quantique
+- violation de naturalité
+ 

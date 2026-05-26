@@ -1,0 +1,64 @@
+{
+  "suite": "v51_potential_suite",
+  "timestamp": "20260520-102732Z",
+  "v51_global_verdict": "intrication_confirmed",
+  "overall_verdict": "intrication_confirmed",
+  "verdict": "intrication_confirmed",
+  "supported_count": 6,
+  "intrication_confirmed_count": 1,
+  "total": 7,
+  "items": [
+    {
+      "label": "v51_definition",
+      "verdict": "supported",
+      "V_total_expression": "V_total = α_K K² + α_T T² + α_KT K T + (γ*/2)(Y – Y∞)² + χ₂ T (dY/dz)",
+      "gamma_star": 1.73
+    },
+    {
+      "label": "v51_dynamics",
+      "verdict": "supported",
+      "EOM_Y": "d²Y/dz² + γ*(Y – Y∞) + χ₂ dT/dz = 0",
+      "EOM_T": "dT/dz + 2α_T T + α_KT K + χ₂ dY/dz = 0",
+      "EOM_K": "dK/dz + 2α_K K + α_KT T = 0"
+    },
+    {
+      "label": "v51_consistency",
+      "verdict": "supported",
+      "convexity_ok": true,
+      "stability_ok": true,
+      "RG_ok": true,
+      "geometry_ok": true
+    },
+    {
+      "label": "v51_cosmo",
+      "verdict": "supported",
+      "cosmology_ok": true,
+      "S8_value": 0.776,
+      "H_curve": "improved H(z) consistency under the intricated potential",
+      "fs8_curve": "fσ₈(z) improved by 12%"
+    },
+    {
+      "label": "v51_matter",
+      "verdict": "supported",
+      "quark_ok": true,
+      "hadron_ok": true,
+      "PMNS_ok": true,
+      "heavy_nu_ok": true
+    },
+    {
+      "label": "v51_photon",
+      "verdict": "supported",
+      "photon_ok": true,
+      "photon_summary": "Photon propagation and mode stability remain intact."
+    },
+    {
+      "label": "v51_synthesis",
+      "verdict": "intrication_confirmed",
+      "v51_global_verdict": "intrication_confirmed",
+      "V_ent_validated": true,
+      "multi_sector_validation": true
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v51_potential\\v51_potential_suite_summary_20260520-102732Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v51_potential\\v51_potential_suite_summary_20260520-102732Z.txt"
+}

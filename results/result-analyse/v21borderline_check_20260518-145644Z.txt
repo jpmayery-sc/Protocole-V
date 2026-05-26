@@ -1,0 +1,8 @@
+V21 borderline check
+timestamp: 20260518-145644Z
+verdict: supported
+classification: localement bon
+supported_chain_length: 4
+recovery_margin: 1e-06
+fragile_layer: none
+bottleneck_flag: True

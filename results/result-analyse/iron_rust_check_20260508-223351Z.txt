@@ -1,0 +1,15 @@
+Contrôle de la rouille du fer
+Timestamp: 20260508-223351Z
+
+Tests:
+- iron_metal (Fe): conforme strict (N_p=26, N_e=26, charge=0, O=0)
+- iron_two_plus (Fe2+): conforme strict (N_p=26, N_e=24, charge=2, O=2)
+- iron_three_plus (Fe3+): conforme strict (N_p=26, N_e=23, charge=3, O=3)
+- rust_fe2o3 (Fe2O3): conforme strict (N_p=26, N_e=23, charge=3, O=3)
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- la corrosion change le nombre de protons du fer
+- la rouille ne s’accompagne d’aucune variation électronique
+- le fer oxydé n’est plus chimiquement du fer alors que le noyau reste identique

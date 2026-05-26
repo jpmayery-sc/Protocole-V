@@ -1,0 +1,7 @@
+V20 torsion check
+timestamp: 20260520-074635Z
+verdict: supported
+torsion_strength: 0.00011999000000000001
+torsion_kappa_coupling: 0.02500000000001416
+torsion_stability: True
+affine_signature: {'p': 'positive', 'A_kappa': 'negative', 'canal': 'positive'}

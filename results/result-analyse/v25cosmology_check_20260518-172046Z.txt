@@ -1,0 +1,26 @@
+V25 cosmology check
+{
+  "section": "V25-COSMOLOGY",
+  "cosmo_equations": [
+    "H^2(t) = 8 pi G / 3 * (rho_modes + rho_K + rho_T)"
+  ],
+  "cosmoenergyterms": [
+    "rho_modes",
+    "rho_K",
+    "rho_T"
+  ],
+  "inflation_regime": true,
+  "inflation_conditions": [
+    "K_init >> K_inf"
+  ],
+  "geometricaccelerationmodel": true,
+  "k_vide_variation": true,
+  "structureformationconditions": true,
+  "deltaK_thresholds": [
+    "delta K(x,t) around K(t)"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-172046Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25cosmology_check_20260518-172046Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25cosmology_check_20260518-172046Z.txt"
+}

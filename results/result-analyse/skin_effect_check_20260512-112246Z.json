@@ -1,0 +1,16 @@
+{
+  "timestamp": "20260512-112246Z",
+  "delta_low_m": 0.009225496965451984,
+  "delta_high_m": 0.0002917358295779998,
+  "delta_high_higher_rho_m": 0.00041257676681937325,
+  "delta_high_higher_mu_m": 9.225496965451983e-05,
+  "low_high_status": "conforme strict",
+  "rho_status": "conforme strict",
+  "mu_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "la profondeur de peau ne diminue pas quand la fréquence augmente",
+    "une résistivité plus grande ne change pas la profondeur de peau",
+    "une perméabilité plus grande ne réduit pas la profondeur de peau"
+  ]
+}

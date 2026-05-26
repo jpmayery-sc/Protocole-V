@@ -1,0 +1,1 @@
+Ce qui fonctionne deja: D1 reste valide en echelle atomique, D4 est coherent en regimes atomique, metallique et dense, et D3 demeure obligatoire pour les lanthanides.

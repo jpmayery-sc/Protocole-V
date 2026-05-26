@@ -1,0 +1,41 @@
+{
+  "section": "V31-INTERPRETATION",
+  "families": [
+    {
+      "family": "phase_coherence",
+      "anomalies": [
+        "Muon g-2",
+        "Mesons B"
+      ],
+      "geometric_reading": "torsion T and local phase response",
+      "observable_key": "spin / branching ratios",
+      "prediction": "deviations remain non-zero and family-specific"
+    },
+    {
+      "family": "mass_energy",
+      "anomalies": [
+        "Neutrinos"
+      ],
+      "geometric_reading": "effective geometric mass from K",
+      "observable_key": "oscillations",
+      "prediction": "oscillation structure may depend weakly on geometry"
+    },
+    {
+      "family": "large_scale_geometry",
+      "anomalies": [
+        "Dark matter",
+        "Accelerated expansion"
+      ],
+      "geometric_reading": "Sent(Y) deficit and global K(t) evolution",
+      "observable_key": "rotation curves / H(z)",
+      "prediction": "no exotic particle is required in the reading"
+    }
+  ],
+  "family_count": 3,
+  "anomaly_count": 5,
+  "kty_consistency": true,
+  "verdict": "supported",
+  "timestamp": "20260519-101046Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v31_geometric_interpretation\\v31interpretation_check_20260519-101046Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v31_geometric_interpretation\\v31interpretation_check_20260519-101046Z.txt"
+}

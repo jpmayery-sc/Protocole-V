@@ -1,0 +1,24 @@
+V26 observables check
+{
+  "section": "V26-OBSERVABLES",
+  "geometric_observables": [
+    "Delta K(x)",
+    "Delta L",
+    "Delta phi",
+    "Delta nu/nu"
+  ],
+  "quantum_observables": [
+    "Ei spectrum",
+    "Ei -> Ej transitions",
+    "spin/torsion signatures"
+  ],
+  "cosmological_observables": [
+    "H(t)",
+    "K_vide dot",
+    "slow acceleration variation"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-172750Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26observables_check_20260518-172750Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26observables_check_20260518-172750Z.txt"
+}

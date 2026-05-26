@@ -1,0 +1,6 @@
+V38 growth check
+timestamp: 20260519-135020Z
+verdict: supported
+growth_match_ok: True
+eta_natural_ok: True
+multi_scale_ok: True

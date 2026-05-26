@@ -1,0 +1,9 @@
+V14 reduce check
+timestamp: 20260518-170317Z
+verdict: supported
+keep_names: alpha0, s_geo, s_atom, A_kappa, p
+freeze_names: aE, aR, s_canal
+reduction_ratio: 0.625
+alpha_repaired_ok: True
+redshift_ok: True
+fine_ok: True

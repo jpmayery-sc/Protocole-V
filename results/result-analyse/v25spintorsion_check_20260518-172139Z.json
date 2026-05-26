@@ -1,0 +1,16 @@
+{
+  "section": "V25-SPIN-TORSION",
+  "torsionfieldequation": "T = d theta / ds",
+  "torsion_modes": [
+    "integer",
+    "half-integer"
+  ],
+  "spintopologyclassification": true,
+  "bosonfermionsplit": true,
+  "spingeometrycoupling_strength": true,
+  "spineffectson_K": true,
+  "verdict": "supported",
+  "timestamp": "20260518-172139Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25spintorsion_check_20260518-172139Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25spintorsion_check_20260518-172139Z.txt"
+}

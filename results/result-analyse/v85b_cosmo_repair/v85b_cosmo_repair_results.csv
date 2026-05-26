@@ -1,0 +1,2 @@
+epsilon,delta_em,pi_cosmo,G_eff_cosmo,F_temps_cosmo,omega_m_eff,H_ratio_z0,H_ratio_z05,H_ratio_z1,H_ratio_z2,DA_rec,DL_z0_5,DL_z1,f_sigma8_proxy_z0,f_sigma8_proxy_z05,f_sigma8_proxy_z1,first_peak_shift,chi_sn,chi_bao,chi_cmb,chi_growth,chi_total,passes_bbn,passes_cosmo,passes_all
+-0.0069,-0.0069,0.0,1.0,1.0,0.315,1.0,1.0,1.0,1.0,10.38260259907672,2926.835983374479,6801.690289107283,0.315,0.6081515909903468,0.7862714508580343,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True

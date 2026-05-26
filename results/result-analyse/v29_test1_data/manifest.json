@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-05-18 20:15:11Z",
+  "output_dir": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data",
+  "raw_downloads": {
+    "cosmic_chronometers_raw": {
+      "source_url": "https://github.com/Ahmadmehrabi/Cosmic_chronometer_data/raw/refs/heads/main/HzTable_MM_BC32.txt",
+      "local_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\raw\\HzTable_MM_BC32.txt",
+      "bytes": 446
+    },
+    "bao_mean_raw": {
+      "source_url": "https://github.com/CobayaSampler/bao_data/raw/refs/heads/master/desi_2024_gaussian_bao_ALL_GCcomb_mean.txt",
+      "local_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\raw\\desi_2024_gaussian_bao_ALL_GCcomb_mean.txt",
+      "bytes": 389
+    },
+    "bao_cov_raw": {
+      "source_url": "https://github.com/CobayaSampler/bao_data/raw/refs/heads/master/desi_2024_gaussian_bao_ALL_GCcomb_cov.txt",
+      "local_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\raw\\desi_2024_gaussian_bao_ALL_GCcomb_cov.txt",
+      "bytes": 2182
+    },
+    "pantheon_data_raw": {
+      "source_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+      "local_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\raw\\Pantheon+SH0ES.dat",
+      "bytes": 580985
+    },
+    "pantheon_statonly_cov_raw": {
+      "source_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STATONLY.cov",
+      "local_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\raw\\Pantheon+SH0ES_STATONLY.cov",
+      "bytes": 34720818
+    },
+    "pantheon_statsys_cov_raw": {
+      "source_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STAT+SYS.cov",
+      "local_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\raw\\Pantheon+SH0ES_STAT+SYS.cov",
+      "bytes": 36178362
+    }
+  },
+  "prepared": {
+    "cosmic_chronometers": {
+      "rows": 32,
+      "z_min": 0.07,
+      "z_max": 1.965,
+      "H_min": 68.6,
+      "H_max": 202.0,
+      "sigma_min": 4.0,
+      "sigma_max": 62.0,
+      "prepared_file": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\prepared\\cosmic_chronometers_hz.csv"
+    },
+    "desi_bao_mean": {
+      "rows": 12,
+      "z_min": 0.295,
+      "z_max": 2.33,
+      "quantities": [
+        "DH_over_rs",
+        "DM_over_rs",
+        "DV_over_rs"
+      ],
+      "prepared_file": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\prepared\\desi_bao_all_gccomb_mean.csv"
+    },
+    "desi_bao_covariance": {
+      "rows": 12,
+      "columns_max": 12,
+      "prepared_file": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\prepared\\desi_bao_all_gccomb_cov.csv"
+    },
+    "pantheon_plus_shoes": {
+      "rows": 1701,
+      "z_min": 0.00122,
+      "z_max": 2.26137,
+      "mu_min": 28.9987,
+      "mu_max": 46.1828,
+      "prepared_file": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\prepared\\pantheon_plus_shoes.csv"
+    },
+    "pantheon_plus_shoes_statonly_covariance": {
+      "rows": 1701,
+      "columns_max": 1701,
+      "values": 2893401,
+      "prepared_file": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\prepared\\pantheon_plus_shoes_statonly_cov.npy"
+    },
+    "pantheon_plus_shoes_statsys_covariance": {
+      "rows": 1701,
+      "columns_max": 1701,
+      "values": 2893401,
+      "prepared_file": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v29_test1_data\\prepared\\pantheon_plus_shoes_statsys_cov.npy"
+    }
+  },
+  "test_1_use": [
+    "direct H(z) points from cosmic chronometers",
+    "BAO distance-scale constraints from DESI DR1",
+    "supernova distance moduli from Pantheon+SH0ES"
+  ]
+}

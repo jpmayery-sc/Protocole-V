@@ -1,0 +1,28 @@
+Point Atome master suite summary
+timestamp: 20260519-172503Z
+overall_verdict: partiel
+supported_count: 20/22
+
+Items:
+- point_atome_protocol: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_protocol_suite_summary_20260519-172442Z.json
+- atom_basics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\atom_basics_suite_summary_20260519-172442Z.json
+- v8atomicsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v8atomicsuite_summary_20260519-172443Z.json
+- v9atomicsuite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v9atomicsuite_summary_20260519-172444Z.json
+- v10atomdynamics_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v10atomdynamics_suite_summary_20260519-172445Z.json
+- v11redshift_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v11redshift_suite_summary_20260519-172446Z.json
+- v12falsifier_suite: falsified -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v12falsifier_suite_summary_20260519-172447Z.json
+- v13mcmc_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v13mcmc_suite_summary_20260519-172448Z.json
+- v14reduction_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v14reduction_suite_summary_20260519-172452Z.json
+- v15consolidation_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v15consolidation_suite_summary_20260519-172453Z.json
+- v16prediction_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v16prediction_suite_summary_20260519-172454Z.json
+- v17validation_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v17validation_suite_summary_20260519-172454Z.json
+- v18calibration_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v18calibration_suite_summary_20260519-172455Z.json
+- v19metacalibration_suite: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v19metacalibration_suite_summary_20260519-172456Z.json
+- v20research_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v20research_suite_summary_20260519-172457Z.json
+- v21borderline_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v21borderline_suite_summary_20260519-172459Z.json
+- v22theory_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22theory_suite_summary_20260519-172500Z.json
+- v22experiment_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22experiment_suite_summary_20260519-172501Z.json
+- v22simulation_suite: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v22simulation_suite_summary_20260519-172502Z.json
+- d1d4: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\d1d4\d1d4_suite_summary_20260519-172502Z.json
+- electron5_core: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_core\electron5_core_suite_summary_20260519-172502Z.json
+- electron5_extended: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\electron5_extended\electron5_extended_suite_summary_20260519-172503Z.json

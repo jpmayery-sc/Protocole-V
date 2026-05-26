@@ -1,0 +1,10 @@
+V30 validation suite summary
+timestamp: 20260519-095818Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- v30_anomalies: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v30_validation\v30anomalies_check_20260519-095817Z.json
+- v30_validation: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v30_validation\v30validation_check_20260519-095817Z.json
+- v30_table: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v30_validation\v30table_check_20260519-095818Z.json
+- v30_tester_summary: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v30_validation\v30tester_summary_check_20260519-095818Z.json

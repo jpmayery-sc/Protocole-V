@@ -1,0 +1,12 @@
+MOESM3 workbook summary
+source: D:\Privé\Tout ne fait qu'un\experience\experience 4\results\downloaded_xlsx\MOESM3.xlsx
+sheet_count: 7
+
+- sqz_exp: rows=194481, cols=3, numeric_min=-14.77602791224193, numeric_max=14.77602791224193
+- sqz_sim: rows=194481, cols=3, numeric_min=-4.0, numeric_max=4.0
+- trisqz_exp: rows=194481, cols=3, numeric_min=-14.77602791224193, numeric_max=14.77602791224193
+- trisqz_sim: rows=194481, cols=3, numeric_min=-4.0, numeric_max=4.0
+- quadsqz_exp: rows=203401, cols=3, numeric_min=-15.39247137665673, numeric_max=15.39247137665673
+- quadsqz_sim: rows=203401, cols=3, numeric_min=-4.0, numeric_max=4.0
+- README: rows=2, cols=1, numeric_min=None, numeric_max=None
+  first_col_labels: Each sheet contains the exact grid used for pcolormesh: columns gamma_r, gamma_im, W., One row corresponds to one pixel/grid-point in the plotted array (no interpolation).

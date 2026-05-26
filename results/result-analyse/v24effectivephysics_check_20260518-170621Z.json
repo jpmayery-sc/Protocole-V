@@ -1,0 +1,22 @@
+{
+  "section": "V24-PHYSICS",
+  "effective_relations": [
+    "mass as confined energy",
+    "spin as internal torsion",
+    "gravity as geometric deformation",
+    "light as open modes",
+    "internal redshifts as geometric signatures",
+    "spectroscopy as confined mode response"
+  ],
+  "consistencywithdata": true,
+  "dominant_effects": [
+    "geometry",
+    "torsion",
+    "confinement",
+    "coupling"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-170621Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v24effectivephysics_check_20260518-170621Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v24effectivephysics_check_20260518-170621Z.txt"
+}

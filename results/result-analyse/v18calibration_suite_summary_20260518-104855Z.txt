@@ -1,0 +1,10 @@
+V18 calibration suite summary
+timestamp: 20260518-104855Z
+overall_verdict: partiel
+supported_count: 3/4
+
+Items:
+- v18_delta: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v18delta_check_20260518-104854Z.json
+- v18_calibrate: degraded -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v18calibrate_check_20260518-104855Z.json
+- v18_recheck: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v18recheck_check_20260518-104855Z.json
+- v18_verdict: supported-neutral -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v18verdict_check_20260518-104855Z.json

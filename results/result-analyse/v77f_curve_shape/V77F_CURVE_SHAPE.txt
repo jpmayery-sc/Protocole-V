@@ -1,0 +1,31 @@
+V77F curve shape summary
+
+V77D beta_e curve:
+- monotonicity: decroissante
+- curvature: convexe
+- beta range: [0.8, 1.2]
+- Li_total from 3.763645e-10 to 2.225423e-10
+- relative drop: 0.4087
+- acceptance band points in V77D direct channel: 3
+- reading: smooth descent, no internal turning point, minimum at the upper edge of the scanned beta range.
+
+V77E surface:
+- best gamma_exch: 0.75
+- best gamma_drain: 0.5
+- both-pass points: 4
+- zone width assessment: moyenne
+- flat along gamma_exch: False
+- descending along gamma_drain: False
+- reading: a ruled surface/strip, not a sharp basin; exchange mainly redistributes Li7 and Be7, while drain controls the actual descent of Li_total.
+
+Global reading:
+- V77D gives a monotone descending curve with a broad endpoint minimum, not a sharp bascule.
+- V77E gives a band-like acceptable zone; the curve is controlled by drain, not by exchange alone.
+- Be7 is fully emptied at the best point, so the A=7 equilibrium is genuinely inverted in the toy proxy.
+
+Synthetic sentence:
+La courbe Li_total présente une pente nette sans point de bascule interne marqué ; la zone acceptable est moyenne, avec une surface en bande plutôt qu’un puits ultra-fin.
+
+Plots:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77f_curve_shape\plots\v77d_curve_shape.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77f_curve_shape\plots\v77e_surface_shape.png

@@ -1,0 +1,30 @@
+V85C real-model summary
+timestamp: 20260522-093052Z
+verdict: real_model_interface_confirmed
+epsilon_best: -0.0069
+delta_em: -0.0069
+pi_lab: 1e-16
+pi_ns: 1.0
+G_eff_lab: 1.0
+F_temps_lab: 1.0
+G_eff_ns: 1.27999999999981
+F_temps_ns: 0.7692307692306272
+M_max: 2.0327692308
+R_1_4: 11.0667692308
+z_ns: 0.3
+E_jet_boost: 0.25
+variation_em_lab: 6.9e-25
+H_ratio_z0: 1.0
+H_ratio_z05: 1.0
+H_ratio_z1: 1.0
+DA_rec: 10.38260259907672
+DL_z0_5: 2926.835983374479
+DL_z1: 6801.690289107283
+f_sigma8_proxy_z0: 0.5297498038588546
+f_sigma8_proxy_z05: 0.7606879137410921
+f_sigma8_proxy_z1: 0.8761225909176094
+
+Notes:
+- V85C fixes the diffuse cosmology to exact LambdaCDM and keeps compact-sector deformation only.
+- The external BBN / TOV backends are not wired in this workspace, so this run is a local real-model scaffold.
+- The reported compact observables preserve the calibrated V83/V85B values.

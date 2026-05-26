@@ -1,0 +1,372 @@
+V36 — ANALYSE DES ÉCHELLES K/T/Y ET TEST D’UNE PARTICULE FORTE
+Version : 0.1
+ 
+ 
+0. OBJECTIF DE V36
+------------------
+1) Analyser les échelles géométriques implicites extraites en V35 :
+   - K_loc, T_loc (muon)
+   - K_bg (neutrinos)
+   - coefficients Aµ, Bµ, λ_i
+ 
+2) Tester si le même schéma K/T/Y reste cohérent pour une particule dominée
+   par l’interaction forte (proxy “gluons”) :
+ 
+   - pion (π±) ou
+   - glueball 0++ (état gluonique effectif)
+ 
+ 
+1. V36-SCALES — ANALYSE DES ÉCHELLES ISSUES DE V35
+--------------------------------------------------
+ 
+1.1 Entrées
+-----------
+Depuis V35 :
+ 
+- Aµ_best, Bµ_best
+- K̃_best, T̃_best (muon)
+- K_bg_best
+- λ_2_best, λ_3_best
+- Σ mν_best
+ 
+1.2 Reconstruction des échelles
+-------------------------------
+On définit :
+ 
+- K_loc_best = K̃_best · K0
+- T_loc_best = T̃_best · T0
+ 
+avec K0, T0 des échelles de référence (à fixer ou à normaliser à 1 dans un premier temps).
+ 
+On résume :
+ 
+- secteur lepton (muon) :
+  - Δaµ ≈ Aµ_best · K̃_best + Bµ_best · T̃_best ≈ 10^-9
+- secteur neutrinos :
+  - Δm²_sol, Δm²_atm reproduits avec :
+    - K_bg_best
+    - λ_2_best, λ_3_best
+  - Σ mν_best ≈ 0.0586 eV
+ 
+1.3 Sorties
+-----------
+- K_loc_best, T_loc_best
+- K_bg_best
+- scale_ratio_K = K_loc_best / K_bg_best
+- scale_ratio_T = T_loc_best / K_bg_best
+- leptonic_couplings = {Aµ_best, Bµ_best}
+- neutrino_couplings = {λ_2_best, λ_3_best}
+ 
+ 
+2. V36-STRONG — TEST D’UNE PARTICULE FORTE (GLUON-LIKE)
+-------------------------------------------------------
+ 
+2.1 Choix de la particule
+-------------------------
+Paramètre :
+ 
+- chosen_particle ∈ {pion_charged, kaon_charged, glueball_0pp}
+ 
+Masses cibles (ordre de grandeur) :
+ 
+- pion_charged : m_exp ≈ 0.140 GeV
+- kaon_charged : m_exp ≈ 0.494 GeV
+- glueball_0pp : m_exp ≈ 1.5–1.7 GeV (lattice)
+ 
+ 
+2.2 Ansatz de masse géométrique
+-------------------------------
+On réutilise la forme V26/V33 :
+ 
+m_strong,eff ≈ M0_strong + α_s · K_loc_strong + β_s · T_loc_strong
+ 
+avec :
+ 
+- K_loc_strong, T_loc_strong : valeurs locales typiques dans le secteur fort
+- α_s, β_s : coefficients de couplage “forte interaction”
+- M0_strong : terme nu (peut être 0 pour un premier test)
+ 
+ 
+2.3 Hypothèse d’échelle forte
+-----------------------------
+On pose, pour tester la cohérence multi-échelle :
+ 
+- K_loc_strong ≈ c_K · K_loc_best
+- T_loc_strong ≈ c_T · T_loc_best
+ 
+avec c_K, c_T ∈ {5, 10, 20} (par exemple), pour refléter un confinement plus fort.
+ 
+ 
+2.4 Condition de masse
+----------------------
+On cherche des triplets (M0_strong, α_s, β_s) tels que :
+ 
+m_strong,eff ≈ m_exp(chosen_particle)
+ 
+On impose en plus :
+ 
+- α_s, β_s ne doivent pas être absurdes par rapport à Aµ_best, Bµ_best
+  (par ex. 10^-3 ≤ α_s, β_s ≤ 10^-1 ou plage à définir)
+- pas de hiérarchie monstrueuse :
+  - α_s / Aµ_best < 10^6
+  - β_s / Bµ_best < 10^6
+ 
+ 
+2.5 Tests de cohérence
+----------------------
+Test 1 — Mass_match :
+- |m_strong,eff - m_exp| < tol_mass (par ex. 5 %)
+ 
+Test 2 — Naturalité :
+- α_s, β_s dans une plage raisonnable (pas 10^12, pas 10^-30)
+ 
+Test 3 — Hiérarchie globale :
+- rapports α_s / Aµ_best, β_s / Bµ_best pas délirants
+ 
+Test 4 — D1/D2 implicite :
+- si K_loc_strong, T_loc_strong doivent être dans une zone incompatible
+  avec ce qu’on a pour muon + neutrinos → signal d’incohérence D1/D2
+ 
+ 
+2.6 Sorties
+-----------
+- chosen_particle
+- K_loc_strong, T_loc_strong
+- c_K, c_T
+- M0_strong, α_s, β_s
+- mass_match_ok : true/false
+- naturality_ok : true/false
+- hierarchy_ok : true/false
+- v36_strong_verdict : supported / rejected / inconclusive
+ 
+ 
+3. V36-SYNTHESIS — LECTURE PHYSIQUE
+-----------------------------------
+ 
+3.1 Objectif
+------------
+Relier :
+ 
+- les échelles leptoniques (muon)
+- les échelles neutrinos (K_bg)
+- les échelles fortes (pion / glueball)
+ 
+et voir si :
+ 
+- K/T/Y peut supporter une hiérarchie globale cohérente
+- ou si le secteur fort révèle une incohérence profonde.
+ 
+ 
+3.2 Sorties attendues
+---------------------
+- scales_summary :
+  - {K_loc_best, T_loc_best, K_bg_best}
+  - {K_loc_strong, T_loc_strong}
+- couplings_summary :
+  - {Aµ_best, Bµ_best}
+  - {λ_2_best, λ_3_best}
+  - {α_s, β_s}
+- multi_scale_consistency : true/false
+- v36_global_verdict : supported / partially_supported / rejected
+ 
+ 
+4. PROCHAINE ÉTAPE
+------------------
+Si V36 montre une cohérence multi-échelle raisonnable :
+ 
+- V37 : extension systématique aux mésons B et à la matière noire
+- V38 : préparation d’un MCMC global sur l’ensemble des secteurs
+ 
+Si V36 révèle une incohérence forte dans le secteur fort :
+ 
+- retour sur l’ansatz de masse géométrique
+- révision de la structure D1/D2
+ 
+ 
+ ----------------------------------
+ 
+ 
+ V36 — ANALYSE DES ÉCHELLES K/T/Y ET TEST D’UNE PARTICULE FORTE
+Version : 0.1
+ 
+ 
+0. OBJECTIF DE V36
+------------------
+1) Analyser les échelles géométriques implicites extraites en V35 :
+   - K_loc, T_loc (muon)
+   - K_bg (neutrinos)
+   - coefficients Aµ, Bµ, λ_i
+ 
+2) Tester si le même schéma K/T/Y reste cohérent pour une particule dominée
+   par l’interaction forte (proxy “gluons”) :
+ 
+   - pion (π±) ou
+   - glueball 0++ (état gluonique effectif)
+ 
+ 
+1. V36-SCALES — ANALYSE DES ÉCHELLES ISSUES DE V35
+--------------------------------------------------
+ 
+1.1 Entrées
+-----------
+Depuis V35 :
+ 
+- Aµ_best, Bµ_best
+- K̃_best, T̃_best (muon)
+- K_bg_best
+- λ_2_best, λ_3_best
+- Σ mν_best
+ 
+1.2 Reconstruction des échelles
+-------------------------------
+On définit :
+ 
+- K_loc_best = K̃_best · K0
+- T_loc_best = T̃_best · T0
+ 
+avec K0, T0 des échelles de référence (à fixer ou à normaliser à 1 dans un premier temps).
+ 
+On résume :
+ 
+- secteur lepton (muon) :
+  - Δaµ ≈ Aµ_best · K̃_best + Bµ_best · T̃_best ≈ 10^-9
+- secteur neutrinos :
+  - Δm²_sol, Δm²_atm reproduits avec :
+    - K_bg_best
+    - λ_2_best, λ_3_best
+  - Σ mν_best ≈ 0.0586 eV
+ 
+1.3 Sorties
+-----------
+- K_loc_best, T_loc_best
+- K_bg_best
+- scale_ratio_K = K_loc_best / K_bg_best
+- scale_ratio_T = T_loc_best / K_bg_best
+- leptonic_couplings = {Aµ_best, Bµ_best}
+- neutrino_couplings = {λ_2_best, λ_3_best}
+ 
+ 
+2. V36-STRONG — TEST D’UNE PARTICULE FORTE (GLUON-LIKE)
+-------------------------------------------------------
+ 
+2.1 Choix de la particule
+-------------------------
+Paramètre :
+ 
+- chosen_particle ∈ {pion_charged, kaon_charged, glueball_0pp}
+ 
+Masses cibles (ordre de grandeur) :
+ 
+- pion_charged : m_exp ≈ 0.140 GeV
+- kaon_charged : m_exp ≈ 0.494 GeV
+- glueball_0pp : m_exp ≈ 1.5–1.7 GeV (lattice)
+ 
+ 
+2.2 Ansatz de masse géométrique
+-------------------------------
+On réutilise la forme V26/V33 :
+ 
+m_strong,eff ≈ M0_strong + α_s · K_loc_strong + β_s · T_loc_strong
+ 
+avec :
+ 
+- K_loc_strong, T_loc_strong : valeurs locales typiques dans le secteur fort
+- α_s, β_s : coefficients de couplage “forte interaction”
+- M0_strong : terme nu (peut être 0 pour un premier test)
+ 
+ 
+2.3 Hypothèse d’échelle forte
+-----------------------------
+On pose, pour tester la cohérence multi-échelle :
+ 
+- K_loc_strong ≈ c_K · K_loc_best
+- T_loc_strong ≈ c_T · T_loc_best
+ 
+avec c_K, c_T ∈ {5, 10, 20} (par exemple), pour refléter un confinement plus fort.
+ 
+ 
+2.4 Condition de masse
+----------------------
+On cherche des triplets (M0_strong, α_s, β_s) tels que :
+ 
+m_strong,eff ≈ m_exp(chosen_particle)
+ 
+On impose en plus :
+ 
+- α_s, β_s ne doivent pas être absurdes par rapport à Aµ_best, Bµ_best
+  (par ex. 10^-3 ≤ α_s, β_s ≤ 10^-1 ou plage à définir)
+- pas de hiérarchie monstrueuse :
+  - α_s / Aµ_best < 10^6
+  - β_s / Bµ_best < 10^6
+ 
+ 
+2.5 Tests de cohérence
+----------------------
+Test 1 — Mass_match :
+- |m_strong,eff - m_exp| < tol_mass (par ex. 5 %)
+ 
+Test 2 — Naturalité :
+- α_s, β_s dans une plage raisonnable (pas 10^12, pas 10^-30)
+ 
+Test 3 — Hiérarchie globale :
+- rapports α_s / Aµ_best, β_s / Bµ_best pas délirants
+ 
+Test 4 — D1/D2 implicite :
+- si K_loc_strong, T_loc_strong doivent être dans une zone incompatible
+  avec ce qu’on a pour muon + neutrinos → signal d’incohérence D1/D2
+ 
+ 
+2.6 Sorties
+-----------
+- chosen_particle
+- K_loc_strong, T_loc_strong
+- c_K, c_T
+- M0_strong, α_s, β_s
+- mass_match_ok : true/false
+- naturality_ok : true/false
+- hierarchy_ok : true/false
+- v36_strong_verdict : supported / rejected / inconclusive
+ 
+ 
+3. V36-SYNTHESIS — LECTURE PHYSIQUE
+-----------------------------------
+ 
+3.1 Objectif
+------------
+Relier :
+ 
+- les échelles leptoniques (muon)
+- les échelles neutrinos (K_bg)
+- les échelles fortes (pion / glueball)
+ 
+et voir si :
+ 
+- K/T/Y peut supporter une hiérarchie globale cohérente
+- ou si le secteur fort révèle une incohérence profonde.
+ 
+ 
+3.2 Sorties attendues
+---------------------
+- scales_summary :
+  - {K_loc_best, T_loc_best, K_bg_best}
+  - {K_loc_strong, T_loc_strong}
+- couplings_summary :
+  - {Aµ_best, Bµ_best}
+  - {λ_2_best, λ_3_best}
+  - {α_s, β_s}
+- multi_scale_consistency : true/false
+- v36_global_verdict : supported / partially_supported / rejected
+ 
+ 
+4. PROCHAINE ÉTAPE
+------------------
+Si V36 montre une cohérence multi-échelle raisonnable :
+ 
+- V37 : extension systématique aux mésons B et à la matière noire
+- V38 : préparation d’un MCMC global sur l’ensemble des secteurs
+ 
+Si V36 révèle une incohérence forte dans le secteur fort :
+ 
+- retour sur l’ansatz de masse géométrique
+- révision de la structure D1/D2
+ 

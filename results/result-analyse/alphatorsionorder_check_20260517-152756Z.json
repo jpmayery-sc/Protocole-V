@@ -1,0 +1,20 @@
+{
+  "timestamp": "20260517-152756Z",
+  "hypothesis": "la force effective de la porte alpha reste controlable avec l'ordre n",
+  "case_control": "n = 2 (squeezing), 3 (trisqueezing), 4 (quadsqueezing)",
+  "observable": "pentes kappan = rn / tsqzn",
+  "expected": "kappa_n decroissante mais non catastrophique avec n",
+  "measured": {
+    "kappa_2": 0.002725,
+    "kappa_3": 0.00031666666666666665,
+    "kappa_4": 9e-05,
+    "ratio3over2": 0.11620795107033638,
+    "ratio4over3": 0.2842105263157895,
+    "ratio4over2": 0.03302752293577982
+  },
+  "trend_ok": true,
+  "controlled_decay_ok": true,
+  "order_spread_ok": true,
+  "verdict": "conforme",
+  "reference": "squeezing/trisqueezing/quadsqueezing trapped ion"
+}

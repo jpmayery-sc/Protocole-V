@@ -1,0 +1,151 @@
+{
+  "suite": "jwst005_reionisation_pipeline",
+  "timestamp": "20260522-163449Z",
+  "verdict": "jwst05_reionisation_supported",
+  "redshift_bins": [
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0
+  ],
+  "observed": {
+    "redshift_bins": [
+      9.0,
+      9.5,
+      10.0,
+      10.5,
+      11.0
+    ],
+    "xiion_hom": [
+      25.28,
+      25.22,
+      25.15,
+      25.08,
+      25.0
+    ],
+    "fesc_hom": [
+      0.06,
+      0.072,
+      0.083,
+      0.095,
+      0.108
+    ],
+    "n_hom": [
+      0.52,
+      0.47,
+      0.41,
+      0.34,
+      0.29
+    ],
+    "tau_hom": [
+      0.056
+    ]
+  },
+  "sigma": {
+    "xiion_hom": [
+      0.18,
+      0.18,
+      0.17,
+      0.17,
+      0.16
+    ],
+    "fesc_hom": [
+      0.01,
+      0.01,
+      0.011,
+      0.011,
+      0.012
+    ],
+    "n_hom": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+    ],
+    "tau_hom": [
+      0.004
+    ]
+  },
+  "model": {
+    "xiion_mod": [
+      25.072708955771958,
+      25.110996748577666,
+      25.1455,
+      25.170996748577664,
+      25.19270895577196
+    ],
+    "fesc_mod": [
+      0.081825,
+      0.07894726709728804,
+      0.07653153400820793,
+      0.07450362990627515,
+      0.07280129157046102
+    ],
+    "n_mod": [
+      0.4674805662633189,
+      0.4501006054924677,
+      0.4299047882834507,
+      0.3940682014820176,
+      0.35514108733295263
+    ],
+    "tau_mod": [
+      0.048089999999999994
+    ],
+    "compaction": 0.85,
+    "anisotropy": 0.65,
+    "topology": 0.65,
+    "xi0": 25.0,
+    "fesc0": 0.06,
+    "escape_boost": 0.015,
+    "slope": 0.35,
+    "n0": 0.46,
+    "decay": 0.14,
+    "bump": 0.03
+  },
+  "baseline": {
+    "xiion_mod": [
+      25.6,
+      25.69,
+      25.78,
+      25.87,
+      25.96
+    ],
+    "fesc_mod": [
+      0.1,
+      0.125,
+      0.15000000000000002,
+      0.17500000000000002,
+      0.2
+    ],
+    "n_mod": [
+      0.75,
+      0.738833954702297,
+      0.7278341501613811,
+      0.7169981113748249,
+      0.7063234001881865
+    ],
+    "tau_mod": [
+      0.067
+    ]
+  },
+  "chi2_xiion": 3.4308148997353234,
+  "chi2_fesc": 17.66746892986548,
+  "chi2_n": 4.28688363552658,
+  "chi2_tau": 3.910506250000007,
+  "baseline_chi2_xiion": 81.30711478491219,
+  "baseline_chi2_fesc": 192.85951331496793,
+  "baseline_chi2_n": 216.6571966936487,
+  "baseline_chi2_tau": 7.562500000000003,
+  "total_chi2": 29.29567371512739,
+  "baseline_total_chi2": 498.3863247935288,
+  "delta_chi2": 469.0906510784014,
+  "mean_xiion_hom": 25.145999999999997,
+  "mean_fesc_hom": 0.0836,
+  "mean_n_hom": 0.40599999999999997,
+  "tau_hom": 0.056,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst005_reionisation_pipeline\\jwst005_reionisation_pipeline_20260522-163449Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst005_reionisation_pipeline\\jwst005_reionisation_pipeline_20260522-163449Z.txt",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst005_reionisation_pipeline\\jwst005_reionisation_pipeline_20260522-163449Z.csv"
+}

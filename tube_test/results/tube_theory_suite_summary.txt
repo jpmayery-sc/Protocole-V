@@ -1,0 +1,10 @@
+Tube Theory suite summary
+timestamp: 20260512-075328Z
+overall_verdict: supported
+supported_count: 3/3
+manifest_path: D:\Privé\Tout ne fait qu'un\experience\experience 4\tube_test\data\manifest.json
+
+Items:
+- one_fixed_damper: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\tube_test\data\hysteresis\One_fixed_damper.json
+- test_experiments: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\tube_test\data\hysteresis\Test_experiments.json
+- core_loss_mhz: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\tube_test\data\induction\MHzCoreLoss.csv

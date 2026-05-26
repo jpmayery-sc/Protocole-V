@@ -1,0 +1,25 @@
+{
+  "section": "V26-QFT",
+  "qftlagrangianform": "<Y|(i hbar dt - H_geom - H_K - H_T - H_int)|Y>",
+  "quantumoperatorslist": [
+    "H_geom",
+    "H_K",
+    "H_T",
+    "H_int"
+  ],
+  "qft_consistency": true,
+  "canonicalquantizationok": true,
+  "commutation_relations": [
+    "[x,p]=i hbar",
+    "[K,Pi_K]=i hbar",
+    "[T,Pi_T]=i hbar"
+  ],
+  "tubequantizationspectrum": [
+    "E_n = n hbar omega_K"
+  ],
+  "tubemodesquantized": true,
+  "verdict": "supported",
+  "timestamp": "20260518-172847Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26qft_check_20260518-172847Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v26qft_check_20260518-172847Z.txt"
+}

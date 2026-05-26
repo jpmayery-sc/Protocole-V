@@ -1,0 +1,13 @@
+V11 total redshift check
+timestamp: 20260517-211307Z
+verdict: rejette
+nominal_band_ok: False
+z_order_ok: True
+env_order_ok: True
+testable_window_ok: False
+
+Cases:
+- H_alpha: quiet=1.283006e-06, nominal=1.634503e-06, extreme=2.022589e-06
+- Fe_alpha: quiet=1.716342e-06, nominal=2.190327e-06, extreme=2.719498e-06
+- Pb_alpha: quiet=5.325544e-06, nominal=6.918819e-06, extreme=8.607537e-06
+- U_alpha: quiet=8.063921e-06, nominal=1.053725e-05, extreme=1.312277e-05

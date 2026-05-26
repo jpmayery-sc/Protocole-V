@@ -1,0 +1,694 @@
+{
+  "suite": "protocol_v3_vector",
+  "timestamp": "20260512-140223Z",
+  "overall_verdict": "partiel",
+  "supported_count": 4,
+  "total": 7,
+  "tests": [
+    {
+      "id": "TEST0",
+      "title": "Donnees et perimetre",
+      "verdict": "supported",
+      "reason": "The manifest exposes the four required materials and each series contains five points; DC is absent but the low-frequency anchor is present.",
+      "metrics": {
+        "required_materials": [
+          "cu",
+          "al",
+          "ag",
+          "fe"
+        ],
+        "optional_materials": [
+          "au",
+          "ni"
+        ],
+        "material_count": 4,
+        "point_count": 20,
+        "bands_present": [
+          "bf_proxy",
+          "hf_advanced_proxy",
+          "hf_classic"
+        ]
+      }
+    },
+    {
+      "id": "TEST1",
+      "title": "Construction de l espace vectoriel brut",
+      "verdict": "supported",
+      "reason": "Each point maps to a dimensionless vector built from observed frequency, skin depth, magnetic flag, and conductivity proxy.",
+      "metrics": {
+        "vector_dimension": 4,
+        "feature_names": [
+          "log10(f/f_ref)",
+          "log10(delta/delta_ref)",
+          "magnetic_flag",
+          "log10(sigma/sigma_cu)"
+        ],
+        "vector_centroids": {
+          "cu": [
+            2.559176003468815,
+            -1.2797360340882964,
+            0.0,
+            7.763462738511306
+          ],
+          "al": [
+            2.559176003468815,
+            -1.2796440523400678,
+            0.0,
+            7.54975089168064
+          ],
+          "ag": [
+            2.559176003468815,
+            -1.279639153811893,
+            0.0,
+            7.798602875679547
+          ],
+          "fe": [
+            2.559176003468815,
+            -1.2793927053595557,
+            1.0,
+            7.012780770091995
+          ]
+        }
+      }
+    },
+    {
+      "id": "TEST2",
+      "title": "Geometrie inter-materiaux",
+      "verdict": "contradicted",
+      "reason": "The proposed vector space does not yet stabilize the material geometry enough.",
+      "metrics": {
+        "separation_ratio": 0.022979432572079173,
+        "raw_separation_ratio": 15.712479203340548,
+        "pca_explained_variance_ratio": [
+          0.9201345068617609,
+          0.07817070546503004,
+          0.0016947690533512909,
+          1.8619857805059604e-08
+        ],
+        "pca_top2_explained": 0.9983052123267909,
+        "nearest_neighbors": {
+          "cu": "ag",
+          "al": "cu",
+          "ag": "cu",
+          "fe": "al"
+        }
+      }
+    },
+    {
+      "id": "TEST3",
+      "title": "Leave-one-material-out",
+      "verdict": "supported",
+      "reason": "The held-out material always falls back into the same nearest-neighbor geometry under leave-one-material-out.",
+      "metrics": {
+        "folds": [
+          {
+            "held_out": "cu",
+            "train_family": [
+              "al",
+              "ag",
+              "fe"
+            ],
+            "full_nearest_neighbor": "ag",
+            "projected_nearest_neighbor": "ag",
+            "full_rank": [
+              "ag",
+              "al",
+              "fe"
+            ],
+            "projected_rank": [
+              "ag",
+              "al",
+              "fe"
+            ],
+            "displacement_to_train_center": 0.45503512458507983,
+            "order_match": true,
+            "pca_top2_explained": 0.9980396629423732
+          },
+          {
+            "held_out": "al",
+            "train_family": [
+              "cu",
+              "ag",
+              "fe"
+            ],
+            "full_nearest_neighbor": "cu",
+            "projected_nearest_neighbor": "cu",
+            "full_rank": [
+              "cu",
+              "ag",
+              "fe"
+            ],
+            "projected_rank": [
+              "cu",
+              "ag",
+              "fe"
+            ],
+            "displacement_to_train_center": 0.3342547802512174,
+            "order_match": true,
+            "pca_top2_explained": 0.9999645345716944
+          },
+          {
+            "held_out": "ag",
+            "train_family": [
+              "cu",
+              "al",
+              "fe"
+            ],
+            "full_nearest_neighbor": "cu",
+            "projected_nearest_neighbor": "cu",
+            "full_rank": [
+              "cu",
+              "al",
+              "fe"
+            ],
+            "projected_rank": [
+              "cu",
+              "al",
+              "fe"
+            ],
+            "displacement_to_train_center": 0.4881373327588211,
+            "order_match": true,
+            "pca_top2_explained": 0.9985234695766814
+          },
+          {
+            "held_out": "fe",
+            "train_family": [
+              "cu",
+              "al",
+              "ag"
+            ],
+            "full_nearest_neighbor": "al",
+            "projected_nearest_neighbor": "al",
+            "full_rank": [
+              "al",
+              "cu",
+              "ag"
+            ],
+            "projected_rank": [
+              "al",
+              "cu",
+              "ag"
+            ],
+            "displacement_to_train_center": 1.2156066591208374,
+            "order_match": true,
+            "pca_top2_explained": 0.9999999766774365
+          }
+        ]
+      }
+    },
+    {
+      "id": "TEST4",
+      "title": "Changement de regime",
+      "verdict": "supported",
+      "reason": "The relative material geometry stays stable across the observed low/mid/high frequency bands.",
+      "metrics": {
+        "coverage": {
+          "bf_proxy": true,
+          "hf_classic": true,
+          "hf_advanced_proxy": true
+        },
+        "explicit_dc_available": false,
+        "band_pca_top2": {
+          "bf_proxy": 0.9948900249803475,
+          "hf_classic": 0.9898557732978306,
+          "hf_advanced_proxy": 0.9999999871606533
+        },
+        "band_nearest_neighbors": {
+          "bf_proxy": {
+            "cu": "ag",
+            "al": "cu",
+            "ag": "cu",
+            "fe": "al"
+          },
+          "hf_classic": {
+            "cu": "ag",
+            "al": "cu",
+            "ag": "cu",
+            "fe": "al"
+          },
+          "hf_advanced_proxy": {
+            "cu": "ag",
+            "al": "cu",
+            "ag": "cu",
+            "fe": "al"
+          }
+        },
+        "band_mean_shift": 1.6730309149230973,
+        "band_max_shift": 2.3924947078424763
+      }
+    },
+    {
+      "id": "TEST5",
+      "title": "Stabilite statistique",
+      "verdict": "contradicted",
+      "reason": "The vector space does not reduce the spread enough to count as stable.",
+      "metrics": {
+        "raw_pairwise_cv": 0.533089750427372,
+        "vector_pairwise_cv": 0.7688588621267255,
+        "improvement_ratio": 1.4422690766617443,
+        "leave_one_out_pairwise_cv": [
+          0.5122281631250984,
+          0.6780356364895613,
+          0.5354515798983991,
+          0.5639999006255081
+        ]
+      }
+    },
+    {
+      "id": "TEST6",
+      "title": "Reduction scalaire optionnelle",
+      "verdict": "contradicted",
+      "reason": "The scalar collapse is not as stable as the vector form, so the vector representation should be kept.",
+      "metrics": {
+        "scalar_pairwise_cv": 232105198609.70453,
+        "vector_pairwise_cv": 0.7688588621267255,
+        "material_scalar_centroids": {
+          "cu": -6.27411308161463e-05,
+          "al": -2.041654518318836e-05,
+          "ag": -1.9612525725865027e-05,
+          "fe": 0.00010277020172413386
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "label": "cu",
+      "path": "python\\data\\hf_transport\\cu.json",
+      "rho_ohm_m": 1.724e-08,
+      "mu_r_eff": 1.0,
+      "conductivity_proxy": 58004640.37122969,
+      "delta_ref": 0.014784,
+      "frequency_ref": 20.0,
+      "vector_centroid": [
+        2.559176003468815,
+        -1.2797360340882964,
+        0.0,
+        7.763462738511306
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.0035618199999999994,
+        0.0,
+        58004640.37122969
+      ],
+      "vector_radius": 1.52918116570804,
+      "raw_radius": 311118.4000000001,
+      "point_count": 5
+    },
+    {
+      "label": "al",
+      "path": "python\\data\\hf_transport\\al.json",
+      "rho_ohm_m": 2.82e-08,
+      "mu_r_eff": 1.0,
+      "conductivity_proxy": 35460992.90780142,
+      "delta_ref": 0.018885,
+      "frequency_ref": 20.0,
+      "vector_centroid": [
+        2.559176003468815,
+        -1.2796440523400678,
+        0.0,
+        7.54975089168064
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.004549699999999999,
+        0.0,
+        35460992.90780142
+      ],
+      "vector_radius": 1.5291053057542734,
+      "raw_radius": 311118.4000000001,
+      "point_count": 5
+    },
+    {
+      "label": "ag",
+      "path": "python\\data\\hf_transport\\ag.json",
+      "rho_ohm_m": 1.59e-08,
+      "mu_r_eff": 1.0,
+      "conductivity_proxy": 62893081.76100629,
+      "delta_ref": 0.014188,
+      "frequency_ref": 20.0,
+      "vector_centroid": [
+        2.559176003468815,
+        -1.279639153811893,
+        0.0,
+        7.798602875679547
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.00341828,
+        0.0,
+        62893081.76100628
+      ],
+      "vector_radius": 1.5291549501761084,
+      "raw_radius": 311118.4,
+      "point_count": 5
+    },
+    {
+      "label": "fe",
+      "path": "python\\data\\hf_transport\\fe.json",
+      "rho_ohm_m": 9.71e-08,
+      "mu_r_eff": 1000.0,
+      "conductivity_proxy": 10298661.174047373,
+      "delta_ref": 0.001109,
+      "frequency_ref": 20.0,
+      "vector_centroid": [
+        2.559176003468815,
+        -1.2793927053595557,
+        1.0,
+        7.012780770091995
+      ],
+      "raw_centroid": [
+        222204.0,
+        0.000267252,
+        1.0,
+        10298661.174047373
+      ],
+      "vector_radius": 1.529205327665667,
+      "raw_radius": 311118.4,
+      "point_count": 5
+    }
+  ],
+  "geometry": {
+    "centroids": {
+      "cu": [
+        2.559176003468815,
+        -1.2797360340882964,
+        0.0,
+        7.763462738511306
+      ],
+      "al": [
+        2.559176003468815,
+        -1.2796440523400678,
+        0.0,
+        7.54975089168064
+      ],
+      "ag": [
+        2.559176003468815,
+        -1.279639153811893,
+        0.0,
+        7.798602875679547
+      ],
+      "fe": [
+        2.559176003468815,
+        -1.2793927053595557,
+        1.0,
+        7.012780770091995
+      ]
+    },
+    "raw_centroids": {
+      "cu": [
+        222204.0,
+        0.0035618199999999994,
+        0.0,
+        58004640.37122969
+      ],
+      "al": [
+        222204.0,
+        0.004549699999999999,
+        0.0,
+        35460992.90780142
+      ],
+      "ag": [
+        222204.0,
+        0.00341828,
+        0.0,
+        62893081.76100628
+      ],
+      "fe": [
+        222204.0,
+        0.000267252,
+        1.0,
+        10298661.174047373
+      ]
+    },
+    "within_radius_mean": 1.529161687326022,
+    "raw_within_radius_mean": 311118.4,
+    "between_distance_mean": 0.692496498984724,
+    "raw_between_distance_mean": 30054484.870717507,
+    "separation_ratio": 0.022979432572079173,
+    "raw_separation_ratio": 15.712479203340548,
+    "pca_explained_variance_ratio": [
+      0.9201345068617609,
+      0.07817070546503004,
+      0.0016947690533512909,
+      1.8619857805059604e-08
+    ],
+    "pca_top2_explained": 0.9983052123267909,
+    "nearest_neighbors": {
+      "cu": "ag",
+      "al": "cu",
+      "ag": "cu",
+      "fe": "al"
+    },
+    "verdict": "contradicted",
+    "reason": "The proposed vector space does not yet stabilize the material geometry enough."
+  },
+  "leave_one_out": {
+    "folds": [
+      {
+        "held_out": "cu",
+        "train_family": [
+          "al",
+          "ag",
+          "fe"
+        ],
+        "full_nearest_neighbor": "ag",
+        "projected_nearest_neighbor": "ag",
+        "full_rank": [
+          "ag",
+          "al",
+          "fe"
+        ],
+        "projected_rank": [
+          "ag",
+          "al",
+          "fe"
+        ],
+        "displacement_to_train_center": 0.45503512458507983,
+        "order_match": true,
+        "pca_top2_explained": 0.9980396629423732
+      },
+      {
+        "held_out": "al",
+        "train_family": [
+          "cu",
+          "ag",
+          "fe"
+        ],
+        "full_nearest_neighbor": "cu",
+        "projected_nearest_neighbor": "cu",
+        "full_rank": [
+          "cu",
+          "ag",
+          "fe"
+        ],
+        "projected_rank": [
+          "cu",
+          "ag",
+          "fe"
+        ],
+        "displacement_to_train_center": 0.3342547802512174,
+        "order_match": true,
+        "pca_top2_explained": 0.9999645345716944
+      },
+      {
+        "held_out": "ag",
+        "train_family": [
+          "cu",
+          "al",
+          "fe"
+        ],
+        "full_nearest_neighbor": "cu",
+        "projected_nearest_neighbor": "cu",
+        "full_rank": [
+          "cu",
+          "al",
+          "fe"
+        ],
+        "projected_rank": [
+          "cu",
+          "al",
+          "fe"
+        ],
+        "displacement_to_train_center": 0.4881373327588211,
+        "order_match": true,
+        "pca_top2_explained": 0.9985234695766814
+      },
+      {
+        "held_out": "fe",
+        "train_family": [
+          "cu",
+          "al",
+          "ag"
+        ],
+        "full_nearest_neighbor": "al",
+        "projected_nearest_neighbor": "al",
+        "full_rank": [
+          "al",
+          "cu",
+          "ag"
+        ],
+        "projected_rank": [
+          "al",
+          "cu",
+          "ag"
+        ],
+        "displacement_to_train_center": 1.2156066591208374,
+        "order_match": true,
+        "pca_top2_explained": 0.9999999766774365
+      }
+    ],
+    "verdict": "supported",
+    "reason": "The held-out material always falls back into the same nearest-neighbor geometry under leave-one-material-out."
+  },
+  "regime": {
+    "coverage": {
+      "bf_proxy": true,
+      "hf_classic": true,
+      "hf_advanced_proxy": true
+    },
+    "explicit_dc_available": false,
+    "band_centroids": {
+      "bf_proxy": {
+        "cu": [
+          0.8494850021680094,
+          -0.4249267569478614,
+          0.0,
+          7.763462738511306
+        ],
+        "al": [
+          0.8494850021680094,
+          -0.42504698673683383,
+          0.0,
+          7.549750891680639
+        ],
+        "ag": [
+          0.8494850021680094,
+          -0.424903401421852,
+          0.0,
+          7.798602875679548
+        ],
+        "fe": [
+          0.8494850021680094,
+          -0.4245159468699632,
+          1.0,
+          7.012780770091995
+        ]
+      },
+      "hf_classic": {
+        "cu": [
+          3.1989700043360187,
+          -1.5996180810776843,
+          0.0,
+          7.763462738511306
+        ],
+        "al": [
+          3.1989700043360187,
+          -1.59943300400641,
+          0.0,
+          7.549750891680639
+        ],
+        "ag": [
+          3.1989700043360187,
+          -1.5992785221487944,
+          0.0,
+          7.798602875679548
+        ],
+        "fe": [
+          3.1989700043360187,
+          -1.5992408816994446,
+          1.0,
+          7.012780770091995
+        ]
+      },
+      "hf_advanced_proxy": {
+        "cu": [
+          4.698970004336019,
+          -2.3495904943903914,
+          0.0,
+          7.763462738511306
+        ],
+        "al": [
+          4.698970004336019,
+          -2.3492602802138514,
+          0.0,
+          7.549750891680639
+        ],
+        "ag": [
+          4.698970004336019,
+          -2.3498319219181725,
+          0.0,
+          7.798602875679548
+        ],
+        "fe": [
+          4.698970004336019,
+          -2.3494498696589625,
+          1.0,
+          7.012780770091995
+        ]
+      }
+    },
+    "band_pca_top2": {
+      "bf_proxy": 0.9948900249803475,
+      "hf_classic": 0.9898557732978306,
+      "hf_advanced_proxy": 0.9999999871606533
+    },
+    "band_nearest_neighbors": {
+      "bf_proxy": {
+        "cu": "ag",
+        "al": "cu",
+        "ag": "cu",
+        "fe": "al"
+      },
+      "hf_classic": {
+        "cu": "ag",
+        "al": "cu",
+        "ag": "cu",
+        "fe": "al"
+      },
+      "hf_advanced_proxy": {
+        "cu": "ag",
+        "al": "cu",
+        "ag": "cu",
+        "fe": "al"
+      }
+    },
+    "band_mean_shift": 1.6730309149230973,
+    "band_max_shift": 2.3924947078424763,
+    "verdict": "supported",
+    "reason": "The relative material geometry stays stable across the observed low/mid/high frequency bands."
+  },
+  "stability": {
+    "raw_pairwise_cv": 0.533089750427372,
+    "vector_pairwise_cv": 0.7688588621267255,
+    "leave_one_out_pairwise_cv": [
+      0.5122281631250984,
+      0.6780356364895613,
+      0.5354515798983991,
+      0.5639999006255081
+    ],
+    "improvement_ratio": 1.4422690766617443,
+    "verdict": "contradicted",
+    "reason": "The vector space does not reduce the spread enough to count as stable."
+  },
+  "scalar": {
+    "material_scalar_centroids": {
+      "cu": -6.27411308161463e-05,
+      "al": -2.041654518318836e-05,
+      "ag": -1.9612525725865027e-05,
+      "fe": 0.00010277020172413386
+    },
+    "scalar_pairwise_cv": 232105198609.70453,
+    "vector_pairwise_cv": 0.7688588621267255,
+    "verdict": "contradicted",
+    "reason": "The scalar collapse is not as stable as the vector form, so the vector representation should be kept."
+  },
+  "plots": {
+    "pca_projection": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\plots\\protocol_v3_pca_projection.png",
+    "cv_comparison": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\plots\\protocol_v3_cv_comparison.png"
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v3_vector_summary_20260512-140223Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocol_v3_vector_summary_20260512-140223Z.txt",
+  "md_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\protocole_v3_vectoriel.md"
+}

@@ -1,0 +1,11 @@
+V48-B matter suite summary
+timestamp: 20260519-213241Z
+v48_global_verdict: supported
+supported_count: 5/5
+
+Items:
+- v48_quark_mass_derivation: supported
+- v48_hadron_collective_mode: supported
+- v48_pmns_neutrino_light: supported
+- v48_heavy_neutrinos: supported
+- v48_geometric_consistency: supported

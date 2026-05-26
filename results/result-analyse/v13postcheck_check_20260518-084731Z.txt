@@ -1,0 +1,9 @@
+V13 postcheck
+timestamp: 20260518-084731Z
+verdict: supported
+alpha_repaired_ok: True
+redshift_ok: True
+fine_ok: True
+theta_supported: True
+posterior_ok: True
+samples_kept: 400

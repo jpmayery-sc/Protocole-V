@@ -1,0 +1,32 @@
+Recherche sur la famille des chalcogenes O -> Po
+Timestamp: 20260508-195412Z
+
+Observables:
+- radius_trend: increasing
+- ionization_trend: decreasing
+- zeff_trend: increasing
+- mass_trend: increasing
+- radius_rmse: 6.944062211702887
+- ionization_rmse: 0.733195219297017
+- zeff_rmse: 0.0304228800138785
+- mass_rmse: 16.150326842513127
+- radius_step_cv: 0.5019449554229436
+- ionization_step_cv: 0.8703938056562263
+- zeff_step_cv: 0.08301959445172492
+- mass_step_cv: 0.47903998042680596
+
+Family summary:
+- O: period=2, mass_u=15.999, radius_pm=48.0, ionization_ev=13.6181, zeff_proxy=2.00133
+- S: period=3, mass_u=32.06, radius_pm=88.0, ionization_ev=10.36, zeff_proxy=2.618374
+- Se: period=4, mass_u=78.971, radius_pm=103.0, ionization_ev=9.7524, zeff_proxy=3.387243
+- Te: period=5, mass_u=127.6, radius_pm=123.0, ionization_ev=9.0096, zeff_proxy=4.069615
+- Po: period=6, mass_u=209.0, radius_pm=135.0, ionization_ev=8.4167, zeff_proxy=4.720117
+
+Hypothese: for the chalcogen family, radius tracks Z_eff better than mass alone
+Verdict global: supported
+
+Falsificateurs:
+- radius is not monotonic across O -> Po
+- first ionization energy is not monotonic across O -> Po
+- Z_eff proxy is not smoother than mass across the family
+- mass alone explains the family trend as well as or better than Z_eff proxy

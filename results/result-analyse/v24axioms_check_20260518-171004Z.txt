@@ -1,0 +1,5 @@
+V24 axioms check
+timestamp: 20260518-171004Z
+verdict: supported
+axioms_consistency: True
+axioms_count: 6

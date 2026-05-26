@@ -1,0 +1,18 @@
+V77M physical re-validation + interpretive readout
+timestamp: 20260521-151611Z
+verdict: recommended_for_v80
+input_reference: V77L dry-run adapter via run_bbn
+accepted_count: 47/125
+best_fit_beta_e_phys: 1.1
+best_fit_gamma_exch_phys: 0.5
+best_fit_gamma_drain_phys: 0.25
+curve_reading: courbe croissante à courbure mixte
+surface_reading: surface en bande avec zone de passage de largeur moyenne
+recommendation: V80 recommandé
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77m_validation_plus_readout\v77m_results_full.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77m_validation_plus_readout\v77m_results_accepted.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77m_validation_plus_readout\plots\v77m_Litot_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77m_validation_plus_readout\plots\v77m_Litot_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77m_validation_plus_readout\plots\v77m_DH_vs_param.png

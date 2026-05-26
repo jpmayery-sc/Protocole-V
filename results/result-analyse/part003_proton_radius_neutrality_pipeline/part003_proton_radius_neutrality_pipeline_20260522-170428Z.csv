@@ -1,0 +1,6 @@
+metric,value
+verdict,part03_proton_radius_supported
+chi2_model,0.06777777777777776
+chi2_baseline,219.93916666666667
+delta_chi2,219.87138888888887
+max_abs_local_shift,0.0

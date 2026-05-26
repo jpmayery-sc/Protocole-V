@@ -1,0 +1,3 @@
+note
+"Each sheet contains the exact grid used for pcolormesh: columns gamma_r, gamma_im, W."
+One row corresponds to one pixel/grid-point in the plotted array (no interpolation).

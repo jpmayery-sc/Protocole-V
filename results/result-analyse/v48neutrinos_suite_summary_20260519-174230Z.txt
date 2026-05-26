@@ -1,0 +1,12 @@
+V48 neutrinos suite summary
+timestamp: 20260519-174230Z
+v48_global_verdict: supported
+supported_count: 6/6
+
+Items:
+- v48_mass_model: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_neutrinos\v48mass_model_check_20260519-174225Z.json
+- v48_mixing: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_neutrinos\v48mixing_check_20260519-174226Z.json
+- v48_sterile_dynamics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_neutrinos\v48sterile_dynamics_check_20260519-174227Z.json
+- v48_cosmo_constraints: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_neutrinos\v48cosmo_constraints_check_20260519-174227Z.json
+- v48_decays: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_neutrinos\v48decays_check_20260519-174228Z.json
+- v48_synthesis: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v48_neutrinos\v48synthesis_check_20260519-174230Z.json

@@ -1,0 +1,14 @@
+JWST-06 reionisation/AGN pipeline summary
+timestamp: 20260522-163741Z
+verdict: jwst06_reionisation_agn_supported
+chi2_agn: 0.8240422845952384
+chi2_fesc: 62.079542041459405
+chi2_qhii: 38.68246049621183
+chi2_qheiii: 20.988672501584894
+baseline_total_chi2: 460.0121237946696
+total_chi2: 122.57471732385136
+delta_chi2: 337.43740647081825
+mean_n_agn_hom: 0.23399999999999999
+mean_fesc_agn_hom: 0.13
+mean_q_hii_hom: 0.5860000000000001
+mean_q_heiii_hom: 0.076

@@ -1,0 +1,34 @@
+{
+  "section": "V38-GROWTH",
+  "eta": 0.2,
+  "Sent_Y": 0.9,
+  "z_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "predicted": {
+    "0.0": 0.481728,
+    "0.5": 0.42512346788827204,
+    "1.0": 0.37517014362742174
+  },
+  "observed": {
+    "0.0": 0.48,
+    "0.5": 0.425,
+    "1.0": 0.375
+  },
+  "relative_errors": {
+    "0.0": 0.0036000000000000155,
+    "0.5": 0.0002905126782871888,
+    "1.0": 0.0004537163397912991
+  },
+  "growth_match_ok": true,
+  "eta_natural_ok": true,
+  "multi_scale_ok": true,
+  "rejected_reasons": [],
+  "v38_growth_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-135020Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38growth_check_20260519-135020Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38_cosmology\\v38growth_check_20260519-135020Z.txt"
+}

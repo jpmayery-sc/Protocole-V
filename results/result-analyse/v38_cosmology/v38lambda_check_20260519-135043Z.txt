@@ -1,0 +1,5 @@
+V38 lambda check
+timestamp: 20260519-135043Z
+verdict: supported
+lambda_match_ok: True
+xi_natural_ok: True

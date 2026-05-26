@@ -1,0 +1,27 @@
+V29 test 1 data comparison
+timestamp: 20260518-202111Z
+verdict: supported
+chronometers_reduced_chi2: 0.497230
+bao_reduced_chi2_correlated: 2.309293
+pantheon_reduced_chi2_correlated: 2.537198
+mean_reduced_chi2: 1.781240
+
+Top residual slices:
+- chronometers
+  z=1.03700 H(z): residual=30.684459, standardized=1.534223
+  z=1.30000 H(z): residual=24.743603, standardized=1.455506
+  z=1.43000 H(z): residual=23.231871, standardized=1.290660
+  z=0.88000 H(z): residual=-22.339276, standardized=-0.558482
+  z=1.53000 H(z): residual=-22.127436, standardized=-1.580531
+- bao
+  z=0.51000 DH_over_rs: residual=-1.749235, standardized=-2.778766
+  z=0.70600 DM_over_rs: residual=-0.847205, standardized=-1.676326
+  z=2.33000 DM_over_rs: residual=0.534914, standardized=0.449036
+  z=1.31700 DH_over_rs: residual=-0.270686, standardized=-0.652709
+  z=0.93000 DH_over_rs: residual=0.268554, standardized=0.500768
+- pantheon_plus_shoes
+  z=0.00616 MU_SH0ES: residual=-1.291827, standardized=-2.460661
+  z=0.00668 MU_SH0ES: residual=-1.154860, standardized=-2.745053
+  z=0.00616 MU_SH0ES: residual=-1.014027, standardized=-2.242257
+  z=0.05974 MU_SH0ES: residual=-0.917682, standardized=-1.486085
+  z=0.00349 MU_SH0ES: residual=0.831744, standardized=1.504821

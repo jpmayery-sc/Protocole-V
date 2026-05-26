@@ -1,0 +1,237 @@
+{
+  "timestamp": "20260519-171237Z",
+  "hypothesis": "V16 reste dans les bornes de reference externes",
+  "case_control": "V16 vs reference minimale",
+  "observable": "z_obs, delta_nu_over_nu, delta_E, fine_correction_eff, grav_torsion_eff",
+  "expected": "ecarts faibles et signes compatibles",
+  "measured": {
+    "all_in_bounds": true,
+    "all_signs_ok": true,
+    "comparison_ok": true
+  },
+  "rows": [
+    {
+      "name": "z_obs",
+      "predicted": 0.0001256,
+      "target": 0.000125,
+      "lower": 0.0001,
+      "upper": 0.00015,
+      "absolute_error": 5.999999999999875e-07,
+      "relative_error": 0.0047999999999999,
+      "center_offset": 0.023999999999999508,
+      "in_bounds": true,
+      "sign_ok": true
+    },
+    {
+      "name": "delta_nu_over_nu",
+      "predicted": 2.96e-05,
+      "target": 2.85e-05,
+      "lower": 2.5e-05,
+      "upper": 3.5e-05,
+      "absolute_error": 1.0999999999999996e-06,
+      "relative_error": 0.038596491228070164,
+      "center_offset": 0.07999999999999927,
+      "in_bounds": true,
+      "sign_ok": true
+    },
+    {
+      "name": "delta_E",
+      "predicted": 2.40056e-05,
+      "target": 2.4e-05,
+      "lower": 2e-05,
+      "upper": 2.8e-05,
+      "absolute_error": 5.599999999998727e-09,
+      "relative_error": 0.00023333333333328026,
+      "center_offset": 0.001399999999999682,
+      "in_bounds": true,
+      "sign_ok": true
+    },
+    {
+      "name": "fine_correction_eff",
+      "predicted": 2.0,
+      "target": 2.0,
+      "lower": 1.5,
+      "upper": 2.5,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "center_offset": 0.0,
+      "in_bounds": true,
+      "sign_ok": true
+    },
+    {
+      "name": "grav_torsion_eff",
+      "predicted": -0.00011999999999999999,
+      "target": -0.00012,
+      "lower": -0.0002,
+      "upper": 0.0,
+      "absolute_error": 1.3552527156068805e-20,
+      "relative_error": 1.1293772630057339e-16,
+      "center_offset": 0.19999999999999984,
+      "in_bounds": true,
+      "sign_ok": true
+    }
+  ],
+  "comparison": {
+    "v16": {
+      "suite": "v16prediction_suite",
+      "locked_names": [
+        "alpha0",
+        "s_geo",
+        "s_atom",
+        "A_kappa",
+        "p"
+      ],
+      "frozen_names": [
+        "aE",
+        "aR",
+        "s_canal"
+      ],
+      "internal": {
+        "z_geo": 1.1e-06,
+        "z_int": 4.8e-06,
+        "z_canal": 2.6e-06,
+        "z_mod": 5.6e-06,
+        "fine_delta": 0.00024,
+        "alpha_residual": 0.0,
+        "theta_v15": {
+          "aE": 0.0,
+          "aR": 0.0,
+          "s_canal": 1.0,
+          "alpha0": 0.0072973525692838015,
+          "s_geo": 1.0,
+          "s_atom": 1.0,
+          "A_kappa": 0.001,
+          "p": 5.0
+        },
+        "theta_supported": true,
+        "internal_balance": 2.7666666666666663e-06
+      },
+      "external": {
+        "z_obs": 0.0001256,
+        "delta_nu_over_nu": 2.96e-05,
+        "delta_E": 2.40056e-05,
+        "fine_correction_eff": 2.0,
+        "grav_torsion_eff": -0.00011999999999999999
+      },
+      "verdict": "supported"
+    },
+    "reference": {
+      "source": "minimal theoretical bounds",
+      "locked_names": [
+        "alpha0",
+        "s_geo",
+        "s_atom",
+        "A_kappa",
+        "p"
+      ],
+      "frozen_names": [
+        "aE",
+        "aR",
+        "s_canal"
+      ],
+      "order": [
+        "z_obs",
+        "delta_nu_over_nu",
+        "delta_E",
+        "fine_correction_eff",
+        "grav_torsion_eff"
+      ],
+      "targets": {
+        "z_obs": 0.000125,
+        "delta_nu_over_nu": 2.85e-05,
+        "delta_E": 2.4e-05,
+        "fine_correction_eff": 2.0,
+        "grav_torsion_eff": -0.00012
+      },
+      "bounds": {
+        "z_obs": [
+          0.0001,
+          0.00015
+        ],
+        "delta_nu_over_nu": [
+          2.5e-05,
+          3.5e-05
+        ],
+        "delta_E": [
+          2e-05,
+          2.8e-05
+        ],
+        "fine_correction_eff": [
+          1.5,
+          2.5
+        ],
+        "grav_torsion_eff": [
+          -0.0002,
+          0.0
+        ]
+      }
+    },
+    "rows": [
+      {
+        "name": "z_obs",
+        "predicted": 0.0001256,
+        "target": 0.000125,
+        "lower": 0.0001,
+        "upper": 0.00015,
+        "absolute_error": 5.999999999999875e-07,
+        "relative_error": 0.0047999999999999,
+        "center_offset": 0.023999999999999508,
+        "in_bounds": true,
+        "sign_ok": true
+      },
+      {
+        "name": "delta_nu_over_nu",
+        "predicted": 2.96e-05,
+        "target": 2.85e-05,
+        "lower": 2.5e-05,
+        "upper": 3.5e-05,
+        "absolute_error": 1.0999999999999996e-06,
+        "relative_error": 0.038596491228070164,
+        "center_offset": 0.07999999999999927,
+        "in_bounds": true,
+        "sign_ok": true
+      },
+      {
+        "name": "delta_E",
+        "predicted": 2.40056e-05,
+        "target": 2.4e-05,
+        "lower": 2e-05,
+        "upper": 2.8e-05,
+        "absolute_error": 5.599999999998727e-09,
+        "relative_error": 0.00023333333333328026,
+        "center_offset": 0.001399999999999682,
+        "in_bounds": true,
+        "sign_ok": true
+      },
+      {
+        "name": "fine_correction_eff",
+        "predicted": 2.0,
+        "target": 2.0,
+        "lower": 1.5,
+        "upper": 2.5,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "center_offset": 0.0,
+        "in_bounds": true,
+        "sign_ok": true
+      },
+      {
+        "name": "grav_torsion_eff",
+        "predicted": -0.00011999999999999999,
+        "target": -0.00012,
+        "lower": -0.0002,
+        "upper": 0.0,
+        "absolute_error": 1.3552527156068805e-20,
+        "relative_error": 1.1293772630057339e-16,
+        "center_offset": 0.19999999999999984,
+        "in_bounds": true,
+        "sign_ok": true
+      }
+    ],
+    "all_in_bounds": true,
+    "all_signs_ok": true,
+    "comparison_ok": true
+  },
+  "verdict": "supported",
+  "reference_label": "V17 comparison gate"
+}

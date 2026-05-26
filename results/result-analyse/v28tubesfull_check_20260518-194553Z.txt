@@ -1,0 +1,13 @@
+V28 tubes full check
+{
+  "section": "V28-TUBES-FULL",
+  "fulltubeequations": [
+    "L(tau) = 2 pi / sqrt(K(tau))",
+    "E_n = n hbar sqrt(K)"
+  ],
+  "tubemodemap": true,
+  "verdict": "supported",
+  "timestamp": "20260518-194553Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28tubesfull_check_20260518-194553Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28tubesfull_check_20260518-194553Z.txt"
+}

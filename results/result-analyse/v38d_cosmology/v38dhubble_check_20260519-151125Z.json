@@ -1,0 +1,40 @@
+{
+  "section": "V38D-HUBBLE",
+  "z_grid": [
+    0.1,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "H0": 70.0,
+  "omega_m": 0.3,
+  "omega_lambda": 0.68,
+  "alpha": 0.5,
+  "predicted": {
+    "0.1": 73.42583514758736,
+    "0.5": 91.72390635704726,
+    "1.0": 123.412288404002,
+    "2.0": 207.82622784225705
+  },
+  "observed": {
+    "0.1": 73.1,
+    "0.5": 91.8,
+    "1.0": 123.4,
+    "2.0": 208.0
+  },
+  "relative_errors": {
+    "0.1": 0.004457389159881937,
+    "0.5": 0.0008289067859775807,
+    "1.0": 9.958188008097733e-05,
+    "2.0": 0.0008354430660718529
+  },
+  "hubble_match_ok": true,
+  "alpha_natural_ok": true,
+  "no_explosion_ok": true,
+  "rejected_reasons": [],
+  "v38_hubble_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-151125Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38d_cosmology\\v38dhubble_check_20260519-151125Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v38d_cosmology\\v38dhubble_check_20260519-151125Z.txt"
+}

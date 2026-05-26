@@ -1,0 +1,10 @@
+V38 cosmology suite summary
+timestamp: 20260519-135000Z
+v38_global_verdict: partially_supported
+supported_count: 2/4
+
+Items:
+- v38_hubble: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v38_cosmology\v38hubble_check_20260519-134959Z.json
+- v38_lambda: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v38_cosmology\v38lambda_check_20260519-134959Z.json
+- v38_growth: inconclusive -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v38_cosmology\v38growth_check_20260519-135000Z.json
+- v38_tester_summary: partially_supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v38_cosmology\v38tester_summary_check_20260519-135000Z.json

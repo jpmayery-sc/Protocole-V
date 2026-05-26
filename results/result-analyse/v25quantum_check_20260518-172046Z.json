@@ -1,0 +1,23 @@
+{
+  "section": "V25-QUANTUM",
+  "quantizedenergy_levels": [
+    "E_n = n h/(2pi) sqrt(K)"
+  ],
+  "quantizedmassspectrum": [
+    "m_n = E_n / c^2"
+  ],
+  "quantization_consistency": true,
+  "spinquantizationok": true,
+  "torsion_spectrum": [
+    "integer -> boson",
+    "half-integer -> fermion"
+  ],
+  "variationnalquantizationok": true,
+  "entanglementoperatorspectrum": [
+    "S_ent[Y]"
+  ],
+  "verdict": "supported",
+  "timestamp": "20260518-172046Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25quantum_check_20260518-172046Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25quantum_check_20260518-172046Z.txt"
+}

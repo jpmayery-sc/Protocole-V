@@ -1,0 +1,259 @@
+{
+  "section": "V45-SYNTHESIS",
+  "beta_summary": {
+    "section": "V45-BETA-FUNCTIONS",
+    "source_v44_available": true,
+    "source_v44_supported": true,
+    "source_v44_timestamp": "20260519-163733Z",
+    "source_v44_supported_count": 6,
+    "source_v44_total": 6,
+    "beta_functions": {
+      "lambda_K": "a_K lambda_K^2 + b_K lambda_KT^2",
+      "lambda_T": "a_T lambda_T^2 + b_T lambda_KT^2",
+      "lambda_KT": "c lambda_KT (lambda_K + lambda_T)",
+      "gamma": "0",
+      "Y_inf": "0",
+      "xi": "alpha_xi xi",
+      "eta": "alpha_eta eta"
+    },
+    "RG_equations": 6,
+    "beta_ok": true,
+    "verdict": "supported"
+  },
+  "rg_flow_summary": {
+    "section": "V45-RG-FLOW",
+    "source_v44_available": true,
+    "source_v44_supported": true,
+    "source_v44_timestamp": "20260519-163733Z",
+    "source_v44_supported_count": 6,
+    "source_v44_total": 6,
+    "mu_grid": [
+      1.0,
+      100.0,
+      10000.0,
+      100000000.0,
+      1000000000000.0,
+      100000000000000.0,
+      1e+16
+    ],
+    "RG_trajectories": [
+      {
+        "mu": 1.0,
+        "lambda_K": 0.14,
+        "lambda_T": 0.11,
+        "lambda_KT": -0.03,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 100.0,
+        "lambda_K": 0.16,
+        "lambda_T": 0.125,
+        "lambda_KT": -0.014898,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 10000.0,
+        "lambda_K": 0.18,
+        "lambda_T": 0.14,
+        "lambda_KT": -0.007398,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 100000000.0,
+        "lambda_K": 0.22,
+        "lambda_T": 0.17,
+        "lambda_KT": -0.001824,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 1000000000000.0,
+        "lambda_K": 0.26,
+        "lambda_T": 0.2,
+        "lambda_KT": -0.00045,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 100000000000000.0,
+        "lambda_K": 0.28,
+        "lambda_T": 0.215,
+        "lambda_KT": -0.000223,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 1e+16,
+        "lambda_K": 0.3,
+        "lambda_T": 0.23,
+        "lambda_KT": -0.000111,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      }
+    ],
+    "running_parameters": [
+      {
+        "mu": 1.0,
+        "lambda_K": 0.14,
+        "lambda_T": 0.11,
+        "lambda_KT": -0.03,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 100.0,
+        "lambda_K": 0.16,
+        "lambda_T": 0.125,
+        "lambda_KT": -0.014898,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 10000.0,
+        "lambda_K": 0.18,
+        "lambda_T": 0.14,
+        "lambda_KT": -0.007398,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 100000000.0,
+        "lambda_K": 0.22,
+        "lambda_T": 0.17,
+        "lambda_KT": -0.001824,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 1000000000000.0,
+        "lambda_K": 0.26,
+        "lambda_T": 0.2,
+        "lambda_KT": -0.00045,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 100000000000000.0,
+        "lambda_K": 0.28,
+        "lambda_T": 0.215,
+        "lambda_KT": -0.000223,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      },
+      {
+        "mu": 1e+16,
+        "lambda_K": 0.3,
+        "lambda_T": 0.23,
+        "lambda_KT": -0.000111,
+        "gamma": 0.45,
+        "Y_inf": 0.7,
+        "xi": 0.68,
+        "eta": 0.012
+      }
+    ],
+    "no_blowup_ok": true,
+    "verdict": "supported"
+  },
+  "fixed_point_summary": {
+    "section": "V45-FIXED-POINTS",
+    "source_v44_available": true,
+    "source_v44_supported": true,
+    "source_v44_timestamp": "20260519-163733Z",
+    "source_v44_supported_count": 6,
+    "source_v44_total": 6,
+    "fixed_points": {
+      "IR": {
+        "lambda_K": 0.0,
+        "lambda_T": 0.0,
+        "lambda_KT": 0.0,
+        "Y_inf": 0.7,
+        "gamma": 0.45
+      },
+      "UV": {
+        "lambda_K": 0.16,
+        "lambda_T": 0.13,
+        "lambda_KT": 0.0,
+        "xi": 0.68,
+        "eta": 0.012
+      }
+    },
+    "IR_fixed_point_ok": true,
+    "UV_fixed_point_ok": true,
+    "verdict": "supported"
+  },
+  "stability_summary": {
+    "section": "V45-STABILITY",
+    "source_v44_available": true,
+    "source_v44_supported": true,
+    "source_v44_timestamp": "20260519-163733Z",
+    "source_v44_supported_count": 6,
+    "source_v44_total": 6,
+    "stability_matrix": [
+      [
+        0.14,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.11,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.45
+      ]
+    ],
+    "eigenvalues_RG": [
+      0.14,
+      0.11,
+      0.45
+    ],
+    "RG_stability_ok": true,
+    "verdict": "supported"
+  },
+  "source_v44_summary": {
+    "source_v44_available": true,
+    "source_v44_supported": true,
+    "source_v44_timestamp": "20260519-163733Z",
+    "source_v44_supported_count": 6,
+    "source_v44_total": 6
+  },
+  "v45_global_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "verdict": "supported",
+  "timestamp": "20260519-164217Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45synthesis_check_20260519-164217Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45synthesis_check_20260519-164217Z.txt"
+}

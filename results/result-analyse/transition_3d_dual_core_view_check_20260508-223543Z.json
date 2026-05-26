@@ -1,0 +1,206 @@
+{
+  "timestamp": "20260508-223543Z",
+  "hypothesis": "the 3d block is best read as two local cores plus anomalies, not one repaired core",
+  "case_control": "full 3d block Sc -> Zn versus early core Sc -> V and late core Mn -> Ni",
+  "observable": "whether splitting the block into two cores improves the regularity signal",
+  "expected": {
+    "full_family": "mixed or broken trend",
+    "early_core": "distinct core behavior",
+    "late_core": "distinct core behavior"
+  },
+  "measured": {
+    "full_family": {
+      "series": [
+        {
+          "symbol": "Sc",
+          "period": 4,
+          "mass_u": 44.955908,
+          "radius_pm": 162.0,
+          "ionization_ev": 6.5615,
+          "zeff_proxy": 2.778383
+        },
+        {
+          "symbol": "Ti",
+          "period": 4,
+          "mass_u": 47.867,
+          "radius_pm": 147.0,
+          "ionization_ev": 6.8281,
+          "zeff_proxy": 2.834265
+        },
+        {
+          "symbol": "V",
+          "period": 4,
+          "mass_u": 50.9415,
+          "radius_pm": 134.0,
+          "ionization_ev": 6.7462,
+          "zeff_proxy": 2.817216
+        },
+        {
+          "symbol": "Cr",
+          "period": 4,
+          "mass_u": 51.9961,
+          "radius_pm": 128.0,
+          "ionization_ev": 6.7665,
+          "zeff_proxy": 2.821451
+        },
+        {
+          "symbol": "Mn",
+          "period": 4,
+          "mass_u": 54.938044,
+          "radius_pm": 127.0,
+          "ionization_ev": 7.434,
+          "zeff_proxy": 2.957344
+        },
+        {
+          "symbol": "Fe",
+          "period": 4,
+          "mass_u": 55.845,
+          "radius_pm": 126.0,
+          "ionization_ev": 7.9024,
+          "zeff_proxy": 3.049089
+        },
+        {
+          "symbol": "Co",
+          "period": 4,
+          "mass_u": 58.933194,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.881,
+          "zeff_proxy": 3.044957
+        },
+        {
+          "symbol": "Ni",
+          "period": 4,
+          "mass_u": 58.6934,
+          "radius_pm": 124.0,
+          "ionization_ev": 7.6398,
+          "zeff_proxy": 2.997999
+        },
+        {
+          "symbol": "Cu",
+          "period": 4,
+          "mass_u": 63.546,
+          "radius_pm": 128.0,
+          "ionization_ev": 7.7264,
+          "zeff_proxy": 3.014943
+        },
+        {
+          "symbol": "Zn",
+          "period": 4,
+          "mass_u": 65.38,
+          "radius_pm": 134.0,
+          "ionization_ev": 9.3942,
+          "zeff_proxy": 3.324455
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "mixed",
+      "radius_rmse": 8.464184794912278,
+      "ionization_rmse": 0.39289549612171343,
+      "zeff_rmse": 0.07358227351881258,
+      "mass_rmse": 0.8402252444556956,
+      "radius_step_cv": 2.139878882706463,
+      "ionization_step_cv": 1.7399767957822219,
+      "zeff_step_cv": 1.6976517645346687,
+      "mass_step_cv": 0.6347289293879522
+    },
+    "early_core": {
+      "series": [
+        {
+          "symbol": "Sc",
+          "period": 4,
+          "mass_u": 44.955908,
+          "radius_pm": 162.0,
+          "ionization_ev": 6.5615,
+          "zeff_proxy": 2.778383
+        },
+        {
+          "symbol": "Ti",
+          "period": 4,
+          "mass_u": 47.867,
+          "radius_pm": 147.0,
+          "ionization_ev": 6.8281,
+          "zeff_proxy": 2.834265
+        },
+        {
+          "symbol": "V",
+          "period": 4,
+          "mass_u": 50.9415,
+          "radius_pm": 134.0,
+          "ionization_ev": 6.7462,
+          "zeff_proxy": 2.817216
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "increasing",
+      "radius_rmse": 0.4714045207910317,
+      "ionization_rmse": 0.08214223774783759,
+      "zeff_rmse": 0.01719008106327041,
+      "mass_rmse": 0.03851563496671139,
+      "radius_step_cv": 0.07142857142857142,
+      "ionization_step_cv": 1.8868435300487272,
+      "zeff_step_cv": 1.8780743673159228,
+      "mass_step_cv": 0.027300223603614157
+    },
+    "late_core": {
+      "series": [
+        {
+          "symbol": "Mn",
+          "period": 4,
+          "mass_u": 54.938044,
+          "radius_pm": 127.0,
+          "ionization_ev": 7.434,
+          "zeff_proxy": 2.957344
+        },
+        {
+          "symbol": "Fe",
+          "period": 4,
+          "mass_u": 55.845,
+          "radius_pm": 126.0,
+          "ionization_ev": 7.9024,
+          "zeff_proxy": 3.049089
+        },
+        {
+          "symbol": "Co",
+          "period": 4,
+          "mass_u": 58.933194,
+          "radius_pm": 125.0,
+          "ionization_ev": 7.881,
+          "zeff_proxy": 3.044957
+        },
+        {
+          "symbol": "Ni",
+          "period": 4,
+          "mass_u": 58.6934,
+          "radius_pm": 124.0,
+          "ionization_ev": 7.6398,
+          "zeff_proxy": 2.997999
+        }
+      ],
+      "radius_trend": "decreasing",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "mixed",
+      "radius_rmse": 0.0,
+      "ionization_rmse": 0.1799500208391208,
+      "zeff_rmse": 0.03517926478116893,
+      "mass_rmse": 0.6794000012104087,
+      "radius_step_cv": 0.0,
+      "ionization_step_cv": 4.323626628171949,
+      "zeff_step_cv": 4.279067611457957,
+      "mass_step_cv": 1.1027064514271234
+    }
+  },
+  "verdict": "supported",
+  "reference": "3d block anomalies around Cr, Fe/Ni and Cu/Zn",
+  "falsifiers": [
+    "the full 3d block is already regular",
+    "the split into two cores does not change the regularity picture",
+    "neither core is more regular than the full block"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_3d_dual_core_view_check_20260508-223543Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_3d_dual_core_view_check_20260508-223543Z.txt"
+}

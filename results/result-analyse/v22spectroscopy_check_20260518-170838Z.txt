@@ -1,0 +1,6 @@
+V22 spectroscopy experiment check
+timestamp: 20260518-170838Z
+verdict: supported
+delta_nu_over_nu: 2.9598180000000003e-05
+delta_E: 2.4003600180000002e-05
+fine_correction_eff: 1.9999166666666666

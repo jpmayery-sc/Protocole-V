@@ -1,0 +1,7 @@
+Material conductivity suite summary
+timestamp: 20260512-112245Z
+overall_verdict: supported
+supported_count: 1/1
+
+Items:
+- material_conductivity: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\material_conductivity_check_20260512-112245Z.json

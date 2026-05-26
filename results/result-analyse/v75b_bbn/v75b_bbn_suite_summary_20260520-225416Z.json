@@ -1,0 +1,51 @@
+{
+  "suite": "v75b_bbn_suite",
+  "timestamp": "20260520-225416Z",
+  "v75b_global_verdict": "cadre_BBN_partiellement_coherent",
+  "overall_verdict": "cadre_BBN_partiellement_coherent",
+  "verdict": "cadre_BBN_partiellement_coherent",
+  "supported_count": 3,
+  "cadre_BBN_partiellement_coherent_count": 1,
+  "total": 4,
+  "z_scores": {
+    "D_over_H": 1.5400000000000023,
+    "He_over_H": 0.061826107876889615,
+    "Li_over_H": 7.350859985229768
+  },
+  "items": [
+    {
+      "label": "v75b_reference_load",
+      "verdict": "supported",
+      "D_over_H_obs": 2.527e-05,
+      "He_over_H_obs": 0.2465,
+      "Li_over_H_obs": 1.58e-10
+    },
+    {
+      "label": "v75b_numeric_check",
+      "verdict": "supported",
+      "D_z": 1.5400000000000023,
+      "He_z": 0.061826107876889615,
+      "Li_z": 7.350859985229768,
+      "D_pass": true,
+      "He_pass": true,
+      "Li_pass": false
+    },
+    {
+      "label": "v75b_success_criteria",
+      "verdict": "supported",
+      "D_H_ok": true,
+      "He_H_ok": true,
+      "Li_tension_remains": true
+    },
+    {
+      "label": "v75b_synthesis",
+      "verdict": "cadre_BBN_partiellement_coherent",
+      "v75b_global_verdict": "cadre_BBN_partiellement_coherent",
+      "D_H_validated": true,
+      "He_H_validated": true,
+      "Li_H_resolved": false
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v75b_bbn\\v75b_bbn_suite_summary_20260520-225416Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v75b_bbn\\v75b_bbn_suite_summary_20260520-225416Z.txt"
+}

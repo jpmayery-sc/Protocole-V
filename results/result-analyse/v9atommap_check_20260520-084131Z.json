@@ -1,0 +1,75 @@
+{
+  "timestamp": "20260520-084131Z",
+  "hypothesis": "V4 a V9 suffisent pour construire une carte atomique qualitative",
+  "case_control": "H, He, C, O, Fe, Pb, U",
+  "observable": "rayon, correction de niveau, score de stabilite",
+  "expected": "rayon et correction croissent avec Z, stabilite maximale vers Fe, Pb/U en zone limite",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "base_delta_phi": 0.0031087512698201886,
+    "radius_monotone_ok": true,
+    "level_monotone_ok": true,
+    "stability_peak_ok": true,
+    "heavy_limit_ok": true
+  },
+  "rows": [
+    {
+      "symbol": "H",
+      "z": 1,
+      "radius_proxy": 0.61,
+      "delta_energy": 3.718959682965022e-05,
+      "stability_score": 12642.06202893846,
+      "kappa_band": 2
+    },
+    {
+      "symbol": "He",
+      "z": 2,
+      "radius_proxy": 0.7176955262170047,
+      "delta_energy": 6.32180450828875e-05,
+      "stability_score": 13753.796974198085,
+      "kappa_band": 2
+    },
+    {
+      "symbol": "C",
+      "z": 6,
+      "radius_proxy": 0.9868673331236263,
+      "delta_energy": 0.0001379252507687055,
+      "stability_score": 43883.24976148361,
+      "kappa_band": 2
+    },
+    {
+      "symbol": "O",
+      "z": 8,
+      "radius_proxy": 1.0853910524340096,
+      "delta_energy": 0.0001672072310912358,
+      "stability_score": 79969.8962686412,
+      "kappa_band": 2
+    },
+    {
+      "symbol": "Fe",
+      "z": 26,
+      "radius_proxy": 1.6757450735341242,
+      "delta_energy": 0.00035197895851444465,
+      "stability_score": 10296115.931994183,
+      "kappa_band": 3
+    },
+    {
+      "symbol": "Pb",
+      "z": 82,
+      "radius_proxy": 2.7044001359157286,
+      "delta_energy": 0.0006878507395094548,
+      "stability_score": 3.6276105516729957e-06,
+      "kappa_band": 6
+    },
+    {
+      "symbol": "U",
+      "z": 92,
+      "radius_proxy": 2.8438323921226143,
+      "delta_energy": 0.0007338970397345358,
+      "stability_score": 1.64481861857979e-11,
+      "kappa_band": 6
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V8 critical, fine and stability blocks"
+}

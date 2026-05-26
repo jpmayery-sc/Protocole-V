@@ -1,0 +1,8 @@
+V41 conserved quantities check
+timestamp: 20260519-155357Z
+verdict: supported
+noether_currents: [{'symmetry': 'diffeomorphisms', 'current': 'J_diff^mu ~ T^mu_nu xi^nu', 'interpretation': 'covariant energy-momentum flow'}, {'symmetry': 'effective geometric rescaling', 'current': 'J_geom^mu ~ dL_eff/d(∂_mu K_bg) * delta K_bg', 'interpretation': 'background geometric charge'}]
+conserved_quantities: ['covariant energy-momentum', 'effective geometric charge']
+conserved_quantities_summary: At the effective level, the model retains covariant conservation from diffeomorphism invariance and an identifiable geometric charge associated with the K sector.
+conservation_ok: True
+v41_conserved_verdict: supported

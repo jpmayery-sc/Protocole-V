@@ -1,0 +1,16 @@
+Contrôle électromagnétique: induction forte
+Timestamp: 20260506-214040Z
+
+Tests:
+- Faible excitation quasi linéaire: falsifie
+- Distorsion à forte excitation: falsifie
+- Réponse plus forte à excitation rapide: conforme strict
+- Asymétrie de cycle: conforme strict
+
+Verdict global: falsifie
+
+Falsificateurs:
+- la réponse reste parfaitement linéaire même à forte excitation
+- la variation rapide ne change pas l'amplitude induite
+- aucun effet de saturation ou d'asymétrie de cycle n'apparaît
+- le régime fort est indiscernable du régime faible

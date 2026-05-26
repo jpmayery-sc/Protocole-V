@@ -1,0 +1,6 @@
+metric,value
+verdict,uhecr01_propagation_supported
+chi2_model,0.12777777777777785
+chi2_baseline,63.25
+delta_chi2,63.12222222222222
+max_abs_local_shift,0.0

@@ -1,0 +1,401 @@
+{
+  "theta_reference": {
+    "aE": 0.0,
+    "aR": 0.0,
+    "A_kappa": 0.001002,
+    "p": 5.01,
+    "alpha0": 0.0072973525692838015,
+    "s_geo": 0.999,
+    "s_atom": 0.999,
+    "s_canal": 1.0
+  },
+  "sources": [
+    "NIST CODATA 2022",
+    "NIST ASD",
+    "SDSS DR17",
+    "DLMF 34.2"
+  ],
+  "hierarchy_diagram": [
+    {
+      "parameter": "alpha0",
+      "role": "invariant"
+    },
+    {
+      "parameter": "s_geo",
+      "role": "metric"
+    },
+    {
+      "parameter": "s_atom",
+      "role": "metric"
+    },
+    {
+      "parameter": "p",
+      "role": "torsion"
+    },
+    {
+      "parameter": "A_kappa",
+      "role": "coupling"
+    }
+  ],
+  "role_assignment": {
+    "alpha0": "invariant",
+    "s_geo": "metric",
+    "s_atom": "metric",
+    "p": "torsion",
+    "A_kappa": "coupling"
+  },
+  "hierarchystabilitystate": "stable",
+  "hierarchymodelok": true,
+  "hierarchy_support": {
+    "theta_reference": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001002,
+      "p": 5.01,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 0.999,
+      "s_atom": 0.999,
+      "s_canal": 1.0
+    },
+    "sensitivity": {
+      "theta_reference": {
+        "aE": 0.0,
+        "aR": 0.0,
+        "A_kappa": 0.001002,
+        "p": 5.01,
+        "alpha0": 0.0072973525692838015,
+        "s_geo": 0.999,
+        "s_atom": 0.999,
+        "s_canal": 1.0
+      },
+      "rows": [
+        {
+          "parameter": "alpha0",
+          "step": 5e-11,
+          "observable": "alpha0_shift",
+          "low_value": -4.999999980020986e-11,
+          "high_value": 4.999999980020986e-11,
+          "derivative": 0.9999999960041972,
+          "abs_derivative": 0.9999999960041972,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_geo",
+          "step": 0.0005,
+          "observable": "z_geo",
+          "low_value": 1.0998500000000002e-06,
+          "high_value": 1.09995e-06,
+          "derivative": 9.999999999979575e-08,
+          "abs_derivative": 9.999999999979575e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_atom",
+          "step": 0.0005,
+          "observable": "z_int",
+          "low_value": 4.7997e-06,
+          "high_value": 4.7998999999999996e-06,
+          "derivative": 1.999999999995915e-07,
+          "abs_derivative": 1.999999999995915e-07,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "A_kappa",
+          "step": 1e-06,
+          "observable": "fine_delta",
+          "low_value": 0.00023993000000000002,
+          "high_value": 0.00024003000000000002,
+          "derivative": 0.05000000000000122,
+          "abs_derivative": 0.05000000000000122,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "p",
+          "step": 0.005,
+          "observable": "z_mod",
+          "low_value": 5.60003e-06,
+          "high_value": 5.60033e-06,
+          "derivative": 2.999999999998108e-08,
+          "abs_derivative": 2.999999999998108e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        }
+      ],
+      "ranking": [
+        {
+          "parameter": "alpha0",
+          "step": 5e-11,
+          "observable": "alpha0_shift",
+          "low_value": -4.999999980020986e-11,
+          "high_value": 4.999999980020986e-11,
+          "derivative": 0.9999999960041972,
+          "abs_derivative": 0.9999999960041972,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "A_kappa",
+          "step": 1e-06,
+          "observable": "fine_delta",
+          "low_value": 0.00023993000000000002,
+          "high_value": 0.00024003000000000002,
+          "derivative": 0.05000000000000122,
+          "abs_derivative": 0.05000000000000122,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_atom",
+          "step": 0.0005,
+          "observable": "z_int",
+          "low_value": 4.7997e-06,
+          "high_value": 4.7998999999999996e-06,
+          "derivative": 1.999999999995915e-07,
+          "abs_derivative": 1.999999999995915e-07,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "s_geo",
+          "step": 0.0005,
+          "observable": "z_geo",
+          "low_value": 1.0998500000000002e-06,
+          "high_value": 1.09995e-06,
+          "derivative": 9.999999999979575e-08,
+          "abs_derivative": 9.999999999979575e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        },
+        {
+          "parameter": "p",
+          "step": 0.005,
+          "observable": "z_mod",
+          "low_value": 5.60003e-06,
+          "high_value": 5.60033e-06,
+          "derivative": 2.999999999998108e-08,
+          "abs_derivative": 2.999999999998108e-08,
+          "low_supported": true,
+          "high_supported": true,
+          "low_comparison_ok": true,
+          "high_comparison_ok": true
+        }
+      ],
+      "top2_stable": true,
+      "dominant_gap": 4999999.980031198,
+      "median_abs_derivative": 1.999999999995915e-07,
+      "verdict": "supported"
+    },
+    "hierarchy_ranking": [
+      {
+        "parameter": "alpha0",
+        "weight": 0.9999999960041972,
+        "role": "anchor"
+      },
+      {
+        "parameter": "A_kappa",
+        "weight": 0.05000000000000122,
+        "role": "coupling"
+      },
+      {
+        "parameter": "s_atom",
+        "weight": 1.999999999995915e-07,
+        "role": "metric"
+      },
+      {
+        "parameter": "s_geo",
+        "weight": 9.999999999979575e-08,
+        "role": "metric"
+      },
+      {
+        "parameter": "p",
+        "weight": 2.999999999998108e-08,
+        "role": "torsion"
+      }
+    ],
+    "dominant_parameter": "alpha0",
+    "metric_parameters": [
+      "s_atom",
+      "s_geo"
+    ],
+    "torsion_parameter": "p",
+    "coupling_parameter": "A_kappa",
+    "stable_hierarchy": true,
+    "verdict": "supported"
+  },
+  "sensitivity_support": {
+    "theta_reference": {
+      "aE": 0.0,
+      "aR": 0.0,
+      "A_kappa": 0.001002,
+      "p": 5.01,
+      "alpha0": 0.0072973525692838015,
+      "s_geo": 0.999,
+      "s_atom": 0.999,
+      "s_canal": 1.0
+    },
+    "rows": [
+      {
+        "parameter": "alpha0",
+        "step": 5e-11,
+        "observable": "alpha0_shift",
+        "low_value": -4.999999980020986e-11,
+        "high_value": 4.999999980020986e-11,
+        "derivative": 0.9999999960041972,
+        "abs_derivative": 0.9999999960041972,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "s_geo",
+        "step": 0.0005,
+        "observable": "z_geo",
+        "low_value": 1.0998500000000002e-06,
+        "high_value": 1.09995e-06,
+        "derivative": 9.999999999979575e-08,
+        "abs_derivative": 9.999999999979575e-08,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "s_atom",
+        "step": 0.0005,
+        "observable": "z_int",
+        "low_value": 4.7997e-06,
+        "high_value": 4.7998999999999996e-06,
+        "derivative": 1.999999999995915e-07,
+        "abs_derivative": 1.999999999995915e-07,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "A_kappa",
+        "step": 1e-06,
+        "observable": "fine_delta",
+        "low_value": 0.00023993000000000002,
+        "high_value": 0.00024003000000000002,
+        "derivative": 0.05000000000000122,
+        "abs_derivative": 0.05000000000000122,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "p",
+        "step": 0.005,
+        "observable": "z_mod",
+        "low_value": 5.60003e-06,
+        "high_value": 5.60033e-06,
+        "derivative": 2.999999999998108e-08,
+        "abs_derivative": 2.999999999998108e-08,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      }
+    ],
+    "ranking": [
+      {
+        "parameter": "alpha0",
+        "step": 5e-11,
+        "observable": "alpha0_shift",
+        "low_value": -4.999999980020986e-11,
+        "high_value": 4.999999980020986e-11,
+        "derivative": 0.9999999960041972,
+        "abs_derivative": 0.9999999960041972,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "A_kappa",
+        "step": 1e-06,
+        "observable": "fine_delta",
+        "low_value": 0.00023993000000000002,
+        "high_value": 0.00024003000000000002,
+        "derivative": 0.05000000000000122,
+        "abs_derivative": 0.05000000000000122,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "s_atom",
+        "step": 0.0005,
+        "observable": "z_int",
+        "low_value": 4.7997e-06,
+        "high_value": 4.7998999999999996e-06,
+        "derivative": 1.999999999995915e-07,
+        "abs_derivative": 1.999999999995915e-07,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "s_geo",
+        "step": 0.0005,
+        "observable": "z_geo",
+        "low_value": 1.0998500000000002e-06,
+        "high_value": 1.09995e-06,
+        "derivative": 9.999999999979575e-08,
+        "abs_derivative": 9.999999999979575e-08,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      },
+      {
+        "parameter": "p",
+        "step": 0.005,
+        "observable": "z_mod",
+        "low_value": 5.60003e-06,
+        "high_value": 5.60033e-06,
+        "derivative": 2.999999999998108e-08,
+        "abs_derivative": 2.999999999998108e-08,
+        "low_supported": true,
+        "high_supported": true,
+        "low_comparison_ok": true,
+        "high_comparison_ok": true
+      }
+    ],
+    "top2_stable": true,
+    "dominant_gap": 4999999.980031198,
+    "median_abs_derivative": 1.999999999995915e-07,
+    "verdict": "supported"
+  },
+  "verdict": "supported",
+  "timestamp": "20260518-170544Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22hierarchy_theory_check_20260518-170544Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v22hierarchy_theory_check_20260518-170544Z.txt"
+}

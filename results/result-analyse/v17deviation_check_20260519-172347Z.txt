@@ -1,0 +1,5 @@
+V17 deviation check
+timestamp: 20260519-172347Z
+deviation_class: supported
+deviation_score: 0.061080
+monotone_ok: True

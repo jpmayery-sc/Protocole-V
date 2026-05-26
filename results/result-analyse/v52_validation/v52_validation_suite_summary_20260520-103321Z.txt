@@ -1,0 +1,13 @@
+V52 validation suite summary
+timestamp: 20260520-103321Z
+v52_global_verdict: publication_ready
+supported_count: 5/6
+publication_ready_count: 1/6
+
+Items:
+- v52_global_check: supported
+- v52_multisector: supported
+- v52_rg_flow: supported
+- v52_observables: supported
+- v52_article_structure: supported
+- v52_synthesis: publication_ready

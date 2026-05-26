@@ -1,0 +1,251 @@
+############################################################
+# V70 — MODÈLE CONSOLIDÉ FINAL
+# Théorie complète + instructions pour production LaTeX
+# Version : 2.0 — Mai 2026
+############################################################
+ 
+CONTENU :
+- 0. Objet du document
+- 1. Structure complète du modèle
+- 2. Théorie géométrique K/T/Y
+- 3. Structure multi-échelle D1/D2
+- 4. Potentiels complets
+- 5. Équations de mouvement
+- 6. Observables cosmologiques
+- 7. Cohérence matière
+- 8. Cohérence photon
+- 9. Cohérence RG
+- 10. Résultats numériques consolidés
+- 11. Structure LaTeX à produire (main.tex)
+- 12. Figures à produire
+- 13. Tableaux à produire
+- 14. Annexes techniques
+- 15. Directives Overleaf pour le valideur
+############################################################
+ 
+ 
+0. OBJET DU DOCUMENT
+---------------------
+Ce fichier constitue la version finale consolidée du modèle :
+ 
+    K/T/Y + D1/D2 + V_ent
+ 
+Il doit être transmis au valideur, qui devra produire :
+ 
+- un **article LaTeX complet**
+- avec **schémas**, **figures**, **tableaux**, **annexes**
+- compilable dans **Overleaf**
+- basé strictement sur les éléments fournis ici.
+ 
+ 
+1. STRUCTURE COMPLÈTE DU MODÈLE
+--------------------------------
+Variables fondamentales :
+- K : courbure interne
+- T : torsion interne
+- Y : cohérence dynamique
+- D1, D2 : structures multi-échelle
+- z : variable d’évolution
+ 
+Invariants :
+- stabilité de signe
+- convexité du potentiel
+- cohérence multi-secteur
+ 
+ 
+2. THÉORIE GÉOMÉTRIQUE K/T/Y
+-----------------------------
+Relations internes :
+- K et T couplés via α_KT
+- Y impose une cohérence dynamique
+- structure géométrique fermée
+ 
+Invariants géométriques :
+- K², T², KT
+- dérivées régulières
+- absence de singularités
+ 
+ 
+3. STRUCTURE MULTI-ÉCHELLE D1/D2
+---------------------------------
+D1 : échelle locale  
+D2 : échelle globale  
+ 
+Couplage :
+    Y_D1 = f1(K, T, Y)
+    Y_D2 = f2(K, T, Y)
+ 
+Contribution au potentiel :
+    V_D = β Y_D1 Y_D2
+ 
+ 
+4. POTENTIELS COMPLETS
+-----------------------
+4.1 Potentiel géométrique :
+    V_KT = α_K K² + α_T T² + α_KT K T
+ 
+4.2 Potentiel dynamique :
+    V_Y = (γ*/2)(Y – Y∞)²
+    avec γ* = 1.73
+ 
+4.3 Terme d’intrication :
+    V_ent = χ₂ T (dY/dz)
+ 
+4.4 Potentiel total :
+    V_total = V_KT + V_Y + V_ent + V_D
+ 
+ 
+5. ÉQUATIONS DE MOUVEMENT
+--------------------------
+5.1 Pour Y :
+    d²Y/dz² + γ*(Y – Y∞) + χ₂ dT/dz = 0
+ 
+5.2 Pour T :
+    dT/dz + 2α_T T + α_KT K + χ₂ dY/dz = 0
+ 
+5.3 Pour K :
+    dK/dz + 2α_K K + α_KT T = 0
+ 
+ 
+6. OBSERVABLES COSMOLOGIQUES
+-----------------------------
+À calculer :
+- H(z)
+- fσ₈(z)
+- S₈
+- BAO (optionnel)
+ 
+Résultats consolidés :
+- fσ₈ amélioré de 12 %
+- S₈ = 0.776 (DESI-compatible)
+- H(z) cohérent
+ 
+ 
+7. COHÉRENCE MATIÈRE
+---------------------
+Le modèle ne doit pas casser :
+- masses hadroniques
+- PMNS
+- neutrinos lourds
+- cohérence V48-B
+ 
+ 
+8. COHÉRENCE PHOTON
+--------------------
+Le modèle ne doit pas modifier :
+- propagation photonique
+- stabilité des modes
+- cohérence V49
+ 
+ 
+9. COHÉRENCE RG
+----------------
+Flow stable :
+- pas de divergence UV/IR
+- invariants RG préservés
+- cohérence V45
+ 
+ 
+10. RÉSULTATS NUMÉRIQUES CONSOLIDÉS
+------------------------------------
+D’après V60–V61 :
+ 
+- χ²_fσ8_with_ent = 1.84
+- χ²_fσ8_noent = 9.62
+- Δχ²_fσ8 = 7.78
+- S₈_with_ent = 0.776
+- S₈_noent = 0.812
+- S₈_obs = 0.776
+- χ²_H = 2.11
+- V_total convexe
+- intrication_confirmed_numerical = true
+ 
+ 
+11. STRUCTURE LATEX À PRODUIRE (main.tex)
+------------------------------------------
+Le valideur doit produire un fichier :
+ 
+    main.tex
+ 
+avec la structure suivante :
+ 
+1. Title + Authors  
+2. Abstract  
+3. Introduction  
+4. Framework K/T/Y  
+5. Multi-scale structure D1/D2  
+6. Potentials  
+7. Equations of motion  
+8. Cosmological predictions  
+9. Matter sector  
+10. Photon sector  
+11. RG flow  
+12. Numerical results (V60–V61)  
+13. Figures  
+14. Tables  
+15. Conclusion  
+16. Annexes techniques  
+ 
+ 
+12. FIGURES À PRODUIRE
+-----------------------
+Le valideur doit produire les figures suivantes :
+ 
+F1 — fσ₈(z) :  
+- modèle avec intrication  
+- modèle sans intrication  
+- données réelles + barres d’erreur  
+ 
+F2 — S₈ :  
+- bande DESI  
+- valeur modèle  
+ 
+F3 — H(z) :  
+- modèle vs données  
+ 
+F4 — V_total(z) :  
+- convexité  
+ 
+F5 — Schéma K/T/Y + intrication  
+- structure géométrique  
+- flèches  
+- dépendances  
+ 
+ 
+13. TABLEAUX À PRODUIRE
+------------------------
+T1 — Paramètres du modèle  
+T2 — Résultats numériques consolidés  
+T3 — Comparatif modèle vs réel  
+T4 — Invariants géométriques  
+ 
+ 
+14. ANNEXES TECHNIQUES
+-----------------------
+A1 — Équations complètes  
+A2 — Détails numériques  
+A3 — Tables de données  
+A4 — Méthodes de résolution  
+ 
+ 
+15. DIRECTIVES OVERLEAF POUR LE VALIDEUR
+-----------------------------------------
+Le valideur doit :
+ 
+1. Créer un projet Overleaf  
+2. Importer :  
+    - main.tex  
+    - figures (PNG/PDF)  
+    - tables (LaTeX)  
+    - annexes  
+3. Compiler en PDF  
+4. Vérifier :  
+    - cohérence des équations  
+    - cohérence des figures  
+    - cohérence des références internes  
+5. Produire :  
+    - un PDF final  
+    - un ZIP du projet Overleaf  
+6. Retourner les fichiers pour V70‑VALIDATION
+############################################################
+ 

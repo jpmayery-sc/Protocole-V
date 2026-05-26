@@ -1,0 +1,6 @@
+V41 setup symmetry check
+timestamp: 20260519-155334Z
+verdict: supported
+effective_lagrangian: L_eff = L_GR + L_K + L_Sent + L_mix; L_K ~ -(1/2) dK_bg^2, L_Sent ~ relaxation(Sent(Y)), L_mix ~ eta * Sent(Y) * K_bg
+setup_ok: True
+v41_setup_verdict: supported

@@ -1,0 +1,87 @@
+{
+  "timestamp": "20260508-195412Z",
+  "family_name": "chalcogen_family",
+  "family": [
+    {
+      "symbol": "O",
+      "name": "Oxygen",
+      "period": 2,
+      "mass_u": 15.999,
+      "radius_pm": 48.0,
+      "ionization_ev": 13.6181,
+      "principal_n": 2,
+      "zeff_proxy": 2.00133
+    },
+    {
+      "symbol": "S",
+      "name": "Sulfur",
+      "period": 3,
+      "mass_u": 32.06,
+      "radius_pm": 88.0,
+      "ionization_ev": 10.36,
+      "principal_n": 3,
+      "zeff_proxy": 2.618374
+    },
+    {
+      "symbol": "Se",
+      "name": "Selenium",
+      "period": 4,
+      "mass_u": 78.971,
+      "radius_pm": 103.0,
+      "ionization_ev": 9.7524,
+      "principal_n": 4,
+      "zeff_proxy": 3.387243
+    },
+    {
+      "symbol": "Te",
+      "name": "Tellurium",
+      "period": 5,
+      "mass_u": 127.6,
+      "radius_pm": 123.0,
+      "ionization_ev": 9.0096,
+      "principal_n": 5,
+      "zeff_proxy": 4.069615
+    },
+    {
+      "symbol": "Po",
+      "name": "Polonium",
+      "period": 6,
+      "mass_u": 209.0,
+      "radius_pm": 135.0,
+      "ionization_ev": 8.4167,
+      "principal_n": 6,
+      "zeff_proxy": 4.720117
+    }
+  ],
+  "observables": {
+    "radius_trend": "increasing",
+    "ionization_trend": "decreasing",
+    "zeff_trend": "increasing",
+    "mass_trend": "increasing",
+    "radius_rmse": 6.944062211702887,
+    "ionization_rmse": 0.733195219297017,
+    "zeff_rmse": 0.0304228800138785,
+    "mass_rmse": 16.150326842513127,
+    "radius_step_cv": 0.5019449554229436,
+    "ionization_step_cv": 0.8703938056562263,
+    "zeff_step_cv": 0.08301959445172492,
+    "mass_step_cv": 0.47903998042680596
+  },
+  "hypothesis": "for the chalcogen family, radius tracks Z_eff better than mass alone",
+  "case_control": "O -> S -> Se -> Te -> Po same-family series",
+  "expected": {
+    "radius": "monotonic increase",
+    "ionization": "monotonic decrease",
+    "zeff_proxy": "smooth monotonic increase",
+    "mass": "less explanatory than zeff_proxy for the family trend"
+  },
+  "verdict": "supported",
+  "falsifiers": [
+    "radius is not monotonic across O -> Po",
+    "first ionization energy is not monotonic across O -> Po",
+    "Z_eff proxy is not smoother than mass across the family",
+    "mass alone explains the family trend as well as or better than Z_eff proxy"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\chalcogen_family_zeff_check_20260508-195412Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\chalcogen_family_zeff_check_20260508-195412Z.txt"
+}

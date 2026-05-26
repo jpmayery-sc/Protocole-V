@@ -1,0 +1,9 @@
+metric,value
+verdict,jwst07_smbh_precoces_supported
+chi2_mbh,121.83652929640178
+chi2_lbol,50.12953473053861
+chi2_ratio,32.42312418241683
+chi2_compactness,5.377249995189193
+baseline_total_chi2,411.23980945821813
+total_chi2,209.7664382045464
+delta_chi2,201.47337125367173

@@ -1,0 +1,10 @@
+Experience 4 global suite summary
+timestamp: 20260517-142931Z
+overall_verdict: supported
+supported_count: 4/4
+
+Items:
+- atom_basics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\python\results\atom_basics\atom_basics_suite_summary_20260517-142921Z.json
+- point_atome_protocol: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_protocol_suite_summary_20260517-142923Z.json
+- point_atome_master: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\point_atome_master_suite_summary_20260517-142926Z.json
+- s_law_master: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\s_law_master_suite_summary_20260517-142931Z.json

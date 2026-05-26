@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260520-074550Z",
+  "hypothesis": "V12 rejects the model if any falsification block fails its conservative bounds",
+  "case_control": "absolute, alpha, fine",
+  "observable": "V12 suite verdicts",
+  "expected": "supported if all conform, partial if only borderline, falsified if any block is clearly out of bounds",
+  "measured": {
+    "supported_count": 2,
+    "partial_count": 0,
+    "falsified_count": 1
+  },
+  "items": [
+    {
+      "label": "v12_absolute",
+      "verdict": "conforme"
+    },
+    {
+      "label": "v12_alpha",
+      "verdict": "falsifie"
+    },
+    {
+      "label": "v12_fine",
+      "verdict": "conforme"
+    }
+  ],
+  "verdict": "falsified",
+  "reference": "V12 absolute, alpha and fine blocks"
+}

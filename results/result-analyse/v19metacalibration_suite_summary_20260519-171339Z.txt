@@ -1,0 +1,10 @@
+V19 meta-calibration suite summary
+timestamp: 20260519-171339Z
+overall_verdict: partiel
+supported_count: 2/4
+
+Items:
+- v19_map: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v19map_check_20260519-171338Z.json
+- v19_sensitivity: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v19sensitivity_check_20260519-171338Z.json
+- v19_robust_global: borderline -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v19robustglobal_check_20260519-171338Z.json
+- v19_verdict: partiel -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v19verdict_check_20260519-171339Z.json

@@ -1,0 +1,7 @@
+V20 geo check
+timestamp: 20260520-074446Z
+verdict: supported
+geostructureok: True
+curvature_indicator: 0.0
+metric_consistency: True
+alpha0_geometriclink: 999999.9960041972

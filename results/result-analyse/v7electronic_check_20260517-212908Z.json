@@ -1,0 +1,44 @@
+{
+  "timestamp": "20260517-212908Z",
+  "hypothesis": "l'electron suit une loi de reponse continue kappa(n) extrapolable au-dela de n=4",
+  "case_control": "kappa_2, kappa_3, kappa_4, extrapolation n=5,6,7",
+  "observable": "kappa(n) = A n^{-p}",
+  "expected": "suite monotone, pas de divergence, pas de saturation absurde",
+  "measured": {
+    "base_ns": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "base_kappas": [
+      0.002725,
+      0.00031666666666666665,
+      9e-05
+    ],
+    "exponent": 4.9456681557600435,
+    "amplitude": 0.08043147830901778,
+    "rmse": 6.944686902903456e-05,
+    "relative_rmse": 0.06652706985218851
+  },
+  "extrapolated": [
+    {
+      "n": 5.0,
+      "kappa": 2.8090040069982292e-05
+    },
+    {
+      "n": 6.0,
+      "kappa": 1.1401137715845195e-05
+    },
+    {
+      "n": 7.0,
+      "kappa": 5.31926449856234e-06
+    }
+  ],
+  "monotone_ok": true,
+  "positive_ok": true,
+  "saturation_absent_ok": true,
+  "critical_floor_ok": true,
+  "fit_quality_ok": true,
+  "verdict": "conforme",
+  "reference": "V5-N and V6-e power-law response"
+}

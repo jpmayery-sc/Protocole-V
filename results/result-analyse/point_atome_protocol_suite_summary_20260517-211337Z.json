@@ -1,0 +1,131 @@
+{
+  "suite": "point_atome_protocol",
+  "timestamp": "20260517-211337Z",
+  "overall_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "saturation_magnetic",
+      "verdict": "conforme strict",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260517-211334Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\saturation_magnetic_suite_summary_20260517-211334Z.txt",
+      "items": [
+        {
+          "label": "strong_nonlinear_magnetic_response",
+          "verdict": "conforme strict",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_nonlinear_magnetic_response_check_20260517-211334Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\strong_nonlinear_magnetic_response_check_20260517-211334Z.txt",
+          "hypothesis": "the magnetic response saturates at strong drive while remaining linear at low field"
+        }
+      ]
+    },
+    {
+      "label": "omega_structure",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_structure_suite_summary_20260517-211334Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_structure_suite_summary_20260517-211334Z.txt",
+      "items": [
+        {
+          "label": "omega_z_structure",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260517-211334Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\omega_structure\\omega_z_structure_check_20260517-211334Z.txt",
+          "hypothesis": "Omega(Z) improves the reading of heavy series by adding torsion, curvature and a normalized internal radius"
+        }
+      ]
+    },
+    {
+      "label": "heavy_border",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_suite_summary_20260517-211335Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_suite_summary_20260517-211335Z.txt",
+      "items": [
+        {
+          "label": "heavy_border_control",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-211335Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\heavy_border\\heavy_border_control_check_20260517-211335Z.txt",
+          "hypothesis": "Fr / Ra / Lr must remain separated at the heavy border and not collapse into one class"
+        }
+      ]
+    },
+    {
+      "label": "atom_basics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260517-211336Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\atom_basics_suite_summary_20260517-211336Z.txt",
+      "items": [
+        {
+          "label": "neutral_atom",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260517-211335Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\neutral_atom_check_20260517-211335Z.txt"
+        },
+        {
+          "label": "iron_rust",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260517-211335Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\iron_rust_check_20260517-211335Z.txt"
+        },
+        {
+          "label": "h_fe_pb",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260517-211335Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\h_fe_pb_check_20260517-211335Z.txt"
+        },
+        {
+          "label": "nzstability",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260517-211335Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\atom_basics\\nzstability_check_20260517-211335Z.txt"
+        }
+      ]
+    },
+    {
+      "label": "regime_physics",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260517-211337Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_physics_suite_summary_20260517-211337Z.txt",
+      "items": [
+        {
+          "label": "atomique",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260517-211336Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_atomique_check_20260517-211336Z.txt",
+          "hypothesis": "D1 dominates in the atomic regime while D4 stays negligible"
+        },
+        {
+          "label": "metal",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260517-211336Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_metal_check_20260517-211336Z.txt",
+          "hypothesis": "Metals keep D4 moderate, below D1, while the Fermi scale stays in the few-eV window"
+        },
+        {
+          "label": "lanthanide",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260517-211336Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_lanthanide_check_20260517-211336Z.txt",
+          "hypothesis": "Lanthanides require D3 and do not collapse to D1-only reading"
+        },
+        {
+          "label": "dense",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260517-211337Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_dense_check_20260517-211337Z.txt",
+          "hypothesis": "Dense matter admits a local D1 ~= D4 balance that moves continuously with density"
+        },
+        {
+          "label": "flow",
+          "verdict": "supported",
+          "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_flow_check_20260517-211337Z.json",
+          "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\python\\results\\regime_physics\\regime_flow_check_20260517-211337Z.txt",
+          "hypothesis": "The D1 / D2 / D3 / D4 grid stays ordered across atomic, metallic, lanthanide, and dense regimes"
+        }
+      ]
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260517-211337Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\point_atome_protocol_suite_summary_20260517-211337Z.txt"
+}

@@ -1,0 +1,22 @@
+V77N stability and lithium focus report
+timestamp: 20260521-154314Z
+verdict: not_recommended_for_v80
+refined_accepted: 1296
+extended_accepted: 926
+li7_ok: 926
+li_total_ok: 926
+a7_flipped: 2535
+robustness: ultra-fine
+li_verdict: Li fixé seulement de façon ultra-fine
+recommendation: V80 à manier avec prudence
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\v77n_results_refined.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\v77n_results_extended.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\v77n_results_lithium_flags.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_Li7_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_Litot_vs_beta_e_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_Li7_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_Litot_surface_gamma_phys.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_A7_flip_map.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77n_stability_and_lithium_focus\plots\v77n_lithium_profile.png

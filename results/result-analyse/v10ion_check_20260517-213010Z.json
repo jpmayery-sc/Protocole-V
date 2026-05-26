@@ -1,0 +1,760 @@
+{
+  "timestamp": "20260517-213010Z",
+  "hypothesis": "le seuil d ionisation effective combine le champ alpha, la torsion D2, la reponse electronique et la stabilite atomique",
+  "case_control": "Z = 1..100 avec accent sur Fe, Pb et U",
+  "observable": "E_ion_eff(Z) et Z_ion_crit",
+  "expected": "maximum proche de Fe puis declin vers la queue lourde",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "base_delta_phi": 0.0031087512698201886,
+    "peak_z": 26,
+    "peak_value": 29.695288756463523,
+    "z_ion_crit": 30,
+    "decline_after_peak_ok": true,
+    "critical_peak_ok": true,
+    "zcrit_band_ok": true,
+    "v9_coherence_ok": true,
+    "radius_coherence_ok": true
+  },
+  "sample_values": [
+    {
+      "z": 1,
+      "reference": 12.686134991529496,
+      "torsion_correction": 6.69412742933704e-06,
+      "coupling_correction": 0.013678835284865585,
+      "effective": 12.699807132686932
+    },
+    {
+      "z": 2,
+      "reference": 12.73888948373539,
+      "torsion_correction": 1.1379248114919749e-05,
+      "coupling_correction": 0.017007042897525936,
+      "effective": 12.7558851473848
+    },
+    {
+      "z": 26,
+      "reference": 29.475352112676056,
+      "torsion_correction": 6.335621253260003e-05,
+      "coupling_correction": 0.22,
+      "effective": 29.695288756463523
+    },
+    {
+      "z": 82,
+      "reference": 12.065748032361528,
+      "torsion_correction": 0.00012381313311170185,
+      "coupling_correction": 1.9468061160250982e-07,
+      "effective": 12.065624413909028
+    },
+    {
+      "z": 92,
+      "reference": 12.04635036496359,
+      "torsion_correction": 0.00013210146715221643,
+      "coupling_correction": 8.59966455538267e-10,
+      "effective": 12.046218264356405
+    }
+  ],
+  "samples": [
+    {
+      "z": 1,
+      "reference": 12.686134991529496,
+      "torsion_correction": 6.69412742933704e-06,
+      "coupling_correction": 0.013678835284865585,
+      "effective": 12.699807132686932
+    },
+    {
+      "z": 2,
+      "reference": 12.73888948373539,
+      "torsion_correction": 1.1379248114919749e-05,
+      "coupling_correction": 0.017007042897525936,
+      "effective": 12.7558851473848
+    },
+    {
+      "z": 3,
+      "reference": 12.818153988886229,
+      "torsion_correction": 1.5306441171144195e-05,
+      "coupling_correction": 0.020957916172118236,
+      "effective": 12.839096598617177
+    },
+    {
+      "z": 4,
+      "reference": 12.931491878607396,
+      "torsion_correction": 1.8774334399519973e-05,
+      "coupling_correction": 0.02559805661791486,
+      "effective": 12.95707116089091
+    },
+    {
+      "z": 5,
+      "reference": 13.087819898917308,
+      "torsion_correction": 2.192138509022384e-05,
+      "coupling_correction": 0.030988852602629905,
+      "effective": 13.118786830134848
+    },
+    {
+      "z": 6,
+      "reference": 13.297314541249781,
+      "torsion_correction": 2.482654513836699e-05,
+      "coupling_correction": 0.03718292938933454,
+      "effective": 13.334472644093978
+    },
+    {
+      "z": 7,
+      "reference": 13.571170795528257,
+      "torsion_correction": 2.7540275977269558e-05,
+      "coupling_correction": 0.044220262069661016,
+      "effective": 13.61536351732194
+    },
+    {
+      "z": 8,
+      "reference": 13.921182435499714,
+      "torsion_correction": 3.0097301596422444e-05,
+      "coupling_correction": 0.05212410691006679,
+      "effective": 13.973276445108185
+    },
+    {
+      "z": 9,
+      "reference": 14.359123370508103,
+      "torsion_correction": 3.252279609474367e-05,
+      "coupling_correction": 0.06089695064234241,
+      "effective": 14.41998779835435
+    },
+    {
+      "z": 10,
+      "reference": 14.895926548134005,
+      "torsion_correction": 3.483573564987982e-05,
+      "coupling_correction": 0.07051671462341907,
+      "effective": 14.966408427021776
+    },
+    {
+      "z": 11,
+      "reference": 15.540680071677851,
+      "torsion_correction": 3.70508648238444e-05,
+      "coupling_correction": 0.08093347705771732,
+      "effective": 15.621576497870745
+    },
+    {
+      "z": 12,
+      "reference": 16.29948808916573,
+      "torsion_correction": 3.917992200131338e-05,
+      "coupling_correction": 0.09206698732936419,
+      "effective": 16.391515896573093
+    },
+    {
+      "z": 13,
+      "reference": 17.17427381809046,
+      "torsion_correction": 4.1232440458423824e-05,
+      "coupling_correction": 0.1038052383482564,
+      "effective": 17.278037823998257
+    },
+    {
+      "z": 14,
+      "reference": 18.161629835988826,
+      "torsion_correction": 4.3216292693161626e-05,
+      "coupling_correction": 0.11600433328947068,
+      "effective": 18.277590952985605
+    },
+    {
+      "z": 15,
+      "reference": 19.251841770246667,
+      "torsion_correction": 4.513807235601004e-05,
+      "coupling_correction": 0.12848983145710424,
+      "effective": 19.380286463631418
+    },
+    {
+      "z": 16,
+      "reference": 20.428220931598393,
+      "torsion_correction": 4.700336957577662e-05,
+      "coupling_correction": 0.14105968545459002,
+      "effective": 20.569233613683405
+    },
+    {
+      "z": 17,
+      "reference": 21.66687516400219,
+      "torsion_correction": 4.881697407715642e-05,
+      "coupling_correction": 0.15348879173562682,
+      "effective": 21.82031513876374
+    },
+    {
+      "z": 18,
+      "reference": 22.93702278416358,
+      "torsion_correction": 5.058302805491224e-05,
+      "coupling_correction": 0.1655350743396467,
+      "effective": 23.102507275475173
+    },
+    {
+      "z": 19,
+      "reference": 24.20191194631482,
+      "torsion_correction": 5.230514326242654e-05,
+      "coupling_correction": 0.1769469143344259,
+      "effective": 24.37880655550598
+    },
+    {
+      "z": 20,
+      "reference": 25.42034999438919,
+      "torsion_correction": 5.398649208525015e-05,
+      "coupling_correction": 0.1874716335725665,
+      "effective": 25.607767641469675
+    },
+    {
+      "z": 21,
+      "reference": 26.548780179542685,
+      "torsion_correction": 5.562987935740993e-05,
+      "coupling_correction": 0.19686464969916134,
+      "effective": 26.745589199362488
+    },
+    {
+      "z": 22,
+      "reference": 27.54377472847708,
+      "torsion_correction": 5.723779969131823e-05,
+      "coupling_correction": 0.20489884846449744,
+      "effective": 27.748616339141886
+    },
+    {
+      "z": 23,
+      "reference": 28.364753149539812,
+      "torsion_correction": 5.881248375164769e-05,
+      "coupling_correction": 0.2113736766135111,
+      "effective": 28.576068013669573
+    },
+    {
+      "z": 24,
+      "reference": 28.976692194784835,
+      "torsion_correction": 6.03559359805964e-05,
+      "coupling_correction": 0.21612344921599907,
+      "effective": 29.192755288064856
+    },
+    {
+      "z": 25,
+      "reference": 29.35257661715917,
+      "torsion_correction": 6.186996563478173e-05,
+      "coupling_correction": 0.21902439184628042,
+      "effective": 29.571539139039814
+    },
+    {
+      "z": 26,
+      "reference": 29.475352112676056,
+      "torsion_correction": 6.335621253260003e-05,
+      "coupling_correction": 0.22,
+      "effective": 29.695288756463523
+    },
+    {
+      "z": 27,
+      "reference": 29.33918376001631,
+      "torsion_correction": 6.481616857695688e-05,
+      "coupling_correction": 0.21902439184628042,
+      "effective": 29.558143335694012
+    },
+    {
+      "z": 28,
+      "reference": 28.949890527125515,
+      "torsion_correction": 6.625119587324425e-05,
+      "coupling_correction": 0.21612344921599907,
+      "effective": 29.165947725145642
+    },
+    {
+      "z": 29,
+      "reference": 28.324510701209128,
+      "torsion_correction": 6.76625420803709e-05,
+      "coupling_correction": 0.2113736766135111,
+      "effective": 28.53581671528056
+    },
+    {
+      "z": 30,
+      "reference": 27.490043385193495,
+      "torsion_correction": 6.905135349577992e-05,
+      "coupling_correction": 0.20489884846449744,
+      "effective": 27.694873182304498
+    },
+    {
+      "z": 31,
+      "reference": 26.48149549054747,
+      "torsion_correction": 7.041868627138843e-05,
+      "coupling_correction": 0.19686464969916134,
+      "effective": 26.67828972156036
+    },
+    {
+      "z": 32,
+      "reference": 25.33943091347011,
+      "torsion_correction": 7.17655160775708e-05,
+      "coupling_correction": 0.1874716335725665,
+      "effective": 25.5268307815266
+    },
+    {
+      "z": 33,
+      "reference": 24.107260504007126,
+      "torsion_correction": 7.30927464704888e-05,
+      "coupling_correction": 0.1769469143344259,
+      "effective": 24.284134325595083
+    },
+    {
+      "z": 34,
+      "reference": 22.828523688322715,
+      "torsion_correction": 7.440121616977682e-05,
+      "coupling_correction": 0.1655350743396467,
+      "effective": 22.99398436144619
+    },
+    {
+      "z": 35,
+      "reference": 21.544395325292513,
+      "torsion_correction": 7.569170541555732e-05,
+      "coupling_correction": 0.15348879173562682,
+      "effective": 21.697808425322723
+    },
+    {
+      "z": 36,
+      "reference": 20.29160890974047,
+      "torsion_correction": 7.696494154358187e-05,
+      "coupling_correction": 0.14105968545459002,
+      "effective": 20.432591630253516
+    },
+    {
+      "z": 37,
+      "reference": 19.100927136100324,
+      "torsion_correction": 7.82216038931775e-05,
+      "coupling_correction": 0.12848983145710424,
+      "effective": 19.229338745953537
+    },
+    {
+      "z": 38,
+      "reference": 17.996222443707836,
+      "torsion_correction": 7.946232814327863e-05,
+      "coupling_correction": 0.11600433328947068,
+      "effective": 18.112147314669162
+    },
+    {
+      "z": 39,
+      "reference": 16.994162980652035,
+      "torsion_correction": 8.068771015612158e-05,
+      "coupling_correction": 0.1038052383482564,
+      "effective": 17.097887531290137
+    },
+    {
+      "z": 40,
+      "reference": 16.10444164953725,
+      "torsion_correction": 8.189830939539266e-05,
+      "coupling_correction": 0.09206698732936419,
+      "effective": 16.196426738557218
+    },
+    {
+      "z": 41,
+      "reference": 15.330443360714396,
+      "torsion_correction": 8.309465197515148e-05,
+      "coupling_correction": 0.08093347705771732,
+      "effective": 15.411293743120138
+    },
+    {
+      "z": 42,
+      "reference": 14.6702212189804,
+      "torsion_correction": 8.427723338723309e-05,
+      "coupling_correction": 0.07051671462341907,
+      "effective": 14.740653656370432
+    },
+    {
+      "z": 43,
+      "reference": 14.11764609778083,
+      "torsion_correction": 8.54465209477043e-05,
+      "coupling_correction": 0.06089695064234241,
+      "effective": 14.178457601902224
+    },
+    {
+      "z": 44,
+      "reference": 13.663603465815592,
+      "torsion_correction": 8.660295599702313e-05,
+      "coupling_correction": 0.05212410691006679,
+      "effective": 13.715640969769662
+    },
+    {
+      "z": 45,
+      "reference": 13.297132333989795,
+      "torsion_correction": 8.774695588360289e-05,
+      "coupling_correction": 0.044220262069661016,
+      "effective": 13.341264849103572
+    },
+    {
+      "z": 46,
+      "reference": 13.006428956246548,
+      "torsion_correction": 8.887891575633385e-05,
+      "coupling_correction": 0.03718292938933454,
+      "effective": 13.043523006720127
+    },
+    {
+      "z": 47,
+      "reference": 12.779667725004265,
+      "torsion_correction": 8.999921018812144e-05,
+      "coupling_correction": 0.030988852602629905,
+      "effective": 12.810566578396706
+    },
+    {
+      "z": 48,
+      "reference": 12.605619594209767,
+      "torsion_correction": 9.110819464954751e-05,
+      "coupling_correction": 0.02559805661791486,
+      "effective": 12.631126542633032
+    },
+    {
+      "z": 49,
+      "reference": 12.474071542077718,
+      "torsion_correction": 9.220620684925534e-05,
+      "coupling_correction": 0.020957916172118236,
+      "effective": 12.494937252042988
+    },
+    {
+      "z": 50,
+      "reference": 12.376067535247147,
+      "torsion_correction": 9.329356795552624e-05,
+      "coupling_correction": 0.017007042897525936,
+      "effective": 12.392981284576717
+    },
+    {
+      "z": 51,
+      "reference": 12.304001839355584,
+      "torsion_correction": 9.437058371169175e-05,
+      "coupling_correction": 0.013678835284865585,
+      "effective": 12.317586304056737
+    },
+    {
+      "z": 52,
+      "reference": 12.251599923058885,
+      "torsion_correction": 9.543754545646456e-05,
+      "coupling_correction": 0.010904582371080582,
+      "effective": 12.26240906788451
+    },
+    {
+      "z": 53,
+      "reference": 12.213821801422798,
+      "torsion_correction": 9.64947310589256e-05,
+      "coupling_correction": 0.008616056921777155,
+      "effective": 12.222341363613516
+    },
+    {
+      "z": 54,
+      "reference": 12.18671890323947,
+      "torsion_correction": 9.7542405776748e-05,
+      "coupling_correction": 0.006747574465806692,
+      "effective": 12.1933689352995
+    },
+    {
+      "z": 55,
+      "reference": 12.167269858468039,
+      "torsion_correction": 9.858082304523454e-05,
+      "coupling_correction": 0.005237528719000379,
+      "effective": 12.172408806363993
+    },
+    {
+      "z": 56,
+      "reference": 12.153214218508532,
+      "torsion_correction": 9.961022520387666e-05,
+      "coupling_correction": 0.004029440555521519,
+      "effective": 12.15714404883885
+    },
+    {
+      "z": 57,
+      "reference": 12.142896970280226,
+      "torsion_correction": 0.00010063084416638595,
+      "coupling_correction": 0.00307257642257679,
+      "effective": 12.145868915858637
+    },
+    {
+      "z": 58,
+      "reference": 12.135131380851186,
+      "torsion_correction": 0.00010164290203949125,
+      "coupling_correction": 0.002322203304563736,
+      "effective": 12.13735194125371
+    },
+    {
+      "z": 59,
+      "reference": 12.129083507784777,
+      "torsion_correction": 0.00010264661169521559,
+      "coupling_correction": 0.0017395518913505556,
+      "effective": 12.130720413064433
+    },
+    {
+      "z": 60,
+      "reference": 12.124178689563333,
+      "torsion_correction": 0.00010364217730084429,
+      "coupling_correction": 0.0012915586806624658,
+      "effective": 12.125366606066695
+    },
+    {
+      "z": 61,
+      "reference": 12.120028387145428,
+      "torsion_correction": 0.0001046297948103511,
+      "coupling_correction": 0.0009504526843006935,
+      "effective": 12.120874210034918
+    },
+    {
+      "z": 62,
+      "reference": 12.116374688918702,
+      "torsion_correction": 0.0001056096524206578,
+      "coupling_correction": 0.0006932445516577772,
+      "effective": 12.116962323817939
+    },
+    {
+      "z": 63,
+      "reference": 12.11304939250779,
+      "torsion_correction": 0.00010658193099576032,
+      "coupling_correction": 0.0005011664998431352,
+      "effective": 12.113443977076637
+    },
+    {
+      "z": 64,
+      "reference": 12.109944622871414,
+      "torsion_correction": 0.00010754680446144774,
+      "coupling_correction": 0.00035910148894828086,
+      "effective": 12.1101961775559
+    },
+    {
+      "z": 65,
+      "reference": 12.106992254820051,
+      "torsion_correction": 0.00010850444017307218,
+      "coupling_correction": 0.00025503041825900984,
+      "effective": 12.107138780798138
+    },
+    {
+      "z": 66,
+      "reference": 12.104149840506983,
+      "torsion_correction": 0.00010945499925858771,
+      "coupling_correction": 0.00017951732371587263,
+      "effective": 12.10421990283144
+    },
+    {
+      "z": 67,
+      "reference": 12.101391202641864,
+      "torsion_correction": 0.000110398636938864,
+      "coupling_correction": 0.00012524498687619393,
+      "effective": 12.1014060489918
+    },
+    {
+      "z": 68,
+      "reference": 12.09870028336357,
+      "torsion_correction": 0.00011133550282708962,
+      "coupling_correction": 8.66071889441173e-05,
+      "effective": 12.098675555049686
+    },
+    {
+      "z": 69,
+      "reference": 12.096067206809252,
+      "torsion_correction": 0.0001122657412089128,
+      "coupling_correction": 5.935907688186713e-05,
+      "effective": 12.096014300144926
+    },
+    {
+      "z": 70,
+      "reference": 12.09348581034848,
+      "torsion_correction": 0.00011318949130481389,
+      "coupling_correction": 4.032365949341836e-05,
+      "effective": 12.093412944516668
+    },
+    {
+      "z": 71,
+      "reference": 12.090952127546933,
+      "torsion_correction": 0.00011410688751607013,
+      "coupling_correction": 2.7150156899069504e-05,
+      "effective": 12.090865170816317
+    },
+    {
+      "z": 72,
+      "reference": 12.088463474066545,
+      "torsion_correction": 0.00011501805965555098,
+      "coupling_correction": 1.8118588149593195e-05,
+      "effective": 12.088366574595039
+    },
+    {
+      "z": 73,
+      "reference": 12.0860179072616,
+      "torsion_correction": 0.0001159231331644733,
+      "coupling_correction": 1.1984390933826026e-05,
+      "effective": 12.08591396851937
+    },
+    {
+      "z": 74,
+      "reference": 12.083613912516343,
+      "torsion_correction": 0.0001168222293161479,
+      "coupling_correction": 7.856826921159731e-06,
+      "effective": 12.083504947113948
+    },
+    {
+      "z": 75,
+      "reference": 12.081250224340677,
+      "torsion_correction": 0.00011771546540765987,
+      "coupling_correction": 5.105261702315216e-06,
+      "effective": 12.081137614136972
+    },
+    {
+      "z": 76,
+      "reference": 12.078925725956092,
+      "torsion_correction": 0.00011860295494034613,
+      "coupling_correction": 3.2879744754519136e-06,
+      "effective": 12.078810410975628
+    },
+    {
+      "z": 77,
+      "reference": 12.07663939370816,
+      "torsion_correction": 0.00011948480778986075,
+      "coupling_correction": 2.0988358320774346e-06,
+      "effective": 12.076522007736202
+    },
+    {
+      "z": 78,
+      "reference": 12.074390266595302,
+      "torsion_correction": 0.00012036113036655411,
+      "coupling_correction": 1.3279083665168422e-06,
+      "effective": 12.0742712333733
+    },
+    {
+      "z": 79,
+      "reference": 12.072177429613268,
+      "torsion_correction": 0.00012123202576683224,
+      "coupling_correction": 8.327168428854861e-07,
+      "effective": 12.072057030304343
+    },
+    {
+      "z": 80,
+      "reference": 12.070000004567774,
+      "torsion_correction": 0.00012209759391610956,
+      "coupling_correction": 5.175665440021496e-07,
+      "effective": 12.069878424540402
+    },
+    {
+      "z": 81,
+      "reference": 12.06785714486051,
+      "torsion_correction": 0.00012295793170391937,
+      "coupling_correction": 3.18841355172508e-07,
+      "effective": 12.06773450577016
+    },
+    {
+      "z": 82,
+      "reference": 12.065748032361528,
+      "torsion_correction": 0.00012381313311170185,
+      "coupling_correction": 1.9468061160250982e-07,
+      "effective": 12.065624413909028
+    },
+    {
+      "z": 83,
+      "reference": 12.063671875368273,
+      "torsion_correction": 0.0001246632893337499,
+      "coupling_correction": 1.178176516614484e-07,
+      "effective": 12.063547329896592
+    },
+    {
+      "z": 84,
+      "reference": 12.0616279071311,
+      "torsion_correction": 0.00012550848889175505,
+      "coupling_correction": 7.06704126081947e-08,
+      "effective": 12.06150246931262
+    },
+    {
+      "z": 85,
+      "reference": 12.05961538467911,
+      "torsion_correction": 0.00012634881774336383,
+      "coupling_correction": 4.201501242910367e-08,
+      "effective": 12.05948907787638
+    },
+    {
+      "z": 86,
+      "reference": 12.057633587812173,
+      "torsion_correction": 0.00012718435938512273,
+      "coupling_correction": 2.4757738438237005e-08,
+      "effective": 12.057506428210527
+    },
+    {
+      "z": 87,
+      "reference": 12.055681818192198,
+      "torsion_correction": 0.0001280151949501628,
+      "coupling_correction": 1.4459625632673399e-08,
+      "effective": 12.055553817456875
+    },
+    {
+      "z": 88,
+      "reference": 12.053759398500336,
+      "torsion_correction": 0.0001288414033009492,
+      "coupling_correction": 8.370332926474728e-09,
+      "effective": 12.053630565467369
+    },
+    {
+      "z": 89,
+      "reference": 12.051865671643384,
+      "torsion_correction": 0.0001296630611173971,
+      "coupling_correction": 4.802507149276052e-09,
+      "effective": 12.051736013384772
+    },
+    {
+      "z": 90,
+      "reference": 12.05000000000061,
+      "torsion_correction": 0.0001304802429806343,
+      "coupling_correction": 2.7310705081766464e-09,
+      "effective": 12.0498695224887
+    },
+    {
+      "z": 91,
+      "reference": 12.048161764706112,
+      "torsion_correction": 0.00013129302145267069,
+      "coupling_correction": 1.5393501187383198e-09,
+      "effective": 12.04803047322401
+    },
+    {
+      "z": 92,
+      "reference": 12.04635036496359,
+      "torsion_correction": 0.00013210146715221643,
+      "coupling_correction": 8.59966455538267e-10,
+      "effective": 12.046218264356405
+    },
+    {
+      "z": 93,
+      "reference": 12.044565217391337,
+      "torsion_correction": 0.00013290564882687483,
+      "coupling_correction": 4.761734945575173e-10,
+      "effective": 12.044432312218683
+    },
+    {
+      "z": 94,
+      "reference": 12.042805755395694,
+      "torsion_correction": 0.0001337056334219188,
+      "coupling_correction": 2.613295546127216e-10,
+      "effective": 12.0426720500236
+    },
+    {
+      "z": 95,
+      "reference": 12.041071428571433,
+      "torsion_correction": 0.00013450148614584762,
+      "coupling_correction": 1.421514990083349e-10,
+      "effective": 12.040936927227438
+    },
+    {
+      "z": 96,
+      "reference": 12.039361702127662,
+      "torsion_correction": 0.00013529327053290576,
+      "coupling_correction": 7.663972960370367e-11,
+      "effective": 12.039226408933768
+    },
+    {
+      "z": 97,
+      "reference": 12.037676056338029,
+      "torsion_correction": 0.0001360810485027346,
+      "coupling_correction": 4.0953977607504015e-11,
+      "effective": 12.03753997533048
+    },
+    {
+      "z": 98,
+      "reference": 12.036013986013987,
+      "torsion_correction": 0.0001368648804173162,
+      "coupling_correction": 2.1690912267181336e-11,
+      "effective": 12.035877121155261
+    },
+    {
+      "z": 99,
+      "reference": 12.034375,
+      "torsion_correction": 0.0001376448251353579,
+      "coupling_correction": 1.1386733376811008e-11,
+      "effective": 12.034237355186251
+    },
+    {
+      "z": 100,
+      "reference": 12.032758620689656,
+      "torsion_correction": 0.00013842094006425741,
+      "coupling_correction": 5.924614404658995e-12,
+      "effective": 12.032620199755515
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V8 level shift, V8 radius and V9 critical regime"
+}

@@ -1,0 +1,167 @@
+{
+  "suite": "jwst008_dormant_bh_pipeline",
+  "timestamp": "20260522-164526Z",
+  "verdict": "jwst08_dormant_bh_supported",
+  "redshift_bins": [
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.5
+  ],
+  "observed": {
+    "redshift_bins": [
+      6.5,
+      7.5,
+      8.5,
+      9.5,
+      10.5
+    ],
+    "broad_ha_log_hom": [
+      3.2,
+      3.15,
+      3.1,
+      3.05,
+      3.0
+    ],
+    "lbol_log_hom": [
+      42.25,
+      42.18,
+      42.1,
+      42.03,
+      41.96
+    ],
+    "ratio_hom": [
+      0.015,
+      0.017,
+      0.019,
+      0.021,
+      0.023
+    ],
+    "compactness_hom": [
+      0.84,
+      0.81,
+      0.78,
+      0.75,
+      0.72
+    ]
+  },
+  "sigma": {
+    "broad_ha_log_hom": [
+      0.1,
+      0.1,
+      0.1,
+      0.11,
+      0.11
+    ],
+    "lbol_log_hom": [
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.08
+    ],
+    "ratio_hom": [
+      0.0025,
+      0.0025,
+      0.0025,
+      0.0025,
+      0.003
+    ],
+    "compactness_hom": [
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+    ]
+  },
+  "model": {
+    "broad_ha_log_mod": [
+      3.2054410828723716,
+      3.1478171608848973,
+      3.092348595870754,
+      3.0377040195333063,
+      2.981372575809384
+    ],
+    "lbol_log_mod": [
+      42.039183825426505,
+      41.99823957402075,
+      41.967576997034286,
+      41.90669591979138,
+      41.840886785261546
+    ],
+    "ratio_mod": [
+      0.014568455523906539,
+      0.016143207699761457,
+      0.01781860779749962,
+      0.019510052542539097,
+      0.02110271862014814
+    ],
+    "compactness_mod": [
+      0.8030862653226527,
+      0.7908664273960461,
+      0.7819999999999999,
+      0.7731335726039538,
+      0.7609137346773471
+    ],
+    "cycle_depth": 0.85,
+    "inflow_drop": 0.35,
+    "cocoon_opening": 0.65,
+    "activity_base": 3.15,
+    "lbol0": 42.0,
+    "lbol_slope": 0.35,
+    "ratio0": 0.013,
+    "ratio_slope": 0.7,
+    "c0": 0.74,
+    "c_slope": 0.7
+  },
+  "baseline": {
+    "broad_ha_log_mod": [
+      3.32,
+      3.29,
+      3.26,
+      3.23,
+      3.1999999999999997
+    ],
+    "lbol_log_mod": [
+      42.45,
+      42.43,
+      42.410000000000004,
+      42.39,
+      42.370000000000005
+    ],
+    "ratio_mod": [
+      0.03,
+      0.028999999999999998,
+      0.027999999999999997,
+      0.027,
+      0.026
+    ],
+    "compactness_mod": [
+      0.6920000000000001,
+      0.684,
+      0.676,
+      0.668,
+      0.66
+    ]
+  },
+  "chi2_broad_ha": 0.05046266071494085,
+  "chi2_lbol": 19.438752773412677,
+  "chi2_ratio": 1.1257168133162367,
+  "chi2_compactness": 4.379792527879032,
+  "baseline_chi2_broad_ha": 11.943471074380147,
+  "baseline_chi2_lbol": 77.54687500000081,
+  "baseline_chi2_ratio": 78.75999999999998,
+  "baseline_chi2_compactness": 65.46666666666663,
+  "total_chi2": 24.99472477532289,
+  "baseline_total_chi2": 233.71701274104754,
+  "delta_chi2": 208.72228796572466,
+  "mean_broad_ha_log_hom": 3.1,
+  "mean_lbol_log_hom": 42.104,
+  "mean_ratio_hom": 0.019,
+  "mean_compactness_hom": 0.78,
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst008_dormant_bh_pipeline\\jwst008_dormant_bh_pipeline_20260522-164526Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst008_dormant_bh_pipeline\\jwst008_dormant_bh_pipeline_20260522-164526Z.txt",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\jwst008_dormant_bh_pipeline\\jwst008_dormant_bh_pipeline_20260522-164526Z.csv"
+}

@@ -1,0 +1,123 @@
+{
+  "timestamp": "20260517-212926Z",
+  "hypothesis": "le rayon atomique stable correspond a une zone ou le champ alpha(E,n,r) varie peu",
+  "case_control": "H, He, Fe, Pb",
+  "observable": "R_eff et la pente radiale locale du champ alpha",
+  "expected": "ordre H < He < Fe, Pb mou, minimum de variation en fin de fenetre",
+  "measured": {
+    "alpha0": 0.0072973525692838015,
+    "aE": 5.6493150329040295e-06,
+    "amplitude": 0.08043147830901778,
+    "exponent": 4.9456681557600435,
+    "ar": 1.2048031130217074e-05,
+    "order_ok": true,
+    "pb_soft_ok": true,
+    "span_ok": true,
+    "radius_band_ok": true,
+    "minimum_ok": true
+  },
+  "species_results": [
+    {
+      "name": "H",
+      "z": 1.0,
+      "n": 2.0,
+      "candidates": [
+        0.42,
+        0.48,
+        0.54
+      ],
+      "alpha_values": [
+        0.010218450503961642,
+        0.010214864780410981,
+        0.010212075884316024
+      ],
+      "gradient_values": [
+        6.829949620304464e-05,
+        5.229180178045605e-05,
+        4.131697918455786e-05
+      ],
+      "effective_radius": 0.54,
+      "alpha_span": 6.374619645617766e-06,
+      "gradient_min": 4.131697918455786e-05,
+      "gradient_max": 6.829949620304464e-05,
+      "minimum_found": true
+    },
+    {
+      "name": "He",
+      "z": 2.0,
+      "n": 3.0,
+      "candidates": [
+        0.6,
+        0.72,
+        0.84
+      ],
+      "alpha_values": [
+        0.007951250554902652,
+        0.007947903879588701,
+        0.007945513397221595
+      ],
+      "gradient_values": [
+        3.3466753139491874e-05,
+        2.32408007913138e-05,
+        1.707487405076116e-05
+      ],
+      "effective_radius": 0.84,
+      "alpha_span": 5.7371576810561625e-06,
+      "gradient_min": 1.707487405076116e-05,
+      "gradient_max": 3.3466753139491874e-05,
+      "minimum_found": true
+    },
+    {
+      "name": "Fe",
+      "z": 26.0,
+      "n": 4.0,
+      "candidates": [
+        1.2,
+        1.44,
+        1.68
+      ],
+      "alpha_values": [
+        0.007674549320181789,
+        0.007672875982524814,
+        0.007671680741341261
+      ],
+      "gradient_values": [
+        8.366688284872968e-06,
+        5.81020019782845e-06,
+        4.26871851269029e-06
+      ],
+      "effective_radius": 1.68,
+      "alpha_span": 2.8685788405280813e-06,
+      "gradient_min": 4.26871851269029e-06,
+      "gradient_max": 8.366688284872968e-06,
+      "minimum_found": true
+    },
+    {
+      "name": "Pb",
+      "z": 82.0,
+      "n": 7.0,
+      "candidates": [
+        1.8,
+        2.16,
+        2.52
+      ],
+      "alpha_values": [
+        0.007591830936055464,
+        0.00759071537761748,
+        0.007589918550161778
+      ],
+      "gradient_values": [
+        3.718528126610208e-06,
+        2.5823111990348663e-06,
+        1.8972082278623508e-06
+      ],
+      "effective_radius": 2.52,
+      "alpha_span": 1.9123858936856766e-06,
+      "gradient_min": 1.8972082278623508e-06,
+      "gradient_max": 3.718528126610208e-06,
+      "minimum_found": true
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V7 coupling field alpha(E,n,r)"
+}

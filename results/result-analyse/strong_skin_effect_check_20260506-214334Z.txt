@@ -1,0 +1,16 @@
+Contrôle électromagnétique: effet peau fort
+Timestamp: 20260506-214334Z
+
+Tests:
+- Basse fréquence vs haute fréquence: conforme strict
+- Correction non linéaire à forte fréquence: conforme strict
+- Résistivité plus grande: conforme strict
+- Perméabilité plus grande: conforme strict
+
+Verdict global: conforme strict
+
+Falsificateurs:
+- la profondeur de peau ne diminue pas quand la fréquence augmente
+- la correction forte ne resserre pas davantage le courant
+- une résistivité plus grande ne change pas la profondeur de peau corrigée
+- une perméabilité plus grande ne réduit pas la profondeur de peau corrigée

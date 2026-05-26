@@ -1,0 +1,780 @@
+{
+  "timestamp": "20260517-212720Z",
+  "hypothesis": "un regime quasi instable apparait quand le champ alpha, la reponse kappa et la stabilite nucleaire se combinent",
+  "case_control": "Z = 1..100 avec point de contraste autour de Fe",
+  "observable": "S(Z), Z_crit, domaine de decroissance lourde",
+  "expected": "maximum net autour du fer puis declin jusqu'aux elements lourds",
+  "measured": {
+    "alpha_ref": 0.0072973525692838015,
+    "base_delta_phi": 0.0031087512698201886,
+    "peak_z": 25,
+    "peak_score": 10483733.585668089,
+    "z_crit": 34,
+    "critical_peak_ok": true,
+    "decline_after_peak_ok": true,
+    "heavy_tail_ok": true,
+    "zcrit_band_ok": true
+  },
+  "curve": [
+    {
+      "z": 1,
+      "radius_proxy": 0.61,
+      "delta_energy": 3.718959682965022e-05,
+      "kappa_band": 2,
+      "stability_score": 12642.06202893846
+    },
+    {
+      "z": 2,
+      "radius_proxy": 0.7176955262170047,
+      "delta_energy": 6.32180450828875e-05,
+      "kappa_band": 2,
+      "stability_score": 13753.796974198085
+    },
+    {
+      "z": 3,
+      "radius_proxy": 0.8003332099679081,
+      "delta_energy": 8.503578428413442e-05,
+      "kappa_band": 2,
+      "stability_score": 17592.059619856744
+    },
+    {
+      "z": 4,
+      "radius_proxy": 0.87,
+      "delta_energy": 0.00010430185777511097,
+      "kappa_band": 2,
+      "stability_score": 23608.442154865847
+    },
+    {
+      "z": 5,
+      "radius_proxy": 0.9313776741499453,
+      "delta_energy": 0.00012178547272346579,
+      "kappa_band": 2,
+      "stability_score": 32165.760886599
+    },
+    {
+      "z": 6,
+      "radius_proxy": 0.9868673331236263,
+      "delta_energy": 0.0001379252507687055,
+      "kappa_band": 2,
+      "stability_score": 43883.24976148361
+    },
+    {
+      "z": 7,
+      "radius_proxy": 1.0378953408767937,
+      "delta_energy": 0.0001530015332070531,
+      "kappa_band": 2,
+      "stability_score": 59528.93782891776
+    },
+    {
+      "z": 8,
+      "radius_proxy": 1.0853910524340096,
+      "delta_energy": 0.0001672072310912358,
+      "kappa_band": 2,
+      "stability_score": 79969.8962686412
+    },
+    {
+      "z": 9,
+      "radius_proxy": 1.13,
+      "delta_energy": 0.00018068220052635373,
+      "kappa_band": 2,
+      "stability_score": 106119.82240748605
+    },
+    {
+      "z": 10,
+      "radius_proxy": 1.1721921916437785,
+      "delta_energy": 0.00019353186472155458,
+      "kappa_band": 2,
+      "stability_score": 138869.80857898138
+    },
+    {
+      "z": 11,
+      "radius_proxy": 1.212322445492404,
+      "delta_energy": 0.0002058381379102467,
+      "kappa_band": 2,
+      "stability_score": 178999.0097691639
+    },
+    {
+      "z": 12,
+      "radius_proxy": 1.2506664199358162,
+      "delta_energy": 0.0002176662333406299,
+      "kappa_band": 2,
+      "stability_score": 227067.47504941776
+    },
+    {
+      "z": 13,
+      "radius_proxy": 1.2874433316206373,
+      "delta_energy": 0.00022906911365791014,
+      "kappa_band": 2,
+      "stability_score": 283298.1429362892
+    },
+    {
+      "z": 14,
+      "radius_proxy": 1.3228309205612248,
+      "delta_energy": 0.00024009051496200903,
+      "kappa_band": 2,
+      "stability_score": 347459.4162425357
+    },
+    {
+      "z": 15,
+      "radius_proxy": 1.3569756700139286,
+      "delta_energy": 0.00025076706864450023,
+      "kappa_band": 2,
+      "stability_score": 418763.340248814
+    },
+    {
+      "z": 16,
+      "radius_proxy": 1.3900000000000001,
+      "delta_energy": 0.0002611298309765368,
+      "kappa_band": 2,
+      "stability_score": 495796.4193480582
+    },
+    {
+      "z": 17,
+      "radius_proxy": 1.4220074626605919,
+      "delta_energy": 0.0002712054115397579,
+      "kappa_band": 2,
+      "stability_score": 576499.7399742294
+    },
+    {
+      "z": 18,
+      "radius_proxy": 1.453086578651014,
+      "delta_energy": 0.00028101682252729024,
+      "kappa_band": 2,
+      "stability_score": 658211.7950879366
+    },
+    {
+      "z": 19,
+      "radius_proxy": 1.483313725320575,
+      "delta_energy": 0.000290584129235703,
+      "kappa_band": 2,
+      "stability_score": 737781.1650132267
+    },
+    {
+      "z": 20,
+      "radius_proxy": 1.5127553482998906,
+      "delta_energy": 0.00029992495602916753,
+      "kappa_band": 2,
+      "stability_score": 811747.533866363
+    },
+    {
+      "z": 21,
+      "radius_proxy": 1.5414696806885182,
+      "delta_energy": 0.0003090548853189441,
+      "kappa_band": 3,
+      "stability_score": 9313657.700107427
+    },
+    {
+      "z": 22,
+      "radius_proxy": 1.5695080975540918,
+      "delta_energy": 0.0003179877760628791,
+      "kappa_band": 3,
+      "stability_score": 9870076.322980829
+    },
+    {
+      "z": 23,
+      "radius_proxy": 1.596916196061307,
+      "delta_energy": 0.0003267360208424872,
+      "kappa_band": 3,
+      "stability_score": 10263836.372078147
+    },
+    {
+      "z": 24,
+      "radius_proxy": 1.6237346662472527,
+      "delta_energy": 0.0003353107554477578,
+      "kappa_band": 3,
+      "stability_score": 10472541.019532347
+    },
+    {
+      "z": 25,
+      "radius_proxy": 1.65,
+      "delta_energy": 0.000343722031304343,
+      "kappa_band": 3,
+      "stability_score": 10483733.585668089
+    },
+    {
+      "z": 26,
+      "radius_proxy": 1.6757450735341242,
+      "delta_energy": 0.00035197895851444465,
+      "kappa_band": 3,
+      "stability_score": 10296115.931994183
+    },
+    {
+      "z": 27,
+      "radius_proxy": 1.7009996299037242,
+      "delta_energy": 0.0003600898254275382,
+      "kappa_band": 3,
+      "stability_score": 9919720.397702264
+    },
+    {
+      "z": 28,
+      "radius_proxy": 1.7257906817535873,
+      "delta_energy": 0.0003680621992958014,
+      "kappa_band": 3,
+      "stability_score": 9375007.08665118
+    },
+    {
+      "z": 29,
+      "radius_proxy": 1.7501428498549711,
+      "delta_energy": 0.0003759030115576161,
+      "kappa_band": 3,
+      "stability_score": 8691000.610741459
+    },
+    {
+      "z": 30,
+      "radius_proxy": 1.7740786495134317,
+      "delta_energy": 0.00038361863053211064,
+      "kappa_band": 3,
+      "stability_score": 7902704.1323142415
+    },
+    {
+      "z": 31,
+      "radius_proxy": 1.7976187343358054,
+      "delta_energy": 0.0003912149237299357,
+      "kappa_band": 3,
+      "stability_score": 7048113.273753559
+    },
+    {
+      "z": 32,
+      "radius_proxy": 1.820782104868019,
+      "delta_energy": 0.00039869731154206,
+      "kappa_band": 3,
+      "stability_score": 6165185.534190378
+    },
+    {
+      "z": 33,
+      "radius_proxy": 1.8435862880998877,
+      "delta_energy": 0.00040607081372493777,
+      "kappa_band": 3,
+      "stability_score": 5289099.711994727
+    },
+    {
+      "z": 34,
+      "radius_proxy": 1.8660474926597783,
+      "delta_energy": 0.0004133400898320935,
+      "kappa_band": 3,
+      "stability_score": 4450071.960502326
+    },
+    {
+      "z": 35,
+      "radius_proxy": 1.8881807436059002,
+      "delta_energy": 0.0004205094745308741,
+      "kappa_band": 3,
+      "stability_score": 3671895.803303454
+    },
+    {
+      "z": 36,
+      "radius_proxy": 1.9100000000000001,
+      "delta_energy": 0.00042758300857545484,
+      "kappa_band": 3,
+      "stability_score": 2971262.0926829367
+    },
+    {
+      "z": 37,
+      "radius_proxy": 1.9315182578775372,
+      "delta_energy": 0.00043456446607320837,
+      "kappa_band": 3,
+      "stability_score": 2357810.75412647
+    },
+    {
+      "z": 38,
+      "radius_proxy": 1.9527476407719337,
+      "delta_energy": 0.0004414573785737702,
+      "kappa_band": 3,
+      "stability_score": 1834784.6114806691
+    },
+    {
+      "z": 39,
+      "radius_proxy": 1.9736994795835834,
+      "delta_energy": 0.00044826505642289765,
+      "kappa_band": 3,
+      "stability_score": 1400105.7630579232
+    },
+    {
+      "z": 40,
+      "radius_proxy": 1.9943843832875574,
+      "delta_energy": 0.00045499060775218143,
+      "kappa_band": 3,
+      "stability_score": 1047679.009057334
+    },
+    {
+      "z": 41,
+      "radius_proxy": 2.014812301732541,
+      "delta_energy": 0.0004616369554175082,
+      "kappa_band": 4,
+      "stability_score": 2814537.1903498005
+    },
+    {
+      "z": 42,
+      "radius_proxy": 2.0349925815860437,
+      "delta_energy": 0.00046820685215129493,
+      "kappa_band": 4,
+      "stability_score": 2025050.5770578547
+    },
+    {
+      "z": 43,
+      "radius_proxy": 2.05493401631852,
+      "delta_energy": 0.0004747028941539128,
+      "kappa_band": 4,
+      "stability_score": 1428681.832346819
+    },
+    {
+      "z": 44,
+      "radius_proxy": 2.074644890984808,
+      "delta_energy": 0.00048112753331679516,
+      "kappa_band": 4,
+      "stability_score": 988325.1196473434
+    },
+    {
+      "z": 45,
+      "radius_proxy": 2.094133022449836,
+      "delta_energy": 0.00048748308824223826,
+      "kappa_band": 4,
+      "stability_score": 670383.1310717312
+    },
+    {
+      "z": 46,
+      "radius_proxy": 2.11340579561257,
+      "delta_energy": 0.0004937717542018548,
+      "kappa_band": 4,
+      "stability_score": 445861.38485431985
+    },
+    {
+      "z": 47,
+      "radius_proxy": 2.1324701961042716,
+      "delta_energy": 0.0004999956121562303,
+      "kappa_band": 4,
+      "stability_score": 290753.60027858894
+    },
+    {
+      "z": 48,
+      "radius_proxy": 2.1513328398716323,
+      "delta_energy": 0.0005061566369419306,
+      "kappa_band": 4,
+      "stability_score": 185906.25576417192
+    },
+    {
+      "z": 49,
+      "radius_proxy": 2.17,
+      "delta_energy": 0.0005122567047180852,
+      "kappa_band": 4,
+      "stability_score": 116547.25231774885
+    },
+    {
+      "z": 50,
+      "radius_proxy": 2.1884776310850236,
+      "delta_energy": 0.0005182975997529236,
+      "kappa_band": 4,
+      "stability_score": 71638.24219650494
+    },
+    {
+      "z": 51,
+      "radius_proxy": 2.206771391421141,
+      "delta_energy": 0.0005242810206205098,
+      "kappa_band": 4,
+      "stability_score": 43173.63250700536
+    },
+    {
+      "z": 52,
+      "radius_proxy": 2.2248866632412745,
+      "delta_energy": 0.0005302085858692475,
+      "kappa_band": 4,
+      "stability_score": 25510.513434510314
+    },
+    {
+      "z": 53,
+      "radius_proxy": 2.2428285712129346,
+      "delta_energy": 0.0005360818392162533,
+      "kappa_band": 4,
+      "stability_score": 14778.933499656872
+    },
+    {
+      "z": 54,
+      "radius_proxy": 2.260601999370879,
+      "delta_energy": 0.0005419022543152667,
+      "kappa_band": 4,
+      "stability_score": 8394.344839043732
+    },
+    {
+      "z": 55,
+      "radius_proxy": 2.2782116066448723,
+      "delta_energy": 0.0005476712391401919,
+      "kappa_band": 4,
+      "stability_score": 4674.627734673739
+    },
+    {
+      "z": 56,
+      "radius_proxy": 2.2956618411224494,
+      "delta_energy": 0.000553390140021537,
+      "kappa_band": 4,
+      "stability_score": 2552.234812984857
+    },
+    {
+      "z": 57,
+      "radius_proxy": 2.312956953170395,
+      "delta_energy": 0.0005590602453688109,
+      "kappa_band": 4,
+      "stability_score": 1366.169550981825
+    },
+    {
+      "z": 58,
+      "radius_proxy": 2.3301010075246165,
+      "delta_energy": 0.0005646827891082847,
+      "kappa_band": 4,
+      "stability_score": 716.9619292643556
+    },
+    {
+      "z": 59,
+      "radius_proxy": 2.347097894445838,
+      "delta_energy": 0.0005702589538623088,
+      "kappa_band": 4,
+      "stability_score": 368.8861778791702
+    },
+    {
+      "z": 60,
+      "radius_proxy": 2.363951340027857,
+      "delta_energy": 0.0005757898738935794,
+      "kappa_band": 4,
+      "stability_score": 186.07621311531506
+    },
+    {
+      "z": 61,
+      "radius_proxy": 2.3806649157357302,
+      "delta_energy": 0.0005812766378352839,
+      "kappa_band": 5,
+      "stability_score": 341.36719508106563
+    },
+    {
+      "z": 62,
+      "radius_proxy": 2.397242047243071,
+      "delta_energy": 0.0005867202912258766,
+      "kappa_band": 5,
+      "stability_score": 165.50734627825673
+    },
+    {
+      "z": 63,
+      "radius_proxy": 2.413686022630381,
+      "delta_energy": 0.0005921218388653351,
+      "kappa_band": 5,
+      "stability_score": 78.66975577472293
+    },
+    {
+      "z": 64,
+      "radius_proxy": 2.43,
+      "delta_energy": 0.000597482247008043,
+      "kappa_band": 5,
+      "stability_score": 36.65989170392037
+    },
+    {
+      "z": 65,
+      "radius_proxy": 2.4461870145576228,
+      "delta_energy": 0.0006028024454059565,
+      "kappa_band": 5,
+      "stability_score": 16.748090801718416
+    },
+    {
+      "z": 66,
+      "radius_proxy": 2.46224998520535,
+      "delta_energy": 0.0006080833292143762,
+      "kappa_band": 5,
+      "stability_score": 7.5011556722307215
+    },
+    {
+      "z": 67,
+      "radius_proxy": 2.478191720686837,
+      "delta_energy": 0.0006133257607714667,
+      "kappa_band": 5,
+      "stability_score": 3.2936531508601465
+    },
+    {
+      "z": 68,
+      "radius_proxy": 2.4940149253211836,
+      "delta_energy": 0.000618530571261609,
+      "kappa_band": 5,
+      "stability_score": 1.417791943263495
+    },
+    {
+      "z": 69,
+      "radius_proxy": 2.5097222043586997,
+      "delta_energy": 0.0006236985622717379,
+      "kappa_band": 5,
+      "stability_score": 0.5983155927239842
+    },
+    {
+      "z": 70,
+      "radius_proxy": 2.5253160689885967,
+      "delta_energy": 0.0006288305072489661,
+      "kappa_band": 5,
+      "stability_score": 0.247531001690717
+    },
+    {
+      "z": 71,
+      "radius_proxy": 2.5407989410258534,
+      "delta_energy": 0.0006339271528670563,
+      "kappa_band": 5,
+      "stability_score": 0.10039421516973658
+    },
+    {
+      "z": 72,
+      "radius_proxy": 2.556173157302028,
+      "delta_energy": 0.0006389892203086166,
+      "kappa_band": 5,
+      "stability_score": 0.039917745223796486
+    },
+    {
+      "z": 73,
+      "radius_proxy": 2.571440973782558,
+      "delta_energy": 0.0006440174064692961,
+      "kappa_band": 5,
+      "stability_score": 0.015559656611304198
+    },
+    {
+      "z": 74,
+      "radius_proxy": 2.586604569431083,
+      "delta_energy": 0.0006490123850897106,
+      "kappa_band": 5,
+      "stability_score": 0.005945785442141542
+    },
+    {
+      "z": 75,
+      "radius_proxy": 2.6016660498395408,
+      "delta_energy": 0.0006539748078203326,
+      "kappa_band": 5,
+      "stability_score": 0.002227369432772028
+    },
+    {
+      "z": 76,
+      "radius_proxy": 2.6166274506411504,
+      "delta_energy": 0.0006589053052241452,
+      "kappa_band": 5,
+      "stability_score": 0.0008179894502868907
+    },
+    {
+      "z": 77,
+      "radius_proxy": 2.631490740721952,
+      "delta_energy": 0.0006638044877214487,
+      "kappa_band": 5,
+      "stability_score": 0.00029449250825407396
+    },
+    {
+      "z": 78,
+      "radius_proxy": 2.6462578252452404,
+      "delta_energy": 0.0006686729464808562,
+      "kappa_band": 5,
+      "stability_score": 0.00010393710648913032
+    },
+    {
+      "z": 79,
+      "radius_proxy": 2.660930548502053,
+      "delta_energy": 0.0006735112542601791,
+      "kappa_band": 5,
+      "stability_score": 3.596131642053187e-05
+    },
+    {
+      "z": 80,
+      "radius_proxy": 2.6755106965997815,
+      "delta_energy": 0.0006783199662006087,
+      "kappa_band": 5,
+      "stability_score": 1.2197418772705202e-05
+    },
+    {
+      "z": 81,
+      "radius_proxy": 2.69,
+      "delta_energy": 0.0006830996205773299,
+      "kappa_band": 6,
+      "stability_score": 1.1129020416188213e-05
+    },
+    {
+      "z": 82,
+      "radius_proxy": 2.7044001359157286,
+      "delta_energy": 0.0006878507395094548,
+      "kappa_band": 6,
+      "stability_score": 3.6276105516729957e-06
+    },
+    {
+      "z": 83,
+      "radius_proxy": 2.718712730577518,
+      "delta_energy": 0.0006925738296319438,
+      "kappa_band": 6,
+      "stability_score": 1.159173429168487e-06
+    },
+    {
+      "z": 84,
+      "radius_proxy": 2.7329393613770367,
+      "delta_energy": 0.0006972693827319725,
+      "kappa_band": 6,
+      "stability_score": 3.6311080885023303e-07
+    },
+    {
+      "z": 85,
+      "radius_proxy": 2.747081558896151,
+      "delta_energy": 0.0007019378763520212,
+      "kappa_band": 6,
+      "stability_score": 1.1150437863894785e-07
+    },
+    {
+      "z": 86,
+      "radius_proxy": 2.761140808828883,
+      "delta_energy": 0.0007065797743617929,
+      "kappa_band": 6,
+      "stability_score": 3.356647003815324e-08
+    },
+    {
+      "z": 87,
+      "radius_proxy": 2.7751185538030922,
+      "delta_energy": 0.0007111955275009045,
+      "kappa_band": 6,
+      "stability_score": 9.905570105476422e-09
+    },
+    {
+      "z": 88,
+      "radius_proxy": 2.7890161951081835,
+      "delta_energy": 0.0007157855738941623,
+      "kappa_band": 6,
+      "stability_score": 2.8655791795813647e-09
+    },
+    {
+      "z": 89,
+      "radius_proxy": 2.802835094334717,
+      "delta_energy": 0.000720350339541095,
+      "kappa_band": 6,
+      "stability_score": 8.126500930888733e-10
+    },
+    {
+      "z": 90,
+      "radius_proxy": 2.8165765749313363,
+      "delta_energy": 0.0007248902387813017,
+      "kappa_band": 6,
+      "stability_score": 2.2591867813053733e-10
+    },
+    {
+      "z": 91,
+      "radius_proxy": 2.8302419236840586,
+      "delta_energy": 0.0007294056747370594,
+      "kappa_band": 6,
+      "stability_score": 6.156830797327893e-11
+    },
+    {
+      "z": 92,
+      "radius_proxy": 2.8438323921226143,
+      "delta_energy": 0.0007338970397345358,
+      "kappa_band": 6,
+      "stability_score": 1.64481861857979e-11
+    },
+    {
+      "z": 93,
+      "radius_proxy": 2.8573491978581687,
+      "delta_energy": 0.0007383647157048602,
+      "kappa_band": 6,
+      "stability_score": 4.3075837526485364e-12
+    },
+    {
+      "z": 94,
+      "radius_proxy": 2.8707935258564916,
+      "delta_energy": 0.0007428090745662156,
+      "kappa_band": 6,
+      "stability_score": 1.1058687834658871e-12
+    },
+    {
+      "z": 95,
+      "radius_proxy": 2.8841665296503307,
+      "delta_energy": 0.0007472304785880424,
+      "kappa_band": 6,
+      "stability_score": 2.783087567881835e-13
+    },
+    {
+      "z": 96,
+      "radius_proxy": 2.8974693324945053,
+      "delta_energy": 0.0007516292807383654,
+      "kappa_band": 6,
+      "stability_score": 6.86598452406391e-14
+    },
+    {
+      "z": 97,
+      "radius_proxy": 2.9107030284669873,
+      "delta_energy": 0.0007560058250151923,
+      "kappa_band": 6,
+      "stability_score": 1.6604688725890615e-14
+    },
+    {
+      "z": 98,
+      "radius_proxy": 2.923868683519033,
+      "delta_energy": 0.0007603604467628678,
+      "kappa_band": 6,
+      "stability_score": 3.936497131531446e-15
+    },
+    {
+      "z": 99,
+      "radius_proxy": 2.936967336477212,
+      "delta_energy": 0.0007646934729742107,
+      "kappa_band": 6,
+      "stability_score": 9.148286424881598e-16
+    },
+    {
+      "z": 100,
+      "radius_proxy": 2.95,
+      "delta_energy": 0.0007690052225792079,
+      "kappa_band": 6,
+      "stability_score": 2.084104689269275e-16
+    }
+  ],
+  "selected_scores": [
+    {
+      "z": 1,
+      "radius_proxy": 0.61,
+      "delta_energy": 3.718959682965022e-05,
+      "kappa_band": 2,
+      "stability_score": 12642.06202893846
+    },
+    {
+      "z": 2,
+      "radius_proxy": 0.7176955262170047,
+      "delta_energy": 6.32180450828875e-05,
+      "kappa_band": 2,
+      "stability_score": 13753.796974198085
+    },
+    {
+      "z": 6,
+      "radius_proxy": 0.9868673331236263,
+      "delta_energy": 0.0001379252507687055,
+      "kappa_band": 2,
+      "stability_score": 43883.24976148361
+    },
+    {
+      "z": 8,
+      "radius_proxy": 1.0853910524340096,
+      "delta_energy": 0.0001672072310912358,
+      "kappa_band": 2,
+      "stability_score": 79969.8962686412
+    },
+    {
+      "z": 26,
+      "radius_proxy": 1.6757450735341242,
+      "delta_energy": 0.00035197895851444465,
+      "kappa_band": 3,
+      "stability_score": 10296115.931994183
+    },
+    {
+      "z": 56,
+      "radius_proxy": 2.2956618411224494,
+      "delta_energy": 0.000553390140021537,
+      "kappa_band": 4,
+      "stability_score": 2552.234812984857
+    },
+    {
+      "z": 82,
+      "radius_proxy": 2.7044001359157286,
+      "delta_energy": 0.0006878507395094548,
+      "kappa_band": 6,
+      "stability_score": 3.6276105516729957e-06
+    },
+    {
+      "z": 92,
+      "radius_proxy": 2.8438323921226143,
+      "delta_energy": 0.0007338970397345358,
+      "kappa_band": 6,
+      "stability_score": 1.64481861857979e-11
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V8 radius, level and stability blocks"
+}

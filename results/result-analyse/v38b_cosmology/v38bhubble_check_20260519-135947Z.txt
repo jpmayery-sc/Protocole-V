@@ -1,0 +1,4 @@
+V38b hubble check
+timestamp: 20260519-135947Z
+verdict: supported
+hubble_match_ok: True

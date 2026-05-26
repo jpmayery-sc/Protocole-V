@@ -1,0 +1,190 @@
+{
+  "timestamp": "20260510-221140Z",
+  "hypothesis": "the 4d transition block benefits from a block-and-edge view to isolate the usable core",
+  "case_control": "full 4d block Y -> Cd versus a repaired core excluding the strongest local anomalies",
+  "observable": "trend repair and regularity change after removing local anomalies",
+  "expected": {
+    "full_family": "mixed or broken trend",
+    "core": "more regular than the full series",
+    "z_eff": "more regular than mass in the core"
+  },
+  "measured": {
+    "full_family": {
+      "series": [
+        {
+          "symbol": "Y",
+          "period": 5,
+          "mass_u": 88.90584,
+          "radius_pm": 180.0,
+          "ionization_ev": 6.2173,
+          "zeff_proxy": 3.38066
+        },
+        {
+          "symbol": "Zr",
+          "period": 5,
+          "mass_u": 91.224,
+          "radius_pm": 155.0,
+          "ionization_ev": 6.6339,
+          "zeff_proxy": 3.492087
+        },
+        {
+          "symbol": "Nb",
+          "period": 5,
+          "mass_u": 92.90637,
+          "radius_pm": 146.0,
+          "ionization_ev": 6.7589,
+          "zeff_proxy": 3.524833
+        },
+        {
+          "symbol": "Mo",
+          "period": 5,
+          "mass_u": 95.95,
+          "radius_pm": 139.0,
+          "ionization_ev": 7.0924,
+          "zeff_proxy": 3.610748
+        },
+        {
+          "symbol": "Tc",
+          "period": 5,
+          "mass_u": 98.0,
+          "radius_pm": 136.0,
+          "ionization_ev": 7.28,
+          "zeff_proxy": 3.65819
+        },
+        {
+          "symbol": "Ru",
+          "period": 5,
+          "mass_u": 101.07,
+          "radius_pm": 134.0,
+          "ionization_ev": 7.3605,
+          "zeff_proxy": 3.67836
+        },
+        {
+          "symbol": "Rh",
+          "period": 5,
+          "mass_u": 102.9055,
+          "radius_pm": 134.0,
+          "ionization_ev": 7.4589,
+          "zeff_proxy": 3.702866
+        },
+        {
+          "symbol": "Pd",
+          "period": 5,
+          "mass_u": 106.42,
+          "radius_pm": 137.0,
+          "ionization_ev": 8.3369,
+          "zeff_proxy": 3.914739
+        },
+        {
+          "symbol": "Ag",
+          "period": 5,
+          "mass_u": 107.8682,
+          "radius_pm": 144.0,
+          "ionization_ev": 7.5762,
+          "zeff_proxy": 3.731868
+        },
+        {
+          "symbol": "Cd",
+          "period": 5,
+          "mass_u": 112.414,
+          "radius_pm": 151.0,
+          "ionization_ev": 8.9938,
+          "zeff_proxy": 4.066045
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "mixed",
+      "zeff_trend": "mixed",
+      "mass_trend": "increasing",
+      "radius_rmse": 11.391011874067708,
+      "ionization_rmse": 0.3070533227406286,
+      "zeff_rmse": 0.07263899404412173,
+      "mass_rmse": 0.5998474625086457,
+      "radius_step_cv": 2.89203259948438,
+      "ionization_step_cv": 1.8254796259330826,
+      "zeff_step_cv": 1.7614209323315675,
+      "mass_step_cv": 0.36485330016462764
+    },
+    "core": {
+      "series": [
+        {
+          "symbol": "Y",
+          "period": 5,
+          "mass_u": 88.90584,
+          "radius_pm": 180.0,
+          "ionization_ev": 6.2173,
+          "zeff_proxy": 3.38066
+        },
+        {
+          "symbol": "Zr",
+          "period": 5,
+          "mass_u": 91.224,
+          "radius_pm": 155.0,
+          "ionization_ev": 6.6339,
+          "zeff_proxy": 3.492087
+        },
+        {
+          "symbol": "Nb",
+          "period": 5,
+          "mass_u": 92.90637,
+          "radius_pm": 146.0,
+          "ionization_ev": 6.7589,
+          "zeff_proxy": 3.524833
+        },
+        {
+          "symbol": "Mo",
+          "period": 5,
+          "mass_u": 95.95,
+          "radius_pm": 139.0,
+          "ionization_ev": 7.0924,
+          "zeff_proxy": 3.610748
+        },
+        {
+          "symbol": "Tc",
+          "period": 5,
+          "mass_u": 98.0,
+          "radius_pm": 136.0,
+          "ionization_ev": 7.28,
+          "zeff_proxy": 3.65819
+        },
+        {
+          "symbol": "Ru",
+          "period": 5,
+          "mass_u": 101.07,
+          "radius_pm": 134.0,
+          "ionization_ev": 7.3605,
+          "zeff_proxy": 3.67836
+        },
+        {
+          "symbol": "Rh",
+          "period": 5,
+          "mass_u": 102.9055,
+          "radius_pm": 134.0,
+          "ionization_ev": 7.4589,
+          "zeff_proxy": 3.702866
+        }
+      ],
+      "radius_trend": "mixed",
+      "ionization_trend": "increasing",
+      "zeff_trend": "increasing",
+      "mass_trend": "increasing",
+      "radius_rmse": 7.407938378550956,
+      "ionization_rmse": 0.09759095156073944,
+      "zeff_rmse": 0.026395394809561195,
+      "mass_rmse": 0.3058622202279215,
+      "radius_step_cv": 1.0852159977694509,
+      "ionization_step_cv": 0.6075317502406085,
+      "zeff_step_cv": 0.6280474655373774,
+      "mass_step_cv": 0.2346981870714634
+    }
+  },
+  "verdict": "partiel",
+  "reference": "4d block with local anomalies around Pd and Ag",
+  "falsifiers": [
+    "the full 4d block is already regular",
+    "the repaired core does not improve regularity",
+    "Z_eff is not more regular than mass in the repaired core"
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_4d_block_edge_view_check_20260510-221140Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\transition_4d_block_edge_view_check_20260510-221140Z.txt"
+}

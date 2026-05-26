@@ -1,0 +1,12 @@
+V75B BBN numeric check summary
+timestamp: 20260520-225416Z
+v75b_global_verdict: cadre_BBN_partiellement_coherent
+supported_count: 3/4
+cadre_BBN_partiellement_coherent_count: 1/4
+z_scores: D/H=1.540, He/H=0.062, Li/H=7.351
+
+Items:
+- v75b_reference_load: supported
+- v75b_numeric_check: supported
+- v75b_success_criteria: supported
+- v75b_synthesis: cadre_BBN_partiellement_coherent

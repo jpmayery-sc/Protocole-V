@@ -1,0 +1,23 @@
+{
+  "suite": "v6_d2_electron",
+  "timestamp": "20260517-152521Z",
+  "overall_verdict": "supported",
+  "supported_count": 2,
+  "total": 2,
+  "items": [
+    {
+      "label": "d2_motion_from_alpha_port",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\d2motionfromalphaport_check_20260517-152520Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\d2motionfromalphaport_check_20260517-152520Z.txt"
+    },
+    {
+      "label": "electron_channel_from_alpha",
+      "verdict": "conforme",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\electronchannelfromalphacheck_20260517-152520Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\electronchannelfromalphacheck_20260517-152520Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v6_d2_electron_suite_summary_20260517-152521Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v6_d2_electron_suite_summary_20260517-152521Z.txt"
+}

@@ -1,0 +1,29 @@
+{
+  "suite": "v36scalestrong_suite",
+  "timestamp": "20260519-131903Z",
+  "v36_global_verdict": "supported",
+  "supported_count": 3,
+  "total": 3,
+  "items": [
+    {
+      "label": "v36_scales",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36scales_check_20260519-131903Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36scales_check_20260519-131903Z.txt"
+    },
+    {
+      "label": "v36_strong",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36strong_check_20260519-131903Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36strong_check_20260519-131903Z.txt"
+    },
+    {
+      "label": "v36_tester_summary",
+      "verdict": "supported",
+      "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36tester_summary_check_20260519-131903Z.json",
+      "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36tester_summary_check_20260519-131903Z.txt"
+    }
+  ],
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36scalestrong_suite_summary_20260519-131903Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36scalestrong_suite_summary_20260519-131903Z.txt"
+}

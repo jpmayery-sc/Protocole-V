@@ -1,0 +1,15 @@
+{
+  "section": "V25-TESTS-FALSIFIABLES",
+  "interferometry_prediction": true,
+  "phaseshiftexpected": true,
+  "spectralshiftprediction": true,
+  "deltaE_expected": true,
+  "spinrotationprediction": true,
+  "torsionsignatureexpected": true,
+  "geometricacceleration_prediction": true,
+  "Hdotdot_expected": true,
+  "verdict": "supported",
+  "timestamp": "20260518-172139Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25falsification_check_20260518-172139Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v25falsification_check_20260518-172139Z.txt"
+}

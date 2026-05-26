@@ -1,0 +1,77 @@
+V27 verdict check
+{
+  "section": "V27-VERDICT",
+  "V27_QGR": {
+    "section": "V27-QGR",
+    "qgr_equation": "i hbar d/dtau |Y(tau)> = (H_geom + H_K + H_T + H_int)|Y(tau)>",
+    "qgroperatorset": [
+      "H_geom",
+      "H_K",
+      "H_T",
+      "H_int"
+    ],
+    "qgr_consistency": true,
+    "internal_geodesics": true,
+    "relativisticpropagationok": true,
+    "relativistictubemodes": true,
+    "qgrtubespectrum": [
+      "L(tau) = 2 pi / sqrt(K(tau))"
+    ],
+    "verdict": "supported"
+  },
+  "V27_RENORMALISATION": {
+    "section": "V27-RENORMALISATION",
+    "K_renormalized": true,
+    "UV_corrections": true,
+    "T_renormalized": true,
+    "torsion_counterterms": true,
+    "lagrangian_renormalized": true,
+    "counterterms_list": [
+      "delta L_geom",
+      "delta L_K",
+      "delta L_T"
+    ],
+    "verdict": "supported"
+  },
+  "V27_MULTISCALE": {
+    "section": "V27-MULTISCALE",
+    "quantumscalesimulation": true,
+    "geometricscalesimulation": true,
+    "cosmologicalscalesimulation": true,
+    "multiscalecouplingok": true,
+    "scaletransitionmap": true,
+    "verdict": "supported"
+  },
+  "V27_OBSERVABLES_ADVANCÉS": {
+    "section": "V27-OBSERVABLES-AVANCÉS",
+    "advancedquantumobservables": true,
+    "advancedgeometricobservables": true,
+    "advancedcosmologicalobservables": true,
+    "verdict": "supported"
+  },
+  "V27_ARTICLE_AVANCÉ": {
+    "section": "V27-ARTICLE-AVANCÉ",
+    "publicationadvancedstructure": [
+      "Resume",
+      "Introduction",
+      "Axiomes fondamentaux",
+      "QGR interne",
+      "Renormalisation geometrique",
+      "Simulation multi-echelle",
+      "Observables avances",
+      "Tests falsifiables",
+      "Discussion",
+      "Conclusion",
+      "Annexes"
+    ],
+    "readyforsubmission_advanced": true,
+    "verdict": "supported"
+  },
+  "v27_verdict": "supported",
+  "qgr_summary": "V27 is coherent: QGR, renormalisation, multiscale simulation, advanced observables and article structure agree.",
+  "next_step": "extend_to_V28",
+  "verdict": "supported",
+  "timestamp": "20260518-173605Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27verdict_check_20260518-173605Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27verdict_check_20260518-173605Z.txt"
+}

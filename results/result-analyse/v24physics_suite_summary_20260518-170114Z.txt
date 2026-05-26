@@ -1,0 +1,11 @@
+V24 physics suite summary
+timestamp: 20260518-170114Z
+overall_verdict: supported
+supported_count: 5/5
+
+Items:
+- v24_axioms: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v24axioms_check_20260518-170113Z.json
+- v24_lagrangian: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v24lagrangian_check_20260518-170113Z.json
+- v24_effectivephysics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v24effectivephysics_check_20260518-170113Z.json
+- v24_physicstests: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v24physicstests_check_20260518-170113Z.json
+- v24_verdict: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v24verdict_check_20260518-170114Z.json

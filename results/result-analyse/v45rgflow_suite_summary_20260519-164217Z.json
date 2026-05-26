@@ -1,0 +1,41 @@
+{
+  "suite": "v45rgflow_suite",
+  "timestamp": "20260519-164217Z",
+  "v45_global_verdict": "supported",
+  "supported_count": 5,
+  "total": 5,
+  "items": [
+    {
+      "label": "v45_beta_functions",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45beta_functions_check_20260519-164216Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45beta_functions_check_20260519-164216Z.txt"
+    },
+    {
+      "label": "v45_rg_flow",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45rg_flow_check_20260519-164216Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45rg_flow_check_20260519-164216Z.txt"
+    },
+    {
+      "label": "v45_fixed_points",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45fixed_points_check_20260519-164216Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45fixed_points_check_20260519-164216Z.txt"
+    },
+    {
+      "label": "v45_stability",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45stability_check_20260519-164216Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45stability_check_20260519-164216Z.txt"
+    },
+    {
+      "label": "v45_synthesis",
+      "verdict": "supported",
+      "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45synthesis_check_20260519-164217Z.json",
+      "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45_rgflow\\v45synthesis_check_20260519-164217Z.txt"
+    }
+  ],
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45rgflow_suite_summary_20260519-164217Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v45rgflow_suite_summary_20260519-164217Z.txt"
+}

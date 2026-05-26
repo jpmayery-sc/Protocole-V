@@ -1,0 +1,5 @@
+V24 effective physics check
+timestamp: 20260518-170113Z
+verdict: supported
+consistencywithdata: True
+dominant_effects: 4

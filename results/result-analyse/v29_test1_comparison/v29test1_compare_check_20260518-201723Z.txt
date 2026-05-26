@@ -1,0 +1,7 @@
+V29 test 1 data comparison
+timestamp: 20260518-201723Z
+verdict: supported
+chronometers_reduced_chi2: 0.497230
+bao_reduced_chi2: 1.347907
+pantheon_reduced_chi2: 0.440972
+mean_reduced_chi2: 0.762036

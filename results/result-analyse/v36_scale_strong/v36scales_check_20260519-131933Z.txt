@@ -1,0 +1,6 @@
+V36 scales check
+timestamp: 20260519-131933Z
+verdict: supported
+K_loc_best: 0.0002
+T_loc_best: 0.0008
+K_bg_best: 1.0

@@ -1,0 +1,10 @@
+V28 observables ultimate check
+{
+  "section": "V28-OBSERVABLES-ULTIMES",
+  "ultimateobservableslist": true,
+  "observablepredictionset": true,
+  "verdict": "supported",
+  "timestamp": "20260518-194554Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28observablesultimate_check_20260518-194554Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v28observablesultimate_check_20260518-194554Z.txt"
+}

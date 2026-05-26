@@ -1,0 +1,5 @@
+V24 verdict check
+timestamp: 20260518-170216Z
+verdict: supported
+v24_verdict: supported
+next_step: extend_to_V25

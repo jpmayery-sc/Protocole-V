@@ -1,0 +1,37 @@
+{
+  "suite": "v77q_a7_survival_test",
+  "timestamp": "20260521-180143Z",
+  "grid_size": 243,
+  "gamma_burn_range": [
+    0.02,
+    0.22,
+    9
+  ],
+  "gamma_cap_range": [
+    0.02,
+    0.22,
+    9
+  ],
+  "f_env_values": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "verdict": "survival_block_insufficient",
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77q_a7_survival_test\\v77q_survival_results.csv",
+  "heatmap_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77q_a7_survival_test\\plots\\v77q_survival_heatmap.png",
+  "timeline_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77q_a7_survival_test\\plots\\v77q_survival_timeline.png",
+  "accepted": [],
+  "accepted_count": 0,
+  "accepted_components_burn": 0,
+  "accepted_components_cap": 0,
+  "accepted_components_env": 0,
+  "best_fit_Gamma_burn": 0.22,
+  "best_fit_Gamma_cap": 0.02,
+  "best_fit_f_env": 0.8,
+  "best_fit_chi_jouet": 3.181492711838777e+20,
+  "best_fit_Li_total": 0.35673478743501047,
+  "bottleneck": "aucune bande stable",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77q_a7_survival_test\\V77Q_A7_SURVIVAL_REPORT.txt",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77q_a7_survival_test\\v77q_a7_survival_20260521-180143Z.json"
+}

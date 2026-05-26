@@ -1,0 +1,63 @@
+{
+  "timestamp": "20260518-104845Z",
+  "hypothesis": "la stabilite atomique est controlee par la surface alpha, la variation kappa et la reserve nucleaire",
+  "case_control": "H, He, Fe, Pb",
+  "observable": "S(Z) = surface de stabilite / variation de kappa(n)",
+  "expected": "S(H) petit, He stable, Fe maximal, Pb en declin",
+  "measured": {
+    "amplitude": 0.08043147830901778,
+    "exponent": 4.9456681557600435,
+    "monotone_ok": true,
+    "fe_peak_ok": true,
+    "pb_decline_ok": true,
+    "positive_ok": true
+  },
+  "stability_samples": [
+    {
+      "name": "H",
+      "radius": 0.54,
+      "alpha_span": 6.374619645617766e-06,
+      "n_low": 2.0,
+      "n_high": 3.0,
+      "kappa_variation": 0.0022585942125374066,
+      "surface_strength": 84710.93649818358,
+      "reserve": 0.6,
+      "score": 22503627.086606804
+    },
+    {
+      "name": "He",
+      "radius": 0.84,
+      "alpha_span": 5.7371576810561625e-06,
+      "n_low": 3.0,
+      "n_high": 4.0,
+      "kappa_variation": 0.0002666612087790142,
+      "surface_strength": 146413.96431784373,
+      "reserve": 0.9,
+      "score": 494157243.52791435
+    },
+    {
+      "name": "Fe",
+      "radius": 1.68,
+      "alpha_span": 2.8685788405280813e-06,
+      "n_low": 4.0,
+      "n_high": 5.0,
+      "kappa_variation": 5.660093324095616e-05,
+      "surface_strength": 585655.8572713749,
+      "reserve": 1.0,
+      "score": 10347106023.467422
+    },
+    {
+      "name": "Pb",
+      "radius": 2.52,
+      "alpha_span": 1.9123858936856766e-06,
+      "n_low": 6.0,
+      "n_high": 7.0,
+      "kappa_variation": 6.0818732172828555e-06,
+      "surface_strength": 1317725.6788603943,
+      "reserve": 0.03,
+      "score": 6499933318.812766
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V7 radius field and electron response"
+}

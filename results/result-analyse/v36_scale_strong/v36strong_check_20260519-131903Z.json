@@ -1,0 +1,22 @@
+{
+  "section": "V36-STRONG",
+  "chosen_particle": "glueball_0pp",
+  "m_exp": 1.6,
+  "K_loc_strong": 0.002,
+  "T_loc_strong": 0.008,
+  "c_K": 10,
+  "c_T": 10,
+  "M0_strong": 1.59998,
+  "alpha_s": 0.001,
+  "beta_s": 0.001,
+  "m_strong_eff": 1.59999,
+  "mass_match_ok": true,
+  "naturality_ok": true,
+  "hierarchy_ok": true,
+  "rejected_reasons": [],
+  "v36_strong_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-131903Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36strong_check_20260519-131903Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36strong_check_20260519-131903Z.txt"
+}

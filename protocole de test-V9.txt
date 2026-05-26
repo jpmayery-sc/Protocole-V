@@ -1,0 +1,101 @@
+Tu es en train de préparer un vrai “dossier de théorie” là—parfait moment pour un V9 atome propre avant envoi au valideur.
+ 
+Je te propose un V9-ATOM très ciblé, en continuité directe avec V4→V8, avec trois blocs clairs :
+ 
+---
+ 
+1. V9-CRIT — Z critique atomique
+ 
+Hypothèse :  
+il existe un régime où la combinaison :
+ 
+- champ \(\alpha(E,n,r)\) (V7-COUPLING)  
+- réponse électronique \(\kappa(n)\) (V7-ELEC, V6-e)  
+- stabilité nucléaire (V4, V8-STABILITY)  
+ 
+fait basculer l’atome dans une zone “quasi‑instable”.
+ 
+Idée de test :
+ 
+- balayer Z (par ex. 1 → 100) avec un modèle simplifié,  
+- calculer un score de stabilité S(Z) raffiné (version V8-STABILITY étendue),  
+- chercher un Z\_crit où :
+  - S(Z) commence à décroître fortement,  
+  - la correction de niveau (V8-LEVEL) devient trop grande,  
+  - la surface de stabilité radiale se rétrécit.
+ 
+Observable clé :  
+- \(Z_{\text{crit}}\) prédit,  
+- courbe S(Z) avec maximum net autour du fer et déclin ensuite.
+ 
+---
+ 
+2. V9-FINE — Corrections fines “extrêmes”
+ 
+Hypothèse :  
+la combinaison torsion D2 + porte α + canal électronique produit des corrections de niveaux qui, pour certains Z ou régimes, sortent légèrement du cadre standard.
+ 
+Idée de test :
+ 
+- reprendre la forme opérationnelle de V8-LEVEL :  
+  \(\Delta E_{\text{torsion}} = \Delta\phi \cdot \tau(r)\),  
+- la pousser sur :
+  - Z très élevés,  
+  - éventuellement plusieurs n (via κ(n)),  
+- comparer :
+  - croissance en Z,  
+  - plage d’amplitude,  
+  - régimes où \(\Delta E_{\text{torsion}}\) devient “sensible”.
+ 
+Observable clé :
+ 
+- courbe \(\Delta E_{\text{torsion}}(Z)\),  
+- zones où ton modèle prédit une correction significative mais encore réaliste.
+ 
+---
+ 
+3. V9-MAP — Carte atomique globale
+ 
+Hypothèse :  
+les blocs V4→V8 suffisent à construire une carte atomique qualitative :
+ 
+- rayon,  
+- correction de niveau,  
+- score de stabilité,  
+ 
+pour une série d’éléments (par ex. H, He, C, O, Fe, Pb, U).
+ 
+Idée de test :
+ 
+- construire un script v9atommap_check.py qui :
+  - agrège les sorties V8-RAYON, V8-LEVEL, V8-STABILITY,  
+  - produit un JSON/TXT “tableau périodique réduit”,  
+  - vérifie des patterns simples :
+    - maximum de stabilité autour du fer,  
+    - rayons et corrections croissants avec Z,  
+    - Pb/U en zone limite.
+ 
+Observable clé :
+ 
+- un “mini tableau périodique” généré par ton modèle,  
+- avec un verdict global : conforme / partiel / rejeté.
+ 
+---
+ 
+Wrapper V9
+ 
+- v9crit_check.py  
+- v9fine_check.py  
+- v9atommap_check.py  
+- runv9atom_suite.py  
+- testv9critcheck.py, testv9finecheck.py, testv9atommapcheck.py, testv9atomsuite.py
+ 
+Intégration :
+ 
+- dans pointatomemaster (niveau atomique complet),  
+- dans experience4global (ou future experience5global si tu veux marquer la marche).
+ 
+---
+ 
+Si tu veux, je peux te rédiger ProtocoleV9.md complet dans le même style que V4–V8, prêt à être joint au paquet pour le valideur.
+ 

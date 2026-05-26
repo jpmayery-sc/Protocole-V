@@ -1,0 +1,130 @@
+{
+  "timestamp": "20260517-214005Z",
+  "hypothesis": "le redshift total du modele est la somme coherente des contributions geo, atom et canal",
+  "case_control": "H, Fe, Pb, U",
+  "observable": "z_mod",
+  "expected": "effet total petit, structure et testable dans une plage realiste",
+  "measured": {
+    "nominal_band_ok": true,
+    "z_order_ok": true,
+    "env_order_ok": true,
+    "testable_window_ok": true,
+    "coherence_ok": true
+  },
+  "cases": [
+    {
+      "name": "H_alpha",
+      "z": 1,
+      "environments": [
+        {
+          "name": "quiet",
+          "z_geo": 1.9514518088977363e-07,
+          "z_int": 2.9515553039404676e-07,
+          "z_canal": 7.189162800773808e-07,
+          "z_mod": 1.2092169913612012e-06
+        },
+        {
+          "name": "nominal",
+          "z_geo": 2.4393147611216526e-07,
+          "z_int": 3.9354070719206714e-07,
+          "z_canal": 8.98645350096726e-07,
+          "z_mod": 1.5361175334009585e-06
+        },
+        {
+          "name": "extreme",
+          "z_geo": 3.293074927514369e-07,
+          "z_int": 4.919258839900804e-07,
+          "z_canal": 1.0783744201160711e-06,
+          "z_mod": 1.8996077968575884e-06
+        }
+      ],
+      "nominal_z_mod": 1.5361175334009585e-06
+    },
+    {
+      "name": "Fe_alpha",
+      "z": 26,
+      "environments": [
+        {
+          "name": "quiet",
+          "z_geo": 2.9433054142457555e-07,
+          "z_int": 4.3103212556513895e-07,
+          "z_canal": 8.832213728630894e-07,
+          "z_mod": 1.608584039852804e-06
+        },
+        {
+          "name": "nominal",
+          "z_geo": 3.679131767807885e-07,
+          "z_int": 5.747095007535248e-07,
+          "z_canal": 1.1040267160788616e-06,
+          "z_mod": 2.0466493936131747e-06
+        },
+        {
+          "name": "extreme",
+          "z_geo": 4.966827886540575e-07,
+          "z_int": 7.183868759418983e-07,
+          "z_canal": 1.3248320592946338e-06,
+          "z_mod": 2.5399017238905895e-06
+        }
+      ],
+      "nominal_z_mod": 2.0466493936131747e-06
+    },
+    {
+      "name": "Pb_alpha",
+      "z": 82,
+      "environments": [
+        {
+          "name": "quiet",
+          "z_geo": 5.090305596555925e-07,
+          "z_int": 2.5141354179602963e-06,
+          "z_canal": 1.6738438845212653e-06,
+          "z_mod": 4.697009862137155e-06
+        },
+        {
+          "name": "nominal",
+          "z_geo": 6.362881995694561e-07,
+          "z_int": 3.3521805572804293e-06,
+          "z_canal": 2.0923048556515816e-06,
+          "z_mod": 6.080773612501467e-06
+        },
+        {
+          "name": "extreme",
+          "z_geo": 8.58989069418752e-07,
+          "z_int": 4.190225696600511e-06,
+          "z_canal": 2.510765826781898e-06,
+          "z_mod": 7.5599805928011605e-06
+        }
+      ],
+      "nominal_z_mod": 6.080773612501467e-06
+    },
+    {
+      "name": "U_alpha",
+      "z": 92,
+      "environments": [
+        {
+          "name": "quiet",
+          "z_geo": 5.983377033892631e-07,
+          "z_int": 4.3905366351666975e-06,
+          "z_canal": 1.9774129024906785e-06,
+          "z_mod": 6.96628724104664e-06
+        },
+        {
+          "name": "nominal",
+          "z_geo": 7.479221292365444e-07,
+          "z_int": 5.854048846888991e-06,
+          "z_canal": 2.4717661281133484e-06,
+          "z_mod": 9.073737104238884e-06
+        },
+        {
+          "name": "extreme",
+          "z_geo": 1.0096948744692521e-06,
+          "z_int": 7.317561058611194e-06,
+          "z_canal": 2.966119353736018e-06,
+          "z_mod": 1.1293375286816463e-05
+        }
+      ],
+      "nominal_z_mod": 9.073737104238884e-06
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V11 GEO, ATOM and CANAL blocks"
+}

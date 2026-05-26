@@ -1,0 +1,7 @@
+PART-03 proton-radius coherence pipeline summary
+timestamp: 20260522-170417Z
+verdict: part03_proton_radius_partial
+chi2_model: 0.06777777777777776
+chi2_baseline: 32.13916666666666
+delta_chi2: 32.07138888888888
+max_abs_local_shift: 0.0

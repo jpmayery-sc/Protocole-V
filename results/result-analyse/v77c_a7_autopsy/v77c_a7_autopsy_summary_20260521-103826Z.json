@@ -1,0 +1,18 @@
+{
+  "suite": "v77c_a7_autopsy",
+  "timestamp": "20260521-103826Z",
+  "verdict": "verrou_structurel_identifie",
+  "verdict_text": "Le verrou structurel est l'addition de deux canaux positifs sans destruction explicite: Li7 et Be7 décroissent avec delta_EM, mais leur somme reste pilotée par la branche Be7, et le proxy ne contient ni canal compensateur ni saturation interne pour faire tomber Li_total.",
+  "files": {
+    "structure": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77c_a7_autopsy\\V77C_A7_STRUCTURE.txt",
+    "fluxes": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77c_a7_autopsy\\V77C_A7_FLUXES.txt",
+    "surgery": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77c_a7_autopsy\\V77C_A7_SURGERY.txt",
+    "normalisation": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77c_a7_autopsy\\V77C_A7_NORMALISATION.txt",
+    "comparison": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v77c_a7_autopsy\\V77C_A7_COMPARISON.txt"
+  },
+  "notes": [
+    "The proxy exposes only positive Li7 and Be7 branches.",
+    "Li_total is a direct sum with no subtraction channel.",
+    "The dominant lock is Be7, which remains the hard floor on Li_total."
+  ]
+}

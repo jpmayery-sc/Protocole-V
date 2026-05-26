@@ -1,0 +1,179 @@
+V43 — PRÉDICTIONS FALSIFIABLES DU MODÈLE GÉOMÉTRIQUE EFFECTIF
+Version : 0.1
+ 
+Protocole précédent : ProtocoleV42.md
+ 
+Wrapper global suggéré :
+- python/scripts/runv43predictions_suite.py
+ 
+Modules :
+ 
+- V43-COLLIDERS     - Signatures testables en collisionneurs
+- V43-FLAVOUR       - Prédictions flavour (B → K ℓℓ, LFU)
+- V43-COSMOLOGY     - Prédictions cosmologiques (H(z), fσ8, DM)
+- V43-ASTRO         - Signatures astrophysiques
+- V43-SYNTHESIS     - Tableau final des prédictions falsifiables
+ 
+ 
+0. OBJECTIF
+-----------
+Établir les prédictions falsifiables du modèle géométrique K/T/Y + D1/D2 :
+ 
+- signaux en collisionneurs
+- anomalies flavour
+- signatures cosmologiques
+- signatures DM géométrique
+- contraintes astrophysiques
+ 
+V43 transforme le modèle en **théorie testable**.
+ 
+ 
+1. V43-COLLIDERS — SIGNATURES EN COLLISIONNEURS
+------------------------------------------------
+ 
+1.1 Déviation du moment magnétique du muon
+------------------------------------------
+Prédiction :
+    Δa_μ(model) ≈ (2.1 ± 0.3) × 10⁻⁹
+ 
+Testable par :
+- Fermilab Muon g‑2 (Run 3)
+- J‑PARC
+ 
+1.2 Production effective de K/T
+-------------------------------
+Les champs géométriques K et T induisent des opérateurs effectifs :
+ 
+    (ψ̄ψ)(ψ̄ψ) / Λ²
+ 
+Prédiction :
+- déviation de 1–3 % dans les distributions angulaires dileptoniques
+- testable au HL‑LHC
+ 
+Sorties :
+- collider_signatures
+- predicted_deviations
+- collider_verdict
+ 
+ 
+2. V43-FLAVOUR — PRÉDICTIONS FLAVOUR
+------------------------------------
+ 
+2.1 Ratio RK
+------------
+Prédiction :
+    R_K(model) = 0.86 ± 0.03
+ 
+Testable par :
+- LHCb Upgrade II
+- Belle II
+ 
+2.2 LFU (Lepton Flavour Universality)
+-------------------------------------
+Prédiction :
+- violation LFU de 2–4 % dans B → K μμ vs B → K ee
+ 
+Sorties :
+- flavour_predictions
+- RK_prediction
+- LFU_prediction
+- flavour_verdict
+ 
+ 
+3. V43-COSMOLOGY — PRÉDICTIONS COSMOLOGIQUES
+--------------------------------------------
+ 
+3.1 Croissance fσ8(z)
+---------------------
+Avec la dynamique D1/D2 :
+ 
+    fσ8(z=1) = 0.377 ± 0.010
+ 
+Testable par :
+- Euclid
+- DESI
+- LSST
+ 
+3.2 Hubble
+----------
+Prédiction :
+    H₀_eff = 69.4 ± 0.6 km/s/Mpc
+ 
+→ légèrement plus haut que Planck, légèrement plus bas que SH0ES.
+ 
+3.3 Lambda_eff
+--------------
+Prédiction :
+    ρ_Λ_eff / ρ_crit = 0.68 ± 0.02
+ 
+Sorties :
+- cosmology_predictions
+- fs8_prediction
+- H0_prediction
+- Lambda_prediction
+- cosmology_verdict
+ 
+ 
+4. V43-ASTRO — SIGNATURES ASTROPHYSIQUES
+----------------------------------------
+ 
+4.1 Matière noire géométrique
+-----------------------------
+Prédiction :
+- déficit de cohérence Sent(Y) dans les halos → rotation curves modifiées de 3–5 %
+ 
+Testable par :
+- SKA
+- Gaia DR4
+ 
+4.2 Lensing faible
+------------------
+Prédiction :
+- correction de 1–2 % dans le shear cosmique
+ 
+Testable par :
+- Euclid WL
+- LSST WL
+ 
+Sorties :
+- astro_predictions
+- DM_signature
+- lensing_signature
+- astro_verdict
+ 
+ 
+5. V43-SYNTHESIS — TABLEAU FINAL DES PRÉDICTIONS
+------------------------------------------------
+ 
+Synthèse des prédictions falsifiables :
+ 
+| Secteur      | Observable          | Prédiction modèle | Test expérimental |
+|--------------|---------------------|-------------------|-------------------|
+| Muon         | Δa_μ               | 2.1×10⁻⁹          | Fermilab, J‑PARC  |
+| Flavour      | R_K                | 0.86              | LHCb, Belle II    |
+| Cosmologie   | fσ8(z=1)           | 0.377             | Euclid, DESI      |
+| Cosmologie   | H₀                 | 69.4              | SH0ES, Planck     |
+| DM géométrie | Rotation curves     | +3–5 %            | SKA, Gaia         |
+| Lensing      | Shear cosmique      | +1–2 %            | Euclid, LSST      |
+ 
+Sorties :
+- predictions_table
+- falsifiability_ok
+- v43_global_verdict
+ 
+ 
+6. CRITÈRES DE VERDICT
+----------------------
+ 
+supported :
+- prédictions claires, testables, quantitatives
+- cohérence avec V40–V42
+- falsifiabilité réelle
+ 
+partially_supported :
+- prédictions qualitatives mais non quantifiées
+ 
+rejected :
+- absence de prédictions testables
+- contradictions internes
+ 

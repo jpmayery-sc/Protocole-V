@@ -1,0 +1,7 @@
+V44 decomposition check
+timestamp: 20260519-163545Z
+verdict: supported
+potential_terms: ['V_KT = lambda_K K^2 + lambda_T T^2 + lambda_KT K T', 'V_Y = (gamma/2) (Y - Y_inf)^2']
+kinetic_terms: ['L_GR kinetic sector', 'L_K effective kinetic sector']
+mixing_terms: ['L_mix = xi K + eta Y']
+decomposition_ok: True

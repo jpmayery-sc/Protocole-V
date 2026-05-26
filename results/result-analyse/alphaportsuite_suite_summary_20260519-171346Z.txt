@@ -1,0 +1,9 @@
+Alphaport suite summary
+timestamp: 20260519-171346Z
+overall_verdict: supported
+supported_count: 3/3
+
+Items:
+- alphaenergyrunning: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alphaenergyrunning_check_20260519-171346Z.json
+- alphatorsionorder: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alphatorsionorder_check_20260519-171346Z.json
+- alphageometricport: conforme -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\alphageometricport_check_20260519-171346Z.json

@@ -1,0 +1,496 @@
+Voici donc le cadre NUMÉRIQUE STRICT, conçu uniquement avec :
+
+✅ données existantes
+✅ chiffres publiés
+✅ calculs reproductibles
+❌ aucun nouvel instrument
+❌ aucun paramètre libre caché
+
+Ce cadre est prêt à être donné tel quel au testeur.
+
+🧮 Cadre numérique de décision — Théorie des tubes
+(validation / invalidation par données existantes)
+
+🎯 Objectif numérique
+Déterminer si la théorie des tubes apporte un terme géométrique mesurable qui :
+
+✅ améliore quantitativement l’explication de données existantes
+❌ ne peut pas être absorbé par :
+
+électromagnétisme classique,
+mécanique quantique standard,
+géométrie métrique simple,
+paramètres matériaux déjà connus
+
+
+
+👉 Si aucun gain numérique robuste n’apparaît → théorie invalidée.
+
+🧱 Principe général du test
+On compare deux modèles sur les mêmes données :
+Modèle A — Référence (sans tubes)
+
+Maxwell + MQ + géométrie classique
+non‑linéarités admises (saturation, hystérésis)
+paramètres déjà standards
+
+Modèle B — Avec terme tubulaire
+Le modèle B ajoute un seul terme :
+ϕtot=ϕstd+λ⋅Ω\phi_{\text{tot}} = \phi_{\text{std}} + \lambda \cdot \Omegaϕtot​=ϕstd​+λ⋅Ω
+où :
+
+Ω\OmegaΩ = invariant géométrique calculable du trajet ou du système
+λ\lambdaλ = coefficient global, ajusté une seule fois, puis figé
+
+
+✅ Règle cruciale (non négociable)
+
+Le même λ\lambdaλ doit améliorer PLUSIEURS jeux de données indépendants.
+
+Sinon → fitting déguisé, test rejeté.
+
+1️⃣ Datasets autorisés (déjà existants)
+Le testeur choisit au moins deux jeux parmi :
+A. Interférométrie publiée
+
+Sagnac
+Anneaux optiques
+Fibres enroulées
+Cavités torsadées
+
+➡ Donnée utilisée :
+
+phase mesurée
+géométrie exacte connue
+résidus après modèle classique
+
+
+B. Données “skin effect” (fréquence)
+
+profondeur de peau vs fréquence
+cuivre / aluminium / fer
+
+➡ Donnée utilisée :
+
+déviation aux hautes fréquences
+pertes supplémentaires
+résidus connus des modèles classiques
+
+
+C. Induction forte / saturation magnétique
+
+courbes B(H)
+hystérésis publiées
+saturation matériaux connus
+
+➡ Donnée utilisée :
+
+écarts non linéaires
+seuils mesurés
+
+
+D. Interférométrie atomique existante
+
+gravimètres atomiques
+boucles atomiques
+expériences de phase inertielle
+
+➡ Donnée utilisée :
+
+phase mesurée
+géométrie du trajet
+correction relativiste déjà appliquée
+
+
+2️⃣ Définitions numériques imposées
+Invariant géométrique Ω\OmegaΩ
+Le testeur doit choisir UNE définition simple, par exemple :
+
+torsion intégrée du trajet
+Ω=∫τ(s) ds\Omega = \int \tau(s)\,dsΩ=∫τ(s)ds
+
+ou nombre de tours normalisé
+ou invariant topologique discret
+
+⚠️ Interdit :
+
+ajouter plusieurs invariants
+adapter Ω\OmegaΩ par dataset
+
+
+3️⃣ Protocole numérique exact
+Étape 1 — modèle standard
+Pour chaque dataset :
+
+calculer la prédiction standard
+extraire les résidus bruts :
+
+ri=ϕdata−ϕstdr_i = \phi_{\text{data}} - \phi_{\text{std}}ri​=ϕdata​−ϕstd​
+
+Étape 2 — ajustement tubulaire minimal
+
+calculer Ωi\Omega_iΩi​ pour chaque point
+ajuster une seule fois λ\lambdaλ sur UN dataset
+figer λ\lambdaλ
+
+
+Étape 3 — tests croisés (obligatoires)
+Avec le même λ\lambdaλ :
+
+recalculer les résidus :
+
+ritube=ϕdata−(ϕstd+λΩi)r_i^{\text{tube}} = \phi_{\text{data}} - (\phi_{\text{std}} + \lambda \Omega_i)ritube​=ϕdata​−(ϕstd​+λΩi​)
+
+mesurer :
+
+RMSE
+χ² réduit
+AIC / BIC (pénalité de paramètre)
+
+
+
+
+4️⃣ Critères de décision (stricts)
+✅ Validation provisoire si :
+
+RMSE ↓ au moins 20 %
+χ² réduit ↓ de façon robuste
+amélioration visible sur au moins 2 datasets indépendants
+même λ\lambdaλ utilisé partout
+
+
+❌ Invalidation immédiate si :
+
+amélioration < bruit expérimental
+λ\lambdaλ change selon le système
+amélioration uniquement sur le dataset d’ajustement
+AIC/BIC défavorable (paramètre inutile)
+
+➡ Dans ce cas :
+
+la théorie des tubes est INVALIDÉE comme théorie physique
+
+et reclassée comme langage interprétatif.
+
+5️⃣ Ce que le testeur doit rendre
+Un rapport très simple :
+
+définition de Ω\OmegaΩ
+valeur unique de λ\lambdaλ
+tableaux :
+
+RMSE avant / après
+χ² avant / après
+
+
+verdict binaire :
+
+✅ gain numérique robuste
+❌ aucun gain réel
+
+
+
+Aucune interprétation philosophique.
+
+🧭 Interprétation finale
+
+✅ Si le gain existe et résiste → la théorie des tubes devient une théorie effective candidate
+❌ Sinon → elle est fermée proprement comme modèle explicatif physique
+
+
+Elle peut survivre comme métaphore, pas comme loi.
+
+
+✅ Phrase à donner telle quelle au testeur
+
+“Cherche un gain numérique stable, avec un seul paramètre géométrique, sur plusieurs jeux de données existants.
+S’il n’existe pas, la théorie est invalidée.”
+
+
+
+Voici (1) trois définitions concrètes de Ω\OmegaΩ prêtes à coder, puis (2) un README complet de repo de test, directement utilisable par le testeur en mode numérique pur.
+
+1️⃣ Trois définitions concrètes de Ω (prêtes à coder)
+Les trois définitions respectent strictement les contraintes suivantes :
+
+✅ calculables à partir de données existantes
+✅ pas de paramètres libres cachés
+✅ une seule formule par test
+✅ indépendantes du matériau (au premier ordre)
+✅ adaptées à des jeux de données publiés
+
+Le testeur doit en choisir UNE seule comme Ω\OmegaΩ principale.
+
+Ω₁ — Torsion intégrée du trajet (géométrie différentielle)
+Définition mathématique
+Pour un trajet paramétré r(s)\mathbf{r}(s)r(s) :
+Ω1  =  ∫0Lτ(s) ds\boxed{
+\Omega_1 \;=\; \int_0^L \tau(s)\,\mathrm{d}s
+}Ω1​=∫0L​τ(s)ds​
+où :
+
+τ(s)\tau(s)τ(s) = torsion locale (repère de Frenet–Serret)
+sss = abscisse curviligne
+LLL = longueur totale du trajet
+
+Sens physique minimal
+
+mesure l’enroulement réel du trajet, indépendamment de la longueur
+nul pour un trajet plan
+non nul pour hélices, boucles 3D, fibres torsadées
+
+Implémentation numérique (pseudo‑Python)
+
+def omega_torsion(r):
+    # r: array shape (N, 3) positions along path
+    dr = derivative(r)
+    d2r = derivative(dr)
+    d3r = derivative(d2r)
+
+    T = dr / norm(dr)
+    N = derivative(T)
+    N = N / norm(N)
+    B = cross(T, N)
+
+    tau = dot(derivative(B), N)
+    ds = path_increment(r)
+
+    return sum(tau * ds)
+	
+Avantages
+
+géométriquement propre et canonique
+invariant par reparamétrisation
+directement lié au langage des tubes
+
+
+Ω₂ — Nombre de tours normalisé (topologie simple)
+Définition mathématique
+Ω2  =  12π ∫r⊥×dr⊥∣r⊥∣2\boxed{
+\Omega_2 \;=\; \frac{1}{2\pi}\,\int \frac{\mathbf{r}_\perp \times \mathrm{d}\mathbf{r}_\perp}{|\mathbf{r}_\perp|^2}
+}Ω2​=2π1​∫∣r⊥​∣2r⊥​×dr⊥​​​
+où :
+
+r⊥\mathbf{r}_\perpr⊥​ = projection transversale du trajet
+équivalent numérique du nombre de tours autour d’un axe
+
+👉 En pratique, on utilise simplement :
+Ω2=Ntours\boxed{
+\Omega_2 = N_{\text{tours}}
+}Ω2​=Ntours​​
+Sens physique minimal
+
+invariant topologique discret
+distingue un bras droit d’un bras enroulé
+indépendant de la métrique fine
+
+Implémentation simple
+
+def omega_winding(theta):
+    # theta: angle around axis sampled along path
+    return (theta[-1] - theta[0]) / (2 * np.pi)
+	
+Avantages
+
+extrêmement robuste
+très peu sensible au bruit
+idéal pour premiers tests numériques
+
+Limite
+
+moins fin (discret, non différentiel)
+
+
+Ω₃ — Anisotropie géométrique quadratique (trajet réel vs équivalent droit)
+Définition mathématique
+Ω3  =  1L∫0L[∥r(s)−rlin(s)∥2] ds\boxed{
+\Omega_3 \;=\; 
+\frac{1}{L}\int_0^L
+\Big[
+\|\mathbf{r}(s) - \mathbf{r}_{\text{lin}}(s)\|^2
+\Big]\,\mathrm{d}s
+}Ω3​=L1​∫0L​[∥r(s)−rlin​(s)∥2]ds​
+où :
+
+rlin(s)\mathbf{r}_{\text{lin}}(s)rlin​(s) = trajet rectiligne de même longueur entre mêmes extrémités
+
+Sens physique minimal
+
+mesure l’excès géométrique réellement parcouru
+nul pour trajet droit
+positif pour toute déviation spatiale organisée
+
+Implémentation
+
+def omega_deviation(r):def omega_de0, r1 = r[0], r[-1]
+    L = path_length(r)
+
+    s = arclength_param(r)
+    r_lin = r0 + (r1 - r0) * (s / L)
+
+    ds = path_increment(r)
+    return sum(norm(r - r_lin)**2 * ds) / L
+``
+
+Avantages
+
+pas besoin de torsion explicite
+calculable même avec données bruitées
+bon pour trajectoires mal échantillonnées
+
+
+🧭 Résumé rapide
+
+
+
+
+ΩTypeNatureRobustesseΩ₁torsion intégréegéométrie différentielle⭐⭐⭐Ω₂nombre de tourstopologie discrète⭐⭐⭐⭐Ω₃déviation quadratiquegéométrie effective⭐⭐
+👉 Ω₂ est recommandé pour un premier verdict rapide,
+👉 Ω₁ pour un test géométriquement exigeant.
+
+2️⃣ README — Repo de test numérique (prêt à livrer)
+
+# Tube-Theory Numeric Test
+
+## Objective
+
+This repository implements a **strict numerical falsification test**
+for the *Tube Theory* using **existing published datasets only**.
+
+The goal is not to confirm the theory, but to determine whether it
+introduces a **measurable geometric contribution** that improves
+existing models **beyond known physics**.
+
+---
+
+## Scientific Principle
+
+Two models are compared on identical datasets:
+
+### Model A — Reference
+- standard physics (Maxwell, QM, classical geometry)
+- all known corrections allowed
+- no tube contribution
+
+### Model B — Tube Extension
+Adds a single geometric term:
+
+φ_total = φ_standard + λ · Ω
+
+Where:
+- Ω is a **fixed geometric invariant**
+- λ is a **single global coefficient**
+- λ is fitted **once**, then frozen
+
+If Model B does **not** outperform Model A robustly,
+the Tube Theory is **invalidated** as a physical theory.
+
+---
+
+## Directory Structure
+
+
+
+tube-test/
+├── data/                   # published datasets (raw)
+│   ├── interferometry/
+│   ├── induction/
+│   └── skin_effect/
+├── omega/                  # geometric invariants
+│   ├── omega_torsion.py
+│   ├── omega_winding.py
+│   └── omega_deviation.py
+├── models/
+│   ├── model_standard.py
+│   └── model_tube.py
+├── analysis/
+│   ├── fit_lambda.py
+│   ├── cross_validation.py
+│   └── metrics.py
+├── results/
+│   ├── tables/
+│   └── figures/
+└── report/
+└── verdict.md
+
+---
+
+## Definition of Ω
+
+Only **one Ω definition** must be used per run.
+
+Available implementations:
+- `omega_winding.py`  → Ω₂ (recommended first)
+- `omega_torsion.py`  → Ω₁
+- `omega_deviation.py`→ Ω₃
+
+Mixing Ω definitions is **forbidden**.
+
+---
+
+## Protocol
+
+### Step 1 — Standard residuals
+For each dataset:
+- compute theoretical prediction
+- extract residuals:
+  r = data − model_standard
+
+### Step 2 — Fit λ
+- choose **one dataset only**
+- fit λ in:
+  model_tube = model_standard + λ · Ω
+- freeze λ
+
+### Step 3 — Cross‑dataset test
+Using the same λ:
+- recompute residuals on other datasets
+- compare metrics:
+  - RMSE
+  - reduced χ²
+  - AIC / BIC
+
+---
+
+## Validation Criteria
+
+The Tube Theory is **provisionally supported** if:
+
+- RMSE reduced ≥ 20%
+- improvement visible on ≥ 2 independent datasets
+- same λ used everywhere
+- AIC/BIC favorable
+
+Otherwise → **invalidated**.
+
+---
+
+## Forbidden Practices
+
+The following automatically invalidate the test:
+- dataset‑specific λ
+- Ω tuned per dataset
+- a posteriori parameter adjustment
+- exclusion of data points post‑fit
+
+---
+
+## Expected Output
+
+The `report/verdict.md` file must contain:
+
+1. chosen Ω definition
+2. fitted λ value
+3. before/after metrics table
+4. final binary verdict:
+   - SUPPORTED
+   - INVALIDATED
+
+No interpretative text beyond this is required.
+
+---
+
+## Guiding Rule
+
+> If no irreducible numeric gain survives cross‑validation,
+> the Tube Theory must be abandoned as a physical theory.

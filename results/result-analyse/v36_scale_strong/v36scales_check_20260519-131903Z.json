@@ -1,0 +1,21 @@
+{
+  "section": "V36-SCALES",
+  "K_loc_best": 0.0002,
+  "T_loc_best": 0.0008,
+  "K_bg_best": 1.0,
+  "scale_ratio_K": 0.0002,
+  "scale_ratio_T": 0.0008,
+  "leptonic_couplings": {
+    "A_mu_best": 1e-06,
+    "B_mu_best": 1e-06
+  },
+  "neutrino_couplings": {
+    "lambda_2_best": 7.4e-05,
+    "lambda_3_best": 0.0025
+  },
+  "sum_mnu_best": 0.05860232526704263,
+  "verdict": "supported",
+  "timestamp": "20260519-131903Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36scales_check_20260519-131903Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v36_scale_strong\\v36scales_check_20260519-131903Z.txt"
+}

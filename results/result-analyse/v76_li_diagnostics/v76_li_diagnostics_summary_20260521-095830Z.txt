@@ -1,0 +1,37 @@
+V76 lithium diagnostics summary
+timestamp: 20260521-095830Z
+verdict: resolution_fine
+verdict_text: Li résolu de façon fine / tuning
+delta_center: -0.0069
+scan_window: [-0.0072, -0.0066], step=9.999999999999593e-06
+scan_count: 61
+center_D_over_H: 2.529882918906704e-05
+center_Y_p: 0.246745
+center_Li7_over_H: 1.566465015625287e-10
+center_Be7_over_H: 1.3292413078503833e-10
+center_Li_total_over_H: 2.8957063234756704e-10
+center_passes_all_direct: True
+center_passes_all_total: False
+
+Bands:
+- D_over_H: {'count': 61, 'delta_min': -0.0072, 'delta_max': -0.0066, 'delta_width': 0.0005999999999999998}
+- Y_p: {'count': 61, 'delta_min': -0.0072, 'delta_max': -0.0066, 'delta_width': 0.0005999999999999998}
+- Li7_over_H: {'count': 61, 'delta_min': -0.0072, 'delta_max': -0.0066, 'delta_width': 0.0005999999999999998}
+- Li_total_over_H: {'count': 0, 'delta_min': None, 'delta_max': None, 'delta_width': None}
+
+Slopes at center:
+- D_over_H: -0.00011763955577154078
+- Y_p: 0.05000000000004987
+- Li7_over_H: 2.741315176556652e-08
+- Li_total_over_H: 4.934564329696163e-08
+
+Rate robustness:
+- total_cases: 9
+- passes_all_direct: 9
+- passes_all_total: 0
+
+Plots:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v76_li_diagnostics\plots\D_over_H_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v76_li_diagnostics\plots\Y_p_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v76_li_diagnostics\plots\Li7_over_H_vs_delta_em.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v76_li_diagnostics\plots\Li_total_over_H_vs_delta_em.png

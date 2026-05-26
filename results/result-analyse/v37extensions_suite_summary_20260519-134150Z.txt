@@ -1,0 +1,9 @@
+V37 extensions suite summary
+timestamp: 20260519-134150Z
+v37_global_verdict: supported
+supported_count: 3/3
+
+Items:
+- v37_bphysics: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v37_extensions\v37bphysics_check_20260519-134150Z.json
+- v37_dark: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v37_extensions\v37dark_check_20260519-134150Z.json
+- v37_tester_summary: supported -> D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v37_extensions\v37tester_summary_check_20260519-134150Z.json

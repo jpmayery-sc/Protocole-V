@@ -1,0 +1,15 @@
+V77Q A=7 survival report
+timestamp: 20260521-180143Z
+verdict: survival_block_insufficient
+best_fit_Gamma_burn: 0.22
+best_fit_Gamma_cap: 0.02
+best_fit_f_env: 0.8
+best_fit_chi_jouet: 3.181492711838777e+20
+best_fit_Li_total: 0.35673478743501047
+accepted_count: 0
+bottleneck: aucune bande stable
+
+output_files:
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77q_a7_survival_test\v77q_survival_results.csv
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77q_a7_survival_test\plots\v77q_survival_heatmap.png
+- D:\Privé\Tout ne fait qu'un\experience\experience 4\results\result-analyse\v77q_a7_survival_test\plots\v77q_survival_timeline.png

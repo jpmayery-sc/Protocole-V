@@ -1,0 +1,135 @@
+\section{Annexe F -- Protocole V91}
+Le protocole V91 reprend V90 et pousse explicitement trois points: tracer $v_{\mathrm{info}}(z)$, définir $g(z)$ de manière opératoire, calibrer $f_{\mathrm{photon}}(z)$ par la contrainte de redshift, puis comparer le tout à $\Lambda$CDM.
+
+\subsection{Objectif}
+L'objectif est de transformer le cadre V90 en une confrontation directe avec $\Lambda$CDM. On garde une géométrie lisse, un temps propre local, une vitesse d'information dérivée, puis on mesure les écarts relatifs aux distances et au transport par rapport au baseline standard.
+
+\subsection{Cadre explicite}
+On introduit la transition
+\[
+S(z)=\frac{1}{1+\exp\!\left(-\frac{z-z_c}{w}\right)},
+\qquad z_c=0.46,\quad w=0.16.
+\]
+Le facteur géométrique est ensuite défini par
+\[
+g(z)=1+\alpha_g S(z),
+\qquad \alpha_g=0.18.
+\]
+Le temps propre local suit la règle
+\[
+\tau(z)=\tau_0 g(z),
+\qquad \tau_0=1.
+\]
+
+\subsection{Distance de référence $\Lambda$CDM}
+La référence standard est donnée par
+\[
+H_{\Lambda\mathrm{CDM}}(z)=H_0\sqrt{\Omega_r(1+z)^4+\Omega_m(1+z)^3+\Omega_\Lambda},
+\]
+et la distance comobile de référence
+\[
+d_{\Lambda\mathrm{CDM}}(z)=c\int_0^z \frac{dz'}{H_{\Lambda\mathrm{CDM}}(z')}.
+\]
+Les paramètres utilisés dans le test sont
+\[
+H_0=67.4,\qquad \Omega_m=0.315,\qquad \Omega_r=9\times10^{-5},\qquad \Omega_\Lambda=0.685.
+\]
+Dans le calcul numérique du runner V91, la distance est exprimée dans l'unité brute issue de l'intégrale comobile.
+
+\subsection{Calibration de $f_{\mathrm{photon}}(z)$}
+V91 fixe la composante photonique par la contrainte de redshift:
+\[
+f_{\mathrm{photon}}(z)=\frac{1+z}{g(z)}.
+\]
+Ainsi, la relation de redshift devient identique à la contrainte testée:
+\[
+1+z=g(z)f_{\mathrm{photon}}(z).
+\]
+
+\subsection{Distance effective V90}
+On compare ensuite V90 à $\Lambda$CDM via une distance effective compressée:
+\[
+d_{V90}(z)=\frac{d_{\Lambda\mathrm{CDM}}(z)}{1+z}\,\frac{1}{1+\beta S(z)},
+\qquad \beta=2.5.
+\]
+La vitesse d'information vaut alors
+\[
+v_{\mathrm{info}}(z)=\frac{d_{V90}(z)}{\tau(z)}.
+\]
+La vitesse effective observée suit
+\[
+v_{\mathrm{eff}}(z)=v_{\mathrm{info}}(z)f_{\mathrm{photon}}(z).
+\]
+
+\subsection{Déroulé ligne par ligne}
+Le calcul à $z=0.46$ est:
+\[
+S(0.46)=0.5,
+\]
+\[
+g(0.46)=1+0.18\times 0.5=1.09,
+\]
+\[
+\tau(0.46)=\tau_0 g(0.46)=1.09,
+\]
+\[
+d_{\Lambda\mathrm{CDM}}(0.46)=1815.0282260025901,
+\]
+\[
+d_{V90}(0.46)=\frac{1815.0282260025901}{1.46}\,\frac{1}{1+2.5\times 0.5}=552.5200079155526,
+\]
+\[
+v_{\mathrm{info}}(0.46)=\frac{552.5200079155526}{1.09}=506.89908983078215,
+\]
+\[
+f_{\mathrm{photon}}(0.46)=\frac{1.46}{1.09}=1.3394495412844036,
+\]
+\[
+v_{\mathrm{eff}}(0.46)=506.89908983078215\times 1.3394495412844036=679.065213601669,
+\]
+\[
+g(0.46)f_{\mathrm{photon}}(0.46)=1.46,
+\]
+donc
+\[
+\Delta z=(g f_{\mathrm{photon}}-1)-z=-5.551115123125783\times 10^{-17}.
+\]
+
+\subsection{Comparaison directe à $\Lambda$CDM}
+On introduit les ratios suivants:
+\[
+R_d(z)=\frac{d_{V90}(z)}{d_{\Lambda\mathrm{CDM}}(z)}=\frac{1}{(1+z)(1+\beta S(z))},
+\]
+\[
+R_\tau(z)=\frac{\tau(z)}{\tau_0}=g(z),
+\]
+\[
+R_v(z)=\frac{v_{\mathrm{info}}(z)}{d_{\Lambda\mathrm{CDM}}(z)/\tau_0}=\frac{R_d(z)}{R_\tau(z)}.
+\]
+Le point clé est que $\Lambda$CDM fournit la distance de référence, tandis que V90 introduit une compression locale contrôlée et un ralentissement du temps propre, ce qui abaisse $R_v(z)$ autour de la zone critique.
+
+\subsection{Tableau numérique}
+Le tableau suivant reprend les valeurs du runner V91 sur la grille de test:
+\begin{center}
+\begin{tabular}{lrrrr}
+\hline
+$z$ & $d_{\Lambda\mathrm{CDM}}(z)$ & $d_{V90}(z)$ & $v_{\mathrm{info}}(z)$ & $R_v(z)$ \\
+\hline
+0.23 & 965.6501939927988 & 530.5206783646951 & 512.804363688199 & 0.5310456797692346 \\
+0.46 & 1815.0282260025901 & 552.5200079155526 & 506.89908983078215 & 0.2792789018753578 \\
+0.69 & 2554.619721307155 & 500.50503335925254 & 436.9497720953271 & 0.1710429808596903 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Résumé numérique}
+Sur la grille $z=\{0,0.23,0.46,0.69,1,2,3\}$, le test confirme:
+\begin{itemize}
+    \item un résidu de redshift numériquement nul;
+    \item une croissance monotone de $g(z)$;
+    \item une baisse de $v_{\mathrm{info}}(z)$ au voisinage de $z\approx0.46$;
+    \item un écart contrôlé et lisible par rapport à $\Lambda$CDM.
+\end{itemize}
+
+\subsection{Verdict}
+V91 ne remplace pas $\Lambda$CDM: il le prend comme référence géométrique, puis introduit une correction locale lisible sur la distance effective et sur la vitesse d'information. Le but est de faire apparaître une confrontation calculable, pas une rupture formelle.

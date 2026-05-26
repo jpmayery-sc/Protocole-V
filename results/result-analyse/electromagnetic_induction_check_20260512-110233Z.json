@@ -1,0 +1,19 @@
+{
+  "timestamp": "20260512-110233Z",
+  "cases": {
+    "constant_flux_max_voltage": 0.0,
+    "positive_flux_max_voltage": 6.283185307179586,
+    "negative_flux_max_voltage": 6.283185307179586,
+    "fast_response_max_voltage": 25.132741228718345,
+    "slow_response_max_voltage": 3.141592653589793
+  },
+  "constant_flux_status": "conforme strict",
+  "sign_symmetry_status": "conforme strict",
+  "speed_response_status": "conforme strict",
+  "overall_verdict": "conforme strict",
+  "falsifiers": [
+    "une tension notable apparaît à flux constant",
+    "le signe de la réponse ne suit pas la variation de flux",
+    "une variation rapide ne produit pas une réponse plus forte"
+  ]
+}

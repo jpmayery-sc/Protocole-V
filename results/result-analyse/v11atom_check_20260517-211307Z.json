@@ -1,0 +1,169 @@
+{
+  "timestamp": "20260517-211307Z",
+  "hypothesis": "les corrections de niveaux internes induisent un redshift atomique petit mais mesurable",
+  "case_control": "H, He, Fe, Pb, U",
+  "observable": "z_int",
+  "expected": "amplitude dans la bande 10^-6 a 10^-3 et croissance avec Z",
+  "measured": {
+    "base_delta_phi": 0.0031087512698201886,
+    "alpha_ref": 0.0072973525692838015,
+    "amplitude_ok": true,
+    "z_growth_ok": true,
+    "env_growth_ok": true,
+    "heavy_tail_ok": true
+  },
+  "cases": [
+    {
+      "name": "H",
+      "z": 1,
+      "transition_energy": 1.89,
+      "delta_e_ref": 3.718959682965022e-05,
+      "environments": [
+        {
+          "name": "quiet",
+          "atom_scale": 0.75,
+          "delta_e_ref": 3.718959682965022e-05,
+          "delta_e_env": 3.7886901770206165e-05,
+          "redshift": 3.6894441299256293e-07
+        },
+        {
+          "name": "nominal",
+          "atom_scale": 1.0,
+          "delta_e_ref": 3.718959682965022e-05,
+          "delta_e_env": 3.811933675039147e-05,
+          "redshift": 4.919258839900804e-07
+        },
+        {
+          "name": "extreme",
+          "atom_scale": 1.25,
+          "delta_e_ref": 3.718959682965022e-05,
+          "delta_e_env": 3.835177173057679e-05,
+          "redshift": 6.149073549876014e-07
+        }
+      ],
+      "nominal_redshift": 4.919258839900804e-07
+    },
+    {
+      "name": "He",
+      "z": 2,
+      "transition_energy": 2.2,
+      "delta_e_ref": 6.32180450828875e-05,
+      "environments": [
+        {
+          "name": "quiet",
+          "atom_scale": 0.75,
+          "delta_e_ref": 6.32180450828875e-05,
+          "delta_e_env": 6.440338342819165e-05,
+          "redshift": 5.387901569564314e-07
+        },
+        {
+          "name": "nominal",
+          "atom_scale": 1.0,
+          "delta_e_ref": 6.32180450828875e-05,
+          "delta_e_env": 6.479849620995968e-05,
+          "redshift": 7.183868759418983e-07
+        },
+        {
+          "name": "extreme",
+          "atom_scale": 1.25,
+          "delta_e_ref": 6.32180450828875e-05,
+          "delta_e_env": 6.519360899172773e-05,
+          "redshift": 8.979835949273774e-07
+        }
+      ],
+      "nominal_redshift": 7.183868759418983e-07
+    },
+    {
+      "name": "Fe",
+      "z": 26,
+      "transition_energy": 2.1,
+      "delta_e_ref": 0.00035197895851444465,
+      "environments": [
+        {
+          "name": "quiet",
+          "atom_scale": 0.75,
+          "delta_e_ref": 0.00035197895851444465,
+          "delta_e_env": 0.0003585785639865905,
+          "redshift": 3.142669272450415e-06
+        },
+        {
+          "name": "nominal",
+          "atom_scale": 1.0,
+          "delta_e_ref": 0.00035197895851444465,
+          "delta_e_env": 0.0003607784324773057,
+          "redshift": 4.190225696600511e-06
+        },
+        {
+          "name": "extreme",
+          "atom_scale": 1.25,
+          "delta_e_ref": 0.00035197895851444465,
+          "delta_e_env": 0.00036297830096802103,
+          "redshift": 5.237782120750658e-06
+        }
+      ],
+      "nominal_redshift": 4.190225696600511e-06
+    },
+    {
+      "name": "Pb",
+      "z": 82,
+      "transition_energy": 2.35,
+      "delta_e_ref": 0.0006878507395094548,
+      "environments": [
+        {
+          "name": "quiet",
+          "atom_scale": 0.75,
+          "delta_e_ref": 0.0006878507395094548,
+          "delta_e_env": 0.0007007479408752571,
+          "redshift": 5.488170793958418e-06
+        },
+        {
+          "name": "nominal",
+          "atom_scale": 1.0,
+          "delta_e_ref": 0.0006878507395094548,
+          "delta_e_env": 0.0007050470079971911,
+          "redshift": 7.317561058611194e-06
+        },
+        {
+          "name": "extreme",
+          "atom_scale": 1.25,
+          "delta_e_ref": 0.0006878507395094548,
+          "delta_e_env": 0.0007093460751191252,
+          "redshift": 9.146951323264015e-06
+        }
+      ],
+      "nominal_redshift": 7.317561058611194e-06
+    },
+    {
+      "name": "U",
+      "z": 92,
+      "transition_energy": 2.4,
+      "delta_e_ref": 0.0007338970397345358,
+      "environments": [
+        {
+          "name": "quiet",
+          "atom_scale": 0.75,
+          "delta_e_ref": 0.0007338970397345358,
+          "delta_e_env": 0.0007476576092295584,
+          "redshift": 5.7335706229260704e-06
+        },
+        {
+          "name": "nominal",
+          "atom_scale": 1.0,
+          "delta_e_ref": 0.0007338970397345358,
+          "delta_e_env": 0.0007522444657278992,
+          "redshift": 7.644760830568064e-06
+        },
+        {
+          "name": "extreme",
+          "atom_scale": 1.25,
+          "delta_e_ref": 0.0007338970397345358,
+          "delta_e_env": 0.0007568313222262401,
+          "redshift": 9.555951038210102e-06
+        }
+      ],
+      "nominal_redshift": 7.644760830568064e-06
+    }
+  ],
+  "verdict": "conforme",
+  "reference": "V8 level shift and V10 spectral corrections"
+}

@@ -1,0 +1,6 @@
+V45 fixed points check
+timestamp: 20260519-164223Z
+verdict: supported
+fixed_points: {'IR': {'lambda_K': 0.0, 'lambda_T': 0.0, 'lambda_KT': 0.0, 'Y_inf': 0.7, 'gamma': 0.45}, 'UV': {'lambda_K': 0.16, 'lambda_T': 0.13, 'lambda_KT': 0.0, 'xi': 0.68, 'eta': 0.012}}
+IR_fixed_point_ok: True
+UV_fixed_point_ok: True

@@ -1,0 +1,25 @@
+{
+  "section": "V42-LOOPS",
+  "source_v41_available": true,
+  "source_v41_supported": true,
+  "source_v41_timestamp": "20260519-155358Z",
+  "source_v41_supported_count": 6,
+  "source_v41_total": 6,
+  "loop_corrections": {
+    "delta_m_K2": 0.11,
+    "delta_m_T2": 0.09,
+    "delta_m_Y2": 0.07,
+    "delta_xi": 0.04,
+    "delta_eta": 0.03,
+    "delta_m_K2_matter": 0.14,
+    "delta_m_T2_matter": 0.1
+  },
+  "naturality_ok": true,
+  "divergence_control_ok": true,
+  "loop_summary": "One-loop corrections stay below the EFT naturality threshold and remain absorbable into existing parameters.",
+  "v42_loops_verdict": "supported",
+  "verdict": "supported",
+  "timestamp": "20260519-160617Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v42_quantum_structure\\v42loops_check_20260519-160617Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v42_quantum_structure\\v42loops_check_20260519-160617Z.txt"
+}

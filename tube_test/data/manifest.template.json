@@ -1,0 +1,22 @@
+{
+  "suite": "tube_theory_numeric_test",
+  "omega": "omega_winding",
+  "fit_dataset": "interferometry_sagnac",
+  "datasets": [
+    {
+      "name": "interferometry_sagnac",
+      "path": "data/interferometry/sagnac.json",
+      "observable": "phase"
+    },
+    {
+      "name": "skin_effect_copper",
+      "path": "data/skin_effect/copper.json",
+      "observable": "skin_depth"
+    },
+    {
+      "name": "magnetic_saturation",
+      "path": "data/induction/saturation.json",
+      "observable": "magnetization"
+    }
+  ]
+}

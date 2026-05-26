@@ -1,0 +1,16 @@
+{
+  "section": "V44-COUPLINGS",
+  "source_v43_available": true,
+  "source_v43_supported": true,
+  "source_v43_timestamp": "20260519-162615Z",
+  "source_v43_supported_count": 5,
+  "source_v43_total": 5,
+  "xi": 0.68,
+  "eta": 0.012,
+  "coupling_naturality_ok": true,
+  "coupling_stability_ok": true,
+  "verdict": "supported",
+  "timestamp": "20260519-163727Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44couplings_check_20260519-163727Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44couplings_check_20260519-163727Z.txt"
+}

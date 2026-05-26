@@ -1,0 +1,39 @@
+{
+  "section": "V44-KT-POTENTIAL",
+  "source_v43_available": true,
+  "source_v43_supported": true,
+  "source_v43_timestamp": "20260519-162615Z",
+  "source_v43_supported_count": 5,
+  "source_v43_total": 5,
+  "lambda_K": 0.14,
+  "lambda_T": 0.11,
+  "lambda_KT": -0.03,
+  "hessian_matrix": [
+    [
+      0.14,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.11,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.45
+    ]
+  ],
+  "eigenvalues": [
+    0.14,
+    0.11,
+    0.45
+  ],
+  "KT_positive_definite": true,
+  "KT_stability_ok": true,
+  "verdict": "supported",
+  "timestamp": "20260519-163727Z",
+  "json_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44kt_potential_check_20260519-163727Z.json",
+  "txt_path": "D:\\Priv\u00e9\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v44_potential\\v44kt_potential_check_20260519-163727Z.txt"
+}

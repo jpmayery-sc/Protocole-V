@@ -1,0 +1,20 @@
+{
+  "section": "V39-DIAGNOSTICS",
+  "convergence_ok": false,
+  "stability_ok": true,
+  "multi_sector_balance_ok": true,
+  "mcmc_summary": {
+    "r_hat_logl": 1.0071430442375717,
+    "r_hat_epsilon": 1.01616493019382,
+    "autocorr_logl": 0.8586399832749256,
+    "autocorr_epsilon": 0.9443708270898736,
+    "ess_logl": 1177.648250968803,
+    "ess_epsilon": 1107.748765061732,
+    "supported_region_fraction": 0.4559375
+  },
+  "v39_diagnostics_verdict": "partially_supported",
+  "verdict": "partially_supported",
+  "timestamp": "20260519-152325Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v39_mcmc\\v39diagnostics_check_20260519-152325Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v39_mcmc\\v39diagnostics_check_20260519-152325Z.txt"
+}

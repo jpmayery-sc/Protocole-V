@@ -1,0 +1,22 @@
+V27 publication advanced check
+{
+  "section": "V27-ARTICLE-AVANCÉ",
+  "publicationadvancedstructure": [
+    "Resume",
+    "Introduction",
+    "Axiomes fondamentaux",
+    "QGR interne",
+    "Renormalisation geometrique",
+    "Simulation multi-echelle",
+    "Observables avances",
+    "Tests falsifiables",
+    "Discussion",
+    "Conclusion",
+    "Annexes"
+  ],
+  "readyforsubmission_advanced": true,
+  "verdict": "supported",
+  "timestamp": "20260518-173605Z",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27publicationadvanced_check_20260518-173605Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v27publicationadvanced_check_20260518-173605Z.txt"
+}

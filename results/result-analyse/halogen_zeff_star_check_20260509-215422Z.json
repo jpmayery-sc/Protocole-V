@@ -1,0 +1,103 @@
+{
+  "timestamp": "20260509-215422Z",
+  "verdict": "supported",
+  "hypothesis": "the user-provided Zeff* correction keeps the halogen family F -> At monotone",
+  "case_control": "standard Zeff proxy versus corrected Zeff* on the halogen family",
+  "observable": "monotonicity of Zeff* and comparison with the raw radius and ionization trends",
+  "expected": "Zeff* becomes increasing across F -> At",
+  "measured": {
+    "radius_trend": "increasing",
+    "ionization_trend": "decreasing",
+    "zeff_trend": "increasing",
+    "zeff_star_trend": "increasing",
+    "zeff_values": [
+      2.263703,
+      2.92942,
+      3.728081,
+      4.383144,
+      5.014684
+    ],
+    "zeff_star_values": [
+      2.272613,
+      3.21121,
+      4.362831,
+      5.442134,
+      6.559434
+    ],
+    "series": [
+      {
+        "symbol": "F",
+        "Z": 9,
+        "period": 2,
+        "mass_u": 18.998403163,
+        "radius_pm": 64.0,
+        "ionization_ev": 17.4228,
+        "k": 0.0,
+        "L": 0.0,
+        "H": 0.0,
+        "zeff_proxy": 2.263703,
+        "zeff_star": 2.272613
+      },
+      {
+        "symbol": "Cl",
+        "Z": 17,
+        "period": 3,
+        "mass_u": 35.45,
+        "radius_pm": 99.0,
+        "ionization_ev": 12.9676,
+        "k": 0.0,
+        "L": 1.0,
+        "H": 0.0,
+        "zeff_proxy": 2.92942,
+        "zeff_star": 3.21121
+      },
+      {
+        "symbol": "Br",
+        "Z": 35,
+        "period": 4,
+        "mass_u": 79.904,
+        "radius_pm": 114.0,
+        "ionization_ev": 11.8138,
+        "k": 0.0,
+        "L": 2.0,
+        "H": 0.0,
+        "zeff_proxy": 3.728081,
+        "zeff_star": 4.362831
+      },
+      {
+        "symbol": "I",
+        "Z": 53,
+        "period": 5,
+        "mass_u": 126.90447,
+        "radius_pm": 133.0,
+        "ionization_ev": 10.4513,
+        "k": 0.0,
+        "L": 3.0,
+        "H": 0.0,
+        "zeff_proxy": 4.383144,
+        "zeff_star": 5.442134
+      },
+      {
+        "symbol": "At",
+        "Z": 85,
+        "period": 6,
+        "mass_u": 210.0,
+        "radius_pm": 150.0,
+        "ionization_ev": 9.5,
+        "k": 0.0,
+        "L": 3.0,
+        "H": 0.0,
+        "zeff_proxy": 5.014684,
+        "zeff_star": 6.559434
+      }
+    ]
+  },
+  "reference": {
+    "a_k": 0.0,
+    "b_L": 0.25,
+    "c_z2": 0.00011,
+    "d_H": 0.0
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\halogen_zeff_star_check_20260509-215422Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\halogen_zeff_star_check_20260509-215422Z.txt"
+}
