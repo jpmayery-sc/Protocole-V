@@ -14,3 +14,4 @@ project_backup.zip
 *.out
 *.toc
 *.synctex.gz
+/*.txt
