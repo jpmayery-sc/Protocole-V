@@ -1,0 +1,14 @@
+metric,value
+verdict,v93_delta_em_lagrangian_supported
+jwst_case,JWST-04
+epsilon,-0.0069
+delta_em_effective,-0.007193777522370648
+response_weight,0.04257645251748526
+k_em,1.0425764525174852
+chi2_m,223.39279281425195
+chi2_sfr,20.574309670150505
+chi2_l,83.58711929917447
+chi2_n,24.70622883468115
+baseline_total_chi2,2636270.6671180255
+total_chi2,352.2604506182581
+delta_chi2,2635918.406667407

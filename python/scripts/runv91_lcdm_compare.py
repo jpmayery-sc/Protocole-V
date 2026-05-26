@@ -2,7 +2,7 @@
 
 V91 makes the V90 definitions explicit and compares the local information
 speed, geometric compression, and calibrated photon factor against the
-standard LambdaCDM distance baseline.
+standard LambdaCDM distance reference.
 """
 from __future__ import annotations
 
@@ -139,9 +139,9 @@ def summarize(rows: list[dict[str, float]], *, parameters: dict[str, float], z_v
         "lcdm_contrast": lcdm_contrast,
         "rows": rows,
         "notes": [
-            "LCDM is used as the baseline distance reference, not as a deformation target.",
+            "LCDM is used as the explicit distance reference, not as a deformation target.",
             "The redshift constraint is enforced explicitly through f_photon(z) = (1 + z) / g(z).",
-            "The comparison is carried by distance_ratio and v_ratio relative to the LCDM baseline.",
+            "The comparison is carried by distance_ratio and v_ratio relative to the LCDM reference.",
         ],
     }
 
@@ -253,12 +253,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run the V91 V90-vs-LCDM comparison.")
     parser.add_argument("--output-dir", default=None, help="Directory for the suite outputs")
     parser.add_argument("--z-values", default="0.0,0.23,0.46,0.69,1.0,2.0,3.0", help="Comma-separated redshift values")
-    parser.add_argument("--tau0", type=float, default=1.0, help="Baseline proper-time scale")
+    parser.add_argument("--tau0", type=float, default=1.0, help="Reference proper-time scale")
     parser.add_argument("--z-center", type=float, default=0.46, help="Transition redshift")
     parser.add_argument("--width", type=float, default=0.16, help="Transition width")
     parser.add_argument("--geometry-amplitude", type=float, default=0.18, help="Amplitude of g(z)")
     parser.add_argument("--distance-amplitude", type=float, default=2.5, help="Suppression amplitude for the distance proxy")
-    parser.add_argument("--h0", type=float, default=67.4, help="Baseline H0 used for the distance proxy")
+    parser.add_argument("--h0", type=float, default=67.4, help="Reference H0 used for the distance proxy")
     parser.add_argument("--omega-m", type=float, default=0.315, dest="omega_m", help="Matter density parameter")
     parser.add_argument("--omega-r", type=float, default=9.0e-5, dest="omega_r", help="Radiation density parameter")
     parser.add_argument("--omega-l", type=float, default=0.685, dest="omega_l", help="Dark-energy density parameter")

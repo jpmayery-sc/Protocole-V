@@ -1,0 +1,49 @@
+\clearpage
+\section{V93B: pont $C_{EM}$, recalcul JWST-05\texorpdfstring{$\rightarrow$}{->}JWST-08 et validation NS}
+
+V93B étend V93 en rendant explicite la fermeture analytique du pont lagrangien vers les observables effectives. Le point de départ est la lecture effective
+\[
+C_{EM} = \frac{\chi_2\,(\alpha_K + \alpha_T + \alpha_{KT} + \gamma_*)}{1 + \alpha_K + \alpha_T + |\alpha_{KT}| + \gamma_*},
+\qquad
+\delta_{EM} = \varepsilon\, C_{EM},
+\]
+qui fournit une amplitude commune pour les corrections appliquées aux blocs JWST et pour la projection cosmologique plus large.
+
+Avec les paramètres de référence du run V93B, on obtient
+\[
+C_{EM} = 0.09129186602870813,
+\qquad
+\delta_{EM} = -0.0006299138755980861.
+\]
+Le même pont donne les facteurs de projection formels utilisés pour la lecture cosmologique de la branche:
+\[
+P_{H} = 0.8456060851270433,\qquad P_{\mathrm{growth}} = 0.8314847054554945,\qquad P_{S_8} = 0.8852421243100195.
+\]
+
+\paragraph{Recalcul JWST-05\texorpdfstring{$\rightarrow$}{->}JWST-08}
+Les quatre pipelines sont repris avec leur baseline interne, puis corrigés par une réécriture contrôlée par $C_{EM}$ et $\delta_{EM}$. Le résultat synthétique est le suivant.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{@{}lrrrrl@{}}
+\toprule
+Cas & Baseline $\chi^2$ & V93B $\chi^2$ & Gain $\Delta\chi^2$ & Verdict \\
+\midrule
+JWST-05 & 498.38632479352884 & 223.2165773199112 & 275.16974747361763 & \texttt{jwst05\_v93b\_supported} \\
+JWST-06 & 460.0121237946696 & 209.7944061950275 & 250.2177175996421 & \texttt{jwst06\_v93b\_supported} \\
+JWST-07 & 411.23980945821813 & 176.5116642980277 & 234.72814516019042 & \texttt{jwst07\_v93b\_supported} \\
+JWST-08 & 233.71701274104757 & 97.5946544067935 & 136.12235833425407 & \texttt{jwst08\_v93b\_supported} \\
+\midrule
+Total & 1603.3552707874642 & 707.11730221976 & 896.2379685677042 & \texttt{v93b\_supported} \\
+\bottomrule
+\end{tabular}
+\caption{Note de synthèse V93B: chaque bloc JWST est recalculé avec le pont $C_{EM}$ et montre une amélioration nette par rapport à son baseline interne.}
+\end{table}
+
+\paragraph{Validation NS}
+La même logique de cohérence est appliquée au sous-secteur neutron-star: les références de rayon obtenues par NICER sur PSR J0030+0451 et PSR J0740+6620 \cite{nicer0030,nicer0740} sont utilisées comme étalons de validation, tandis que la contrainte de masse très élevée de PSR J0952-0607 \cite{j0952} sert de borne supérieure pour la compatibilité des prédictions du modèle.
+
+Le message de V93B est volontairement simple: la branche effective n'est pas seulement ajustée sur JWST, elle doit aussi rester compatible avec les contraintes NS publiques. Les résultats de rayon et de masse sont donc à lire comme un garde-fou externe, pas comme un simple commentaire.
+
+\paragraph{Transition V93B \texorpdfstring{$\rightarrow$}{->} V16}
+V93B ferme la boucle entre le scan effectif, le pont $\delta_{EM}$ et les quatre recalculs JWST. La suite logique pour V16 est d'intégrer ces résultats comme base commune, avec les références NS formelles et le tableau de synthèse ci-dessus, afin d'éviter tout nouveau renommage de baseline sans recalcul.

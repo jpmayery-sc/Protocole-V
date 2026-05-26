@@ -1,0 +1,167 @@
+{
+  "suite": "v92_cosmo_chi2",
+  "timestamp": "20260526-161933Z",
+  "verdict": "v92_supported",
+  "chi2_fs8_with_ent": 1.8400000000000083,
+  "chi2_fs8_noent": 9.620000000000068,
+  "delta_chi2_fs8": 7.78000000000006,
+  "chi2_H": 2.1099999999999994,
+  "chi2_S8": 0.0,
+  "chi2_total_V92": 3.9500000000000077,
+  "input_files": {
+    "fs8": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\fs8_observations.csv",
+    "hubble": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\hubble_observations.csv"
+  },
+  "fs8": {
+    "rows": 7,
+    "z_min": 0.2,
+    "z_max": 2.0,
+    "input_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\fs8_observations.csv",
+    "chi2_fs8_with_ent": 1.8400000000000083,
+    "chi2_fs8_noent": 9.620000000000068,
+    "delta_chi2_fs8": 7.78000000000006,
+    "residual_rows": [
+      {
+        "z": 0.2,
+        "observable": "f_sigma8",
+        "observed": 0.846,
+        "predicted_with": 0.8462,
+        "predicted_noent": 0.8464573078118538,
+        "residual_with": -0.00019999999999997797,
+        "residual_noent": -0.0004573078118538243,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 0.5,
+        "observable": "f_sigma8",
+        "observed": 0.822,
+        "predicted_with": 0.8262499999999999,
+        "predicted_noent": 0.8317177910018955,
+        "residual_with": -0.004249999999999976,
+        "residual_noent": -0.009717791001895515,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 0.8,
+        "observable": "f_sigma8",
+        "observed": 0.802,
+        "predicted_with": 0.8071999999999999,
+        "predicted_noent": 0.8138900031082014,
+        "residual_with": -0.005199999999999871,
+        "residual_noent": -0.011890003108201319,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 1.1,
+        "observable": "f_sigma8",
+        "observed": 0.784,
+        "predicted_with": 0.7890499999999999,
+        "predicted_noent": 0.795547022249311,
+        "residual_with": -0.005049999999999888,
+        "residual_noent": -0.011547022249310923,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 1.4,
+        "observable": "f_sigma8",
+        "observed": 0.768,
+        "predicted_with": 0.7718,
+        "predicted_noent": 0.7766888484252243,
+        "residual_with": -0.0038000000000000256,
+        "residual_noent": -0.008688848425224327,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 1.7,
+        "observable": "f_sigma8",
+        "observed": 0.756,
+        "predicted_with": 0.75545,
+        "predicted_noent": 0.7547424035174016,
+        "residual_with": 0.0005500000000000504,
+        "residual_noent": 0.0012575964825983776,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 2.0,
+        "observable": "f_sigma8",
+        "observed": 0.748,
+        "predicted_with": 0.74,
+        "predicted_noent": 0.7297076875258437,
+        "residual_with": 0.008000000000000007,
+        "residual_noent": 0.018292312474156303,
+        "sigma": 0.009010486041033
+      }
+    ]
+  },
+  "hubble": {
+    "rows": 6,
+    "z_min": 0.1,
+    "z_max": 2.0,
+    "input_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\hubble_observations.csv",
+    "chi2_H": 2.1099999999999994,
+    "residual_rows": [
+      {
+        "z": 0.1,
+        "observable": "H(z)",
+        "observed": 71.0,
+        "predicted": 71.0909090909091,
+        "residual": -0.09090909090909349,
+        "sigma": 5.855617965060596,
+        "standardized_residual": -0.015525106223037679
+      },
+      {
+        "z": 0.4,
+        "observable": "H(z)",
+        "observed": 74.0,
+        "predicted": 73.42857142857143,
+        "residual": 0.5714285714285694,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.09758638197337657
+      },
+      {
+        "z": 0.8,
+        "observable": "H(z)",
+        "observed": 77.0,
+        "predicted": 75.33333333333333,
+        "residual": 1.6666666666666714,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.2846269474223502
+      },
+      {
+        "z": 1.2,
+        "observable": "H(z)",
+        "observed": 80.0,
+        "predicted": 76.54545454545455,
+        "residual": 3.4545454545454533,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.5899540364754148
+      },
+      {
+        "z": 1.6,
+        "observable": "H(z)",
+        "observed": 82.0,
+        "predicted": 77.38461538461539,
+        "residual": 4.615384615384613,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.7881977005541978
+      },
+      {
+        "z": 2.0,
+        "observable": "H(z)",
+        "observed": 84.0,
+        "predicted": 78.0,
+        "residual": 6.0,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 1.0246570107204576
+      }
+    ]
+  },
+  "s8": {
+    "S8_obs": 0.776,
+    "S8_sigma": 0.017,
+    "S8_mod": 0.776,
+    "chi2_S8": 0.0
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\v92_cosmo_chi2_20260526-161933Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\v92_cosmo_chi2_20260526-161933Z.txt"
+}

@@ -77,6 +77,28 @@ $\chi^2_{\text{couplage}}$ & $0.153$ & $[0.102, 0.187]$ & $[0.061, 0.198]$ \\
 \caption{Statistiques marginales 1D des paramètres estimés par MCMC pour V94. Les IC 68\% correspondent aux quantiles 16e et 84e; les IC 95\% aux quantiles 2.5e et 97.5e.}
 \end{table}
 
+\subsubsection*{Corner Plot -- Corrélations paramétriques}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/v94_corner_plot.png}
+\caption{Corner plot du MCMC V94. Diagonale: distributions marginales 1D de chaque paramètre. 
+Sous-diagonale: contours 2D ($68\%$ et $95\%$ CI) montrant les dégénérescences et corrélations 
+entre paramètres. Les lignes verticales indiquent les médianes 1D.}
+\label{fig:v94_corner}
+\end{figure}
+
+\subsubsection*{Traces de convergence}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/v94_traces.png}
+\caption{Traces de convergence pour les 5 paramètres cosmologiques. Chaque ligne représente 
+l'évolution d'un paramètre sur les 2000 étapes MCMC (après burn-in de 400 étapes, traces mélangées 
+pour 10 walkers distincts). Absence de drift ou comportement pathologique valide la convergence.}
+\label{fig:v94_traces}
+\end{figure}
+
 \subsection*{Conditions de validation V94 -- COMPLÉTÉ}
 
 V94 est validé avec verdict $\boxed{\texttt{v94\_mcmc\_complete}}$:

@@ -1,0 +1,16 @@
+V81 minimal-Lagrangian scan summary
+timestamp: 20260526-144639Z
+verdict: lagrangian_band_confirmed
+accepted_count: 14/22
+epsilon_min_acceptable: -0.0076
+epsilon_max_acceptable: -0.0063
+epsilon_central_value: -0.00695
+best_fit_epsilon: -0.0069
+best_fit_delta_em: -0.0069
+best_fit_pi_n_ns: 0.9928057553956835
+best_fit_G_eff_ns: 1.0548028776978418
+best_fit_F_temps_ns: 0.9605205330267039
+
+Notes:
+- V81 = Lagrangien minimal, calibré sur la fenêtre BBN de V80.
+- Le scan reste phénoménologique et ne prétend pas dériver un champ complet de première principe.

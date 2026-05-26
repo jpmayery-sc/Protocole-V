@@ -1,9 +1,9 @@
 {
   "suite": "v91_lcdm_compare",
-  "timestamp": "20260526-104350Z",
+  "timestamp": "20260526-143919Z",
   "verdict": "v91_lcdm_confrontation_confirmed",
   "parameters": {
-    "timestamp": "20260526-104350Z",
+    "timestamp": "20260526-143919Z",
     "tau0": 1.0,
     "z_center": 0.46,
     "width": 0.16,
@@ -145,7 +145,7 @@
     "The redshift constraint is enforced explicitly through f_photon(z) = (1 + z) / g(z).",
     "The comparison is carried by distance_ratio and v_ratio relative to the LCDM reference."
   ],
-  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v91_lcdm_compare\\v91_lcdm_compare_20260526-104350Z.csv",
-  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v91_lcdm_compare\\v91_lcdm_compare_20260526-104350Z.json",
-  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v91_lcdm_compare\\v91_lcdm_compare_20260526-104350Z.txt"
+  "csv_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v91_lcdm_compare\\v91_lcdm_compare_20260526-143919Z.csv",
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v91_lcdm_compare\\v91_lcdm_compare_20260526-143919Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v91_lcdm_compare\\v91_lcdm_compare_20260526-143919Z.txt"
 }

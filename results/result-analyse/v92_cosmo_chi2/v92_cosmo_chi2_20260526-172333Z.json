@@ -1,0 +1,190 @@
+{
+  "suite": "v92_cosmo_chi2",
+  "timestamp": "20260526-172333Z",
+  "verdict": "v92_supported",
+  "chi2_fs8_with_ent": 6.650948764209733,
+  "chi2_fs8_noent": 9.620000000000068,
+  "delta_chi2_fs8": 2.969051235790335,
+  "chi2_H": 1.5087547640401966,
+  "chi2_H_noent": 2.1099999999999994,
+  "delta_chi2_H": 0.6012452359598028,
+  "chi2_S8": 3.5142390649625703,
+  "chi2_S8_noent": 4.484429065743952,
+  "delta_chi2_S8": 0.9701900007813817,
+  "chi2_total_V92": 11.6739425932125,
+  "chi2_total_noent": 16.21442906574402,
+  "delta_chi2_total": 4.540486472531521,
+  "bridge": {
+    "epsilon": -0.0069,
+    "alpha_k": 0.6,
+    "alpha_t": 0.82,
+    "alpha_kt": 0.36,
+    "gamma_star": 1.4,
+    "chi2_coupling": 0.12,
+    "c_em": 0.09129186602870813,
+    "delta_em": -0.0006299138755980861,
+    "projection_hubble": 0.8456060851270433,
+    "projection_growth": 0.8314847054554945,
+    "projection_s8": 0.8852421243100195
+  },
+  "input_files": {
+    "fs8": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\fs8_observations.csv",
+    "hubble": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\hubble_observations.csv"
+  },
+  "fs8": {
+    "rows": 7,
+    "z_min": 0.2,
+    "z_max": 2.0,
+    "input_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\fs8_observations.csv",
+    "chi2_fs8_with_ent": 6.650948764209733,
+    "chi2_fs8_noent": 9.620000000000068,
+    "delta_chi2_fs8": 2.969051235790335,
+    "residual_rows": [
+      {
+        "z": 0.2,
+        "observable": "f_sigma8",
+        "observed": 0.846,
+        "predicted_with": 0.8463802444512417,
+        "predicted_noent": 0.8464573078118538,
+        "residual_with": -0.0003802444512417402,
+        "residual_noent": -0.0004573078118538243,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 0.5,
+        "observable": "f_sigma8",
+        "observed": 0.822,
+        "predicted_with": 0.8300801945888892,
+        "predicted_noent": 0.8317177910018955,
+        "residual_with": -0.0080801945888892,
+        "residual_noent": -0.009717791001895515,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 0.8,
+        "observable": "f_sigma8",
+        "observed": 0.802,
+        "predicted_with": 0.8118863557322877,
+        "predicted_noent": 0.8138900031082014,
+        "residual_with": -0.009886355732287688,
+        "residual_noent": -0.011890003108201319,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 1.1,
+        "observable": "f_sigma8",
+        "observed": 0.784,
+        "predicted_with": 0.7936011723938564,
+        "predicted_noent": 0.795547022249311,
+        "residual_with": -0.009601172393856383,
+        "residual_noent": -0.011547022249310923,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 1.4,
+        "observable": "f_sigma8",
+        "observed": 0.768,
+        "predicted_with": 0.7752246445735951,
+        "predicted_noent": 0.7766888484252243,
+        "residual_with": -0.007224644573595063,
+        "residual_noent": -0.008688848425224327,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 1.7,
+        "observable": "f_sigma8",
+        "observed": 0.756,
+        "predicted_with": 0.7549543277590848,
+        "predicted_noent": 0.7547424035174016,
+        "residual_with": 0.0010456722409152297,
+        "residual_noent": 0.0012575964825983776,
+        "sigma": 0.009010486041033
+      },
+      {
+        "z": 2.0,
+        "observable": "f_sigma8",
+        "observed": 0.748,
+        "predicted_with": 0.7327902219503263,
+        "predicted_noent": 0.7297076875258437,
+        "residual_with": 0.015209778049673717,
+        "residual_noent": 0.018292312474156303,
+        "sigma": 0.009010486041033
+      }
+    ]
+  },
+  "hubble": {
+    "rows": 6,
+    "z_min": 0.1,
+    "z_max": 2.0,
+    "input_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\data\\hubble_observations.csv",
+    "chi2_H": 1.5087547640401966,
+    "chi2_H_noent": 2.1099999999999994,
+    "delta_chi2_H": 0.6012452359598028,
+    "residual_rows": [
+      {
+        "z": 0.1,
+        "observable": "H(z)",
+        "observed": 71.0,
+        "predicted": 71.0768732804661,
+        "residual": -0.07687328046610276,
+        "sigma": 5.855617965060596,
+        "standardized_residual": -0.013128124294445367
+      },
+      {
+        "z": 0.4,
+        "observable": "H(z)",
+        "observed": 74.0,
+        "predicted": 73.51679652278455,
+        "residual": 0.4832034772154543,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.0825196384222197
+      },
+      {
+        "z": 0.8,
+        "observable": "H(z)",
+        "observed": 77.0,
+        "predicted": 75.59065652478826,
+        "residual": 1.4093434752117417,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.24068227873147413
+      },
+      {
+        "z": 1.2,
+        "observable": "H(z)",
+        "observed": 80.0,
+        "predicted": 77.0788153422884,
+        "residual": 2.9211846577116063,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.498868723188873
+      },
+      {
+        "z": 1.6,
+        "observable": "H(z)",
+        "observed": 82.0,
+        "predicted": 78.09720268402903,
+        "residual": 3.9027973159709717,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.6665047718717736
+      },
+      {
+        "z": 2.0,
+        "observable": "H(z)",
+        "observed": 84.0,
+        "predicted": 78.92636348923774,
+        "residual": 5.073636510762256,
+        "sigma": 5.855617965060596,
+        "standardized_residual": 0.8664562034333044
+      }
+    ]
+  },
+  "s8": {
+    "S8_obs": 0.776,
+    "S8_sigma": 0.017,
+    "S8_mod": 0.8078687164751608,
+    "S8_noent": 0.812,
+    "chi2_S8": 3.5142390649625703,
+    "chi2_S8_noent": 4.484429065743952
+  },
+  "json_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\v92_cosmo_chi2_20260526-172333Z.json",
+  "txt_path": "D:\\Privé\\Tout ne fait qu'un\\experience\\experience 4\\results\\result-analyse\\v92_cosmo_chi2\\v92_cosmo_chi2_20260526-172333Z.txt"
+}

@@ -1,0 +1,9 @@
+V92 cosmology chi-square summary
+timestamp: 20260526-172333Z
+verdict: v92_supported
+chi2_fs8_with_ent: 6.650948764209733
+chi2_fs8_noent: 9.620000000000068
+delta_chi2_fs8: 2.969051235790335
+chi2_H: 1.5087547640401966
+chi2_S8: 3.5142390649625703
+chi2_total_V92: 11.6739425932125

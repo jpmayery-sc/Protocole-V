@@ -1,0 +1,18 @@
+V93B delta_EM / Lagrangian extension summary
+timestamp: 20260526-153008Z
+verdict: v93b_supported
+epsilon: -0.0069
+c_em: 0.09129186602870813
+delta_em: -0.0006299138755980861
+projection_hubble: 0.8456060851270433
+projection_growth: 0.8314847054554945
+projection_s8: 0.8852421243100195
+total_baseline_chi2: 1603.3552707874642
+total_corrected_chi2: 707.11730221976
+total_delta_chi2: 896.2379685677042
+
+Case summary:
+- JWST-05: baseline=498.386325, corrected=223.216577, delta=275.169747, verdict=jwst05_v93b_supported
+- JWST-06: baseline=460.012124, corrected=209.794406, delta=250.217718, verdict=jwst06_v93b_supported
+- JWST-07: baseline=411.239809, corrected=176.511664, delta=234.728145, verdict=jwst07_v93b_supported
+- JWST-08: baseline=233.717013, corrected=97.594654, delta=136.122358, verdict=jwst08_v93b_supported

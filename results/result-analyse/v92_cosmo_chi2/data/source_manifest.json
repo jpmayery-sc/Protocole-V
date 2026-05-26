@@ -1,0 +1,68 @@
+{
+  "suite": "v92_cosmo_chi2",
+  "public_sources": {
+    "fs8_candidates": [
+      {
+        "title": "Cosmology Intertwined III: f sigma_8 and S_8",
+        "arxiv": "https://arxiv.org/abs/2008.11285",
+        "pdf": "https://arxiv.org/pdf/2008.11285",
+        "status": "authoritative_upstream_reference"
+      },
+      {
+        "title": "The Sigma-8 Tension is a Drag",
+        "arxiv": "https://arxiv.org/abs/2209.06217",
+        "pdf": "https://arxiv.org/pdf/2209.06217",
+        "status": "contextual_reference"
+      }
+    ],
+    "hubble_candidates": [
+      {
+        "title": "Toward a Better Understanding of Cosmic Chronometers: A New Measurement of H(z) at z~0.7",
+        "arxiv": "https://arxiv.org/abs/2110.04304",
+        "pdf": "https://arxiv.org/pdf/2110.04304",
+        "status": "authoritative_upstream_reference"
+      },
+      {
+        "title": "Constraining the time evolution of dark energy, curvature and neutrino properties with cosmic chronometers",
+        "arxiv": "https://arxiv.org/abs/1604.00183",
+        "pdf": "https://arxiv.org/pdf/1604.00183",
+        "status": "contextual_reference"
+      },
+      {
+        "title": "New constraints on cosmological parameters and neutrino properties using the expansion rate of the Universe to z~1.75",
+        "arxiv": "https://arxiv.org/abs/1201.6658",
+        "pdf": "https://arxiv.org/pdf/1201.6658",
+        "status": "contextual_reference"
+      }
+    ],
+    "data_format_guides": [
+      {
+        "title": "Cobaya BAO & Redshift Distortions likelihood format",
+        "url": "https://cobaya.readthedocs.io/en/latest/likelihood_bao.html",
+        "status": "data_format_reference"
+      },
+      {
+        "title": "CosmoSIS eboss_dr16_elg standard library reference",
+        "url": "https://cosmosis.readthedocs.io/en/latest/reference/standard_library/eboss_dr16_elg.html",
+        "status": "data_format_reference"
+      }
+    ]
+  },
+  "provenance": {
+    "fs8": {
+      "source": "results/result-analyse/v92_cosmo_chi2/data/fs8_observations.csv",
+      "status": "derived_from_manuscript_points",
+      "note": "No exact public raw table matching the seven consolidated manuscript points was located; this CSV preserves the consolidated series explicitly and records upstream public references."
+    },
+    "hubble": {
+      "source": "results/result-analyse/v92_cosmo_chi2/data/hubble_observations.csv",
+      "status": "derived_from_manuscript_points",
+      "note": "No exact public raw table matching the six consolidated manuscript points was located; this CSV preserves the consolidated series explicitly and records upstream public references."
+    }
+  },
+  "models": {
+    "fs8": "f_sigma8 = 0.86 - 0.07 z + 0.005 z^2",
+    "hubble": "H(z) = 70 + 12 z / (1 + z)",
+    "s8": "S8_obs = S8_mod = 0.776"
+  }
+}

@@ -1,0 +1,20 @@
+V82 global confrontation summary
+timestamp: 20260526-144750Z
+verdict: global_band_confirmed
+accepted_count: 14/51
+epsilon_min_acceptable: -0.0076
+epsilon_max_acceptable: -0.0063
+epsilon_central_value: -0.00695
+best_fit_epsilon: -0.0069
+best_fit_delta_em: -0.0069
+best_fit_pi_n_ns: 0.9928057553956835
+best_fit_g_eff_ns: 1.0548028776978418
+best_fit_f_temps_ns: 0.9605205330267039
+best_fit_m_max_ns: 2.3880364666469944
+best_fit_r14_ns: 11.39510980051896
+best_fit_z_ns: 0.2504117089609561
+best_fit_lab_em_shift: 6.850359712230216e-15
+
+Notes:
+- V82 confronte le Lagrangien V81 à des fenêtres expérimentales de travail, pas à une reconstruction d'EFT complète.
+- Les proxys NS (Mmax, R14, z) sont phénoménologiques et servent à classer la compatibilité globale.
