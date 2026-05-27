@@ -15,3 +15,9 @@ project_backup.zip
 *.toc
 *.synctex.gz
 /*.txt
+
+# V94 dynamic solver artifacts
+/V70_overleaf/_dynamic_solver_test.json
+/results/result-analyse/v94_mcmc_cosmo/*.npy
+/results/result-analyse/v94_mcmc_cosmo/*.json
+/results/result-analyse/v94_mcmc_cosmo/*.txt
