@@ -30,6 +30,7 @@ except ImportError:
 
 from v29finaltheory_core import v29_result_dir, write_report
 from v93b_c_em_lagrangian import compute_bridge
+from v95_dynamic_solver import DynamicSolverParameters, solve_dynamic_observables
 
 
 # ============================================================================
@@ -74,64 +75,90 @@ def log_prior(theta: np.ndarray, bounds: dict[str, tuple[float, float]]) -> floa
     return 0.0
 
 
+def predict_observables(
+    theta: np.ndarray,
+    param_names: list[str],
+    data_bundle: dict,
+    use_dynamic_solver: bool = False,
+) -> dict[str, object]:
+    """Predict observables and chi2 contributions for a parameter vector."""
+
+    params = {name: value for name, value in zip(param_names, theta)}
+
+    bridge = compute_bridge(
+        epsilon=-0.0069,
+        alpha_k=params["alpha_k"],
+        alpha_t=params["alpha_t"],
+        alpha_kt=params["alpha_kt"],
+        gamma_star=params["gamma_star"],
+        chi2_coupling=params["chi2_coupling"],
+    )
+
+    z_H, obs_H, sigma_H = data_bundle["H"]
+    z_fs8, obs_fs8, sigma_fs8, pred_noent_fs8 = data_bundle["fs8"]
+    s8_obs, s8_sigma, s8_noent = data_bundle["S8"]
+
+    if use_dynamic_solver:
+        z_grid = np.unique(np.concatenate([z_H, z_fs8, np.array([0.0])]))
+        dynamic_solution = solve_dynamic_observables(
+            z_eval=z_grid,
+            params=DynamicSolverParameters(
+                alpha_k=params["alpha_k"],
+                alpha_t=params["alpha_t"],
+                alpha_kt=params["alpha_kt"],
+                gamma_star=params["gamma_star"],
+                chi2_coupling=params["chi2_coupling"],
+                epsilon=-0.0069,
+                sigma8_0=s8_noent,
+            ),
+        )
+        h_model = np.interp(z_H, dynamic_solution.z, dynamic_solution.H_model)
+        fs8_model = np.interp(z_fs8, dynamic_solution.z, dynamic_solution.fs8_model)
+        s8_model = float(dynamic_solution.S8_model)
+    else:
+        h_model = 70.0 + 12.0 * z_H / (1.0 + z_H)
+        fs8_model = obs_fs8 + bridge.projection_growth * (pred_noent_fs8 - obs_fs8)
+        s8_model = s8_obs + bridge.projection_s8 * (s8_noent - s8_obs)
+
+    chi2_H = np.sum(((obs_H - h_model) / sigma_H) ** 2)
+    chi2_fs8 = np.sum(((obs_fs8 - fs8_model) / sigma_fs8) ** 2)
+    chi2_S8 = ((s8_obs - s8_model) / s8_sigma) ** 2
+
+    return {
+        "params": params,
+        "bridge": bridge,
+        "H_model": h_model,
+        "fs8_model": fs8_model,
+        "S8_model": float(s8_model),
+        "chi2_H": float(chi2_H),
+        "chi2_fs8": float(chi2_fs8),
+        "chi2_S8": float(chi2_S8),
+        "chi2_total": float(chi2_H + chi2_fs8 + chi2_S8),
+    }
+
+
 def log_likelihood(theta: np.ndarray, param_names: list[str], 
                    bounds: dict[str, tuple[float, float]],
-                   data_bundle: dict) -> float:
+                   data_bundle: dict,
+                   use_dynamic_solver: bool = False) -> float:
     """Compute log-likelihood from cosmological observables."""
-    
-    # Map theta to parameter names
-    params = {name: value for name, value in zip(param_names, theta)}
-    
     try:
-        bridge = compute_bridge(
-            epsilon=-0.0069,
-            alpha_k=params["alpha_k"],
-            alpha_t=params["alpha_t"],
-            alpha_kt=params["alpha_kt"],
-            gamma_star=params["gamma_star"],
-            chi2_coupling=params["chi2_coupling"],
-        )
+        prediction = predict_observables(theta, param_names, data_bundle, use_dynamic_solver=use_dynamic_solver)
     except Exception:
         return -np.inf
-    
-    # H(z) likelihood
-    try:
-        z_H, obs_H, sigma_H = data_bundle["H"]
-        model_H = 70.0 + 12.0 * z_H / (1.0 + z_H)  # placeholder model
-        chi2_H = np.sum(((obs_H - model_H) / sigma_H) ** 2)
-        log_L_H = -0.5 * chi2_H
-    except Exception:
-        log_L_H = 0.0
-    
-    # f_sigma8(z) likelihood
-    try:
-        z_fs8, obs_fs8, sigma_fs8, pred_noent_fs8 = data_bundle["fs8"]
-        model_fs8 = obs_fs8 + bridge.projection_growth * (pred_noent_fs8 - obs_fs8)
-        chi2_fs8 = np.sum(((obs_fs8 - model_fs8) / sigma_fs8) ** 2)
-        log_L_fs8 = -0.5 * chi2_fs8
-    except Exception:
-        log_L_fs8 = 0.0
-    
-    # S8 likelihood
-    try:
-        s8_obs, s8_sigma, s8_noent = data_bundle["S8"]
-        s8_model = s8_obs + bridge.projection_s8 * (s8_noent - s8_obs)
-        chi2_S8 = ((s8_obs - s8_model) / s8_sigma) ** 2
-        log_L_S8 = -0.5 * chi2_S8
-    except Exception:
-        log_L_S8 = 0.0
-    
-    return log_L_H + log_L_fs8 + log_L_S8
+
+    return -0.5 * prediction["chi2_total"]
 
 
 def log_posterior(theta: np.ndarray, param_names: list[str],
                  bounds: dict[str, tuple[float, float]],
-                 data_bundle: dict) -> float:
+                 data_bundle: dict,
+                 use_dynamic_solver: bool = False) -> float:
     """Compute log-posterior = log_prior + log_likelihood."""
     lp = log_prior(theta, bounds)
     if not np.isfinite(lp):
         return -np.inf
-    return lp + log_likelihood(theta, param_names, bounds, data_bundle)
+    return lp + log_likelihood(theta, param_names, bounds, data_bundle, use_dynamic_solver=use_dynamic_solver)
 
 
 # ============================================================================
@@ -178,12 +205,142 @@ def load_data_bundle() -> dict:
     }
 
 
+def summarize_samples(samples: np.ndarray, param_names: list[str]) -> dict[str, dict[str, float]]:
+    """Compute standard marginal summaries for posterior samples."""
+
+    stats: dict[str, dict[str, float]] = {}
+    for i, name in enumerate(param_names):
+        param_samples = samples[:, :, i].reshape(-1)
+        stats[name] = {
+            "mean": float(np.mean(param_samples)),
+            "median": float(np.median(param_samples)),
+            "std": float(np.std(param_samples)),
+            "quantile_16": float(np.percentile(param_samples, 16)),
+            "quantile_84": float(np.percentile(param_samples, 84)),
+            "quantile_2p5": float(np.percentile(param_samples, 2.5)),
+            "quantile_97p5": float(np.percentile(param_samples, 97.5)),
+        }
+    return stats
+
+
+def compute_convergence_diagnostics(
+    sampler: object,
+    samples: np.ndarray,
+    burnin_steps: int,
+    param_names: list[str],
+) -> dict[str, object]:
+    """Compute simple convergence diagnostics for the MCMC chain."""
+
+    diagnostics: dict[str, object] = {
+        "burnin_steps": int(burnin_steps),
+        "post_burnin_shape": [int(value) for value in samples.shape],
+        "posterior_draws": int(samples.shape[0] * samples.shape[1]),
+        "acceptance_fraction_mean": float(np.mean(getattr(sampler, "acceptance_fraction", np.array([])))),
+        "acceptance_fraction_min": float(np.min(getattr(sampler, "acceptance_fraction", np.array([np.nan])))),
+        "acceptance_fraction_max": float(np.max(getattr(sampler, "acceptance_fraction", np.array([np.nan])))),
+    }
+
+    try:
+        autocorr = sampler.get_autocorr_time(discard=burnin_steps, thin=1, tol=0)
+        diagnostics["autocorr_time"] = {
+            name: float(value) for name, value in zip(param_names, autocorr)
+        }
+        diagnostics["effective_sample_size"] = {
+            name: float(samples.shape[0] * samples.shape[1] / max(value, 1.0e-12))
+            for name, value in zip(param_names, autocorr)
+        }
+        diagnostics["autocorr_status"] = "estimated"
+    except Exception as exc:
+        diagnostics["autocorr_time"] = None
+        diagnostics["effective_sample_size"] = None
+        diagnostics["autocorr_status"] = f"unavailable: {exc}"
+
+    return diagnostics
+
+
+def compute_posterior_predictive(
+    samples: np.ndarray,
+    param_names: list[str],
+    data_bundle: dict,
+    use_dynamic_solver: bool = False,
+    max_draws: int = 200,
+) -> dict[str, object]:
+    """Generate posterior predictive summaries for H(z), fs8(z), and S8."""
+
+    flat_samples = samples.reshape(-1, samples.shape[-1])
+    if flat_samples.shape[0] > max_draws:
+        draw_indices = np.linspace(0, flat_samples.shape[0] - 1, max_draws, dtype=int)
+        flat_samples = flat_samples[draw_indices]
+
+    z_H, obs_H, sigma_H = data_bundle["H"]
+    z_fs8, obs_fs8, sigma_fs8, _pred_noent_fs8 = data_bundle["fs8"]
+    s8_obs, s8_sigma, _s8_noent = data_bundle["S8"]
+
+    h_draws: list[np.ndarray] = []
+    fs8_draws: list[np.ndarray] = []
+    s8_draws: list[float] = []
+    chi2_draws: list[float] = []
+
+    for theta in flat_samples:
+        prediction = predict_observables(theta, param_names, data_bundle, use_dynamic_solver=use_dynamic_solver)
+        h_draws.append(np.asarray(prediction["H_model"], dtype=float))
+        fs8_draws.append(np.asarray(prediction["fs8_model"], dtype=float))
+        s8_draws.append(float(prediction["S8_model"]))
+        chi2_draws.append(float(prediction["chi2_total"]))
+
+    h_draws_array = np.asarray(h_draws, dtype=float)
+    fs8_draws_array = np.asarray(fs8_draws, dtype=float)
+    s8_draws_array = np.asarray(s8_draws, dtype=float)
+    chi2_draws_array = np.asarray(chi2_draws, dtype=float)
+
+    median_theta = np.median(flat_samples, axis=0)
+    median_prediction = predict_observables(median_theta, param_names, data_bundle, use_dynamic_solver=use_dynamic_solver)
+
+    return {
+        "max_draws": int(max_draws),
+        "draws_used": int(flat_samples.shape[0]),
+        "chi2_distribution": {
+            "mean": float(np.mean(chi2_draws_array)),
+            "median": float(np.median(chi2_draws_array)),
+            "quantile_16": float(np.percentile(chi2_draws_array, 16)),
+            "quantile_84": float(np.percentile(chi2_draws_array, 84)),
+        },
+        "chi2_at_posterior_median": float(median_prediction["chi2_total"]),
+        "posterior_predictive_p_value": float(np.mean(chi2_draws_array >= median_prediction["chi2_total"])),
+        "H": {
+            "z": z_H.tolist(),
+            "observed": obs_H.tolist(),
+            "sigma": sigma_H.tolist(),
+            "median": np.median(h_draws_array, axis=0).tolist(),
+            "quantile_16": np.percentile(h_draws_array, 16, axis=0).tolist(),
+            "quantile_84": np.percentile(h_draws_array, 84, axis=0).tolist(),
+        },
+        "fs8": {
+            "z": z_fs8.tolist(),
+            "observed": obs_fs8.tolist(),
+            "sigma": sigma_fs8.tolist(),
+            "median": np.median(fs8_draws_array, axis=0).tolist(),
+            "quantile_16": np.percentile(fs8_draws_array, 16, axis=0).tolist(),
+            "quantile_84": np.percentile(fs8_draws_array, 84, axis=0).tolist(),
+        },
+        "S8": {
+            "observed": float(s8_obs),
+            "sigma": float(s8_sigma),
+            "median": float(np.median(s8_draws_array)),
+            "quantile_16": float(np.percentile(s8_draws_array, 16)),
+            "quantile_84": float(np.percentile(s8_draws_array, 84)),
+        },
+    }
+
+
 # ============================================================================
 # MCMC execution
 # ============================================================================
 
 def run_mcmc(nwalkers: int = 32, nsteps: int = 2000, 
-             output_dir: str | Path | None = None) -> dict[str, object]:
+             output_dir: str | Path | None = None,
+             use_dynamic_solver: bool = False,
+             predictive_draws: int = 200) -> dict[str, object]:
     """Execute MCMC parameter estimation."""
     
     if emcee is None:
@@ -211,7 +368,7 @@ def run_mcmc(nwalkers: int = 32, nsteps: int = 2000,
     
     # Create sampler
     def log_prob_wrapper(theta):
-        return log_posterior(theta, param_names, bounds, data_bundle)
+        return log_posterior(theta, param_names, bounds, data_bundle, use_dynamic_solver=use_dynamic_solver)
     
     sampler = emcee.EnsembleSampler(nwalkers, ndim, log_prob_wrapper)
     
@@ -233,22 +390,27 @@ def run_mcmc(nwalkers: int = 32, nsteps: int = 2000,
         }
     
     # Extract results
-    samples = sampler.get_chain(discard=int(nsteps * 0.2), thin=1)  # 20% burn-in
-    lnprobs = sampler.get_log_prob(discard=int(nsteps * 0.2), thin=1)
+    burnin_steps = int(nsteps * 0.2)
+    samples = sampler.get_chain(discard=burnin_steps, thin=1)
+    lnprobs = sampler.get_log_prob(discard=burnin_steps, thin=1)
     
     # Compute statistics
-    stats = {}
-    for i, name in enumerate(param_names):
-        param_samples = samples[:, :, i].flatten()
-        stats[name] = {
-            "mean": float(np.mean(param_samples)),
-            "median": float(np.median(param_samples)),
-            "std": float(np.std(param_samples)),
-            "quantile_16": float(np.percentile(param_samples, 16)),
-            "quantile_84": float(np.percentile(param_samples, 84)),
-            "quantile_2p5": float(np.percentile(param_samples, 2.5)),
-            "quantile_97p5": float(np.percentile(param_samples, 97.5)),
-        }
+    stats = summarize_samples(samples, param_names)
+
+    # Convergence diagnostics
+    convergence = compute_convergence_diagnostics(sampler, samples, burnin_steps, param_names)
+
+    # Posterior predictive check
+    posterior_predictive = compute_posterior_predictive(
+        samples,
+        param_names,
+        data_bundle,
+        use_dynamic_solver=use_dynamic_solver,
+        max_draws=predictive_draws,
+    )
+
+    median_theta = np.median(samples.reshape(-1, samples.shape[-1]), axis=0)
+    median_prediction = predict_observables(median_theta, param_names, data_bundle, use_dynamic_solver=use_dynamic_solver)
     
     # Save chains
     chains_file = result_dir / f"mcmc_chains_{timestamp}.npy"
@@ -263,6 +425,14 @@ def run_mcmc(nwalkers: int = 32, nsteps: int = 2000,
         "nsteps": nsteps,
         "param_names": param_names,
         "parameter_statistics": stats,
+        "convergence_diagnostics": convergence,
+        "posterior_predictive": posterior_predictive,
+        "median_model_fit": {
+            "chi2_total": float(median_prediction["chi2_total"]),
+            "chi2_H": float(median_prediction["chi2_H"]),
+            "chi2_fs8": float(median_prediction["chi2_fs8"]),
+            "chi2_S8": float(median_prediction["chi2_S8"]),
+        },
         "chains_file": str(chains_file),
         "mcmc_data_bundle": {
             "H_available": data_bundle.get("H") is not None,
@@ -272,8 +442,9 @@ def run_mcmc(nwalkers: int = 32, nsteps: int = 2000,
         "notes": (
             "V94 MCMC implements full posterior sampling of cosmological parameters "
             "α_K, α_T, α_KT, γ*, χ²_coupling using H(z), f_sigma8(z), S8 observables. "
-            "20% burn-in discarded. Results ready for corner plots and publication."
+            "20% burn-in discarded. Convergence diagnostics and posterior predictive checks are included."
         ),
+        "solver_mode": "dynamic" if use_dynamic_solver else "surrogate",
     }
     
     # Write outputs
@@ -287,6 +458,7 @@ def run_mcmc(nwalkers: int = 32, nsteps: int = 2000,
         f"verdict: {summary['verdict']}",
         f"nwalkers: {nwalkers}",
         f"nsteps: {nsteps}",
+        f"solver_mode: {summary['solver_mode']}",
         "",
         "Parameter statistics (after 20% burn-in):",
     ]
@@ -295,6 +467,25 @@ def run_mcmc(nwalkers: int = 32, nsteps: int = 2000,
         lines.append(f"  median = {stats_dict['median']:.6f}")
         lines.append(f"  68% CI = [{stats_dict['quantile_16']:.6f}, {stats_dict['quantile_84']:.6f}]")
         lines.append(f"  95% CI = [{stats_dict['quantile_2p5']:.6f}, {stats_dict['quantile_97p5']:.6f}]")
+
+    lines.append("\nConvergence diagnostics:")
+    lines.append(f"  acceptance_fraction_mean = {convergence['acceptance_fraction_mean']:.6f}")
+    lines.append(f"  acceptance_fraction_min = {convergence['acceptance_fraction_min']:.6f}")
+    lines.append(f"  acceptance_fraction_max = {convergence['acceptance_fraction_max']:.6f}")
+    lines.append(f"  autocorr_status = {convergence['autocorr_status']}")
+    if convergence.get("autocorr_time"):
+        for name in param_names:
+            tau = convergence["autocorr_time"][name]
+            ess = convergence["effective_sample_size"][name]
+            lines.append(f"  {name}: tau_int={tau:.3f}, ESS~{ess:.1f}")
+
+    lines.append("\nPosterior predictive check:")
+    lines.append(f"  chi2_median_model = {posterior_predictive['chi2_at_posterior_median']:.6f}")
+    lines.append(f"  ppp = {posterior_predictive['posterior_predictive_p_value']:.6f}")
+    lines.append(
+        "  chi2_distribution_median = "
+        f"{posterior_predictive['chi2_distribution']['median']:.6f}"
+    )
     
     txt_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
     
@@ -318,10 +509,19 @@ def main() -> None:
                        help="Number of MCMC steps (including burn-in)")
     parser.add_argument("--output-dir", default=None, 
                        help="Directory for output files")
+    parser.add_argument(
+        "--dynamic-solver",
+        action="store_true",
+        help="Use the dynamic K/T/Y solver instead of the static surrogate bridge",
+    )
     args = parser.parse_args()
     
-    result = run_mcmc(nwalkers=args.nwalkers, nsteps=args.nsteps, 
-                     output_dir=args.output_dir)
+    result = run_mcmc(
+        nwalkers=args.nwalkers,
+        nsteps=args.nsteps,
+        output_dir=args.output_dir,
+        use_dynamic_solver=args.dynamic_solver,
+    )
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 

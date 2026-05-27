@@ -8,8 +8,18 @@ Projet LaTeX compilable pour la consolidation finale du modèle K/T/Y + D1/D2 + 
 - `figures/`
 - `appendices/`
 
+## Version figée
+- Baseline figée avant solveur dynamique: `FROZEN_V94_BASELINE.md`
+- Le manuscrit V94 garde désormais la version surrogate comme référence historique.
+- Référence dynamique calibrée: `FROZEN_V94_DYNAMIC_REFERENCE.md`
+
 ## Compilation
 Ouvrir `main.tex` dans Overleaf ou compiler localement avec `pdflatex` / `latexmk`.
+
+## Solveur dynamique
+- Nouveau module: `python/scripts/v95_dynamic_solver.py`
+- Mode V94 dynamique optionnel: `python/scripts/v94_cosmo_chi2.py --dynamic-solver`
+- Mode V94 par défaut: surrogate / bridge historique, pour préserver la reproductibilité du baseline figé
 
 ## Contenu
 Le document intègre les résultats numériques consolidés de V60--V61:
